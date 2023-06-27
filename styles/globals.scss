@@ -4,3 +4,25 @@
 
 
 
+@media (min-width: 267px) and (max-width: 100000px ) {
+  .OurStoryBanner {
+    background-image: url("/contactBanner.svg");
+    background-size: cover;
+
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 267px) and (max-width: 100000px ) {
+  .TalkTo {
+    background-image: url("/talkto.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 267px) and (max-width: 100000px ) {
+  .portfolioBanner {
+    background-image: url("/portfoliobanner.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

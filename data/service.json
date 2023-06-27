@@ -147,6 +147,49 @@
     "icon": "/Model.svg"
    }
   ]
+ },
+
+ "Tech": {
+  "title": "Tech Stack We Use",
+  "subtitle": "Here is the tech stack used by our team while offering web app development services:",
+  "data": [
+   {
+    "image": "/JavaScript.svg"
+   },
+   {
+    "image": "/html.svg"
+   },
+   {
+    "image": "/css.svg"
+   },
+   {
+    "image": "/angular.svg"
+   },
+   {
+    "image": "/react.svg"
+   },
+   {
+    "image": "/vue.svg"
+   },
+   {
+    "image": "/next.svg"
+   },
+   {
+    "image": "/node.svg"
+   },
+   {
+    "image": "/python.svg"
+   },
+   {
+    "image": "/ruby.svg"
+   },
+   {
+    "image": "/django.svg"
+   },
+   {
+    "image": "/kotlin.svg"
+   }
+  ]
  }
 
 }

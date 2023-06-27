@@ -9,6 +9,7 @@ import {ServiceProcess} from "../components/serviceProcess";
 import {ServicesDevelopment} from "../components/servicesDevelopment";
 import {ServicesFaq} from "../components/serviceFaq";
 import {ServicesAssurance} from "../components/serviceAssurance";
+import {ServiceTech} from "../components/servicesTech";
 const ServicePage: React.FC = () => {
     return (<>
             <Head>
@@ -54,6 +55,11 @@ const ServicePage: React.FC = () => {
                     image={serviceData.Assurance.image}
                     data={serviceData.Assurance.data}
                     buttonName={serviceData.Assurance.buttonName}
+                    />
+                    <ServiceTech
+                    data={serviceData.Tech.data}
+                    title={serviceData.Tech.title}
+                    subtitle={serviceData.Tech.subtitle}
                     />
                 </div>
             </div>

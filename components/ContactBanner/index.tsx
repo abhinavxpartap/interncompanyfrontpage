@@ -17,10 +17,12 @@ const ContactBanner: NextPage = () => {
 
                 </div>
 
-<div className="bg-white relative  right-0   rounded-[15px] px-[30px] py-[12px]">
-<div className="text-[18px] w-[530px]  font-semibold">
+<div className="bg-white absolute  right-0   rounded-[15px] px-[30px] py-[12px]">
+<div className="text-[18px] w-[530px] h-[500px] z-[30] flex  font-semibold">
     Build the Next Big Thing
+
 </div>
+
 </div>
 
             </div>

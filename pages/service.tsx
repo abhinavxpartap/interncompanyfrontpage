@@ -60,6 +60,8 @@ const ServicePage: React.FC = () => {
                     data={serviceData.Tech.data}
                     title={serviceData.Tech.title}
                     subtitle={serviceData.Tech.subtitle}
+                    Paragraph={serviceData.Tech.Paragraph}
+                    buttonName={serviceData.Tech.buttonName}
                     />
                 </div>
             </div>

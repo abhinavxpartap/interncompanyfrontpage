@@ -4,7 +4,7 @@ import {Button} from "@mui/material";
 
 
 export const ServiceTech: React.FC<any> = (props) => {
-    const {title, subtitle, data} = props;
+    const {title, subtitle, data, buttonName} = props;
 
     const content = <>
         <div
@@ -14,7 +14,7 @@ export const ServiceTech: React.FC<any> = (props) => {
                 <h1 className="text-[#333333] font-bold text-[30px]">{title}</h1>
                 <p className="text-[#333333] font-medium text-[14px] pt-[10px] ">{subtitle}</p>
                 <div className="w-[100%] flex items-center justify-center">
-                <div  className=" w-[90%] pt-[60px]   flex flex-row justify-between gap-[50px]  grid grid-cols-6 text-start ">
+                <div  className="w-[90%] pt-[60px] flex flex-row justify-between gap-[50px]  grid grid-cols-6 text-start ">
                     {data.map((item:any,index:any) => (
                         <div key={index} className="w-[70px] mx-auto flex items-center jusitfy-center" >
                             <Img src={item.image} className="w-[100%] felx items-center justify-center" alt={"Icon"}/>
@@ -44,7 +44,7 @@ export const ServiceTech: React.FC<any> = (props) => {
                             },
                         }}
                     >
-                        Get a Quote
+                        {buttonName}
                     </Button>
                 </div>
             </div>

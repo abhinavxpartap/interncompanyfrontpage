@@ -4,23 +4,48 @@ import {Button} from "@mui/material";
 
 
 export const ServicesAssurance: React.FC<any> = (props) => {
-    const {image} = props;
+    const {image,buttonName,data} = props;
 
     const content = <>
         <div
-            className="max-w-[1377.5px] flex items-center justify-between md:pt-[80px]  pt-[30px] pb-[30px] md:pb-[80px]"
+            className="max-w-[1377.5px] flex items-center justify-between md:pt-[120px]  pt-[30px] pb-[30px] md:pb-[120px]"
         >
             <div className="w-[100%] px-[20px] flex flex-row text-start items-center justify-center ">
-                <div className="w-[50vw]">
+                <div className="w-[50vw] flex flex-col">
                     <h1 className="text-[white] text-[40px] font-bold ">Zuca’s Assurance as a Web App Development Company</h1>
-                    <div className="flex flex-row gap-[10px] pt-[25px] items-start">
-                        <div className="flex flex-row">
-                        <Img src="/Approach.svg" className="w-[40px]" alt={"Icon"}/>
-                        <div>
-                            <h1 className="text-[18px] text-[white] font-semibold">A Quality-First Approach</h1>
-                            <p className="text-[14px] pt-[5px] w-[90%] text-[white] font-normal">Our team is capable of delivering immersive web experiences, magnifying digital transformation</p>
+                    <div className="flex flex-col gap-[20px] pt-[30px] items-start">
+                        {data.map((item:any,index:any) => (
+                        <div key={index} className="flex flex-row items-start gap-[10px] ">
+                        <Img src={item.icon} className="w-[40px]" alt={"Icon"}/>
+                        <span className="flex flex-col">
+                            <h1 className="text-[18px] text-[white] font-semibold">{item.title}</h1>
+                            <p className="text-[14px] pt-[5px] w-[90%] text-[white] font-normal">{item.subtitle}</p>
+                        </span>
                         </div>
-                        </div>
+                        ))}
+                    </div>
+                    <div className="pt-[30px] pl-[40px]">
+                        <Button
+                            className="text-[16px] font-semibold "
+                            sx={{
+                                '&.MuiButtonBase-root': {
+                                    backgroundColor: '#177DF0',
+                                    color: 'white',
+                                    textTransform: 'capitalize',
+                                    padding: '8px 24px 8px 24px',
+                                    border: '1px solid #5CA9FF',
+                                    borderRadius:"30px",
+                                    '&:hover': {
+                                        border: '1px solid #5CA9FF',
+                                        backgroundColor: 'transparent',
+                                        color: '#177DF0',
+                                    },
+                                },
+                            }}
+                        >
+                            {buttonName}
+
+                        </Button>
                     </div>
                 </div>
                 <div className="w-[50vw] flex justify-center items-center">
@@ -33,7 +58,7 @@ export const ServicesAssurance: React.FC<any> = (props) => {
         <>
             <div
                 style={{backgroundImage: `url(${image})`}}
-                className="bg-cover bg-center h-[720px]  bg-no-repeat relative  block"
+                className="bg-cover bg-center bg-no-repeat relative  block"
             >
                 {content}
             </div>

@@ -52,6 +52,8 @@ const ServicePage: React.FC = () => {
                 />
                     <ServicesAssurance
                     image={serviceData.Assurance.image}
+                    data={serviceData.Assurance.data}
+                    buttonName={serviceData.Assurance.buttonName}
                     />
                 </div>
             </div>

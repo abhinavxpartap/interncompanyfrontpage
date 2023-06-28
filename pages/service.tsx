@@ -26,6 +26,7 @@ const ServicePage: React.FC = () => {
                 mobileImage={serviceData.Banner.mobileImage}
                 title={serviceData.Banner.title}
                 subtitle={serviceData.Banner.subtitle}
+                buttonName={serviceData.Banner.buttonName}
                 />
                 <div style={{background:"#F9FBFF"}} >
                 <ServiceAbout

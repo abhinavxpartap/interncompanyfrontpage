@@ -3,7 +3,8 @@
   "title": "Web Application Development Services",
   "subtitle": "Helping Businesses build secure and scalable Web Applications, Portals and Solutions",
   "image": "/serviceBanner.jpg",
-  "mobileImage": "/serviceBanner.jpg"
+  "mobileImage": "/serviceBanner.jpg",
+  "buttonName": "Book a free consultation"
  },
 
  "About": {

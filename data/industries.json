@@ -1,0 +1,286 @@
+{
+  "Banner": {
+    "title": "Financial Software Development Services",
+    "subtitle": "You deserve a team focused on your mission just as much as you are. Meet Zuca.",
+    "image": "/industriesBanner.jpg",
+    "mobileImage": "/industriesBanner.jpg",
+    "buttonName": "Book a free consultation"
+  },
+  "About": {
+    "title": "Why our fintech app development services?",
+    "image": "/industriesAbout.svg",
+    "buttonName": "Schedule a Call",
+    "fintechData": [
+      {
+        "title": "One-on-one collaboration and guidance",
+        "subtitle": "Our seasoned developers will pick the best technology stack to ensure your fintech application continues growing and remains adaptable to market changes."
+      },
+      {
+        "title": "Design, development, & upkeep in one place",
+        "subtitle": "We apply a proprietary framework when prototyping and finalizing your application’s UX, which guarantees engaging user experience and higher KPIs aligned with your business goals."
+      },
+      {
+        "title": "Platform-agnostic development",
+        "subtitle": "Customers love when their favorite applications follow them on all their devices. We build fintech applications that work on desktop, mobile, and other platforms like a smartwatch or tablet."
+      },
+      {
+        "title": "Committed to security and compliance",
+        "subtitle": "We are committed to PCI compliant fintech apps development, leveraging bank-grade security technologies and standards."
+      }
+    ],
+    "satisfactionData": [
+      {
+        "number": "300",
+        "subtitle": "Dedicated FinTech Professionals"
+      },
+      {
+        "number": "500",
+        "subtitle": "Custom FinTech solutions delivered"
+      },
+      {
+        "number": "85",
+        "subtitle": "client satisfaction rate"
+      }
+    ]
+  },
+  "Compliances": {
+    "image": "/Compliances.jpg",
+    "title": "We Build Custom FinTech Application Development Solutions that Follow All Industry Compliances",
+    "subtitle": "Your FinTech product must adhere to all the stringent governmental and financial regulations. Ensuring that you are following the rules would require you to be transparent and strict about how you use users’ data in your application. We can help you keep your data secure and regulations compliant.",
+    "data": [
+      {
+        "id": 1,
+        "title": "FinCen"
+      },
+      {
+        "id": 2,
+        "title": "FinCen"
+      },
+      {
+        "id": 3,
+        "title": "FinCen"
+      },
+      {
+        "id": 4,
+        "title": "FinCen"
+      },
+      {
+        "id": 5,
+        "title": "FinCen"
+      },
+      {
+        "id": 6,
+        "title": "FinCen"
+      },
+      {
+        "id": 7,
+        "title": "FinCen"
+      },
+      {
+        "id": 8,
+        "title": "FinCen"
+      }
+    ]
+  },
+
+  "Technology": {
+    "title": "Advanced Technologies We Utilize for Building Your Financial Industry Software",
+    "subtitle": "By creating efficient custom finance software solutions with an advanced set of technologies, we assist clients in producing new products that drive growth for their businesses.",
+    "data": [
+      {
+        "icon": "/AI.svg",
+        "title": "AI and ML",
+        "subtitle": "Appinventiv offers comprehensive AI and ML services that help FinTech companies build intelligent workflows, drastically boost productivity, and reduce operational costs."
+      },
+      {
+        "icon": "/BigData.svg",
+        "title": "Big Data Analytics",
+        "subtitle": "Appinventiv provides a wide range of data science and analytics services, assisting FinTech businesses of any size in gaining competitive advantage through the use of data insights."
+      },
+      {
+        "icon": "/Cloud.svg",
+        "title": "Cloud Computing",
+        "subtitle": "Cloud computing allows banks and other financial institutions to switch from a capital-intensive business model to a flexible one that lowers operational costs while maintaining data security."
+      },
+      {
+        "icon": "/Tech.svg",
+        "title": "Distributed Ledger Technology",
+        "subtitle": "Our finance software developers assure the commercial and technical success of distributed ledger projects and assist FinTech businesses in evaluating the value of blockchain services in their operations."
+      },
+      {
+        "icon": "/Robot.svg",
+        "title": "Robotic Process Automation (RPA)",
+        "subtitle": "Cut down additional costs, and accelerate business efficiency with smart automation solutions like RPA. Automate your repetitive, mundane tasks and devote more time to serving your clients with our RPA-integrated fintech software."
+      },
+      {
+        "icon": "/Verify.svg",
+        "title": "Biometrics and Digital Identity Verification",
+        "subtitle": "With the indispensable biometric technology, financial institutions can enable remote verifications of the customers’ identities and simplify operational processes and employee tasks."
+      },
+      {
+        "icon": "/AI.svg",
+        "title": "AI and ML",
+        "subtitle": "Appinventiv offers comprehensive AI and ML services that help FinTech companies build intelligent workflows, drastically boost productivity, and reduce operational costs."
+      }
+    ]
+  },
+
+  "Tech": {
+    "title": "Tech Stack We Use",
+    "subtitle": "Here is the tech stack used by our team while offering web app development services:",
+    "Paragraph": "Looking for an exact cost and time frame estimate for custom web development services?",
+    "buttonName": "Get a Quote",
+    "data": [
+      {
+        "image": "/JavaScript.svg"
+      },
+      {
+        "image": "/html.svg"
+      },
+      {
+        "image": "/css.svg"
+      },
+      {
+        "image": "/angular.svg"
+      },
+      {
+        "image": "/react.svg"
+      },
+      {
+        "image": "/vue.svg"
+      },
+      {
+        "image": "/next.svg"
+      },
+      {
+        "image": "/node.svg"
+      },
+      {
+        "image": "/python.svg"
+      },
+      {
+        "image": "/ruby.svg"
+      },
+      {
+        "image": "/django.svg"
+      },
+      {
+        "image": "/kotlin.svg"
+      }
+    ]
+  },
+
+  "Estimation": {
+    "image": "/EstimationBanner.jpg",
+    "title": "Financial Services Software Development Cost Estimation",
+    "subtitle": "We take into account several factors for estimating the final cost of your fintech solution:",
+    "buttonName": "Get Personalised Cost Estimation",
+    "data": [
+      {
+        "content": "Complexities in features & functionalities"
+      },
+      {
+        "content": "Choice of app platform"
+      },
+      {
+        "content": "Complexity of third-party platform integrations"
+      },
+      {
+        "content": "Size of the project"
+      }
+    ]
+  },
+
+  "Faq": {
+    "title": "Frequently Asked",
+    "spantitle": "Questions",
+    "tadData": [
+      {
+        "id": 1,
+        "title": "Why hire Zuca as your finance software development partner?",
+        "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces.",
+        "data": [
+          {
+            "title": "Right from ideation and design to offering post-maintenance services, our skilled FinTech app developers get all your needs covered."
+          },
+          {
+            "title": "We have an experienced agile-oriented development team whose expertise lies in utilizing cutting-edge technologies to bring world-class FinTech software solutions to your table."
+          },
+          {
+            "title": "Our FinTech software solutions are in compliance with all the regulations, as we use proven frameworks to ensure high-end financial software development services."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "How long does it take to develop a financial app?",
+        "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces",
+        "data": [
+          {
+            "title": "Right from ideation and design to offering post-maintenance services, our skilled FinTech app developers get all your needs covered."
+          },
+          {
+            "title": "We have an experienced agile-oriented development team whose expertise lies in utilizing cutting-edge technologies to bring world-class FinTech software solutions to your table."
+          },
+          {
+            "title": "Our FinTech software solutions are in compliance with all the regulations, as we use proven frameworks to ensure high-end financial software development services."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "How much does it cost to build finance applications?",
+        "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces",
+        "data": [
+          {
+            "title": "Right from ideation and design to offering post-maintenance services, our skilled FinTech app developers get all your needs covered."
+          },
+          {
+            "title": "We have an experienced agile-oriented development team whose expertise lies in utilizing cutting-edge technologies to bring world-class FinTech software solutions to your table."
+          },
+          {
+            "title": "Our FinTech software solutions are in compliance with all the regulations, as we use proven frameworks to ensure high-end financial software development services."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "What is the process of developing a financial app?",
+        "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces",
+        "data": [
+          {
+            "title": "Right from ideation and design to offering post-maintenance services, our skilled FinTech app developers get all your needs covered."
+          },
+          {
+            "title": "We have an experienced agile-oriented development team whose expertise lies in utilizing cutting-edge technologies to bring world-class FinTech software solutions to your table."
+          },
+          {
+            "title": "Our FinTech software solutions are in compliance with all the regulations, as we use proven frameworks to ensure high-end financial software development services."
+          }
+        ]
+      }
+    ]
+  },
+
+  "Blog": {
+    "title": "Resources & Articles"
+  },
+
+  "Quotation": {
+    "title": "Get a Free Quotation",
+    "subtitle": "FREE QUOTATION",
+    "paragraph":"Don't Worry Your Data and Business Ideas Are Safe With Us.",
+    "Form": {
+      "firstName": "First name",
+      "label1": "enter first name",
+      "lastName": "Last name",
+      "label2": "enter last name",
+      "Email": "Email",
+      "labelEmail": "enter email address",
+      "Message": "Your Message",
+      "labelMessage": "enter your Message",
+      "buttonName": "Book my Demo",
+      "Options": "What are you more interested in:"
+    }
+  }
+}

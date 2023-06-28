@@ -1,0 +1,28 @@
+{
+  "BlogData": [
+    {
+      "categories": "Careers",
+      "title": "How much Does It Cost to Build a FinTech App?",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod adipiscing elit, sed do eiusmod",
+      "Date": "12 August 2021",
+      "URL": "/",
+      "image": "/Blog1.jpg"
+    },
+    {
+      "categories": "Careers",
+      "title": "How to Bring Resiliency in Financial Services Business?",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod adipiscing elit, sed do eiusmod",
+      "Date": "12 August 2021",
+      "URL": "/",
+      "image": "/Blog2.jpg"
+    },
+    {
+      "categories": "Careers",
+      "title": "How to Bring Resiliency in Financial Services Business?",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod adipiscing elit, sed do eiusmod",
+      "Date": "12 August 2021",
+      "URL": "/",
+      "image": "/Blog2.jpg"
+    }
+  ]
+}

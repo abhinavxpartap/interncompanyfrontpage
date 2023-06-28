@@ -1,8 +1,6 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 *,
 :after,
@@ -1236,5 +1234,6 @@ details[open] .arrow-icon {
     background: linear-gradient(360deg, #FFFFFF 0%, #F5F9FF 100%);
 }
 
-
-
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}

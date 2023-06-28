@@ -112,7 +112,6 @@ const ContactBanner: NextPage = () => {
                                             id="demo-simple-select"
                                             value={age}
 
-                                            style={{ height: '35px', borderRadius: '10px' }}
 
                                             className="select-input"
                                             onChange={handleChange}

@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 
-
+.linec{
+  background: rgba(255, 102, 102, 0.50);
+}
 @media (min-width: 267px) and (max-width: 100000px ) {
   .OurStoryBanner {
     background-image: url("/contactBanner.svg");

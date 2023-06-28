@@ -5,6 +5,8 @@ import {AboutPortfolio} from "../components/aboutPortfolio";
 import {Director} from "../components/director";
 import {Journey} from "../components/journey";
 import {OurProcess} from "../components/ourProcess";
+import {OurProcess2} from "../components/ourProcess2";
+
 import {Results} from "../components/results";
 import {Blog} from "../components/blog";
 
@@ -43,6 +45,7 @@ const Portfolio: NextPage = () => {
 
             />
             <Journey/>
+            <OurProcess2/>
             <OurProcess/>
             <ProjectChallanges/>
             <Results/>

@@ -8,12 +8,18 @@ export const PortfolioBanner2: React.FC<any> = (props) => {
 
     const content = <>
         <div
-            className="max-w-[1377.5px] mx-auto flex flex-col  justify-center items-center"
+            className="max-w-[1377.5px] mx-auto flex flex-col   justify-center items-center"
         >
             <div>
-                <div className="text-[50px] max-w-[510px] mt-[120px] leading-[63px] font-bold">Crafted With Love. Built
+                <div className="text-[50px] max-w-[510px] mt-[120px]  eleading-[63px] z-10 font-bold">Crafted With Love.
+                    Built
                     With Passion
                 </div>
+                <div className=" ">
+                    <Img src="/line.svg" alt="n" className="w-auto      "/>
+
+                </div>
+
             </div>
             <div className="text-[18px] max-w-[570px] md:ml-[60px] pb-[120px] mt-[12px]  font-medium">
                 Zuca offers transformative technology and software solutions to startups, global brands & Fortune 500

@@ -12,11 +12,11 @@ const Home: NextPage = () => {
 
 
             </div>
-            <div
-                className="bg-cover TalkTo bg-center bg-no-repeat relative"
-            >
-                <TalkTo/>
-            </div>
+            {/*<div*/}
+            {/*    className="bg-cover TalkTo bg-center bg-no-repeat relative"*/}
+            {/*>*/}
+            {/*    <TalkTo/>*/}
+            {/*</div>*/}
         </div>
     )
 }

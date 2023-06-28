@@ -4,6 +4,12 @@ import ProjectChallanges from "../components/ProjectChallanges";
 import {AboutPortfolio} from "../components/aboutPortfolio";
 import {Director} from "../components/director";
 import {Journey} from "../components/journey";
+import {OurProcess} from "../components/ourProcess";
+import {Results} from "../components/results";
+import {Blog} from "../components/blog";
+
+
+
 
 import React from "react";
 import serviceData from "../data/portfolio.json";
@@ -37,7 +43,11 @@ const Portfolio: NextPage = () => {
 
             />
             <Journey/>
+            <OurProcess/>
             <ProjectChallanges/>
+            <Results/>
+            <Blog/>
+
 
 
         </div>

@@ -1,5 +1,9 @@
 import type { NextPage } from 'next'
 import {AboutUsBanner} from "../components/aboutUsBanner";
+import {OurValue} from "../components/ourValue";
+import {Meetour} from "../components/meetour";
+
+
 import TalkTo from "../components/TalkToExpert";
 import React from "react";
 import aboutUs from "../data/aboutUs.json";
@@ -16,6 +20,8 @@ const Home: NextPage = () => {
                         title={aboutUs.Banner.title}
                         subtitle={aboutUs.Banner.subtitle}
                     />
+            <OurValue/>
+            <Meetour/>
 
 
 

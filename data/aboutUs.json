@@ -1,8 +1,8 @@
 {
   "Banner": {
-    "title": "Build and develop your best nbusiness with Zuca",
-    "subtitle": "Zuca is a technology company that builds conversational ninfrastructure for brands and entrepreneurs. ",
-    "image": "/aboutusbanner.svg",
+    "title": "Build and develop your best business with Zuca",
+    "subtitle": "Zuca is a technology company that builds conversational infrastructure for brands and entrepreneurs. ",
+    "image": "/aboutBanner.svg",
     "mobileImage": "/serviceBanner.jpg"
   }
 }

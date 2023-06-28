@@ -5,6 +5,8 @@ import ourClientData from '../data/common/clients.json';
 import awesomeNumberData from '../data/common/awesomeNumbers.json';
 import { Services } from '../components/Services';
 import services from '../data/common/services.json';
+import { OurBrands } from '../components/ourBrands';
+import ProductOverview from '../components/Product Overview';
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +19,10 @@ const Home: NextPage = () => {
         ourClients={ourClientData}
         awesomeNumbers={awesomeNumberData}
       />
+      <div>
+        <OurBrands />
+      </div>
+        <ProductOverview /> 
       <Services
         title={data.serviceData.title}
         subtitle={data.serviceData.subtitle}

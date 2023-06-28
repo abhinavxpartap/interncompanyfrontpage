@@ -10,6 +10,8 @@ import {ServicesDevelopment} from "../components/servicesDevelopment";
 import {ServicesFaq} from "../components/serviceFaq";
 import {ServicesAssurance} from "../components/serviceAssurance";
 import {ServiceTech} from "../components/servicesTech";
+import {FreeQuotation} from "../components/freeQuotation";
+import {OurBrands} from "../components/ourBrands";
 const ServicePage: React.FC = () => {
     return (<>
             <Head>
@@ -62,6 +64,21 @@ const ServicePage: React.FC = () => {
                     subtitle={serviceData.Tech.subtitle}
                     Paragraph={serviceData.Tech.Paragraph}
                     buttonName={serviceData.Tech.buttonName}
+                    />
+                    <OurBrands/>
+                    <FreeQuotation
+                    title={serviceData.Quotation.title}
+                    subtitle={serviceData.Quotation.subtitle}
+                    paragraph={serviceData.Quotation.paragraph}
+                    firstName={serviceData.Quotation.Form.firstName}
+                    label1={serviceData.Quotation.Form.label1}
+                    lastName={serviceData.Quotation.Form.lastName}
+                    label2={serviceData.Quotation.Form.label2}
+                    Email={serviceData.Quotation.Form.Email}
+                    labelEmail={serviceData.Quotation.Form.labelEmail}
+                    Message={serviceData.Quotation.Form.Message}
+                    labelMessage={serviceData.Quotation.Form.labelMessage}
+                    Optionsheading={serviceData.Quotation.Form.Options}
                     />
                 </div>
             </div>

@@ -32,7 +32,7 @@ export const OurBrands: React.FC<any> = () => {
 
     const content = <>
         <div
-            className="max-w-[1377.5px] flex flex-col items-center justify-between  pt-[30px] pb-[30px]"
+            className="max-w-[1377.5px] mx-auto flex flex-col items-center justify-between  pt-[30px] pb-[30px]"
         >
             <div className="mb-[30px]">
                 <h1 className="capitalize w-[100%] flex flex-row gap-[4px] font-medium text-[#151448] text-[24px]">

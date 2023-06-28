@@ -17,7 +17,7 @@ export const ServicesFaq: React.FC<any> = (props) => {
 
     const content = <>
         <div
-            className="max-w-[1377.5px] flex items-center justify-between md:pt-[80px]  pt-[30px] pb-[30px] md:pb-[80px]"
+            className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[80px]  pt-[30px] pb-[30px] md:pb-[80px]"
         >
             <div className="w-[100%] px-[40px] flex flex-row justify-between text-start  items-center">
                 <div className="w-[30vw]">

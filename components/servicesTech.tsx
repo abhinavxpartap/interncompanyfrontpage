@@ -8,7 +8,7 @@ export const ServiceTech: React.FC<any> = (props) => {
 
     const content = <>
         <div
-            className="max-w-[1377.5px] flex items-center justify-between md:pt-[100px]  pt-[30px] pb-[30px] md:pb-[100px]"
+            className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[100px]  pt-[30px] pb-[30px] md:pb-[100px]"
         >
             <div className="w-[100%] mx-auto flex flex-col text-center items-center justify-center ">
                 <h1 className="text-[#333333] font-bold text-[30px]">{title}</h1>

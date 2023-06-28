@@ -14,7 +14,7 @@ export const FreeQuotation: React.FC<any> = (props) => {
     const labelNames = ['Software Development', 'Web Design'];
     const content = <>
         <div
-            className="max-w-[1377.5px] flex items-center justify-between md:pt-[120px]  pt-[30px] pb-[30px] md:pb-[120px]"
+            className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[120px]  pt-[30px] pb-[30px] md:pb-[120px]"
         >
             <div className="w-[100%] px-[20px] flex flex-row text-start items-center justify-center ">
                 <div className="w-[100%] justify-center items-center flex flex-col">

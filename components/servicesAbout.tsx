@@ -8,7 +8,7 @@ export const ServiceAbout: React.FC<any> = (props) => {
 
     const content = <>
         <div
-            className="max-w-[1377.5px] flex flex-row items-center justify-between md:pt-[80px]  pt-[30px] pb-[30px] md:pb-[80px]"
+            className="max-w-[1377.5px] mx-auto flex flex-row items-center justify-between md:pt-[80px]  pt-[30px] pb-[30px] md:pb-[80px]"
         >
             <div className="w-[40vw]">
                 <Img src={image} className="w-[100%]" alt={"AboutImage"}/>

@@ -8,7 +8,7 @@ export const Blog: React.FC<any> = (props) => {
 
     const content = <>
         <div
-            className="max-w-[1377.5px] flex items-center justify-between md:pt-[120px]  pt-[30px] pb-[30px] md:pb-[120px]"
+            className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[120px]  pt-[30px] pb-[30px] md:pb-[120px]"
         >
             <div className="w-[100%] px-[60px] flex flex-col text-start items-center justify-center ">
                 <h1 className="text-[#151448] text-center text-[40px] font-bold mb-[50px]">{title}</h1>

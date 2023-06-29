@@ -69,23 +69,10 @@ const IndustriesPage: React.FC = () => {
                     />
                     <Blog
                         title={industryData.Blog.title}
-                    BlogData={Blogs.BlogData}
+                        BlogData={Blogs.BlogData}
                     />
 
-                    <FreeQuotation
-                        title={industryData.Quotation.title}
-                        subtitle={industryData.Quotation.subtitle}
-                        paragraph={industryData.Quotation.paragraph}
-                        firstName={industryData.Quotation.Form.firstName}
-                        label1={industryData.Quotation.Form.label1}
-                        lastName={industryData.Quotation.Form.lastName}
-                        label2={industryData.Quotation.Form.label2}
-                        Email={industryData.Quotation.Form.Email}
-                        labelEmail={industryData.Quotation.Form.labelEmail}
-                        Message={industryData.Quotation.Form.Message}
-                        labelMessage={industryData.Quotation.Form.labelMessage}
-                        Optionsheading={industryData.Quotation.Form.Options}
-                    />
+                    <FreeQuotation/>
                 </div>
             </div>
         </>

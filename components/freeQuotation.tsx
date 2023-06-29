@@ -2,9 +2,7 @@
 import React,{useState} from "react";
 import {Box,Typography,FormControl,OutlinedInput,Grid,FormControlLabel,Checkbox,Button} from "@mui/material"
 
-export const FreeQuotation: React.FC<any> = (props) => {
-  const {title,subtitle,paragraph,firstName,label1,lastName,label2,Email,labelEmail,Message,labelMessage,Optionsheading} = props;
-
+export const FreeQuotation: React.FC<any> = () => {
     const [checked, setChecked] = useState([false, false]);
     const handleToggle = (index:number) => () => {
         const newChecked = [...checked];
@@ -19,27 +17,33 @@ export const FreeQuotation: React.FC<any> = (props) => {
             <div className="w-[100%] px-[20px] flex flex-row text-start items-center justify-center ">
                 <div className="w-[100%] justify-center items-center flex flex-col">
                     <div className="w-[380px] flex flex-col justify-center items-center text-center mb-[50px]">
-                        <h1 className="text-[#0092FF] text-[12px] font-medium">{subtitle}</h1>
-                        <h1 className="text-[#151448] text-[35px] font-semibold">{title}</h1>
-                        <p className="text-[#444444] text-[19px] font-medium">{paragraph}</p>
+                        <h1 className="text-[#0092FF] text-[12px] font-medium">
+                            FREE QUOTATION
+                        </h1>
+                        <h1 className="text-[#151448] text-[35px] font-semibold">
+                            Get a Free Quotation
+                        </h1>
+                        <p className="text-[#444444] text-[19px] font-medium">
+                            Don't Worry Your Data and Business Ideas Are Safe With Us.
+                        </p>
                     </div>
                     <div className="w-[480px] rounded-[10px] py-[30px] px-[20px] bg-[white]" style={{boxShadow: 'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px'}} >
                         <Box className="w-[100%] flex flex-row justify-between">
                             <Box className="w-[48%]">
-                                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">{firstName}</Typography>
+                                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">First name</Typography>
                                 <FormControl sx={{ width: '100%' }}>
                                     <OutlinedInput
-                                        placeholder={label1}
+                                        placeholder="enter first name"
                                         style={{borderRadius:"8px"}}
                                         inputProps={{ style: {fontSize:"12px",} }}
                                     />
                                 </FormControl>
                             </Box>
                             <Box className="w-[48%]">
-                                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">{lastName}</Typography>
+                                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Last name</Typography>
                                 <FormControl sx={{ width: '100%'}}>
                                     <OutlinedInput
-                                        placeholder={label2}
+                                        placeholder="enter last name"
                                         style={{borderRadius:"8px"}}
                                         inputProps={{ style: {fontSize:"12px",} }}
                                     />
@@ -47,29 +51,29 @@ export const FreeQuotation: React.FC<any> = (props) => {
                             </Box>
                         </Box>
                         <Box className="mt-[20px] w-[100%]">
-                            <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">{Email}</Typography>
+                            <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Email</Typography>
                             <FormControl sx={{ width: '100%' }}>
                                 <OutlinedInput
-                                    placeholder={labelEmail}
+                                    placeholder="enter email address"
                                     style={{borderRadius:"8px"}}
                                     inputProps={{ style: {fontSize:"12px",} }}
                                 />
                             </FormControl>
                         </Box>
                         <Box className="mt-[20px]">
-                            <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">{Message}</Typography>
+                            <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Your Message</Typography>
                         <FormControl
                             sx={{width: '100%'}}
                         >
                             <OutlinedInput
-                                placeholder={labelMessage}
+                                placeholder="enter your Message"
                                 style={{width:"100%",height: '70px',borderRadius:"8px", justifyContent:"start",alignContent:"start",alignItems:"start", padding:"0px" }}
                                 inputProps={{ style: {justifyContent:"start",fontSize:"12px", alignItems:"start",paddingTop: '10px',paddingBottom:'0px' } }}
                             />
                         </FormControl>
                         </Box>
                         <Box className="mt-[20px] flex flex-col ">
-                            <Typography className="text-[#2C3238] text-[16px] font-medium">{Optionsheading}</Typography>
+                            <Typography className="text-[#2C3238] text-[16px] font-medium">What are you more interested in:</Typography>
                             <Grid container xs={12} className="mt-[7px] w-[100%]">
                                 {checked.map((_, index) => (
                                     <Grid item xs={6}  key={index}>

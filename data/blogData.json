@@ -1,26 +1,101 @@
 {
   "BlogData": [
     {
-      "categories": "Careers",
-      "title": "How much Does It Cost to Build a FinTech App?",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod adipiscing elit, sed do eiusmod",
+      "categories": "Healthcare & Fitness",
+      "title": "How much does it cost to build a HIPAA-Compliant platform for medical supplies delivery?",
+      "description": "In the current era of global interconnectivity, where healthcare information is increasingly . . .",
       "Date": "12 August 2021",
+      "AuthorName": "Author Name",
       "URL": "/",
       "image": "/Blog1.jpg"
     },
     {
-      "categories": "Careers",
-      "title": "How to Bring Resiliency in Financial Services Business?",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod adipiscing elit, sed do eiusmod",
+      "categories": "IOT Development",
+      "title": "How ChatGPT Integration Helps an Enterprise Business Improve its Operations",
+      "description": "Artificial intelligence has taken business automation to the next level, and OpenAI’s . . .",
       "Date": "12 August 2021",
+      "AuthorName": "Author Name",
+      "URL": "/",
+      "image": "/Blog1.jpg"
+    },
+    {
+      "categories": "Restaurant App Development",
+      "title": "Building a Smart Home Automation App: Opportunities, Challenges, Process, Costs",
+      "description": "With advanced technologies seamlessly integrated into every aspect of daily living, we. . .",
+      "Date": "12 August 2021",
+      "AuthorName": "Author Name",
       "URL": "/",
       "image": "/Blog2.jpg"
     },
     {
-      "categories": "Careers",
-      "title": "How to Bring Resiliency in Financial Services Business?",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod adipiscing elit, sed do eiusmod",
+      "categories": "Fintech",
+      "title": "Building a Smart Home Automation App: Opportunities, Challenges, Process, Costs",
+      "description": "With advanced technologies seamlessly integrated into every aspect of daily living, we. . .",
       "Date": "12 August 2021",
+      "AuthorName": "Author Name",
+      "URL": "/",
+      "image": "/Blog2.jpg"
+    },
+    {
+      "categories": "Data Science & Analytics",
+      "title": "How much does it cost to build a HIPAA-Compliant platform for medical supplies delivery?",
+      "description": "In the current era of global interconnectivity, where healthcare information is increasingly . . .",
+      "Date": "12 August 2021",
+      "AuthorName": "Author Name",
+      "URL": "/",
+      "image": "/Blog2.jpg"
+    },
+    {
+      "categories": "Education",
+      "title": "How much does it cost to build a HIPAA-Compliant platform for medical supplies delivery?",
+      "description": "In the current era of global interconnectivity, where healthcare information is increasingly . . .",
+      "Date": "12 August 2021",
+      "AuthorName": "Author Name",
+      "URL": "/",
+      "image": "/Blog2.jpg"
+    },
+    {
+      "categories": "Cloud Computing",
+      "title": "How much does it cost to build a HIPAA-Compliant platform for medical supplies delivery?",
+      "description": "In the current era of global interconnectivity, where healthcare information is increasingly . . .",
+      "Date": "12 August 2021",
+      "AuthorName": "Author Name",
+      "URL": "/",
+      "image": "/Blog2.jpg"
+    },
+    {
+      "categories": "Android Development",
+      "title": "How much does it cost to build a HIPAA-Compliant platform for medical supplies delivery?",
+      "description": "In the current era of global interconnectivity, where healthcare information is increasingly . . .",
+      "Date": "12 August 2021",
+      "AuthorName": "Author Name",
+      "URL": "/",
+      "image": "/Blog2.jpg"
+    },
+    {
+      "categories": "React Native Development",
+      "title": "How much does it cost to build a HIPAA-Compliant platform for medical supplies delivery?",
+      "description": "In the current era of global interconnectivity, where healthcare information is increasingly . . .",
+      "Date": "12 August 2021",
+      "AuthorName": "Author Name",
+      "URL": "/",
+      "image": "/Blog2.jpg"
+    },
+    {
+      "categories": "AI-ML",
+      "title": "How much does it cost to build a HIPAA-Compliant platform for medical supplies delivery?",
+      "description": "In the current era of global interconnectivity, where healthcare information is increasingly . . .",
+      "Date": "12 August 2021",
+      "AuthorName": "Author Name",
+      "URL": "/",
+      "image": "/Blog1.jpg"
+    },
+    {
+      "categories": "Digital Transformation",
+      "title": "Building a Smart Home Automation App: Opportunities, Challenges, Process, Costs",
+      "description": "With advanced technologies seamlessly integrated into every aspect of daily living, we. . .",
+      "Date": "12 August 2021",
+      "AuthorName": "Author Name",
       "URL": "/",
       "image": "/Blog2.jpg"
     }

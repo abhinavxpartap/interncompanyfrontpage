@@ -13,9 +13,10 @@ export const Blog: React.FC<any> = (props) => {
             <div className="w-[100%] px-[60px] flex flex-col text-start items-center justify-center ">
                 <h1 className="text-[#151448] text-center text-[40px] font-bold mb-[50px]">{title}</h1>
                 <div className="grid grid-cols-3 gap-[30px]">
-                    {BlogData.map((item:any,index:number) => (
+                    {BlogData.slice(0,3).map((item:any,index:number) => (
                             <BlogCards
                                 key={index}
+                                AuthorName={item.AuthorName}
                                 img={item.image}
                                 title={item.title}
                                 description={item.description}

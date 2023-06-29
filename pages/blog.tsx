@@ -29,7 +29,7 @@ const BlogPage: React.FC = () => {
                                 className="absolute top-[11px] right-[11px]  rounded-[5px] px-[10px] xxl:text-[16px] md:text-[13px] leading-[28px] text-[white] font-medium"
                                 style={{ background: '#31D7A9',boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}
                             >
-                                Healthcare & Fitness
+                                Healthcare & Fitnes
                             </div>
                         </div>
                         <div className="w-[48vw] flex flex-col gap-[15px]">

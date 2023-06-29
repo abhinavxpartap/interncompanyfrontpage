@@ -10,5 +10,11 @@
     "description": "Lorem Ipsum Lorem",
     "keywords": "zuca, zuca.com",
     "metaTitle": "Lorem Ipsum Lorem"
+  },
+  "Blog": {
+    "title": "Blogs",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
   }
 }

@@ -3,7 +3,8 @@
   "title": "Web Application Development Services",
   "subtitle": "Helping Businesses build secure and scalable Web Applications, Portals and Solutions",
   "image": "/serviceBanner.jpg",
-  "mobileImage": "/serviceBanner.jpg"
+  "mobileImage": "/serviceBanner.jpg",
+  "buttonName": "Book a free consultation"
  },
 
  "About": {
@@ -192,24 +193,6 @@
     "image": "/kotlin.svg"
    }
   ]
- },
-
- "Quotation": {
-  "title": "Get a Free Quotation",
-  "subtitle": "FREE QUOTATION",
-  "paragraph":"Don't Worry Your Data and Business Ideas Are Safe With Us.",
-  "Form": {
-   "firstName": "First name",
-   "label1": "enter first name",
-   "lastName": "Last name",
-   "label2": "enter last name",
-   "Email": "Email",
-   "labelEmail": "enter email address",
-   "Message": "Your Message",
-   "labelMessage": "enter your Message",
-   "buttonName": "Book my Demo",
-   "Options": "What are you more interested in:"
-  }
  }
 
 }

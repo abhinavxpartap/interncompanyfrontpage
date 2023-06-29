@@ -26,6 +26,7 @@ const ServicePage: React.FC = () => {
                 mobileImage={serviceData.Banner.mobileImage}
                 title={serviceData.Banner.title}
                 subtitle={serviceData.Banner.subtitle}
+                buttonName={serviceData.Banner.buttonName}
                 />
                 <div style={{background:"#F9FBFF"}} >
                 <ServiceAbout
@@ -66,20 +67,7 @@ const ServicePage: React.FC = () => {
                     buttonName={serviceData.Tech.buttonName}
                     />
                     <OurBrands/>
-                    <FreeQuotation
-                    title={serviceData.Quotation.title}
-                    subtitle={serviceData.Quotation.subtitle}
-                    paragraph={serviceData.Quotation.paragraph}
-                    firstName={serviceData.Quotation.Form.firstName}
-                    label1={serviceData.Quotation.Form.label1}
-                    lastName={serviceData.Quotation.Form.lastName}
-                    label2={serviceData.Quotation.Form.label2}
-                    Email={serviceData.Quotation.Form.Email}
-                    labelEmail={serviceData.Quotation.Form.labelEmail}
-                    Message={serviceData.Quotation.Form.Message}
-                    labelMessage={serviceData.Quotation.Form.labelMessage}
-                    Optionsheading={serviceData.Quotation.Form.Options}
-                    />
+                    <FreeQuotation/>
                 </div>
             </div>
         </>

@@ -1,11 +1,30 @@
-import {Box, FormControl, Grid, InputLabel, MenuItem, Select, TextField} from '@mui/material';
+import {
+    Box, Button, Checkbox,
+    FormControl, FormControlLabel,
+    Grid,
+    InputLabel,
+    MenuItem,
+    OutlinedInput,
+    Select,
+    TextField,
+    Typography,
+    InputAdornment,
+} from '@mui/material';
 import type {NextPage} from 'next'
-import React from 'react';
+import React, {useState} from 'react';
 import  { SelectChangeEvent } from '@mui/material/Select';
+import {Img} from "../../utils/Img";
 
 
 const ContactBanner: NextPage = () => {
     const [age, setAge] = React.useState('');
+    const [checked, setChecked] = useState([false, false]);
+    const handleToggle = (index:number) => () => {
+        const newChecked = [...checked];
+        newChecked[index] = !newChecked[index];
+        setChecked(newChecked);
+    };
+    const labelNames = ['Software Development', 'Web Design'];
     const handleChange = (event: SelectChangeEvent) => {
         setAge(event.target.value as string);
     };
@@ -18,6 +37,13 @@ const ContactBanner: NextPage = () => {
     const setParam = (key: string, value: any) => {
         setParams((prev: any) => ({...prev, [key]: value}));
     };
+
+    const Icon = () => {
+        return (
+            <Img src="/addIcon.svg" className="w-[100%]" alt={"Icon"}/>
+        )
+    }
+
     return (
         <div>
             <div
@@ -36,117 +62,136 @@ const ContactBanner: NextPage = () => {
 
                 <div
                     className="bg-white border-2 absolute  right-0 top-[60px] mr-[55px]  rounded-[15px] px-[30px] py-[12px]">
-                    <div className="text-[22px] w-[500px] h-[650px] z-[30] flex flex-col font-semibold">
+                    <div className="text-[22px] w-[400px] h-[650px] z-[30] flex flex-col font-semibold">
                         Build the Next Big Thing
-                        <Grid container className="mt-[10px] " spacing={2}>
-                            <Grid item xs={12} md={6} className="">
-                                <label
-                                    htmlFor="firstname"
-                                    className="text-[#5A7184]  font-medium text-[16px] inline-block"
-                                >
-                                    First Name
-                                </label>
-                                <TextField
-                                    fullWidth
-                                    id="firstname"
-                                    color="primary"
-                                    variant="outlined"
-                                    placeholder="First Name"
-                                    value={params.name}
-                                    style={{ height: '35px', borderRadius: '10px' }}
-
-                                    onChange={(e) => setParam('first_name', e.target.value)}
-                                />
-
-                            </Grid>
-                            <Grid item xs={12} md={6} className=" ">
-                                <label
-                                    htmlFor="number"
-                                    className="text-[#5A7184] font-medium text-[16px]  inline-block"
-                                >
-                                    Phone Number
-                                </label>
-                                <TextField
-                                    fullWidth
-                                    id="number"
-                                    color="primary"
-                                    variant="outlined"
-                                    placeholder="Phone Number "
-                                    value={params.number}
-                                    style={{ height: '35px', borderRadius: '10px' }}
-
-                                    onChange={(e) => setParam('number', e.target.value)}
-                                />
-                            </Grid>
-                            <Grid item xs={12} md={12} className=" ">
-                                <label
-                                    htmlFor="email"
-                                    className="text-[#5A7184] font-medium text-[16px]  inline-block"
-                                >
-                                    Email Address
-                                </label>
-                                <TextField
-                                    fullWidth
-                                    id="email"
-                                    color="primary"
-                                    style={{ height: '35px', borderRadius: '10px' }}
-
-                                    variant="outlined"
-                                    placeholder="Email Address"
-                                    value={params.email}
-                                    onChange={(e) => setParam('email', e.target.value)}
-                                />
-                            </Grid>
-                            <Grid item md={12} xs={12}>
-                                <Box  >
-                                    <label
-                                        htmlFor="Location"
-                                        className="text-[#515151]  font-medium text-[17px]  inline-block"
-                                    >
-                                        <span className=""> Job Type</span>
-                                    </label>
-                                    <FormControl   fullWidth>
-                                        <InputLabel   id="demo-simple-select-label"></InputLabel>
-                                        <Select
-                                            labelId="demo-simple-select-label"
-                                            id="demo-simple-select"
-                                            value={age}
-
-
-                                            className="select-input"
-                                            onChange={handleChange}
-                                        >
-                                            <MenuItem value={10}>Onsite</MenuItem>
-                                            <MenuItem value={20}>Hybrid</MenuItem>
-                                            <MenuItem value={30}>Remote</MenuItem>
-                                        </Select>
+                        <div className="mt-[20px]">
+                            <Box className="w-[100%] flex flex-row justify-between">
+                                <Box className="w-[48%]">
+                                    <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">First name</Typography>
+                                    <FormControl sx={{ width: '100%' }}>
+                                        <OutlinedInput
+                                            placeholder="enter first name"
+                                            style={{borderRadius:"8px"}}
+                                            inputProps={{ style: {fontSize:"12px",} }}
+                                        />
                                     </FormControl>
                                 </Box>
-
-                            </Grid>
-                            <Grid item xs={12} className="">
-                                <label
-                                    htmlFor="message"
-                                    className="text-[#5A7184] font-medium text-[16px] pb-3 inline-block"
-                                >Message
-                                </label>
-                                <TextField
-                                    fullWidth
-                                    placeholder="Type your message..."
-                                    multiline
-                                    rows={4}
-                                    style={{ height: '35px', borderRadius: '10px' }}
-
-                                    id="message"
-                                    color="primary"
-                                    variant="outlined"
-                                    value={params.message}
-                                    onChange={(e) => setParam('message', e.target.value)}
-                                />
-                            </Grid>
-
-
-                        </Grid>
+                                <Box className="w-[48%]">
+                                    <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Last name</Typography>
+                                    <FormControl sx={{ width: '100%'}}>
+                                        <OutlinedInput
+                                            placeholder="enter last name"
+                                            style={{borderRadius:"8px"}}
+                                            inputProps={{ style: {fontSize:"12px",} }}
+                                        />
+                                    </FormControl>
+                                </Box>
+                            </Box>
+                            <Box className="mt-[15px] w-[100%]">
+                                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Email</Typography>
+                                <FormControl sx={{ width: '100%' }}>
+                                    <OutlinedInput
+                                        placeholder="enter email address"
+                                        style={{borderRadius:"8px",color:"#575757"}}
+                                        inputProps={{ style: {fontSize:"12px"} }}
+                                    />
+                                </FormControl>
+                            </Box>
+                            <Box className="mt-[15px] w-[100%]">
+                                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Email</Typography>
+                                <FormControl sx={{minWidth: "100%" }}>
+                                    <Select
+                                        value={age}
+                                        onChange={handleChange}
+                                        displayEmpty
+                                        style={{fontSize:"12px",color:"#545454" ,borderRadius:"8px"}}
+                                        inputProps={{ 'aria-label': 'Without label'}}
+                                    >
+                                        <MenuItem value="">
+                                            None
+                                        </MenuItem>
+                                        <MenuItem value={10}>Ten</MenuItem>
+                                        <MenuItem value={20}>Twenty</MenuItem>
+                                        <MenuItem value={30}>Thirty</MenuItem>
+                                    </Select>
+                                </FormControl>
+                            </Box>
+                            <Box className="mt-[15px]">
+                                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Project Description</Typography>
+                                <FormControl
+                                    sx={{width: '100%'}}
+                                >
+                                    <OutlinedInput
+                                        placeholder="enter your Message"
+                                        style={{width:"100%",height: '80px',borderRadius:"8px", justifyContent:"start",alignContent:"start",alignItems:"start", padding:"0px" }}
+                                        inputProps={{ style: {justifyContent:"start",fontSize:"12px", alignItems:"start",paddingTop: '10px',paddingBottom:'0px' } }}
+                                    />
+                                </FormControl>
+                            </Box>
+                            <Box className="mt-[15px] w-[100%]">
+                                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Attach File</Typography>
+                                <FormControl sx={{ width: '100%' }}>
+                                    <OutlinedInput
+                                        placeholder="attach"
+                                        style={{ borderRadius: "8px" }}
+                                        inputProps={{ style: { fontSize: "12px" } }}
+                                        endAdornment={
+                                            <InputAdornment position="end">
+                                                <Icon/>
+                                            </InputAdornment>
+                                        }
+                                    />
+                                </FormControl>
+                            </Box>
+                            <Box className="mt-[15px] flex flex-col ">
+                                <Typography className="text-[#2C3238] text-[16px] font-medium">What are you more interested in:</Typography>
+                                <Grid container xs={12} className="mt-[7px] w-[100%]">
+                                    {checked.map((_, index) => (
+                                        <Grid item xs={6}  key={index}>
+                                            <FormControlLabel
+                                                key={index}
+                                                control={
+                                                    <Checkbox
+                                                        size="small"
+                                                        checked={checked[index]}
+                                                        onChange={handleToggle(index)}
+                                                    />
+                                                }
+                                                label={
+                                                    <Typography
+                                                        sx={{
+                                                            color: checked[index] ? '#000000' : '#828282',
+                                                        }}
+                                                        className="text-[14px] font-normal ">{labelNames[index]}</Typography>
+                                                }
+                                            />
+                                        </Grid>
+                                    ))}
+                                </Grid>
+                                <div className="mt-[20px]">
+                                    <Button
+                                        className="text-[14px] font-semibold "
+                                        sx={{
+                                            '&.MuiButtonBase-root': {
+                                                backgroundColor: '#177DF0',
+                                                color: 'white',
+                                                textTransform: 'capitalize',
+                                                padding: '8px 24px 8px 24px',
+                                                border: '1px solid #5CA9FF',
+                                                borderRadius:"30px",
+                                                '&:hover': {
+                                                    border: '1px solid #5CA9FF',
+                                                    backgroundColor: 'transparent',
+                                                    color: '#177DF0',
+                                                },
+                                            },
+                                        }}
+                                    >
+                                        Book my Demo
+                                    </Button>
+                                </div>
+                            </Box>
+                        </div>
 
                     </div>
 

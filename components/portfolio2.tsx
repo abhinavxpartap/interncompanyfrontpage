@@ -10,14 +10,19 @@ export const PortfolioBanner2: React.FC<any> = (props) => {
         <div
             className="max-w-[1377.5px] mx-auto flex flex-col   justify-center items-center"
         >
+            <div className=" ">
+                <Img src="/line.svg" alt="n" className="w-[320px] relative top-[285px]      "/>
+
+            </div>
+            <div className=" ">
+                <Img src="/pattern.svg" alt="n" className="w-auto relative top-[155px] left-[180px]      "/>
+
+            </div>
+
             <div>
-                <div className="text-[50px] max-w-[510px] mt-[120px]  eleading-[63px] z-10 font-bold">Crafted With Love.
+                <div className="text-[50px] max-w-[510px] mt-[120px] relative  eleading-[63px] z-1 font-bold">Crafted With Love.
                     Built
                     With Passion
-                </div>
-                <div className=" ">
-                    <Img src="/line.svg" alt="n" className="w-auto      "/>
-
                 </div>
 
             </div>

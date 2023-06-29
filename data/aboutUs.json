@@ -4,5 +4,18 @@
     "subtitle": "Zuca is a technology company that builds conversational infrastructure for brands and entrepreneurs. ",
     "image": "/aboutBanner.svg",
     "mobileImage": "/serviceBanner.jpg"
+  },
+  "Lets": {
+    "title": "Let’s Work Together",
+    "subtitle": "Our industry-leading expertise with custom app development across healthcare, fintech, and ecommerce is why so many innovative companies choose us as their technology partner. ",
+    "image": "/letsbanner.svg",
+    "mobileImage": "/serviceBanner.jpg"
+  },
+  "WhatWe": {
+    "title1": "Build and develop your best business with Zuca",
+    "subtitle1": "Zuca is a technology company that builds conversational infrastructure for brands and entrepreneurs. ",
+    "image": "/aboutBanner.svg",
+    "title2": "Build and develop your best business with Zuca",
+    "subtitle2": "Zuca is a technology company that builds conversational infrastructure for brands and entrepreneurs. "
   }
 }

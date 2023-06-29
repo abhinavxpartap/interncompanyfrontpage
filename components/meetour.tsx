@@ -43,7 +43,7 @@ export const Meetour: React.FC<any> = (props) => {
     const { image, mobileImage, title, subtitle } = props;
 
     const content = (
-        <div className="max-w-[1477.5px] pl-[70px] mx-auto">
+        <div className="max-w-[1477.5px] pb-[100px] pl-[70px] mx-auto">
             <div className="flex md:flex-row justify-between w-auto flex-col">
                 <div>
                     <div className="text-[40px] font-bold">Meet Our Team</div>

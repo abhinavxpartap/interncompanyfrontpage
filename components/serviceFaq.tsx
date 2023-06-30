@@ -17,14 +17,14 @@ export const ServicesFaq: React.FC<any> = (props) => {
 
     const content = <>
         <div
-            className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[80px]  pt-[30px] pb-[30px] md:pb-[80px]"
+            className="max-w-[1377.5px] mx-auto flex items-center justify-between pt-[80px]  pb-[80px]"
         >
-            <div className="w-[100%] px-[40px] flex flex-row justify-between text-start  items-center">
-                <div className="w-[30vw]">
-                    <h1 className="font-bold text-[40px] leading-[48px] text-[#151448]">{title}</h1>
-                    <p className="text-[#333333] mt-[20px] pr-[20px] text-[16px] font-medium">{subtitle}</p>
+            <div className="w-[100%] px-[40px] flex flex-col md:flex-row justify-between text-start  items-center">
+                <div className="w-[85vw] md:w-[55vw] flex flex-col mb-[40px] md:mb-0">
+                    <h1 className="font-bold text-[30px] w-full md:w-[400px] leading-[37px] md:text-[40px] md:leading-[48px] text-[#151448]">{title}</h1>
+                    <p className="text-[#333333] mt-[20px] pr-[20px] w-full md:w-[400px] text-[13px] md:text-[16px] font-medium">{subtitle}</p>
                     <Button
-                        className="text-[16px] mt-[20px] font-semibold "
+                        className="text-[12px] w-[230px] md:w-[290px] md:text-[16px] mt-[20px] font-semibold "
                         sx={{
                             '&.MuiButtonBase-root': {
                                 backgroundColor: '#177DF0',
@@ -45,7 +45,7 @@ export const ServicesFaq: React.FC<any> = (props) => {
 
                     </Button>
                 </div>
-                <div className="w-[55vw] flex flex-col gap-[20px] ">
+                <div className="w-[85vw] md:w-[55vw] flex flex-col gap-[20px] ">
                     {tabsData.map((tab:any) => (
                         <Grid
                             key={tab.id}
@@ -59,7 +59,7 @@ export const ServicesFaq: React.FC<any> = (props) => {
                                     xs
                                     onClick={() => handleTabToggle(tab.id)}
                                     component={Grid}
-                                    className={`text-[15px] font-medium leading-[26px] tracking-[0.5px] p-3 ${
+                                    className={` text-[10px] sm:text-[12px] leading-[15px] md:text-[15px] font-medium md:leading-[26px] tracking-[0.5px] p-3 ${
                                         openTabs.includes(tab.id) ? 'text-[#177DF0]' : 'text-[#000000]'
                                     }`}
                                 >
@@ -67,14 +67,14 @@ export const ServicesFaq: React.FC<any> = (props) => {
                                 </Typography>
                                 <Grid className="p-3">
                                     <IconButton>
-                                        {!openTabs.includes(tab.id) ? (<Img src="/downIcon.svg" className="w-[100%]" alt="icon" />) : (<Img src="/activedropdown.svg" className="w-[100%]" alt="icon" />)}
+                                        {!openTabs.includes(tab.id) ? (<Img src="/downIcon.svg" className="w-[70%] md:w-[100%]" alt="icon" />) : (<Img src="/activedropdown.svg" className="w-[70%] md:w-[100%]" alt="icon" />)}
                                     </IconButton>
                                 </Grid>
                             </Grid>
                             {openTabs.includes(tab.id) && (
                                 <Typography
                                     variant="subtitle1"
-                                    className="text-[14px] font-normal leading-[22px] tracking-[0.5px] pl-3  pb-[20px] text-[#757B8A]"
+                                    className=" text-[10px] leading-[15px] md:text-[14px] font-normal md:leading-[22px] tracking-[0.5px] pl-3  pb-[20px] text-[#757B8A]"
                                 >
                                     {tab.content}
                                 </Typography>

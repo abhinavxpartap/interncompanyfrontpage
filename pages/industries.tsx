@@ -10,7 +10,6 @@ import {IndustriesTechnology} from "../components/industriesTechnology";
 import {ServiceTech} from "../components/servicesTech";
 import {IndustriesEstimation} from "../components/industriesEstimation";
 import {IndustriesFaq} from "../components/industriesFaq";
-import {Blog} from "../components/Blog";
 import {FreeQuotation} from "../components/freeQuotation";
 
 const IndustriesPage: React.FC = () => {
@@ -67,11 +66,6 @@ const IndustriesPage: React.FC = () => {
                     title={industryData.Faq.title}
                     spantitle={industryData.Faq.spantitle}
                     />
-                    <Blog
-                        title={industryData.Blog.title}
-                        BlogData={Blogs.BlogData}
-                    />
-
                     <FreeQuotation/>
                 </div>
             </div>

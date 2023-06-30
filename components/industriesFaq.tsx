@@ -16,15 +16,15 @@ export const IndustriesFaq: React.FC<any> = (props) => {
 
     const content = <>
         <div
-            className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[120px]  pt-[30px] pb-[30px] md:pb-[120px]"
+            className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[120px]  pt-[80px] pb-[80px] md:pb-[120px]"
         >
-            <div className="w-[100%] px-[60px] flex flex-col text-start items-center justify-center ">
-                <h1 className="text-[#151448] text-[40px] pb-[40px] font-bold">{title} <span className="text-[#2C98F0]">{spantitle}</span></h1>
-                <div className="w-[922px] flex flex-col gap-[20px] ">
+            <div className="w-[100%] px-[20px] md:px-[60px] flex flex-col text-start items-center justify-center ">
+                <h1 className="text-[#151448] text-[25px] md:text-[40px] pb-[20px] md:pb-[40px] font-bold">{title} <span className="text-[#2C98F0]">{spantitle}</span></h1>
+                <div className="w-[100%] md:px-0 lg:w-[922px] flex flex-col gap-[20px] ">
                     {tabsData.map((tab:any) => (
                         <Grid
                             key={tab.id}
-                            className="px-[20px]  rounded-[8px]"
+                            className="px-[10px] md:px-[20px]  rounded-[8px]"
                             style={{border:'1.38px solid #DDDDDD'}}
                         >
                             <Grid container alignItems="center">
@@ -34,7 +34,7 @@ export const IndustriesFaq: React.FC<any> = (props) => {
                                     xs
                                     onClick={() => handleTabToggle(tab.id)}
                                     component={Grid}
-                                    className={`text-[18px] font-medium leading-[26px] tracking-[0.5px] p-3 ${
+                                    className={`text-[12px] md:text-[18px] font-medium leading-[16px] md:leading-[26px] tracking-[0.5px] p-3 ${
                                         openTabs.includes(tab.id) ? 'text-[#177DF0]' : 'text-[#333333]'
                                     }`}
                                 >
@@ -44,7 +44,7 @@ export const IndustriesFaq: React.FC<any> = (props) => {
                                     <IconButton
                                         onClick={() => handleTabToggle(tab.id)}
                                     >
-                                        {!openTabs.includes(tab.id) ? (<Img src="/drop.svg" className="w-[100%]" alt="icon" />) : (<Img src="/drop1.svg" className="w-[100%]" alt="icon" />)}
+                                        {!openTabs.includes(tab.id) ? (<Img src="/drop.svg" className="w-[70%] md:w-[100%]" alt="icon" />) : (<Img src="/drop1.svg" className="w-[70%] md:w-[100%]" alt="icon" />)}
                                     </IconButton>
                                 </Grid>
                             </Grid>
@@ -52,13 +52,13 @@ export const IndustriesFaq: React.FC<any> = (props) => {
                                 <>
                                 <Typography
                                     variant="subtitle1"
-                                    className="text-[16px] font-normal leading-[22px] tracking-[0.5px] pl-3  pb-[20px] text-[#4B5A69]"
+                                    className="text-[10px] leading-[14px] md:text-[16px] font-normal md:leading-[22px] tracking-[0.5px] pl-3  pb-[10px] mb:pb-[20px] text-[#4B5A69]"
                                 >
                                     {tab.content}
                                 </Typography>
-                                    <div className="flex flex-col pb-[20px]">
+                                    <div className="flex flex-col pb-[10px] md:pb-[20px]">
                                     {tab.data.map((item:any,index:number) => (
-                                    <ul key={index} className="list-disc pl-7 pb-[8px] text-[#4B5A69] text-[16px] font-normal leading-[22px] tracking-[0.5px]">
+                                    <ul key={index} className="list-disc pl-7 pb-[8px] text-[#4B5A69] text-[10px] leading-[13px] md:text-[16px] font-normal md:leading-[22px] tracking-[0.5px]">
                                         <li>{item.title}</li>
                                     </ul>
                                     ))}

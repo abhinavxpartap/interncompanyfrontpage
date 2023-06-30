@@ -16,18 +16,18 @@ export const FreeQuotation: React.FC<any> = () => {
         >
             <div className="w-[100%] px-[20px] flex flex-row text-start items-center justify-center ">
                 <div className="w-[100%] justify-center items-center flex flex-col">
-                    <div className="w-[380px] flex flex-col justify-center items-center text-center mb-[50px]">
-                        <h1 className="text-[#0092FF] text-[12px] font-medium">
+                    <div className="w-[85vw] md:w-[380px] flex flex-col justify-center items-center text-center pb-[30px] md:mb-[50px]">
+                        <h1 className="text-[#0092FF] text-[9px] md:text-[12px] font-medium">
                             FREE QUOTATION
                         </h1>
-                        <h1 className="text-[#151448] text-[35px] font-semibold">
+                        <h1 className="text-[#151448] text-[25px] md:text-[35px] font-semibold">
                             Get a Free Quotation
                         </h1>
-                        <p className="text-[#444444] text-[19px] font-medium">
+                        <p className="text-[#444444] text-[15px] md:text-[19px] font-medium">
                             Don't Worry Your Data and Business Ideas Are Safe With Us.
                         </p>
                     </div>
-                    <div className="w-[480px] rounded-[10px] py-[30px] px-[20px] bg-[white]" style={{boxShadow: 'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px'}} >
+                    <div className=" w-[85vw] md:w-[480px] rounded-[10px] py-[30px] px-[20px] bg-[white]" style={{boxShadow: 'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px'}} >
                         <Box className="w-[100%] flex flex-row justify-between">
                             <Box className="w-[48%]">
                                 <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">First name</Typography>
@@ -73,7 +73,7 @@ export const FreeQuotation: React.FC<any> = () => {
                         </FormControl>
                         </Box>
                         <Box className="mt-[20px] flex flex-col ">
-                            <Typography className="text-[#2C3238] text-[16px] font-medium">What are you more interested in:</Typography>
+                            <Typography className="text-[#2C3238] text-[12px] md:text-[16px] font-medium">What are you more interested in:</Typography>
                             <Grid container xs={12} className="mt-[7px] w-[100%]">
                                 {checked.map((_, index) => (
                                     <Grid item xs={6}  key={index}>
@@ -91,7 +91,7 @@ export const FreeQuotation: React.FC<any> = () => {
                                                     sx={{
                                                         color: checked[index] ? '#000000' : '#828282',
                                                     }}
-                                                    className="text-[14px] font-normal ">{labelNames[index]}</Typography>
+                                                    className="text-[9px] md:text-[14px] font-normal ">{labelNames[index]}</Typography>
                                             }
                                         />
                                     </Grid>
@@ -99,7 +99,7 @@ export const FreeQuotation: React.FC<any> = () => {
                             </Grid>
                             <div className="mt-[20px]">
                                 <Button
-                                    className="text-[14px] font-semibold "
+                                    className="text-[12px] md:text-[14px] font-semibold "
                                     sx={{
                                         '&.MuiButtonBase-root': {
                                             backgroundColor: '#177DF0',

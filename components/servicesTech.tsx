@@ -8,11 +8,11 @@ export const ServiceTech: React.FC<any> = (props) => {
 
     const content = <>
         <div
-            className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[100px]  pt-[30px] pb-[30px] md:pb-[100px]"
+            className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[100px]  pt-[80px] pb-[80px] md:pb-[100px]"
         >
             <div className="w-[100%] mx-auto flex flex-col text-center items-center justify-center ">
-                <h1 className="text-[#333333] font-bold text-[30px]">{title}</h1>
-                <p className="text-[#333333] font-medium text-[14px] pt-[10px] ">{subtitle}</p>
+                <h1 className="text-[#333333] font-bold text-[22px] md:text-[30px]">{title}</h1>
+                <p className="text-[#333333] font-medium text-[12px] md:text-[14px] pt-[10px] ">{subtitle}</p>
                 <div className="w-[100%] flex items-center justify-center">
                 <div  className="w-[90%] pt-[60px]  justify-between gap-[50px]  grid grid-cols-3 md:grid-cols-6 text-start ">
                     {data.map((item:any,index:any) => (
@@ -22,12 +22,12 @@ export const ServiceTech: React.FC<any> = (props) => {
                     ))}
                 </div>
                 </div>
-                <p className="text-[#333333] font-medium text-[14px] mt-[60px] ">
+                <p className="text-[#333333] font-medium text-[12px] md:text-[14px] mt-[60px] ">
                     Looking for an exact cost and time frame estimate for custom web development services?
                 </p>
                 <div className="mt-[20px]">
                     <Button
-                        className="text-[16px] font-semibold "
+                        className="text-[12px] md:text-[16px] font-semibold "
                         sx={{
                             '&.MuiButtonBase-root': {
                                 backgroundColor: '#177DF0',

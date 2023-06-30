@@ -62,7 +62,7 @@ const images = [
 
 const Testimonials = () => {
   return (
-    <div className="px-[100px] relative flex flex-col items-center py-[40px] mt-[80px] text-center ">
+    <div className="px-[100px] relative flex flex-col items-center py-[40px] mt-[80px] text-center max-w-[1377.5px] mx-auto">
         <div className="text-[#E4F0FF] -z-[1] text-[250px] absolute left-[-550px] font-medium leading-[70%] tracking-[-20px] w-[754px] bottom-[405px] text-right ">
           Testimonials
         </div>

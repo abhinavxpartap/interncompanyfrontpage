@@ -77,7 +77,7 @@ export const Header: React.FC<any> = () => {
   return (
       <>
           <div
-              className={`md:pt-[56px] z-[9] pt-[16px] md:px-[55px] sm:px-[30px] px-[16px] w-full fixed top-0 left-0 right-0 header ${
+              className={`md:pt-[56px] mx-[auto] z-[9] pt-[16px] md:px-[55px] sm:px-[30px] px-[16px] w-full fixed top-0 left-0 right-0 header ${
                   isSticky ? "header-sticky" : ""
               }`}
           >
@@ -85,34 +85,41 @@ export const Header: React.FC<any> = () => {
                   <div className="flex items-center ml-[-18px]">
                       <div onClick={() => router.push("/")} className="cursor-pointer">
                           <Img src={logo || ""} alt="Header Logo"
-                               className="xxl:w-[323px] xl:w-[300px] sm:w-[291.6px] w-[180px] xl:h-[41px] sm:h-[37.67px] h-[27px]"/>
+                               className="xxl:w-[323px] xl:w-[300px] sm:w-[291.6px] max-w-[130px] w-[130px] xl:h-[41px] sm:h-[37.67px] h-[27px]"/>
                       </div>
                       <div className="flex-1 md:pl-[34px] sm:pl-[17px] pl-[5px] hidden lg:flex">
                           <div className="flex relative xxl:gap-[43px] md:gap-[30px]">
                               <Dropdown
-                                  title="Services"
-                                  items={headerData.header[0]}
+                                  title="About"
+                                  items={null}
                                   open={openExplore}
                                   isSticky={isSticky}
                                   setOpen={toggleExplore}
                               />
                               <Dropdown
-                                  title="Company"
+                                  title="Services"
                                   items={headerData.header[1]}
                                   open={openCompany}
                                   isSticky={isSticky}
                                   setOpen={toggleCompany}
                               />
                               <Dropdown
-                                  title="Resources"
+                                  title="Industry"
                                   items={headerData.header[2]}
                                   open={openResources}
                                   isSticky={isSticky}
                                   setOpen={toggleResources}
                               />
                               <Dropdown
-                                  title="Contact"
-                                  items={headerData.header[3]}
+                                  title="Portfolio"
+                                  items={null}
+                                  open={openSupport}
+                                  isSticky={isSticky}
+                                  setOpen={toggleSupport}
+                              />
+                              <Dropdown
+                                  title="Blog"
+                                  items={null}
                                   open={openSupport}
                                   isSticky={isSticky}
                                   setOpen={toggleSupport}
@@ -162,9 +169,9 @@ export const Header: React.FC<any> = () => {
                       </div>
                       <div className="hidden lg:block">
                           <Button
-                              label="Get Quote"
+                              label="Book a Demo"
                               type={buttonType}
-                              className={`xxl:text-[19px] ${buttonType === 'button' ? 'hover:text-primary' : 'text-white'} xxl:leading-[22.99px] font-semibold md:text-[15px] sm:text-[9px] text-[12px] sm:leading-[20.57px] leading-[14px] tracking-[-0.22px] md:w-[145px] w-[100px] xl:h-[44px] md:h-[38px] h-[35px]`}
+                              className={`xxl:text-[19px] ${buttonType === 'button' ? 'hover:text-[#0092FF]' : 'text-white'} hover:bg-[#fff] bg-[#0092FF] text-[#fff] hover:text-[#0092FF] border-[#0092FF] xxl:leading-[22.99px] font-semibold md:text-[15px] sm:text-[9px] text-[12px] sm:leading-[20.57px] leading-[14px] tracking-[-0.22px] md:w-[145px] w-[100px] xl:h-[44px] md:h-[38px] h-[35px]`}
                               onClick={() => router.push("/getStarted")}
                           />
                       </div>
@@ -177,38 +184,45 @@ export const Header: React.FC<any> = () => {
                       <div
                           className={`flex flex-col bg-white w-[100%] h-[100%] p-[20px]  gap-[20px] relative ${!isSticky ? 'rounded' : 'border-b md:px-[55px] sm:px-[30px] px-[16px]'}`}>
                           <Dropdown
-                              title="Services"
-                              items={headerData.header[0]}
-                              open={openExplore}
-                              isSticky={isSticky}
-                              setOpen={toggleExplore}
-                          />
-                          <Dropdown
-                              title="Company"
-                              items={headerData.header[1]}
-                              open={openCompany}
-                              isSticky={isSticky}
-                              setOpen={toggleCompany}
-                          />
-                          <Dropdown
-                              title="Resources"
-                              items={headerData.header[2]}
-                              open={openResources}
-                              isSticky={isSticky}
-                              setOpen={toggleResources}
-                          />
-                          <Dropdown
-                              title="Contact"
-                              items={headerData.header[3]}
-                              open={openSupport}
-                              isSticky={isSticky}
-                              setOpen={toggleSupport}
-                          />
+                                  title="About"
+                                  items={null}
+                                  open={openExplore}
+                                  isSticky={isSticky}
+                                  setOpen={toggleExplore}
+                              />
+                              <Dropdown
+                                  title="Services"
+                                  items={headerData.header[1]}
+                                  open={openCompany}
+                                  isSticky={isSticky}
+                                  setOpen={toggleCompany}
+                              />
+                              <Dropdown
+                                  title="Industry"
+                                  items={headerData.header[2]}
+                                  open={openResources}
+                                  isSticky={isSticky}
+                                  setOpen={toggleResources}
+                              />
+                              <Dropdown
+                                  title="Portfolio"
+                                  items={null}
+                                  open={openSupport}
+                                  isSticky={isSticky}
+                                  setOpen={toggleSupport}
+                              />
+                              <Dropdown
+                                  title="Blog"
+                                  items={null}
+                                  open={openSupport}
+                                  isSticky={isSticky}
+                                  setOpen={toggleSupport}
+                              />
                           <div className="text-center">
                               <Button
-                                  label="Get Quote"
+                                  label="Book a Demo"
                                   type={buttonType}
-                                  className={`xxl:text-[19px] ${buttonType === 'button' ? 'hover:text-primary' : 'text-white'} xxl:leading-[22.99px] font-semibold md:text-[15px] sm:text-[9px] text-[12px] sm:leading-[20.57px] leading-[14px] tracking-[-0.22px] md:w-[145px] w-[100px] xl:h-[44px] md:h-[38px] h-[35px]`}
+                                  className={`xxl:text-[19px] ${buttonType === 'button' ? 'hover:text-[#0092FF]' : 'text-white'} hover:bg-[#fff] bg-[#0092FF] text-[#fff] hover:text-[#0092FF] border-[#0092FF] xxl:leading-[22.99px] font-semibold md:text-[15px] sm:text-[9px] text-[12px] sm:leading-[20.57px] leading-[14px] tracking-[-0.22px] md:w-[145px] w-[100px] xl:h-[44px] md:h-[38px] h-[35px]`}
                                   onClick={() => router.push("/getStarted")}
                               />
                           </div>

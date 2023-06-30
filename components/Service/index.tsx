@@ -3,7 +3,7 @@ import { Button } from '../../utils/Button'
 
 const Service = () => {
   return (
-    <div className="px-[100px] relative flex flex-col items-center py-[40px] mt-[80px] text-center ">
+    <div className="px-[100px] relative flex flex-col items-center py-[40px] mt-[80px] text-center max-w-[1377.5px] mx-auto">
         <div className="text-[#E4F0FF] -z-[1] text-[250px] absolute left-[-205px] font-medium leading-[70%] tracking-[-20px] w-[754px] text-right bottom-[450px]">
           service
         </div>

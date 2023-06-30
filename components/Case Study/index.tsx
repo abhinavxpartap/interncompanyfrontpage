@@ -23,13 +23,25 @@ const caseStudies = [
     imgUrl: "/images/unsplash_05gac-Qn0k4.png",
     org: "Medable",
     description: "Since we started working with Medable in late 2017, they have continued to report stratospheric growth, increasing their presence with the world’s leading healthcare institutions and reaching more than 750,000 patients.",
+  },
+  {
+    heading: "Clinical Trial Management Software",
+    imgUrl: "/images/unsplash_05gac-Qn0k4.png",
+    org: "Medable",
+    description: "Since we started working with Medable in late 2017, they have continued to report stratospheric growth, increasing their presence with the world’s leading healthcare institutions and reaching more than 750,000 patients.",
+  },
+  {
+    heading: "Clinical Trial Management Software",
+    imgUrl: "/images/unsplash_05gac-Qn0k4.png",
+    org: "Medable",
+    description: "Since we started working with Medable in late 2017, they have continued to report stratospheric growth, increasing their presence with the world’s leading healthcare institutions and reaching more than 750,000 patients.",
   }
 ]
 
 const CaseStudy = () => {
   return (
     <div>
-      <div className="mt-[80px] relative px-[100px] pt-[64px] pb-[38px]">
+      <div className="mt-[80px] relative px-[100px] pt-[64px] pb-[38px] max-w-[1377.5px] mx-auto">
         <div className="flex  flex-row">
           <div>
             <Button
@@ -46,11 +58,11 @@ const CaseStudy = () => {
             <div className="bg-[#177DF0] text-[#fff] rounded-[5px] "><ArrowForwardIcon sx={{ height: "50px", width: "50px" }} /></div>
           </div>
         </div>
-        <div className="text-[#E4F0FF] -z-[1] text-[250px] absolute right-[-350px] font-medium leading-[70%] -tracking-[20px] bottom-[3px]">
+        <div className="text-[#E4F0FF] -z-[1] text-[250px] max-w-[1440px] w-[1440px] left-[325px] absolute font-medium leading-[70%] -tracking-[20px] bottom-[3px]">
           case study
         </div>
       </div>
-      <div className='w-full h-full overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth flex flex-row' >
+      <div className='w-full h-full overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth flex flex-row max-w-[1377.5px] mx-auto' >
         {caseStudies.map((caseStudy: any, index: any) => (
           <div key={index} className="max-w-[711px] h-[366px] inline-block rounded-[20px] shadow-[0_1px_5px_0_rgba(0,0,0,0.5)] flex flex-row justify-between px-[23px] py-[20px] m-4">
             <div className="w-[280px] h-[326px] inline-block rounded-[15px]">

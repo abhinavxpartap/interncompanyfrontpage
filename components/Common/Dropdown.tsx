@@ -24,9 +24,9 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
     const color = !["/", "/home", "/partner", "/faq", "/contact", "/ourStory", "/term"].includes(
         router.pathname
     )
-        ? "text-[#101D2C]"
+        ? "text-[white]"
         : isSticky
-            ? "text-[#101D2C]"
+            ? "text-[white]"
             : "text-white";
     const arrowBlack = !["/", "/home", "/partner", "/faq", "/contact", "/ourStory"].includes(router.pathname)
     || !isSticky
@@ -45,10 +45,10 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
                 className={`${color} xxl:text-[17px] sm:text-[16px] text-[12px] md:leading-[27px] sm:leading-[17px] leading-[14px] tracking-[-0.24px] flex cursor-pointer`}
             >
                 <span className="text-[16px] font-medium">{title}</span>
-                <Img src={arrow} alt="Arrow Down"
-                     className={`w-[8px] sm:ml-[7px] transition ${open ? 'rotate-[180deg]' : 'rotate[0]'} dropdown-icon`}/>
+                {items && items.data && items.data.length > 0 && <Img src={arrow} alt="Arrow Down"
+                     className={`w-[8px] sm:ml-[7px] transition ${open ? 'rotate-[180deg]' : 'rotate[0]'} dropdown-icon`}/>}
             </div>
-            <div
+            {items && items.title && <div
                 className={`${open ? 'block' : 'hidden'} bg-white absolute top-[35px] lg:top-[25px] left-[-155px] sm:left-[0] min-w-[300px] lg:min-w-[394px] rounded-[15px] xxl:px-[35] md:px-[20px] px-[2px] xxl:py-[36px] md:py-[22px] py-[8px] dropdown-container z-[99999]`}
             >
                 <div
@@ -56,7 +56,7 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
                 >
                     {items.title}
                 </div>
-                <div
+                {items && items.data && <div
                     className="flex flex-col gap-[4px]"
                 >
                     {
@@ -79,8 +79,8 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
                             </div>
                         })
                     }
-                </div>
-            </div>
+                </div>}
+            </div>}
         </div>
         <div className="dropdown-button relative w-auto h-auto lg:hidden">
             <div className="flex flex-row" onClick={setOpen}>
@@ -91,19 +91,19 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
                 </div>
 
                 <div className="w-[20px] h-[20px] flex items-center justify-center cursor-pointer">
-                    <Img src={arrowBlack} alt="Arrow Down"
-                         className={`w-[12px] mt-[5px] justify-end items-end sm:ml-[7px] transition ${open ? 'rotate-[180deg]' : 'rotate[0]'} dropdown-icon`}/>
+                    {items && items.data && items.data.length > 0 && <Img src={arrowBlack} alt="Arrow Down"
+                         className={`w-[12px] mt-[5px] justify-end items-end sm:ml-[7px] transition ${open ? 'rotate-[180deg]' : 'rotate[0]'} dropdown-icon`}/>}
                 </div>
             </div>
-            <div
+            {items && items.title && <div
                 className={`${open ? 'block' : 'hidden'} bg-white relative w-full lg:my-[10px] rounded-[15px] xxl:px-[50] lg:px-[30px] px-[12px] xxl:py-[44px] lg:py-[30px] dropdown-container z-[99999]`}
             >
-                <div
+                 <div
                     className="text-[13px] leading-[25px] font-medium tracking-[0.8px] text-[#101D2C] mb-[14px] uppercase font-montserrat"
                 >
                     {items.title}
                 </div>
-                <div
+                {items && items.data && <div
                     className="flex flex-col gap-[12px]"
                 >
                     {
@@ -125,8 +125,8 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
                             </div>
                         })
                     }
-                </div>
-            </div>
+                </div>}
+            </div>}
         </div>
     </>
 }

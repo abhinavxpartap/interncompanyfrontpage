@@ -22,11 +22,11 @@ export const Banner = (props: any) => {
     return (
         <div
             style={{ backgroundImage: `url(${image})` }}
-            className="bg-cover bg-center bg-no-repeat relative md:pb-[248px] "
+            className="bg-cover bg-center bg-no-repeat relative md:pb-[248px] mx-[auto]"
         >
             <Header/>
             <div
-                className="max-w-[848px] mx-auto flex flex-col items-center justify-center md:pt-[320px] pt-[117px] pb-[71px] md:px-0 px-[20px]">
+                className="max-w-[1377.5px] mx-[auto] flex flex-col items-center justify-center md:pt-[320px] pt-[117px] pb-[71px] md:px-0 px-[20px]">
                 <h1 className="text-[80px] text-[#FFFFFF] font-bold leading-[90px] md:leading-[90px] md:tracking-[-2.4px] text-center md:pb-[25px] pb-[18px]">
                     {title}
                 </h1>

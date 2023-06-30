@@ -22,16 +22,15 @@ import DemoForm from '../Demo Form';
 const ProductOverview = () => {
   return (
     <div className="mt-[80px]">
-      <div className="h-[544px] bg-[url('/images/bg-blue2.png')] px-[144px] py-[75px]">
-        <div>
+      <div className="h-[544px] bg-[url('/images/bg-blue2.png')] bg-no-repeat bg-cover px-[144px] py-[75px]">
+        <div className="max-w-[1377.5px] mx-auto">
           <Button
             label={"PRODUCT OVERVIEW"}
             type="button"
             // onClick={() => router.push("/getStarted")}
             className="max-w-[150px] px-[10px] py-[4px] bg-[#A1B4F7] text-[white] xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] text-[12px]"
           />
-        </div>
-        <div className="my-[30px] flex flex-row">
+          <div className="my-[30px] flex flex-row">
           <div className='max-w-[336px] inline-block text-[white] text-[60px] leading-[64px] tracking-[-1.8px] font-bold mt-[30px]'>
             Build Exclusively
           </div>
@@ -65,6 +64,9 @@ const ProductOverview = () => {
             </div>
           </div>
         </div>
+        </div>
+        
+
       </div>
       <Team />
       <Service />

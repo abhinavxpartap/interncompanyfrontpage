@@ -62,8 +62,8 @@ export const Header: React.FC<any> = () => {
                 <div className="flex-1">
                     <div className="flex relative justify-center">
                       {
-                        headerData.header.map((item: any)=>(
-                          <div className="dropdown-button">
+                        headerData.header.map((item: any, index: any)=>(
+                          <div key={index} className="dropdown-button">
                             <div
                                 className={`${color} xxl:text-[17px] mr-3.5 sm:text-[16px] text-[12px] md:leading-[27px] sm:leading-[17px] leading-[14px] tracking-[-0.24px] flex cursor-pointer`}
                                 onClick={() => setOpen(!open)}

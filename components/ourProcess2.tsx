@@ -23,7 +23,7 @@ export const OurProcess2: React.FC<any> = (props) => {
     const content = (
         <div className="max-w-[1377.5px] pt-[15px] pb-[40px] relative mx-auto">
             <div className="p-[8px]  mt-[25px] linec bg-[#FF6666]"></div>
-            <div className="flex flex-row gap-[90px]">
+            <div className="flex md:flex-row flex-col gap-[90px]">
                 <div className="px-[40px] mt-[5px] text-[35px] font-bold ">
                     Our Process
                 </div>

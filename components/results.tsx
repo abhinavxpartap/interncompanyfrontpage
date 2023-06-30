@@ -13,7 +13,7 @@ export const Results: React.FC<any> = (props) => {
                 <div className="text-[37px] font-semibold">
                     The Results
                 </div>
-                <div className="flex flex-row md:gap-[60px]">
+                <div className="flex md:flex-row flex-col md:gap-[60px]">
                     <div>
                         <h1 className="text-[37px]  font-semibold text-[#3E98FF]">
                             50K+

@@ -7,6 +7,9 @@ import { Services } from '../components/Services';
 import services from '../data/common/services.json';
 import { OurBrands } from '../components/ourBrands';
 import ProductOverview from '../components/Product Overview';
+import React from "react";
+import {Footer} from "../components/footer";
+
 
 const Home: NextPage = () => {
   return (
@@ -22,7 +25,14 @@ const Home: NextPage = () => {
       <div>
         <OurBrands />
       </div>
-        <ProductOverview /> 
+        <ProductOverview />
+      {/* <Services
+        title={data.serviceData.title}
+        subtitle={data.serviceData.subtitle}
+        description={data.serviceData.description}
+        data={services}
+      /> */}
+        <Footer/>
     </div>
   )
 }

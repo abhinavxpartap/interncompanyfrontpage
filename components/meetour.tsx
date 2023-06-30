@@ -43,9 +43,9 @@ export const Meetour: React.FC<any> = (props) => {
     const { image, mobileImage, title, subtitle } = props;
 
     const content = (
-        <div className="max-w-[1477.5px] pb-[100px] pl-[70px] mx-auto">
+        <div className="max-w-[1477.5px] pb-[100px]  mx-auto">
             <div className="flex md:flex-row justify-between w-auto flex-col">
-                <div>
+                <div className="px-[50px]">
                     <div className="text-[40px] font-bold">Meet Our Team</div>
                     <div className="text-[18px] font-normal text-[#4B5A69] max-w-[495px]">
                         Meet an exceptional team of technology advisors, growth facilitators, and subject matter experts with proven experience
@@ -55,7 +55,7 @@ export const Meetour: React.FC<any> = (props) => {
                     <Img src="/outTeam.svg" alt="" className="w-auto" />
                 </div>
             </div>
-            <div className="grid md:grid-cols-4 grid-cols-2 justify-between">
+            <div className="grid lg:grid-cols-4 ml-[50px] md:grid-cols-3 grid-cols-2 justify-between">
                 {teamMembers.map((member, index) => (
                     <div
                         key={index}

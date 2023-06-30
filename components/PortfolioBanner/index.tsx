@@ -1,22 +1,18 @@
-import type { NextPage } from 'next'
+import type {NextPage} from 'next'
 import {Button} from "@mui/material";
+import React from "react";
 
 
-const PortfolioBanner: NextPage = () => {
+export const PortfolioBanner: React.FC<any> = (props) => {
+    const {title} = props;
     return (
-        <div >
+        <div>
             <div
                 className="w-full pt-[190px] pb-[185px]  relative md:max-w-[1441px] justify-center   h-full gap-[20px] mx-auto flex flex-col  ">
-
                 <div className=" flex justify-center ">
-                    <div className="text-white text-[38px] text-center  max-w-[690px] font-semibold  leading-[50px]" >
-                        Increasing Pizza Hut food delivery app's
-                        conversion rate to 30% through
-                        a transformative UX/UI
+                    <div className="text-white md:text-[38px] text-[28px] text-center  max-w-[690px] font-semibold  md:leading-[50px]">
+                        {title}
                     </div>
-
-
-
                 </div>
                 <div className="flex  justify-center items-center ">
                     <Button
@@ -28,7 +24,7 @@ const PortfolioBanner: NextPage = () => {
                                 textTransform: 'capitalize',
                                 padding: '10px 22px 10px 22px',
                                 border: '1px solid #177DF0',
-                                borderRadius:"30px",
+                                borderRadius: "30px",
                                 '&:hover': {
                                     border: '1px solid #5CA9FF',
                                     backgroundColor: 'transparent',
@@ -37,9 +33,8 @@ const PortfolioBanner: NextPage = () => {
                             },
                         }}
                     >
-                        Expand Your Bussiness                        </Button>
+                        Expand Your Bussiness </Button>
                 </div>
-
 
 
             </div>
@@ -47,4 +42,3 @@ const PortfolioBanner: NextPage = () => {
     )
 }
 
-export default PortfolioBanner;

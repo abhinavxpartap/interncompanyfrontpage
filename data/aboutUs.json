@@ -12,10 +12,32 @@
     "mobileImage": "/serviceBanner.jpg"
   },
   "WhatWe": {
-    "title1": "Build and develop your best business with Zuca",
-    "subtitle1": "Zuca is a technology company that builds conversational infrastructure for brands and entrepreneurs. ",
-    "image": "/aboutBanner.svg",
-    "title2": "Build and develop your best business with Zuca",
-    "subtitle2": "Zuca is a technology company that builds conversational infrastructure for brands and entrepreneurs. "
-  }
+    "title1": "Who We Are?",
+    "subtitle1": "We are believers of change! A change driven by technology and innovation. We help businesses and individuals in adapting as well as adopting digital transformation. Our aim is to change people’s lives and improve businesses with our progressive and innovative technology solutions ",
+    "title2": "What We Do Best?",
+    "subtitle2": "We start by listening to the issues, requirements, challenges and objectives. The process continues with an effort to understand the business, market sector and competitors to develop information which is combined with our technical knowledge, expertise and research in order to provide the best solution at the lowest cost. "
+  },
+    "values": [
+      {
+        "number": "01",
+        "title": "Customer Focus",
+        "subtitle": "We are focused on providing excellent customer service and a great user experience."
+      },
+      {
+        "number": "02",
+        "title": "Ensure impactful innovations",
+        "subtitle": "An unwavering commitment to drive maximum customer satisfaction, infused with integrity and passion."
+      },
+      {
+        "number": "03",
+        "title": "Focus on self-development",
+        "subtitle": "Training and mentorship programs, interactive sessions and community meetups to drive personal growth."
+      },
+      {
+        "number": "04",
+        "title": "Integrate work-life balance",
+        "subtitle": "Latest infrastructure and flexible working hours along with many other privileges that inculcate healthy lifestyle choices."
+      }
+    ]
+
 }

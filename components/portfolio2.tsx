@@ -4,7 +4,7 @@ import {Img} from "../utils/Img";
 
 
 export const PortfolioBanner2: React.FC<any> = (props) => {
-    const {image, mobileImage, title, subtitle} = props;
+    const { title, subtitle,items} = props;
 
     const content = <>
         <div

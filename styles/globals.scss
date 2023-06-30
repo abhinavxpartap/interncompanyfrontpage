@@ -11,7 +11,26 @@
 :before {
     box-sizing: border-box;
 }
+.scrollbar::-webkit-scrollbar {
+    display: none;
+}
 
+.animated-button {
+    position: relative;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 body {
     padding: 0;

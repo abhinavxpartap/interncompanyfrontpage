@@ -198,7 +198,7 @@ export const ContactBanner: React.FC<any> = (props) => {
                                 </Grid>
                                 <div className="mt-[20px]">
                                     <Button
-                                        className="text-[14px] font-semibold "
+                                        className="text-[14px] animated-button font-semibold "
                                         sx={{
                                             '&.MuiButtonBase-root': {
                                                 backgroundColor: '#177DF0',

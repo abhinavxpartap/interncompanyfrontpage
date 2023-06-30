@@ -1,0 +1,23 @@
+{
+    "email": {
+        "api_key": "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",
+        "authorized_sender": "info@alumeltech"
+    },
+    "logos": {
+        "light": "/images/logo.png",
+        "dark": "/images/logo-dark.png"
+    },
+    "logo_dark": "/images/logo.png",
+    "logo_light": "/images/logo-dark.png",
+    "socialMedia": { 
+        "facebook": "https://www.facebook.com/searchmyexpert/",
+        "twitter": "https://twitter.com/searchmyexpert",
+        "instagram": "https://www.instagram.com/searchmyexpert",
+        "linkedin": "https://www.linkedin.com/company/searchmyexpert",
+        "youtube": "https://www.youtube.com/@searchmyexpert"
+    },
+    "integration": {
+        "google": "GTM-NJNKX6F",
+        "facebook": ""
+    }
+}

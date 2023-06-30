@@ -1,0 +1,289 @@
+{
+  "header": [
+    {
+      "title": "About",
+      "data": [
+        {
+          "label": "E-Commerce",
+          "icon": "/images/icons/ecommerce.svg",
+          "href": "https://www.searchmyexpert.com/services/ecommerce"
+        },
+        {
+          "label": "Digital Marketing",
+          "icon": "/images/icons/megaphone.svg",
+          "href": "https://www.searchmyexpert.com/services/digitalMarketing"
+        },
+        {
+          "label": "Web Design",
+          "icon": "/images/icons/internet.svg",
+          "href": "https://www.searchmyexpert.com/services/webDesign"
+        },
+        {
+          "label": "Mobile & App Development",
+          "icon": "/images/icons/app-development.svg",
+          "href": "https://www.searchmyexpert.com/services/mobileAppDevelopment"
+        },
+        {
+          "label": "ERP",
+          "icon": "/images/icons/erp.svg",
+          "href": "https://www.searchmyexpert.com/services/erp"
+        },
+        {
+          "label": "Video Games",
+          "icon": "/images/icons/video-game.svg",
+          "href": "https://www.searchmyexpert.com/services/videoGames"
+        },
+        {
+          "label": "Contact Us",
+          "icon": "/images/icons/envelope.svg",
+          "href": "/contact"
+        }
+      ]
+    },
+    {
+      "title": "Services",
+      "heading": "What We Offer",
+      "data": [
+        {
+          "label": "Home",
+          "href": "https://www.searchmyexpert.com"
+        },
+        {
+          "label": "About Us",
+          "href": "https://www.searchmyexpert.com/ourStory"
+        },
+        {
+          "label": "Our Team",
+          "href": "https://www.searchmyexpert.com"
+        },
+        {
+          "label": "Careers",
+          "href": "https://www.searchmyexpert.com"
+        },
+        {
+          "label": "Contact Us",
+          "href": "https://www.searchmyexpert.com/contact"
+        }
+      ]
+    },
+    {
+      "title": "Industries",
+      "heading": "What We Offer",
+      "data": [
+        {
+          "label": "Terms of Use",
+          "href": "https://www.searchmyexpert.com"
+        },
+        {
+          "label": "Privacy Policy",
+          "href": "https://www.searchmyexpert.com/ourStory"
+        },
+        {
+          "label": "Terms of Services",
+          "href": "https://www.searchmyexpert.com"
+        },
+        {
+          "label": "Cookie Policy",
+          "href": "https://www.searchmyexpert.com"
+        },
+        {
+          "label": "Blogs",
+          "href": "https://www.searchmyexpert.com/contact"
+        }
+      ]
+    },
+    {
+      "title": "Portfolio",
+      "data": [
+        {
+          "label": "Terms of Use",
+          "href": "https://www.searchmyexpert.com"
+        },
+        {
+          "label": "Privacy Policy",
+          "href": "https://www.searchmyexpert.com/ourStory"
+        },
+        {
+          "label": "Terms of Services",
+          "href": "https://www.searchmyexpert.com"
+        },
+        {
+          "label": "Cookie Policy",
+          "href": "https://www.searchmyexpert.com"
+        },
+        {
+          "label": "Blogs",
+          "href": "https://www.searchmyexpert.com/contact"
+        }
+      ]
+    },
+    {
+      "title": "Blog",
+      "data": [
+        {
+          "label": "Terms of Use",
+          "href": "https://www.searchmyexpert.com"
+        },
+        {
+          "label": "Privacy Policy",
+          "href": "https://www.searchmyexpert.com/ourStory"
+        },
+        {
+          "label": "Terms of Services",
+          "href": "https://www.searchmyexpert.com"
+        },
+        {
+          "label": "Cookie Policy",
+          "href": "https://www.searchmyexpert.com"
+        },
+        {
+          "label": "Blogs",
+          "href": "https://www.searchmyexpert.com/contact"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "countries": [
+      {
+        "name": "India",
+        "icon": "/images/countries/india.svg"
+      }
+    ],
+    "links": [
+      {
+        "title": "Company",
+        "links": [
+          {
+            "title": "Home",
+            "href": "https://www.searchmyexpert.com/"
+          },
+          {
+            "title": "About Us",
+            "href": "#a"
+          },
+          {
+            "title": "Our Team",
+            "href": "#a"
+          },
+          {
+            "title": "Careers",
+            "href": "https://recruit.searchmyexpert.com/"
+          },
+          {
+            "title": "Contact Us",
+            "href": "https://www.searchmyexpert.com/contact"
+          }
+        ]
+      },
+      {
+        "title": "For Brands",
+        "links": [
+          {
+            "title": "Login",
+            "href": "#a"
+          },
+          {
+            "title": "SignUp",
+            "href": "#a"
+          },
+          {
+            "title": "FAQ",
+            "href": "#a"
+          },
+          {
+            "title": "How It Works",
+            "href": "#a"
+          },
+          {
+            "title": "Escrow Payments",
+            "url": "#a"
+          }
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          {
+            "title": "Terms of Use",
+            "href": "#a"
+          },
+          {
+            "title": "Privacy Policy",
+            "href": "#a"
+          },
+          {
+            "title": "Terms of Service",
+            "href": "#a"
+          },
+          {
+            "title": "Cookie Policy",
+            "href": "#a"
+          },
+          {
+            "title": "Blogs",
+            "href": "https://blog.searchmyexpert.com"
+          }
+        ]
+      },
+      {
+        "title": "Services",
+        "links": [
+          {
+            "title": "Digital Marketing",
+            "href": "#a"
+          },
+          {
+            "title": "Web Design",
+            "href": "#a"
+          },
+          {
+            "title": "ERP",
+            "href": "#a"
+          },
+          {
+            "title": "Gaming",
+            "href": "#a"
+          },
+          {
+            "title": "E-commerce",
+            "href": "#a"
+          }
+        ]
+      }
+    ],
+    "legal": {
+      "title": "Skillpod Private Limited",
+      "address": "E-66, Second Floor, Guru Nanak Pura, 110018 Delhi",
+      "email": "contact@searchmyexpert.com",
+      "phone": "+91 9999 500 444",
+      "social_media": [
+        {
+          "name": "Facebook",
+          "icon": "/images/social/facebook.svg"
+        },
+        {
+          "name": "Instagram",
+          "icon": "/images/social/instagram.svg"
+        },
+        {
+          "name": "Linkedin",
+          "icon": "/images/social/linkedin.svg"
+        },
+        {
+          "name": "Twitter",
+          "icon": "/images/social/twitter.svg"
+        },
+        {
+          "name": "Youtube",
+          "icon": "/images/social/youtube.svg"
+        },
+        {
+          "name": "Pinterest",
+          "icon": "/images/social/pintrest.svg"
+        }
+      ]
+    },
+    "copyRight": "Copyright © 2023 · Skillpod Private Limited · All Rights Reserved"
+  }
+}

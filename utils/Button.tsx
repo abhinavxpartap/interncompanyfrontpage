@@ -9,7 +9,8 @@ interface ButtonInterface {
     color?: "primary" | "secondary" | "accent"
 }
 
-export const Button: React.FC<ButtonInterface> = ({label, onClick, className, color, type}) => {
+
+export const Button: React.FC<ButtonInterface> = ({ label, onClick, className, color, type }) => {
     return (
         type === "button" ?
             <button

@@ -33,3 +33,30 @@ export interface Portfolio2ItemInterface {
     description:string;
     link:string;
 }
+
+export interface BannerInterface {
+    title: string;
+    subtitle: string;
+    image: string;
+    button: {
+        title: string;
+        link?: string;
+    };
+    ourClients?: OurClientInterface[];
+    awesomeNumbers?: AwesomeNumberInterface[];
+}
+
+export interface OurClientInterface {
+    image: string;
+}
+
+export interface AwesomeNumberInterface {
+    number: string;
+    title: string;
+}
+
+export interface ServiceInterface {
+    image: string;
+    title: string;
+    description: string;
+}

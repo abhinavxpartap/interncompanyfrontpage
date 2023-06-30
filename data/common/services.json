@@ -1,0 +1,38 @@
+[
+  {
+    "title": "E-Commerce",
+    "description": "E-commerce is a growing industry that offers a number of benefits for both consumers and businesses. If you're looking for a convenient, affordable, and efficient way to shop or sell, then e-commerce is the way to go.",
+    "image": "/images/1682717586956-ecommerce.webp",
+    "href": "/services/ecommerce"
+  },
+  {
+    "title": "Digital Marketing",
+    "description": "Digital marketing is a versatile and powerful tool that can help businesses of all sizes achieve their marketing goals. If you're not using digital marketing, you're missing out on a valuable opportunity to reach and engage with your target audience.",
+    "image": "/images/1683898270540-digital-marketing.webp",
+    "href": "/services/digitalMarketing"
+  },
+  {
+    "title": "Web Design",
+    "description": "\nWeb design is the process of creating a website that is visually appealing, easy to use, and relevant to its target audience. A well-designed website can help businesses increase brand awareness, generate leads, and boost sales.",
+    "image": "/images/1682727646655-websites.webp",
+    "href": "/services/webDesign"
+  },
+  {
+    "title": "Mobile & Desktop Apps",
+    "description": "We offer professional assistance in designing, developing, and launching applications for various platforms. These services provide numerous benefits for individuals and businesses looking to create their own apps.",
+    "image": "/images/services/mobile-development.webp",
+    "href": "/services/mobileAppDevelopment"
+  },
+  {
+    "title": "ERP",
+    "description": "Enterprise Resource Planning (ERP) is a software system that integrates core business processes, such as accounting, manufacturing, sales, and human resources. ERP systems can help businesses improve efficieny and make better decisions.",
+    "image": "/images/services/erp.webp",
+    "href": "/services/erp"
+  },
+  {
+    "title": "Video Games",
+    "description": "Game development services can be a valuable asset for businesses and individuals of all sizes. By using the right game development services, you can create a video game that is both fun and engaging.",
+    "image": "/images/services/video-games.webp",
+    "href": "/services/videoGames"
+  }
+]

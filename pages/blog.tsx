@@ -104,7 +104,7 @@ const BlogPage: React.FC = () => {
                                 </div>
                                 <div className="flex justify-center items-center mt-[30px]">
                                     <Button
-                                        className="text-[16px] capitalize font-semibold"
+                                        className="text-[12px] md:text-[16px] capitalize font-semibold"
                                         sx={{
                                             backgroundColor:"transparent",
                                             border:"2px solid #0092FF",

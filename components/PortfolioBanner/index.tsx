@@ -10,7 +10,7 @@ export const PortfolioBanner: React.FC<any> = (props) => {
             <div
                 className="w-full pt-[190px] pb-[185px]  relative md:max-w-[1441px] justify-center   h-full gap-[20px] mx-auto flex flex-col  ">
                 <div className=" flex justify-center ">
-                    <div className="text-white text-[38px] text-center  max-w-[690px] font-semibold  leading-[50px]">
+                    <div className="text-white md:text-[38px] text-[28px] text-center  max-w-[690px] font-semibold  md:leading-[50px]">
                         {title}
                     </div>
                 </div>

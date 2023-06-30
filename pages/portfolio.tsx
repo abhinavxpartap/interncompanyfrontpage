@@ -28,9 +28,6 @@ const Portfolio: NextPage = () => {
             >
                 <PortfolioBanner
                 title={PortData.Banner.title}/>
-
-
-
             </div>
             <AboutPortfolio/>
             <Director
@@ -42,11 +39,15 @@ const Portfolio: NextPage = () => {
                 address={serviceData.Director.address}
                 message={serviceData.Director.message}
                 post={serviceData.Director.post}
-
-
-
             />
-            <Journey/>
+            <Journey
+                title={PortData.Journey.title}
+                subtitle1={PortData.Journey.subtitle1}
+                subtitle2={PortData.Journey.subtitle2}
+            />
+    
+            
+   
             <OurProcess2/>
             <OurProcess/>
             <ProjectChallanges/>

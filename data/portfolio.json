@@ -19,6 +19,12 @@
     "image": "/Testimonial.svg",
     "mobileImage": "/Testimonial.svg"
   },
+  "Journey": {
+    "title": "Zuca’s Development Journey with Pizza Hut:",
+    "subtitle1": "Following a Product Discovery workshop, we invested most of our promised time in product research & wire-framing to lay out the structure & architecture of how Pizza Hut had perceived their new app to look like. Our development team put extensive effort on UI designing that could improve the user's journey across the Pizza Hut app for an easy, speedy and glitch-free food ordering and delivery experience.",
+    "subtitle2": "The pizza hut delivery service app we created assists our client in achieving long-term success along with having regular updates to investigate performance and consistency, resulting in increasing application traffic. Furthermore, our team integrated unique features to automate food ordering & delivery right at the customer's doorstep eliminating unexpected delays."
+
+  },
   "Portfolio": {
     "title": "Web application development process",
     "subtitle": "Our Solution Development Cycle helps turn your great ideas into profitable business solutions.",

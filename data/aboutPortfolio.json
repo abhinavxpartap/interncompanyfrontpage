@@ -1,0 +1,14 @@
+{
+  "title": "About",
+  "subtitle": "One of the most renowned fast-food restaurants globally, Pizza Hut operates under the billion-dollar Americana Group in the UAE.",
+  "content": "As part of our Americana Group project to build 18 mobile apps for 5 of its brands in a single year, we launched 2 Pizza Hut food delivery apps in 4 countries across the MENA region – UAE, Egypt, Bahrain, and KSA. The apps for all locations feature excellent UI/UX that allows users to navigate and order food in a few clicks effortlessly.",
+  "industry": "Restaurant",
+  "businessType": "Enterprise",
+  "services": "Design, Development, Support & Maintenance",
+  "images": [
+    "/m1.svg",
+    "/m2.svg",
+    "/m3.svg",
+    "/m4.svg"
+  ]
+}

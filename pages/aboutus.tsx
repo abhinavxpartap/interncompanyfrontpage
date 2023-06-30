@@ -5,7 +5,6 @@ import {WhatWeAre} from "../components/whatWeAre";
 import {Meetour} from "../components/meetour";
 import {Letswork} from "../components/letswork";
 import {Footer} from "../components/footer";
-import TalkTo from "../components/TalkToExpert";
 import React from "react";
 import aboutUs from "../data/aboutUs.json";
 import QuiltedImageList from '../components/images';

@@ -4,11 +4,11 @@
 
 
     export const ServiceBanner: React.FC<any> = (props) => {
-            const {image, mobileImage,title, subtitle } = props;
+            const {image, mobileImage,title, subtitle,buttonName } = props;
 
         const content = <>
             <div
-                className="max-w-[1377.5px] mx-auto flex flex-col justify-center md:pt-[200px] xl:pt-[233px] xl:pb-[233px] pt-[117px] md:pb-[200px]  sm:px-[70px]  xl:px-[40px] 2xl:px-[20px] px-[16px]"
+                className="max-w-[1377.5px] mx-auto flex flex-col justify-center md:pt-[220px] xl:pt-[233px] xl:pb-[233px] pt-[117px] md:pb-[200px]  sm:px-[70px]  xl:px-[40px] 2xl:px-[20px] px-[16px]"
             >
 
                 <h1 className="text-white font-bold text-[50px] leading-[65px] w-[600px]">
@@ -26,7 +26,7 @@
                                 backgroundColor: '#177DF0',
                                 color: 'white',
                                 textTransform: 'capitalize',
-                                padding: '12px 24px 12px 24px',
+                                padding: '8px 24px 8px 24px',
                                 border: '1px solid #5CA9FF',
                                 borderRadius:"30px",
                                 '&:hover': {
@@ -37,7 +37,7 @@
                             },
                         }}
                     >
-                        Book a free consultation
+                        {buttonName}
                     </Button>
                 </div>
             </div>

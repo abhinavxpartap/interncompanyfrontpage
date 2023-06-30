@@ -1238,6 +1238,29 @@ details[open] .arrow-icon {
     background: linear-gradient(360deg, #FFFFFF 0%, #F5F9FF 100%);
 }
 
-.scrollbar::-webkit-scrollbar {
-  display: none;
+
+.linec{
+  background: rgba(255, 102, 102, 0.50);
+}
+@media (min-width: 267px) and (max-width: 100000px ) {
+  .OurStoryBanner {
+    background-image: url("/contactBanner.svg");
+    background-size: cover;
+
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 267px) and (max-width: 100000px ) {
+  .TalkTo {
+    background-image: url("/talkto.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 267px) and (max-width: 100000px ) {
+  .portfolioBanner {
+    background-image: url("/portfoliobanner.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }

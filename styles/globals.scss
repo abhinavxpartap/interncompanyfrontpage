@@ -1264,3 +1264,7 @@ details[open] .arrow-icon {
     background-repeat: no-repeat;
   }
 }
+
+.scrollbar::-webkit-scrollbar {
+    display: none;
+}

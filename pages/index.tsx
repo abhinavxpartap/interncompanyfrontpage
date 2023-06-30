@@ -23,12 +23,6 @@ const Home: NextPage = () => {
         <OurBrands />
       </div>
         <ProductOverview /> 
-      {/* <Services
-        title={data.serviceData.title}
-        subtitle={data.serviceData.subtitle}
-        description={data.serviceData.description}
-        data={services}
-      /> */}
     </div>
   )
 }

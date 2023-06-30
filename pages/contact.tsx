@@ -3,6 +3,9 @@ import {ContactBanner} from "../components/ContactBanner";
 import { Footer } from '../components/footer';
 import {TalkTo} from "../components/TalkToExpert";
 import ContactData from "../data/contact.json";
+import React from "react";
+import {OurBrands} from "../components/ourBrands";
+
 
 
 const Home: NextPage = () => {
@@ -16,6 +19,8 @@ const Home: NextPage = () => {
                     subtitle={ContactData.Banner.subtitle}/>
 
 
+            </div>
+            <div className="py-[100px]">            <OurBrands/>
             </div>
             <div
                 className="bg-cover TalkTo bg-center bg-no-repeat  relative"

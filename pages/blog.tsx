@@ -15,7 +15,7 @@ const BlogPage: React.FC = () => {
     };
     return (<>
             <Head>
-                <title>{seoData.industries.title}</title>
+                <title>{seoData.Blog.title}</title>
                 <meta name="description" content={seoData.Blog.description}/>
                 <meta name="keywords" content={seoData.Blog.keywords}/>
                 <meta name="title" content={seoData.Blog.metaTitle}/>

@@ -2,14 +2,9 @@ import type { NextPage } from 'next'
 import {AboutUsBanner} from "../components/aboutUsBanner";
 import {OurValue} from "../components/ourValue";
 import {WhatWeAre} from "../components/whatWeAre";
-
 import {Meetour} from "../components/meetour";
 import {Letswork} from "../components/letswork";
 import {Footer} from "../components/footer";
-
-
-
-
 import TalkTo from "../components/TalkToExpert";
 import React from "react";
 import aboutUs from "../data/aboutUs.json";
@@ -27,11 +22,17 @@ const Home: NextPage = () => {
                         title={aboutUs.Banner.title}
                         subtitle={aboutUs.Banner.subtitle}
                     />
-            <WhatWeAre/>
+            <WhatWeAre
+                title1={aboutUs.WhatWe.title1}
+                subtitle1={aboutUs.WhatWe.subtitle2}
+                title2={aboutUs.WhatWe.title2}
+                subtitle2={aboutUs.WhatWe.subtitle2}/>
             <QuiltedImageList/>
 
 
-            <OurValue/>
+            <OurValue
+                items={aboutUs.values}
+               />
             <Meetour/>
             <Letswork
                 image={aboutUs.Lets.image}

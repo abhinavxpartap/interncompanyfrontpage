@@ -49,7 +49,7 @@ const Portfolio: NextPage = () => {
             <OurProcess/>
             <ProjectChallanges/>
             <Results/>
-            <Blog/>
+            {/*<Blog/>*/}
 
 
 

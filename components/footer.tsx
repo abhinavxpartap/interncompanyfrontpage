@@ -16,6 +16,7 @@ type AboutItem = {
 type HelpItem = {
     title: string;
     id: number;
+    link:string;
 };
 
 type SocialIcon = {
@@ -54,7 +55,7 @@ export const Footer: React.FC<any> = (props) => {
     const renderHelp = () => {
         return help.map((item: HelpItem) => (
             <div key={item.id} className="text-[16px] font-normal">
-                <a href="#">{item.title}</a>
+                <a href={item.link}>{item.title}</a>
             </div>
         ));
     };

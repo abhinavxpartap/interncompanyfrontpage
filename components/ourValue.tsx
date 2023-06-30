@@ -1,11 +1,9 @@
 import React from "react";
 import {Button} from "@mui/material";
 import {Img} from "../utils/Img";
-
-
-export const OurValue: React.FC<any> = (props) => {
-    const {image, mobileImage, title, subtitle} = props;
-
+import {OurValues} from "../types";
+export const OurValue: React.FC<OurValues> = (props) => {
+    const {items} = props;
     const content = <>
         <div
             className="max-w-[1377.5px] p-[100px] mx-auto   "
@@ -13,15 +11,14 @@ export const OurValue: React.FC<any> = (props) => {
             <div>
                 <div className="flex gap-[12px]  flex-row">
                     <div className="text-[28px] font-bold text-[#CFD3D7]">
-                        01
+                        {items[0].number}
                     </div>
                     <div>
                         <div className="text-[26px] font-bold ">
-
-                            Customer Focus
+                            {items[0].title}
                         </div>
                         <div className="text-[18px] mt-[8px] font-normal text-[#77808B] max-w-[460px] ">
-                            We are focused on providing excellent customer service and a great user experience.
+                            {items[0].subtitle}
                         </div>
                     </div>
                 </div>
@@ -32,44 +29,49 @@ export const OurValue: React.FC<any> = (props) => {
                     <div className="ml-[90px]">
                         <div className="flex gap-[12px]  flex-row">
                             <div className="text-[28px] font-bold text-[#CFD3D7]">
-                                02
+                                {items[1].number}
                             </div>
                             <div>
                                 <div className="text-[26px] font-bold ">
-
-                                    Ensure impactful innovations                                </div>
+                                    {items[1].title}
+                                </div>
                                 <div className="text-[18px] mt-[8px] font-normal text-[#77808B] max-w-[460px] ">
-                                    An unwavering commitment to drive maximum customer satisfaction, infused with integrity and passion.                                </div>
+                                    {items[1].subtitle}
+                                </div>
                             </div>
                         </div>
                         <div className="flex gap-[12px] mt-[80px]  flex-row">
                             <div className="text-[28px] font-bold text-[#CFD3D7]">
-                                03
+                                {items[2].number}
                             </div>
                             <div>
                                 <div className="text-[26px] font-bold ">
 
-                                    Focus on self-development                                </div>
+                                    {items[2].title}
+                                </div>
                                 <div className="text-[18px] mt-[8px] font-normal text-[#77808B] max-w-[460px] ">
-                                    Training and mentorship programs, interactive sessions and community meetups to drive personal growth.                                </div>
+                                    {items[2].subtitle}
+                                </div>
                             </div>
                         </div>
 
                     </div>
-
 
 
                 </div>
                 <div className="flex gap-[12px] mt-[80px]  flex-row">
                     <div className="text-[28px] font-bold text-[#CFD3D7]">
-                        04
+                        {items[3].number}
                     </div>
                     <div>
                         <div className="text-[26px] font-bold ">
 
-                            Integrate work-life balance                        </div>
+                            {items[3].title}
+                        </div>
                         <div className="text-[18px] mt-[8px] font-normal text-[#77808B] max-w-[460px] ">
-                            Latest infrastructure and flexible working hours along with many other privileges that inculcate healthy lifestyle choices.                        </div>
+                            {items[3].subtitle}
+
+                        </div>
                     </div>
                 </div>
 
@@ -83,7 +85,7 @@ export const OurValue: React.FC<any> = (props) => {
         <>
             <div
                 style={{background: "#F9FBFF"}}
-                className="bg-cover bg-center bg-no-repeat relative  md:block hidden"
+                className="bg-cover bg-center bg-no-repeat relative  "
             >
                 {content}
             </div>

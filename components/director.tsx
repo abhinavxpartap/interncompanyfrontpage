@@ -26,9 +26,36 @@ export const Director: React.FC<any> = (props) => {
 
 
              </div>
-             <div className="max-w-[720px] leading-[30px] text-white text-[18px] font-medium">
-                 "{message}"
+             <div className="flex flex-col">
+                 <div className="max-w-[720px] leading-[30px]  text-white text-[18px] font-medium">
+                     <span className="text-[25px]">"</span>{message}<span className="text-[25px]">"</span>
+
+                 </div>
+                 <div className="mt-[20px]">
+                     <Button
+                         className="text-[14px] font-semibold "
+                         sx={{
+                             '&.MuiButtonBase-root': {
+                                 backgroundColor: '#FFFFFF',
+                                 color: '#EF1C26',
+                                 textTransform: 'capitalize',
+                                 padding: '8px 24px 8px 24px',
+                                 border: '1px solid #FFFFFF',
+                                 borderRadius:"30px",
+                                 '&:hover': {
+                                     border: '1px solid #FFFFFF',
+                                     backgroundColor: 'transparent',
+                                     color: '#FFFFFF',
+                                 },
+                             },
+                         }}
+                     >
+                         Schedule Consultation                     </Button>
+                 </div>
              </div>
+
+
+
          </div>
 
         </div>

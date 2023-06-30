@@ -4,7 +4,7 @@ import {Img} from "../utils/Img";
 
 
 export const WhatWeAre: React.FC<any> = (props) => {
-    const {image, title, subtitle} = props;
+    const {title1, subtitle1, title2, subtitle2} = props;
 
     const content = <>
         <div
@@ -12,22 +12,21 @@ export const WhatWeAre: React.FC<any> = (props) => {
         >
             <div>
                 <div>
-                    <Img src="/aboutus.svg" alt="aboutus" className="w-[600px] -z-0 relative top-[150px] left-[-100px]   top-[80px]"/>
+                    <Img src="/aboutus.svg" alt="aboutus"
+                         className="w-[600px] -z-0 relative top-[150px] left-[-100px]   top-[80px]"/>
                 </div>
                 <div>
-                    <Img src="/Line2.svg" alt="aboutus" className="w-auto -z-0 relative top-[70px] left-[0px]   top-[80px]"/>
+                    <Img src="/Line2.svg" alt="aboutus"
+                         className="w-auto -z-0 relative top-[70px] left-[0px]   top-[80px]"/>
                 </div>
                 <div className="flex md:flex-row justify-between w-full flex-col">
                     <div className="text-[50px] z-0 font-bold">
-                        Who We Are?
-                    </div>
+                        {title1}                    </div>
 
                     <div className="bg-white rounded-[12px]    p-[15px] border-2">
-                        <div className="text-[18px] font-normal text-[#333] max-w-[550px]">We are believers of change! A
-                            change driven by technology and innovation. We help businesses and
-                            individuals in adapting as well as adopting digital transformation. Our aim is to change
-                            people’s lives and improve businesses with our progressive and innovative technology
-                            solutions
+                        <div className="text-[18px] font-normal text-[#333] max-w-[550px]">
+                            {subtitle1}
+
                         </div>
 
 
@@ -35,18 +34,15 @@ export const WhatWeAre: React.FC<any> = (props) => {
 
                 </div>
                 <div>
-                    <Img src="/Line2.svg" alt="aboutus" className="w-auto -z-0 relative top-[105px] left-[10px]   top-[80px]"/>
+                    <Img src="/Line2.svg" alt="aboutus"
+                         className="w-auto -z-0 relative top-[105px] left-[10px]   top-[80px]"/>
                 </div>
                 <div className="flex md:flex-row justify-between mt-[35px] w-full flex-col">
                     <div className="text-[50px] font-bold">
-                        What We Do Best?
-                    </div>
+                        {title2}                    </div>
                     <div className="bg-white rounded-[12px]    p-[15px] border-2">
-                        <div className="text-[18px] font-normal text-[#333] max-w-[550px]">We start by listening to the
-                            issues, requirements, challenges and objectives. The process continues with an effort to
-                            understand the business, market sector and competitors to develop information which is
-                            combined with our technical knowledge, expertise and research in order to provide the best
-                            solution at the lowest cost.
+                        <div className="text-[18px] font-normal text-[#333] max-w-[550px]">
+                            {subtitle2}
                         </div>
 
 

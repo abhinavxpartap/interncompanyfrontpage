@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import ContactBanner from "../components/ContactBanner";
+import { Footer } from '../components/footer';
 import TalkTo from "../components/TalkToExpert";
 
 const Home: NextPage = () => {
@@ -12,11 +13,12 @@ const Home: NextPage = () => {
 
 
             </div>
-            {/*<div*/}
-            {/*    className="bg-cover TalkTo bg-center bg-no-repeat relative"*/}
-            {/*>*/}
-            {/*    <TalkTo/>*/}
-            {/*</div>*/}
+            <div
+                className="bg-cover TalkTo bg-center bg-no-repeat  relative"
+            >
+                <TalkTo/>
+            </div>
+            <Footer/>
         </div>
     )
 }

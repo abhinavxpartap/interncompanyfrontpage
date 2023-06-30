@@ -17,6 +17,7 @@ import {Img} from "../../utils/Img";
 
 
 const ContactBanner: NextPage = () => {
+
     const [age, setAge] = React.useState('');
     const [checked, setChecked] = useState([false, false]);
     const handleToggle = (index:number) => () => {
@@ -52,6 +53,7 @@ const ContactBanner: NextPage = () => {
                 <div className="">
                     <div className="text-white text-[55px] font-bold max-w-[550px] leading-[60px]">
                         Kickstart Your Digital Journey Today
+
 
                     </div>
                     <div className="text-white text-[20px] max-w-[450px] mt-[20px] font-medium">
@@ -98,7 +100,7 @@ const ContactBanner: NextPage = () => {
                                 </FormControl>
                             </Box>
                             <Box className="mt-[15px] w-[100%]">
-                                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Email</Typography>
+                                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Select a budget range</Typography>
                                 <FormControl sx={{minWidth: "100%" }}>
                                     <Select
                                         value={age}
@@ -108,11 +110,11 @@ const ContactBanner: NextPage = () => {
                                         inputProps={{ 'aria-label': 'Without label'}}
                                     >
                                         <MenuItem value="">
-                                            None
+                                            select
                                         </MenuItem>
-                                        <MenuItem value={10}>Ten</MenuItem>
-                                        <MenuItem value={20}>Twenty</MenuItem>
-                                        <MenuItem value={30}>Thirty</MenuItem>
+                                        <MenuItem value="1000">$1000</MenuItem>
+                                        <MenuItem value="2000">$100-$200</MenuItem>
+                                        <MenuItem value="3000">$1000+</MenuItem>
                                     </Select>
                                 </FormControl>
                             </Box>

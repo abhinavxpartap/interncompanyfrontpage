@@ -10,4 +10,26 @@ export interface UserInterface {
     role: string;
     status?: string;
   }
+export interface OurValues {
   
+    items: OurValuesItemInterface[];
+}
+export interface OurValuesItemInterface {
+    number: string;
+    title: string;
+    subtitle: string;
+}
+
+export interface Portfolio2 {
+     title:string;
+     subtitle:string;
+    items: Portfolio2ItemInterface[];
+}
+export interface Portfolio2ItemInterface {
+    sideimage1: string;
+    sideimage2: string;
+    title: string;
+    subtitle: string;
+    description:string;
+    link:string;
+}

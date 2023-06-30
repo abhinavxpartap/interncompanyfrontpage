@@ -22,7 +22,7 @@ const BlogPage: React.FC = () => {
             </Head>
             <div className="main mx-auto" style={{background:"#F9FBFF"}}>
                 <div className="w-[100%] max-w-[1377.5px] mx-auto flex flex-col px-0 md:px-[40px] items-center justify-center" style={{background:"#F9FBFF"}} >
-                    <div className="w-[100%] flex flex-col lg:flex-row items-center py-[100px] gap-[40px]">
+                    <div className="w-[100%] flex flex-col lg:flex-row items-center py-[50px] md:py-[100px] gap-[40px]">
                         <div className="relative w-[90vw] rounded-[10px]  lg:w-[48vw]">
                             <Img src="/BlogImage.svg" className="w-[100%]" alt={"BlogImage"}/>
                             <div
@@ -33,15 +33,15 @@ const BlogPage: React.FC = () => {
                             </div>
                         </div>
                         <div className="w-[90vw] lg:w-[48vw] flex flex-col gap-[15px]">
-                            <h1 className="text-[#151448] leading-[45px] text-[35px] font-semibold">How much does it cost to build a HIPAA-Compliant platform for medical supplies delivery?</h1>
-                            <p className="text-[#444444] text-[16px] font-normal">In the current era of global interconnectivity, where healthcare information is increasingly being shared through digital means, safeguarding patient privacy and upholding data security are . . . . .</p>
-                            <p className="text-[#444444] text-[16px] font-normal">Author Name  20 Jun 2023</p>
+                            <h1 className="text-[#151448] text-[22px] leading-[28px] md:leading-[45px] md:text-[35px] font-semibold">How much does it cost to build a HIPAA-Compliant platform for medical supplies delivery?</h1>
+                            <p className="text-[#444444] text-[14px] md:text-[16px] font-normal">In the current era of global interconnectivity, where healthcare information is increasingly being shared through digital means, safeguarding patient privacy and upholding data security are . . . . .</p>
+                            <p className="text-[#444444] text-[14px] md:text-[16px] font-normal">Author Name  20 Jun 2023</p>
                         </div>
                     </div>
-                    <div> <h1 className="text-center text-[#151448] font-semibold text-[60px] capitalize pb-[30px]">Latest Articles</h1> </div>
+                    <div> <h1 className="text-center text-[#151448] font-semibold text-[40px] md:text-[60px] capitalize pb-[20px] md:pb-[30px]">Latest Articles</h1> </div>
 
                     <div className="w-[100%] px-[20px] md:px-0  flex flex-col lg:flex-row  justify-between">
-                        <div className=" w-[90vw] md:w-[90vw] md:pb-[40px] lg:pb-0 lg:w-[30vw] flex flex-col">
+                        <div className=" w-[90vw] md:w-[90vw] pb-[40px] lg:pb-0 lg:w-[30vw] flex flex-col">
                             <h1 className="text-[#444444] text-[24px] font-normal">Categories</h1>
                             <hr className="border-[1px] w-[97%] mt-[10px] border-[#818181]"/>
                             <div className="flex flex-wrap mt-[25px] gap-[15px]">
@@ -84,38 +84,42 @@ const BlogPage: React.FC = () => {
                              ))}
                         </div>
                     </div>
-                    <div className="flex flex-col py-[50px]">
-                        <h1 className="text-[#151448] text-start mb-[25px] text-[60px] font-semibold">Popular Articles</h1>
-                        <div className="w-[90%] mx-auto md:mx-0 gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                        {Data.BlogData.slice(0, 3).map((item:any, index:number) => (
-                            <BlogCards
-                                key={index}
-                                AuthorName={item.AuthorName}
-                                img={item.image}
-                                title={item.title}
-                                description={item.description}
-                                url={item.URL}
-                                categories={item.categories}
-                                Date={item.Date}
-                            />
-                        ))}
-                        </div>
-                        <div className="flex justify-center items-center mt-[30px]">
-                            <Button
-                                className="text-[16px] capitalize font-semibold"
-                                sx={{
-                                    backgroundColor:"transparent",
-                                    border:"2px solid #0092FF",
-                                    padding:"8px 30px",
-                                    borderRadius:"30px",
-                                    color:"#0092FF",
-                                }}
-                            >
-                                View All Articles
-                                <span className="ml-[10px]">
+                    <div className="max-w-[1377.5px] ">
+                        <div className="w-[100%] flex flex-col px-[20px] md:px-[40px] py-[50px]">
+                            <h1 className="text-[#151448] text-start mb-[25px] pl-[22px] text-[38px] md:text-[60px] font-semibold">Popular Articles</h1>
+                            <div className="w-[100%] mx-auto md:mx-0">
+                                <div className="w-[100%] gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                                    {Data.BlogData.slice(0, 3).map((item:any, index:number) => (
+                                        <BlogCards
+                                            key={index}
+                                            AuthorName={item.AuthorName}
+                                            img={item.image}
+                                            title={item.title}
+                                            description={item.description}
+                                            url={item.URL}
+                                            categories={item.categories}
+                                            Date={item.Date}
+                                        />
+                                    ))}
+                                </div>
+                                <div className="flex justify-center items-center mt-[30px]">
+                                    <Button
+                                        className="text-[16px] capitalize font-semibold"
+                                        sx={{
+                                            backgroundColor:"transparent",
+                                            border:"2px solid #0092FF",
+                                            padding:"8px 30px",
+                                            borderRadius:"30px",
+                                            color:"#0092FF",
+                                        }}
+                                    >
+                                        View All Articles
+                                        <span className="ml-[10px]">
                                     <Img src="/rightArrow.svg" className="w-[80%]" alt={"Icon"}/>
                                 </span>
-                            </Button>
+                                    </Button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

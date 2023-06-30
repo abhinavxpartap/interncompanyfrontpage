@@ -11,6 +11,10 @@ import {ServiceTech} from "../components/servicesTech";
 import {IndustriesEstimation} from "../components/industriesEstimation";
 import {IndustriesFaq} from "../components/industriesFaq";
 import {FreeQuotation} from "../components/freeQuotation";
+import Data from "../data/blogData.json";
+import {BlogCards} from "../components/BlogCard";
+import {Button} from "@mui/material";
+import {Img} from "../utils/Img";
 
 const IndustriesPage: React.FC = () => {
     return (<>
@@ -66,6 +70,27 @@ const IndustriesPage: React.FC = () => {
                     title={industryData.Faq.title}
                     spantitle={industryData.Faq.spantitle}
                     />
+                    <div className="max-w-[1377.5px] mx-auto">
+                        <div className=" w-[100%] flex flex-col px-[20px] md:px-[40px] mb-[30px]">
+                            <h1 className="text-[#151448] text-center mb-[25px]  text-[30px] md:text-[60px] font-semibold">Resources & Articles </h1>
+                            <div className="w-[100%] mx-auto md:mx-0">
+                                <div className="w-[100%] gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                                    {Data.BlogData.slice(0, 3).map((item:any, index:number) => (
+                                        <BlogCards
+                                            key={index}
+                                            AuthorName={item.AuthorName}
+                                            img={item.image}
+                                            title={item.title}
+                                            description={item.description}
+                                            url={item.URL}
+                                            categories={item.categories}
+                                            Date={item.Date}
+                                        />
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <FreeQuotation/>
                 </div>
             </div>

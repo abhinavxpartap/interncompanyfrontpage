@@ -36,7 +36,7 @@ export const ServicesDevelopment: React.FC<any> = (props) => {
                 </div>
                 <div className="flex justify-center items-ceter pt-[30px]">
                     <Button
-                        className="text-[12px] md:text-[16px] font-semibold "
+                        className="ButtonTransition overflow-hidden text-[12px] md:text-[16px] font-semibold "
                         sx={{
                             '&.MuiButtonBase-root': {
                                 backgroundColor: '#177DF0',

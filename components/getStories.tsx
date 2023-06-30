@@ -19,7 +19,7 @@ export const GetStories: React.FC<any> = () => {
                         />
                     </FormControl>
                     <Button
-                        className="text-[14px] w-[130px] font-semibold "
+                        className="ButtonTransition overflow-hidden text-[14px] w-[130px] font-semibold "
                         sx={{
                             '&.MuiButtonBase-root': {
                                 backgroundColor: '#177DF0',

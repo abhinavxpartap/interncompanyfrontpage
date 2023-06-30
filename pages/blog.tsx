@@ -40,7 +40,7 @@ const BlogPage: React.FC = () => {
                     </div>
                     <div> <h1 className="text-center text-[#151448] font-semibold text-[40px] md:text-[60px] capitalize pb-[20px] md:pb-[30px]">Latest Articles</h1> </div>
 
-                    <div className="w-[100%] px-[20px] md:px-0  flex flex-col lg:flex-row  justify-between">
+                    <div className="w-[100%] px-[20px] gap-[20px] md:px-0  flex flex-col lg:flex-row  justify-between">
                         <div className=" w-[90vw] md:w-[90vw] pb-[40px] lg:pb-0 lg:w-[30vw] flex flex-col">
                             <h1 className="text-[#444444] text-[24px] font-normal">Categories</h1>
                             <hr className="border-[1px] w-[97%] mt-[10px] border-[#818181]"/>
@@ -86,7 +86,7 @@ const BlogPage: React.FC = () => {
                     </div>
                     <div className="max-w-[1377.5px] ">
                         <div className="w-[100%] flex flex-col px-[20px] md:px-[40px] py-[50px]">
-                            <h1 className="text-[#151448] text-start mb-[25px] pl-[22px] text-[38px] md:text-[60px] font-semibold">Popular Articles</h1>
+                            <h1 className="text-[#151448] text-start mb-[25px] text-[38px] md:text-[60px] font-semibold">Popular Articles</h1>
                             <div className="w-[100%] mx-auto md:mx-0">
                                 <div className="w-[100%] gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                                     {Data.BlogData.slice(0, 3).map((item:any, index:number) => (
@@ -111,6 +111,32 @@ const BlogPage: React.FC = () => {
                                             padding:"8px 30px",
                                             borderRadius:"30px",
                                             color:"#0092FF",
+                                            position: 'relative',
+                                            overflow: 'hidden',
+                                            '&::before': {
+                                                content: '""',
+                                                position: 'absolute',
+                                                top: 0,
+                                                left: 0,
+                                                width: '100%',
+                                                height: '100%',
+                                                zIndex: 0,
+                                                opacity: 1,
+                                                transform: 'translate(-105%, 0px)',
+                                                backgroundColor: 'rgba(0, 146, 255, 0.1)',
+                                                animation: 'btn-animate 1s infinite ease-in-out',
+                                            },
+                                            '&:hover::before': {
+                                                display: 'none',
+                                            },
+                                            '@keyframes btn-animate': {
+                                                '0%': {
+                                                    transform: 'translate(-105%, 0px)',
+                                                },
+                                                '100%': {
+                                                    transform: 'translate(0, 0)',
+                                                },
+                                            },
                                         }}
                                     >
                                         View All Articles
@@ -122,6 +148,8 @@ const BlogPage: React.FC = () => {
                             </div>
                         </div>
                     </div>
+
+
                 </div>
                 <GetStories/>
             </div>

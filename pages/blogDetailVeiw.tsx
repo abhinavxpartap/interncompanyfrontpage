@@ -214,7 +214,7 @@ const BlogDetailVeiw: React.FC = () => {
                     </div>
                     <div className="max-w-[1377.5px] ">
                         <div className="w-[100%] flex flex-col px-[20px] md:px-[40px] py-[50px]">
-                        <h1 className="text-[#151448] text-start mb-[25px] pl-[22px] text-[38px] md:text-[60px] font-semibold">Read More Blogs</h1>
+                        <h1 className="text-[#151448] text-start mb-[25px]  text-[38px] md:text-[60px] font-semibold">Read More Blogs</h1>
                         <div className="w-[100%] mx-auto md:mx-0">
                             <div className="w-[100%] gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                             {Data.BlogData.slice(0, 3).map((item:any, index:number) => (

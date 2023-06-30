@@ -20,7 +20,7 @@
                 </p>
                 <div className="flex pt-[10px] md:pt-[20px] justify-center items-center md:justify-start">
                     <Button
-                        className="text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
+                        className="ButtonTransition overflow-hidden text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
                         sx={{
                             '&.MuiButtonBase-root': {
                                 backgroundColor: '#177DF0',

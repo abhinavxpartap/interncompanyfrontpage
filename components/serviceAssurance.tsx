@@ -26,7 +26,7 @@ export const ServicesAssurance: React.FC<any> = (props) => {
                     </div>
                     <div className="pt-[20px] lg:pt-[30px]  pl-[40px]">
                         <Button
-                            className="text-[12px]  lg:text-[16px] font-semibold "
+                            className="ButtonTransition overflow-hidden text-[12px]  lg:text-[16px] font-semibold "
                             sx={{
                                 '&.MuiButtonBase-root': {
                                     backgroundColor: '#177DF0',

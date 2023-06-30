@@ -27,7 +27,7 @@ export const ServiceTech: React.FC<any> = (props) => {
                 </p>
                 <div className="mt-[20px]">
                     <Button
-                        className="text-[12px] md:text-[16px] font-semibold "
+                        className="ButtonTransition overflow-hidden text-[12px] md:text-[16px] font-semibold "
                         sx={{
                             '&.MuiButtonBase-root': {
                                 backgroundColor: '#177DF0',

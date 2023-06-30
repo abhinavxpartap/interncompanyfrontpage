@@ -1,7 +1,9 @@
 import type { NextPage } from 'next'
 import {Button} from "@mui/material";
+import React from "react";
 
-const TalkTo: NextPage = () => {
+export const TalkTo: React.FC<any> = (props) => {
+    const {title} = props;   
     return (
         <div >
             <div
@@ -9,8 +11,7 @@ const TalkTo: NextPage = () => {
 
                 <div className="">
                     <div className="text-white text-[50px] font-bold max-w-[620px] leading-[60px]" >
-                        Enable Unmatched Digital Transformation Seamlessly
-                    </div>
+                        {title}                    </div>
 
                 </div>
                 <div className="flex    ">
@@ -40,4 +41,3 @@ const TalkTo: NextPage = () => {
     )
 }
 
-export default TalkTo;

@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import PortfolioBanner from "../components/PortfolioBanner";
+import {PortfolioBanner} from "../components/PortfolioBanner";
 import ProjectChallanges from "../components/ProjectChallanges";
 import {AboutPortfolio} from "../components/aboutPortfolio";
 import {Director} from "../components/director";
@@ -9,6 +9,7 @@ import {OurProcess2} from "../components/ourProcess2";
 
 import {Results} from "../components/results";
 import {Blog} from "../components/blog";
+import PortData from "../data/portfolio.json";
 
 
 
@@ -25,7 +26,8 @@ const Portfolio: NextPage = () => {
             <div
                 className="bg-cover portfolioBanner bg-center bg-no-repeat relative"
             >
-                <PortfolioBanner/>
+                <PortfolioBanner
+                title={PortData.Banner.title}/>
 
 
 

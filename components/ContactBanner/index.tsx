@@ -12,15 +12,17 @@ import {
 } from '@mui/material';
 import type {NextPage} from 'next'
 import React, {useState} from 'react';
-import  { SelectChangeEvent } from '@mui/material/Select';
+import {SelectChangeEvent} from '@mui/material/Select';
 import {Img} from "../../utils/Img";
 
 
-const ContactBanner: NextPage = () => {
+export const ContactBanner: React.FC<any> = (props) => {
+    const {image, mobileImage, title, subtitle, buttonName} = props;
+
 
     const [age, setAge] = React.useState('');
     const [checked, setChecked] = useState([false, false]);
-    const handleToggle = (index:number) => () => {
+    const handleToggle = (index: number) => () => {
         const newChecked = [...checked];
         newChecked[index] = !newChecked[index];
         setChecked(newChecked);
@@ -49,17 +51,13 @@ const ContactBanner: NextPage = () => {
         <div>
             <div
                 className="w-full  relative md:max-w-[1371px] pt-[210px] pb-[270px] sm:pl-[80px]  h-full gap-[80px] mx-auto flex md:flex-row flex-col  ">
-
-                <div className="">
+                <div >
                     <div className="text-white text-[55px] font-bold max-w-[550px] leading-[60px]">
-                        Kickstart Your Digital Journey Today
-
-
+                        {title}
                     </div>
                     <div className="text-white text-[20px] max-w-[450px] mt-[20px] font-medium">
-                        Get all your questions answered by our business development team.
+                        {subtitle}
                     </div>
-
                 </div>
 
                 <div
@@ -69,45 +67,52 @@ const ContactBanner: NextPage = () => {
                         <div className="mt-[20px]">
                             <Box className="w-[100%] flex flex-row justify-between">
                                 <Box className="w-[48%]">
-                                    <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">First name</Typography>
-                                    <FormControl sx={{ width: '100%' }}>
+                                    <Typography
+                                        className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">First
+                                        name</Typography>
+                                    <FormControl sx={{width: '100%'}}>
                                         <OutlinedInput
                                             placeholder="enter first name"
-                                            style={{borderRadius:"8px"}}
-                                            inputProps={{ style: {fontSize:"12px",} }}
+                                            style={{borderRadius: "8px"}}
+                                            inputProps={{style: {fontSize: "12px",}}}
                                         />
                                     </FormControl>
                                 </Box>
                                 <Box className="w-[48%]">
-                                    <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Last name</Typography>
-                                    <FormControl sx={{ width: '100%'}}>
+                                    <Typography
+                                        className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Last
+                                        name</Typography>
+                                    <FormControl sx={{width: '100%'}}>
                                         <OutlinedInput
                                             placeholder="enter last name"
-                                            style={{borderRadius:"8px"}}
-                                            inputProps={{ style: {fontSize:"12px",} }}
+                                            style={{borderRadius: "8px"}}
+                                            inputProps={{style: {fontSize: "12px",}}}
                                         />
                                     </FormControl>
                                 </Box>
                             </Box>
                             <Box className="mt-[15px] w-[100%]">
-                                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Email</Typography>
-                                <FormControl sx={{ width: '100%' }}>
+                                <Typography
+                                    className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Email</Typography>
+                                <FormControl sx={{width: '100%'}}>
                                     <OutlinedInput
                                         placeholder="enter email address"
-                                        style={{borderRadius:"8px",color:"#575757"}}
-                                        inputProps={{ style: {fontSize:"12px"} }}
+                                        style={{borderRadius: "8px", color: "#575757"}}
+                                        inputProps={{style: {fontSize: "12px"}}}
                                     />
                                 </FormControl>
                             </Box>
                             <Box className="mt-[15px] w-[100%]">
-                                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Select a budget range</Typography>
-                                <FormControl sx={{minWidth: "100%" }}>
+                                <Typography
+                                    className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Select
+                                    a budget range</Typography>
+                                <FormControl sx={{minWidth: "100%"}}>
                                     <Select
                                         value={age}
                                         onChange={handleChange}
                                         displayEmpty
-                                        style={{fontSize:"12px",color:"#545454" ,borderRadius:"8px"}}
-                                        inputProps={{ 'aria-label': 'Without label'}}
+                                        style={{fontSize: "12px", color: "#545454", borderRadius: "8px"}}
+                                        inputProps={{'aria-label': 'Without label'}}
                                     >
                                         <MenuItem value="">
                                             select
@@ -119,24 +124,44 @@ const ContactBanner: NextPage = () => {
                                 </FormControl>
                             </Box>
                             <Box className="mt-[15px]">
-                                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Project Description</Typography>
+                                <Typography
+                                    className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Project
+                                    Description</Typography>
                                 <FormControl
                                     sx={{width: '100%'}}
                                 >
                                     <OutlinedInput
                                         placeholder="enter your Message"
-                                        style={{width:"100%",height: '80px',borderRadius:"8px", justifyContent:"start",alignContent:"start",alignItems:"start", padding:"0px" }}
-                                        inputProps={{ style: {justifyContent:"start",fontSize:"12px", alignItems:"start",paddingTop: '10px',paddingBottom:'0px' } }}
+                                        style={{
+                                            width: "100%",
+                                            height: '80px',
+                                            borderRadius: "8px",
+                                            justifyContent: "start",
+                                            alignContent: "start",
+                                            alignItems: "start",
+                                            padding: "0px"
+                                        }}
+                                        inputProps={{
+                                            style: {
+                                                justifyContent: "start",
+                                                fontSize: "12px",
+                                                alignItems: "start",
+                                                paddingTop: '10px',
+                                                paddingBottom: '0px'
+                                            }
+                                        }}
                                     />
                                 </FormControl>
                             </Box>
                             <Box className="mt-[15px] w-[100%]">
-                                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Attach File</Typography>
-                                <FormControl sx={{ width: '100%' }}>
+                                <Typography
+                                    className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">Attach
+                                    File</Typography>
+                                <FormControl sx={{width: '100%'}}>
                                     <OutlinedInput
                                         placeholder="attach"
-                                        style={{ borderRadius: "8px" }}
-                                        inputProps={{ style: { fontSize: "12px" } }}
+                                        style={{borderRadius: "8px"}}
+                                        inputProps={{style: {fontSize: "12px"}}}
                                         endAdornment={
                                             <InputAdornment position="end">
                                                 <Icon/>
@@ -146,10 +171,11 @@ const ContactBanner: NextPage = () => {
                                 </FormControl>
                             </Box>
                             <Box className="mt-[15px] flex flex-col ">
-                                <Typography className="text-[#2C3238] text-[16px] font-medium">What are you more interested in:</Typography>
+                                <Typography className="text-[#2C3238] text-[16px] font-medium">What are you more
+                                    interested in:</Typography>
                                 <Grid container xs={12} className="mt-[7px] w-[100%]">
                                     {checked.map((_, index) => (
-                                        <Grid item xs={6}  key={index}>
+                                        <Grid item xs={6} key={index}>
                                             <FormControlLabel
                                                 key={index}
                                                 control={
@@ -180,7 +206,7 @@ const ContactBanner: NextPage = () => {
                                                 textTransform: 'capitalize',
                                                 padding: '8px 24px 8px 24px',
                                                 border: '1px solid #5CA9FF',
-                                                borderRadius:"30px",
+                                                borderRadius: "30px",
                                                 '&:hover': {
                                                     border: '1px solid #5CA9FF',
                                                     backgroundColor: 'transparent',
@@ -205,4 +231,3 @@ const ContactBanner: NextPage = () => {
     )
 }
 
-export default ContactBanner;

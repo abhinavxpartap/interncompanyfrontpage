@@ -66,7 +66,9 @@ export const ServicesFaq: React.FC<any> = (props) => {
                                   <span>{tab.id}.</span>  {tab.title}
                                 </Typography>
                                 <Grid className="p-3">
-                                    <IconButton>
+                                    <IconButton
+                                        onClick={() => handleTabToggle(tab.id)}
+                                    >
                                         {!openTabs.includes(tab.id) ? (<Img src="/downIcon.svg" className="w-[70%] md:w-[100%]" alt="icon" />) : (<Img src="/activedropdown.svg" className="w-[70%] md:w-[100%]" alt="icon" />)}
                                     </IconButton>
                                 </Grid>

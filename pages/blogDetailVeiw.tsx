@@ -1,5 +1,5 @@
 
-import React,{useState} from "react";
+import React, {useEffect, useState} from "react";
 import Head from "next/head";
 import seoData from "../data/seoData.json";
 import Data from "../data/blogData.json";
@@ -125,12 +125,41 @@ const blogContent = [
 
 
 
+
+
+
 const BlogDetailVeiw: React.FC = () => {
     const [isActive, setIsActive] = useState(0);
 
     const handleClick = (index:number) => {
         setIsActive(index);
     };
+
+
+
+    const useReadingProgress = () => {
+        const [completion, setCompletion] = useState(0);
+
+        useEffect(() => {
+            const updateScrollCompletion = () => {
+                const currentProgress = window.scrollY;
+                const scrollHeight = document.body.scrollHeight - window.innerHeight;
+                if(scrollHeight){
+                    setCompletion(
+                        Number((currentProgress / scrollHeight).toFixed(2)) * 100
+                    );
+                }
+            }
+            window.addEventListener('scroll',updateScrollCompletion);
+        }, [])
+
+        return completion;
+    }
+
+
+    const mycompletion = useReadingProgress();
+        console.log(mycompletion);
+
     return (<>
             <Head>
                 <title>{seoData.Blog.title}</title>
@@ -138,7 +167,11 @@ const BlogDetailVeiw: React.FC = () => {
                 <meta name="keywords" content={seoData.Blog.keywords}/>
                 <meta name="title" content={seoData.Blog.metaTitle}/>
             </Head>
-            <div className="main mx-auto" style={{background:"#F9FBFF"}}>
+            <div className="main mx-auto relative" style={{background:"#F9FBFF"}}>
+                <span
+                    style={{ transform:`translateX(${mycompletion - 100}%)` }}
+                    className="fixed bg-[#0078FF] h-1 w-full top-0 z-[10]"
+                />
                 <div className="w-[100%] max-w-[1377.5px] mx-auto flex flex-col items-center justify-center" style={{background:"#F9FBFF"}} >
                     <div className="w-[100%] flex flex-col items-center">
                         <div className="relative w-[100%]">

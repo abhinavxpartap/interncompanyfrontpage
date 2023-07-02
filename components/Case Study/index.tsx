@@ -29,7 +29,7 @@ const caseStudies = [
 const CaseStudy = () => {
   return (
     <div>
-      <div className="mt-[80px] relative px-[100px] pt-[64px] pb-[38px]">
+      <div className="mt-[80px] max-w-[1440px] mx-auto relative md:px-[100px] pt-[64px] pb-[38px]">
         <div className="flex  flex-row">
           <div>
             <Button

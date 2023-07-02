@@ -29,7 +29,7 @@ const Project: NextPage = () => {
                         </div>
 
 
-                        <div className="flex flex-row">
+                        <div className="flex md:mt-0 mt-[25px] flex-row">
                             <div className="text-[70px] font-semibold items-start justify-start leading-[55px]">2</div>
                             <div className="flex  flex-col ml-[5px]">
                                 <div className="text-[18px] font-medium">

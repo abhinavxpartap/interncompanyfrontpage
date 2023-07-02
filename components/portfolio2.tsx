@@ -4,20 +4,20 @@ import {Img} from "../utils/Img";
 
 
 export const PortfolioBanner2: React.FC<any> = (props) => {
-    const { title, subtitle,items} = props;
+    const {image, mobileImage, title, subtitle} = props;
 
     const content = <>
         <div
             className="max-w-[1377.5px] mx-auto flex flex-col   justify-center items-center"
         >
             <div className=" ">
-                <Img src="/line.svg" alt="n" className="w-[320px] relative top-[285px]      "/>
+                <Img src="/line.svg" alt="n" className="w-[320px] relative top-[255px]      "/>
 
             </div>
-            <div className=" ">
-                <Img src="/pattern.svg" alt="n" className="w-auto relative top-[155px] left-[180px]      "/>
+            {/*<div className=" ">*/}
+            {/*    <Img src="/line.svg" alt="n" className="w-[320px] relative top-[255px]      "/>*/}
 
-            </div>
+            {/*</div>*/}
 
             <div>
                 <div className="text-[50px] max-w-[510px] mt-[120px] relative  eleading-[63px] z-1 font-bold">Crafted With Love.
@@ -36,12 +36,12 @@ export const PortfolioBanner2: React.FC<any> = (props) => {
         <div className="max-w-[1377.5px] mx-auto">
             <div className="flex md:flex-row  flex-col">
                 <div>
-                    <Img src="/portfolio1.svg" alt="n" className="w-auto"/>
+                    <Img src="/portfolio1.svg" alt="n" className="w-auto h-auto"/>
 
                 </div>
                 <div className="flex  flex-col">
                     <div className="relative top-[60px]  left-[-160px]">
-                        <Img src="/phoneportfolio.svg" alt="n" className="w-auto h-[397px]"/>
+                        <Img src="/phoneportfolio.svg" alt="n" className="w-auto h-auto"/>
 
                     </div>
                     <div
@@ -106,7 +106,7 @@ export const PortfolioBanner2: React.FC<any> = (props) => {
                 </div>
                 <div className="flex  flex-col">
                     <div className="relative top-[60px]  left-[-160px]">
-                        <Img src="/phoneportfolio.svg" alt="n" className="w-auto h-[397px]"/>
+                        <Img src="/phoneportfolio.svg" alt="n" className="w-auto "/>
 
                     </div>
                     <div

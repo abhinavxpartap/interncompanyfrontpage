@@ -8,7 +8,7 @@ import {OurProcess} from "../components/ourProcess";
 import {OurProcess2} from "../components/ourProcess2";
 
 import {Results} from "../components/results";
-import {Blog} from "../components/blog";
+// import {Blog} from "../components/blog";
 import PortData from "../data/portfolio.json";
 
 

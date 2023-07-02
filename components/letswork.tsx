@@ -8,11 +8,11 @@ export const Letswork: React.FC<any> = (props) => {
 
     const content = <>
         <div
-            className="w-full pb-[90px]  pt-[100px]  relative md:max-w-[1441px] sm:pl-[80px]  h-full gap-[20px] pr-[40px] mx-auto flex  flex-col  ">
+            className="w-full pb-[90px]  pt-[100px]  relative md:max-w-[1441px] sm:pl-[80px]  h-full gap-[20px] md:pr-[40px] mx-auto flex  flex-col  ">
             <div>
-                <h1 className="text-[40px] font-bold text-white">            {title}
+                <h1 className="md:text-[40px] text-[35px] md:text-start text-center font-bold text-white">            {title}
                 </h1>
-            <p className="text-[22px] mt-[15px] font-medium max-w-[500px] text-white">{subtitle}</p>
+            <p className="md:text-[22px] text-[20px] md:text-start text-center mt-[15px] font-medium max-w-[500px] text-white">{subtitle}</p>
             </div>
 
 

@@ -2,7 +2,7 @@ import { Button } from "../../utils/Button";
 
 const Team = () =>{
 return (
-    <div className="mt-[120px] flex flex-row px-[110px] py-[40px]">
+    <div className="mt-[120px] flex md:flex-row flex-col md:px-[110px] py-[40px]">
         <div className="w-[627px]">
             <img src="/images/unsplash_Of_m3hMsoAA.png" alt="unsplash" />
         </div>

@@ -11,9 +11,9 @@ import {
     IconButton,
     Typography,
     StepIcon,
-    StepIconProps
+    StepIconProps,
+    StepConnector,
 } from '@mui/material';
-import zIndex from "@mui/material/styles/zIndex";
 
 
 const QontoStepIconRoot = styled('div')<{ ownerState: { active?: boolean } }>(
@@ -22,7 +22,7 @@ const QontoStepIconRoot = styled('div')<{ ownerState: { active?: boolean } }>(
         width: 20,
         height: 20,
         borderRadius: '50%',
-        alignItems: 'center',
+        alignItems: 'start',
         border:"none",
         backgroundColor: 'transparent',
         ...(ownerState.active && {
@@ -31,6 +31,7 @@ const QontoStepIconRoot = styled('div')<{ ownerState: { active?: boolean } }>(
             border: 'none',
             zIndex:2,
             overflow: 'hidden',
+            alignItems:"start",
             backgroundImage: `url(/badge.svg)`,
         }),
         '& .QontoStepIcon-completedIcon': {
@@ -51,7 +52,7 @@ const QontoStepIconRoot = styled('div')<{ ownerState: { active?: boolean } }>(
             height: 20,
             borderRadius: '50%',
             backgroundColor: 'rgba(23, 125, 240, 1)',
-        },
+        }
     }),
 );
 
@@ -71,6 +72,15 @@ function QontoStepIcon(props: StepIconProps) {
     );
 }
 
+
+const StyledStepConnector = styled(StepConnector)(({ theme }) => ({
+    marginLeft: '15px', // Adjust the position of the line
+    '& .MuiStepConnector-line': {
+        borderLeftWidth: '2px', // Set the width of the line
+        borderLeftStyle: 'solid',
+        borderColor: theme.palette.grey[500], // Set the color of the line
+    },
+}));
 
 
 export const ServicesFaq: React.FC<any> = (props) => {
@@ -111,12 +121,11 @@ export const ServicesFaq: React.FC<any> = (props) => {
 
                     </Button>
                 </div>
-                <div className="w-[85vw] lg:w-[55vw]  gap-[15px]">
+                <div className="flex flex-row w-[85vw] lg:w-[55vw]">
                     <Stepper activeStep={activeTab-1} orientation="vertical"
                     >
                         {tabsData.map((tab:any,index:number) => (
                             <Step key={tab.id}
-
                             >
                                 <StepLabel StepIconComponent={QontoStepIcon}  >
                                     <Grid
@@ -159,11 +168,12 @@ export const ServicesFaq: React.FC<any> = (props) => {
                                             </Typography>
                                         )}
                                     </Grid>
-
                                 </StepLabel>
                             </Step>
                         ))}
                     </Stepper>
+                    <div className="gap-[15px] flex flex-col">
+                    </div>
                 </div>
             </div>
         </div>

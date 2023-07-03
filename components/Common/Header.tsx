@@ -82,7 +82,7 @@ export const Header: React.FC<any> = () => {
               }`}
           >
               <div className="max-w-[1377.5px] mx-auto">
-                  <div className="flex items-center ml-[-18px]">
+                  <div className="flex flex-row  lg:gap-[70px] xl:gap-[250px] items-center ml-[-18px]">
                       <div onClick={() => router.push("/")} className="cursor-pointer">
                           <Img src={logo || ""} alt="Header Logo"
                                className="xxl:w-[323px] xl:w-[300px] sm:w-[291.6px] max-w-[130px] w-[130px] xl:h-[41px] sm:h-[37.67px] h-[27px]"/>
@@ -94,36 +94,31 @@ export const Header: React.FC<any> = () => {
                                   items={headerData.header[0]}
                                   open={openExplore}
                                   isSticky={isSticky}
-                                  setOpen={toggleExplore}
-                              />
+                                  setOpen={toggleExplore} href={undefined}                              />
                               <Dropdown
                                   title="Services"
                                   items={headerData.header[1]}
                                   open={openCompany}
                                   isSticky={isSticky}
-                                  setOpen={toggleCompany}
-                              />
+                                  setOpen={toggleCompany} href={undefined}                              />
                               <Dropdown
                                   title="Industry"
                                   items={headerData.header[2]}
                                   open={openResources}
                                   isSticky={isSticky}
-                                  setOpen={toggleResources}
-                              />
+                                  setOpen={toggleResources} href={undefined}                              />
                               <Dropdown
                                   title="Portfolio"
                                   items={headerData.header[3]}
                                   open={openSupport}
                                   isSticky={isSticky}
-                                  setOpen={toggleSupport}
-                              />
+                                  setOpen={toggleSupport} href={undefined}                              />
                               <Dropdown
                                   title="Blog"
                                   items={headerData.header[4]}
                                   open={openSupport}
                                   isSticky={isSticky}
-                                  setOpen={toggleSupport}
-                              />
+                                  setOpen={toggleSupport} href={undefined}                              />
                           </div>
                       </div>
                       <div className="lg:hidden flex flex-1 justify-end">
@@ -184,40 +179,35 @@ export const Header: React.FC<any> = () => {
                       <div
                           className={`flex flex-col bg-white w-[100%] h-[100%] p-[20px]  gap-[20px] relative ${!isSticky ? 'rounded' : 'border-b md:px-[55px] sm:px-[30px] px-[16px]'}`}>
                           <Dropdown
-                                  title="About"
-                                  items={null}
-                                  open={openExplore}
-                                  isSticky={isSticky}
-                                  setOpen={toggleExplore}
-                              />
+                              title="About"
+                              items={null}
+                              open={openExplore}
+                              isSticky={isSticky}
+                              setOpen={toggleExplore} href={undefined}                              />
                               <Dropdown
                                   title="Services"
                                   items={headerData.header[1]}
                                   open={openCompany}
                                   isSticky={isSticky}
-                                  setOpen={toggleCompany}
-                              />
+                                  setOpen={toggleCompany} href={undefined}                              />
                               <Dropdown
                                   title="Industry"
                                   items={headerData.header[2]}
                                   open={openResources}
                                   isSticky={isSticky}
-                                  setOpen={toggleResources}
-                              />
+                                  setOpen={toggleResources} href={undefined}                              />
                               <Dropdown
                                   title="Portfolio"
                                   items={null}
                                   open={openSupport}
                                   isSticky={isSticky}
-                                  setOpen={toggleSupport}
-                              />
+                                  setOpen={toggleSupport} href={undefined}                              />
                               <Dropdown
                                   title="Blog"
                                   items={null}
                                   open={openSupport}
                                   isSticky={isSticky}
-                                  setOpen={toggleSupport}
-                              />
+                                  setOpen={toggleSupport} href={undefined}                              />
                           <div className="text-center">
                               <Button
                                   label="Book a Demo"

@@ -1315,5 +1315,64 @@ details[open] .arrow-icon {
   display: none;
 }
 
-
+.moving-item-wrapper {
+    overflow: hidden;
+}
+#moving-item-1 {
+    top: 86%;
+    right: 5%;
+    z-index: 1;
+    animation: linear infinite movingItem1 2s
+}
+#moving-item-1 {
+    top: 10%;
+    right: 13%;
+}
+#moving-item-2 {
+    top: 6%;
+    right: 5%;
+    z-index: 1;
+    animation: linear infinite movingItem1 2s
+}
+#moving-item-2 {
+    top: 2%;
+    right: 7%;
+}
+#moving-item-3 {
+    top: 6%;
+    right: 5%;
+    z-index: 1;
+    animation: linear infinite movingItem1 2s
+}
+#moving-item-3 {
+    top: 2%;
+    right: 87%;
+}
+#moving-item-4 {
+    top: 6%;
+    right: 5%;
+    z-index: 1;
+    animation: linear infinite movingItem1 2s
+}
+#moving-item-4 {
+    top: 9%;
+    right: 77%;
+}
+#moving-item-5 {
+    top: 26%;
+    right: 15%;
+    z-index: 1;
+    animation: linear infinite movingItem1 2s
+}
+#moving-item-5 {
+    top: 5%;
+    right: 22%;
+}
+.moving-item {
+    position: absolute;
+    transition: .2s linear;
+    z-index: -1;
+    width: auto;
+    height: auto;
+}
 

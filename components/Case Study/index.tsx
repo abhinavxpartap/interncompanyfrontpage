@@ -41,7 +41,7 @@ const caseStudies = [
 const CaseStudy = () => {
   return (
     <div>
-      <div className="mt-[80px] relative px-[100px] pt-[64px] pb-[38px] max-w-[1377.5px] mx-auto">
+      <div className="mt-[80px] relative px-[100px] pt-[64px] pb-[38px] max-w-[1377.5px] overflow-hidden mx-auto">
         <div className="flex  flex-row">
           <div>
             <Button
@@ -58,7 +58,7 @@ const CaseStudy = () => {
             <div className="bg-[#177DF0] text-[#fff] rounded-[5px] "><ArrowForwardIcon sx={{ height: "50px", width: "50px" }} /></div>
           </div>
         </div>
-        <div className="text-[#E4F0FF] -z-[1] text-[250px] max-w-[1440px] w-[1440px] left-[325px] absolute font-medium leading-[70%] -tracking-[20px] bottom-[3px]">
+        <div className="text-[#E4F0FF] -z-[1] text-[250px] max-w-[1440px] w-[1440px] left-[730px] absolute font-medium leading-[70%] -tracking-[20px] bottom-[3px]">
           case study
         </div>
       </div>

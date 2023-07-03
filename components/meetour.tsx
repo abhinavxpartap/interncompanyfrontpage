@@ -45,9 +45,9 @@ export const Meetour: React.FC<any> = (props) => {
     const content = (
         <div className="max-w-[1477.5px] pb-[100px]  mx-auto">
             <div className="flex md:flex-row justify-between w-auto flex-col">
-                <div className="px-[50px]">
-                    <div className="text-[40px] font-bold">Meet Our Team</div>
-                    <div className="text-[18px] font-normal text-[#4B5A69] max-w-[495px]">
+                <div className="md:px-[50px]">
+                    <div className="text-[40px] md:text-start text-center font-bold">Meet Our Team</div>
+                    <div className="text-[18px] md:text-start text-center font-normal text-[#4B5A69] max-w-[495px]">
                         Meet an exceptional team of technology advisors, growth facilitators, and subject matter experts with proven experience
                     </div>
                 </div>
@@ -55,14 +55,14 @@ export const Meetour: React.FC<any> = (props) => {
                     <Img src="/outTeam.svg" alt="" className="w-auto" />
                 </div>
             </div>
-            <div className="grid lg:grid-cols-4 ml-[50px] md:grid-cols-3 grid-cols-2 justify-between">
+            <div className="grid lg:grid-cols-4 md:ml-[50px] ml-[10px] sm:grid-cols-3 grid-cols-2   justify-between">
                 {teamMembers.map((member, index) => (
                     <div
                         key={index}
-                        className="bg-white rounded-[10px] mt-[45px] w-[265px] justify-center items-center p-[20px] h-[300px]"
+                        className="bg-white rounded-[10px] mt-[45px] md:w-[265px] w-[170px] justify-center items-center md:p-[20px] md:h-[300px] h-[200px]"
                     >
                         <div>
-                            <Img src={member.imageSrc} alt="" className="w-auto" />
+                            <Img src={member.imageSrc} alt="" className="md:w-auto w-[160px] md:ml-0 ml-[4px]" />
                         </div>
                         <div className="text-center text-[18px] mt-[15px] font-semibold">
                             {member.name}
@@ -78,7 +78,7 @@ export const Meetour: React.FC<any> = (props) => {
 
     return (
         <>
-            <div style={{ background: "#F9FBFF" }} className="bg-cover bg-center bg-no-repeat relative md:block hidden">
+            <div style={{ background: "#F9FBFF" }} className="bg-cover bg-center bg-no-repeat relative ">
                 {content}
             </div>
         </>

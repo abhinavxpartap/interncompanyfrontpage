@@ -50,7 +50,7 @@ export const ContactBanner: React.FC<any> = (props) => {
     return (
         <div>
             <div
-                className="w-full  relative md:max-w-[1371px] md:pt-[210px] pt-[100px] pb-[270px] sm:pl-[80px]  h-full gap-[80px] mx-auto flex md:flex-row flex-col  ">
+                className="w-full  relative md:max-w-[1371px] md:pt-[210px] pt-[100px] pb-[270px] sm:pl-[80px]  h-full gap-[80px] mx-auto flex lg:flex-row flex-col  ">
                 <div >
                     <div className="text-white md:text-[55px] text-[36px] md:text-start text-center font-bold max-w-[550px] md:leading-[60px]">
                         {title}
@@ -61,8 +61,8 @@ export const ContactBanner: React.FC<any> = (props) => {
                 </div>
 
                 <div
-                    className="bg-white border-2 xl:block hidden absolute  right-0 top-[60px] md:mr-[55px]  rounded-[15px] px-[30px] py-[12px]">
-                    <div className="text-[22px] w-[400px] h-[650px] z-[30] flex flex-col font-semibold">
+                    className="bg-white border-2  md:absolute relative  right-0 top-[60px] md:mr-[55px]  rounded-[15px] px-[30px] py-[12px]">
+                    <div className="text-[22px]  z-[30] flex flex-col font-semibold">
                         Build the Next Big Thing
                         <div className="mt-[20px]">
                             <Box className="w-[100%] flex flex-row justify-between">
@@ -190,7 +190,7 @@ export const ContactBanner: React.FC<any> = (props) => {
                                                         sx={{
                                                             color: checked[index] ? '#000000' : '#828282',
                                                         }}
-                                                        className="text-[14px] font-normal ">{labelNames[index]}</Typography>
+                                                        className="text-[12px] font-normal ">{labelNames[index]}</Typography>
                                                 }
                                             />
                                         </Grid>
@@ -217,6 +217,46 @@ export const ContactBanner: React.FC<any> = (props) => {
                                     >
                                         Book my Demo
                                     </Button>
+                                    <div>
+                                        {/*<Button*/}
+                                        {/*    className="text-[16px] bg-[#177DF0] capitalize font-semibold"*/}
+                                        {/*    sx={{*/}
+                                        {/*        border: '2px solid #0092FF',*/}
+                                        {/*        padding: '8px 30px',*/}
+                                        {/*        borderRadius: '30px',*/}
+                                        {/*        color: '#0092FF',*/}
+                                        {/*        position: 'relative',*/}
+                                        {/*        overflow: 'hidden',*/}
+                                        {/*        '&::before': {*/}
+                                        {/*            content: '""',*/}
+                                        {/*            position: 'absolute',*/}
+                                        {/*            top: 0,*/}
+                                        {/*            left: 0,*/}
+                                        {/*            width: '100%',*/}
+                                        {/*            height: '100%',*/}
+                                        {/*            zIndex: 0,*/}
+                                        {/*            opacity: 1,*/}
+                                        {/*            transform: 'translate(-105%, 0px)',*/}
+                                        {/*            backgroundColor: 'rgba(255, 255, 255, 0.2)',*/}
+                                        {/*            animation: 'btn-animate 1s infinite ease-in-out',*/}
+                                        {/*        },*/}
+                                        {/*        '&:hover::before': {*/}
+                                        {/*            animationPlayState: 'paused',*/}
+                                        {/*        },*/}
+                                        {/*        '@keyframes btn-animate': {*/}
+                                        {/*            '0%': {*/}
+                                        {/*                transform: 'translate(-105%, 0px)',*/}
+                                        {/*            },*/}
+                                        {/*            '100%': {*/}
+                                        {/*                transform: 'translate(0, 0)',*/}
+                                        {/*            },*/}
+                                        {/*        },*/}
+                                        {/*    }}*/}
+                                        {/*>*/}
+                                        {/*    View All Articles*/}
+
+                                        {/*</Button>*/}
+                                    </div>
                                 </div>
                             </Box>
                         </div>

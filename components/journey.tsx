@@ -9,9 +9,9 @@ export const Journey: React.FC<any> = (props) => {
         <div
             className="max-w-[1377.5px] px-[40px] py-[70px] mx-auto "
         >
-            <div className="text-[40px] font-semibold">
+            <div className="md:text-[40px] text-[25px] font-semibold">
                 {title}            </div>
-            <div className="text-[18px] leading-[30px]  text-[#757B8A] font-medium">
+            <div className="md:text-[18px] text-[14px] leading-[30px]  text-[#757B8A] font-medium">
                 <p className="my-[15px] ">
                     {subtitle1}
                 </p>

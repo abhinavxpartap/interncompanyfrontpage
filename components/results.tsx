@@ -9,11 +9,11 @@ export const Results: React.FC<any> = (props) => {
 
     const content = (
         <div className="max-w-[1377.5px] relative  mx-auto">
-            <div className="flex py-[50px] px-[50px]  md:gap-[370px] flex-row">
+            <div className="flex py-[50px] md:px-[50px] px-[20px]  md:gap-[370px] md:flex-row flex-col">
                 <div className="text-[37px] font-semibold">
                     The Results
                 </div>
-                <div className="flex md:flex-row flex-col md:gap-[60px]">
+                <div className="flex md:flex-row  md:gap-[60px]">
                     <div>
                         <h1 className="text-[37px]  font-semibold text-[#3E98FF]">
                             50K+

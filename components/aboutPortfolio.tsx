@@ -1,6 +1,6 @@
 import React from "react";
 import { Img } from "../utils/Img";
-import data from "../data/aboutPortfolio.json"; 
+import data from "../data/aboutPortfolio.json";
 
 export const AboutPortfolio: React.FC<any> = () => {
     const { title, subtitle, content, industry, businessType, services, images } = data; // Destructure the data
@@ -26,7 +26,7 @@ export const AboutPortfolio: React.FC<any> = () => {
                                 <h1 className="text-[16px] font-medium text-[#757B8A]">Industry</h1>
                                 <p className="text-[14px] mt-[7px] font-normal text-[#177DF0]">{industry}</p>
                             </div>
-                            <div>
+                            <div className="md:ml-0 ml-[40px]">
                                 <h1 className="text-[16px] font-medium text-[#757B8A]">Business Type</h1>
                                 <p className="text-[14px] mt-[7px] font-normal ">{businessType}</p>
                             </div>
@@ -36,7 +36,7 @@ export const AboutPortfolio: React.FC<any> = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex mt-[40px] justify-between md:flex-row flex-col">
+            <div className="md:flex grid grid-cols-2 mt-[40px] justify-between md:flex-row ">
                 {imageElements}
             </div>
         </div>

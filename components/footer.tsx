@@ -76,7 +76,7 @@ export const Footer: React.FC<any> = (props) => {
                     <p className="max-w-[350px] text-[16px] mt-[12px] font-normal">
                         Full stack mobile (iOS, Android) and web app design and development agency
                     </p>
-                    <div className="flex pt-[20px] justify-center items-center md:justify-start">
+                    <div className="flex pt-[20px] md:block hidden justify-center items-center md:justify-start">
                         <Button
                             className="text-[16px] min-w-[200px] font-semibold "
                             sx={{
@@ -113,7 +113,29 @@ export const Footer: React.FC<any> = (props) => {
                 </div>
                 <div className=" flex flex-col gap-y-[13px]">
                     <div className="text-[18px] font-bold">Follow Us</div>
-                    <div className="flex gap-[20px] flex-row">{renderSocialIcons()}</div>
+                    <div className="flex md:gap-[20px] gap-[7px] flex-row">{renderSocialIcons()}</div>
+                </div>
+                <div className="flex pt-[31px] md:hidden block  justify-center items-center md:justify-start">
+                    <Button
+                        className="text-[12px] min-w-[160px] font-semibold "
+                        sx={{
+                            "&.MuiButtonBase-root": {
+                                backgroundColor: "#177DF0",
+                                color: "white",
+                                textTransform: "capitalize",
+                                padding: "6px 16px 6px 16px",
+                                border: "1px solid #177DF0",
+                                borderRadius: "30px",
+                                "&:hover": {
+                                    border: "1px solid #5CA9FF",
+                                    backgroundColor: "transparent",
+                                    color: "#177DF0",
+                                },
+                            },
+                        }}
+                    >
+                        <a href="#">Book Consultation</a>
+                    </Button>
                 </div>
             </div>
             <div className="flex border-t-2 pt-[10px]  text-[14px] font-normal text-[#2A2C33] justify-center items-center">

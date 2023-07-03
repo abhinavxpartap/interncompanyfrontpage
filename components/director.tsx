@@ -11,10 +11,10 @@ export const Director: React.FC<any> = (props) => {
             className="max-w-[1377.5px] mx-auto flex flex-col justify-center md:pt-[150px] xl:pt-[130px] xl:pb-[114px] pt-[117px] md:pb-[200px]  sm:px-[70px]  xl:px-[40px] 2xl:px-[20px] px-[16px]"
         >
 
-         <div className="flex md:flex-row ml-[80px] md:gap-[90px]    text-center flex-col">
+         <div className="flex md:flex-row md:ml-[80px] md:gap-[90px] md:justify-normal items-center justify-center   text-center flex-col">
              <div>
-                 <div className="rounded-full ml-[44px]">
-                     <Img src={icon} alt="w" className="w-[140px] rouded-full"/>
+                 <div className=" md:ml-[44px] w-[140px] rounded-full ">
+                     <Img src={icon} alt="w" className="w-[140px] rounded-full"/>
 
                  </div>
                  <div className="text-[20px] font-bold text-white">
@@ -27,7 +27,7 @@ export const Director: React.FC<any> = (props) => {
 
              </div>
              <div className="flex flex-col">
-                 <div className="max-w-[720px] leading-[30px]  text-white text-[18px] font-medium">
+                 <div className="max-w-[720px] leading-[30px]  text-white md:text-[18px] text-[15px] font-medium">
                      <span className="text-[25px]">"</span>{message}<span className="text-[25px]">"</span>
 
                  </div>
@@ -64,13 +64,13 @@ export const Director: React.FC<any> = (props) => {
         <>
             <div
                 style={{backgroundImage: `url(${image})`}}
-                className="bg-cover bg-center bg-no-repeat relative  md:block hidden"
+                className="bg-cover bg-center bg-no-repeat relative   md:block hidden"
             >
                 {content}
             </div>
             <div
                 style={{backgroundImage: `url(${mobileImage})`}}
-                className="bg-cover bg-center bg-no-repeat relative md:pb-[248px] md:hidden block"
+                className="bg-cover bg-center bg-no-repeat relative md:pb-[248px] pb-[100px] md:hidden block"
             >
                 {content}
             </div>

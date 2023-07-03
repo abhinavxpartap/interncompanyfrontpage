@@ -1,9 +1,28 @@
 import React from 'react'
 import {Button} from '../../utils/Button'
+import { Img } from '../../utils/Img'
+
+const services = [
+    {
+        icon: "/images/wifi-blue.svg",
+        title: "Strategy & Research",
+        description: "layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam."
+    },
+    {
+        icon: "/images/wifi-green.svg",
+        title: "Software Development",
+        description: "layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam."
+    },
+    {
+        icon: "/images/wifi-orange.svg",
+        title: "Web Design",
+        description: "layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam."
+    }
+]
 
 const Service = () => {
   return (
-    <div className="px-[100px] relative flex flex-col items-center py-[40px] mt-[80px] text-center max-w-[1377.5px] overflow-hidden mx-auto">
+    <div className="px-[100px] relative flex flex-col items-center py-[40px] mt-[80px] text-center max-w-[1377.5px] overflow-hidden h-auto mx-auto">
         <div className="text-[#E4F0FF] -z-[1] text-[250px] absolute left-[-205px] font-medium leading-[70%] tracking-[-20px] w-[754px] text-right bottom-[450px]">
           service
             </div>
@@ -19,39 +38,17 @@ const Service = () => {
             <div className="text-[#747C85] text-[18px] mt-[13px] font-medium w-[612px] leading-[170%]">Fusce placerat
                 pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat.
             </div>
-            <div className='w-[100%] mt-[60px] flex md:flex-row flex-col justify-between'>
-                <div className="p-[30px] w-[366px] flex flex-col rounded-[10px] shadow-[0_4px_20px_0_rgba(0,0,0,0.7)]">
-                    <img src={"/images/wifi-blue.svg"} alt="options" height="60px" width="60px"/>
-                    <div
-                        className="text-[20px] font-semibold text-left leading-[26px] text-[#042552] mt-[15px]">Strategy
-                        & Research
+            <div className='pt-[60px] gap-[20px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-start '>
+                {
+                    services.map((service: any, index: any)=>{
+                        return (<div key={index} className="bg-[#ffffff] w-[275px] lg:w-[230px] xl:w-[275px] px-[20px] py-[20px] rounded-[10px]" style={{boxShadow: 'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px'}}>
+                        <Img src={service.icon} className="w-[45px]" alt={"Icon"}/>
+                        <h1 className="text-[20px] lg:text-[15px] xl:text-[20px] pt-[15px] font-semibold text-[#042552]">{service.title}</h1>
+                        <p className=" pr-[10px] pt-[5px] text-[#757B8A] text-[16px] lg:text-[12px] xl:text-[16px] font-normal">{service.description}</p>
                     </div>
-                    <div className="text-[16px] font-semibold text-left leading-[26px] text-[#042552] mt-[15px]">Fully
-                        layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores
-                        officiis laboriosam.
-                    </div>
-                </div>
-                <div className="p-[30px] w-[366px] flex flex-col rounded-[10px] shadow-[0_4px_20px_0_rgba(0,0,0,0.7)]">
-                    <img src={"/images/wifi-green.svg"} alt="options" height="60px" width="60px"/>
-                    <div
-                        className="text-[20px] font-semibold text-left leading-[26px] text-[#042552] mt-[15px]">Software
-                        Development
-                    </div>
-                    <div className="text-[16px] font-semibold text-left leading-[26px] text-[#042552] mt-[15px]">Fully
-                        layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores
-                        officiis laboriosam.
-                    </div>
-                </div>
-                <div className="p-[30px] w-[366px] flex flex-col rounded-[10px] shadow-[0_4px_20px_0_rgba(0,0,0,0.7)]">
-                    <img src={"/images/wifi-orange.svg"} alt="options" height="60px" width="60px"/>
-                    <div className="text-[20px] font-semibold text-left leading-[26px] text-[#042552] mt-[15px]">Web
-                        Design
-                    </div>
-                    <div className="text-[16px] font-semibold text-left leading-[26px] text-[#042552] mt-[15px]">Fully
-                        layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores
-                        officiis laboriosam.
-                    </div>
-                </div>
+                        );
+                    })
+                }
             </div>
         </div>
     )

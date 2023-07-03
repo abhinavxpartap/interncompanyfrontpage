@@ -2,12 +2,18 @@ import {Button} from "@mui/material";
 import {Img} from "../../utils/Img";
 import React from "react";
 
+const imageList = [
+    "/images/unsplash_Of_m3hMsoAA.png"
+]
+
 const Team = () =>{
 return (
     <div className="mt-[120px] px-[15px] md:px-[25px] lg:px-[40px] py-[40px] max-w-[1377.5px] mx-auto">
         <div className="w-[100%] h-full flex flex-col lg:flex-row lg:gap-[60px] xl:gap-[80px] items-start">
-        <div className="w-[90vw] lg:w-[48vw] relative rounded-[10px]">
-            <Img src="/images/unsplash_Of_m3hMsoAA.png" className="w-[100%]" alt="unsplash" />
+        {imageList.map((image:string, index: any)=>{ 
+            return (
+                <div key={index} className="w-[90vw] lg:w-[48vw] relative rounded-[10px]">
+            <Img src={image} className="w-[100%]" alt="unsplash" />
             <div className="flex flex-row gap-[10px] bg-[white] rounded-[8px] absolute bottom-[20px] right-[-20px] justify-center items-center"
             style={{padding: '8px 15px 8px 15px', border: '0.5px solid #A1A1A1',boxShadow: '17.14285659790039px 34.28571319580078px 68.57142639160156px 0px rgba(45, 51, 81, 0.12)'}}
             >
@@ -20,6 +26,8 @@ return (
                 </div>
             </div>
         </div>
+        )})}
+        
         <div className="pt-[50px] lg:pt-[0px] h-[100%] w-[90vw] lg:w-[40vw]">
             <span
                 className="rounded-full max-w-[150px] px-[20px] py-[5px] bg-[#A1B4F7] text-[white] xxl:leading-[22.99px]

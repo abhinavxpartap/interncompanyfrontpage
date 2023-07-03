@@ -22,16 +22,16 @@ export const Banner = (props: any) => {
     return (
         <div
             style={{ backgroundImage: `url(${image})` }}
-            className="bg-cover bg-center bg-no-repeat relative mx-[auto]"
+            className="bg-cover bg-center bg-no-repeat md:pb-[50px] relative mx-[auto]"
         >
             <Header/>
             <div
-                className="max-w-[1377.5px] mx-[auto] flex flex-col items-center justify-center md:pt-[320px] pt-[117px] pb-[71px] md:px-0 px-[20px]">
-                <h1 className="text-[80px] text-[#FFFFFF] font-bold leading-[90px] md:leading-[90px] md:tracking-[-2.4px] max-w-[900px] text-center md:pb-[25px] pb-[18px]">
+                className="max-w-[1377.5px] mx-[auto] flex flex-col items-center justify-center md:pt-[270px] pt-[117px] pb-[71px] md:px-0 px-[10px]">
+                <h1 className="md:text-[80px] text-[40px] text-[#FFFFFF] font-bold leading-[50px] md:leading-[90px] md:tracking-[-2.4px] max-w-[900px] text-center md:pb-[25px] pb-[18px]">
                     {title}
                 </h1>
                 <div
-                    className="text-xl max-w-[1026px] font-medium text-[#FFFFFF] max-w-[1100px] xl:text-[23px] text-[16px] leading-[160%] tracking-[-0.68px] text-center pb-[30px] max-w-[667px]">
+                    className=" max-w-[1026px] font-medium text-[#FFFFFF] max-w-[1100px] md:text-[23px] text-[16px] leading-[160%] tracking-[-0.68px] text-center pb-[30px] max-w-[667px]">
                     {subtitle}
                 </div>
                 <div>

@@ -31,7 +31,7 @@ export const Banner = (props: any) => {
                     {title}
                 </h1>
                 <div
-                    className=" max-w-[1026px] font-medium text-[#FFFFFF] max-w-[1100px] md:text-[23px] text-[16px] leading-[160%] tracking-[-0.68px] text-center pb-[30px] max-w-[667px]">
+                    className=" max-w-[1106px] font-medium text-[#FFFFFF] max-w-[1100px] md:text-[23px] text-[16px] leading-[160%] tracking-[-0.68px] text-center pb-[30px] max-w-[667px]">
                     {subtitle}
                 </div>
                 <div>

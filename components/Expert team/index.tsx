@@ -22,7 +22,7 @@ const imageList = [
 
 const Team = () =>{
 return (
-    <div className="mt-[120px] px-[15px] md:px-[25px] lg:px-[40px] py-[40px] max-w-[1377.5px] mx-auto">
+    <div className="pt-[120px] px-[15px] md:px-[25px] lg:px-[40px] py-[40px] max-w-[1377.5px] mx-auto">
         <div className="w-[100%] h-full flex flex-col lg:flex-row lg:gap-[60px] xl:gap-[80px] items-start">
             {/* {imageList.map((image:string, index: any)=>{ 
                 return (

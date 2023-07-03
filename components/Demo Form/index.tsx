@@ -12,7 +12,7 @@ const DemoForm = () => {
     };
     const labelNames = ['Software Development', 'Web Design'];
     return (
-        <div className="bg-[url('/images/bg-form.png')] md:px-[70px] md:pt-[103px] pt-[40px] md:pb-[206px] pb-[150px] mt-[150px] relative">
+        <div className="bg-[url('/images/bg-form.png')] md:px-[70px] md:pt-[103px] pt-[40px] md:pb-[206px] pb-[150px] pt-[190px] relative">
             <div className="max-w-[1377.5px] relative mx-auto flex md:flex-row flex-col justify-between ">
                 <div>
                     <div className="text-[#FDFDFD] md:text-[50px] text-[35px] md:text-start text-center font-bold leading-[125%] mt-[13px] xl:w-[75%] md:w-[45%]">Estimations & planning for business decisions</div>

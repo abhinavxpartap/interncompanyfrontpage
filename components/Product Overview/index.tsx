@@ -68,11 +68,35 @@ const ProductOverview = () => {
         
 
       </div>
-      <Team />
-      <Service />
-      <CaseStudy />
-      <Testimonials />
-      <DemoForm />
+      <div
+          style={{background: "#F9FBFF"}}
+          className="bg-cover bg-center bg-no-repeat relative  block"
+      >        <Team />
+      </div>
+
+      <div
+          style={{background: "#F9FBFF"}}
+          className="bg-cover bg-center bg-no-repeat relative  block">
+        <Service />
+
+      </div>
+      <div
+          style={{background: "#F9FBFF"}}
+          className="bg-cover bg-center -z-0 bg-no-repeat relative  block">
+        <CaseStudy />
+      </div>
+<div
+    style={{background: "#F9FBFF"}}
+    className="bg-cover bg-center -z-0 bg-no-repeat relative  block">
+  <Testimonials />
+</div>
+
+      <div
+          style={{background: "#F9FBFF"}}
+          className="bg-cover bg-center -z-0 bg-no-repeat relative  block">
+        <DemoForm />
+
+      </div>
     </div>
   )
 }

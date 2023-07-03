@@ -50,18 +50,18 @@ export const ContactBanner: React.FC<any> = (props) => {
     return (
         <div>
             <div
-                className="w-full  relative md:max-w-[1371px] md:pt-[210px] pt-[100px] pb-[270px] sm:pl-[80px]  h-full gap-[80px] mx-auto flex lg:flex-row flex-col  ">
+                className="w-full  relative md:max-w-[1371px] md:pt-[210px] pt-[100px] pb-[270px] lg:pl-[80px]  h-full xl:gap-[80px] mx-auto flex lg:flex-row flex-col  ">
                 <div >
-                    <div className="text-white md:text-[55px] text-[36px] md:text-start text-center font-bold max-w-[550px] md:leading-[60px]">
+                    <div className="text-white md:text-[55px] text-[36px] md:text-start text-center font-bold xl:w-[70%] md:w-[40%] md:leading-[60px]">
                         {title}
                     </div>
-                    <div className="text-white text-[20px] max-w-[450px] md:text-start text-center mt-[20px] font-medium">
+                    <div className="text-white text-[20px] xl:w-[50%] md:w-[30%] md:text-start text-center mt-[20px] font-medium">
                         {subtitle}
                     </div>
                 </div>
 
                 <div
-                    className="bg-white border-2  md:absolute relative  right-0 top-[60px] md:mr-[55px]  rounded-[15px] px-[30px] py-[12px]">
+                    className="bg-white border-2  md:absolute relative justify-center right-0 top-[60px] md:mr-[55px]  rounded-[15px] px-[30px] py-[12px]">
                     <div className="text-[22px]  z-[30] flex flex-col font-semibold">
                         Build the Next Big Thing
                         <div className="mt-[20px]">

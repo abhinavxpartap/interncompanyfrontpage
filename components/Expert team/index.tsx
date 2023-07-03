@@ -1,8 +1,22 @@
 import {Button} from "@mui/material";
 import {Img} from "../../utils/Img";
 import React from "react";
+import Slider from 'react-slick';
+
+const settings = {
+    autoplay: true,
+    autoplaySpeed: 3000,
+    dots: true,
+    infinite: true,
+    arrows: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
 const imageList = [
+    "/images/unsplash_Of_m3hMsoAA.png",
+    "/images/unsplash_Of_m3hMsoAA.png",
     "/images/unsplash_Of_m3hMsoAA.png"
 ]
 
@@ -10,23 +24,46 @@ const Team = () =>{
 return (
     <div className="mt-[120px] px-[15px] md:px-[25px] lg:px-[40px] py-[40px] max-w-[1377.5px] mx-auto">
         <div className="w-[100%] h-full flex flex-col lg:flex-row lg:gap-[60px] xl:gap-[80px] items-start">
-        {imageList.map((image:string, index: any)=>{ 
-            return (
-                <div key={index} className="w-[90vw] lg:w-[48vw] relative rounded-[10px]">
-            <Img src={image} className="w-[100%]" alt="unsplash" />
-            <div className="flex flex-row gap-[10px] bg-[white] rounded-[8px] absolute bottom-[20px] right-[-20px] justify-center items-center"
-            style={{padding: '8px 15px 8px 15px', border: '0.5px solid #A1A1A1',boxShadow: '17.14285659790039px 34.28571319580078px 68.57142639160156px 0px rgba(45, 51, 81, 0.12)'}}
-            >
-                <div className="w-[38px]">
-                    <Img src="/Badge.svg" className="w-[100%]" alt={"Icon"}/>
-                </div>
-                <div>
-                    <h1 className="text-[#5B5B5B] font-medium">Skilled techies,</h1>
-                    <p className="text-[#7699FF] text-[16px] font-medium mt-[-3px]">in-house</p>
+            {/* {imageList.map((image:string, index: any)=>{ 
+                return (
+                    <div key={index} className="w-[90vw] lg:w-[48vw] relative rounded-[10px]">
+                <Img src={image} className="w-[100%]" alt="unsplash" />
+                <div className="flex flex-row gap-[10px] bg-[white] rounded-[8px] absolute bottom-[20px] right-[-20px] justify-center items-center"
+                style={{padding: '8px 15px 8px 15px', border: '0.5px solid #A1A1A1',boxShadow: '17.14285659790039px 34.28571319580078px 68.57142639160156px 0px rgba(45, 51, 81, 0.12)'}}
+                >
+                    <div className="w-[38px]">
+                        <Img src="/Badge.svg" className="w-[100%]" alt={"Icon"}/>
+                    </div>
+                    <div>
+                        <h1 className="text-[#5B5B5B] font-medium">Skilled techies,</h1>
+                        <p className="text-[#7699FF] text-[16px] font-medium mt-[-3px]">in-house</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        )})}
+            )})} */}
+            <div className="w-[90vw] lg:w-[48vw]">
+
+        <Slider {...settings}>
+            {imageList.map((image: any,index: any)=>{
+                return(
+                    <div key={index} className="w-[90vw] lg:w-[48vw] relative rounded-[10px]">
+                <Img src={image} className="w-[100%]" alt="unsplash" />
+                <div className="flex flex-row w-auto max-w-[186px] gap-[10px] bg-[white] rounded-[8px] absolute bottom-[20px] right-[-20px] justify-center items-center"
+                style={{padding: '8px 15px 8px 15px', border: '0.5px solid #A1A1A1',boxShadow: '17.14285659790039px 34.28571319580078px 68.57142639160156px 0px rgba(45, 51, 81, 0.12)'}}
+                >
+                    <div className="w-[38px]">
+                        <Img src="/Badge.svg" className="w-[100%]" alt={"Icon"}/>
+                    </div>
+                    <div>
+                        <h1 className="text-[#5B5B5B] font-medium">Skilled techies,</h1>
+                        <p className="text-[#7699FF] text-[16px] font-medium mt-[-3px]">in-house</p>
+                    </div>
+                </div>
+            </div>
+                );
+            })}
+        </Slider>
+            </div>
         
         <div className="pt-[50px] lg:pt-[0px] h-[100%] w-[90vw] lg:w-[40vw]">
             <span

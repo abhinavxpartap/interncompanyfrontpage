@@ -23,9 +23,9 @@ const services = [
 const Service = () => {
   return (
     <div className="md:px-[100px] relative flex flex-col items-center py-[40px] mt-[80px] text-center max-w-[1377.5px] overflow-hidden h-auto mx-auto">
-        <div className="text-[#E4F0FF] -z-[1] text-[250px] absolute left-[-205px] font-medium leading-[70%] tracking-[-20px] w-[754px] text-right bottom-[450px]">
+        <div className="text-[#E4F0FF] -z-[1] text-[200px] xl:text-[250px] lg:text-[200px] md:text-[180px] sm:text-[150px] absolute right-[67%] font-medium leading-[70%] tracking-[-20px] w-[754px] text-right top-[3%]">
           service
-            </div>
+        </div>
             <Button
                 label={"WHAT WE DO?"}
                 type="button"

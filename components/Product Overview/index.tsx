@@ -22,7 +22,7 @@ import DemoForm from '../Demo Form';
 const ProductOverview = () => {
   return (
     <div className="mt-[80px]">
-      <div className="h-[544px] bg-[url('/images/bg-blue2.png')] bg-no-repeat bg-cover md:px-[144px] py-[75px]">
+      <div className="bg-[url('/images/bg-blue2.png')] bg-no-repeat bg-cover md:px-[144px] py-[75px]">
         <div className="max-w-[1377.5px] mx-auto">
           <Button
             label={"PRODUCT OVERVIEW"}

@@ -1375,4 +1375,25 @@ details[open] .arrow-icon {
     width: auto;
     height: auto;
 }
+.slick-dots li button::before {
+    width: 20px;
+    border-radius: 10px;
+    background-color: #EAEAEA;
+}
+.slick-dots li.slick-active button::before {
+    background: #7699FF;
+    width: 40px;
+}
+
+.slick-dots li.slick-active {
+    width: 30px;
+}
+
+.slick-dots {
+    gap: 15px;
+    margin: auto 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 

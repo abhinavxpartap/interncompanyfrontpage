@@ -1,10 +1,11 @@
 import React from "react";
 import {Img} from "../utils/Img";
 import {Button} from "@mui/material";
+import {router} from "next/client";
 
 
 export const ServicesDevelopment: React.FC<any> = (props) => {
-    const {title, subtitle, LeftData, RightData,CenterContent,ButtonName } = props;
+    const {title, subtitle, LeftData, RightData,CenterContent,button } = props;
 
     const content = <>
         <div
@@ -36,6 +37,7 @@ export const ServicesDevelopment: React.FC<any> = (props) => {
                 </div>
                 <div className="flex justify-center items-ceter pt-[30px]">
                     <Button
+                        // onClick={()=> router.push(button.href)}
                         className="ButtonTransition overflow-hidden text-[12px] md:text-[16px] font-semibold "
                         sx={{
                             '&.MuiButtonBase-root': {
@@ -53,8 +55,8 @@ export const ServicesDevelopment: React.FC<any> = (props) => {
                             },
                         }}
                     >
-                        {ButtonName}
-
+                        {/*{button.name}*/}
+                           adsfasfas
                     </Button>
                 </div>
             </div>

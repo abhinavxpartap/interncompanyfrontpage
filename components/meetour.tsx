@@ -52,10 +52,11 @@ export const Meetour: React.FC<any> = (props) => {
                     </div>
                 </div>
                 <div>
-                    <Img src="/outTeam.svg" alt="" className="w-auto" />
+                    <Img src="/outTeam.svg" alt="" className="md:w-auto w-[20px]" />
                 </div>
             </div>
-            <div className="grid lg:grid-cols-4 md:ml-[50px] ml-[10px] sm:grid-cols-3 grid-cols-2   justify-between">
+            <div className="flex justify-center items-center w-[100%]">
+            <div className="grid lg:grid-cols-4  sm:grid-cols-3 grid-cols-2 gap-[40px]   mx-auto">
                 {teamMembers.map((member, index) => (
                     <div
                         key={index}
@@ -72,7 +73,7 @@ export const Meetour: React.FC<any> = (props) => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div></div>
         </div>
     );
 

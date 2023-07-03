@@ -9,10 +9,11 @@ interface DropdownInterface {
     open: boolean;
     setOpen: () => any;
     isSticky: boolean;
+    href: any;
 }
 
 export const Dropdown: FC<DropdownInterface> = (props) => {
-    const {title, items, open, setOpen, isSticky} = props;
+    const {title, items, open, setOpen, isSticky, href} = props;
     const router = useRouter();
     const arrow = !["/", "/home", "/partner", "/faq", "/contact", "/ourStory", "/term"].includes(
         router.pathname
@@ -39,16 +40,21 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
         : isSticky
             ? "text-[#000000]"
             : "text-black";
+    const handleRedirect = () => {
+        if (items && ((items.data && items.data.length == 0) || !items.data)) {
+            router.push(items.href);
+        }
+    };
     return <>
         <div className="dropdown-button hidden lg:block">
-            <div
+            <div onClick={handleRedirect}
                 className={`${color} xxl:text-[17px] sm:text-[16px] text-[12px] md:leading-[27px] sm:leading-[17px] leading-[14px] tracking-[-0.24px] flex cursor-pointer`}
             >
-                <span className="text-[16px] font-medium">{title}</span>
+                <span className="text-[16px] font-medium  " > {title}</span>
                 {items && items.data && items.data.length > 0 && <Img src={arrow} alt="Arrow Down"
                      className={`w-[8px] sm:ml-[7px] transition ${open ? 'rotate-[180deg]' : 'rotate[0]'} dropdown-icon`}/>}
             </div>
-            {items && items.title && <div
+            {items && items.data && items.data.length > 0 &&  <div
                 className={`${open ? 'block' : 'hidden'} bg-white absolute top-[35px] lg:top-[25px] left-[-155px] sm:left-[0] min-w-[300px] lg:min-w-[394px] rounded-[15px] xxl:px-[35] md:px-[20px] px-[2px] xxl:py-[36px] md:py-[22px] py-[8px] dropdown-container z-[99999]`}
             >
                 <div
@@ -56,7 +62,7 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
                 >
                     {items.title}
                 </div>
-                {items && items.data && <div
+                {items && items.data && items.data.length > 0 && <div
                     className="flex flex-col gap-[4px]"
                 >
                     {
@@ -103,7 +109,7 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
                 >
                     {items.title}
                 </div>
-                {items && items.data && <div
+                {items && items.data && items.data.length > 0 && <div
                     className="flex flex-col gap-[12px]"
                 >
                     {

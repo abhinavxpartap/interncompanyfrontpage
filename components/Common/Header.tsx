@@ -91,7 +91,7 @@ export const Header: React.FC<any> = () => {
                           <div className="flex relative xxl:gap-[43px] md:gap-[30px]">
                               <Dropdown
                                   title="About"
-                                  items={null}
+                                  items={headerData.header[0]}
                                   open={openExplore}
                                   isSticky={isSticky}
                                   setOpen={toggleExplore}
@@ -112,14 +112,14 @@ export const Header: React.FC<any> = () => {
                               />
                               <Dropdown
                                   title="Portfolio"
-                                  items={null}
+                                  items={headerData.header[3]}
                                   open={openSupport}
                                   isSticky={isSticky}
                                   setOpen={toggleSupport}
                               />
                               <Dropdown
                                   title="Blog"
-                                  items={null}
+                                  items={headerData.header[4]}
                                   open={openSupport}
                                   isSticky={isSticky}
                                   setOpen={toggleSupport}

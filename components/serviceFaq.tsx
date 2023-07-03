@@ -85,8 +85,8 @@ export const ServicesFaq: React.FC<any> = (props) => {
         <div
             className="max-w-[1377.5px] mx-auto flex items-center justify-between pt-[80px]  pb-[80px]"
         >
-            <div className="w-[100%] px-[40px] flex flex-col md:flex-row justify-between text-start  items-center">
-                <div className="w-[85vw] md:w-[40vw] flex flex-col mb-[40px] md:mb-0">
+            <div className="w-[100%] px-[40px]  flex flex-col lg:flex-row justify-between text-start  items-center">
+                <div className="w-[85vw] lg:w-[40vw] flex flex-col mb-[40px] lg:mb-0">
                     <h1 className="font-bold text-[30px] w-full md:w-[400px] leading-[37px] md:text-[40px] md:leading-[48px] text-[#151448]">{title}</h1>
                     <p className="text-[#333333] mt-[20px] pr-[20px] w-full md:w-[400px] text-[13px] md:text-[16px] font-medium">{subtitle}</p>
                     <Button
@@ -111,7 +111,7 @@ export const ServicesFaq: React.FC<any> = (props) => {
 
                     </Button>
                 </div>
-                <div className="w-[85vw] md:w-[55vw]  gap-[15px]">
+                <div className="w-[85vw] lg:w-[55vw]  gap-[15px]">
                     <Stepper activeStep={activeTab-1} orientation="vertical"
                     >
                         {tabsData.map((tab:any,index:number) => (

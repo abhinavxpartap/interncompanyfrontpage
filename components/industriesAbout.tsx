@@ -36,9 +36,9 @@ export const IndustriesAbout: React.FC<any> = (props) => {
                 </div>
                 ))}
             </div>
-            <div className="w-[100%] pl-[20%] md:pl-[20px] mt-[-5px] md:mt-[80px]">
+            <div className="w-[60vw] mx-auto md:w-[95vw] lg:w-[900px] md:mt-[70px] ">
                 <Button
-                    className="text-[12px] md:text-[16px] mt-[30px] md:mt-[-60px] font-semibold "
+                    className="ButtonTransition overflow-hidden text-[12px] md:text-[16px] mt-[30px] md:mt-[-60px] font-semibold "
                     sx={{
                         '&.MuiButtonBase-root': {
                             backgroundColor: '#177DF0',

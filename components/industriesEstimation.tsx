@@ -26,7 +26,7 @@ export const IndustriesEstimation: React.FC<any> = (props) => {
                         ))}
                         <div>
                             <Button
-                                className=" text-[12px] md:text-[16px] mt-[10px] md:mt-[20px] font-semibold "
+                                className="ButtonTransition overflow-hidden text-[12px] md:text-[16px] mt-[10px] md:mt-[20px] font-semibold "
                                 sx={{
                                     '&.MuiButtonBase-root': {
                                         backgroundColor: 'transparent',

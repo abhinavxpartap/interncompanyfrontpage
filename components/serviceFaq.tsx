@@ -24,7 +24,7 @@ export const ServicesFaq: React.FC<any> = (props) => {
                     <h1 className="font-bold text-[30px] w-full md:w-[400px] leading-[37px] md:text-[40px] md:leading-[48px] text-[#151448]">{title}</h1>
                     <p className="text-[#333333] mt-[20px] pr-[20px] w-full md:w-[400px] text-[13px] md:text-[16px] font-medium">{subtitle}</p>
                     <Button
-                        className="text-[12px] w-[230px] md:w-[290px] md:text-[16px] mt-[20px] font-semibold "
+                        className="ButtonTransition overflow-hidden text-[12px] w-[230px] md:w-[290px] md:text-[16px] mt-[20px] font-semibold "
                         sx={{
                             '&.MuiButtonBase-root': {
                                 backgroundColor: '#177DF0',
@@ -66,7 +66,9 @@ export const ServicesFaq: React.FC<any> = (props) => {
                                   <span>{tab.id}.</span>  {tab.title}
                                 </Typography>
                                 <Grid className="p-3">
-                                    <IconButton>
+                                    <IconButton
+                                        onClick={() => handleTabToggle(tab.id)}
+                                    >
                                         {!openTabs.includes(tab.id) ? (<Img src="/downIcon.svg" className="w-[70%] md:w-[100%]" alt="icon" />) : (<Img src="/activedropdown.svg" className="w-[70%] md:w-[100%]" alt="icon" />)}
                                     </IconButton>
                                 </Grid>

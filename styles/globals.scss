@@ -1285,5 +1285,32 @@ details[open] .arrow-icon {
 }
 
 .scrollbar::-webkit-scrollbar {
-    display: none;
+  display: none;
+}
+
+.ButtonTransition:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 1;
+  transform: translate(-105%, 0px);
+  background-color: rgba(255, 255, 255, 0.2);
+  animation: btn-animate 1s infinite ease-in-out;
+}
+
+@keyframes btn-animate {
+  0% {
+    transform: translate(-105%, 0px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.ButtonTransition:hover::before{
+  display: none;
 }

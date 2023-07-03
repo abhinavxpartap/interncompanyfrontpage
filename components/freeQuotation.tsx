@@ -99,7 +99,7 @@ export const FreeQuotation: React.FC<any> = () => {
                             </Grid>
                             <div className="mt-[20px]">
                                 <Button
-                                    className="text-[12px] md:text-[14px] font-semibold "
+                                    className="ButtonTransition overflow-hidden text-[12px] md:text-[14px] font-semibold "
                                     sx={{
                                         '&.MuiButtonBase-root': {
                                             backgroundColor: '#177DF0',

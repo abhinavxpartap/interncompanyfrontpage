@@ -76,7 +76,7 @@ export const PortfolioBanner2: React.FC<any> = (props) => {
 
                     </div>
                     <div
-                        className="bg-white relative top-[-100px]  md:top-[20px] lg:top-[30px] xl:top-[80px] md:left-[-20px] lg:left-[-30px]  rounded-[15px] px-[25px] pt-[16px]  pb-[25px] md:w-[300px] lg:w-[380px] xl:w-[480px] border-2">
+                        className="bg-white relative top-[-100px]  md:top-[20px] lg:top-[30px] xl:top-[80px] md:left-[-20px] lg:left-[-30px]  rounded-[15px] px-[25px] pt-[16px]  pb-[25px] md:w-[300px] lg:w-[380px] xl:w-[480px] boxshad">
                         <h1 className="text-[25px] md:text-[20px] lg:text-[25px] xl:text-[30px] font-semibold">
                             Pizza App
                         </h1>
@@ -105,7 +105,7 @@ export const PortfolioBanner2: React.FC<any> = (props) => {
 
                     </div>
                     <div
-                        className="bg-white relative top-[-30px] md:top-[20px] lg:top-[70px]  md:left-[40px] lg:left-[80px] xl:top-[70px] xl:left-[170px]  rounded-[15px] px-[25px] pt-[16px]  pb-[25px] md:w-[300px] lg:w-[380px] xl:w-[480px] border-2">
+                        className="bg-white relative top-[-30px] md:top-[20px] lg:top-[70px]  md:left-[40px] lg:left-[80px] xl:top-[70px] xl:left-[170px]  rounded-[15px] px-[25px] pt-[16px]  pb-[25px] md:w-[300px] lg:w-[380px] xl:w-[480px] boxshad">
                         <h1 className="text-[25px] md:text-[20px] lg:text-[25px] xl:text-[30px] font-semibold">
                             Pizza App
                         </h1>
@@ -142,7 +142,7 @@ export const PortfolioBanner2: React.FC<any> = (props) => {
 
                     </div>
                     <div
-                        className="bg-white relative top-[-100px]  md:top-[20px] lg:top-[30px] xl:top-[80px] md:left-[-20px] lg:left-[-30px]  rounded-[15px] px-[25px] pt-[16px]  pb-[25px] md:w-[300px] lg:w-[380px] xl:w-[480px] border-2">
+                        className="bg-white relative top-[-100px]  md:top-[20px] lg:top-[30px] xl:top-[80px] md:left-[-20px] lg:left-[-30px]  rounded-[15px] px-[25px] pt-[16px]  pb-[25px] md:w-[300px] lg:w-[380px] xl:w-[480px] boxshad">
                         <h1 className="text-[25px] md:text-[20px] lg:text-[25px] xl:text-[30px] font-semibold">
                             Pizza App
                         </h1>

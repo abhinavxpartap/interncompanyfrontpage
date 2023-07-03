@@ -9,9 +9,9 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }: any) => {
     return (
       <div className="carousel-button-group mb-4  gap-4 flex justify-between 
         items-center w-full absolute bottom-[50%]">
-        <button className='bg-white text-[#177DF0] w-[50px] h-[50px] shadow-[0_4px_4px_0_rgb(0,0,0,0.7)] rounded-[50px]' onClick={() =>
+        <button className='bg-white text-[#177DF0] w-[50px] h-[50px] boxshad rounded-[50px]' onClick={() =>
           previous()}> <ArrowBackIcon /></button>
-        <button className="bg-white text-[#177DF0] w-[50px] h-[50px] shadow-[0_4px_4px_0_rgb(0,0,0,0.7)] rounded-[50px]" onClick={() => next()}><ArrowForwardIcon /></button>
+        <button className="bg-white text-[#177DF0] w-[50px] h-[50px] boxshad rounded-[50px]" onClick={() => next()}><ArrowForwardIcon /></button>
       </div>
   
     );
@@ -76,7 +76,7 @@ const Testimonials = () => {
         <div className="w-[85%] my-[30px] relative flex flex-col-reverse text-center">
           <Carousel responsive={responsive} arrows={false} renderButtonGroupOutside={true} customButtonGroup={<ButtonGroup />}>
             {images.map((data: any, index: any) => (
-              <div key={index} className="w-[70%] h-auto my-[30px] flex flex-col mx-[auto] rounded-[10px] shadow-[0_2px_5px_0_rgba(0,0,0,0.5)] border-[black] xl:px-[55px] px-[10px]  overflow-hidden md:py-[50px] py-[20px]">
+              <div key={index} className="w-[70%] h-auto my-[30px] bg-white flex flex-col mx-[auto] rounded-[10px] boxshad border-[black] xl:px-[55px] px-[10px]  overflow-hidden md:py-[50px] py-[20px]">
                 <div className="text-[#042552] md:text-[18px] text-[14px] mt-[13px] font-normal max-w-[642px] md:leading-[26px]">{data.comment}</div>
                 <div className="flex md:flex-row flex-col mt-[50px] align-center justify-between ">
                   <div className="flex md:flex-row md:justify-normal md:text-start text-center justify-center items-center flex-col">

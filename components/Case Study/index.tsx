@@ -64,7 +64,7 @@ const CaseStudy = () => {
       </div>
       <div className='w-full h-full overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth flex flex-row max-w-[1377.5px] mx-auto' >
         {caseStudies.map((caseStudy: any, index: any) => (
-          <div key={index} className="max-w-[711px] h-[366px] inline-block rounded-[20px] shadow-[0_1px_5px_0_rgba(0,0,0,0.5)] flex flex-row justify-between px-[23px] py-[20px] m-4">
+          <div key={index} className="max-w-[711px] h-[366px] bg-white inline-block rounded-[20px] boxshad flex flex-row justify-between px-[23px] py-[20px] m-4">
             <div className="w-[280px] h-[326px] inline-block rounded-[15px]">
               <img src={caseStudy.imgUrl} alt={caseStudy.imgUrl} />
             </div>

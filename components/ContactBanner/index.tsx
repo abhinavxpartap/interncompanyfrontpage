@@ -61,7 +61,7 @@ export const ContactBanner: React.FC<any> = (props) => {
                 </div>
 
                 <div
-                    className="bg-white border-2  md:absolute relative justify-center right-0 top-[60px] md:mr-[55px]  rounded-[15px] px-[30px] py-[12px]">
+                    className="bg-white boxshad  md:absolute relative justify-center right-0 top-[60px] md:mr-[55px]  rounded-[15px] px-[30px] py-[12px]">
                     <div className="text-[22px]  z-[30] flex flex-col font-semibold">
                         Build the Next Big Thing
                         <div className="mt-[20px]">
@@ -198,7 +198,7 @@ export const ContactBanner: React.FC<any> = (props) => {
                                 </Grid>
                                 <div className="mt-[20px]">
                                     <Button
-                                        className="text-[14px] animated-button font-semibold "
+                                        className=" ButtonTransition overflow-hidden text-[14px] animated-button font-semibold "
                                         sx={{
                                             '&.MuiButtonBase-root': {
                                                 backgroundColor: '#177DF0',

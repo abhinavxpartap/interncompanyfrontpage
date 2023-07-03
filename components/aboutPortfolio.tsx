@@ -13,7 +13,7 @@ export const AboutPortfolio: React.FC<any> = () => {
 
     const contentElement = (
         <div className="max-w-[1377.5px] relative top-[-25px] mx-auto">
-            <div className="w-[92%] px-[20px] pt-[10px] pb-[20px] mx-auto flex flex-col bg-white rounded-[15px] border-2">
+            <div className="w-[92%]  px-[20px] pt-[10px] pb-[20px] mx-auto flex flex-col bg-white rounded-[15px] boxshad">
                 <div className="flex md:flex-row md:gap-[80px] flex-col">
                     <div className="max-w-[650px]">
                         <h1 className="text-[30px] font-semibold">{title}</h1>

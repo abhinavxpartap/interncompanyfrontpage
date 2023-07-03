@@ -212,7 +212,7 @@ export const Header: React.FC<any> = () => {
                               <Button
                                   label="Book a Demo"
                                   type={buttonType}
-                                  className={`xxl:text-[19px] ${buttonType === 'button' ? 'hover:text-[#0092FF]' : 'text-white'} hover:bg-[#fff] bg-[#0092FF] text-[#fff] hover:text-[#0092FF] border-[#0092FF] xxl:leading-[22.99px] font-semibold md:text-[15px] sm:text-[9px] text-[12px] sm:leading-[20.57px] leading-[14px] tracking-[-0.22px] md:w-[145px] w-[100px] xl:h-[44px] md:h-[38px] h-[35px]`}
+                                  className={`xxl:text-[19px] ${buttonType === 'button' ? 'hover:text-[#0092FF]' : 'text-white'} hover:bg-[#fff] bg-[#0092FF] text-[#fff] hover:text-[#0092FF] border-[#0092FF] xxl:leading-[22.99px] ButtonTransition overflow-hidden font-semibold md:text-[15px] sm:text-[9px] text-[12px] sm:leading-[20.57px] leading-[14px] tracking-[-0.22px] md:w-[145px] w-[100px] xl:h-[44px] md:h-[38px] h-[35px]`}
                                   onClick={() => router.push("/getStarted")}
                               />
                           </div>

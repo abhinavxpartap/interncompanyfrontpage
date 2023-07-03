@@ -11,16 +11,32 @@ export const PortfolioBanner2: React.FC<any> = (props) => {
             className="max-w-[1377.5px] mx-auto flex flex-col   justify-center items-center"
         >
             <div className=" ">
-                <Img src="/line.svg" alt="n" className="w-[320px] relative top-[255px]      "/>
+                <Img src="/portline.svg" alt="n" className="w-[320px] relative top-[223px]      "/>
+            
+            </div>
+            <div className=" ">
+                <Img src="/portlogo.svg" alt="n" className="w-auto relative top-[90px]  left-[190px]     "/>
 
             </div>
-            {/*<div className=" ">*/}
-            {/*    <Img src="/line.svg" alt="n" className="w-[320px] relative top-[255px]      "/>*/}
+            <div className=" ">
+                <Img src="/portdot.svg" alt="n" className="w-auto relative top-[50px]  left-[490px]     "/>
 
-            {/*</div>*/}
+            </div>
+            <div className=" ">
+                <Img src="/portdot.svg" alt="n"                             id="moving-item-1"
+                      className="w-auto relative top-[250px] moving-item left-[590px]     "/>
+
+            </div>
+            <div className=" ">
+                <Img src="/portdot.svg" alt="n" className="w-auto relative top-[50px]  left-[-590px]     "/>
+
+            </div>   <div className=" ">
+            <Img src="/portdot.svg" alt="n" className="w-auto relative top-[250px]  left-[-490px]     "/>
+
+        </div>
 
             <div>
-                <div className="text-[50px] max-w-[510px] mt-[120px] relative  eleading-[63px] z-1 font-bold">Crafted With Love.
+                <div className="text-[50px] max-w-[510px]  relative  eleading-[63px] z-1 font-bold">Crafted With Love.
                     Built
                     With Passion
                 </div>

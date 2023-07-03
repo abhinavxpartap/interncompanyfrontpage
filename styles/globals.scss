@@ -35,3 +35,22 @@
 .css-1lhlv3u .QontoStepIcon-circle{
   display: none;
 }
+
+.MuiStepConnector-vertical {
+    position: relative;
+    height: "1.25rem";
+    line-height: "1.25rem";
+}
+
+.Mui-completed, .Mui-active {
+    position: relative;
+}
+
+.Mui-completed .MuiStepConnector-lineVertical, .Mui-active .MuiStepConnector-lineVertical  {
+    position: absolute;
+    height: 130px;
+    top: -30px;
+    border-left-width: 2px;
+    border-color: #177DF0;
+    left: -3px;
+}

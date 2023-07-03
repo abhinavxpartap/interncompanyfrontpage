@@ -76,7 +76,7 @@ const Testimonials = () => {
         <div className="w-[85%] my-[30px] relative flex flex-col-reverse text-center">
           <Carousel responsive={responsive} arrows={false} renderButtonGroupOutside={true} customButtonGroup={<ButtonGroup />}>
             {images.map((data: any, index: any) => (
-              <div key={index} className="md:w-[752px] w-[200px] md:h-[283px] h-[385px] my-[30px] flex flex-col mx-[auto] rounded-[10px] shadow-[0_2px_5px_0_rgba(0,0,0,0.5)] border-[black] md:px-[55px]  overflow-hidden md:py-[50px] py-[20px]">
+              <div key={index} className="w-[70%] h-auto my-[30px] flex flex-col mx-[auto] rounded-[10px] shadow-[0_2px_5px_0_rgba(0,0,0,0.5)] border-[black] xl:px-[55px] px-[10px]  overflow-hidden md:py-[50px] py-[20px]">
                 <div className="text-[#042552] md:text-[18px] text-[14px] mt-[13px] font-normal max-w-[642px] md:leading-[26px]">{data.comment}</div>
                 <div className="flex md:flex-row flex-col mt-[50px] align-center justify-between ">
                   <div className="flex md:flex-row md:justify-normal md:text-start text-center justify-center items-center flex-col">

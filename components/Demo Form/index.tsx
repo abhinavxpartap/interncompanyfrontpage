@@ -12,13 +12,13 @@ const DemoForm = () => {
     };
     const labelNames = ['Software Development', 'Web Design'];
     return (
-        <div className="bg-[url('/images/bg-form.png')] px-[70px] pt-[103px] pb-[206px] mt-[150px] relative">
-            <div className="max-w-[1377.5px] relative mx-auto flex flex-row justify-between ">
+        <div className="bg-[url('/images/bg-form.png')] md:px-[70px] md:pt-[103px] pt-[40px] md:pb-[206px] pb-[150px] mt-[150px] relative">
+            <div className="max-w-[1377.5px] relative mx-auto flex md:flex-row flex-col justify-between ">
                 <div>
-                    <div className="text-[#FDFDFD] text-[50px] font-bold leading-[125%] mt-[13px] max-w-[691px]">Estimations & planning for business decisions</div>
-                    <div className="text-[22px] font-medium text-left leading-[26px] text-[#FDFDFD] mt-[20px]">Book your call now</div>
+                    <div className="text-[#FDFDFD] md:text-[50px] text-[35px] md:text-start text-center font-bold leading-[125%] mt-[13px] max-w-[691px]">Estimations & planning for business decisions</div>
+                    <div className="text-[22px] font-medium md:text-start text-center  leading-[26px] text-[#FDFDFD] mt-[20px]">Book your call now</div>
                 </div>
-                <div className="absolute right-0 top-[-170px] w-[460px] bg-white rounded-[10px] p-[20px]">
+                <div className="md:absolute relative right-0 md:top-[-170px] top-[70px] max-w-[460px] bg-white rounded-[10px] p-[20px]">
                     <Box className="w-[100%] flex flex-row justify-between">
                         <Box className="w-[48%]">
                             <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">First name</Typography>

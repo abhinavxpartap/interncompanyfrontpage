@@ -2,55 +2,27 @@
   "header": [
     {
       "title": "About",
-      "data": [
-        {
-          "label": "E-Commerce",
-          "icon": "/images/icons/ecommerce.svg",
-          "href": "https://www.searchmyexpert.com/services/ecommerce"
-        },
-        {
-          "label": "Digital Marketing",
-          "icon": "/images/icons/megaphone.svg",
-          "href": "https://www.searchmyexpert.com/services/digitalMarketing"
-        },
-        {
-          "label": "Web Design",
-          "icon": "/images/icons/internet.svg",
-          "href": "https://www.searchmyexpert.com/services/webDesign"
-        },
-        {
-          "label": "Mobile & App Development",
-          "icon": "/images/icons/app-development.svg",
-          "href": "https://www.searchmyexpert.com/services/mobileAppDevelopment"
-        },
-        {
-          "label": "ERP",
-          "icon": "/images/icons/erp.svg",
-          "href": "https://www.searchmyexpert.com/services/erp"
-        },
-        {
-          "label": "Video Games",
-          "icon": "/images/icons/video-game.svg",
-          "href": "https://www.searchmyexpert.com/services/videoGames"
-        },
-        {
-          "label": "Contact Us",
-          "icon": "/images/icons/envelope.svg",
-          "href": "/contact"
-        }
-      ]
+      "href":"/aboutus"
     },
     {
       "title": "Services",
       "heading": "What We Offer",
       "data": [
         {
-          "label": "Home",
-          "href": "https://www.searchmyexpert.com"
+          "label": "Services",
+          "icon": "/images/icons/megaphone.svg",
+          "href": "/service"
         },
         {
-          "label": "About Us",
-          "href": "https://www.searchmyexpert.com/ourStory"
+          "label": "AboutUS",
+          "icon": "/images/icons/ecommerce.svg",
+          "href": "/aboutus"
+        },
+
+        {
+          "label": "Industries",
+          "icon": "/images/icons/internet.svg",
+          "href": "/industries"
         },
         {
           "label": "Our Team",
@@ -62,7 +34,7 @@
         },
         {
           "label": "Contact Us",
-          "href": "https://www.searchmyexpert.com/contact"
+          "href": "/contact"
         }
       ]
     },
@@ -71,8 +43,9 @@
       "heading": "What We Offer",
       "data": [
         {
-          "label": "Terms of Use",
-          "href": "https://www.searchmyexpert.com"
+          "label": "Industries",
+          "icon": "/images/icons/internet.svg",
+          "href": "/industries"
         },
         {
           "label": "Privacy Policy",
@@ -94,53 +67,11 @@
     },
     {
       "title": "Portfolio",
-      "data": [
-        {
-          "label": "Terms of Use",
-          "href": "https://www.searchmyexpert.com"
-        },
-        {
-          "label": "Privacy Policy",
-          "href": "https://www.searchmyexpert.com/ourStory"
-        },
-        {
-          "label": "Terms of Services",
-          "href": "https://www.searchmyexpert.com"
-        },
-        {
-          "label": "Cookie Policy",
-          "href": "https://www.searchmyexpert.com"
-        },
-        {
-          "label": "Blogs",
-          "href": "https://www.searchmyexpert.com/contact"
-        }
-      ]
+      "href": ""
     },
     {
       "title": "Blog",
-      "data": [
-        {
-          "label": "Terms of Use",
-          "href": "https://www.searchmyexpert.com"
-        },
-        {
-          "label": "Privacy Policy",
-          "href": "https://www.searchmyexpert.com/ourStory"
-        },
-        {
-          "label": "Terms of Services",
-          "href": "https://www.searchmyexpert.com"
-        },
-        {
-          "label": "Cookie Policy",
-          "href": "https://www.searchmyexpert.com"
-        },
-        {
-          "label": "Blogs",
-          "href": "https://www.searchmyexpert.com/contact"
-        }
-      ]
+      "href": ""
     }
   ],
   "footer": {

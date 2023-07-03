@@ -78,7 +78,7 @@ export const Footer: React.FC<any> = (props) => {
                     </p>
                     <div className="flex pt-[20px] md:block hidden justify-center items-center md:justify-start">
                         <Button
-                            className="text-[16px] min-w-[200px] font-semibold "
+                            className="text-[16px] ButtonTransition overflow-hidden min-w-[200px] font-semibold "
                             sx={{
                                 "&.MuiButtonBase-root": {
                                     backgroundColor: "#177DF0",
@@ -117,7 +117,7 @@ export const Footer: React.FC<any> = (props) => {
                 </div>
                 <div className="flex pt-[31px] md:hidden block  justify-center items-center md:justify-start">
                     <Button
-                        className="text-[12px] min-w-[160px] font-semibold "
+                        className="text-[12px] ButtonTransition overflow-hidden min-w-[160px] font-semibold "
                         sx={{
                             "&.MuiButtonBase-root": {
                                 backgroundColor: "#177DF0",

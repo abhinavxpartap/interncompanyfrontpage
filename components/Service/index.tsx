@@ -22,7 +22,7 @@ const services = [
 
 const Service = () => {
   return (
-    <div className="px-[100px] relative flex flex-col items-center py-[40px] mt-[80px] text-center max-w-[1377.5px] overflow-hidden h-auto mx-auto">
+    <div className="md:px-[100px] relative flex flex-col items-center py-[40px] mt-[80px] text-center max-w-[1377.5px] overflow-hidden h-auto mx-auto">
         <div className="text-[#E4F0FF] -z-[1] text-[250px] absolute left-[-205px] font-medium leading-[70%] tracking-[-20px] w-[754px] text-right bottom-[450px]">
           service
             </div>
@@ -32,10 +32,10 @@ const Service = () => {
                 // onClick={() => router.push("/getStarted")}
                 className="max-w-[150px] px-[10px] py-[4px] bg-[#A1B4F7] text-[white] xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] text-[12px] hover:text-[#A1B4F7]"
             />
-            <div className="text-[#151448] text-[40px] font-bold leading-[125%] mt-[13px] w-[481px]">Zuca provides all
+            <div className="text-[#151448] md:text-[40px] text-[24px]  font-bold leading-[125%] mt-[13px] max-w-[481px]">Zuca provides all
                 kinds of services you need
             </div>
-            <div className="text-[#747C85] text-[18px] mt-[13px] font-medium w-[612px] leading-[170%]">Fusce placerat
+            <div className="text-[#747C85] text-[18px] mt-[13px] font-medium max-w-[612px] leading-[170%]">Fusce placerat
                 pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat.
             </div>
             <div className='pt-[60px] gap-[20px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-start '>

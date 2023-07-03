@@ -41,7 +41,7 @@ const caseStudies = [
 const CaseStudy = () => {
   return (
     <div>
-      <div className="mt-[80px] relative px-[100px] pt-[64px] pb-[38px] max-w-[1377.5px] overflow-hidden mx-auto">
+      <div className="mt-[80px] relative md:px-[100px] pt-[64px] pb-[38px] max-w-[1377.5px] overflow-hidden mx-auto">
         <div className="flex  flex-row">
           <div>
             <Button
@@ -50,10 +50,10 @@ const CaseStudy = () => {
               // onClick={() => router.push("/getStarted")}
               className="max-w-[150px] px-[10px] py-[4px] bg-[#A1B4F7] text-[white] xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] text-[12px] hover:text-[#A1B4F7]"
             />
-            <div className="text-[#151448] text-[40px] font-bold leading-[125%] mt-[13px] w-[481px]">Case Studies</div>
-            <div className="text-[#747C85] text-[16px] mt-[13px] font-medium w-[612px] leading-[30px]">Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat.</div>
+            <div className="text-[#151448] md:text-[40px] text-[30px] font-bold leading-[125%] mt-[13px] max-w-[451px]">Case Studies</div>
+            <div className="text-[#747C85] text-[16px] mt-[13px] font-medium max-w-[612px] leading-[30px]">Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat.</div>
           </div>
-          <div className="flex flex-row justify-between w-[120px] h-[50px] mt-[43px] ms-auto cursor-pointer">
+          <div className="flex flex-row justify-between w-[120px]  h-[50px] mt-[43px] ms-auto cursor-pointer">
             <div className="bg-[#177DF0] text-[#fff] rounded-[5px] "><ArrowBackIcon sx={{ height: "50px", width: "50px" }} /></div>
             <div className="bg-[#177DF0] text-[#fff] rounded-[5px] "><ArrowForwardIcon sx={{ height: "50px", width: "50px" }} /></div>
           </div>

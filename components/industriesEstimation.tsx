@@ -1,9 +1,11 @@
 import React from "react";
 import {Img} from "../utils/Img";
 import {Button} from "@mui/material";
+import {useRouter} from "next/router";
 
 export const IndustriesEstimation: React.FC<any> = (props) => {
-    const {image, title, subtitle, data, buttonName} = props;
+    const {image, title, subtitle, data,button} = props;
+    const router = useRouter();
 
     const content = <>
         <div
@@ -26,6 +28,7 @@ export const IndustriesEstimation: React.FC<any> = (props) => {
                         ))}
                         <div>
                             <Button
+                                onClick={()=> router.push(button.href)}
                                 className="ButtonTransition overflow-hidden text-[12px] md:text-[16px] mt-[10px] md:mt-[20px] font-semibold "
                                 sx={{
                                     '&.MuiButtonBase-root': {
@@ -43,7 +46,7 @@ export const IndustriesEstimation: React.FC<any> = (props) => {
                                     },
                                 }}
                             >
-                                {buttonName}
+                                {button.name}
                             </Button>
                         </div>
                     </div>

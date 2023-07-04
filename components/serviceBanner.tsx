@@ -1,10 +1,12 @@
     import React from "react";
     import {Button} from "@mui/material";
     import {Img} from "../utils/Img";
+    import { useRouter } from 'next/router';
 
 
     export const ServiceBanner: React.FC<any> = (props) => {
-            const {image, mobileImage,title, subtitle,buttonName } = props;
+            const {image, mobileImage,title,button,subtitle} = props;
+        const router = useRouter();
 
         const content = <>
             <div
@@ -20,6 +22,7 @@
                 </p>
                 <div className="flex pt-[10px] md:pt-[20px] justify-center items-center md:justify-start">
                     <Button
+                        onClick={()=> router.push(button.href)}
                         className="ButtonTransition overflow-hidden text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
                         sx={{
                             '&.MuiButtonBase-root': {
@@ -37,7 +40,7 @@
                             },
                         }}
                     >
-                        {buttonName}
+                        {button.name}
                     </Button>
                 </div>
             </div>

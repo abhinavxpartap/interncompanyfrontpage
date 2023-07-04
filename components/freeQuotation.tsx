@@ -1,6 +1,8 @@
 
 import React,{useState} from "react";
 import {Box,Typography,FormControl,OutlinedInput,Grid,FormControlLabel,Checkbox,Button} from "@mui/material"
+import {useRouter} from "next/router";
+
 
 export const FreeQuotation: React.FC<any> = () => {
     const [checked, setChecked] = useState([false, false]);
@@ -9,6 +11,7 @@ export const FreeQuotation: React.FC<any> = () => {
         newChecked[index] = !newChecked[index];
         setChecked(newChecked);
     };
+    const router = useRouter();
     const labelNames = ['Software Development', 'Web Design'];
     const content = <>
         <div
@@ -99,6 +102,7 @@ export const FreeQuotation: React.FC<any> = () => {
                             </Grid>
                             <div className="mt-[20px]">
                                 <Button
+                                    onClick={()=> router.push("/")}
                                     className="ButtonTransition overflow-hidden text-[12px] md:text-[14px] font-semibold "
                                     sx={{
                                         '&.MuiButtonBase-root': {

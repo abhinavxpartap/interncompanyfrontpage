@@ -4,12 +4,19 @@
     "subtitle": "You deserve a team focused on your mission just as much as you are. Meet Zuca.",
     "image": "/industriesBanner.jpg",
     "mobileImage": "/industriesBanner.jpg",
-    "buttonName": "Book a free consultation"
+    "button": {
+      "name": "Book a free consultation",
+      "href": "/"
+    }
   },
   "About": {
     "title": "Why our fintech app development services?",
     "image": "/industriesAbout.svg",
     "buttonName": "Schedule a Call",
+    "button": {
+      "name": "Schedule a Call",
+      "href": "/"
+    },
     "fintechData": [
       {
         "title": "One-on-one collaboration and guidance",
@@ -129,7 +136,10 @@
     "title": "Tech Stack We Use",
     "subtitle": "Here is the tech stack used by our team while offering web app development services:",
     "Paragraph": "Looking for an exact cost and time frame estimate for custom web development services?",
-    "buttonName": "Get a Quote",
+    "button": {
+      "name": "Get a Quote",
+      "href": "/"
+    },
     "data": [
       {
         "image": "/JavaScript.svg"
@@ -175,6 +185,10 @@
     "title": "Financial Services Software Development Cost Estimation",
     "subtitle": "We take into account several factors for estimating the final cost of your fintech solution:",
     "buttonName": "Get Personalised Cost Estimation",
+    "button": {
+      "name": "Get Personalised Cost Estimation",
+      "href": "/"
+    },
     "data": [
       {
         "content": "Complexities in features & functionalities"

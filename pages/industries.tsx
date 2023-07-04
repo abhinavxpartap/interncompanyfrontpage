@@ -15,6 +15,7 @@ import Data from "../data/blogData.json";
 import {BlogCards} from "../components/BlogCard";
 import {Button} from "@mui/material";
 import {Img} from "../utils/Img";
+import serviceData from "../data/service.json";
 
 const IndustriesPage: React.FC = () => {
     return (<>
@@ -30,13 +31,13 @@ const IndustriesPage: React.FC = () => {
                     mobileImage={industryData.Banner.mobileImage}
                     title={industryData.Banner.title}
                     subtitle={industryData.Banner.subtitle}
-                    buttonName={industryData.Banner.buttonName}
+                    button={industryData.Banner.button}
                 />
                 <div style={{background:"#F9FBFF"}} >
                 <IndustriesAbout
                 title={industryData.About.title}
                 image={industryData.About.image}
-                buttonName={industryData.About.buttonName}
+                button={industryData.About.button}
                 fintechData={industryData.About.fintechData}
                 satisfactionData={industryData.About.satisfactionData}
                 />
@@ -56,14 +57,14 @@ const IndustriesPage: React.FC = () => {
                         title={industryData.Tech.title}
                         subtitle={industryData.Tech.subtitle}
                         Paragraph={industryData.Tech.Paragraph}
-                        buttonName={industryData.Tech.buttonName}
+                        button={industryData.Tech.button}
                     />
                     <IndustriesEstimation
                     image={industryData.Estimation.image}
                     title={industryData.Estimation.title}
                     subtitle={industryData.Estimation.subtitle}
                     data={industryData.Estimation.data}
-                    buttonName={industryData.Estimation.buttonName}
+                    button={industryData.Estimation.button}
                     />
                     <IndustriesFaq
                     tabsData={industryData.Faq.tadData}

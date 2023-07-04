@@ -14,6 +14,7 @@ import {
     StepIconProps,
     StepConnector,
 } from '@mui/material';
+import {useRouter} from "next/router";
 
 
 const QontoStepIconRoot = styled('div')<{ ownerState: { active?: boolean } }>(
@@ -84,7 +85,8 @@ const StyledStepConnector = styled(StepConnector)(({ theme }) => ({
 
 
 export const ServicesFaq: React.FC<any> = (props) => {
-    const {title,subtitle,buttonName,tabsData} = props;
+    const {title,subtitle,button, tabsData} = props;
+    const router = useRouter();
     const [activeTab, setActiveTab] = useState(2);
 
     const handleTabToggle = (tabId) => {
@@ -100,7 +102,7 @@ export const ServicesFaq: React.FC<any> = (props) => {
                     <h1 className="font-bold text-[30px] w-full md:w-[400px] leading-[37px] md:text-[40px] md:leading-[48px] text-[#151448]">{title}</h1>
                     <p className="text-[#333333] mt-[20px] pr-[20px] w-full md:w-[400px] text-[13px] md:text-[16px] font-medium">{subtitle}</p>
                     <Button
-
+                        onClick={()=> router.push(button.href)}
                         className="ButtonTransition overflow-hidden text-[12px] w-[230px] md:w-[290px] md:text-[16px] mt-[20px] font-semibold "
                         sx={{
                             '&.MuiButtonBase-root': {
@@ -118,7 +120,7 @@ export const ServicesFaq: React.FC<any> = (props) => {
                             },
                         }}
                     >
-                        {buttonName}
+                        {button.name}
 
                     </Button>
                 </div>

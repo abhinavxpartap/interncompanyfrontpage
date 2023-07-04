@@ -1,10 +1,12 @@
 import React from "react";
 import {Img} from "../utils/Img";
 import {Button} from "@mui/material";
+import {useRouter} from "next/router";
 
 
 export const ServiceTech: React.FC<any> = (props) => {
-    const {title, subtitle, data, buttonName} = props;
+    const {title, subtitle, data,button} = props;
+    const router = useRouter();
 
     const content = <>
         <div
@@ -27,6 +29,7 @@ export const ServiceTech: React.FC<any> = (props) => {
                 </p>
                 <div className="mt-[20px]">
                     <Button
+                        onClick={()=> router.push(button.href)}
                         className="ButtonTransition overflow-hidden text-[12px] md:text-[16px] font-semibold "
                         sx={{
                             '&.MuiButtonBase-root': {
@@ -44,7 +47,7 @@ export const ServiceTech: React.FC<any> = (props) => {
                             },
                         }}
                     >
-                        {buttonName}
+                        {button.name}
                     </Button>
                 </div>
             </div>

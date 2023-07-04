@@ -214,7 +214,7 @@ const BlogDetailVeiw: React.FC = () => {
                             </div>
                             <div>
                                 <p className="text-[#757B8A] text-[14px] leading-[26px] md:text-[12px] md:leading-[26px] lg:text-[16px] lg:leading-[38px]">According to recent reports, the online pharmacy market size is expected to reach $31.64 billion in 2023 and will increase to $ 52.33 billion in 2027, witnessing a CAGR of 13.40% from 2023 to 2027. Thus, now is the right time if you wish to develop a medicine delivery app that is HIPAA compliant considering it is bound to gain instant market acceptance.
-                                    Before oving on to the costing details, let us understand if healthcare logistics and transportation software really need to adhere to HIPAA complianc</p>
+                                    Before moving on to the costing details, let us understand if healthcare logistics and transportation software really need to adhere to HIPAA complianc</p>
                             </div>
                             <div>
                                 <h1 className="text-[#444444] text-[16px] lg:text-[20px] xl:text-[24px] font-semibold">Does a Medical Supplies Shipping Software need to Adhere to HIPAA Act?</h1>

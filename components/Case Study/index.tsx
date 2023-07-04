@@ -53,7 +53,7 @@ const CaseStudy = () => {
             <div className="text-[#151448] md:text-[40px] text-[30px] font-bold leading-[125%] mt-[13px] max-w-[451px]">Case Studies</div>
             <div className="text-[#747C85] text-[16px] mt-[13px] font-medium max-w-[502px] leading-[30px]">Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat.</div>
           </div>
-          <div className="flex flex-row justify-between w-[80px] h-[30px] gap-[5px] md:w-[120px]  md:h-[50px] mt-[43px] ms-auto cursor-pointer">
+          <div className="flex flex-row hidden justify-between w-[80px] h-[30px] gap-[5px] md:w-[120px]  md:h-[50px] mt-[43px] ms-auto cursor-pointer">
             <div className="bg-[#177DF0] text-[#fff] rounded-[5px] "><ArrowBackIcon className="w-[30px] h-[30px] md:w-[50px] md:h-[50px] " /></div>
             <div className="bg-[#177DF0] text-[#fff] rounded-[5px] "><ArrowForwardIcon className="w-[30px] h-[30px] md:w-[50px] md:h-[50px] "  /></div>
           </div>

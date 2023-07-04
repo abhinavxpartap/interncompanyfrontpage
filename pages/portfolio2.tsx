@@ -11,6 +11,7 @@ import {Results} from "../components/results";
 
 import React from "react";
 import serviceData from "../data/portfolio.json";
+import {Footer} from "../components/footer";
 
 
 
@@ -20,6 +21,7 @@ const Portfolio2: NextPage = () => {
         <div >
 
                 <PortfolioBanner2/>
+            <Footer/>
 
 
 

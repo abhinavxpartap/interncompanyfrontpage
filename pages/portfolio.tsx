@@ -6,20 +6,13 @@ import {Director} from "../components/director";
 import {Journey} from "../components/journey";
 import {OurProcess} from "../components/ourProcess";
 import {OurProcess2} from "../components/ourProcess2";
-
 import {Results} from "../components/results";
-// import {Blog} from "../components/blog";
 import PortData from "../data/portfolio.json";
-
-
-
-
 import React from "react";
 import serviceData from "../data/portfolio.json";
-
-
-
-
+import Data from "../data/blogData.json";
+import {BlogCards} from "../components/BlogCard";
+import {Footer} from "../components/footer";
 const Portfolio: NextPage = () => {
     return (
         <div >
@@ -46,15 +39,35 @@ const Portfolio: NextPage = () => {
                 subtitle2={PortData.Journey.subtitle2}
             />
     
-            
-   
             <OurProcess2/>
             <OurProcess/>
             <ProjectChallanges/>
             <Results/>
-            {/*<Blog/>*/}
+            <div className="max-w-[1377.5px] mx-auto ">
+                <div className="w-[100%] flex flex-col px-[20px] md:px-[40px] py-[50px]">
+                    <h1 className="text-[#151448] text-start mb-[25px] text-[38px] md:text-[40px] font-semibold">More Case Studies</h1>
+                    <div className="w-[100%] mx-auto md:mx-0">
+                        <div className="w-[100%] gap-[40px] grid grid-cols-1 md:grid-cols-2 ">
+                            {Data.BlogData.slice(0, 2).map((item:any, index:number) => (
+                                <BlogCards
+                                    key={index}
+                                    AuthorName={item.AuthorName}
+                                    img={item.image}
+                                    title={item.title}
+                                    description={item.description}
+                                    url={item.URL}
+                                    categories={item.categories}
+                                    Date={item.Date}
+                                />
+                            ))}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
 
+<Footer/>
 
         </div>
     )

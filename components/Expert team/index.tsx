@@ -48,11 +48,11 @@ return (
                 return(
                     <div key={index} className="w-[90vw] lg:w-[48vw] relative rounded-[10px]">
                 <Img src={image} className="w-[100%]" alt="unsplash" />
-                <div className="flex flex-row w-auto max-w-[186px] gap-[10px] bg-[white] rounded-[8px] absolute bottom-[20px] right-[-20px] justify-center items-center"
+                <div className="flex flex-row w-auto max-w-[186px] gap-[10px] bg-[white] rounded-[8px] absolute bottom-[20px] right-[4px] justify-center items-center"
                 style={{padding: '8px 15px 8px 15px', border: '0.5px solid #A1A1A1',boxShadow: '17.14285659790039px 34.28571319580078px 68.57142639160156px 0px rgba(45, 51, 81, 0.12)'}}
                 >
                     <div className="w-[38px]">
-                        <Img src="/Badge.svg" className="w-[100%]" alt={"Icon"}/>
+                        <Img src="/BadgeTeam.svg" className="w-[100%]" alt={"Icon"}/>
                     </div>
                     <div>
                         <h1 className="text-[#5B5B5B] font-medium">Skilled techies,</h1>

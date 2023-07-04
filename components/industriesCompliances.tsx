@@ -10,12 +10,12 @@ export const IndustriesCompliances: React.FC<any> = (props) => {
         >
             <div className="w-[100%] px-[20px] md:px-[40px] flex flex-col text-start items-start justify-start ">
                 <div className=" w-[100%] md:w-[80%]">
-                <h1 className="text-white font-bold text-[18px] md:text-[32px]">{title}</h1>
-                <p className="text-white font-normal pt-[10px] md:pt-[20px] text-[12px] md:text-[16px]">{subtitle}</p>
+                <h1 className="text-white font-bold text-[19px] md:text-[32px]">{title}</h1>
+                <p className="text-white font-normal pt-[10px] md:pt-[20px] text-[14px] md:text-[16px]">{subtitle}</p>
                     <div className="w-[300px] mt-[20px] grid grid-cols-3 gap-[10px]">
                         {data.map((item:any,index:number) =>(
                         <div key={index}>
-                            <p className="font-medium text-[14px] md:text-[18px] text-white">{item.id}. {item.title}</p>
+                            <p className="font-medium text-[16px] md:text-[18px] text-white">{item.id}. {item.title}</p>
                         </div>
                         ))}
                     </div>

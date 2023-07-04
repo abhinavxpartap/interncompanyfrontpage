@@ -4,7 +4,10 @@
   "subtitle": "Helping Businesses build secure and scalable Web Applications, Portals and Solutions",
   "image": "/serviceBanner.jpg",
   "mobileImage": "/serviceBanner.jpg",
-  "buttonName": "Book a free consultation"
+  "button": {
+   "name": "Book a free consultation",
+   "href": "/"
+  }
  },
 
  "About": {
@@ -81,13 +84,19 @@
    }
   ],
   "centerContent":"As a web app development company, we offer top-notch medical and pharmaceutical app development services to enterprises across the world. Our expertise in the custom web application development field enables us to deliver comprehensive healthcare software development services  such as Practice Management Systems (PMS) and Electronic Health Records (EHR) systems, telemedicine platforms, billing, insurance verification software tools, etc., capable of meeting your custom business requirements.",
-  "buttonName":"Work with us"
+  "button": {
+   "name": "Work with us",
+   "href": "/"
+  }
  },
 
  "Faq": {
   "title": "Web development services we offer",
   "subtitle": "We provide end-to-end web app development services, tailored exclusively to solve your unique business challenges.",
-  "buttonName": "Book Consultation Session",
+  "button": {
+   "name": "Book Consultation Session",
+   "href": "/"
+  },
   "tadData": [
    {
     "id": 1,
@@ -130,7 +139,10 @@
  "Assurance": {
   "image": "/AssuraceBanner.png",
   "title": "Zuca’s Assurance as a Web App Development Company",
-  "buttonName": "Work with us",
+  "button": {
+   "name": "Work with us",
+   "href": "/"
+  },
   "data": [
    {
     "title": "A Quality-First Approach",
@@ -154,7 +166,10 @@
   "title": "Tech Stack We Use",
   "subtitle": "Here is the tech stack used by our team while offering web app development services:",
   "Paragraph": "Looking for an exact cost and time frame estimate for custom web development services?",
-  "buttonName": "Get a Quote",
+  "button": {
+   "name": "Get a Quote",
+   "href": "/"
+  },
   "data": [
    {
     "image": "/JavaScript.svg"

@@ -6,6 +6,7 @@ import {BlogCards} from "../components/BlogCard";
 import {Img} from "../utils/Img";
 import {Button} from "@mui/material";
 import {GetStories} from "../components/getStories";
+import {useRouter} from "next/router";
 
 const BlogPage: React.FC = () => {
     const [isActive, setIsActive] = useState(0);
@@ -13,6 +14,7 @@ const BlogPage: React.FC = () => {
     const handleClick = (index:number) => {
         setIsActive(index);
     };
+    const router = useRouter();
     return (<>
             <Head>
                 <title>{seoData.Blog.title}</title>
@@ -104,7 +106,8 @@ const BlogPage: React.FC = () => {
                                 </div>
                                 <div className="flex justify-center items-center mt-[30px]">
                                     <Button
-                                        className="text-[12px] md:text-[16px] capitalize font-semibold"
+                                        onClick={()=> router.push("/")}
+                                        className="text-[14px] md:text-[16px] capitalize font-semibold"
                                         sx={{
                                             backgroundColor:"transparent",
                                             border:"2px solid #0092FF",

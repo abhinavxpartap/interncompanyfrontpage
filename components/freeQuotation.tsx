@@ -1,6 +1,8 @@
 
 import React,{useState} from "react";
 import {Box,Typography,FormControl,OutlinedInput,Grid,FormControlLabel,Checkbox,Button} from "@mui/material"
+import {useRouter} from "next/router";
+
 
 export const FreeQuotation: React.FC<any> = () => {
     const [checked, setChecked] = useState([false, false]);
@@ -9,6 +11,7 @@ export const FreeQuotation: React.FC<any> = () => {
         newChecked[index] = !newChecked[index];
         setChecked(newChecked);
     };
+    const router = useRouter();
     const labelNames = ['Software Development', 'Web Design'];
     const content = <>
         <div
@@ -17,13 +20,13 @@ export const FreeQuotation: React.FC<any> = () => {
             <div className="w-[100%] px-[20px] flex flex-row text-start items-center justify-center ">
                 <div className="w-[100%] justify-center items-center flex flex-col">
                     <div className="w-[85vw] md:w-[380px] flex flex-col justify-center items-center text-center pb-[30px] md:mb-[50px]">
-                        <h1 className="text-[#0092FF] text-[9px] md:text-[12px] font-medium">
+                        <h1 className="text-[#0092FF] text-[10px] md:text-[12px] font-medium">
                             FREE QUOTATION
                         </h1>
-                        <h1 className="text-[#151448] text-[25px] md:text-[35px] font-semibold">
+                        <h1 className="text-[#151448] text-[30px] pb-[5px] md:pb-0 md:text-[35px] font-semibold">
                             Get a Free Quotation
                         </h1>
-                        <p className="text-[#444444] text-[15px] md:text-[19px] font-medium">
+                        <p className="text-[#444444] text-[18px] md:text-[19px] font-medium">
                             Don't Worry Your Data and Business Ideas Are Safe With Us.
                         </p>
                     </div>
@@ -73,8 +76,8 @@ export const FreeQuotation: React.FC<any> = () => {
                         </FormControl>
                         </Box>
                         <Box className="mt-[20px] flex flex-col ">
-                            <Typography className="text-[#2C3238] text-[12px] md:text-[16px] font-medium">What are you more interested in:</Typography>
-                            <Grid container className="mt-[7px] w-[100%]">
+                            <Typography className="text-[#2C3238] text-[14px] md:text-[16px] font-medium">What are you more interested in:</Typography>
+                            <Grid container xs={12} className="mt-[7px] w-[100%]">
                                 {checked.map((_, index) => (
                                     <Grid item xs={6}  key={index}>
                                         <FormControlLabel
@@ -91,7 +94,7 @@ export const FreeQuotation: React.FC<any> = () => {
                                                     sx={{
                                                         color: checked[index] ? '#000000' : '#828282',
                                                     }}
-                                                    className="text-[9px] md:text-[14px] font-normal ">{labelNames[index]}</Typography>
+                                                    className="text-[12px] md:text-[14px] font-normal ">{labelNames[index]}</Typography>
                                             }
                                         />
                                     </Grid>
@@ -99,6 +102,7 @@ export const FreeQuotation: React.FC<any> = () => {
                             </Grid>
                             <div className="mt-[20px]">
                                 <Button
+                                    onClick={()=> router.push("/")}
                                     className="ButtonTransition overflow-hidden text-[12px] md:text-[14px] font-semibold "
                                     sx={{
                                         '&.MuiButtonBase-root': {

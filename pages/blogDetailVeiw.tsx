@@ -158,7 +158,7 @@ const BlogDetailVeiw: React.FC = () => {
 
 
     const mycompletion = useReadingProgress();
-        console.log(mycompletion);
+
 
     return (<>
             <Head>
@@ -174,7 +174,7 @@ const BlogDetailVeiw: React.FC = () => {
                 />
                 <div className="w-[100%] max-w-[1377.5px] mx-auto flex flex-col items-center justify-center" style={{background:"#F9FBFF"}} >
                     <div className="w-[100%] flex flex-col items-center">
-                        <div className="relative w-[100%]">
+                        <div className="relative  w-[100%]">
                             <Img src="/blogBanner.svg" className="w-[100%]" alt={"BlogImage"}/>
                         </div>
                         <div className="w-[100%] px-[20px] md:px-[60px] flex flex-col gap-[10px] py-[60px]">
@@ -189,7 +189,7 @@ const BlogDetailVeiw: React.FC = () => {
                             <hr className="border-[1px] w-[97%] border-[#979797]"/>
                             <div className="flex flex-col  gap-[15px]">
                                 {content.map((item:any,index:number) => (
-                                <p key={index} className="text-[#979797] md:text-[11px] lg:text-[16px] font-normal">{item.title}</p>
+                                <p key={index} className="text-[#979797] text-[16px] md:text-[11px] lg:text-[16px] font-normal">{item.title}</p>
                                 ))}
                             </div>
                             <hr className="border-[1px] w-[97%]  border-[#979797]"/>
@@ -203,25 +203,25 @@ const BlogDetailVeiw: React.FC = () => {
                         <div className="w-[90vw] md:w-[65vw] flex flex-col gap-[20px]">
                             <div>
                                 {description.map((item:any,index:number) => (
-                                <p key={index} className="text-[#757B8A] text-[12px] leading-[26px] lg:text-[16px] lg:leading-[38px]">{item.description}</p>
+                                <p key={index} className="text-[#757B8A] text-[14px] leading-[26px] lg:text-[16px] lg:leading-[38px]">{item.description}</p>
                                 ))}
                             </div>
                             <div>
                                 <Img src="/BlogdetailImage.jpg" className="w-[100%]" alt={"BlogImage"}/>
                             </div>
                             <div>
-                                <p className="text-[#757B8A] md:text-[12px] md:leading-[26px] lg:text-[16px] lg:leading-[38px]">According to recent reports, the online pharmacy market size is expected to reach $31.64 billion in 2023 and will increase to $ 52.33 billion in 2027, witnessing a CAGR of 13.40% from 2023 to 2027. Thus, now is the right time if you wish to develop a medicine delivery app that is HIPAA compliant considering it is bound to gain instant market acceptance.
+                                <p className="text-[#757B8A] text-[14px] leading-[26px] md:text-[12px] md:leading-[26px] lg:text-[16px] lg:leading-[38px]">According to recent reports, the online pharmacy market size is expected to reach $31.64 billion in 2023 and will increase to $ 52.33 billion in 2027, witnessing a CAGR of 13.40% from 2023 to 2027. Thus, now is the right time if you wish to develop a medicine delivery app that is HIPAA compliant considering it is bound to gain instant market acceptance.
                                     Before moving on to the costing details, let us understand if healthcare logistics and transportation software really need to adhere to HIPAA complianc</p>
                             </div>
                             <div>
-                                <h1 className="text-[#444444] text-[14px] lg:text-[20px] xl:text-[24px] font-semibold">Does a Medical Supplies Shipping Software need to Adhere to HIPAA Act?</h1>
-                                <p className="text-[#757B8A] text-[12px] leading-[26px] lg:text-[16px] lg:leading-[38px]">Well, the answer to your question is yes! Suppose your business deals with Private Health Information such as medical supplies, medical equipment, pharmacy items, or any other healthcare product. In that case, it’s necessary to adhere to the HIPAA Act to ensure the privacy and security of sensitive patient data.</p>
-                                <p className="text:[#444444] text-[12px] lg:text-[14px] mt-[20px] mb-[10px] xl:text-[16px] font-semibold">Here are the various reasons why you need a HIPAA-compliant medical supplies distribution platform:</p>
+                                <h1 className="text-[#444444] text-[16px] lg:text-[20px] xl:text-[24px] font-semibold">Does a Medical Supplies Shipping Software need to Adhere to HIPAA Act?</h1>
+                                <p className="text-[#757B8A] text-[14px] mt-[10px] leading-[26px] lg:text-[16px] lg:leading-[38px]">Well, the answer to your question is yes! Suppose your business deals with Private Health Information such as medical supplies, medical equipment, pharmacy items, or any other healthcare product. In that case, it’s necessary to adhere to the HIPAA Act to ensure the privacy and security of sensitive patient data.</p>
+                                <p className="text:[#444444] text-[14px] lg:text-[14px] mt-[20px] mb-[10px] xl:text-[16px] font-semibold">Here are the various reasons why you need a HIPAA-compliant medical supplies distribution platform:</p>
                             </div>
                             {blogContent.slice(0,6).map((item:any,index:number) => (
                             <div key={index}>
-                                <h1 className="text-[#101010] text-[14px] lg:text-[18px] font-semibold" >{item.title}</h1>
-                                <p className="text-[#757B8A] text-[12px] leading-[26px] lg:text-[16px] lg:leading-[38px]">{item.description}</p>
+                                <h1 className="text-[#101010] text-[16px] lg:text-[18px] font-semibold" >{item.title}</h1>
+                                <p className="text-[#757B8A] text-[14px] mt-[10px] leading-[26px] lg:text-[16px] lg:leading-[38px]">{item.description}</p>
                             </div>
                             ))}
                             <div>
@@ -229,8 +229,8 @@ const BlogDetailVeiw: React.FC = () => {
                             </div>
                             {blogContent.slice(6,13).map((item:any,index:number) => (
                                 <div key={index}>
-                                    <h1 className="text-[#101010] text-[14px] lg:text-[18px] font-semibold" >{item.title}</h1>
-                                    <p className="text-[#757B8A] text-[12px] leading-[26px] lg:text-[16px] lg:leading-[38px]">{item.description}</p>
+                                    <h1 className="text-[#101010] text-[16px] lg:text-[18px] font-semibold" >{item.title}</h1>
+                                    <p className="text-[#757B8A] text-[14px] mt-[10px] leading-[26px] lg:text-[16px] lg:leading-[38px]">{item.description}</p>
                                 </div>
                             ))}
                             <div className="flex flex-row gap-[20px] items-center">
@@ -238,8 +238,8 @@ const BlogDetailVeiw: React.FC = () => {
                                     <Img src="/author.svg" className="w-[100%]" alt={"AuthorImage"}/>
                                 </div>
                                 <div>
-                                    <p className="text-[#757B8A] text-[12px] lg:text-[16px] font-medium">The Author</p>
-                                    <h1 className="text-[#101010] text-[14px] lg:text-[18px] font-medium">Author Name</h1>
+                                    <p className="text-[#757B8A] text-[14px] lg:text-[16px] font-medium">The Author</p>
+                                    <h1 className="text-[#101010] text-[18px] lg:text-[18px] font-medium">Author Name</h1>
                                     <p className="text-[#101010]  text-[14px] lg:text-[18px] font-normal">Designation</p>
                                 </div>
                             </div>

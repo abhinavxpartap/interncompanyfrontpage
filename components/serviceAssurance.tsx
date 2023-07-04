@@ -1,10 +1,12 @@
 import React from "react";
 import {Img} from "../utils/Img";
 import {Button} from "@mui/material";
+import {useRouter} from "next/router";
 
 
 export const ServicesAssurance: React.FC<any> = (props) => {
-    const {image,buttonName,data} = props;
+    const {image,data,button} = props;
+    const router = useRouter();
 
     const content = <>
         <div
@@ -13,19 +15,20 @@ export const ServicesAssurance: React.FC<any> = (props) => {
             <div className="w-[100%] px-[20px] flex flex-col-reverse md:flex-row text-start items-center justify-center ">
                 <div className="w-[85vw] md:w-[50vw] flex flex-col">
                     <h1 className="text-[white] text-[23px] md:text-[25px] lg:text-[32px] xl:text-[40px] font-bold ">Zuca’s Assurance as a Web App Development Company</h1>
-                    <div className="flex flex-col gap-[10px] md:gap-[15px] lg:gap-[20px] pt-[30px] items-start">
+                    <div className="flex flex-col gap-[18px] md:gap-[15px] lg:gap-[20px] pt-[30px] items-start">
                         {data.map((item:any,index:any) => (
                         <div key={index} className="flex flex-row items-start gap-[10px] ">
-                        <Img src={item.icon} className="w-[30px] lg:w-[40px]" alt={"Icon"}/>
+                        <Img src={item.icon} className="w-[32px] lg:w-[40px]" alt={"Icon"}/>
                         <span className="flex flex-col">
-                            <h1 className="text-[14px] md:text-[15px] xl:text-[18px] text-[white] font-semibold">{item.title}</h1>
-                            <p className="text-[10px] md:text-[12px] lg:text-[14px] pt-[5px] w-[90%] text-[white] font-normal">{item.subtitle}</p>
+                            <h1 className="text-[16px] md:text-[15px] xl:text-[18px] text-[white] font-semibold">{item.title}</h1>
+                            <p className="text-[14px] md:text-[12px] lg:text-[14px] pt-[5px] w-[90%] text-[white] font-normal">{item.subtitle}</p>
                         </span>
                         </div>
                         ))}
                     </div>
                     <div className="pt-[20px] lg:pt-[30px]  pl-[40px]">
                         <Button
+                            onClick={()=> router.push(button.href)}
                             className="ButtonTransition overflow-hidden text-[12px]  lg:text-[16px] font-semibold "
                             sx={{
                                 '&.MuiButtonBase-root': {
@@ -43,7 +46,7 @@ export const ServicesAssurance: React.FC<any> = (props) => {
                                 },
                             }}
                         >
-                            {buttonName}
+                            {button.name}
 
                         </Button>
                     </div>

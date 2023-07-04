@@ -1,9 +1,11 @@
 import React from "react";
 import {Img} from "../utils/Img";
 import {Button} from "@mui/material";
+import {useRouter} from "next/router";
 
 export const IndustriesEstimation: React.FC<any> = (props) => {
-    const {image, title, subtitle, data, buttonName} = props;
+    const {image, title, subtitle, data,button} = props;
+    const router = useRouter();
 
     const content = <>
         <div
@@ -11,22 +13,23 @@ export const IndustriesEstimation: React.FC<any> = (props) => {
         >
             <div className="w-[100%]  px-[20px] md:px-[60px] flex flex-col text-start items-start justify-start ">
                 <div className="w-[100%] md:w-[625px]">
-                    <h1 className="text-white font-bold md:leading-[52px] leading-[38px] text-[30px] md:text-[42px]">{title}</h1>
+                    <h1 className="text-white font-bold md:leading-[52px] leading-[38px] text-[31px] md:text-[42px]">{title}</h1>
                     <p className="text-white font-normal pt-[10px] md:pt-[20px] text-[15px] md:text-[20px]">
                         {subtitle}
                     </p>
-                    <div className="mt-[10px] md:mt-[20px] flex flex-col gap-[10px] md:gap-[15px]">
+                    <div className="mt-[20px]  flex flex-col gap-[10px] md:gap-[15px]">
                         {data.map((item:any,index:number) => (
                         <div key={index} className="flex flex-row gap-[12px] md:gap-[20px] items-center">
-                            <Img src="/bullet.svg" className=" w-[8px] md:w-[10px]" alt={"BulletIcon"}/>
-                            <p className=" text-[12px] md:text-[16px] text-white font-normal">
+                            <Img src="/bullet.svg" className=" w-[10px] md:w-[10px]" alt={"BulletIcon"}/>
+                            <p className=" text-[14px] md:text-[16px] text-white font-normal">
                                 {item.content}
                             </p>
                         </div>
                         ))}
                         <div>
                             <Button
-                                className="ButtonTransition overflow-hidden text-[12px] md:text-[16px] mt-[10px] md:mt-[20px] font-semibold "
+                                onClick={()=> router.push(button.href)}
+                                className="ButtonTransition overflow-hidden text-[14px] md:text-[16px] mt-[15px] md:mt-[20px] font-semibold "
                                 sx={{
                                     '&.MuiButtonBase-root': {
                                         backgroundColor: 'transparent',
@@ -43,7 +46,7 @@ export const IndustriesEstimation: React.FC<any> = (props) => {
                                     },
                                 }}
                             >
-                                {buttonName}
+                                {button.name}
                             </Button>
                         </div>
                     </div>

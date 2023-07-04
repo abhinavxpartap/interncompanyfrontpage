@@ -26,7 +26,7 @@ const ServicePage: React.FC = () => {
                 mobileImage={serviceData.Banner.mobileImage}
                 title={serviceData.Banner.title}
                 subtitle={serviceData.Banner.subtitle}
-                buttonName={serviceData.Banner.buttonName}
+                button={serviceData.Banner.button}
                 />
                 <div style={{background:"#F9FBFF"}} >
                 <ServiceAbout
@@ -46,25 +46,25 @@ const ServicePage: React.FC = () => {
                 LeftData={serviceData.Development.leftData}
                 CenterContent={serviceData.Development.centerContent}
                 RightData={serviceData.Development.rightData}
-                ButtonName={serviceData.Development.buttonName}
+                button={serviceData.Development.button}
                 />
                 <ServicesFaq
                     title={serviceData.Faq.title}
                     subtitle={serviceData.Faq.subtitle}
-                    buttonName={serviceData.Faq.buttonName}
+                    button={serviceData.Faq.button}
                     tabsData={serviceData.Faq.tadData}
                 />
                     <ServicesAssurance
                     image={serviceData.Assurance.image}
                     data={serviceData.Assurance.data}
-                    buttonName={serviceData.Assurance.buttonName}
+                    button={serviceData.Assurance.button}
                     />
                     <ServiceTech
                     data={serviceData.Tech.data}
                     title={serviceData.Tech.title}
                     subtitle={serviceData.Tech.subtitle}
                     Paragraph={serviceData.Tech.Paragraph}
-                    buttonName={serviceData.Tech.buttonName}
+                    button={serviceData.Tech.button}
                     />
                     <OurBrands/>
                     <FreeQuotation/>

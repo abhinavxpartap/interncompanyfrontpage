@@ -34,17 +34,17 @@ export const IndustriesFaq: React.FC<any> = (props) => {
                                     xs
                                     onClick={() => handleTabToggle(tab.id)}
                                     component={Grid}
-                                    className={`text-[12px] md:text-[18px] font-medium leading-[16px] md:leading-[26px] tracking-[0.5px] p-3 ${
+                                    className={`text-[16px]  md:text-[18px] font-medium leading-[22px] md:leading-[26px] tracking-[0.5px] p-3 ${
                                         openTabs.includes(tab.id) ? 'text-[#177DF0]' : 'text-[#333333]'
                                     }`}
                                 >
                                     {tab.title}
                                 </Typography>
-                                <Grid className="p-3">
+                                <Grid className="p-1 md:p-3">
                                     <IconButton
                                         onClick={() => handleTabToggle(tab.id)}
                                     >
-                                        {!openTabs.includes(tab.id) ? (<Img src="/drop.svg" className="w-[70%] md:w-[100%]" alt="icon" />) : (<Img src="/drop1.svg" className="w-[70%] md:w-[100%]" alt="icon" />)}
+                                        {!openTabs.includes(tab.id) ? (<Img src="/drop.svg" className="w-[80%] md:w-[100%]" alt="icon" />) : (<Img src="/drop1.svg" className="w-[80%] md:w-[100%]" alt="icon" />)}
                                     </IconButton>
                                 </Grid>
                             </Grid>
@@ -52,13 +52,13 @@ export const IndustriesFaq: React.FC<any> = (props) => {
                                 <>
                                 <Typography
                                     variant="subtitle1"
-                                    className="text-[10px] leading-[14px] md:text-[16px] font-normal md:leading-[22px] tracking-[0.5px] pl-3  pb-[10px] mb:pb-[20px] text-[#4B5A69]"
+                                    className="text-[13px] leading-[20px] md:text-[16px] font-normal md:leading-[22px] tracking-[0.5px] pl-3  pb-[10px] mb:pb-[20px] text-[#4B5A69]"
                                 >
                                     {tab.content}
                                 </Typography>
                                     <div className="flex flex-col pb-[10px] md:pb-[20px]">
                                     {tab.data.map((item:any,index:number) => (
-                                    <ul key={index} className="list-disc pl-7 pb-[8px] text-[#4B5A69] text-[10px] leading-[13px] md:text-[16px] font-normal md:leading-[22px] tracking-[0.5px]">
+                                    <ul key={index} className="list-disc pl-7 pb-[8px] text-[#4B5A69] text-[13px] leading-[20px] md:text-[16px] font-normal md:leading-[22px] tracking-[0.5px]">
                                         <li>{item.title}</li>
                                     </ul>
                                     ))}

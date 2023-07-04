@@ -19,8 +19,8 @@ export const IndustriesAbout: React.FC<any> = (props) => {
                     <div className="flex flex-col w-[600px] gap-[20px] pt-[20px] pb-[40px] md:pb-0 md:pt-[30px]">
                         {fintechData.map((item:any,index:number) => (
                         <div>
-                            <h1 className="text-[#333333] font-semibold text-[14px] md:text-[21px] mb-[8px]">{item.title}</h1>
-                            <p className="text-[#676767] pr-[0px] md:pr-[80px] text-[12px] md:text-[15px] font-medium" >{item.subtitle}</p>
+                            <h1 className="text-[#333333] font-semibold text-[15px] md:text-[21px] mb-[8px]">{item.title}</h1>
+                            <p className="text-[#676767] pr-[0px] md:pr-[80px] text-[14px] md:text-[15px] font-medium" >{item.subtitle}</p>
                         </div>
                         ))}
                     </div>
@@ -41,7 +41,7 @@ export const IndustriesAbout: React.FC<any> = (props) => {
             <div className="w-[60vw] mx-auto md:w-[95vw] lg:w-[900px] md:mt-[70px] ">
                 <Button
                     onClick={()=> router.push(button.href)}
-                    className="ButtonTransition overflow-hidden text-[12px] md:text-[16px] mt-[30px] md:mt-[-60px] font-semibold "
+                    className="ButtonTransition overflow-hidden text-[14px] md:text-[16px] mt-[30px] md:mt-[-60px] font-semibold "
                     sx={{
                         '&.MuiButtonBase-root': {
                             backgroundColor: '#177DF0',

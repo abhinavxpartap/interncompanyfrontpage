@@ -107,7 +107,7 @@ const BlogPage: React.FC = () => {
                                 <div className="flex justify-center items-center mt-[30px]">
                                     <Button
                                         onClick={()=> router.push("/")}
-                                        className="text-[12px] md:text-[16px] capitalize font-semibold"
+                                        className="text-[14px] md:text-[16px] capitalize font-semibold"
                                         sx={{
                                             backgroundColor:"transparent",
                                             border:"2px solid #0092FF",

@@ -99,11 +99,11 @@ export const ServicesFaq: React.FC<any> = (props) => {
         >
             <div className="w-[100%] px-[40px]  flex flex-col lg:flex-row justify-between text-start  items-center">
                 <div className="w-[85vw] lg:w-[40vw] flex flex-col mb-[40px] lg:mb-0">
-                    <h1 className="font-bold text-[30px] w-full md:w-[400px] leading-[37px] md:text-[40px] md:leading-[48px] text-[#151448]">{title}</h1>
-                    <p className="text-[#333333] mt-[20px] pr-[20px] w-full md:w-[400px] text-[13px] md:text-[16px] font-medium">{subtitle}</p>
+                    <h1 className="font-bold text-[32px] w-full md:w-[400px] leading-[37px] md:text-[40px] md:leading-[48px] text-[#151448]">{title}</h1>
+                    <p className="text-[#333333] mt-[20px] pr-[20px] w-full md:w-[400px] text-[15px] md:text-[16px] font-medium">{subtitle}</p>
                     <Button
                         onClick={()=> router.push(button.href)}
-                        className="ButtonTransition overflow-hidden text-[12px] w-[230px] md:w-[290px] md:text-[16px] mt-[20px] font-semibold "
+                        className="ButtonTransition overflow-hidden text-[13px] w-[230px] md:w-[290px] md:text-[16px] mt-[20px] font-semibold "
                         sx={{
                             '&.MuiButtonBase-root': {
                                 backgroundColor: '#177DF0',
@@ -141,20 +141,20 @@ export const ServicesFaq: React.FC<any> = (props) => {
                                         }}
                                     >
 
-                                        <Grid container alignItems="center">
+                                        <Grid container className="w-[100%]" alignItems="center">
                                             <Typography
                                                 variant="h4"
                                                 item
                                                 xs
                                                 onClick={() => handleTabToggle(tab.id)}
                                                 component={Grid}
-                                                className={`text-[10px] sm:text-[12px] leading-[15px] md:text-[15px] font-medium md:leading-[26px] tracking-[0.5px] p-3 ${
+                                                className={`text-[13px]  leading-[18px] md:text-[15px] font-medium md:leading-[26px] tracking-[0.5px] p-3 ${
                                                     activeTab === tab.id ? 'text-[#177DF0]' : 'text-[#000000]'
                                                 }`}
                                             >
                                                 <span>{tab.id}.</span> {tab.title}
                                             </Typography>
-                                            <Grid className="p-3">
+                                            <Grid className="p-1 md:p-3">
                                                 <IconButton onClick={() => handleTabToggle(tab.id)}>
                                                     {activeTab !== tab.id ? (
                                                         <Img src="/downIcon.svg" className="w-[70%] md:w-[100%]" alt="icon" />
@@ -167,7 +167,7 @@ export const ServicesFaq: React.FC<any> = (props) => {
                                         {activeTab === tab.id && (
                                             <Typography
                                                 variant="subtitle1"
-                                                className="text-[10px] leading-[15px] md:text-[14px] font-normal md:leading-[22px] tracking-[0.5px] pl-3 pb-[20px] text-[#757B8A]"
+                                                className="text-[12px] leading-[18px] md:text-[14px] font-normal md:leading-[22px] tracking-[0.5px] pl-3 pb-[20px] text-[#757B8A]"
                                             >
                                                 {tab.content}
                                             </Typography>

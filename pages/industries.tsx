@@ -16,6 +16,8 @@ import {BlogCards} from "../components/BlogCard";
 import {Button} from "@mui/material";
 import {Img} from "../utils/Img";
 import serviceData from "../data/service.json";
+import CaseStudy from "../components/Case Study";
+import {Footer} from "../components/footer";
 
 const IndustriesPage: React.FC = () => {
     return (<>
@@ -47,6 +49,7 @@ const IndustriesPage: React.FC = () => {
                     subtitle={industryData.Compliances.subtitle}
                     data={industryData.Compliances.data}
                     />
+                    <CaseStudy/>
                     <IndustriesTechnology
                     title={industryData.Technology.title}
                     subtitle={industryData.Technology.subtitle}
@@ -93,6 +96,7 @@ const IndustriesPage: React.FC = () => {
                         </div>
                     </div>
                     <FreeQuotation/>
+                    <Footer/>
                 </div>
             </div>
         </>

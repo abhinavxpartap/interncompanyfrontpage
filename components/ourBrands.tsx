@@ -36,7 +36,7 @@ export const OurBrands: React.FC<any> = () => {
         >
             <div className="mb-[30px]">
                 <h1 className="capitalize w-[100%] flex flex-col items-center md:flex-row gap-[4px] font-medium text-[#151448] text-[24px]">
-                    We are trusted by <span className="flex flex-row gap-[4px]"> <span className="relative text-[#3D6EFC]"> brands<Img src="/line.svg" className="w-[78px] mt-[-5px]" alt={"Line"}/></span> you believe in...</span>
+                    We are trusted by <span className="flex flex-row gap-[4px]"> <span className="relative text-[#3D6EFC]"> brands<Img src="/Line2.svg" className="w-[78px] mt-[-5px]" alt={"Line"}/></span> you believe in...</span>
                 </h1>
             </div>
 

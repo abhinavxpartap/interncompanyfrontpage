@@ -7,6 +7,8 @@ import {BlogCards} from "../components/BlogCard";
 import {Img} from "../utils/Img";
 import {Button} from "@mui/material";
 import {GetStories} from "../components/getStories";
+import {Header} from "../components/Common/Header";
+import {Footer} from "../components/footer";
 
 const content = [
     {
@@ -168,9 +170,10 @@ const BlogDetailVeiw: React.FC = () => {
                 <meta name="title" content={seoData.Blog.metaTitle}/>
             </Head>
             <div className="main mx-auto relative" style={{background:"#F9FBFF"}}>
+                <Header/>
                 <span
                     style={{ transform:`translateX(${mycompletion - 100}%)` }}
-                    className="fixed bg-[#0078FF] h-1 w-full top-0 z-[10]"
+                    className="fixed top-[78px] bg-[#0078FF] h-1 w-full  z-[10]"
                 />
                 <div className="w-[100%] max-w-[1377.5px] mx-auto flex flex-col items-center justify-center" style={{background:"#F9FBFF"}} >
                     <div className="w-[100%] flex flex-col items-center">
@@ -268,6 +271,7 @@ const BlogDetailVeiw: React.FC = () => {
                     </div>
                 </div>
                 <GetStories/>
+                <Footer/>
             </div>
         </>
     );

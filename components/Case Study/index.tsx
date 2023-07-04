@@ -41,7 +41,7 @@ const caseStudies = [
 const CaseStudy = () => {
   return (
     <div>
-      <div className="pt-[80px] relative md:px-[100px] pt-[64px] pb-[38px] max-w-[1377.5px] overflow-hidden mx-auto">
+      <div className="w-[90%] pt-[80px] relative md:px-[100px] pt-[64px] pb-[38px] md:max-w-[1377.5px] overflow-hidden mx-auto">
         <div className="flex  flex-row">
           <div>
             <Button
@@ -53,9 +53,9 @@ const CaseStudy = () => {
             <div className="text-[#151448] md:text-[40px] text-[30px] font-bold leading-[125%] mt-[13px] max-w-[451px]">Case Studies</div>
             <div className="text-[#747C85] text-[16px] mt-[13px] font-medium max-w-[502px] leading-[30px]">Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat.</div>
           </div>
-          <div className="flex flex-row justify-between w-[120px]  h-[50px] mt-[43px] ms-auto cursor-pointer">
-            <div className="bg-[#177DF0] text-[#fff] rounded-[5px] "><ArrowBackIcon sx={{ height: "50px", width: "50px" }} /></div>
-            <div className="bg-[#177DF0] text-[#fff] rounded-[5px] "><ArrowForwardIcon sx={{ height: "50px", width: "50px" }} /></div>
+          <div className="flex flex-row justify-between w-[80px] h-[30px] gap-[5px] md:w-[120px]  md:h-[50px] mt-[43px] ms-auto cursor-pointer">
+            <div className="bg-[#177DF0] text-[#fff] rounded-[5px] "><ArrowBackIcon className="w-[30px] h-[30px] md:w-[50px] md:h-[50px] " /></div>
+            <div className="bg-[#177DF0] text-[#fff] rounded-[5px] "><ArrowForwardIcon className="w-[30px] h-[30px] md:w-[50px] md:h-[50px] "  /></div>
           </div>
         </div>
         <div className="text-[#E4F0FF] -z-[1] text-[250px] max-w-[1440px] w-[1440px] left-[730px] absolute font-medium leading-[70%] -tracking-[20px] bottom-[3px]">
@@ -64,17 +64,17 @@ const CaseStudy = () => {
       </div>
       <div className='w-full h-full overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth flex flex-row max-w-[1377.5px] mx-auto' >
         {caseStudies.map((caseStudy: any, index: any) => (
-          <div key={index} className="max-w-[711px] h-[366px] bg-white inline-block rounded-[20px] boxshad flex flex-row justify-between px-[23px] py-[20px] m-4">
-            <div className="w-[280px] h-[326px] inline-block rounded-[15px]">
-              <img src={caseStudy.imgUrl} alt={caseStudy.imgUrl} />
+          <div key={index} className=" max-w-[320px] md:max-w-[711px] md:h-[366px] bg-white inline-block rounded-[20px] boxshad flex flex-row justify-between p-[10px] md:px-[23px] md:py-[20px] m-4">
+            <div className="md:w-[280px] md:h-[326px] inline-block rounded-[15px]">
+              <img src={caseStudy.imgUrl} className="w-[100%] h-[100%] bg-cover" alt={caseStudy.imgUrl} />
             </div>
-            <div className='flex flex-col w-[350px] whitespace-break-spaces ml-[30px]'>
-              <div className="text-[#151448] text-[20px] font-bold leading-[37.4px]">{caseStudy.heading}</div>
-              <div className="text-[#177DF0] text-[20px] font-bold leading-[37.4px] mt-[10px]">{caseStudy.org}</div>
-              <div className="text-[#747C85] text-[16px] mt-[5px] font-medium leading-[26px]">{caseStudy.description}</div>
+            <div className='flex flex-col w-[350px] whitespace-break-spaces ml-[15px] md:ml-[30px]'>
+              <div className="text-[#151448] text-[14px] leading-[20px] md:text-[20px] font-bold md:leading-[37.4px]">{caseStudy.heading}</div>
+              <div className="text-[#177DF0] text-[14px] leading-[20px] md:text-[20px] font-bold md:leading-[37.4px] mt-[10px]">{caseStudy.org}</div>
+              <div className="text-[#747C85] text-[12px] leading-[18px] md:text-[16px] mt-[5px] font-medium md:leading-[26px]">{caseStudy.description}</div>
               <div>
                 <MUIMaterial.Button
-                  className="text-[12px] max-w-[115px] w-[115px] h-[35px] mt-[38px] capitalize font-bold leading-[150%]"
+                  className="text-[12px] max-w-[115px] w-[115px] h-[35px] mt-[10px] md:mt-[38px] capitalize font-bold leading-[150%]"
                   sx={{
                     backgroundColor: "transparent",
                     border: "1px solid #5A7184",

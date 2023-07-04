@@ -7,6 +7,8 @@ import {Img} from "../utils/Img";
 import {Button} from "@mui/material";
 import {GetStories} from "../components/getStories";
 import {useRouter} from "next/router";
+import {Header} from "../components/Common/Header";
+import {Footer} from "../components/footer";
 
 const BlogPage: React.FC = () => {
     const [isActive, setIsActive] = useState(0);
@@ -23,6 +25,9 @@ const BlogPage: React.FC = () => {
                 <meta name="title" content={seoData.Blog.metaTitle}/>
             </Head>
             <div className="main mx-auto" style={{background:"#F9FBFF"}}>
+                <div className="bg-white">
+                    <Header/>
+                </div>
                 <div className="w-[100%] max-w-[1377.5px] mx-auto flex flex-col px-0 md:px-[40px] items-center justify-center" style={{background:"#F9FBFF"}} >
                     <div className="w-[100%] flex flex-col lg:flex-row items-center py-[50px] md:py-[100px] gap-[40px]">
                         <div className="relative w-[90vw] rounded-[10px]  lg:w-[48vw]">
@@ -155,6 +160,7 @@ const BlogPage: React.FC = () => {
 
                 </div>
                 <GetStories/>
+                <Footer/>
             </div>
         </>
     );

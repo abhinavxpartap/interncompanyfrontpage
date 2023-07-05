@@ -89,7 +89,7 @@ export const ServicesFaq: React.FC<any> = (props) => {
     const router = useRouter();
     const [activeTab, setActiveTab] = useState(2);
 
-    const handleTabToggle = (tabId) => {
+    const handleTabToggle = (tabId: any) => {
         setActiveTab(tabId === activeTab ? null : tabId);
     };
 

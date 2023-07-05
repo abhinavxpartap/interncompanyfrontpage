@@ -90,7 +90,7 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
         </div>
         <div className="dropdown-button relative w-auto h-auto lg:hidden">
             <div className="flex flex-row" onClick={setOpen}>
-                <div
+                <div onClick={handleRedirect}
                     className={`${colorBlack}  text-[17px] gap-[6px] flex justify-start items-start w-full md:leading-[27px] sm:leading-[17px] leading-[14px] tracking-[-0.24px] cursor-pointer`}
                 >
                     <span className="mb-[10px] text-[16px] font-medium">{title}</span>
@@ -101,14 +101,14 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
                          className={`w-[12px] mt-[5px] justify-end items-end sm:ml-[7px] transition ${open ? 'rotate-[180deg]' : 'rotate[0]'} dropdown-icon`}/>}
                 </div>
             </div>
-            {items && items.title && <div
+            <div
                 className={`${open ? 'block' : 'hidden'} bg-white relative w-full lg:my-[10px] rounded-[15px] xxl:px-[50] lg:px-[30px] px-[12px] xxl:py-[44px] lg:py-[30px] dropdown-container z-[99999]`}
             >
-                 <div
+                 {items && items.data && items.data.length > 0 && <div
                     className="text-[13px] leading-[25px] font-medium tracking-[0.8px] text-[#101D2C] mb-[14px] uppercase font-montserrat"
                 >
                     {items.title}
-                </div>
+                </div> }
                 {items && items.data && items.data.length > 0 && <div
                     className="flex flex-col gap-[12px]"
                 >
@@ -132,7 +132,7 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
                         })
                     }
                 </div>}
-            </div>}
+            </div>
         </div>
     </>
 }

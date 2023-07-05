@@ -180,7 +180,7 @@ export const Header: React.FC<any> = () => {
                           className={`flex flex-col bg-white w-[100%] h-[100%] p-[20px]  gap-[20px] relative ${!isSticky ? 'rounded' : 'border-b md:px-[55px] sm:px-[30px] px-[16px]'}`}>
                           <Dropdown
                               title="About"
-                              items={null}
+                              items={headerData.header[0]}
                               open={openExplore}
                               isSticky={isSticky}
                               setOpen={toggleExplore} href={undefined}                              />
@@ -198,13 +198,13 @@ export const Header: React.FC<any> = () => {
                                   setOpen={toggleResources} href={undefined}                              />
                               <Dropdown
                                   title="Portfolio"
-                                  items={null}
+                                  items={headerData.header[3]}
                                   open={openSupport}
                                   isSticky={isSticky}
                                   setOpen={toggleSupport} href={undefined}                              />
                               <Dropdown
                                   title="Blog"
-                                  items={null}
+                                  items={headerData.header[4]}
                                   open={openSupport}
                                   isSticky={isSticky}
                                   setOpen={toggleSupport} href={undefined}                              />

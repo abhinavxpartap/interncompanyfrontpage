@@ -43,8 +43,8 @@ const Portfolio: NextPage = () => {
             <OurProcess/>
             <ProjectChallanges/>
             <Results/>
-            <div className="max-w-[1377.5px] mx-auto ">
-                <div className="w-[100%] flex flex-col px-[20px] md:px-[40px] py-[50px]">
+            <div className="max-w-[1377.5px] justify-center flex mx-auto ">
+                <div className="w-[85%] flex flex-col px-[20px] md:px-[40px] py-[50px]">
                     <h1 className="text-[#151448] text-start mb-[25px] text-[38px] md:text-[40px] font-semibold">More Case Studies</h1>
                     <div className="w-[100%] mx-auto md:mx-0">
                         <div className="w-[100%] gap-[40px] grid grid-cols-1 md:grid-cols-2 ">

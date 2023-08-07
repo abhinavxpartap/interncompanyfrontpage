@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Box, Typography, FormControl, OutlinedInput, Grid, FormControlLabel, Checkbox, Button } from "@mui/material"
+import { Box, Typography, FormControl, IconButton,OutlinedInput, Grid, FormControlLabel, Checkbox, Button } from "@mui/material"
+import { Img } from "../utils/Img";
 
-
-const Popupform = ({onClose}) => {
+const Popupform = ({ onClose }) => {
     const [checked, setChecked] = useState([false, false]);
     const handleToggle = (index:any) => () => {
         const newChecked = [...checked];
@@ -18,10 +18,8 @@ const Popupform = ({onClose}) => {
       };
 
   return (
-    <div className="bg-white  flex justify-center items-center">
-        <div className="bg-[url('/images/bg-form.png')] md:px-[70px] md:pt-[103px] pt-[40px] md:pb-[206px] pb-[150px] pt-[190px] relative">
-            <div className="max-w-[1377.5px] relative mx-auto flex md:flex-row flex-col justify-between ">
-                <div className="md:absolute relative justify-center items-center mx-auto  md:right-0 md:top-[-170px] top-[70px] max-w-[460px] bg-white rounded-[10px] p-[20px]">
+    <div className="bg-white relative flex justify-center items-center">
+        <div className="relative justify-center items-center mx-auto max-w-[460px] bg-white rounded-[10px] p-[30px]">
                     <Box className="w-[100%] flex flex-row justify-between">
                         <Box className="w-[48%]">
                             <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">First name</Typography>
@@ -115,29 +113,13 @@ const Popupform = ({onClose}) => {
                         </div>
                     </Box>
                 </div>
-            </div>
+        <div className="absolute top-[0px] right-[0px]">
+            <IconButton
+                onClick={handleClose}
+            >
+                <Img src="/close.png" alt="closeIcon" className="w-[20px]"  />
+            </IconButton>
         </div>
-        <Button
-          className="text-[12px] md:text-[14px] font-semibold"
-          sx={{
-            '&.MuiButtonBase-root': {
-              backgroundColor: '#177DF0',
-              color: 'white',
-              textTransform: 'capitalize',
-              padding: '8px 24px 8px 24px',
-              border: '1px solid #5CA9FF',
-              borderRadius: '30px',
-              '&:hover': {
-                border: '1px solid #5CA9FF',
-                backgroundColor: 'transparent',
-                color: '#177DF0',
-              },
-            },
-          }}
-          onClick={handleClose}
-        >
-          Close
-        </Button>
 
 
     </div>

@@ -9,18 +9,13 @@ import Popupform from "../popupform";
 
 
 export const Banner = (props: any) => {
-
-
     const [open, setOpen] = useState(false);
-
     const handleOpen = () => {
       setOpen(true);
     };
-  
     const handleClose = () => {
       setOpen(false);
     };
-
     const { title, subtitle, image, button, ourClients, awesomeNumbers } = props;
     const router = useRouter();
     const settings = { 
@@ -54,8 +49,7 @@ export const Banner = (props: any) => {
                         label={button.title}
                         type="button"
                         onClick={handleOpen} 
-                                               className="xxl:text-[19px] bg-white xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:text-[17px] text-[14px] sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] xxl:h-[63px] md:h-[48px] h-[42px]"
-                   
+                        className="xxl:text-[19px] bg-white xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:text-[17px] text-[14px] sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] xxl:h-[63px] md:h-[48px] h-[42px]"
                    />
                 </div>
                 <Dialog open={open} onClose={handleClose}>

@@ -56,14 +56,14 @@ export const Header: React.FC<any> = () => {
       };
   }, []);
 
-  const logo = !["/", "/home","/aboutus", "/partner", "/faq", "/blog", "/ourStory", "/term"].includes(
+  const logo = !["/", "/home","/aboutus","/service", "/partner", "/faq", "/blog", "/ourStory", "/term"].includes(
       router.pathname
   )
       ? data.logo_dark
       : isSticky
           ? data.logo_dark
           : data.logo_light;
-  const buttonType = (!["/", "/home","/aboutus", "/blog", "/faq", "/contact", "/landing", "/getStarted", "/ourStory"].includes(
+  const buttonType = (!["/", "/home","/aboutus","/service", "/blog", "/faq", "/contact", "/landing", "/getStarted", "/ourStory"].includes(
       router.pathname
   ) && !isSticky) ? "service" : "button";
 

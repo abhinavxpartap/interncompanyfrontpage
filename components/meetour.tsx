@@ -60,7 +60,7 @@ export const Meetour: React.FC<any> = (props) => {
                 {teamMembers.map((member, index) => (
                     <div
                         key={index}
-                        className="bg-white rounded-[10px] mt-[45px] md:w-[265px] w-[170px] justify-center items-center md:p-[20px] md:h-[300px] h-[200px]"
+                        className="bg-white shad5 rounded-[10px] mt-[45px] md:w-[265px] w-[170px] justify-center items-center md:p-[20px] md:h-[300px] h-[200px]"
                     >
                         <div>
                             <Img src={member.imageSrc} alt="" className="md:w-auto w-[160px] md:ml-0 ml-[4px]" />

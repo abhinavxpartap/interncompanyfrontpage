@@ -175,7 +175,7 @@ const BlogDetailVeiw: React.FC = () => {
                     style={{ transform:`translateX(${mycompletion - 100}%)` }}
                     className="fixed top-[78px] bg-[#0078FF] h-1 w-full  z-[10]"
                 />
-                <div className="w-[100%] max-w-[1377.5px] mx-auto flex flex-col items-center justify-center" style={{background:"#F9FBFF"}} >
+                <div className="w-[100%] max-w-[1877.5px] mx-auto flex flex-col items-center justify-center" style={{background:"#F9FBFF"}} >
                     <div className="w-[100%] flex flex-col items-center">
                         <div className="relative  w-[100%]">
                             <Img src="/blogBanner.svg" className="w-[100%]" alt={"BlogImage"}/>

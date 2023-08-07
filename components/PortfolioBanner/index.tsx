@@ -1,6 +1,7 @@
 import type {NextPage} from 'next'
 import {Button} from "@mui/material";
 import React from "react";
+import { Header } from '../Common/Header';
 
 
 export const PortfolioBanner: React.FC<any> = (props) => {
@@ -9,6 +10,7 @@ export const PortfolioBanner: React.FC<any> = (props) => {
         <div>
             <div
                 className="w-full pt-[190px] pb-[185px]  relative md:max-w-[1441px] justify-center   h-full gap-[20px] mx-auto flex flex-col  ">
+                    <Header/>
                 <div className=" flex justify-center ">
                     <div className="text-white md:text-[38px] text-[28px] text-center  max-w-[690px] font-semibold  md:leading-[50px]">
                         {title}

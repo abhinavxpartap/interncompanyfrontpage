@@ -15,25 +15,25 @@ interface DropdownInterface {
 export const Dropdown: FC<DropdownInterface> = (props) => {
     const {title, items, open, setOpen, isSticky, href} = props;
     const router = useRouter();
-    const arrow = !["/", "/home", "/aboutus","/service","/partner", "/faq", "/blog", "/contact", "/ourStory", "/term"].includes(
+    const arrow = !["/", "/home", "/aboutus","/portfolio","service","/partner","/industries", "/faq", "/blog", "/contact", "/ourStory", "/term"].includes(
         router.pathname
     )
         ? "/images/arrow.svg"
         : !isSticky
             ? "/images/arrow-down.svg"
             : "/images/arrow.svg";
-    const color = !["/", "/home", "/faq","/aboutus","/service", "/contact",  "/term"].includes(
+    const color = !["/", "/home", "/faq","/aboutus","/portfolio","/industries","/service", "/contact",  "/term"].includes(
         router.pathname
     )
         ? "text-[white]"
         : isSticky
             ? "text-[white]"
             : "text-white";
-    const arrowBlack = !["/", "/home", "/partner","/aboutus","/service", "/faq", "/contact", "/blog", "/ourStory"].includes(router.pathname)
+    const arrowBlack = !["/", "/home", "/partner","/aboutus","/portfolio","/service","/industries", "/faq", "/contact", "/blog", "/ourStory"].includes(router.pathname)
     || !isSticky
         ? "/images/arrow.svg"
         : "/images/arrow.svg";
-    const colorBlack = !["/", "/home", "/partner","/aboutus", "/faq","/service", "/contact",  "/blog","/ourStory"].includes(
+    const colorBlack = !["/", "/home", "/partner","/aboutus","/portfolio", "/faq","/service", "/contact",  "/blog","/ourStory"].includes(
         router.pathname
     )
         ? "text-[#000000]"

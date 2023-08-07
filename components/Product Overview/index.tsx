@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Button } from '../../utils/Button';
 import 'react-multi-carousel/lib/styles.css';
-import Carousel from 'react-multi-carousel';
+// import Carousel from 'react-multi-carousel';
 import { FreeQuotation } from '../freeQuotation';
 import { Img } from '../../utils/Img';
 import Service from '../Service';

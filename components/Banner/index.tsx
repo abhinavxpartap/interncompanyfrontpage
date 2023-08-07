@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "../../utils/Button";
 import { Img } from "../../utils/Img";
 import Slider from "react-slick";
 import { Header } from "../Common/Header";
 import { useRouter } from "next/router";
+import { Dialog, DialogContent } from '@mui/material';
+import Popupform from "../popupform";
+
 
 export const Banner = (props: any) => {
+
+
+    const [open, setOpen] = useState(false);
+
+    const handleOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleClose = () => {
+      setOpen(false);
+    };
+
     const { title, subtitle, image, button, ourClients, awesomeNumbers } = props;
     const router = useRouter();
     const settings = { 
@@ -38,10 +53,16 @@ export const Banner = (props: any) => {
                     <Button
                         label={button.title}
                         type="button"
-                        onClick={() => router.push("/getStarted")}
-                        className="xxl:text-[19px] bg-white xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:text-[17px] text-[14px] sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] xxl:h-[63px] md:h-[48px] h-[42px]"
-                    />
+                        onClick={handleOpen} 
+                                               className="xxl:text-[19px] bg-white xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:text-[17px] text-[14px] sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] xxl:h-[63px] md:h-[48px] h-[42px]"
+                   
+                   />
                 </div>
+                <Dialog open={open} onClose={handleClose}>
+        <DialogContent>
+          <Popupform onClose={handleClose} />
+        </DialogContent>
+      </Dialog>
                 <div className="mt-[20px]">
                     <hr className="inline-block w-[22px] mb-[4px]" /><span className="text-[16px] text-[white]"> Web, IOS & Android </span>
                 </div>

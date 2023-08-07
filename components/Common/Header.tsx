@@ -56,14 +56,14 @@ export const Header: React.FC<any> = () => {
       };
   }, []);
 
-  const logo = !["/", "/home", "/partner", "/faq", "/blog", "/ourStory", "/term"].includes(
+  const logo = !["/", "/home","/aboutus", "/partner", "/faq", "/blog", "/ourStory", "/term"].includes(
       router.pathname
   )
       ? data.logo_dark
       : isSticky
           ? data.logo_dark
           : data.logo_light;
-  const buttonType = (!["/", "/home", "/blog", "/faq", "/contact", "/landing", "/getStarted", "/ourStory"].includes(
+  const buttonType = (!["/", "/home","/aboutus", "/blog", "/faq", "/contact", "/landing", "/getStarted", "/ourStory"].includes(
       router.pathname
   ) && !isSticky) ? "service" : "button";
 
@@ -77,7 +77,7 @@ export const Header: React.FC<any> = () => {
   return (
       <>
           <div
-              className={`md:pt-[56px] mx-[auto] z-[9] pt-[16px] md:px-[55px] sm:px-[30px] px-[16px] w-full fixed top-0 left-0 right-0 header ${
+              className={`md:pt-[20px] mx-[auto] z-[9] pt-[16px] md:px-[55px] sm:px-[30px] px-[16px] w-full fixed top-0 left-0 right-0 header ${
                   isSticky ? "header-sticky" : ""
               }`}
           >

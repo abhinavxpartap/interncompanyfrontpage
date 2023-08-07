@@ -5,17 +5,30 @@ import { useRouter } from "next/router";
 import data from "../../data/config.json";
 import headerData from "../../data/common/layout.json";
 import {Dropdown} from "../Common/Dropdown";
+import { Dialog, DialogContent } from "@mui/material";
+import Popupform from "../popupform";
 
 
 export const Header: React.FC<any> = () => {
+
   const router = useRouter();
   const [isSticky, setIsSticky] = useState(false);
-  const [open, setOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [openExplore, setOpenExplore] = useState(false);
   const [openCompany, setOpenCompany] = useState(false);
   const [openResources, setOpenResources] = useState(false);
   const [openSupport, setOpenSupport] = useState(false);
+
+
+
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   const toggleExplore = () => {
       setOpenExplore(!openExplore);
       setOpenCompany(false);
@@ -167,9 +180,14 @@ export const Header: React.FC<any> = () => {
                               label="Book a Demo"
                               type={buttonType}
                               className={`xxl:text-[19px] ${buttonType === 'button' ? 'hover:text-[#0092FF]' : 'text-white'} hover:bg-[#fff] bg-[#0092FF] text-[#fff] hover:text-[#0092FF] border-[#0092FF] xxl:leading-[22.99px] font-semibold md:text-[15px] sm:text-[9px] text-[12px] sm:leading-[20.57px] leading-[14px] tracking-[-0.22px] md:w-[145px] w-[100px] xl:h-[44px] md:h-[38px] h-[35px]`}
-                              onClick={() => router.push("/getStarted")}
-                          />
+                              onClick={handleOpen} 
+                              />
                       </div>
+                      <Dialog open={open} onClose={handleClose}>
+        <DialogContent>
+          <Popupform onClose={handleClose} />
+        </DialogContent>
+      </Dialog>
                   </div>
               </div>
               <div

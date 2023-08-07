@@ -18,8 +18,8 @@ const Popupform = ({ onClose }) => {
       };
 
   return (
-    <div className="bg-white relative flex justify-center items-center">
-        <div className="relative justify-center items-center mx-auto max-w-[460px] bg-white rounded-[10px] p-[30px]">
+    <div className="bg-white relative flex justify-cener items-center">
+        <div className="relative justify-center items-center mx-auto max-w-[460px]  bg-white rounded-[10px] p-[30px]">
                     <Box className="w-[100%] flex flex-row justify-between">
                         <Box className="w-[48%]">
                             <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">First name</Typography>
@@ -66,7 +66,7 @@ const Popupform = ({ onClose }) => {
                     </Box>
                     <Box className="mt-[20px] flex flex-col ">
                         <Typography className="text-[#2C3238] text-[12px] md:text-[16px] font-medium">What are you more interested in:</Typography>
-                        <Grid container className="mt-[7px] w-[120%]">
+                        <Grid container className="mt-[7px] w-[110%]">
                             {checked.map((_, index) => (
                                 <Grid item xs={6} key={index}>
                                     <FormControlLabel

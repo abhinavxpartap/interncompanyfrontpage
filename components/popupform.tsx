@@ -66,7 +66,7 @@ const Popupform = ({ onClose }) => {
                     </Box>
                     <Box className="mt-[20px] flex flex-col ">
                         <Typography className="text-[#2C3238] text-[12px] md:text-[16px] font-medium">What are you more interested in:</Typography>
-                        <Grid container className="mt-[7px] w-[100%]">
+                        <Grid container className="mt-[7px] w-[120%]">
                             {checked.map((_, index) => (
                                 <Grid item xs={6} key={index}>
                                     <FormControlLabel

@@ -10,7 +10,7 @@ export const PortfolioBanner2: React.FC<any> = (props) => {
         <div
             className="max-w-[1377.5px] mx-auto flex flex-col   justify-center items-center"
         >
-            <div className="s ">
+            <div className=" ">
                 <Img src="/line.svg" alt="n" className="w-[320px] relative top-[255px]      "/>
 
             </div>

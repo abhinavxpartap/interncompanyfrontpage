@@ -7,7 +7,7 @@
         "light": "/images/logo.png",
         "dark": "/images/logo-dark.png"
     },
-    "logo_dark": "/images/logo.png",
+    "logo_dark": "/images/logo-dark.svg",
     "logo_light": "/images/logo-dark.png",
     "socialMedia": { 
         "facebook": "https://www.facebook.com/searchmyexpert/",

@@ -12,19 +12,12 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Testimonials from '../Testimonials';
 import DemoForm from '../Demo Form';
 
-
-
-
-
-
-
-
 const ProductOverview = () => {
   return (
     <div className="mt-[80px] ">
       <div className="bg-[url('/images/bg-blue2.png')] bg-no-repeat bg-cover md:px-[134px] py-[75px]">
         <div className="max-w-[1377.5px]  mx-auto">
-            <div className="flex flex-col md:justify-start md:items-start justify-center items-center w-[100%] md:text-start text-center">
+            <div className="flex flex-col  md:justify-start md:items-start justify-center items-center w-[100%] md:text-start text-center">
           <Button
             label={"PRODUCT OVERVIEW"}
             type="button"

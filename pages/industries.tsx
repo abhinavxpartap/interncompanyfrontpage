@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import seoData from "../data/seoData.json";
-import Blogs from "../data/blogData.json"
 import industryData from "../data/industries.json";
 import {ServiceBanner} from "../components/serviceBanner";
 import {IndustriesAbout} from "../components/industriesAbout";
@@ -13,9 +12,6 @@ import {IndustriesFaq} from "../components/industriesFaq";
 import {FreeQuotation} from "../components/freeQuotation";
 import Data from "../data/blogData.json";
 import {BlogCards} from "../components/BlogCard";
-import {Button} from "@mui/material";
-import {Img} from "../utils/Img";
-import serviceData from "../data/service.json";
 import CaseStudy from "../components/Case Study";
 import {Footer} from "../components/footer";
 

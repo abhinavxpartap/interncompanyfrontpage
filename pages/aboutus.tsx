@@ -40,8 +40,9 @@ const Home: NextPage = () => {
         <Testimonials />
       </div>
       <div
-          style={{background: "#F9FBFF"}}
-          className="bg-cover bg-center pb-[100px] -z-0 bg-no-repeat relative  block">
+        style={{ background: '#F9FBFF' }}
+        className="bg-cover bg-center pb-[100px] -z-0 bg-no-repeat relative  block"
+      >
         <CaseStudy />
       </div>
       <Letswork

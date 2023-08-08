@@ -10,7 +10,7 @@ import CaseStudy from '../components/Case Study';
 const Home: NextPage = () => {
   return (
     <div>
-      <div className="bg-cover OurStoryBanner bg-center bg-no-repeat relative">
+      <div className='bg-cover OurStoryBanner bg-center bg-no-repeat relative'>
         <ContactBanner
           title={ContactData.Banner.title}
           subtitle={ContactData.Banner.subtitle}
@@ -21,11 +21,12 @@ const Home: NextPage = () => {
         <OurBrands />
       </div>
       <div
-          style={{background: "#F9FBFF"}}
-          className="bg-cover bg-center pb-[50px] -z-0 bg-no-repeat relative  block">
+        style={{ background: '#F9FBFF' }}
+        className='bg-cover bg-center pb-[50px] -z-0 bg-no-repeat relative  block'
+      >
         <CaseStudy />
       </div>
-      <div className="bg-cover TalkTo bg-center bg-no-repeat  relative">
+      <div className='bg-cover TalkTo bg-center bg-no-repeat  relative'>
         <TalkTo title={ContactData.TalkTo.title} />
       </div>
       <Footer />

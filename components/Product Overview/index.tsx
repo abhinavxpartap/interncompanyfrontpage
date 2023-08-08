@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Button } from '../../utils/Button';
 import 'react-multi-carousel/lib/styles.css';
 
-
 const ProductOverview = () => {
   return (
     <div className="mt-[80px] ">

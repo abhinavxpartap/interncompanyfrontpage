@@ -1,15 +1,17 @@
-import type { NextPage } from 'next'
-import { Banner } from '../components/Banner'
+import type { NextPage } from 'next';
+import { Banner } from '../components/Banner';
 import data from '../data/homepage.json';
 import ourClientData from '../data/common/clients.json';
 import awesomeNumberData from '../data/common/awesomeNumbers.json';
-import { Services } from '../components/Services';
-import services from '../data/common/services.json';
 import { OurBrands } from '../components/ourBrands';
 import ProductOverview from '../components/Product Overview';
-import React from "react";
-import {Footer} from "../components/footer";
-
+import React from 'react';
+import { Footer } from '../components/footer';
+import Team from "../components/Expert team";
+import Service from "../components/Service";
+import CaseStudy from "../components/Case Study";
+import Testimonials from "../components/Testimonials";
+import DemoForm from "../components/Demo Form";
 
 const Home: NextPage = () => {
   return (
@@ -26,15 +28,35 @@ const Home: NextPage = () => {
         <OurBrands />
       </div>
         <ProductOverview />
-      {/* <Services
-        title={data.serviceData.title}
-        subtitle={data.serviceData.subtitle}
-        description={data.serviceData.description}
-        data={services}
-      /> */}
-        <Footer/>
-    </div>
-  )
-}
+        <div
+            style={{background: "#F9FBFF"}}
+            className="bg-cover bg-center bg-no-repeat relative  block"
+        >        <Team />
+        </div>
+        <div
+            style={{background: "#F9FBFF"}}
+            className="bg-cover bg-center bg-no-repeat relative  block">
+            <Service />
 
-export default Home
+        </div>
+        <div
+            style={{background: "#F9FBFF"}}
+            className="bg-cover bg-center -z-0 bg-no-repeat relative  block">
+            <CaseStudy />
+        </div>
+        <div
+            style={{background: "#F9FBFF"}}
+            className="bg-cover bg-center -z-0 bg-no-repeat relative  block">
+            <Testimonials />
+        </div>
+        <div
+            style={{background: "#F9FBFF"}}
+            className="bg-cover bg-center -z-0 bg-no-repeat relative  block">
+            <DemoForm />
+
+        </div>
+        <Footer />
+    </div>
+  );
+};
+export default Home;

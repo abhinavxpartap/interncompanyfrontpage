@@ -93,7 +93,7 @@ const CaseStudy = () => {
               <div className="text-[#151448] text-[14px] leading-[20px] md:text-[20px] font-bold md:leading-[37.4px]">
                 {caseStudy.heading}
               </div>
-              <div className="text-[#177DF0] text-[14px] leading-[20px] md:text-[20px] font-bold md:leading-[37.4px] mt-[10px]">
+              <div className="text-[#177DF0]  text-[14px] leading-[20px] md:text-[20px] font-bold md:leading-[37.4px] mt-[10px]">
                 {caseStudy.org}
               </div>
               <div className="text-[#747C85] text-[12px] leading-[18px] md:text-[16px] mt-[5px] font-medium md:leading-[26px]">

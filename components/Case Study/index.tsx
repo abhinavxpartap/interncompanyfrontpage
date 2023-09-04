@@ -41,7 +41,7 @@ const caseStudies = [
 const CaseStudy = () => {
   return (
     <div>
-      <div className="w-[90%] pt-[80px] relative md:px-[100px] pt-[64px] pb-[38px] md:max-w-[1377.5px] overflow-hidden mx-auto">
+      <div className="w-[90%]  relative md:px-[100px] pt-[84px] pb-[38px] md:max-w-[1977.5px] overflow-hidden mx-auto">
         <div className="flex  flex-row">
           <div>
             <Button

@@ -10,28 +10,13 @@
       "data": [
         {
           "label": "Services",
-          "icon": "/images/icons/megaphone.svg",
           "href": "/service"
         },
         {
-          "label": "AboutUS",
-          "icon": "/images/icons/ecommerce.svg",
-          "href": "/aboutus"
-        },
-
-        {
           "label": "Industries",
-          "icon": "/images/icons/internet.svg",
           "href": "/industries"
         },
-        {
-          "label": "Our Team",
-          "href": "https://www.searchmyexpert.com"
-        },
-        {
-          "label": "Careers",
-          "href": "https://www.searchmyexpert.com"
-        },
+
         {
           "label": "Contact Us",
           "href": "/contact"
@@ -44,34 +29,30 @@
       "data": [
         {
           "label": "Industries",
-          "icon": "/images/icons/internet.svg",
           "href": "/industries"
         },
         {
           "label": "Privacy Policy",
-          "href": "https://www.searchmyexpert.com/ourStory"
+          "href": "/"
         },
         {
           "label": "Terms of Services",
-          "href": "https://www.searchmyexpert.com"
+          "href": "/"
         },
         {
           "label": "Cookie Policy",
-          "href": "https://www.searchmyexpert.com"
-        },
-        {
-          "label": "Blogs",
-          "href": "https://www.searchmyexpert.com/contact"
+          "href": "/"
         }
+
       ]
     },
     {
       "title": "Portfolio",
-      "href": ""
+      "href": "/portfolio"
     },
     {
       "title": "Blog",
-      "href": ""
+      "href": "/blog"
     }
   ],
   "footer": {

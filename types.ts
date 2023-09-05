@@ -83,6 +83,16 @@ export interface OurValuesItemInterface {
     title: string;
     subtitle: string;
 }
+export interface TeemInterface {
+
+    items: TeamItemInterface[];
+}
+export interface TeamItemInterface {
+    name: string;
+    role: string;
+    imageSrc: string;
+    alt:string;
+}
 
 export interface Portfolio2 {
      title:string;
@@ -306,4 +316,17 @@ export interface Faq {
 export interface BrandData {
     src:string;
     alt:string;
+}
+
+export interface TeamData {
+    imageSrc:string;
+    alt:string;
+    name:string;
+    role:string;
+}
+export interface ImageData {
+    img:string;
+    title:string;
+    rows:number;
+    cols:number;
 }

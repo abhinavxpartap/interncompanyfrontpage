@@ -5,7 +5,6 @@ import { WhatWeAre } from '../components/whatWeAre';
 import { Meetour } from '../components/meetour';
 import { Letswork } from '../components/letswork';
 import 'react-multi-carousel/lib/styles.css';
-
 import { Footer } from '../components/footer';
 import React from 'react';
 import aboutUs from '../data/aboutUs.json';
@@ -15,7 +14,6 @@ import Testimonials from '../components/Testimonials';
 import CaseStudy from '../components/Case Study';
 import seoData from "../data/seoData.json";
 import Head from "next/head";
-
 const Home: NextPage = () => {
   return (
       <>
@@ -25,26 +23,22 @@ const Home: NextPage = () => {
               <meta name="keywords" content={seoData.AboutUs.keywords}/>
               <meta name="title" content={seoData.AboutUs.metaTitle}/>
           </Head>
-
-
-
-    <div>
-      <AboutUsBanner
-        image={aboutUs.Banner.image}
-        mobileImage={aboutUs.Banner.mobileImage}
-        title={aboutUs.Banner.title}
-        subtitle={aboutUs.Banner.subtitle}
-      />
-      <WhatWeAre
-        title1={aboutUs.WhatWe.title1}
-        subtitle1={aboutUs.WhatWe.subtitle2}
-        title2={aboutUs.WhatWe.title2}
-        subtitle2={aboutUs.WhatWe.subtitle2}
-      />
-      <QuiltedImageList />
-
-      <OurValue items={aboutUs.values} />
-      <Meetour />
+          <div>
+              <AboutUsBanner
+                 image={aboutUs.Banner.image}
+                 mobileImage={aboutUs.Banner.mobileImage}
+                 title={aboutUs.Banner.title}
+                 subtitle={aboutUs.Banner.subtitle}
+             />
+            <WhatWeAre
+              title1={aboutUs.WhatWe.title1}
+              subtitle1={aboutUs.WhatWe.subtitle2}
+              title2={aboutUs.WhatWe.title2}
+              subtitle2={aboutUs.WhatWe.subtitle2}
+             />
+               <QuiltedImageList />
+               <OurValue items={aboutUs.values} />
+               <Meetour/>
       <div
         style={{ background: '#F9FBFF' }}
         className="bg-cover bg-center -z-0 bg-no-repeat relative  block"

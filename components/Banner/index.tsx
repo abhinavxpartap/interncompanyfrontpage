@@ -3,7 +3,6 @@ import { Header } from '../Common/Header';
 import { Dialog, DialogContent } from '@mui/material';
 import Popupform from '../popupform';
 import { Button } from '@mui/material';
-
 import {BannerDataInterface} from "../../types";
 export const Banner:React.FC<BannerDataInterface> = (props) => {
   const { title, subtitle, image,button } = props;

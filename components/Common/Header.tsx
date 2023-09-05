@@ -120,7 +120,7 @@ export const Header= () => {
                   href={undefined}
                 />
                 <Dropdown
-                  title="Industry"
+                  title="Industries"
                   items={headerData.header[2]}
                   open={openResources}
                   isSticky={isSticky}

@@ -26,9 +26,7 @@ const services = [
 const Service = () => {
   return (
     <div className="md:px-[100px] relative flex flex-col items-center py-[40px] pt-[80px] text-center max-w-[1377.5px] overflow-hidden h-auto mx-auto">
-      <div className="text-[#E4F0FF] -z-[1] text-[200px] xl:text-[250px] lg:text-[200px] md:text-[180px] sm:text-[150px] absolute right-[67%] font-medium leading-[70%] tracking-[-20px] w-[754px] text-right top-[3%]">
-        service
-      </div>
+
       <Button
         label={'WHAT WE DO?'}
         type="button"
@@ -42,12 +40,12 @@ const Service = () => {
         Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae.
         Quisque sit amet nisi erat.
       </div>
-      <div className="pt-[60px] gap-[20px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-start ">
+      <div className="pt-[60px] gap-[35px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-start ">
         {services.map((service, index: number) => {
           return (
             <div
               key={index}
-              className="bg-[#ffffff] w-[275px] lg:w-[230px] xl:w-[275px] px-[20px] py-[20px] rounded-[10px]"
+              className="bg-[#ffffff] w-[275px] lg:w-[230px] xl:w-[375px] px-[20px] py-[20px] rounded-[12px]"
               style={{
                 boxShadow:
                   'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px',

@@ -18,7 +18,6 @@
           "icon": "/images/icons/ecommerce.svg",
           "href": "/aboutus"
         },
-
         {
           "label": "Industries",
           "icon": "/images/icons/internet.svg",
@@ -26,14 +25,17 @@
         },
         {
           "label": "Our Team",
+          "icon":"/images/icons/internet.svg",
           "href": "https://www.searchmyexpert.com"
         },
         {
           "label": "Careers",
+          "icon":"/images/icons/internet.svg",
           "href": "https://www.searchmyexpert.com"
         },
         {
           "label": "Contact Us",
+          "icon":"/images/icons/internet.svg",
           "href": "/contact"
         }
       ]

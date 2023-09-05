@@ -60,3 +60,21 @@ export interface ServiceInterface {
     title: string;
     description: string;
 }
+
+export interface AdminLinksInterface {
+    label: string;
+    href: string;
+    active: boolean;
+    subLinks: SubLinksInterface[]
+}
+
+export interface SubLinksInterface {
+    label: string;
+    href: string;
+    active: boolean;
+}
+
+export interface LoginInterface {
+    username: string;
+    password: string;
+}

@@ -4,46 +4,11 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Button } from '../../utils/Button';
 import * as MUIMaterial from '@mui/material';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
-
-const caseStudies = [
-  {
-    heading: 'Clinical Trial Management Software',
-    imgUrl: '/images/unsplash_05gac-Qn0k4.png',
-    org: 'Medable',
-    description:
-      'Since we started working with Medable in late 2017, they have continued to report stratospheric growth, increasing their presence with the world’s leading healthcare institutions and reaching more than 750,000 patients.',
-  },
-  {
-    heading: 'Clinical Trial Management Software',
-    imgUrl: '/images/unsplash_05gac-Qn0k4.png',
-    org: 'Medable',
-    description:
-      'Since we started working with Medable in late 2017, they have continued to report stratospheric growth, increasing their presence with the world’s leading healthcare institutions and reaching more than 750,000 patients.',
-  },
-  {
-    heading: 'Clinical Trial Management Software',
-    imgUrl: '/images/unsplash_05gac-Qn0k4.png',
-    org: 'Medable',
-    description:
-      'Since we started working with Medable in late 2017, they have continued to report stratospheric growth, increasing their presence with the world’s leading healthcare institutions and reaching more than 750,000 patients.',
-  },
-  {
-    heading: 'Clinical Trial Management Software',
-    imgUrl: '/images/unsplash_05gac-Qn0k4.png',
-    org: 'Medable',
-    description:
-      'Since we started working with Medable in late 2017, they have continued to report stratospheric growth, increasing their presence with the world’s leading healthcare institutions and reaching more than 750,000 patients.',
-  },
-  {
-    heading: 'Clinical Trial Management Software',
-    imgUrl: '/images/unsplash_05gac-Qn0k4.png',
-    org: 'Medable',
-    description:
-      'Since we started working with Medable in late 2017, they have continued to report stratospheric growth, increasing their presence with the world’s leading healthcare institutions and reaching more than 750,000 patients.',
-  },
-];
+import caseStudies from "../../data/common/CaseStudy.json"; 
+import { useRouter } from 'next/router';
 
 const CaseStudy = () => {
+  const router = useRouter();
   return (
     <div>
       <div className="w-[90%]  relative md:px-[100px] pt-[64px] pb-[38px] md:max-w-[1377.5px] overflow-hidden mx-auto">
@@ -77,7 +42,7 @@ const CaseStudy = () => {
         </div>
       </div>
       <div className="w-full h-full overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth flex flex-row max-w-[1377.5px] mx-auto">
-        {caseStudies.map((caseStudy: any, index: any) => (
+        {caseStudies.caseStudies.map((caseStudy: any, index: any) => (
           <div
             key={index}
             className=" max-w-[320px] md:max-w-[711px] md:h-[366px] bg-white  rounded-[20px] boxshad flex flex-row justify-between p-[10px] md:px-[23px] md:py-[20px] m-4"
@@ -107,6 +72,9 @@ const CaseStudy = () => {
                     border: '1px solid #5A7184',
                     borderRadius: '20px',
                     color: '#5A7184',
+                  }}
+                  onClick={() => {
+                    router.push(`${caseStudy.href}`);
                   }}
                 >
                   Learn more

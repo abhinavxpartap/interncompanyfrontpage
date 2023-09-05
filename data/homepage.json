@@ -10,7 +10,8 @@
         },
         "image": "/images/bg-blue.png",
         "button": {
-            "title": "Request Demo"
+            "title": "Request Demo",
+            "href":"/"
         }
     },
     "PartnerbannerData": {

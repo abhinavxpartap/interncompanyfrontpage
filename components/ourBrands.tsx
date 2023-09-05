@@ -1,32 +1,8 @@
 import React from 'react';
 import { Img } from '../utils/Img';
+import CompanyImage from "../data/common/OurBrands.json"
 
-const Image = [
-  {
-    image: '/Brand1.svg',
-  },
-  {
-    image: '/Brand2.svg',
-  },
-  {
-    image: '/Brand3.svg',
-  },
-  {
-    image: '/Brand4.svg',
-  },
-  {
-    image: '/Brand5.svg',
-  },
-  {
-    image: '/Brand6.svg',
-  },
-  {
-    image: '/Brand3.svg',
-  },
-  {
-    image: '/Brand1.svg',
-  },
-];
+
 export const OurBrands: React.FC<any> = () => {
   const content = (
     <>
@@ -51,7 +27,7 @@ export const OurBrands: React.FC<any> = () => {
         </div>
 
         <div className="w-full h-full overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth">
-          {Image.map((item: any, index) => (
+          {CompanyImage.map((item: any, index) => (
             <div
               className="w-[120px]  md:w-[200px] bg-white h-[50px] inline-block m-4 cursor-pointer rounded-[10px] "
               style={{
@@ -60,9 +36,9 @@ export const OurBrands: React.FC<any> = () => {
               }}
             >
               <Img
-                src={item.image}
+                src={item.src}
                 className="w-[100%] h-[100%] p-[16px] md:p-[15px] flex items-center"
-                alt={'Icon'}
+                alt={item.alt}
               />
             </div>
           ))}

@@ -44,19 +44,20 @@ const ServicePage: React.FC = () => {
                 <ServicesDevelopment
                 title={serviceData.Development.title}
                 subtitle={serviceData.Development.subtitle}
-                LeftData={serviceData.Development.leftData}
-                CenterContent={serviceData.Development.centerContent}
-                RightData={serviceData.Development.rightData}
+                leftData={serviceData.Development.leftData}
+                centerContent={serviceData.Development.centerContent}
+                rightData={serviceData.Development.rightData}
                 button={serviceData.Development.button}
                 />
                 <ServicesFaq
                     title={serviceData.Faq.title}
                     subtitle={serviceData.Faq.subtitle}
                     button={serviceData.Faq.button}
-                    tabsData={serviceData.Faq.tadData}
+                    tabData={serviceData.Faq.tabData}
                 />
                     <ServicesAssurance
                     image={serviceData.Assurance.image}
+                    title={serviceData.Assurance.title}
                     data={serviceData.Assurance.data}
                     button={serviceData.Assurance.button}
                     />

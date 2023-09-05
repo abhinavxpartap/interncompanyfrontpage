@@ -1,6 +1,7 @@
 import React from 'react';
+import {Compliance} from "../types";
 
-export const IndustriesCompliances: React.FC<any> = (props) => {
+export const IndustriesCompliances: React.FC<Compliance> = (props) => {
   const { image, title, subtitle, data } = props;
 
   const content = (
@@ -15,7 +16,7 @@ export const IndustriesCompliances: React.FC<any> = (props) => {
               {subtitle}
             </p>
             <div className="w-[300px] mt-[20px] grid grid-cols-3 gap-[10px]">
-              {data.map((item: any, index: number) => (
+              {data.map((item, index: number) => (
                 <div key={index}>
                   <p className="font-medium text-[16px] md:text-[18px] text-white">
                     {item.id}. {item.title}

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from '@mui/material';
 import { Img } from '../utils/Img';
 
 const teamMembers = [
@@ -45,8 +44,7 @@ const teamMembers = [
   },
 ];
 
-export const Meetour: React.FC<any> = (props) => {
-  const { image, mobileImage, title, subtitle } = props;
+export const Meetour = () => {
 
   const content = (
     <div className="max-w-[1477.5px] pb-[100px]  mx-auto">

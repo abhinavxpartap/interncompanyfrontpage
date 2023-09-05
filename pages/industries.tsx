@@ -66,7 +66,7 @@ const IndustriesPage: React.FC = () => {
                     button={industryData.Estimation.button}
                     />
                     <IndustriesFaq
-                    tabsData={industryData.Faq.tadData}
+                    tabData={industryData.Faq.tabData}
                     title={industryData.Faq.title}
                     spantitle={industryData.Faq.spantitle}
                     />
@@ -75,7 +75,7 @@ const IndustriesPage: React.FC = () => {
                             <h1 className="text-[#151448] text-center mb-[25px]  text-[30px] md:text-[60px] font-semibold">Resources & Articles </h1>
                             <div className="w-[100%] mx-auto md:mx-0">
                                 <div className="w-[100%] gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                                    {Data.BlogData.slice(0, 3).map((item:any, index:number) => (
+                                    {Data.BlogData.slice(0, 3).map((item, index:number) => (
                                         <BlogCards
                                             key={index}
                                             AuthorName={item.AuthorName}

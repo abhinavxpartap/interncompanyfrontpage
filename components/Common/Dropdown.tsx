@@ -20,62 +20,54 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
     '/home',
     '/aboutus',
     '/portfolio',
-    'service',
+    '/service',
     '/partner',
     '/industries',
     '/faq',
-    '',
     '/contact',
     '/ourStory',
     '/term',
   ].includes(router.pathname)
-    ? '/images/arrow.svg'
+    ? '/images/arrblack.svg'
     : !isSticky
     ? '/images/arrow-down.svg'
     : '/images/arrow.svg';
   const color = ![
-    '',
-    '',
-    '/faq',
-    '',
-    '/portfolio',
+      '/faq',
     '/blog',
-    '',
-    '/service',
-    '',
+    '/portfolio2',
     '/term',
   ].includes(router.pathname)
     ? 'text-[white]'
     : isSticky
     ? 'text-[white]'
     : 'text-black';
-  const arrowBlack =
-    ![
-      '/',
-      '/home',
-      '/partner',
-      '/aboutus',
-      '/portfolio',
-      '/service',
-      '/industries',
-      '/faq',
-      '/contact',
-      '',
-      '/ourStory',
-    ].includes(router.pathname) || !isSticky
-      ? '/images/arrow.svg'
-      : '/images/arrow.svg';
+  const arrowBlack = ![
+    '/',
+    '/home',
+    '/aboutus',
+    '/portfolio',
+    '/service',
+    '/partner',
+    '/industries',
+    '/faq',
+    '/contact',
+    '/ourStory',
+    '/term',
+  ].includes(router.pathname)
+      ? '/images/arrblack.svg'
+      : !isSticky
+          ? '/images/arrow.svg'
+          : '/images/arrow.svg';
   const colorBlack = ![
     '/',
     '/home',
-    '/blog',
     '/partner',
     '/aboutus',
     '/portfolio',
     '/faq',
     '/service',
     '/contact',
-    '',
     '/ourStory',
   ].includes(router.pathname)
     ? 'text-[#000000]'

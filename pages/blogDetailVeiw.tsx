@@ -147,11 +147,7 @@ const blogContent = [
 ];
 
 const BlogDetailVeiw: React.FC = () => {
-  const [isActive, setIsActive] = useState(0);
 
-  const handleClick = (index: number) => {
-    setIsActive(index);
-  };
 
   const useReadingProgress = () => {
     const [completion, setCompletion] = useState(0);
@@ -220,7 +216,7 @@ const BlogDetailVeiw: React.FC = () => {
               </h1>
               <hr className="border-[1px] w-[97%] border-[#979797]" />
               <div className="flex flex-col  gap-[15px]">
-                {content.map((item: any, index: number) => (
+                {content.map((item, index: number) => (
                   <p
                     key={index}
                     className="text-[#979797] text-[16px] md:text-[11px] lg:text-[16px] font-normal"
@@ -231,7 +227,7 @@ const BlogDetailVeiw: React.FC = () => {
               </div>
               <hr className="border-[1px] w-[97%]  border-[#979797]" />
               <div className="flex flex-row gap-[30px] pl-[5px] ">
-                {SocialIcons.map((item: any, index: number) => (
+                {SocialIcons.map((item, index: number) => (
                   <Img
                     key={index}
                     src={item.icon}
@@ -246,7 +242,7 @@ const BlogDetailVeiw: React.FC = () => {
             </div>
             <div className="w-[90vw] md:w-[65vw] flex flex-col gap-[20px]">
               <div>
-                {description.map((item: any, index: number) => (
+                {description.map((item, index: number) => (
                   <p
                     key={index}
                     className="text-[#757B8A] text-[14px] leading-[26px] lg:text-[16px] lg:leading-[38px]"
@@ -293,7 +289,7 @@ const BlogDetailVeiw: React.FC = () => {
                   medical supplies distribution platform:
                 </p>
               </div>
-              {blogContent.slice(0, 6).map((item: any, index: number) => (
+              {blogContent.slice(0, 6).map((item, index: number) => (
                 <div key={index}>
                   <h1 className="text-[#101010] text-[16px] lg:text-[18px] font-semibold">
                     {item.title}
@@ -310,7 +306,7 @@ const BlogDetailVeiw: React.FC = () => {
                   alt={'BlogImage'}
                 />
               </div>
-              {blogContent.slice(6, 13).map((item: any, index: number) => (
+              {blogContent.slice(6, 13).map((item, index: number) => (
                 <div key={index}>
                   <h1 className="text-[#101010] text-[16px] lg:text-[18px] font-semibold">
                     {item.title}
@@ -349,7 +345,7 @@ const BlogDetailVeiw: React.FC = () => {
               </h1>
               <div className="w-[100%] mx-auto md:mx-0">
                 <div className="w-[100%] gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                  {Data.BlogData.slice(0, 3).map((item: any, index: number) => (
+                  {Data.BlogData.slice(0, 3).map((item, index: number) => (
                     <BlogCards
                       key={index}
                       AuthorName={item.AuthorName}

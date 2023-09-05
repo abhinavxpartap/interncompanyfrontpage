@@ -1,8 +1,9 @@
 import React from 'react';
 import { Button } from '@mui/material';
 import { Img } from '../utils/Img';
+import {DirectorInterface} from "../types";
 
-export const Director: React.FC<any> = (props) => {
+export const Director: React.FC<DirectorInterface> = (props) => {
   const { image, mobileImage, name, post, company, address, message, icon } =
     props;
 
@@ -23,9 +24,9 @@ export const Director: React.FC<any> = (props) => {
           </div>
           <div className="flex flex-col">
             <div className="max-w-[720px] leading-[30px]  text-white md:text-[18px] text-[15px] font-medium">
-              <span className="text-[25px]">"</span>
+              <span className="text-[25px]"></span>
               {message}
-              <span className="text-[25px]">"</span>
+              <span className="text-[25px]"></span>
             </div>
             <div className="mt-[20px]">
               <Button

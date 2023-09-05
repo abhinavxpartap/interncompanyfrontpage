@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button } from '@mui/material';
-import { Img } from '../utils/Img';
+import {LetsInterface} from "../types";
 
-export const Letswork: React.FC<any> = (props) => {
+export const Letswork: React.FC<LetsInterface> = (props) => {
   const { image, mobileImage, title, subtitle } = props;
 
   const content = (

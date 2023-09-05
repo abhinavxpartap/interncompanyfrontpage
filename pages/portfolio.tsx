@@ -13,6 +13,8 @@ import serviceData from "../data/portfolio.json";
 import Data from "../data/blogData.json";
 import {BlogCards} from "../components/BlogCard";
 import {Footer} from "../components/footer";
+import data from '../data/aboutPortfolio.json';
+
 const Portfolio: NextPage = () => {
     return (
         <div >
@@ -22,7 +24,22 @@ const Portfolio: NextPage = () => {
                 <PortfolioBanner
                 title={PortData.Banner.title}/>
             </div>
-            <AboutPortfolio/>
+            <AboutPortfolio
+                title={data.title}
+                images={data.images}
+                subtitle={data.subtitle}
+                content={data.content}
+                industry={data.industry}
+                services={data.services}
+                businessType={data.businessType}
+
+
+
+            />
+
+
+
+
             <Director
                 image={serviceData.Director.image}
                 mobileImage={serviceData.Director.mobileImage}
@@ -48,7 +65,7 @@ const Portfolio: NextPage = () => {
                     <h1 className="text-[#151448] text-start mb-[25px] text-[38px] md:text-[40px] font-semibold">More Case Studies</h1>
                     <div className="w-[100%] mx-auto md:mx-0">
                         <div className="w-[100%] gap-[40px] grid grid-cols-1 md:grid-cols-2 ">
-                            {Data.BlogData.slice(0, 2).map((item:any, index:number) => (
+                            {Data.BlogData.slice(0, 2).map((item, index:number) => (
                                 <BlogCards
                                     key={index}
                                     AuthorName={item.AuthorName}

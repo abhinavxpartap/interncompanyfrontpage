@@ -2,8 +2,9 @@ import React from 'react';
 import { Img } from '../utils/Img';
 import { Button } from '@mui/material';
 import { useRouter } from 'next/router';
+import {TechSectionInterface} from "../types";
 
-export const ServiceTech: React.FC<any> = (props) => {
+export const ServiceTech: React.FC<TechSectionInterface> = (props) => {
   const { title, subtitle, data, button } = props;
   const router = useRouter();
 
@@ -19,7 +20,7 @@ export const ServiceTech: React.FC<any> = (props) => {
           </p>
           <div className="w-[100%] flex items-center justify-center">
             <div className="w-[90%] pt-[60px]  justify-between gap-[50px]  grid grid-cols-3 md:grid-cols-6 text-start ">
-              {data.map((item: any, index: any) => (
+              {data.map((item , index: number) => (
                 <div
                   key={index}
                   className="w-[70px] mx-auto flex items-center jusitfy-center"

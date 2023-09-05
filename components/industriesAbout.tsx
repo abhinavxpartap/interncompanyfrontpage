@@ -2,8 +2,9 @@ import React from 'react';
 import { Img } from '../utils/Img';
 import { Button } from '@mui/material';
 import { useRouter } from 'next/router';
+import {AboutData} from "../types";
 
-export const IndustriesAbout: React.FC<any> = (props) => {
+export const IndustriesAbout: React.FC<AboutData> = (props) => {
   const { title, image, fintechData, button, satisfactionData } = props;
   const router = useRouter();
 
@@ -17,9 +18,9 @@ export const IndustriesAbout: React.FC<any> = (props) => {
             </h1>
             <div className="flex justify-end">
               <div className="flex flex-col w-[600px] gap-[20px] pt-[20px] pb-[40px] md:pb-0 md:pt-[30px]">
-                {fintechData.map((item: any, index: number) => (
-                  <div>
-                    <h1 className="text-[#333333] font-semibold text-[15px] md:text-[21px] mb-[8px]">
+                {fintechData.map((item, index: number) => (
+                  <div key={index}>
+                    <h1 className="text-[#333333] font-semibold text-[15px] md:text-[21px] mb-[8px]" >
                       {item.title}
                     </h1>
                     <p className="text-[#676767] pr-[0px] md:pr-[80px] text-[14px] md:text-[15px] font-medium">
@@ -39,9 +40,9 @@ export const IndustriesAbout: React.FC<any> = (props) => {
           </div>
         </div>
         <div className="w-[60vw] mx-auto md:w-[95vw] lg:w-[900px] gap-[0px]  md:gap-[100px] mt-[40px] md:mt-[80px] justify-between grid  grid-cols-1 md:grid-cols-3">
-          {satisfactionData.map((item: any, index: number) => (
-            <div>
-              <h1 className="text-[#3E98FF] text-[80px] font-bold">
+          {satisfactionData.map((item, index: number) => (
+            <div key={index}>
+              <h1 className="text-[#3E98FF] text-[80px] font-bold" key={index}>
                 {item.number}+{' '}
               </h1>
               <p className="text-[#333333] text-[18px] font-medium">

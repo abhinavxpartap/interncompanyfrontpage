@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, FormControl, OutlinedInput } from '@mui/material';
 
-export const GetStories: React.FC<any> = () => {
+export const GetStories = () => {
   const content = (
     <>
       <div className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[60px]  pt-[30px] pb-[30px] md:pb-[60px]">

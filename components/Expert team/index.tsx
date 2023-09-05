@@ -26,7 +26,7 @@ const Team = () => {
       <div className="w-[100%] h-full flex flex-col lg:flex-row lg:gap-[60px] xl:gap-[80px] items-start">
         <div className="w-[90vw] lg:w-[48vw]">
           <Slider {...settings}>
-            {imageList.map((image: any, index: any) => {
+            {imageList.map((image, index: number) => {
               return (
                 <div key={index} className="w-[100%] relative rounded-[10px]">
                   <Img src={image} className="w-[100%]" alt="unsplash" />

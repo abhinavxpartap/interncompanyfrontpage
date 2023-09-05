@@ -1,8 +1,8 @@
 import React from 'react';
 import { Img } from '../utils/Img';
-import { Button } from '@mui/material';
+import {WebApplicationDevelopmentProcess} from "../types";
 
-export const IndustriesTechnology: React.FC<any> = (props) => {
+export const IndustriesTechnology: React.FC<WebApplicationDevelopmentProcess> = (props) => {
   const { title, subtitle, data } = props;
 
   const content = (
@@ -18,13 +18,13 @@ export const IndustriesTechnology: React.FC<any> = (props) => {
         </div>
         <div className="flex items-center w-[100%] justify-center ">
           <div className="flex w-[100%] px-[20px] md:px-0 md:w-[70%] justify-center gap-[30px] items-center flex-col">
-            {data.map((item: any, index: number) => (
+            {data.map((item, index: number) => (
               <div
                 key={index}
                 className="flex flex-row items-start justify-center gap-[20px] md:gap-[30px]"
               >
                 <Img
-                  src={item.icon}
+                  src={item.image}
                   className=" w-[28px] md:w-[35px]"
                   alt={'Icon'}
                 />

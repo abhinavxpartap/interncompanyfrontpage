@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { Button } from '../../utils/Button';
 import { Img } from '../../utils/Img';
 import { useRouter } from 'next/router';
+import { Button } from '@mui/material';
+
 import data from '../../data/config.json';
 import headerData from '../../data/common/layout.json';
 import { Dropdown } from '../Common/Dropdown';
 import { Dialog, DialogContent } from '@mui/material';
 import Popupform from '../popupform';
 
-export const Header: React.FC<any> = () => {
+export const Header= () => {
   const router = useRouter();
   const [isSticky, setIsSticky] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -65,34 +66,17 @@ export const Header: React.FC<any> = () => {
   }, []);
 
   const logo = ![
-    '/portfolio',
     '/partner',
     '/faq',
     '/blog',
     '/ourStory',
     '/term',
+    '/portfolio2'
   ].includes(router.pathname)
     ? data.logo_light
     : isSticky
     ? data.logo_light
     : data.logo_dark;
-  const buttonType =
-    ![
-      '/',
-      '/home',
-      '/aboutus',
-      '/service',
-      '/portfolio',
-      '/industries',
-      '/',
-      '/faq',
-      '/contact',
-      '/landing',
-      '/getStarted',
-      '/ourStory',
-    ].includes(router.pathname) && !isSticky
-      ? 'service'
-      : 'button';
 
   const handleScroll = () => {
     if (window.pageYOffset > 56) {
@@ -203,16 +187,28 @@ export const Header: React.FC<any> = () => {
               </button>
             </div>
             <div className="hidden lg:block">
+
               <Button
-                label="Book a Demo"
-                type={buttonType}
-                className={`xxl:text-[19px] ${
-                  buttonType === 'button'
-                    ? 'hover:text-[#0092FF]'
-                    : 'text-white'
-                } hover:bg-[#fff] bg-[#0092FF] text-[#fff] hover:text-[#0092FF] border-[#0092FF] xxl:leading-[22.99px] font-semibold md:text-[15px] sm:text-[9px] text-[12px] sm:leading-[20.57px] leading-[14px] tracking-[-0.22px] md:w-[145px] w-[100px] xl:h-[44px] md:h-[38px] h-[35px]`}
-                onClick={handleOpen}
-              />
+                  className="ButtonTransition overflow-hidden text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
+                  onClick={handleOpen}
+                  sx={{
+                    '&.MuiButtonBase-root': {
+                      backgroundColor: '#177DF0',
+                      color: 'white',
+                      textTransform: 'capitalize',
+                      padding: '8px 24px 8px 24px',
+                      border: '1px solid #5CA9FF',
+                      borderRadius: '30px',
+                      '&:hover': {
+                        border: '1px solid #5CA9FF',
+                        backgroundColor: 'transparent',
+                        color: '#177DF0',
+                      },
+                    },
+                  }}
+              >
+                Book a demo
+              </Button>
             </div>
             <Dialog open={open} onClose={handleClose}>
               <DialogContent>
@@ -281,15 +277,26 @@ export const Header: React.FC<any> = () => {
               />
               <div className="text-center">
                 <Button
-                  label="Book a Demo"
-                  type={buttonType}
-                  className={`xxl:text-[19px] ${
-                    buttonType === 'button'
-                      ? 'hover:text-[#0092FF]'
-                      : 'text-white'
-                  } hover:bg-[#fff] bg-[#0092FF] text-[#fff] hover:text-[#0092FF] border-[#0092FF] xxl:leading-[22.99px] ButtonTransition overflow-hidden font-semibold md:text-[15px] sm:text-[9px] text-[12px] sm:leading-[20.57px] leading-[14px] tracking-[-0.22px] md:w-[145px] w-[100px] xl:h-[44px] md:h-[38px] h-[35px]`}
-                  onClick={() => router.push('/getStarted')}
-                />
+                    className="ButtonTransition overflow-hidden text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
+                    onClick={handleOpen}
+                    sx={{
+                      '&.MuiButtonBase-root': {
+                        backgroundColor: '#177DF0',
+                        color: 'white',
+                        textTransform: 'capitalize',
+                        padding: '8px 24px 8px 24px',
+                        border: '1px solid #5CA9FF',
+                        borderRadius: '30px',
+                        '&:hover': {
+                          border: '1px solid #5CA9FF',
+                          backgroundColor: 'transparent',
+                          color: '#177DF0',
+                        },
+                      },
+                    }}
+                >
+                  Book a demo
+                </Button>
               </div>
             </div>
           </div>

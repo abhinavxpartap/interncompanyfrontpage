@@ -2,8 +2,8 @@ import React from 'react';
 import { Img } from '../utils/Img';
 import { Header } from './Common/Header';
 
-export const PortfolioBanner2: React.FC<any> = (props) => {
-  const {  } = props;
+export const PortfolioBanner2: React.FC<unknown> = () => {
+
 
   const content = (
     <>
@@ -72,7 +72,7 @@ export const PortfolioBanner2: React.FC<any> = (props) => {
         <div className="md:text-[18px] text-[15px] max-w-[570px]  md:text-start text-center md:ml-[60px] md:pb-[20px] mt-[12px]  font-medium">
           Zuca offers transformative technology and software solutions to
           startups, global brands & Fortune 500 companies. Some of our major
-          clients include IKEA, Domino's, Adidas, KPMG, BCG & Pizza Hut.
+          clients include IKEA, Domino, Adidas, KPMG, BCG & Pizza Hut.
         </div>
       </div>
       <div className="max-w-[1440.5px] mx-auto">

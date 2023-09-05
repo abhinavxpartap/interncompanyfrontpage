@@ -1,7 +1,8 @@
 import React from 'react';
 import { Img } from '../utils/Img';
+import {WebApplicationDevelopmentProcess} from "../types";
 
-export const ServiceProcess: React.FC<any> = (props) => {
+export const ServiceProcess: React.FC<WebApplicationDevelopmentProcess> = (props) => {
   const { title, subtitle, data } = props;
 
   const content = (
@@ -15,7 +16,7 @@ export const ServiceProcess: React.FC<any> = (props) => {
             {subtitle}
           </p>
           <div className=" pt-[60px] gap-[20px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-start ">
-            {data.map((item: any, index: any) => (
+            {data.map((item, index: number) => (
               <div
                 key={index}
                 className="bg-[#ffffff] w-[275px] lg:w-[230px] xl:w-[275px] px-[20px] py-[20px] rounded-[10px]"

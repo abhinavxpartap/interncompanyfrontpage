@@ -32,8 +32,7 @@ type FooterData = {
   social: SocialIcon[];
 };
 
-export const Footer: React.FC<any> = (props) => {
-  const {} = props;
+export const Footer: React.FC<any> = () => {
   const { services, about, help, social } = data as FooterData;
 
   const renderServices = () => {
@@ -120,7 +119,7 @@ export const Footer: React.FC<any> = (props) => {
         </div>
       </div>
       <div className="flex border-t-2 pt-[10px]  text-[14px] font-normal text-[#2A2C33] justify-center items-center">
-        © 2021 Timey All Rights Reserved
+        © 2021 All Rights Reserved
       </div>
     </div>
   );

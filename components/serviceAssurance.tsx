@@ -2,8 +2,9 @@ import React from 'react';
 import { Img } from '../utils/Img';
 import { Button } from '@mui/material';
 import { useRouter } from 'next/router';
+import {Assurance} from "../types";
 
-export const ServicesAssurance: React.FC<any> = (props) => {
+export const ServicesAssurance: React.FC<Assurance> = (props) => {
   const { image, data, button } = props;
   const router = useRouter();
 
@@ -13,10 +14,10 @@ export const ServicesAssurance: React.FC<any> = (props) => {
         <div className="w-[100%] px-[20px] flex flex-col-reverse md:flex-row text-start items-center justify-center ">
           <div className="w-[85vw] md:w-[50vw] flex flex-col">
             <h1 className="text-[white] text-[23px] md:text-[25px] lg:text-[32px] xl:text-[40px] font-bold ">
-              Zuca's Assurance as a Web App Development Company
+              Zuca Assurance as a Web App Development Company
             </h1>
             <div className="flex flex-col gap-[18px] md:gap-[15px] lg:gap-[20px] pt-[30px] items-start">
-              {data.map((item: any, index: any) => (
+              {data.map((item, index: number) => (
                 <div
                   key={index}
                   className="flex flex-row items-start gap-[10px] "

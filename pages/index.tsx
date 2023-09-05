@@ -1,8 +1,9 @@
 import type { NextPage } from 'next';
 import { Banner } from '../components/Banner';
 import data from '../data/homepage.json';
-import ourClientData from '../data/common/clients.json';
-import awesomeNumberData from '../data/common/awesomeNumbers.json';
+import Head from "next/head";
+
+
 import { OurBrands } from '../components/ourBrands';
 import ProductOverview from '../components/Product Overview';
 import React from 'react';
@@ -12,17 +13,26 @@ import Service from '../components/Service';
 import CaseStudy from '../components/Case Study';
 import Testimonials from '../components/Testimonials';
 import DemoForm from '../components/Demo Form';
+import seoData from "../data/seoData.json";
 
 const Home: NextPage = () => {
   return (
+      <>
+        <Head>
+          <title>{seoData.Homepage.title}</title>
+          <meta name="description" content={seoData.Homepage.description}/>
+          <meta name="keywords" content={seoData.Homepage.keywords}/>
+          <meta name="title" content={seoData.Homepage.metaTitle}/>
+        </Head>
+
+
     <div>
       <Banner
         image={data.bannerData.image}
         title={data.bannerData.title}
         subtitle={data.bannerData.subtitle}
         button={data.bannerData.button}
-        ourClients={ourClientData}
-        awesomeNumbers={awesomeNumberData}
+
       />
       <div>
         <OurBrands />
@@ -32,7 +42,7 @@ const Home: NextPage = () => {
         style={{ background: '#F9FBFF' }}
         className="bg-cover bg-center bg-no-repeat relative  block"
       >
-        {' '}
+
         <Team />
       </div>
       <div
@@ -61,6 +71,7 @@ const Home: NextPage = () => {
       </div>
       <Footer />
     </div>
+      </>
   );
 };
 export default Home;

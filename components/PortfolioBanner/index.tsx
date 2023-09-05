@@ -1,8 +1,9 @@
 import { Button } from '@mui/material';
 import React from 'react';
 import { Header } from '../Common/Header';
+import {Port} from "../../types";
 
-export const PortfolioBanner: React.FC<any> = (props) => {
+export const PortfolioBanner: React.FC<Port> = (props) => {
   const { title } = props;
   return (
     <div>

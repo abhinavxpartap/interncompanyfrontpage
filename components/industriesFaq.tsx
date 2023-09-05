@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Img } from '../utils/Img';
-import { Button, Grid, IconButton, Typography } from '@mui/material';
+import {  Grid, IconButton, Typography } from '@mui/material';
+import {FaqInterFace} from "../types";
 
-export const IndustriesFaq: React.FC<any> = (props) => {
-  const { tabsData, title, spantitle } = props;
+export const IndustriesFaq: React.FC<FaqInterFace> = (props) => {
+  const { tabData, title, spantitle } = props;/* eslint-disable */
   const [openTabs, setOpenTabs] = useState([1]);
 
   const handleTabToggle = (tabId: number) => {
@@ -22,7 +23,7 @@ export const IndustriesFaq: React.FC<any> = (props) => {
             {title} <span className="text-[#2C98F0]">{spantitle}</span>
           </h1>
           <div className="w-[100%] md:px-0 lg:w-[922px] flex flex-col gap-[20px] ">
-            {tabsData.map((tab: any) => (
+            {tabData.map((tab: any) => (
               <Grid
                 key={tab.id}
                 className="px-[10px] md:px-[20px]  rounded-[8px]"

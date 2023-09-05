@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button } from '@mui/material';
 
-export const Results: React.FC<any> = (props) => {
-  const { data } = props;
+export const Results = () => {
+
 
   const content = (
     <div className="max-w-[1377.5px] relative  mx-auto">

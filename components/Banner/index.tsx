@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import { Button } from '../../utils/Button';
 import { Header } from '../Common/Header';
 import { Dialog, DialogContent } from '@mui/material';
 import Popupform from '../popupform';
+import { Button } from '@mui/material';
 
-export const Banner = (props: any) => {
+import {BannerDataInterface} from "../../types";
+export const Banner:React.FC<BannerDataInterface> = (props) => {
+  const { title, subtitle, image, button } = props;
+
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
     setOpen(true);
@@ -12,7 +15,6 @@ export const Banner = (props: any) => {
   const handleClose = () => {
     setOpen(false);
   };
-  const { title, subtitle, image, button } = props;
 
   return (
     <div
@@ -28,12 +30,27 @@ export const Banner = (props: any) => {
           {subtitle}
         </div>
         <div>
+
           <Button
-            label={button.title}
-            type="button"
-            onClick={handleOpen}
-            className="xxl:text-[19px] bg-white xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:text-[17px] text-[14px] sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] xxl:h-[63px] md:h-[48px] h-[42px]"
-          />
+              onClick={handleOpen}
+              className="ButtonTransition overflow-hidden text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
+              sx={{
+                '&.MuiButtonBase-root': {
+                  backgroundColor: '#FFFFFF',
+                  color: 'black',
+                  textTransform: 'capitalize',
+                  padding: '8px 24px 8px 24px',
+                  border: '1px solid #FFFFFF',
+                  borderRadius: '30px',
+                  '&:hover': {
+                    border: '1px solid #FFFFFF',
+                    backgroundColor: 'transparent',
+                    color: 'white',
+                  },
+                },
+              }}
+          >
+            Request Demo          </Button>
         </div>
         <Dialog open={open} onClose={handleClose}>
           <DialogContent>

@@ -13,9 +13,21 @@ import QuiltedImageList from '../components/images';
 import { FreeQuotation } from '../components/freeQuotation';
 import Testimonials from '../components/Testimonials';
 import CaseStudy from '../components/Case Study';
+import seoData from "../data/seoData.json";
+import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
+      <>
+          <Head>
+              <title>{seoData.AboutUs.title}</title>
+              <meta name="description" content={seoData.AboutUs.description}/>
+              <meta name="keywords" content={seoData.AboutUs.keywords}/>
+              <meta name="title" content={seoData.AboutUs.metaTitle}/>
+          </Head>
+
+
+
     <div>
       <AboutUsBanner
         image={aboutUs.Banner.image}
@@ -55,6 +67,7 @@ const Home: NextPage = () => {
 
       <Footer />
     </div>
+      </>
   );
 };
 

@@ -43,7 +43,7 @@ const Service = () => {
         Quisque sit amet nisi erat.
       </div>
       <div className="pt-[60px] gap-[20px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-start ">
-        {services.map((service: any, index: any) => {
+        {services.map((service, index: number) => {
           return (
             <div
               key={index}

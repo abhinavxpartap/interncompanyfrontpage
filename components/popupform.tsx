@@ -12,9 +12,13 @@ import {
 } from '@mui/material';
 import { Img } from '../utils/Img';
 
-const Popupform = ({ onClose }) => {
+
+interface PopUpFormProps {
+  onClose: () => void;
+}
+const Popupform: React.FC<PopUpFormProps> = ({ onClose }) => {
   const [checked, setChecked] = useState([false, false]);
-  const handleToggle = (index: any) => () => {
+  const handleToggle = (index: number) => () => {
     const newChecked = [...checked];
     newChecked[index] = !newChecked[index];
     setChecked(newChecked);
@@ -23,13 +27,13 @@ const Popupform = ({ onClose }) => {
   const labelNames = ['Software Development', 'Web Design'];
 
   const handleClose = () => {
-    setChecked([false, false]); // Reset checkbox state
+    setChecked([false, false]);
     onClose();
   };
 
   return (
-    <div className="bg-white relative flex justify-cener items-center">
-      <div className="relative justify-center items-center mx-auto max-w-[460px]  bg-white rounded-[10px] p-[30px]">
+    <div className="  bg-white relative flex justify-center items-center">
+      <div className="relative justify-center items-center mx-auto max-w-[460px] rounded-3xl  p-[30px]">
         <Box className="w-[100%] flex flex-row justify-between">
           <Box className="w-[48%]">
             <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">

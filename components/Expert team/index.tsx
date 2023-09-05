@@ -31,7 +31,7 @@ const Team = () => {
                 <div key={index} className="w-[100%] relative rounded-[10px]">
                   <Img src={image} className="w-[100%]" alt="unsplash" />
                   <div
-                    className="flex flex-row w-auto max-w-[186px] gap-[10px] bg-[white] rounded-[8px] absolute bottom-[20px] right-[4px] justify-center items-center"
+                    className="flex flex-row w-auto max-w-[226px] gap-[10px] bg-[white] rounded-[8px] absolute bottom-[20px] right-[4px] justify-center items-center"
                     style={{
                       padding: '8px 15px 8px 15px',
                       border: '0.5px solid #A1A1A1',

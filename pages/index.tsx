@@ -35,7 +35,8 @@ const Home: NextPage = () => {
 
       />
       <div>
-        <OurBrands />
+        <OurBrands
+        icons={data.Brands.icons}/>
       </div>
       <ProductOverview />
       <div

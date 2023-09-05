@@ -8,20 +8,45 @@
             "title": "Request Demo"
         }
     },
-    "PartnerbannerData": {
-        "title": "Join Our Partner Pool and Grow Your Business Together!",
-        "subtitle": "Get Verified Today!",
-        "header": {
-            "logo": "/images/logo-light.png",
-            "button": {
-                "title": "Book a Demo"
+
+    "Brands": {
+        "icons": [
+            {
+                "image": "/Brand1.svg"
+            },
+            {
+                "image": "/Brand2.svg"
+            },
+            {
+                "image": "/Brand3.svg"
+            },
+            {
+                "image": "/Brand4.svg"
+            },
+            {
+                "image": "/Brand5.svg"
+            },
+            {
+                "image": "/Brand6.svg"
+            },
+            {
+                "image": "/Brand3.svg"
+            },
+            {
+                "image": "/Brand1.svg"
+            },
+            {
+                "image": "/Brand6.svg"
+            },
+            {
+                "image": "/Brand3.svg"
+            },
+            {
+                "image": "/Brand1.svg"
             }
-        },
-        "image": "/images/logo.png",
-        "button": {
-            "title": "Request Demo"
-        }
+        ]
     },
+
     "serviceData": {
         "title": "OUR SERVICES",
         "subtitle": "One-Stop Solution",
@@ -48,233 +73,8 @@
             "content_3": ""
         }
     },
-    "whyChooseData": {
-        "title": "why us",
-        "subtitle": "Why Choose Search My Expert?",
-        "description": "Our team of customer-focused professionals works with a diverse range of certified partners to ensure seamless project management from start to finish.",
-        "items": [
-            {
-                "icon": "/images/logo.png",
-                "title": "Affordable Pricing",
-                "description": "Our pricing is highly competitive and flexible, ensuring accessibility for businesses of all sizes and budgets."
-            },
-            {
-                "icon": "/images/why-choose-us/logo.png",
-                "title": "Verified Agencies",
-                "description": "All of our vendors go through a rigorous vetting process to ensure they meet our high standards for quality and professionalism."
-            },
-            {
-                "icon": "/images/why-choose-us/time-saving.svg",
-                "title": "Time Saving & Efficient",
-                "description": "We've designed our marketplace to streamline communication between you and service providers, saving you valuable time in the process."
-            },
-            {
-                "icon": "/images/why-choose-us/dedicated-server.svg",
-                "title": "Dedicated Support",
-                "description": "Our customer support team is available to help you every step of the way, from finding the right service provider to resolving any issues that may arise."
-            },
-            {
-                "icon": "/images/why-choose-us/escrow-payments.svg",
-                "title": "Secure Escrow payments",
-                "description": "We offers secure escrow payments to protect both clients and vendors, giving you peace of mind that your payments are safe & secure."
-            }
-        ]
-    },
-    "whyChooseDataPartner": {
-        "title": "why us",
-        "subtitle": "Why Choose Search My Expert?",
-        "description": "Our team of customer-focused professionals works with a diverse range of certified partners to ensure seamless project management from start to finish.",
-        "items": [
-            {
-                "icon": "/images/whyPartner/icon1.svg",
-                "title": "Wide Reach",
-                "description": "Our marketplace has a large and diverse customer base, which means you have the potential to reach a wider audience and increase your sales."
-            },
-            {
-                "icon": "/images/whyPartner/icon2.svg",
-                "title": "User-Friendly Interface",
-                "description": "Our vendor portal is easy to use and navigate, allowing you to upload and manage your projects quickly and efficiently."
-            },
-            {
-                "icon": "/images/whyPartner/icon3.svg",
-                "title": "Skill Building Opportunities",
-                "description": "Our digital service projects provide opportunities for you to build your skills and expertise, helping you grow your career and business."
-            },
-            {
-                "icon": "/images/whyPartner/icon4.svg",
-                "title": "Easy Invoicing",
-                "description": "Our platform offers easy invoicing and payment processing, ensuring that you get paid on time for your work."
-            },
-            {
-                "icon": "/images/whyPartner/icon5.svg",
-                "title": "Low Fees",
-                "description": "We have low commission fees compared to other marketplaces, allowing you to keep more of your profits."
-            },
-            {
-                "icon": "/images/whyPartner/icon6.svg",
-                "title": "Secure Escrow Payments",
-                "description": "Our platform ensures secure escrow transactions, giving both vendors and customers peace of mind while conducting business."
-            },
-            {
-                "icon": "/images/whyPartner/icon7.svg",
-                "title": "Transparency",
-                "description": "We prioritize transparency and communication with our vendors and clients, ensuring that you have all the information you need to succeed in your projects."
-            },
-            {
-                "icon": "/images/whyPartner/icon8.svg",
-                "title": "Dedicated Support",
-                "description": "Our dedicated customer service team is available to assist you with any questions or concerns you may have."
-            }
-        ]
-    },
-    "howItWorksData": {
-        "image": "/images/stay-on-top-bg.webp",
-        "title": "STEP-BY-STEP",
-        "subtitle": "How It Works",
-        "description": "With us, you can kickstart your digital journey in 24 hours!",
-        "items": [
-            {
-                "icon": "/images/how-its-work/what-you-need.svg",
-                "title": "Tell Us Your Requirements",
-                "description": "No matter your needs or budget, we have the Qualified Expert ready to start."
-            },
-            {
-                "icon": "/images/how-its-work/partner.svg",
-                "title": "We Connect You With a Vendor",
-                "description": "We'll match you with a perfect Vendor based on your needs & Requirements."
-            },
-            {
-                "icon": "/images/how-its-work/contracts.svg",
-                "title": "Get Free Quotes & Sign Up",
-                "description": "Receive fast & free quotes from the vendors and get ready to start your project."
-            },
-            {
-                "icon": "/images/how-its-work/track-your-project.svg",
-                "title": "Track Your Project Progress",
-                "description": "Track your project seamlessly from start to finish through our User-Friendly dashboard."
-            }
-        ]
-    },
-    "howItWorksDataLanding": {
-        "image": "",
-        "title": "STEP-BY-STEP",
-        "subtitle": "How It Works",
-        "description": "With us, you can kickstart your digital journey in 24 hours!",
-        "items": [
-            {
-                "icon": "/images/howLanding/1.svg",
-                "title": "Tell Us What You Need",
-                "description": "No Matter Your Needs, We'll Connect You with a Qualified Expert."
-            },
-            {
-                "icon": "/images/howLanding/2.svg",
-                "title": "We Connect You With a Partner",
-                "description": "No Matter Your Needs, We'll Connect You with a Qualified Expert."
-            },
-            {
-                "icon": "/images/howLanding/3.svg",
-                "title": "Sign Contracts",
-                "description": "Receive fast & free services quotes from the expert talents near you."
-            },
-            {
-                "icon": "/images/howLanding/4.svg",
-                "title": "Track Your Project Progress",
-                "description": "Pick from some of the best Top-Rated Marketing Specialists with Ease."
-            }
-        ]
-    },
-    "imagePartner": {
-        "image": "/faq.svg"
-    },
-    "trackYourProjectData": {
-        "title": "EASILY TRACK",
-        "subtitle": "Track Your Project",
-        "description": "Easily track & ensure that your project is completed to your satisfaction.",
-        "items": [
-            {
-                "position": 1,
-                "icon": "/images/track-your-project/client-portal.svg",
-                "title": "A Client Portal",
-                "description": "On your project dashboard, you'll be able to see the status of your project, including the tasks that have been completed and those that are still in progress."
-            },
-            {
-                "position": 2,
-                "icon": "/images/track-your-project/project-manager.svg",
-                "title": "Dedicated Project Manager",
-                "description": "You can communicate with your project team through our platform, whether it's sending messages, sharing files, or scheduling meetings."
-            },
-            {
-                "position": 3,
-                "icon": "/images/track-your-project/progress.svg",
-                "title": "Monitor Progress",
-                "description": "As your project progresses, you'll be able to monitor the progress of individual tasks and milestones, ensuring that everything is on track."
-            },
-            {
-                "position": 6,
-                "icon": "/images/track-your-project/revision.svg",
-                "title": "Request Revisions",
-                "description": "You can request revisions from your vendors if you are not fully satisfied with the final work, and they will make the required changes until you are content with the outcome."
-            },
-            {
-                "position": 5,
-                "icon": "/images/track-your-project/complete-work.svg",
-                "title": "Approve Completed Work",
-                "description": "Once a task or milestone is completed, you'll be able to review it and provide feedback. If you're satisfied with the work, you can approve it and move on to the next task."
-            },
-            {
-                "position": 4,
-                "icon": "/images/track-your-project/regular-update.svg",
-                "title": "Receive Regular Updates",
-                "description": "Our digital marketing professionals provide regular updates on their progress, so you'll always know what's happening with your project."
-            }
-        ]
-    },
-    "ClientData": {
-        "title": "START NOW",
-        "subtitle": "Get your First Client",
-        "description": "",
-        "items": [
-            {
-                "position": 1,
-                "icon": "/images/client.svg",
-                "title": "Sign-Up For Free",
-                "description": "Sign-up on our Partner dashboard and get your contact details verified in no time!"
-            },
-            {
-                "position": 2,
-                "icon": "/images/track-your-project/client-portal.svg",
-                "title": "Complete your Profile",
-                "description": "Login to your personalised dashboard and complete your profile by adding your GST number and Banking information."
-            },
-            {
-                "position": 3,
-                "icon": "/images/client3.svg",
-                "title": "Get Verified",
-                "description": " Get verified by our team and begin working for our clients. Track your projects seamlessly through our Partner Dashboard."
-            },
-            {
-                "position": 6,
-                "icon": "/images/client4.svg",
-                "title": "Upload your Porfolio",
-                "description": "Update your portfolio and previous work samples for the clients on our platform."
-            }
-        ]
-    },
-    "stayOnTopData": {
-        "image": "/images/stay-on-top-bg.webp",
-        "title": "EASY COMMUNICATION",
-        "subtitle": "Stay on Top of Your Work",
-        "featured_1": {
-            "image": "/images/1682722280408-alerts-featured.webp",
-            "title": "Get Alerts & Notifications for your Project Tasks.",
-            "description": "With alerts and notifications, you can receive reminders about upcoming deadlines, changes to project schedules, and updates on the progress of your work. This can help you stay on top of your workload, reducing the risk of missed deadlines or overlooked tasks."
-        },
-        "featured_2": {
-            "image": "/images/comunicate-directly-featured.webp",
-            "title": "Communicate Directly with your Project Manager.",
-            "description": "We believe that direct communication between clients and project managers is critical to the success of any project. You can share their ideas, concerns, and feedback with our team, allowing us to better understand their needs and expectations. This help our vendors to deliver projects that meet our clients' expectations. "
-        }
-    },
+
+
     "testimonialData": {
         "title": "TESTIMONIALS ",
         "subtitle": "We’re So Grateful For The Trust Our Customers Have Placed In Us.",

@@ -286,3 +286,11 @@ export interface Faq {
         content: string;
     }[];
 }
+
+export interface BrandData {
+    icons:
+            {
+                image: string
+            }[];
+
+}

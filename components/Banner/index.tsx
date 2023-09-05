@@ -6,7 +6,7 @@ import { Button } from '@mui/material';
 
 import {BannerDataInterface} from "../../types";
 export const Banner:React.FC<BannerDataInterface> = (props) => {
-  const { title, subtitle, image, button } = props;
+  const { title, subtitle, image } = props;
 
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
@@ -23,7 +23,7 @@ export const Banner:React.FC<BannerDataInterface> = (props) => {
     >
       <Header />
       <div className="max-w-[1377.5px] mx-[auto] flex flex-col items-center justify-center md:pt-[227px] pt-[117px] pb-[71px] md:px-0 px-[10px]">
-        <h1 className="md:text-[80px] text-[40px] text-[#FFFFFF] font-bold leading-[50px] md:leading-[90px] md:tracking-[-2.4px] max-w-[900px] text-center md:pb-[25px] pb-[18px]">
+        <h1 className="md:text-[80px] text-[36px] text-[#FFFFFF] font-bold leading-[50px] md:leading-[90px] md:tracking-[-2.4px] max-w-[900px] text-center md:pb-[25px] pb-[18px]">
           {title}
         </h1>
         <div className=" max-w-[1106px] font-medium text-[#FFFFFF]  md:text-[23px] text-[16px] leading-[160%] tracking-[-0.68px] text-center pb-[30px] ">

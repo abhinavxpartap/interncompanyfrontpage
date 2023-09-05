@@ -1,43 +1,17 @@
 import React from 'react';
 import { Img } from '../utils/Img';
+import {BrandData} from "../types";
 
-const Image = [
-  {
-    image: '/Brand1.svg',
-  },
-  {
-    image: '/Brand2.svg',
-  },
-  {
-    image: '/Brand3.svg',
-  },
-  {
-    image: '/Brand4.svg',
-  },
-  {
-    image: '/Brand5.svg',
-  },
-  {
-    image: '/Brand6.svg',
-  },
-  {
-    image: '/Brand3.svg',
-  },
-  {
-    image: '/Brand1.svg',
-  },
-];
-export const OurBrands = () => {
+export const OurBrands:React.FC<BrandData> = (props) => {
+  const {icons}=props;
   const content = (
     <>
-      <div className="max-w-[1377.5px] mx-auto flex flex-col items-center justify-between  pt-[30px] pb-[30px]">
+      <div className="max-w-[1677.5px] mx-auto flex flex-col items-center justify-between  pt-[90px] pb-[30px]">
         <div className="mb-[30px]">
           <h1 className="capitalize w-[100%] flex flex-col items-center md:flex-row gap-[4px] font-medium text-[#151448] text-[24px]">
             We are trusted by{' '}
             <span className="flex flex-row gap-[4px]">
-              {' '}
               <span className="relative text-[#3D6EFC]">
-                {' '}
                 brands
                 <Img
                   src="/Line2.svg"
@@ -51,7 +25,7 @@ export const OurBrands = () => {
         </div>
 
         <div className="w-full h-full overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth">
-          {Image.map((item, index) => (
+          {icons.map((item, index) => (
             <div
               className="w-[120px]  md:w-[200px] bg-white h-[50px] inline-block m-4 cursor-pointer rounded-[10px] " key={index}
               style={{

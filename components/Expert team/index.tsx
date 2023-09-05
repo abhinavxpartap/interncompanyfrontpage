@@ -15,12 +15,6 @@ const settings = {
   slidesToScroll: 1,
 };
 
-const imageList = [
-  '/images/unsplash_Of_m3hMsoAA.png',
-  '/images/unsplash_Of_m3hMsoAA.png',
-  '/images/unsplash_Of_m3hMsoAA.png',
-];
-
 const Team = () => {
   return (
     <div className="pt-[120px] px-[15px] md:px-[25px] lg:px-[40px] py-[40px] max-w-[1377.5px] mx-auto">

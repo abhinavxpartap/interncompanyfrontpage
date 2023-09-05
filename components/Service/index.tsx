@@ -45,7 +45,7 @@ const Service = () => {
           return (
             <div
               key={index}
-              className="bg-[#ffffff] w-[275px] lg:w-[230px] xl:w-[375px] px-[20px] py-[20px] rounded-[12px]"
+              className="bg-[#ffffff]  px-[20px] py-[30px] rounded-[12px]"
               style={{
                 boxShadow:
                   'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px',

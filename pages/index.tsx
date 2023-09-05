@@ -2,8 +2,6 @@ import type { NextPage } from 'next';
 import { Banner } from '../components/Banner';
 import data from '../data/homepage.json';
 import Head from "next/head";
-
-
 import { OurBrands } from '../components/ourBrands';
 import ProductOverview from '../components/Product Overview';
 import React from 'react';
@@ -24,22 +22,15 @@ const Home: NextPage = () => {
           <meta name="keywords" content={seoData.Homepage.keywords}/>
           <meta name="title" content={seoData.Homepage.metaTitle}/>
         </Head>
-
-
     <div>
       <Banner
         image={data.bannerData.backgroundImage}
         title={data.bannerData.title}
         subtitle={data.bannerData.subtitle}
         button={data.bannerData.buttonName}
-        ourClients={ourClientData}
-        awesomeNumbers={awesomeNumberData}
-        button={data.bannerData.button}
-
       />
       <div>
-        <OurBrands
-        icons={data.Brands.icons}/>
+        <OurBrands/>
       </div>
       <ProductOverview />
       <div

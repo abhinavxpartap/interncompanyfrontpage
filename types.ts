@@ -285,11 +285,8 @@ export interface Assurance {
 export interface BannerDataInterface {
     title: string;
     subtitle: string;
-
     image: string;
-    button: {
-        title: string;
-    };
+    button:string;
 }
 
 export interface Faq {
@@ -307,9 +304,6 @@ export interface Faq {
 }
 
 export interface BrandData {
-    icons:
-            {
-                image: string
-            }[];
-
+    src:string;
+    alt:string;
 }

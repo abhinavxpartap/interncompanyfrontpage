@@ -1,9 +1,8 @@
 import React from 'react';
 import { Img } from '../utils/Img';
 import CompanyImage from "../data/common/OurBrands.json"
-
-
-export const OurBrands: React.FC<any> = () => {
+import {BrandData} from "../types";
+export const OurBrands: React.FC = () => {
   const content = (
     <>
       <div className="max-w-[1377.5px] mx-auto flex flex-col items-center justify-between  pt-[30px] pb-[30px]">
@@ -25,8 +24,9 @@ export const OurBrands: React.FC<any> = () => {
         </div>
 
         <div className="w-full h-full overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth">
-          {CompanyImage.map((item: any, index) => (
+          {CompanyImage.map((item: BrandData, index) => (
             <div
+                key={index}
               className="w-[120px]  md:w-[200px] bg-white h-[50px] inline-block m-4 cursor-pointer rounded-[10px] "
               style={{
                 boxShadow:

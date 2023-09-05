@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Button } from '../../utils/Button';
 import { Header } from '../Common/Header';
 import { Dialog, DialogContent } from '@mui/material';
 import Popupform from '../popupform';
@@ -7,7 +6,7 @@ import { Button } from '@mui/material';
 
 import {BannerDataInterface} from "../../types";
 export const Banner:React.FC<BannerDataInterface> = (props) => {
-  const { title, subtitle, image } = props;
+  const { title, subtitle, image,button } = props;
 
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
@@ -31,7 +30,6 @@ export const Banner:React.FC<BannerDataInterface> = (props) => {
           {subtitle}
         </div>
         <div>
-
           <Button
               onClick={handleOpen}
               className="ButtonTransition overflow-hidden text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
@@ -51,7 +49,8 @@ export const Banner:React.FC<BannerDataInterface> = (props) => {
                 },
               }}
           >
-            Request Demo          </Button>
+            {button}
+          </Button>
         </div>
         <Dialog open={open} onClose={handleClose}>
           <DialogContent>

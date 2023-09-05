@@ -54,6 +54,10 @@ const CaseStudy = () => {
                     borderRadius: "20px",
                     color: "#5A7184",
                   }}
+                  onClick={() => {
+                    router.push(`${caseStudy.href}`);
+                  }}
+
                 >
                   Learn more
                   <span className="ml-[8px]">

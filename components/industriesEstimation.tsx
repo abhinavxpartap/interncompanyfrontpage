@@ -2,8 +2,9 @@ import React from 'react';
 import { Img } from '../utils/Img';
 import { Button } from '@mui/material';
 import { useRouter } from 'next/router';
+import {Estimation} from "../types";
 
-export const IndustriesEstimation: React.FC<any> = (props) => {
+export const IndustriesEstimation: React.FC<Estimation> = (props) => {
   const { image, title, subtitle, data, button } = props;
   const router = useRouter();
 
@@ -19,7 +20,7 @@ export const IndustriesEstimation: React.FC<any> = (props) => {
               {subtitle}
             </p>
             <div className="mt-[20px]  flex flex-col gap-[10px] md:gap-[15px]">
-              {data.map((item: any, index: number) => (
+              {data.map((item, index: number) => (
                 <div
                   key={index}
                   className="flex flex-row gap-[12px] md:gap-[20px] items-center"

@@ -11,7 +11,7 @@ import {
 } from '@mui/material';
 import { useRouter } from 'next/router';
 
-export const FreeQuotation: React.FC<any> = () => {
+export const FreeQuotation = () => {
   const [checked, setChecked] = useState([false, false]);
   const handleToggle = (index: number) => () => {
     const newChecked = [...checked];
@@ -33,7 +33,7 @@ export const FreeQuotation: React.FC<any> = () => {
                 Get a Free Quotation
               </h1>
               <p className="text-[#444444] text-[18px] md:text-[19px] font-medium">
-                Don't Worry Your Data and Business Ideas Are Safe With Us.
+                Do not Worry Your Data and Business Ideas Are Safe With Us.
               </p>
             </div>
             <div

@@ -1,34 +1,9 @@
 import React from 'react';
 import { Button } from '../../utils/Button';
 import Carousel from 'react-multi-carousel';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import {TestimonialInterface} from "../../types";
 
-const ButtonGroup = ({ next, previous, goToSlide, ...rest }: any) => {
-  const {
-    carouselState: { currentSlide },
-  } = rest;
-  return (
-    <div
-      className="carousel-button-group mb-4  gap-4 flex justify-between 
-        items-center w-full absolute bottom-[50%]"
-    >
-      <button
-        className="bg-white text-[#177DF0] w-[50px] h-[50px] boxshad rounded-[50px]"
-        onClick={() => previous()}
-      >
-        {' '}
-        <ArrowBackIcon />
-      </button>
-      <button
-        className="bg-white text-[#177DF0] w-[50px] h-[50px] boxshad rounded-[50px]"
-        onClick={() => next()}
-      >
-        <ArrowForwardIcon />
-      </button>
-    </div>
-  );
-};
+
 
 const responsive = {
   superLargeDesktop: {
@@ -96,9 +71,8 @@ const Testimonials = () => {
           responsive={responsive}
           arrows={false}
           renderButtonGroupOutside={true}
-          customButtonGroup={<ButtonGroup />}
         >
-          {images.map((data: any, index: any) => (
+          {images.map((data: TestimonialInterface, index: number) => (
             <div
               key={index}
               className="w-[70%] h-auto my-[30px] bg-white flex flex-col mx-[auto] rounded-[10px] boxshad border-[black] xl:px-[55px] px-[10px]  overflow-hidden md:py-[50px] py-[20px]"

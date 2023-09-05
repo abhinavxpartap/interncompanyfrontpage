@@ -2,9 +2,10 @@ import React from 'react';
 import { Img } from '../utils/Img';
 import { Button } from '@mui/material';
 import { useRouter } from 'next/router';
+import { DevelopmentDataInterface} from "../types";
 
-export const ServicesDevelopment: React.FC<any> = (props) => {
-  const { title, subtitle, LeftData, RightData, CenterContent, button } = props;
+export const ServicesDevelopment: React.FC<DevelopmentDataInterface> = (props) => {
+  const { title, subtitle, leftData, rightData, centerContent, button } = props;
   const router = useRouter();
 
   const content = (
@@ -25,8 +26,8 @@ export const ServicesDevelopment: React.FC<any> = (props) => {
             }}
           >
             <div className="w-[100%]  md:w-[18vw] pl-[20px] md:pl-[30px] py-[25px] lg:py-[40px] xl:py-[50px] flex flex-col gap-[15px] lg:gap-[18px] xl:gap-[25px] justify-start bg-[#D8EEFF] rounded-t-[10px]  md:rounded-l-[10px] ">
-              {LeftData.map((item: any, index: any) => (
-                <div className="flex flex-row  gap-[10px] items-center">
+              {leftData.map((item , index: number) => (
+                <div className="flex flex-row  gap-[10px] items-center" key={index}>
                   <Img
                     src={item.image}
                     className="w-[25px] lg:w-[25px] xl:w-[30px]"
@@ -39,22 +40,23 @@ export const ServicesDevelopment: React.FC<any> = (props) => {
               ))}
             </div>
             <div className="w-[100%] md:w-[55vw] flex justify-start text-start px-[20px] text-[16px] leading-[30px] text-[#757B8A] lg:text-[13px] lg:leading-[26px] xl:text-[14px] font-normal xl:leading-[32px] py-[30px] xl:py-[60px] lg:py-[50px] ">
-              {CenterContent}
+              {centerContent}
             </div>
-            <div className="w-[100%] md:w-[18vw]  pl-[20px] md:pl-[30px] py-[25px] lg:py-[40px] xl:py-[50px] flex flex-col gap-[15px] lg:gap-[18px] xl:gap-[25px] justify-start bg-[#D8EEFF] rounded-b-[10px] md:rounded-r-[10px] ">
-              {RightData.map((item: any, index: any) => (
-                <div className="flex flex-row gap-[10px] items-center">
-                  <Img
-                    src={item.image}
-                    className=" w-[25px] lg:w-[25px] xl:w-[30px]"
-                    alt={item.title}
-                  />
-                  <h1 className="lg:text-[16px] xl:text-[18px]  font-normal text-[4B5A69] cursor-pointer active:text-[#177DF0] hover:text-[#177DF0]">
-                    {item.title}
-                  </h1>
-                </div>
+            <div className="w-[100%] md:w-[18vw] pl-[20px] md:pl-[30px] py-[25px] lg:py-[40px] xl:py-[50px] flex flex-col gap-[15px] lg:gap-[18px] xl:gap-[25px] justify-start bg-[#D8EEFF] rounded-b-[10px] md:rounded-r-[10px] ">
+              {rightData.map((item, index: number) => (
+                  <div className="flex flex-row gap-[10px] items-center" key={index}>
+                    <Img
+                        src={item.image}
+                        className="w-[25px] lg:w-[25px] xl:w-[30px]"
+                        alt={item.title}
+                    />
+                    <h1 className="lg:text-[16px] xl:text-[18px] font-normal text-[4B5A69] cursor-pointer active:text-[#177DF0] hover:text-[#177DF0]">
+                      {item.title}
+                    </h1>
+                  </div>
               ))}
             </div>
+
           </div>
           <div className="flex justify-center items-ceter pt-[30px]">
             <Button

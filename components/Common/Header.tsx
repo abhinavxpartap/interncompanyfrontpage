@@ -8,7 +8,7 @@ import { Dropdown } from '../Common/Dropdown';
 import { Dialog, DialogContent } from '@mui/material';
 import Popupform from '../popupform';
 
-export const Header: React.FC<any> = () => {
+export const Header= () => {
   const router = useRouter();
   const [isSticky, setIsSticky] = useState(false);
   const [isOpen, setIsOpen] = useState(false);

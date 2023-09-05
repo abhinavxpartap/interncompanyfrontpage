@@ -1,7 +1,7 @@
 import React from 'react';
-import { Img } from '../utils/Img';
+import {JourneyInterface} from "../types";
 
-export const Journey: React.FC<any> = (props) => {
+export const Journey: React.FC<JourneyInterface> = (props) => {
   const { title, subtitle1, subtitle2 } = props;
 
   const content = (

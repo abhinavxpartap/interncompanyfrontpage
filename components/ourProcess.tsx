@@ -1,8 +1,7 @@
 import React from 'react';
 import { Img } from '../utils/Img';
 
-export const OurProcess: React.FC<any> = (props) => {
-  const { image } = props;
+export const OurProcess = () => {
 
   const images = [
     '/m1.svg',
@@ -17,7 +16,7 @@ export const OurProcess: React.FC<any> = (props) => {
 
   const content = (
     <div className="max-w-[1377.5px] relative  mx-auto">
-      <div className="flex pt-[40px] grid md:grid-cols-4 grid-cols-2 justify-between md:flex-row flex-col">
+      <div className=" pt-[40px] grid md:grid-cols-4 grid-cols-2 justify-between md:flex-row flex-col">
         {images.map((src, index) => (
           <div key={index}>
             <Img src={src} alt="w" className="w-[340px]" />

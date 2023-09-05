@@ -3,20 +3,19 @@ import { Img } from '../utils/Img';
 import { styled } from '@mui/material/styles';
 import {
   Stepper,
-
-  Step,
+    Step,
   StepLabel,
   Button,
   Grid,
   IconButton,
   Typography,
   StepIconProps,
-  StepConnector,
 } from '@mui/material';
 import { useRouter } from 'next/router';
+import {Faq} from "../types";
 
 const QontoStepIconRoot = styled('div')<{ ownerState: { active?: boolean } }>(
-  ({ theme, ownerState }) => ({
+  ({ ownerState }) => ({
     display: 'flex',
     width: 20,
     height: 20,
@@ -69,21 +68,23 @@ function QontoStepIcon(props: StepIconProps) {
   );
 }
 
-const StyledStepConnector = styled(StepConnector)(({ theme }) => ({
-  marginLeft: '15px', // Adjust the position of the line
-  '& .MuiStepConnector-line': {
-    borderLeftWidth: '2px', // Set the width of the line
-    borderLeftStyle: 'solid',
-    borderColor: theme.palette.grey[500], // Set the color of the line
-  },
-}));
+// const StyledStepConnector = styled(StepConnector)(({ theme }) => ({
+//   marginLeft: '15px', // Adjust the position of the line
+//   '& .MuiStepConnector-line': {
+//     borderLeftWidth: '2px', // Set the width of the line
+//     borderLeftStyle: 'solid',
+//     borderColor: theme.palette.grey[500], // Set the color of the line
+//   },
+// }));
 
-export const ServicesFaq: React.FC<any> = (props) => {
-  const { title, subtitle, button, tabsData } = props;
+export const ServicesFaq: React.FC<Faq> = (props) => {
+  const { title, subtitle, button, tabData } = props;
   const router = useRouter();
   const [activeTab, setActiveTab] = useState(2);
 
-  const handleTabToggle = (tabId: any) => {
+
+
+    const handleTabToggle = (tabId: any) => {/* eslint-disable */
     setActiveTab(tabId === activeTab ? null : tabId);
   };
 
@@ -122,7 +123,7 @@ export const ServicesFaq: React.FC<any> = (props) => {
           </div>
           <div className="flex flex-row w-[85vw] lg:w-[55vw]">
             <Stepper activeStep={activeTab - 1} orientation="vertical">
-              {tabsData.map((tab: any, index: number) => (
+              {tabData.map((tab) => (
                 <Step key={tab.id}>
                   <StepLabel
                     StepIconComponent={QontoStepIcon}

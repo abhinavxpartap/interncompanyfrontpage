@@ -1,10 +1,10 @@
 import React from 'react';
 import { Img } from '../utils/Img';
-import data from '../data/aboutPortfolio.json';
+import {PizzaHutInfo} from "../types";
 
-export const AboutPortfolio: React.FC<any> = () => {
+export const AboutPortfolio: React.FC<PizzaHutInfo> = (props) => {
   const { title, subtitle, content, industry, businessType, services, images } =
-    data; // Destructure the data
+    props;
 
   const imageElements = images.map((imageUrl: string, index: number) => (
     <div key={index}>

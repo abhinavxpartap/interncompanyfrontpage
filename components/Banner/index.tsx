@@ -3,8 +3,10 @@ import { Button } from '../../utils/Button';
 import { Header } from '../Common/Header';
 import { Dialog, DialogContent } from '@mui/material';
 import Popupform from '../popupform';
+import {BannerDataInterface} from "../../types";
+export const Banner:React.FC<BannerDataInterface> = (props) => {
+  const { title, subtitle, image, button } = props;
 
-export const Banner = (props: any) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
     setOpen(true);
@@ -12,7 +14,6 @@ export const Banner = (props: any) => {
   const handleClose = () => {
     setOpen(false);
   };
-  const { title, subtitle, image, button } = props;
 
   return (
     <div

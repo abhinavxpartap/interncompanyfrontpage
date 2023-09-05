@@ -15,8 +15,9 @@ import React, { useState } from 'react';
 import { SelectChangeEvent } from '@mui/material/Select';
 import { Img } from '../../utils/Img';
 import { Header } from '../Common/Header';
+import {ContactBannerInterface} from "../../types";
 
-export const ContactBanner: React.FC<any> = (props) => {
+export const ContactBanner: React.FC<ContactBannerInterface> = (props) => {
   const { title, subtitle } = props;
 
   const [age, setAge] = React.useState('');

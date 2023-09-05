@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button } from '@mui/material';
 import { Img } from '../utils/Img';
+import {ServiceAboutInterface} from "../types";
 
-export const ServiceAbout: React.FC<any> = (props) => {
+export const ServiceAbout: React.FC<ServiceAboutInterface> = (props) => {
   const { title, subtitle, paragraph, image } = props;
 
   const content = (

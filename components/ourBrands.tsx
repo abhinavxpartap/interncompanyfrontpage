@@ -27,7 +27,7 @@ const Image = [
     image: '/Brand1.svg',
   },
 ];
-export const OurBrands: React.FC<any> = () => {
+export const OurBrands = () => {
   const content = (
     <>
       <div className="max-w-[1377.5px] mx-auto flex flex-col items-center justify-between  pt-[30px] pb-[30px]">
@@ -51,9 +51,9 @@ export const OurBrands: React.FC<any> = () => {
         </div>
 
         <div className="w-full h-full overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth">
-          {Image.map((item: any, index) => (
+          {Image.map((item, index) => (
             <div
-              className="w-[120px]  md:w-[200px] bg-white h-[50px] inline-block m-4 cursor-pointer rounded-[10px] "
+              className="w-[120px]  md:w-[200px] bg-white h-[50px] inline-block m-4 cursor-pointer rounded-[10px] " key={index}
               style={{
                 boxShadow:
                   'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px',

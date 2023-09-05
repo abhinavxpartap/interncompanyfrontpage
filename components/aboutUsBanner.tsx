@@ -1,8 +1,9 @@
 import React from 'react';
-import { Header } from '../components/Common/Header';
+import { Header } from './Common/Header';
+import {AboutUsBannerInterface} from "../types";
 
 
-export const AboutUsBanner: React.FC<any> = (props) => {
+export const AboutUsBanner: React.FC<AboutUsBannerInterface> = (props) => {
   const { image, mobileImage, title, subtitle } = props;
 
   const content = (

@@ -80,7 +80,7 @@ const BlogPage: React.FC = () => {
               </h1>
               <hr className="border-[1px] w-[97%] mt-[10px] border-[#818181]" />
               <div className="flex flex-wrap mt-[25px] gap-[15px]">
-                {Data.BlogData.map((item: any, index: number) => (
+                {Data.BlogData.map((item, index: number) => (
                   <Button
                     className={`md:text-[10px] lg:text-[13px] xl:text-[16px] ${
                       isActive === index ? 'bg-[#177DF0]' : ''
@@ -109,7 +109,7 @@ const BlogPage: React.FC = () => {
               </div>
             </div>
             <div className="w-[90vw] lg:w-[60vw]   gap-[40px] grid grid-cols-1 md:grid-cols-2">
-              {Data.BlogData.slice(0, 6).map((item: any, index: number) => (
+              {Data.BlogData.slice(0, 6).map((item, index: number) => (
                 <BlogCards
                   key={index}
                   AuthorName={item.AuthorName}
@@ -130,7 +130,7 @@ const BlogPage: React.FC = () => {
               </h1>
               <div className="w-[100%] mx-auto md:mx-0">
                 <div className="w-[100%] gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                  {Data.BlogData.slice(0, 3).map((item: any, index: number) => (
+                  {Data.BlogData.slice(0, 3).map((item, index: number) => (
                     <BlogCards
                       key={index}
                       AuthorName={item.AuthorName}

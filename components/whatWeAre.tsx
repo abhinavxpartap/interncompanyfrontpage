@@ -1,7 +1,8 @@
 import React from 'react';
 import { Img } from '../utils/Img';
+import {WhatWeInterface} from "../types";
 
-export const WhatWeAre: React.FC<any> = (props) => {
+export const WhatWeAre: React.FC<WhatWeInterface> = (props) => {
   const { title1, subtitle1, title2, subtitle2 } = props;
 
   const content = (

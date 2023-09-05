@@ -11,7 +11,7 @@ interface CardBlog {
   url: string;
   Date: string;
   categories: string;
-  AuthorName: String;
+  AuthorName: string;
 }
 
 export const BlogCards: React.FC<CardBlog> = ({

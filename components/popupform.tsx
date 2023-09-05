@@ -12,9 +12,13 @@ import {
 } from '@mui/material';
 import { Img } from '../utils/Img';
 
-const Popupform = ({ onClose }) => {
+
+interface PopUpFormProps {
+  onClose: () => void;
+}
+const Popupform: React.FC<PopUpFormProps> = ({ onClose }) => {
   const [checked, setChecked] = useState([false, false]);
-  const handleToggle = (index: any) => () => {
+  const handleToggle = (index: number) => () => {
     const newChecked = [...checked];
     newChecked[index] = !newChecked[index];
     setChecked(newChecked);
@@ -23,7 +27,7 @@ const Popupform = ({ onClose }) => {
   const labelNames = ['Software Development', 'Web Design'];
 
   const handleClose = () => {
-    setChecked([false, false]); // Reset checkbox state
+    setChecked([false, false]);
     onClose();
   };
 

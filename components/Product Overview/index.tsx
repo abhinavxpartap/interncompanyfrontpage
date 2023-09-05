@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '../../utils/Button';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -39,7 +39,7 @@ const ProductOverview = () => {
                   65
                 </div>
                 <div className="md:text-[18px]  text-[12px] text-[white] font-medium leading-[28px]">
-                  SOFTWARE'S DEVELOPED
+                  SOFTWARES DEVELOPED
                 </div>
               </div>
               <div>

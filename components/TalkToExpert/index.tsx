@@ -1,7 +1,8 @@
 import { Button } from '@mui/material';
 import React from 'react';
+import {TalkInterface} from "../../types";
 
-export const TalkTo: React.FC<any> = (props) => {
+export const TalkTo: React.FC<TalkInterface> = (props) => {
   const { title } = props;
   return (
     <div>

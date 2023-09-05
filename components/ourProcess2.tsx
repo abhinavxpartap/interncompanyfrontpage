@@ -1,7 +1,6 @@
 import React from 'react';
-import { Img } from '../utils/Img';
 
-export const OurProcess2: React.FC<any> = (props) => {
+export const OurProcess2= () => {
   const processSteps = [
     {
       number: '1',

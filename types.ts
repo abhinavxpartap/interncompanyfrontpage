@@ -10,6 +10,70 @@ export interface UserInterface {
     role: string;
     status?: string;
   }
+
+
+export interface DirectorInterface {
+    image: string;
+    mobileImage: string;
+    name: string;
+    post: string;
+    company: string;
+    address: string;
+    message: string;
+    icon: string;
+}
+export interface WhatWeInterface {
+    title1: string;
+    subtitle1: string;
+    title2: string;
+    subtitle2: string;
+}
+
+export interface TestimonialInterface {
+    comment: string;
+    companyLogo: string;
+    imageUrl: string;
+    designation: string;
+    username:string;
+}
+
+export interface TechSectionInterface {
+    title: string;
+    subtitle: string;
+    Paragraph: string;
+    button: {
+        name: string;
+        href: string;
+    };
+    data: {
+        image: string;
+    }[];
+}
+
+
+
+export interface DevelopmentDataInterface {
+    title: string;
+    subtitle: string;
+    leftData: {
+        image: string;
+        title: string;
+    }[];
+    rightData: {
+        image: string;
+        title: string;
+    }[];
+    centerContent: string;
+    button: {
+        name: string;
+        href: string;
+    };
+}
+export interface TalkInterface {
+    title: string;
+}
+
+
 export interface OurValues {
   
     items: OurValuesItemInterface[];
@@ -59,4 +123,166 @@ export interface ServiceInterface {
     image: string;
     title: string;
     description: string;
+}
+
+
+export interface AboutData {
+    title: string;
+    image: string;
+    button: {
+        name: string;
+        href: string;
+    };
+    fintechData: {
+        title: string;
+        subtitle: string;
+    }[];
+    satisfactionData: {
+        number: string;
+        subtitle: string;
+    }[];
+}
+
+export interface PizzaHutInfo {
+    title: string;
+    subtitle: string;
+    content: string;
+    industry: string;
+    businessType: string;
+    services: string;
+    images: string[];
+}
+export interface AboutUsBannerInterface {
+    title: string;
+    subtitle: string;
+    image: string;
+    mobileImage: string;
+
+}
+
+export interface ServiceAboutInterface {
+    title: string;
+    subtitle: string;
+    paragraph: string;
+    image: string;
+
+}
+export interface LetsInterface {
+    title: string;
+    subtitle: string;
+    mobileImage: string;
+    image: string;
+
+}
+export interface JourneyInterface {
+    title: string;
+    subtitle1: string;
+    subtitle2: string;
+
+}
+
+export interface WebApplicationDevelopmentProcess {
+    title: string;
+    subtitle: string;
+    data: {
+        image: string;
+        title: string;
+        subtitle: string;
+    }[];
+}
+export interface ContactBannerInterface {
+    title: string;
+    subtitle: string;
+
+}
+
+
+export interface Compliance {
+    title: string;
+    image: string;
+
+    subtitle: string;
+    data: {
+        id: number;
+        title: string;
+    }[];
+}
+
+export interface Estimation {
+    image: string;
+    title: string;
+    subtitle: string;
+    button: {
+        name: string;
+        href: string;
+    };
+    data: {
+        content: string;
+    }[];
+}
+
+export  interface FaqInterFace{
+    title: string;
+    spantitle: string;
+    tabData: {
+        id: number;
+        title: string;
+        content: string;
+        data: {
+            title: string;
+        }[];
+    }[];
+}
+export interface Port{
+    title: string;
+
+}
+export interface ServiceBannerInterface {
+    title: string;
+    subtitle: string;
+    image: string;
+    mobileImage: string;
+    button: {
+        name: string;
+        href: string;
+    };
+}
+
+export interface Assurance {
+    image: string;
+    title: string;
+    button: {
+        name: string;
+        href: string;
+    };
+    data: {
+        title: string;
+        subtitle: string;
+        icon: string;
+    }[];
+}
+
+
+export interface BannerDataInterface {
+    title: string;
+    subtitle: string;
+
+    image: string;
+    button: {
+        title: string;
+    };
+}
+
+export interface Faq {
+    title: string;
+    subtitle: string;
+    button: {
+        name: string;
+        href: string;
+    };
+    tabData: {
+        id: number;
+        title: string;
+        content: string;
+    }[];
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from '@mui/material';
 import { Img } from '../utils/Img';
 import { OurValues } from '../types';
 export const OurValue: React.FC<OurValues> = (props) => {

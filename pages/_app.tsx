@@ -26,6 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       "/admin",
       "/admin/landing/Banner",
       "/admin/landing/ProductOverview",
+      "/admin/landing/ExpertTeam",
       "/admin/common/CaseStudy",
       "/admin/common/OurBrands",
       "/admin/common/ProductOverview",

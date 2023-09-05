@@ -182,8 +182,8 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                     active: false
                 },
                 {
-                    label: 'Why Us',
-                    href: '/admin/home/whyUs',
+                    label: 'Expert Team',
+                    href: '/admin/landing/ExpertTeam',
                     active: false
                 },
                 {

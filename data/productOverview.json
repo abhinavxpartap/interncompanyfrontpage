@@ -1,10 +1,1 @@
-{
-    "Data": {
-        "title": "Build Exclusively",
-        "subtitle": "Appinventiv dream, architect, design and develop. But more than that, we are a team of passionate people driven by one relentless pursuit- to craft innovative solutions and deliver unparalleled results.",
-        "image": "/images/bg-blue2.png",
-        "productsCounts":"250",
-        "softwareDevelopedCount":"65",
-        "webDesignCount":"215"
-    }
-}
+{"Data":{"title":"Build Exclusively","subtitle":"Appinventiv dream, architect, design and develop. But more than that, we are a team of passionate people driven by one relentless pursuit- to craft innovative solutions and deliver unparalleled results.","backgroundImage":"/images/bg-blue2.png","productCount":"250","softwareDevelopedCount":"65","webDesignCount":"215"}}

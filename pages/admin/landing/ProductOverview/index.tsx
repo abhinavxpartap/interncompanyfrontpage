@@ -12,8 +12,8 @@ const ProductPage = () => {
     const [params, setParams] = useState<any>({
         title: pageData.Data.title,
         subtitle: pageData.Data.subtitle,
-        backgroundImage: pageData.Data.image,
-        productCount: pageData.Data.productsCounts,
+        backgroundImage: pageData.Data.backgroundImage,
+        productCount: pageData.Data.productCount,
         softwareDevelopedCount: pageData.Data.softwareDevelopedCount,
         webDesignCount:pageData.Data.webDesignCount
     });
@@ -26,14 +26,14 @@ const ProductPage = () => {
 
     const save = async () => {
         setIsLoading(true);
-        const response = await fetch('/api/save', {
+        const response = await fetch('http://localhost:3000/api/save', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                fileUrl: '/layouts/landing.json',
-                updatedContent: JSON.stringify({...pageData, banner: params})
+                fileUrl: '/productOverview.json',
+                updatedContent: JSON.stringify({...pageData, Data: params})
             }),
         });
 

@@ -12,27 +12,20 @@ const BannerPage = () => {
     const [params, setParams] = useState<any>({
         title: pageData.bannerData.title,
         subtitle: pageData.bannerData.subtitle,
-        backgroundImage: pageData.bannerData.image,
-        buttonName:pageData.bannerData.button.title,
-        buttonLink:pageData.bannerData.button.href,
+        backgroundImage: pageData.bannerData.backgroundImage,
+        buttonName:pageData.bannerData.buttonName
     });
-
-    const setBannerParams = (key: string, value: string) => {
-        const newParams = {...params};
-        newParams[key] = value;
-        setParams(newParams);
-    }
 
     const save = async () => {
         setIsLoading(true);
-        const response = await fetch('./api/save', {
+        const response = await fetch('http://localhost:3000/api/save', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                fileUrl: '/layouts/landing.json',
-                updatedContent: JSON.stringify({...pageData, banner: params})
+                fileUrl: '/homepage.json',
+                updatedContent: JSON.stringify({...pageData, bannerData: params})
             }),
         });
 
@@ -46,6 +39,12 @@ const BannerPage = () => {
         }
         setIsLoading(false);
     };
+
+    const setBannerParams = (key: string, value: string) => {
+        const newParams = {...params};
+        newParams[key] = value;
+        setParams(newParams);
+    }
 
     return <PrivateLayout title="Zuca - Home Page Banner Section">
         <div className="flex flex-col gap-[16px]">

@@ -1,4 +1,3 @@
-import type { NextPage } from 'next';
 import { Banner } from '../components/Banner';
 import data from '../data/homepage.json';
 import ourClientData from '../data/common/clients.json';
@@ -13,14 +12,14 @@ import CaseStudy from '../components/Case Study';
 import Testimonials from '../components/Testimonials';
 import DemoForm from '../components/Demo Form';
 
-const Home: NextPage = () => {
+const Home: React.FC = () => {
   return (
     <div>
       <Banner
-        image={data.bannerData.image}
+        image={data.bannerData.backgroundImage}
         title={data.bannerData.title}
         subtitle={data.bannerData.subtitle}
-        button={data.bannerData.button}
+        button={data.bannerData.buttonName}
         ourClients={ourClientData}
         awesomeNumbers={awesomeNumberData}
       />

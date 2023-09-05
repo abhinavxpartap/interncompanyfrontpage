@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       "/admin/common/Service",
       "/admin/common/Team",
       "/admin/common/Testimonials",
-      "/admin/common/Header",
+      "/admin/common/Header"
   ];
 
   return <LoaderContext.Provider value={{isLoading, setIsLoading}}>

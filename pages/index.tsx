@@ -28,9 +28,12 @@ const Home: NextPage = () => {
 
     <div>
       <Banner
-        image={data.bannerData.image}
+        image={data.bannerData.backgroundImage}
         title={data.bannerData.title}
         subtitle={data.bannerData.subtitle}
+        button={data.bannerData.buttonName}
+        ourClients={ourClientData}
+        awesomeNumbers={awesomeNumberData}
         button={data.bannerData.button}
 
       />

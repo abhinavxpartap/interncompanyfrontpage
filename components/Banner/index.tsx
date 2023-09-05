@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Button } from '../../utils/Button';
 import { Header } from '../Common/Header';
 import { Dialog, DialogContent } from '@mui/material';
 import Popupform from '../popupform';
@@ -22,8 +23,8 @@ export const Banner:React.FC<BannerDataInterface> = (props) => {
       className="bg-cover bg-center bg-no-repeat md:pb-[50px] relative mx-[auto]"
     >
       <Header />
-      <div className="max-w-[1377.5px] mx-[auto] flex flex-col items-center justify-center md:pt-[227px] pt-[117px] pb-[71px] md:px-0 px-[10px]">
-        <h1 className="md:text-[80px] text-[36px] text-[#FFFFFF] font-bold leading-[50px] md:leading-[90px] md:tracking-[-2.4px] max-w-[900px] text-center md:pb-[25px] pb-[18px]">
+      <div className="max-w-[1377.5px] mx-[auto] flex flex-col items-center justify-center md:pt-[270px] pt-[117px] pb-[71px] md:px-0 px-[10px]">
+        <h1 className="md:text-[80px] text-[40px] text-[#FFFFFF] font-bold leading-[50px] md:leading-[90px] md:tracking-[-2.4px] max-w-[900px] text-center md:pb-[25px] pb-[18px]">
           {title}
         </h1>
         <div className=" max-w-[1106px] font-medium text-[#FFFFFF]  md:text-[23px] text-[16px] leading-[160%] tracking-[-0.68px] text-center pb-[30px] ">

@@ -1,4 +1,3 @@
-
 import React, { useContext, useState } from "react";
 import { Button } from "../../../utils/Button";
 import toast from "react-hot-toast";
@@ -7,10 +6,10 @@ import pageData from "../../../data/common/CaseStudy.json";
 import { ImageOverlay } from "../../../utils/Admin/ImageOverlay";
 import { Input, TextArea } from "../../../utils/Input";
 import PrivateLayout from "../../../components/Layout/privateLayout";
-
+import {CaseStudyInterface} from "../../../types";
 const CaseStudyPage = () => {
     const { setIsLoading } = useContext(LoaderContext);
-    const [headerData, setHeaderData] = useState<any>(pageData.caseStudies);
+    const [headerData, setHeaderData] = useState<CaseStudyInterface[]>(pageData.caseStudies);
 
     const setParams = (index: number, key: string, value: string): void => {
         const updatedItems = [...headerData];
@@ -24,8 +23,11 @@ const CaseStudyPage = () => {
     const addLinks = () => {
         const newLinks = [...headerData];
         newLinks.push({
-            image: "",
-            alt: ""
+            heading:"",
+            imgUrl: "",
+            org: "",
+            description: "",
+            href: "",
         });
         setHeaderData(newLinks);
     }
@@ -38,16 +40,16 @@ const CaseStudyPage = () => {
 
     const save = async () => {
         setIsLoading(true);
-        const response = await fetch('/api/save', {
+        const response = await fetch('http://localhost:3000/api/save', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                fileUrl: '/comman/layout.json',
+                fileUrl: 'common/CaseStudy.json',
                 updatedContent: JSON.stringify({
                     ...pageData,
-                    header: headerData
+                    caseStudies: headerData
                 })
             }),
         });
@@ -82,7 +84,7 @@ const CaseStudyPage = () => {
             </div>
             <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-[16px]">
                 {
-                    headerData.map((item: any, index: number) => {
+                    headerData.map((item:CaseStudyInterface, index: number) => {
                         return <div key={index} className="rounded border overflow-hidden bg-white">
                             <ImageOverlay
                                 withOverlay

@@ -6,10 +6,10 @@ import {Button} from "../../../../utils/Button";
 import toast from "react-hot-toast";
 import {LoaderContext} from "../../../../context/LoaderContext";
 import PrivateLayout from "../../../../components/Layout/privateLayout";
-
+import {ProductOverviewInterface} from "../../../../types";
 const ProductPage = () => {
     const {setIsLoading} = useContext(LoaderContext);
-    const [params, setParams] = useState<any>({
+    const [params, setParams] = useState<ProductOverviewInterface>({
         title: pageData.Data.title,
         subtitle: pageData.Data.subtitle,
         backgroundImage: pageData.Data.backgroundImage,
@@ -18,7 +18,7 @@ const ProductPage = () => {
         webDesignCount:pageData.Data.webDesignCount
     });
 
-    const setBannerParams = (key: string, value: string) => {
+    const setBannerParams = (key:keyof ProductOverviewInterface, value: string) => {
         const newParams = {...params};
         newParams[key] = value;
         setParams(newParams);

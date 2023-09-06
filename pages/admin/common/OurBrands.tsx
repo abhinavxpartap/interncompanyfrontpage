@@ -6,10 +6,11 @@ import { LoaderContext } from "../../../context/LoaderContext";
 import { ImageOverlay } from "../../../utils/Admin/ImageOverlay";
 import pageData from "../../../data/common/OurBrands.json";
 import PrivateLayout from "../../../components/Layout/privateLayout";
+import {BrandData} from "../../../types";
 
 const Companies = () => {
     const { setIsLoading } = useContext(LoaderContext);
-    const [companies, setCompanies] = useState<any[]>(pageData);
+    const [companies, setCompanies] = useState<BrandData[]>(pageData);
 
     const setParams = (index: number, key: string, value: string): void => {
         const newCompany = [...companies];
@@ -37,13 +38,13 @@ const Companies = () => {
 
     const save = async () => {
         setIsLoading(true);
-        const response = await fetch('/api/save', {
+        const response = await fetch('http://localhost:3000/api/save', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                fileUrl: '/comman/company.json',
+                fileUrl: '/common/OurBrands.json',
                 updatedContent: JSON.stringify(companies)
             })
         });
@@ -80,7 +81,7 @@ const Companies = () => {
             </div>
             <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-[16px]">
                 {
-                    companies.map((item: any, index) => {
+                    companies.map((item:BrandData, index) => {
                         return <div key={index} className="rounded border overflow-hidden bg-white">
                             <ImageOverlay
                                 withOverlay

@@ -103,32 +103,6 @@ const CaseStudyPage = () => {
         setHeaderData(newLinks);
     }
 
-    // const save = async () => {
-    //     setIsLoading(true);
-    //     const response = await fetch('http://localhost:3000/api/save', {
-    //         method: 'POST',
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //         },
-    //         body: JSON.stringify({
-    //             fileUrl: '/expertTeam.json',
-    //             updatedContent: JSON.stringify({
-    //                 ...pageData,
-    //                 header: headerData
-    //             })
-    //         }),
-    //     });
-    //
-    //     const data = await response.json();
-    //
-    //     if (data.success) {
-    //         toast.success("Changes saved successfully!");
-    //     } else {
-    //         toast.error(`Error saving changes: ${data.message}`);
-    //     }
-    //     setIsLoading(false);
-    // };
-
     const handleSaveClick = () => {
         save(pageData, headerData, params1);
     };

@@ -6,10 +6,11 @@ import {Button} from "../../../../utils/Button";
 import toast from "react-hot-toast";
 import {LoaderContext} from "../../../../context/LoaderContext";
 import PrivateLayout from "../../../../components/Layout/privateLayout";
+import {BannerAdminInterface} from "../../../../types";
 
 const BannerPage = () => {
     const {setIsLoading} = useContext(LoaderContext);
-    const [params, setParams] = useState<any>({
+    const [params, setParams] = useState<BannerAdminInterface>({
         title: pageData.bannerData.title,
         subtitle: pageData.bannerData.subtitle,
         backgroundImage: pageData.bannerData.backgroundImage,
@@ -40,7 +41,7 @@ const BannerPage = () => {
         setIsLoading(false);
     };
 
-    const setBannerParams = (key: string, value: string) => {
+    const setBannerParams = (key:keyof BannerAdminInterface, value:string) => {
         const newParams = {...params};
         newParams[key] = value;
         setParams(newParams);

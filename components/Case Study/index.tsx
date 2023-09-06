@@ -6,6 +6,7 @@ import * as MUIMaterial from '@mui/material';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import caseStudies from "../../data/common/CaseStudy.json";
 import { useRouter } from 'next/router';
+import {CaseStudyInterface} from "../../types";
 
 const CaseStudy = () => {
   const router = useRouter();
@@ -33,7 +34,7 @@ const CaseStudy = () => {
         </div>
       </div>
       <div className="w-full h-full overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth flex flex-row max-w-[1377.5px] mx-auto">
-        {caseStudies.caseStudies.map((caseStudy: any, index: any) => (
+        {caseStudies.caseStudies.map((caseStudy:CaseStudyInterface, index:number) => (
           <div
             key={index}
             className=" max-w-[320px] md:max-w-[711px] md:h-[366px] bg-white  rounded-[20px] boxshad flex flex-row justify-between p-[10px] md:px-[23px] md:py-[20px] m-4"

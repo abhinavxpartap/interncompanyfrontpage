@@ -1,3 +1,5 @@
+import pageData from "./data/homepage.json";
+
 export interface UserInterface {
     username?: string;
     name?: string;
@@ -312,6 +314,13 @@ export interface BannerDataInterface {
     button:string;
 }
 
+export interface BannerAdminInterface {
+    title: string,
+    subtitle: string,
+    backgroundImage: string,
+    buttonName:string,
+}
+
 export interface Faq {
     title: string;
     subtitle: string;
@@ -349,4 +358,33 @@ export interface ImageData {
     title:string;
     rows:number;
     cols:number;
+}
+
+export interface CaseStudyInterface {
+    heading:string,
+    imgUrl: string,
+    org: string,
+    description: string,
+    href: string,
+}
+
+export interface ProductOverviewInterface {
+    title: string,
+    subtitle: string,
+    backgroundImage: string,
+    productCount: string,
+    softwareDevelopedCount: string,
+    webDesignCount:string,
+}
+
+export interface DataServiceInterface{
+    src:string,
+    alt:string,
+    title:string,
+    description:string
+}
+
+interface ImageInterface {
+    src:string,
+    alt:string,
 }

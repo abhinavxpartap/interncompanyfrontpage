@@ -1,38 +1,34 @@
 [
-    {
-      "src": "/Brand1.svg" ,
-      "alt": "Brand 1"
-    } ,
-    {
-      "src": "/Brand2.svg" ,
-      "alt": "Brand 2"
-    } ,
-    {
-      "src": "/Brand3.svg" ,
-      "alt": "Brand 3"
-    } ,
-    {
-      "src": "/Brand4.svg" ,
-      "alt": "Brand 4"
-    },
-    {
-      "src": "/Brand5.svg" ,
-      "alt": "Brand 5"
-    },
-    {
-        "src": "/Brand6.svg" ,
-        "alt": "Brand 6"
-    },
-    {
-        "src": "/Brand3.svg" ,
-        "alt": "Brand 3"
-    },
-    {
-        "src": "/Brand1.svg" ,
-        "alt": "Brand 1"
-    }
-  ]
-
-
-
-
+  {
+    "src": "/Brand1.svg" ,
+    "alt": "Brand 1"
+  } ,
+  {
+    "src": "/Brand2.svg" ,
+    "alt": "Brand 2"
+  } ,
+  {
+    "src": "/Brand3.svg" ,
+    "alt": "Brand 3"
+  } ,
+  {
+    "src": "/Brand4.svg" ,
+    "alt": "Brand 4"
+  },
+  {
+    "src": "/Brand5.svg" ,
+    "alt": "Brand 5"
+  },
+  {
+    "src": "/Brand6.svg" ,
+    "alt": "Brand 6"
+  },
+  {
+    "src": "/Brand3.svg" ,
+    "alt": "Brand 3"
+  },
+  {
+    "src": "/Brand1.svg" ,
+    "alt": "Brand 1"
+  }
+]

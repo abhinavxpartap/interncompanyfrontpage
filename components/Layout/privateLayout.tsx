@@ -214,6 +214,53 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
             ]
         },
         {
+            label:'About Us',
+            href: "",
+            active: false,
+            subLinks: [
+                {
+                    label: 'Banner',
+                    href: '/admin/landing/Banner',
+                    active: false
+                },
+                {
+                    label: 'Product Overview',
+                    href: '/admin/landing/ProductOverview',
+                    active: false
+                },
+                {
+                    label: 'Expert Team',
+                    href: '/admin/landing/ExpertTeam',
+                    active: false
+                },
+                {
+                    label: 'How It Works',
+                    href: '/admin/home/howItWorks',
+                    active: false
+                },
+                {
+                    label: 'Track Your Project',
+                    href: '/admin/home/trackYourProject',
+                    active: false
+                },
+                {
+                    label: 'Stay On Top',
+                    href: '/admin/home/stayOnTop',
+                    active: false
+                },
+                {
+                    label: 'Testimonials',
+                    href: '/admin/home/testimonial',
+                    active: false
+                },
+                {
+                    label: 'Contact Us',
+                    href: '/admin/home/contactUs',
+                    active: false
+                },
+            ]
+        },
+        {
             label: 'Contact Page',
             href: "",
             active: false,
@@ -243,13 +290,13 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
             ]
         },
         {
-            label: 'Partner Page',
+            label: 'Service Page',
             href: "",
             active: false,
             subLinks: [
                 {
                     label: 'Banner',
-                    href: '/admin/partner/banner',
+                    href: '/admin/Service/ServiceBanner',
                     active: false
                 },
                 {
@@ -257,25 +304,12 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                     href: '/admin/partner/clients',
                     active: false
                 },
-                {
-                    label: 'Get First Client',
-                    href: '/admin/partner/getFirstClient',
-                    active: false
-                },
-                {
-                    label: 'Why Us',
-                    href: '/admin/partner/whyUs',
-                    active: false
-                },
-                {
-                    label: 'Our Number',
-                    href: '/admin/partner/ourNumbers',
-                    active: false
-                }
+
+
             ]
         },
         {
-            label: 'Landing Page',
+            label: 'Industries',
             href: "",
             active: false,
             subLinks: [
@@ -326,144 +360,11 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                 },
             ]
         },
+
+
+
         {
-            label: 'Web Design Page',
-            href: "",
-            active: false,
-            subLinks: [
-                {
-                    label: 'Banner',
-                    href: '/admin/webDesign/banner',
-                    active: false
-                },
-                {
-                    label: 'Process',
-                    href: '/admin/webDesign/process',
-                    active: false
-                },
-                {
-                    label: 'Development Process',
-                    href: '/admin/webDesign/developmentProcess',
-                    active: false
-                },
-                {
-                    label: 'Why Us',
-                    href: '/admin/webDesign/whyUs',
-                    active: false
-                },
-                {
-                    label: 'How It Works',
-                    href: '/admin/webDesign/howItWorks',
-                    active: false
-                },
-                {
-                    label: 'Technologies',
-                    href: '/admin/webDesign/technologies',
-                    active: false
-                },
-                {
-                    label: 'Track Your Project',
-                    href: '/admin/webDesign/trackYourProject',
-                    active: false
-                },
-                {
-                    label: 'Testimonials',
-                    href: '/admin/webDesign/testimonial',
-                    active: false
-                },
-                {
-                    label: 'Contact Us',
-                    href: '/admin/webDesign/contactUs',
-                    active: false
-                },
-            ]
-        },
-        {
-            label: 'E-Commerce Page',
-            href: "",
-            active: false,
-            subLinks: [
-                {
-                    label: 'Banner',
-                    href: '/admin/eCommerce/banner',
-                    active: false
-                },
-                {
-                    label: 'Portfolio',
-                    href: '/admin/eCommerce/portfolio',
-                    active: false
-                },
-                {
-                    label: 'Offers',
-                    href: '/admin/eCommerce/offers',
-                    active: false
-                },
-                {
-                    label: 'Why Us',
-                    href: '/admin/eCommerce/whyUs',
-                    active: false
-                },
-                {
-                    label: 'Technologies',
-                    href: '/admin/eCommerce/technologies',
-                    active: false
-                },
-                {
-                    label: 'Testimonials',
-                    href: '/admin/eCommerce/testimonial',
-                    active: false
-                },
-                {
-                    label: 'Contact Us',
-                    href: '/admin/eCommerce/contactUs',
-                    active: false
-                },
-            ]
-        },
-        {
-            label: 'Video Games Page',
-            href: "",
-            active: false,
-            subLinks: [
-                {
-                    label: 'Banner',
-                    href: '/admin/videoGames/banner',
-                    active: false
-                },
-                {
-                    label: 'portfolio',
-                    href: '/admin/videoGames/portfolio',
-                    active: false
-                },
-                {
-                    label: 'offers',
-                    href: '/admin/videoGames/offers',
-                    active: false
-                },
-                {
-                    label: 'Why Us',
-                    href: '/admin/videoGames/whyUs',
-                    active: false
-                },
-                {
-                    label: 'Technologies',
-                    href: '/admin/videoGames/technologies',
-                    active: false
-                },
-                {
-                    label: 'Testimonials',
-                    href: '/admin/videoGames/testimonial',
-                    active: false
-                },
-                {
-                    label: 'Contact Us',
-                    href: '/admin/videoGames/contactUs',
-                    active: false
-                },
-            ]
-        },
-        {
-            label: 'Digital Marketing Page',
+            label: 'PortFolio',
             href: "",
             active: false,
             subLinks: [
@@ -505,7 +406,7 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
             ]
         },
         {
-            label: 'ERP Page',
+            label: 'PortFolio Detailed',
             href: "",
             active: false,
             subLinks: [
@@ -546,48 +447,7 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                 },
             ]
         },
-        {
-            label: 'Mobile & App Development Page',
-            href: "",
-            active: false,
-            subLinks: [
-                {
-                    label: 'Banner',
-                    href: '/admin/mobileAppDevelopment/banner',
-                    active: false
-                },
-                {
-                    label: 'Portfolio',
-                    href: '/admin/mobileAppDevelopment/portfolio',
-                    active: false
-                },
-                {
-                    label: 'Offers',
-                    href: '/admin/mobileAppDevelopment/offers',
-                    active: false
-                },
-                {
-                    label: 'Why Us',
-                    href: '/admin/mobileAppDevelopment/whyUs',
-                    active: false
-                },
-                {
-                    label: 'Technologies',
-                    href: '/admin/mobileAppDevelopment/technologies',
-                    active: false
-                },
-                {
-                    label: 'Testimonials',
-                    href: '/admin/mobileAppDevelopment/testimonial',
-                    active: false
-                },
-                {
-                    label: 'Contact Us',
-                    href: '/admin/mobileAppDevelopment/contactUs',
-                    active: false
-                },
-            ]
-        },
+
     ];
     const [activeLinks, setActiveLinks] = useState(links);
 
@@ -612,29 +472,29 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
             <title>{title}</title>
         </Head>
         <div className="main bg-[#F5F9FF]">
-                    <div className="flex  min-h-[100vh]">
-                        <div className="w-[230px] bg-white border-r-2 flex flex-col">
-                            <SideNav links={activeLinks}/>
+            <div className="flex  min-h-[100vh]">
+                <div className="w-[230px] bg-white border-r-2 flex flex-col">
+                    <SideNav links={activeLinks}/>
+                </div>
+                <div className="flex-1 flex-col">
+                    <div className="bg-white flex items-center gap-[20px] p-[20px] border-b-2 h-[56px]">
+                        <div className="flex-1 font-semibold tracking-[1px] text-[15px] text-[#022d72]">
+                            Admin Panel
                         </div>
-                        <div className="flex-1 flex-col">
-                            <div className="bg-white flex items-center gap-[20px] p-[20px] border-b-2 h-[56px]">
-                                <div className="flex-1 font-semibold tracking-[1px] text-[15px] text-[#022d72]">
-                                    Admin Panel
-                                </div>
-                                <div>
-                                    <a
-                                        // onClick={logout}
-                                        className="text-[#FF0000] font-semibold text-[14px] cursor-pointer"
-                                    >
-                                        Logout
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="flex-1 p-[15px] main-admin-container h-full">
-                                {children}
-                            </div>
+                        <div>
+                            <a
+                                // onClick={logout}
+                                className="text-[#FF0000] font-semibold text-[14px] cursor-pointer"
+                            >
+                                Logout
+                            </a>
                         </div>
                     </div>
+                    <div className="flex-1 p-[15px] main-admin-container h-full">
+                        {children}
+                    </div>
+                </div>
+            </div>
         </div>
     </>
 }

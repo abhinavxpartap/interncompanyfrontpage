@@ -214,53 +214,6 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
             ]
         },
         {
-            label:'About Us',
-            href: "",
-            active: false,
-            subLinks: [
-                {
-                    label: 'Banner',
-                    href: '/admin/landing/Banner',
-                    active: false
-                },
-                {
-                    label: 'Product Overview',
-                    href: '/admin/landing/ProductOverview',
-                    active: false
-                },
-                {
-                    label: 'Expert Team',
-                    href: '/admin/landing/ExpertTeam',
-                    active: false
-                },
-                {
-                    label: 'How It Works',
-                    href: '/admin/home/howItWorks',
-                    active: false
-                },
-                {
-                    label: 'Track Your Project',
-                    href: '/admin/home/trackYourProject',
-                    active: false
-                },
-                {
-                    label: 'Stay On Top',
-                    href: '/admin/home/stayOnTop',
-                    active: false
-                },
-                {
-                    label: 'Testimonials',
-                    href: '/admin/home/testimonial',
-                    active: false
-                },
-                {
-                    label: 'Contact Us',
-                    href: '/admin/home/contactUs',
-                    active: false
-                },
-            ]
-        },
-        {
             label: 'Contact Page',
             href: "",
             active: false,
@@ -290,13 +243,13 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
             ]
         },
         {
-            label: 'Service Page',
+            label: 'Partner Page',
             href: "",
             active: false,
             subLinks: [
                 {
                     label: 'Banner',
-                    href: '/admin/Service/ServiceBanner',
+                    href: '/admin/partner/banner',
                     active: false
                 },
                 {
@@ -304,12 +257,25 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                     href: '/admin/partner/clients',
                     active: false
                 },
-
-
+                {
+                    label: 'Get First Client',
+                    href: '/admin/partner/getFirstClient',
+                    active: false
+                },
+                {
+                    label: 'Why Us',
+                    href: '/admin/partner/whyUs',
+                    active: false
+                },
+                {
+                    label: 'Our Number',
+                    href: '/admin/partner/ourNumbers',
+                    active: false
+                }
             ]
         },
         {
-            label: 'Industries',
+            label: 'Landing Page',
             href: "",
             active: false,
             subLinks: [
@@ -360,11 +326,144 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                 },
             ]
         },
-
-
-
         {
-            label: 'PortFolio',
+            label: 'Web Design Page',
+            href: "",
+            active: false,
+            subLinks: [
+                {
+                    label: 'Banner',
+                    href: '/admin/webDesign/banner',
+                    active: false
+                },
+                {
+                    label: 'Process',
+                    href: '/admin/webDesign/process',
+                    active: false
+                },
+                {
+                    label: 'Development Process',
+                    href: '/admin/webDesign/developmentProcess',
+                    active: false
+                },
+                {
+                    label: 'Why Us',
+                    href: '/admin/webDesign/whyUs',
+                    active: false
+                },
+                {
+                    label: 'How It Works',
+                    href: '/admin/webDesign/howItWorks',
+                    active: false
+                },
+                {
+                    label: 'Technologies',
+                    href: '/admin/webDesign/technologies',
+                    active: false
+                },
+                {
+                    label: 'Track Your Project',
+                    href: '/admin/webDesign/trackYourProject',
+                    active: false
+                },
+                {
+                    label: 'Testimonials',
+                    href: '/admin/webDesign/testimonial',
+                    active: false
+                },
+                {
+                    label: 'Contact Us',
+                    href: '/admin/webDesign/contactUs',
+                    active: false
+                },
+            ]
+        },
+        {
+            label: 'E-Commerce Page',
+            href: "",
+            active: false,
+            subLinks: [
+                {
+                    label: 'Banner',
+                    href: '/admin/eCommerce/banner',
+                    active: false
+                },
+                {
+                    label: 'Portfolio',
+                    href: '/admin/eCommerce/portfolio',
+                    active: false
+                },
+                {
+                    label: 'Offers',
+                    href: '/admin/eCommerce/offers',
+                    active: false
+                },
+                {
+                    label: 'Why Us',
+                    href: '/admin/eCommerce/whyUs',
+                    active: false
+                },
+                {
+                    label: 'Technologies',
+                    href: '/admin/eCommerce/technologies',
+                    active: false
+                },
+                {
+                    label: 'Testimonials',
+                    href: '/admin/eCommerce/testimonial',
+                    active: false
+                },
+                {
+                    label: 'Contact Us',
+                    href: '/admin/eCommerce/contactUs',
+                    active: false
+                },
+            ]
+        },
+        {
+            label: 'Video Games Page',
+            href: "",
+            active: false,
+            subLinks: [
+                {
+                    label: 'Banner',
+                    href: '/admin/videoGames/banner',
+                    active: false
+                },
+                {
+                    label: 'portfolio',
+                    href: '/admin/videoGames/portfolio',
+                    active: false
+                },
+                {
+                    label: 'offers',
+                    href: '/admin/videoGames/offers',
+                    active: false
+                },
+                {
+                    label: 'Why Us',
+                    href: '/admin/videoGames/whyUs',
+                    active: false
+                },
+                {
+                    label: 'Technologies',
+                    href: '/admin/videoGames/technologies',
+                    active: false
+                },
+                {
+                    label: 'Testimonials',
+                    href: '/admin/videoGames/testimonial',
+                    active: false
+                },
+                {
+                    label: 'Contact Us',
+                    href: '/admin/videoGames/contactUs',
+                    active: false
+                },
+            ]
+        },
+        {
+            label: 'Digital Marketing Page',
             href: "",
             active: false,
             subLinks: [
@@ -406,7 +505,7 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
             ]
         },
         {
-            label: 'PortFolio Detailed',
+            label: 'ERP Page',
             href: "",
             active: false,
             subLinks: [
@@ -447,7 +546,48 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                 },
             ]
         },
-
+        {
+            label: 'Mobile & App Development Page',
+            href: "",
+            active: false,
+            subLinks: [
+                {
+                    label: 'Banner',
+                    href: '/admin/mobileAppDevelopment/banner',
+                    active: false
+                },
+                {
+                    label: 'Portfolio',
+                    href: '/admin/mobileAppDevelopment/portfolio',
+                    active: false
+                },
+                {
+                    label: 'Offers',
+                    href: '/admin/mobileAppDevelopment/offers',
+                    active: false
+                },
+                {
+                    label: 'Why Us',
+                    href: '/admin/mobileAppDevelopment/whyUs',
+                    active: false
+                },
+                {
+                    label: 'Technologies',
+                    href: '/admin/mobileAppDevelopment/technologies',
+                    active: false
+                },
+                {
+                    label: 'Testimonials',
+                    href: '/admin/mobileAppDevelopment/testimonial',
+                    active: false
+                },
+                {
+                    label: 'Contact Us',
+                    href: '/admin/mobileAppDevelopment/contactUs',
+                    active: false
+                },
+            ]
+        },
     ];
     const [activeLinks, setActiveLinks] = useState(links);
 

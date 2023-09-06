@@ -1,23 +1,7 @@
 import React from 'react';
-
+import Data from '../data/portfolio.json'
 export const OurProcess2= () => {
-  const processSteps = [
-    {
-      number: '1',
-      title: 'Design',
-      substeps: ['Wireframing', 'User Journey Mapping'],
-    },
-    {
-      number: '2',
-      title: 'Development',
-      substeps: ['Backend Development', 'Architecture Development'],
-    },
-    {
-      number: '3',
-      title: 'Support & Maintenance',
-      substeps: ['Quality Testing', 'Post-launch Maintenance'],
-    },
-  ];
+
 
   const content = (
     <div className="max-w-[1377.5px] pt-[15px] pb-[40px] relative mx-auto">
@@ -26,7 +10,7 @@ export const OurProcess2= () => {
         <div className="px-[40px] md:text-start text-center mt-[5px] text-[35px] font-bold ">
           Our Process
         </div>
-        {processSteps.map((step) => (
+        {Data.processSteps.map((step) => (
           <div
             className="flex md:justify-normal justify-center items-center flex-row"
             key={step.number}
@@ -37,8 +21,8 @@ export const OurProcess2= () => {
             <div className="flex mt-[10px] flex-col">
               <div className="text-[18px] font-medium">{step.title}</div>
               <div className="text-[15px] font-normal text-[#5A7184]">
-                {step.substeps.map((substep, index) => (
-                  <div key={index}>{substep}</div>
+                {step.subSteps.map((subStep, index) => (
+                  <div key={index}>{subStep}</div>
                 ))}
               </div>
             </div>

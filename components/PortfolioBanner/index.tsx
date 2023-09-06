@@ -33,7 +33,7 @@ export const PortfolioBanner: React.FC<Port> = (props) => {
               },
             }}
           >
-            Expand Your Bussiness{' '}
+            Expand Your Bussiness
           </Button>
         </div>
       </div>

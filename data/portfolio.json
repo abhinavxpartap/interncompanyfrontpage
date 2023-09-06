@@ -10,11 +10,11 @@
   },
 
   "Director": {
-    "name": " Yacob Sudarmaji",
+    "name": " Yacob Sudwarmaji",
     "company": " Technology Americana Group",
     "icon": "/director.svg",
     "address": "(kuwait Food Co.)",
-    "message": "Our search for an industry leader that could design, integrate, and digitally engineer fluid and eye pleasing apps in restaurant space ended with Zuca. The agency helped us unlock opportunities by building specialized capabilities that empower scalability. Innovation-led digital transformation of our processes by Zuca is playing a pivotal role in tackling our scalability requirements.",
+    "message": " Our search for an industry leader that could design, integrate, and digitally engineer fluid and eye pleasing apps in restaurant space ended with Zuca. The agency helped us unlock opportunities by building specialized capabilities that empower scalability. Innovation-led digital transformation of our processes by Zuca is playing a pivotal role in tackling our scalability requirements.",
     "post": "Director - Restaurant",
     "image": "/Testimonial.svg",
     "mobileImage": "/Testimonial.svg"
@@ -54,6 +54,26 @@
         "subtitle": "Zuca dives into your business model, market challenges and product positioning, and helps you create a product that delivers unique value."
       }
 
+
     ]
-  }
+  },
+
+  "processSteps": [
+    {
+      "number": "1",
+      "title": "Design",
+      "subSteps": ["Wireframe", "User Journey Mapping"]
+    },
+    {
+      "number": "2",
+      "title": "Development",
+      "subSteps": ["Backend Development", "Architecture Development"]
+    },
+    {
+      "number": "3",
+      "title": "Support & Maintenance",
+      "subSteps": ["Quality Testing", "Post-launch Maintenance"]
+    }
+  ]
+
 }

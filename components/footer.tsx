@@ -6,11 +6,15 @@ import data from '../data/footer.json';
 type Service = {
   title: string;
   id: number;
+  link: string;
+
 };
 
 type AboutItem = {
   title: string;
   id: number;
+  link: string;
+
 };
 
 type HelpItem = {
@@ -23,6 +27,8 @@ type SocialIcon = {
   icon: string;
   alt: string;
   id: number;
+  link: string;
+
 };
 
 type FooterData = {
@@ -38,7 +44,7 @@ export const Footer: React.FC<any> = () => {
   const renderServices = () => {
     return services.map((service: Service) => (
       <div key={service.id} className="text-[16px] font-normal">
-        <a href="#">{service.title}</a>
+        <a href={service.link}>{service.title}</a>
       </div>
     ));
   };
@@ -46,7 +52,7 @@ export const Footer: React.FC<any> = () => {
   const renderAbout = () => {
     return about.map((item: AboutItem) => (
       <div key={item.id} className="text-[16px] font-normal">
-        <a href="#">{item.title}</a>
+        <a href={item.link}>{item.title}</a>
       </div>
     ));
   };
@@ -61,15 +67,17 @@ export const Footer: React.FC<any> = () => {
 
   const renderSocialIcons = () => {
     return social.map((icon: SocialIcon) => (
+        <a key={icon.id}  href={icon.link}>
       <button key={icon.id}>
         <Img src={icon.icon} alt={icon.alt} className="w-auto" />
       </button>
+        </a>
     ));
   };
 
   const content = (
     <div className="max-w-[1477.5px] px-[50px] border-b-2 pb-[30px] pt-[50px]  mx-auto">
-      <div className="md:flex  grid grid-cols-2 gap-[40px] pb-[25px]   md:flex-row w-full justify-between">
+      <div className="md:flex  grid grid-cols-1 gap-[40px] pb-[25px]   md:flex-row w-full justify-between">
         <div>
           <Img src="/image 5.png" alt="logo" className="w-auto" />
           <p className="max-w-[350px] text-[16px] mt-[12px] font-normal">
@@ -78,11 +86,15 @@ export const Footer: React.FC<any> = () => {
           </p>
           <div className="flex pt-[20px] md:block  justify-center items-center md:justify-start">
             <Button
-              className="text-[16px] ButtonTransition overflow-hidden min-w-[200px] font-semibold "
+              className="text-[16px] ButtonTransition   overflow-hidden min-w-[200px] font-semibold "
               sx={{
                 '&.MuiButtonBase-root': {
                   backgroundColor: '#177DF0',
                   color: 'white',
+                  display:'block',
+                  '@media(max-width:768px)':{
+                    display:'hidden'
+                  },
                   textTransform: 'capitalize',
                   padding: '9px 20px 9px 20px',
                   border: '1px solid #177DF0',

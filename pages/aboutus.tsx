@@ -43,7 +43,7 @@ const Home: NextPage = () => {
         style={{ background: '#F9FBFF' }}
         className="bg-cover bg-center -z-0 bg-no-repeat relative  block"
       >
-        <Testimonials />
+        <Testimonials/>
       </div>
       <div
         style={{ background: '#F9FBFF' }}

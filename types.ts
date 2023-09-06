@@ -83,6 +83,19 @@ export interface OurValuesItemInterface {
     title: string;
     subtitle: string;
 }
+export interface TestimonialsInterface {
+
+    items: TestimonialsItemInterface[];
+}
+export interface TestimonialsItemInterface {
+    comment: string;
+    imageUrl: string;
+    companyLogo: string;
+    username:string;
+    designation:string;
+}
+
+
 export interface TeemInterface {
 
     items: TeamItemInterface[];
@@ -316,6 +329,13 @@ export interface Faq {
 export interface BrandData {
     src:string;
     alt:string;
+}
+export interface TestimonialInterface {
+    comment: string;
+    companyLogo: string;
+    imageUrl: string;
+    designation: string;
+    username:string;
 }
 
 export interface TeamData {

@@ -2,37 +2,52 @@
   "services": [
     {
       "title": "Email Marketing",
-      "id": 1
+      "id": 1,
+      "link": "#"
+
     },
     {
       "title": "Campaigns",
-      "id": 2
+      "id": 2,
+      "link": "#"
+
     },
     {
       "title": "Branding",
-      "id": 3
+      "id": 3,
+      "link": "#"
+
     },
     {
       "title": "Offline",
-      "id": 4
+      "id": 4,
+      "link": "#"
+
     }
   ],
   "about": [
     {
       "title": "Our Story",
-      "id": 1
+      "id": 1,      "link": "/aboutus"
+
     },
     {
       "title": "Benefits",
-      "id": 2
+      "id": 2,
+      "link": "#"
+
     },
     {
       "title": "Team",
-      "id": 3
+      "id": 3,
+      "link": "#"
+
     },
     {
       "title": "Careers",
-      "id": 4
+      "id": 4,
+      "link": "google.com"
+
     }
   ],
   "help": [
@@ -43,29 +58,39 @@
     },
     {
       "title": "Contact Us",
-      "id": 2
+      "id": 2,
+      "link": "/contact"
+
     }
   ],
   "social": [
     {
       "icon": "/insta.svg",
       "alt": "insta",
-      "id": 1
+      "id": 1,
+      "link": "google.com"
+
     },
     {
       "icon": "/linkedin.svg",
       "alt": "linkedin",
-      "id": 2
+      "id": 2,
+      "link": "google.com"
+
     },
     {
       "icon": "/facebook1.svg",
       "alt": "facebook",
-      "id": 3
+      "id": 3,
+      "link": "google.com"
+
     },
     {
       "icon": "/twitter2.svg",
       "alt": "twitter",
-      "id": 4
+      "id": 4,
+      "link": "google.com"
+
     }
   ]
 }

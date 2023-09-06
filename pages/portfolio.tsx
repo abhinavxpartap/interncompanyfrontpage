@@ -14,10 +14,18 @@ import Data from "../data/blogData.json";
 import {BlogCards} from "../components/BlogCard";
 import {Footer} from "../components/footer";
 import data from '../data/aboutPortfolio.json';
+import seoData from "../data/seoData.json";
+import Head from "next/head";
 
 const Portfolio: NextPage = () => {
     return (
-        <div >
+        < >
+            <Head>
+                <title>{seoData.Portfolio.title}</title>
+                <meta name="description" content={seoData.Portfolio.description}/>
+                <meta name="keywords" content={seoData.Portfolio.keywords}/>
+                <meta name="title" content={seoData.Portfolio.metaTitle}/>
+            </Head>
             <div
                 className="bg-cover portfolioBanner bg-center bg-no-repeat relative"
             >
@@ -32,14 +40,7 @@ const Portfolio: NextPage = () => {
                 industry={data.industry}
                 services={data.services}
                 businessType={data.businessType}
-
-
-
             />
-
-
-
-
             <Director
                 image={serviceData.Director.image}
                 mobileImage={serviceData.Director.mobileImage}
@@ -86,7 +87,7 @@ const Portfolio: NextPage = () => {
 
 <Footer/>
 
-        </div>
+        </>
     )
 }
 

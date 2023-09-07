@@ -29,8 +29,8 @@ const CaseStudy = () => {
             <div className="bg-[#177DF0] text-[#fff] rounded-[5px] "><ArrowForwardIcon className="w-[30px] h-[30px] md:w-[50px] md:h-[50px] "  /></div>
           </div>
         </div>
-        <div className="text-[#E4F0FF] -z-[1] text-[250px] max-w-[1440px] w-[1440px] left-[730px] absolute font-medium leading-[70%] -tracking-[20px] bottom-[3px]">
-          case study
+        <div className="text-[#E4F0FF] -z-[1] lg:text-[250px] text-[130px] w-[470px] lg:w-[1440px] lg:left-[370px] left-[2px] absolute font-medium leading-[70%] -tracking-[20px] bottom-[3px]">
+          case studY
         </div>
       </div>
       <div className="w-full h-full overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth flex flex-row max-w-[1377.5px] mx-auto">

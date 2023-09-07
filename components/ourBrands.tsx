@@ -5,7 +5,7 @@ import {BrandData} from "../types";
 export const OurBrands: React.FC = () => {
   const content = (
     <>
-      <div className="max-w-[1377.5px] mx-auto flex flex-col items-center justify-between  pt-[30px] pb-[30px]">
+      <div className="max-w-[1377.5px] mx-auto flex flex-col items-center justify-between  pt-[80px] pb-[30px]">
         <div className="mb-[30px]">
           <h1 className="capitalize w-[100%] flex flex-col items-center md:flex-row gap-[4px] font-medium text-[#151448] text-[24px]">
             We are trusted by{' '}

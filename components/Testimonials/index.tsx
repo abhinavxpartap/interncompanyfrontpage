@@ -54,7 +54,7 @@ const responsive = {
 const Testimonials = () => {
   return (
     <div className="md:px-[100px] pb-[100px] relative flex flex-col items-center py-[40px] pt-[160px] text-center max-w-[1377.5px] overflow-hidden mx-auto">
-      <div className="text-[#E4F0FF] -z-[1] text-[250px] absolute right-[85%] font-medium leading-[70%] tracking-[-20px] w-[754px] top-[12.5%] text-right ">
+      <div className="text-[#E4F0FF] -z-[1] lg:text-[250px] text-[140px] absolute  font-medium leading-[70%] tracking-[-20px] lg:w-[754px] w-[450px] top-[12.5%] text-start ">
         Testimonials
       </div>
       <Button

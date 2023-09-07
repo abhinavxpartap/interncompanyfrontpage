@@ -14,16 +14,15 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
 };
-
 const Team = () => {
   return (
-    <div className="pt-[120px] px-[15px] md:px-[25px] lg:px-[40px] py-[40px] max-w-[1377.5px] mx-auto">
+    <div className="pt-[120px] px-[15px] md:px-[45px] 2xl:px-[40px]   py-[40px] max-w-[1477.5px] mx-auto">
       <div className="w-[100%] h-full flex flex-col lg:flex-row lg:gap-[60px] xl:gap-[80px] items-start">
         <div className="w-[90vw] lg:w-[48vw]">
           <Slider {...settings}>
             {pageData.header.map((image, index: number) => {
               return (
-                <div key={index} className="w-[100%] relative rounded-[10px]">
+                <div key={index} className="w-[100%]  relative rounded-[10px]">
                   <Img src={image.src} className="w-[100%]" alt={image.alt} />
                   <div
                     className="flex flex-row w-auto max-w-[226px] gap-[10px] bg-[white] rounded-[8px] absolute bottom-[20px] right-[4px] justify-center items-center"
@@ -64,7 +63,7 @@ const Team = () => {
           >
             {pageData.bannerData.tagButtonName}
           </span>
-          <div className="text-[#151448] text-[24px] md:text-start text-center md:text-[50px] lg:text-[30px] xl:text-[40px] font-bold leading-[125%] mt-[13px]">
+          <div className="text-[#151448] text-[24px] md:text-start text-center md:text-[40px]   font-bold leading-[125%] mt-[13px]">
             {pageData.bannerData.title}
           </div>
           <div className="text-[#747C85] pr-[20px] xl:pr-[40px] md:text-start text-center   text-[18px] md:text-[22px] lg:text-[18px] mt-[13px] font-medium  leading-[170%]">

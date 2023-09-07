@@ -12,8 +12,8 @@ import {IndustriesFaq} from "../components/industriesFaq";
 import {FreeQuotation} from "../components/freeQuotation";
 import Data from "../data/blogData.json";
 import {BlogCards} from "../components/BlogCard";
-import CaseStudy from "../components/Case Study";
 import {Footer} from "../components/footer";
+import SuccesStory from "../components/SuccesStory";
 
 const IndustriesPage: React.FC = () => {
     return (<>
@@ -45,7 +45,7 @@ const IndustriesPage: React.FC = () => {
                     subtitle={industryData.Compliances.subtitle}
                     data={industryData.Compliances.data}
                     />
-                    <CaseStudy/>
+                    <SuccesStory/>
                     <IndustriesTechnology
                     title={industryData.Technology.title}
                     subtitle={industryData.Technology.subtitle}

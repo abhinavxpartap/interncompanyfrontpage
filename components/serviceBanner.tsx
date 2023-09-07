@@ -11,11 +11,11 @@ export const ServiceBanner: React.FC<ServiceBannerInterface> = (props) => {
   const content = (
     <>
       <Header />
-      <div className="max-w-[1377.5px] mx-auto flex flex-col justify-center md:pt-[220px] xl:pt-[233px] xl:pb-[233px] pt-[117px] pb-[117px] md:pb-[200px]  sm:px-[70px]  xl:px-[40px] 2xl:px-[20px] px-[16px]">
-        <h1 className="text-white font-bold  mx-auto md:mx-0 text-[25px] text-center md:text-start w-[80%] sm:text-[30px] sm:leading-[40px] md:w-[450px] md:text-[35px] md:leading-[45px] lg:text-[50px] lg:leading-[65px] lg:w-[600px]">
+      <div className="max-w-[1377.5px] mx-auto flex flex-col justify-center md:pt-[220px] xl:pt-[233px] 2xl:pb-[295px] xl:pb-[233px] pt-[117px] pb-[117px] md:pb-[200px]  sm:px-[70px]  xl:px-[40px] 2xl:px-[20px] px-[16px]">
+        <h1 className="text-white font-bold fade-in mx-auto md:mx-0 text-[25px] text-center md:text-start w-[80%] sm:text-[30px] sm:leading-[40px] md:w-[450px] md:text-[35px] md:leading-[45px] lg:text-[50px] lg:leading-[65px] lg:w-[600px]">
           {title}
         </h1>
-        <p className="font-medium pt-[5px] md:pt-[15px] mx-auto md:mx-0 w-[90%] text-center md:text-start md:w-[450px] text-[14px] sm:text-[14px] md:text-[16px] lg:text-[18px] text-white lg:w-[550px]">
+        <p className="font-medium pt-[5px] fade-in md:pt-[15px] mx-auto md:mx-0 w-[90%] text-center md:text-start md:w-[450px] text-[14px] sm:text-[14px] md:text-[16px] lg:text-[18px] text-white lg:w-[550px]">
           {subtitle}
         </p>
         <div className="flex pt-[15px] md:pt-[20px] justify-center items-center md:justify-start">

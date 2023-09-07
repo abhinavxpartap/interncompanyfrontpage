@@ -69,7 +69,7 @@ export const Footer: React.FC<any> = () => {
     return social.map((icon: SocialIcon) => (
         <a key={icon.id}  href={icon.link}>
       <button key={icon.id}>
-        <Img src={icon.icon} alt={icon.alt} className="w-auto" />
+        <Img src={icon.icon} alt={icon.alt} className="w-auto social-icon:hover social-icon " />
       </button>
         </a>
     ));
@@ -77,7 +77,7 @@ export const Footer: React.FC<any> = () => {
 
   const content = (
     <div className="max-w-[1477.5px] px-[50px] border-b-2 pb-[30px] pt-[50px]  mx-auto">
-      <div className="md:flex  grid grid-cols-1 gap-[40px] pb-[25px]   md:flex-row w-full justify-between">
+      <div className="md:flex  grid grid-cols-2 gap-[40px] pb-[25px]   md:flex-row w-full justify-between">
         <div>
           <Img src="/image 5.png" alt="logo" className="w-auto" />
           <p className="max-w-[350px] text-[16px] mt-[12px] font-normal">
@@ -125,12 +125,12 @@ export const Footer: React.FC<any> = () => {
         </div>
         <div className=" flex flex-col gap-y-[13px]">
           <div className="text-[18px] font-bold">Follow Us</div>
-          <div className="flex md:gap-[20px] gap-[7px] flex-row">
+          <div className="flex md:gap-[20px]    gap-[7px] flex-row">
             {renderSocialIcons()}
           </div>
         </div>
       </div>
-      <div className="flex border-t-2 pt-[10px]  text-[14px] font-normal text-[#2A2C33] justify-center items-center">
+      <div className="flex border-t-2 pt-[10px] social-icon:hover social-icon text-[14px] font-normal text-[#2A2C33] justify-center items-center">
         © 2021 All Rights Reserved
       </div>
     </div>

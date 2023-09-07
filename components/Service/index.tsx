@@ -1,15 +1,23 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import { Button } from '../../utils/Button';
 import { Img } from '../../utils/Img';
 import services from "../../data/HomePageService.json"
 
 const Service = () => {
+    const [showCard, setShowCard] = useState(false);
+
+    useEffect(() => {
+        const delay = setTimeout(() => {
+            setShowCard(true);
+        }, 3000);
+
+        return () => clearTimeout(delay);
+    }, []);
   return (
-    <div className="md:px-[100px] relative flex flex-col items-center py-[40px] pt-[80px] text-center max-w-[1377.5px] overflow-hidden h-auto mx-auto">
+      <div className={`md:px-[100px] relative flex flex-col items-center py-[40px] pt-[80px] text-center max-w-[1377.5px] overflow-hidden h-auto mx-auto ${showCard ? 'service-card show' : 'service-card'}`}>
       <Button
         label={'WHAT WE DO?'}
         type="button"
-        // onClick={() => router.push("/getStarted")}
         className="max-w-[150px] px-[10px] py-[4px] bg-[#A1B4F7] text-[white] xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] text-[12px] hover:text-[#A1B4F7]"
       />
       <div className="text-[#151448] md:text-[40px] text-[24px]  font-bold leading-[125%] mt-[13px] max-w-[481px]">
@@ -23,7 +31,7 @@ const Service = () => {
           return (
             <div
               key={index}
-              className="bg-[#ffffff]  px-[20px] py-[30px] rounded-[12px]"
+              className="bg-[#ffffff] social-icon:hover social-icon  px-[20px] py-[30px] rounded-[12px]"
               style={{
                 boxShadow:
                   'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px',

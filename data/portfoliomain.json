@@ -1,0 +1,27 @@
+{
+"title": " Crafted With Love. Built With Passion",
+"subtitle": " Zuca offers transformative technology and software solutions to  startups, global brands & Fortune 500 companies. Some of our major  clients include IKEA, Domino, Adidas, KPMG, BCG & Pizza Hut.",
+"items": [
+{
+"image": "/portfolio1.svg",
+"mobile": "/phoneportfolio.svg",
+"title": " Pizza e",
+"subtitle": " sood users through a robust and visually appealing food           delivery mobile app",
+"description": " A research-led brainstorming, enhanced UI/UX & customized development approach transformed the Pizza Hut app into a more efficient & smarter food delivery management system."
+},
+{
+"image": "/portfolio1.svg",
+"mobile": "/phoneportfolio.svg",
+"title": " Pizza a",
+"subtitle": " wood users through a robust and visually appealing food           delivery mobile app",
+"description": " A research-led brainstorming, enhanced UI/UX & customized development approach transformed the Pizza Hut app into a more efficient & smarter food delivery management system."
+},
+{
+"image": "/portfolio1.svg",
+"mobile": "/phoneportfolio.svg",
+"title": " Pizza b",
+"subtitle": " good users through a robust and visually appealing food           delivery mobile app",
+"description": " A research-led brainstorming, enhanced UI/UX & customized development approach transformed the Pizza Hut app into a more efficient & smarter food delivery management system."
+}
+]
+}

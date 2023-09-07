@@ -11,9 +11,9 @@ import aboutUs from '../data/aboutUs.json';
 import QuiltedImageList from '../components/images';
 import { FreeQuotation } from '../components/freeQuotation';
 import Testimonials from '../components/Testimonials';
-import CaseStudy from '../components/Case Study';
 import seoData from "../data/seoData.json";
 import Head from "next/head";
+import SuccesStory from "../components/SuccesStory";
 const Home: NextPage = () => {
   return (
       <>
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
         style={{ background: '#F9FBFF' }}
         className="bg-cover bg-center pb-[100px] -z-0 bg-no-repeat relative  block"
       >
-        <CaseStudy />
+        <SuccesStory />
       </div>
       <Letswork
         image={aboutUs.Lets.image}

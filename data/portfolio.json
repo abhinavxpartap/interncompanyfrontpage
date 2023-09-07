@@ -1,14 +1,10 @@
 {
-
   "Banner": {
     "title": "Increasing Pizza Hut food delivery app's\nconversion rate to 30% through\na transformative UX/UI"
-
   },
   "TalkTo": {
     "title": "Enable Unmatched Digital Transformation Seamlessly"
-
   },
-
   "Director": {
     "name": " Yacob Sudwarmaji",
     "company": " Technology Americana Group",
@@ -23,7 +19,6 @@
     "title": "Zuca’s Development Journey with Pizza Hut:",
     "subtitle1": "Following a Product Discovery workshop, we invested most of our promised time in product research & wire-framing to lay out the structure & architecture of how Pizza Hut had perceived their new app to look like. Our development team put extensive effort on UI designing that could improve the user's journey across the Pizza Hut app for an easy, speedy and glitch-free food ordering and delivery experience.",
     "subtitle2": "The pizza hut delivery service app we created assists our client in achieving long-term success along with having regular updates to investigate performance and consistency, resulting in increasing application traffic. Furthermore, our team integrated unique features to automate food ordering & delivery right at the customer's doorstep eliminating unexpected delays."
-
   },
   "Portfolio": {
     "title": "Web application development process",
@@ -53,27 +48,100 @@
         "link": "",
         "subtitle": "Zuca dives into your business model, market challenges and product positioning, and helps you create a product that delivers unique value."
       }
-
-
     ]
   },
-
   "processSteps": [
     {
       "number": "1",
       "title": "Design",
-      "subSteps": ["Wireframe", "User Journey Mapping"]
+      "subSteps": [
+        "Wireframe",
+        "User Journey Mapping"
+      ]
     },
     {
       "number": "2",
       "title": "Development",
-      "subSteps": ["Backend Development", "Architecture Development"]
+      "subSteps": [
+        "Backend Development",
+        "Architecture Development"
+      ]
     },
     {
       "number": "3",
       "title": "Support & Maintenance",
-      "subSteps": ["Quality Testing", "Post-launch Maintenance"]
+      "subSteps": [
+        "Quality Testing",
+        "Post-launch Maintenance"
+      ]
     }
-  ]
+  ],
+  "imagePort": [
+    "/m1.svg",
+    "/m2.svg",
+    "/m3.svg",
+    "/m4.svg",
+    "/m4.svg",
+    "/m2.svg",
+    "/m1.svg",
+    "/m1.svg"
+  ],
+  "challenges": [
+    {
+      "id": 1,
+      "title": "Design",
+      "description": "With large data sets in the form of multiple food menus and extensive user base in various countries, achieving quick screen transition was a challenge. Our team with its immaculate planning and use of the right tools ensured a much quicker Pizza Hut delivery app screen transition."
+    },
+    {
+      "id": 2,
+      "title": "Operational Changes",
+      "description": "At the starting of the project, there were different operational issues due to product management. Our team keenly studied all the issues across the layers and the legacy system, and resolved the challenge by taking appropriate actions at the right time."
+    }
+  ],
+  "result": [
+    {
+      "title": "Downloads",
+      "value": "51K+",
+      "description": "Downloads"
+    },
+    {
+      "title": "Conversion Rate Increased",
+      "value": "30%",
+      "description": "Conversion Rate Increased"
+    },
+    {
+      "title": "Screen Transition Time Increased",
+      "value": "7 secs",
+      "description": "Screen Transition Time Increased"
+    }
+  ],
+  "portfolioMain": {
+    "title": " Crafted With Love. Built With Passion",
+    "subtitle": " Zuca offers transformative technology and software solutions to  startups, global brands & Fortune 500 companies. Some of our major  clients include IKEA, Domino, Adidas, KPMG, BCG & Pizza Hut.",
+    "items": [
+      {
+        "image": "/portfolio1.svg",
+        "mobile": "/phoneportfolio.svg",
+        "title": " Pizza App",
+        "subtitle": " Engaging users through a robust and visually appealing food           delivery mobile app",
+        "description": " A research-led brainstorming, enhanced UI/UX & customized development approach transformed the Pizza Hut app into a more efficient & smarter food delivery management system."
+      },
+      {
+        "image": "/portfolio1.svg",
+        "mobile": "/phoneportfolio.svg",
+        "title": " Pizza App",
+        "subtitle": " Engaging users through a robust and visually appealing food           delivery mobile app",
+        "description": " A research-led brainstorming, enhanced UI/UX & customized development approach transformed the Pizza Hut app into a more efficient & smarter food delivery management system."
+      },
 
+      {
+        "image": "/portfolio1.svg",
+        "mobile": "/phoneportfolio.svg",
+        "title": " Pizza App",
+        "subtitle": " Engaging users through a robust and visually appealing food           delivery mobile app",
+        "description": " A research-led brainstorming, enhanced UI/UX & customized development approach transformed the Pizza Hut app into a more efficient & smarter food delivery management system."
+
+      }
+    ]
+  }
 }

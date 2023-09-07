@@ -15,7 +15,7 @@ const Portfolio2: NextPage = () => {
     return (
         <div >
 
-                <PortfolioBanner2/>
+                <PortfolioBanner2 />
             <Footer/>
 
 

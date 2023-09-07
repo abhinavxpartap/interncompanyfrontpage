@@ -65,7 +65,7 @@ const Portfolio: NextPage = () => {
                 <div className="w-[85%] flex flex-col px-[20px] md:px-[40px] py-[50px]">
                     <h1 className="text-[#151448] text-start mb-[25px] text-[38px] md:text-[40px] font-semibold">More Case Studies</h1>
                     <div className="w-[100%] mx-auto md:mx-0">
-                        <div className="w-[100%] gap-[40px] grid grid-cols-1 md:grid-cols-2 ">
+                        <div className="w-[100%] gap-[60px]   grid grid-cols-1 md:grid-cols-2 ">
                             {Data.BlogData.slice(0, 2).map((item, index:number) => (
                                 <BlogCards
                                     key={index}
@@ -92,3 +92,60 @@ const Portfolio: NextPage = () => {
 }
 
 export default Portfolio
+
+
+
+// <div className=" ">
+//           <Img
+//             src="/portline.svg"
+//             alt="n"
+//             className="lg:w-[320px] w-[280px] top-[125px] relative lg:top-[167px]      "
+//           />
+//         </div>
+//         <div className=" ">
+//           <Img
+//             src="/portlogo.svg"
+//             alt="n"
+//             className="w-auto relative lg:top-[40px] left-[150px] top-[20px]  lg:left-[190px]     "
+//           />
+//         </div>
+//         <div className=" ">
+//           <Img
+//             src="/portdot.svg"
+//             alt="n"
+//             id="moving-item-5"
+//             className="w-auto relative  md:block hidden moving-item     "
+//           />
+//         </div>
+//         <div className=" ">
+//           <Img
+//             src="/portdot.svg"
+//             alt="n"
+//             id="moving-item-1"
+//             className="w-auto relative  moving-item md:block hidden      "
+//           />
+//         </div>
+//         <div className=" ">
+//           <Img
+//             src="/portdot.svg"
+//             alt="n"
+//             id="moving-item-3"
+//             className="w-auto relative  md:block hidden moving-item      "
+//           />
+//         </div>
+//         <div className=" ">
+//           <Img
+//             src="/greendot.svg"
+//             alt="n"
+//             id="moving-item-4"
+//             className="w-auto relative  md:block hidden  moving-item     "
+//           />
+//         </div>
+//         <div className=" ">
+//           <Img
+//             src="/greendot.svg"
+//             alt="n"
+//             id="moving-item-2"
+//             className="w-auto relative   md:block hidden moving-item      "
+//           />
+//         </div>

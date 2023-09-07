@@ -1,8 +1,8 @@
 import React from 'react';
 import { Img } from '../utils/Img';
 import { Header } from './Common/Header';
-
-export const PortfolioBanner2: React.FC<unknown> = () => {
+import portfolio from "../data/portfoliomain.json";
+export const PortfolioBanner2 = () => {
 
 
   const content = (
@@ -13,7 +13,7 @@ export const PortfolioBanner2: React.FC<unknown> = () => {
           <Img
             src="/portline.svg"
             alt="n"
-            className="lg:w-[320px] w-[280px] top-[125px] relative lg:top-[167px]      "
+            className="lg:w-[320px] w-[280px] top-[125px] relative lg:top-[147px]      "
           />
         </div>
         <div className=" ">
@@ -65,14 +65,11 @@ export const PortfolioBanner2: React.FC<unknown> = () => {
         </div>
 
         <div>
-          <div className="md:text-[50px] text-[35px] max-w-[510px] md:text-start text-center relative  eleading-[63px] z-1 font-bold">
-            Crafted With Love. Built With Passion
-          </div>
+          <div className="md:text-[50px] text-[35px] max-w-[510px] md:text-start text-center relative  leading-[63px] z-1 font-bold">
+            {portfolio.title}          </div>
         </div>
-        <div className="md:text-[18px] text-[15px] max-w-[570px]  md:text-start text-center md:ml-[60px] md:pb-[20px] mt-[12px]  font-medium">
-          Zuca offers transformative technology and software solutions to
-          startups, global brands & Fortune 500 companies. Some of our major
-          clients include IKEA, Domino, Adidas, KPMG, BCG & Pizza Hut.
+        <div className="md:text-[18px] text-[15px] max-w-[570px]  md:text-start text5-center md:ml-[60px] md:pb-[20px] mt-[12px]  font-medium">
+          {portfolio.subtitle}
         </div>
       </div>
       <div className="max-w-[1440.5px] mx-auto">
@@ -86,16 +83,12 @@ export const PortfolioBanner2: React.FC<unknown> = () => {
             </div>
             <div className="bg-white relative top-[-100px]  md:top-[20px] lg:top-[30px] xl:top-[80px] md:left-[-20px] lg:left-[-30px]  rounded-[15px] px-[25px] pt-[16px]  pb-[25px] md:w-[300px] lg:w-[380px] xl:w-[480px] boxshad">
               <h1 className="text-[25px] md:text-[20px] lg:text-[25px] xl:text-[30px] font-semibold">
-                Pizza App
-              </h1>
+                {portfolio.items[0].title}          </h1>
               <h1 className="text-[16px] md:text-[12px] xl:text-[16px] mt-[5px] font-medium">
-                Engaging users through a robust and visually appealing food
-                delivery mobile app
+                {portfolio.items[0].subtitle}
               </h1>
               <p className="text-[14px] md:text-[10px] xl:text-[14px] pb-[10px] mt-[5px] font-normal text-[#757B8A]">
-                A research-led brainstorming, enhanced UI/UX & customized
-                development approach transformed the Pizza Hut app into a more
-                efficient & smarter food delivery management system.
+                {portfolio.items[0].description}
               </p>
               <button>
                 <a className="text-[16px] md:text-[12px] xl:text-[16px]  font-medium text-[#177DF0]">
@@ -112,16 +105,12 @@ export const PortfolioBanner2: React.FC<unknown> = () => {
             </div>
             <div className="bg-white relative top-[-30px] md:top-[20px] lg:top-[70px]  md:left-[40px] lg:left-[80px] xl:top-[70px] xl:left-[170px]  rounded-[15px] px-[25px] pt-[16px]  pb-[25px] md:w-[300px] lg:w-[380px] xl:w-[480px] boxshad">
               <h1 className="text-[25px] md:text-[20px] lg:text-[25px] xl:text-[30px] font-semibold">
-                Pizza App
-              </h1>
+                {portfolio.items[1].title}               </h1>
               <h1 className="text-[16px] md:text-[12px] xl:text-[16px] mt-[5px] font-medium">
-                Engaging users through a robust and visually appealing food
-                delivery mobile app
+                {portfolio.items[1].subtitle}
               </h1>
               <p className="text-[14px] md:text-[10px] xl:text-[14px] pb-[10px] mt-[5px] font-normal text-[#757B8A]">
-                A research-led brainstorming, enhanced UI/UX & customized
-                development approach transformed the Pizza Hut app into a more
-                efficient & smarter food delivery management system.
+                {portfolio.items[1].description}
               </p>
               <button>
                 <a className="text-[16px] md:text-[12px] xl:text-[16px]  font-medium text-[#177DF0]">
@@ -144,16 +133,13 @@ export const PortfolioBanner2: React.FC<unknown> = () => {
             </div>
             <div className="bg-white relative top-[-100px]  md:top-[20px] lg:top-[30px] xl:top-[80px] md:left-[-20px] lg:left-[-30px]  rounded-[15px] px-[25px] pt-[16px]  pb-[25px] md:w-[300px] lg:w-[380px] xl:w-[480px] boxshad">
               <h1 className="text-[25px] md:text-[20px] lg:text-[25px] xl:text-[30px] font-semibold">
-                Pizza App
+                {portfolio.items[2].title}
               </h1>
               <h1 className="text-[16px] md:text-[12px] xl:text-[16px] mt-[5px] font-medium">
-                Engaging users through a robust and visually appealing food
-                delivery mobile app
+                {portfolio.items[2].subtitle}
               </h1>
               <p className="text-[14px] md:text-[10px] xl:text-[14px] pb-[10px] mt-[5px] font-normal text-[#757B8A]">
-                A research-led brainstorming, enhanced UI/UX & customized
-                development approach transformed the Pizza Hut app into a more
-                efficient & smarter food delivery management system.
+                {portfolio.items[2].description}
               </p>
               <button>
                 <a className="text-[16px] md:text-[12px] xl:text-[16px]  font-medium text-[#177DF0]">

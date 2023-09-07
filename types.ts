@@ -384,7 +384,19 @@ export interface DataServiceInterface{
     description:string
 }
 
-interface ImageInterface {
-    src:string,
-    alt:string,
+export interface ImageInterface {
+    image:string,
+
+}
+
+export interface PortfolioDataInterface {
+    title: string;
+    subtitle: string;
+    items: {
+        image: string;
+        mobile: string;
+        title: string;
+        subtitle: string;
+        description: string;
+    }[];
 }

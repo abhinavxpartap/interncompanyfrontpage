@@ -1441,3 +1441,39 @@ details[open] .arrow-icon {
     background: #FFF;
     box-shadow: 10px 32px 72px 0px rgba(51, 51, 51, 0.03);
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+
+.service-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.service-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.social-icon {
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-10px);
+}
+

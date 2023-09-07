@@ -32,7 +32,7 @@ const Home: NextPage = () => {
       <div>
         <OurBrands/>
       </div>
-      <ProductOverview />
+      <ProductOverview  />
       <div
         style={{ background: '#F9FBFF' }}
         className="bg-cover bg-center bg-no-repeat relative  block"

@@ -1,7 +1,8 @@
-import React from 'react';
-import { Button } from '@mui/material';
+import React, {useState} from 'react';
+import {Button, Dialog, DialogContent} from '@mui/material';
 import { Img } from '../utils/Img';
 import data from '../data/footer.json';
+import Popupform from "./popupform";
 
 type Service = {
   title: string;
@@ -40,6 +41,7 @@ type FooterData = {
 
 export const Footer: React.FC<any> = () => {
   const { services, about, help, social } = data as FooterData;
+  const [open, setOpen] = useState(false);
 
   const renderServices = () => {
     return services.map((service: Service) => (
@@ -74,6 +76,12 @@ export const Footer: React.FC<any> = () => {
         </a>
     ));
   };
+  const handleOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   const content = (
     <div className="max-w-[1477.5px] px-[50px] border-b-2 pb-[30px] pt-[50px]  mx-auto">
@@ -86,15 +94,14 @@ export const Footer: React.FC<any> = () => {
           </p>
           <div className="flex pt-[20px] md:block  justify-center items-center md:justify-start">
             <Button
-              className="text-[16px] ButtonTransition   overflow-hidden min-w-[200px] font-semibold "
+                onClick={handleOpen}
+
+                className="text-[16px] ButtonTransition   overflow-hidden min-w-[200px] font-semibold "
               sx={{
                 '&.MuiButtonBase-root': {
                   backgroundColor: '#177DF0',
                   color: 'white',
-                  display:'block',
-                  '@media(max-width:768px)':{
-                    display:'hidden'
-                  },
+
                   textTransform: 'capitalize',
                   padding: '9px 20px 9px 20px',
                   border: '1px solid #177DF0',
@@ -104,12 +111,20 @@ export const Footer: React.FC<any> = () => {
                     backgroundColor: 'transparent',
                     color: '#177DF0',
                   },
+                  '@media (max-width: 768px)': {
+                    display: 'none',
+                  },
                 },
               }}
             >
               <a href="#">Book Consultation</a>
             </Button>
           </div>
+          <Dialog open={open} onClose={handleClose}>
+            <DialogContent>
+              <Popupform onClose={handleClose} />
+            </DialogContent>
+          </Dialog>
         </div>
         <div className=" flex flex-col gap-y-[13px]">
           <div className="text-[18px] font-bold">Services</div>

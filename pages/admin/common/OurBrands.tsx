@@ -38,7 +38,7 @@ const Companies = () => {
 
     const save = async () => {
         setIsLoading(true);
-        const response = await fetch('http://localhost:3000/api/save', {
+        const response = await fetch('/api/save', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

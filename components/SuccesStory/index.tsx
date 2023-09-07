@@ -30,7 +30,7 @@ Success                </div>
                             <img src={SuccessStory.imgUrl} className="w-[100%] h-[100%] bg-cover" alt={SuccessStory.imgUrl} />
                         </div>
                         <div className='flex flex-col w-[350px] whitespace-break-spaces ml-[15px] md:ml-[30px]'>
-                            <div className="text-[#151448] text-[14px] leading-[20px] md:text-[20px] font-bold md:leading-[37.4px]">{SuccessStory.heading}</div>
+                            <div className="text-[#151448] capitalize  text-[14px] leading-[20px] md:text-[20px] font-bold md:leading-[37.4px]">{SuccessStory.heading}</div>
                             <div className="text[#5A7184] text-[12px] leading-[18px] md:text-[16px] mt-[5px] font-normal md:leading-[26px]">{SuccessStory.description}</div>
                             <div className="text-[#151448] text-[14px] leading-[20px] mt-[30px] md:text-[20px] font-bold md:leading-[37.4px]">{SuccessStory.country}</div>
 

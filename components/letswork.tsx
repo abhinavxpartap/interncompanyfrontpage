@@ -4,8 +4,7 @@ import {LetsInterface} from "../types";
 import Popupform from "./popupform";
 
 export const Letswork: React.FC<LetsInterface> = (props) => {
-
-  const { image, mobileImage, title, subtitle } = props;
+  const { image, buttonName , title, subtitle } = props;
 
     const [open, setOpen] = useState(false);
 
@@ -34,21 +33,21 @@ export const Letswork: React.FC<LetsInterface> = (props) => {
             className="text-[16px]  ButtonTransition overflow-hidden font-semibold "
             sx={{
               '&.MuiButtonBase-root': {
-                backgroundColor: '#8184EB',
+                backgroundColor: '#177DF0',
                 color: 'white',
                 textTransform: 'capitalize',
                 padding: '9px 20px 9px 20px',
-                border: '1px solid #8184EB',
+                border: '1px solid #177DF0',
                 borderRadius: '30px',
                 '&:hover': {
-                  border: '1px solid #8184EB',
+                  border: '1px solid #5CA9FF',
                   backgroundColor: 'transparent',
-                  color: '#8184EB',
+                  color: '#177DF0',
                 },
               },
             }}
           >
-            Get In Touch
+              {buttonName}
           </Button>
         </div>
           <Dialog open={open} onClose={handleClose}>
@@ -63,13 +62,7 @@ export const Letswork: React.FC<LetsInterface> = (props) => {
     <>
       <div
         style={{ backgroundImage: `url(${image})` }}
-        className="bg-cover bg-center bg-no-repeat relative  md:block hidden"
-      >
-        {content}
-      </div>
-      <div
-        style={{ backgroundImage: `url(${mobileImage})` }}
-        className="bg-cover bg-center bg-no-repeat relative md:pb-[248px] md:hidden block"
+        className="bg-cover bg-center bg-no-repeat relative block"
       >
         {content}
       </div>

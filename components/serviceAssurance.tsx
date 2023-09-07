@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import {Assurance} from "../types";
 
 export const ServicesAssurance: React.FC<Assurance> = (props) => {
-  const { image, data, button } = props;
+  const { image, data,title, buttonName,buttonLink } = props;
   const router = useRouter();
 
   const content = (
@@ -14,7 +14,7 @@ export const ServicesAssurance: React.FC<Assurance> = (props) => {
         <div className="w-[100%] px-[20px] flex flex-col-reverse md:flex-row text-start items-center justify-center ">
           <div className="w-[85vw] md:w-[50vw] flex flex-col">
             <h1 className="text-[white] text-[23px] md:text-[25px] lg:text-[32px] xl:text-[40px] font-bold ">
-              Zuca Assurance as a Web App Development Company
+              {title}
             </h1>
             <div className="flex flex-col gap-[18px] md:gap-[15px] lg:gap-[20px] pt-[30px] items-start">
               {data.map((item, index: number) => (
@@ -40,7 +40,7 @@ export const ServicesAssurance: React.FC<Assurance> = (props) => {
             </div>
             <div className="pt-[20px] lg:pt-[30px]  pl-[40px]">
               <Button
-                onClick={() => router.push(button.href)}
+                onClick={() => router.push(buttonLink)}
                 className="ButtonTransition overflow-hidden text-[12px]  lg:text-[16px] font-semibold "
                 sx={{
                   '&.MuiButtonBase-root': {
@@ -58,7 +58,7 @@ export const ServicesAssurance: React.FC<Assurance> = (props) => {
                   },
                 }}
               >
-                {button.name}
+                {buttonName}
               </Button>
             </div>
           </div>

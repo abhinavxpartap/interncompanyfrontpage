@@ -1,0 +1,45 @@
+{
+  "bannerData": {
+    "title": "Web development services we offer",
+    "subtitle": "We provide end-to-end web app development services, tailored exclusively to solve your unique business challenges.",
+    "buttonName": "Book Consultation Session",
+    "buttonLink": "/"
+  },
+  "header":[
+    {
+      "id": 1,
+      "title": "Custom application development",
+      "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces."
+    },
+    {
+      "id": 2,
+      "title": "Portal development",
+      "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces"
+    },
+    {
+      "id": 3,
+      "title": "E-Commerce development",
+      "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces"
+    },
+    {
+      "id": 4,
+      "title": "Website development and maintenance",
+      "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces"
+    },
+    {
+      "id": 5,
+      "title": "SaaS products",
+      "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces"
+    },
+    {
+      "id": 6,
+      "title": "Open source web development and revamp",
+      "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces"
+    },
+    {
+      "id": 7,
+      "title": "Web application support and maintenance",
+      "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces"
+    }
+  ]
+}

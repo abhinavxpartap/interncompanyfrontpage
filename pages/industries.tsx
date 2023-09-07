@@ -25,11 +25,11 @@ const IndustriesPage: React.FC = () => {
             </Head>
             <div className="main">
                 <ServiceBanner
-                    image={industryData.Banner.image}
-                    mobileImage={industryData.Banner.mobileImage}
+                    image={industryData.Banner.backgroundImage}
                     title={industryData.Banner.title}
                     subtitle={industryData.Banner.subtitle}
-                    button={industryData.Banner.button}
+                    buttonName={industryData.Banner.buttonName}
+                    buttonLink={industryData.Banner.buttonLink}
                 />
                 <div style={{background:"#F9FBFF"}} >
                 <IndustriesAbout
@@ -51,13 +51,7 @@ const IndustriesPage: React.FC = () => {
                     subtitle={industryData.Technology.subtitle}
                     data={industryData.Technology.data}
                     />
-                    <ServiceTech
-                        data={industryData.Tech.data}
-                        title={industryData.Tech.title}
-                        subtitle={industryData.Tech.subtitle}
-                        Paragraph={industryData.Tech.Paragraph}
-                        button={industryData.Tech.button}
-                    />
+                    <ServiceTech/>
                     <IndustriesEstimation
                     image={industryData.Estimation.image}
                     title={industryData.Estimation.title}

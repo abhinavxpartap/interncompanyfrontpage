@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { DevelopmentDataInterface} from "../types";
 
 export const ServicesDevelopment: React.FC<DevelopmentDataInterface> = (props) => {
-  const { title, subtitle, leftData, rightData, centerContent, button } = props;
+  const { title, subtitle, leftData, rightData, centerContent,buttonName,buttonLink} = props;
   const router = useRouter();
 
   const content = (
@@ -60,7 +60,7 @@ export const ServicesDevelopment: React.FC<DevelopmentDataInterface> = (props) =
           </div>
           <div className="flex justify-center items-ceter pt-[30px]">
             <Button
-              onClick={() => router.push(button.href)}
+              onClick={() => router.push(buttonLink)}
               className="ButtonTransition overflow-hidden text-[14px] md:text-[16px] font-semibold "
               sx={{
                 '&.MuiButtonBase-root': {
@@ -78,7 +78,7 @@ export const ServicesDevelopment: React.FC<DevelopmentDataInterface> = (props) =
                 },
               }}
             >
-              {button.name}
+              {buttonName}
             </Button>
           </div>
         </div>

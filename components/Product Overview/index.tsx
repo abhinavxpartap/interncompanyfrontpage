@@ -2,8 +2,7 @@ import React from 'react';
 import { Button } from '../../utils/Button';
 import 'react-multi-carousel/lib/styles.css';
 import pageData from "../../data/productOverview.json";
-
-const ProductOverview = () => {
+const ProductOverview:React.FC = () => {
   return (
     <div className="mt-[80px] ">
       <div className="bg-no-repeat bg-cover md:px-[134px] pt-[75px] pb-[40px]"

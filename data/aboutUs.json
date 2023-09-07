@@ -2,74 +2,18 @@
   "Banner": {
     "title": "Build and develop your best business with Zuca",
     "subtitle": "Zuca is a technology company that builds conversational infrastructure for brands and entrepreneurs. ",
-    "image": "/aboutBanner.svg",
-    "mobileImage": "/serviceBanner.jpg"
+    "backgroundImage": "/aboutBanner.svg"
   },
   "Lets": {
     "title": "Let’s Work Together",
     "subtitle": "Our industry-leading expertise with custom app development across healthcare, fintech, and ecommerce is why so many innovative companies choose us as their technology partner. ",
-    "image": "/letsbanner.svg",
-    "mobileImage": "/serviceBanner.jpg"
+    "backgroundImage": "/letsbanner.svg",
+    "buttonName": "Get In Touch"
   },
   "WhatWe": {
     "title1": "Who We Are?",
     "subtitle1": "We are believers of change! A change driven by technology and innovation. We help businesses and individuals in adapting as well as adopting digital transformation. Our aim is to change people’s lives and improve businesses with our progressive and innovative technology solutions ",
     "title2": "What We Do Best?",
     "subtitle2": "We start by listening to the issues, requirements, challenges and objectives. The process continues with an effort to understand the business, market sector and competitors to develop information which is combined with our technical knowledge, expertise and research in order to provide the best solution at the lowest cost. "
-  },
-
-    "values": [
-      {
-        "number": "01",
-        "title": "Customer Focus",
-        "subtitle": "We are focused on providing excellent customer service and a great user experience."
-      },
-      {
-        "number": "02",
-        "title": "Ensure impactful innovations",
-        "subtitle": "An unwavering commitment to drive maximum customer satisfaction, infused with integrity and passion."
-      },
-      {
-        "number": "03",
-        "title": "Focus on self-development",
-        "subtitle": "Training and mentorship programs, interactive sessions and community meetups to drive personal growth."
-      },
-      {
-        "number": "04",
-        "title": "Integrate work-life balance",
-        "subtitle": "Latest infrastructure and flexible working hours along with many other privileges that inculcate healthy lifestyle choices."
-      }
-    ],
-
-  "testimonial": [
-    {
-      "imageUrl": "/images/user.png",
-      "comment": "“ We worked with a web dev company to build our first website, which was abysmal. With the website that topflight Apps built, we only hear rave reviews”",
-      "companyLogo": "/images/allegro.svg",
-      "username": "— lakki lukser",
-      "designation": "Product Manager, allegro"
-    },
-    {
-      "imageUrl": "/images/user.png",
-      "comment": "“ We worked with a web dev company to build our first website, which was abysmal. With the website that topflight Apps built, we only hear rave reviews”",
-      "companyLogo": "/images/allegro.svg",
-      "username": "— Travis lindamon",
-      "designation": "Product Manager, allegro"
-    },
-    {
-      "imageUrl": "/images/user.png",
-      "comment": "“ We worked with a web dev company to build our first website, which was abysmal. With the website that topflight Apps built, we only hear rave reviews”",
-      "companyLogo": "/images/allegro.svg",
-      "username": "— avish  avenger",
-      "designation": "Product Manager, allegro"
-    },
-    {
-      "imageUrl": "/images/user.png",
-      "comment": "“ We worked with a web dev company to build our first website, which was abysmal. With the website that topflight Apps built, we only hear rave reviews”",
-      "companyLogo": "/images/allegro.svg",
-      "username": "— shahnawz stud",
-      "designation": "Product Manager, allegro"    }
-  ]
-
-
+  }
 }

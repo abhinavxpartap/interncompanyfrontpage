@@ -23,12 +23,12 @@ export const WhatWeAre: React.FC<WhatWeInterface> = (props) => {
               className="md:w-auto w-[90px] -z-0 relative  left-[0px]   md:top-[70px] top-[55px]"
             />
           </div>
-          <div className="flex md:flex-row justify-between w-full flex-col">
-            <div className="md:text-[50px] text-[40px] z-0 font-bold">
+          <div className="flex z-[20] md:flex-row justify-between w-full flex-col">
+            <div className="md:text-[50px] z-[20] text-[40px]  font-bold">
               {title1}{' '}
             </div>
 
-            <div className="bg-white rounded-[12px]  md:mt-0 mt-[10px]   p-[15px] border-2">
+            <div className="bg-white rounded-[12px] z-[20]  md:mt-0 mt-[10px]   p-[15px] border-2">
               <div className="text-[18px] font-normal  text-[#333] max-w-[550px]">
                 {subtitle1}
               </div>
@@ -42,10 +42,10 @@ export const WhatWeAre: React.FC<WhatWeInterface> = (props) => {
             />
           </div>
           <div className="flex md:flex-row justify-between mt-[35px] w-full flex-col">
-            <div className="md:text-[50px] text-[40px] font-bold">
+            <div className="md:text-[50px] z-[20] text-[40px] font-bold">
               {title2}{' '}
             </div>
-            <div className="bg-white rounded-[12px] md:mt-0 mt-[10px]    p-[15px] border-2">
+            <div className="bg-white rounded-[12px] z-[20] md:mt-0 mt-[10px]    p-[15px] border-2">
               <div className="text-[18px] font-normal text-[#333] max-w-[550px]">
                 {subtitle2}
               </div>

@@ -1,9 +1,7 @@
 import React from 'react';
 import { Img } from '../utils/Img';
 import {TeamData} from "../types";
-import Team from "../data/teem.json"
-
-
+import Team from "../data/team.json"
 
 export const Meetour = () => {
 
@@ -12,11 +10,10 @@ export const Meetour = () => {
         <div className="flex md:flex-row justify-between w-auto flex-col">
           <div className="md:px-[50px]">
             <div className="text-[40px] md:text-start text-center font-bold">
-              Meet Our Team
+                {Team.bannerData.title}
             </div>
             <div className="text-[18px] md:text-start text-center font-normal text-[#4B5A69] max-w-[495px]">
-              Meet an exceptional team of technology advisors, growth
-              facilitators, and subject matter experts with proven experience
+                {Team.bannerData.subtitle}
             </div>
           </div>
           <div>
@@ -25,7 +22,7 @@ export const Meetour = () => {
         </div>
         <div className="flex justify-center items-center w-[100%]">
           <div className="grid lg:grid-cols-4  sm:grid-cols-3 grid-cols-2 gap-[40px]   mx-auto">
-            {Team.map((item:TeamData, index:number) => (
+            {Team.header.map((item:TeamData, index:number) => (
                 <div
                     key={index}
                     className="bg-white shad5 rounded-[10px] mt-[45px] md:w-[265px] w-[170px] justify-center items-center md:p-[20px] md:h-[300px] h-[200px]"
@@ -33,8 +30,8 @@ export const Meetour = () => {
                   <div>
                     <Img
                         src={item.imageSrc}
-                        alt=""
-                        className="md:w-auto w-[160px] md:ml-0 ml-[4px]"
+                        alt={item.name}
+                        className="md:w-auto w-[160px] h-[190px] rounded-[12px] md:ml-0 ml-[4px]"
                     />
                   </div>
                   <div className="text-center text-[18px] mt-[15px] font-semibold">

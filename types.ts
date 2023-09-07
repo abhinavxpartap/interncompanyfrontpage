@@ -1,4 +1,4 @@
-import pageData from "./data/homepage.json";
+import pageData from "./data/service.json";
 
 export interface UserInterface {
     username?: string;
@@ -66,10 +66,8 @@ export interface DevelopmentDataInterface {
         title: string;
     }[];
     centerContent: string;
-    button: {
-        name: string;
-        href: string;
-    };
+    buttonName:string,
+    buttonLink:string,
 }
 export interface TalkInterface {
     title: string;
@@ -201,7 +199,6 @@ export interface AboutUsBannerInterface {
     title: string;
     subtitle: string;
     image: string;
-    mobileImage: string;
 
 }
 
@@ -215,7 +212,7 @@ export interface ServiceAboutInterface {
 export interface LetsInterface {
     title: string;
     subtitle: string;
-    mobileImage: string;
+    buttonName: string;
     image: string;
 
 }
@@ -287,20 +284,15 @@ export interface ServiceBannerInterface {
     title: string;
     subtitle: string;
     image: string;
-    mobileImage: string;
-    button: {
-        name: string;
-        href: string;
-    };
+    buttonName:string,
+    buttonLink:string
 }
 
 export interface Assurance {
     image: string;
     title: string;
-    button: {
-        name: string;
-        href: string;
-    };
+    buttonName:string;
+    buttonLink:string;
     data: {
         title: string;
         subtitle: string;
@@ -323,13 +315,38 @@ export interface BannerAdminInterface {
     buttonName:string,
 }
 
+export interface AboutBannerInterface{
+    title: string,
+    subtitle: string,
+    backgroundImage: string,
+}
+
+export interface AboutLetWorkTogether {
+    title:string,
+    subtitle:string,
+    backgroundImage:string,
+    buttonName:string
+}
+
+export interface ServiceBannerInterface1 {
+    title:string,
+    subtitle:string,
+    backgroundImage:string,
+    buttonName:string,
+    buttonLink:string
+}
+
+export interface OurValueInterface {
+    number: string,
+    title: string,
+    subtitle:string
+}
+
 export interface Faq {
     title: string;
     subtitle: string;
-    button: {
-        name: string;
-        href: string;
-    };
+    buttonName:string;
+    buttonLink:string;
     tabData: {
         id: number;
         title: string;
@@ -341,6 +358,11 @@ export interface BrandData {
     src:string;
     alt:string;
 }
+
+export interface ImageListInterface{
+    img: string,
+    title: string,
+}
 export interface TestimonialInterface {
     comment: string;
     companyLogo: string;
@@ -351,7 +373,6 @@ export interface TestimonialInterface {
 
 export interface TeamData {
     imageSrc:string;
-    alt:string;
     name:string;
     role:string;
 }

@@ -1,29 +1,36 @@
-[
-  {
-    "imageUrl": "/images/user.png",
-    "comment": "“ We worked with a web dev company to build our first website, which was abysmal. With the website that topflight Apps built, we only hear rave reviews”",
-    "companyLogo": "/images/allegro.svg",
-    "username": "— lakki lukser",
-    "designation": "Product Manager, allegro"
+{
+  "bannerData": {
+    "title": "What our clients say about us",
+    "tagButtonName": "testimonials"
   },
-  {
-    "imageUrl": "/images/user.png",
-    "comment": "“ We worked with a web dev company to build our first website, which was abysmal. With the website that topflight Apps built, we only hear rave reviews”",
-    "companyLogo": "/images/allegro.svg",
-    "username": "— Travis lindamon",
-    "designation": "Product Manager, allegro"
-  },
-  {
-    "imageUrl": "/images/user.png",
-    "comment": "“ We worked with a web dev company to build our first website, which was abysmal. With the website that topflight Apps built, we only hear rave reviews”",
-    "companyLogo": "/images/allegro.svg",
-    "username": "— avish  avenger",
-    "designation": "Product Manager, allegro"
-  },
-  {
-    "imageUrl": "/images/user.png",
-    "comment": "“ We worked with a web dev company to build our first website, which was abysmal. With the website that topflight Apps built, we only hear rave reviews”",
-    "companyLogo": "/images/allegro.svg",
-    "username": "— shahnawz stud",
-    "designation": "Product Manager, allegro"    }
-]
+  "header": [
+    {
+      "imageUrl": "/images/user.png",
+      "comment": "We worked with a web dev company to build our first website, which was abysmal. With the website that topflight Apps built, we only hear rave reviews",
+      "companyLogo": "/images/allegro.svg",
+      "username": "lakki lukser",
+      "designation": "Product Manager, allegro"
+    },
+    {
+      "imageUrl": "/images/user.png",
+      "comment": "We worked with a web dev company to build our first website, which was abysmal. With the website that topflight Apps built, we only hear rave reviews",
+      "companyLogo": "/images/allegro.svg",
+      "username": "Travis lindamon",
+      "designation": "Product Manager, allegro"
+    },
+    {
+      "imageUrl": "/images/user.png",
+      "comment": "We worked with a web dev company to build our first website, which was abysmal. With the website that topflight Apps built, we only hear rave reviews",
+      "companyLogo": "/images/allegro.svg",
+      "username": "avish  avenger",
+      "designation": "Product Manager, allegro"
+    },
+    {
+      "imageUrl": "/images/user.png",
+      "comment": "We worked with a web dev company to build our first website, which was abysmal. With the website that topflight Apps built, we only hear rave reviews",
+      "companyLogo": "/images/allegro.svg",
+      "username": "Md Shahanwaz Siddique",
+      "designation": "Product Manager, allegro"
+    }
+  ]
+}

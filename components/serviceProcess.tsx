@@ -15,11 +15,11 @@ export const ServiceProcess: React.FC<WebApplicationDevelopmentProcess> = (props
           <p className="text-[#333333] font-medium w-[320px]  text-[14px] sm:text-[12px] md:text-[12px] lg:text-[14px] sm:w-[400px] md:w-[450px] pt-[10px] ">
             {subtitle}
           </p>
-          <div className=" pt-[60px] gap-[20px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-start ">
+          <div className=" pt-[60px] gap-[20px] w-[95%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-start ">
             {data.map((item, index: number) => (
               <div
                 key={index}
-                className="bg-[#ffffff] w-[275px] lg:w-[230px] xl:w-[275px] px-[20px] py-[20px] rounded-[10px]"
+                className="bg-[#ffffff]  px-[20px] py-[20px] rounded-[10px]"
                 style={{
                   boxShadow:
                     'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px',

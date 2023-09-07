@@ -5,7 +5,7 @@ import { Header } from './Common/Header';
 import {ServiceBannerInterface} from "../types";
 
 export const ServiceBanner: React.FC<ServiceBannerInterface> = (props) => {
-  const { image, mobileImage, title, button, subtitle } = props;
+  const { image, buttonName,buttonLink, title,  subtitle } = props;
   const router = useRouter();
 
   const content = (
@@ -20,7 +20,7 @@ export const ServiceBanner: React.FC<ServiceBannerInterface> = (props) => {
         </p>
         <div className="flex pt-[15px] md:pt-[20px] justify-center items-center md:justify-start">
           <Button
-            onClick={() => router.push(button.href)}
+            onClick={() => router.push(buttonLink)}
             className="ButtonTransition overflow-hidden text-[12px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
             sx={{
               '&.MuiButtonBase-root': {
@@ -38,7 +38,7 @@ export const ServiceBanner: React.FC<ServiceBannerInterface> = (props) => {
               },
             }}
           >
-            {button.name}
+            {buttonName}
           </Button>
         </div>
       </div>
@@ -48,13 +48,7 @@ export const ServiceBanner: React.FC<ServiceBannerInterface> = (props) => {
     <>
       <div
         style={{ backgroundImage: `url(${image})` }}
-        className="bg-cover bg-center bg-no-repeat relative  md:block hidden"
-      >
-        {content}
-      </div>
-      <div
-        style={{ backgroundImage: `url(${mobileImage})` }}
-        className="bg-cover bg-center bg-no-repeat relative md:pb-[248px] md:hidden block"
+        className="bg-cover bg-center bg-no-repeat relative  block"
       >
         {content}
       </div>

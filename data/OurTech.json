@@ -1,0 +1,59 @@
+{
+  "bannerData": {
+    "title": "Tech Stack We Use",
+    "subtitle1": "Here is the tech stack used by our team while offering web app development services:",
+    "subtitle2": "Looking for an exact cost and time frame estimate for custom web development services?",
+    "buttonName": "Get a Quote",
+    "buttonLink": "/"
+  },
+  "header": [
+    {
+      "image": "/JavaScript.svg",
+      "alt": "JavaScirpt"
+    },
+    {
+      "image": "/html.svg",
+      "alt": "Html"
+    },
+    {
+      "image": "/css.svg",
+      "alt": "CSS"
+    },
+    {
+      "image": "/angular.svg",
+      "alt": "Angular"
+    },
+    {
+      "image": "/react.svg",
+      "alt": "React"
+    },
+    {
+      "image": "/vue.svg",
+      "alt": "Vue"
+    },
+    {
+      "image": "/next.svg",
+      "alt": "Next"
+    },
+    {
+      "image": "/node.svg",
+      "alt": "Node"
+    },
+    {
+      "image": "/python.svg",
+      "alt": "Python"
+    },
+    {
+      "image": "/ruby.svg",
+      "alt": "Ruby"
+    },
+    {
+      "image": "/django.svg",
+      "alt": "Django"
+    },
+    {
+      "image": "/kotlin.svg",
+      "alt": "kotlin"
+    }
+  ]
+}

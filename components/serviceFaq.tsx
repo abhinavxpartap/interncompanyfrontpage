@@ -68,25 +68,17 @@ function QontoStepIcon(props: StepIconProps) {
   );
 }
 
-// const StyledStepConnector = styled(StepConnector)(({ theme }) => ({
-//   marginLeft: '15px', // Adjust the position of the line
-//   '& .MuiStepConnector-line': {
-//     borderLeftWidth: '2px', // Set the width of the line
-//     borderLeftStyle: 'solid',
-//     borderColor: theme.palette.grey[500], // Set the color of the line
-//   },
-// }));
 
 export const ServicesFaq: React.FC<Faq> = (props) => {
-  const { title, subtitle, button, tabData } = props;
+  const { title, subtitle, buttonName,buttonLink, tabData } = props;
   const router = useRouter();
   const [activeTab, setActiveTab] = useState(2);
 
 
 
-    const handleTabToggle = (tabId: any) => {/* eslint-disable */
+    const handleTabToggle = (tabId: any) => {
     setActiveTab(tabId === activeTab ? null : tabId);
-  };
+    };
 
   const content = (
     <>
@@ -96,11 +88,11 @@ export const ServicesFaq: React.FC<Faq> = (props) => {
             <h1 className="font-bold text-[32px] w-full md:w-[400px] leading-[37px] md:text-[40px] md:leading-[48px] text-[#151448]">
               {title}
             </h1>
-            <p className="text-[#333333] mt-[20px] pr-[20px] w-full md:w-[400px] text-[15px] md:text-[16px] font-medium">
+            <p className="text-[#333333] mt-[20px] pr-[20px] w-full md:w-[400px] text-[15px] md:text-[16px] leading-[30px] font-medium">
               {subtitle}
             </p>
             <Button
-              onClick={() => router.push(button.href)}
+              onClick={() => router.push(buttonLink)}
               className="ButtonTransition overflow-hidden text-[13px] w-[230px] md:w-[290px] md:text-[16px] mt-[20px] font-semibold "
               sx={{
                 '&.MuiButtonBase-root': {
@@ -118,7 +110,7 @@ export const ServicesFaq: React.FC<Faq> = (props) => {
                 },
               }}
             >
-              {button.name}
+              {buttonName}
             </Button>
           </div>
           <div className="flex flex-row w-[85vw] lg:w-[55vw]">

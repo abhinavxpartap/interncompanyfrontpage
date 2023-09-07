@@ -1,8 +1,11 @@
 import React from "react";
 import Head from "next/head";
-
 import seoData from "../data/seoData.json";
 import serviceData from "../data/service.json";
+import developmentData from "../data/serviceDevelopment.json"
+import ProcessData from "../data/ServiceProcess.json"
+import serviceFaqData from "../data/serviceFaq.json"
+import serviceAssurance from "../data/serviceAssurance.json"
 import {ServiceBanner} from "../components/serviceBanner";
 import {ServiceAbout} from "../components/servicesAbout";
 import {ServiceProcess} from "../components/serviceProcess";
@@ -23,12 +26,12 @@ const ServicePage: React.FC = () => {
             </Head>
             <div className="main">
                 <ServiceBanner
-                image={serviceData.Banner.image}
-                mobileImage={serviceData.Banner.mobileImage}
+                image={serviceData.Banner.backgroundImage}
                 title={serviceData.Banner.title}
                 subtitle={serviceData.Banner.subtitle}
-                button={serviceData.Banner.button}
-                />
+                buttonName={serviceData.Banner.buttonName}
+                buttonLink={serviceData.Banner.buttonLink}
+                 />
                 <div style={{background:"#F9FBFF"}} >
                 <ServiceAbout
                 title={serviceData.About.title}
@@ -37,40 +40,36 @@ const ServicePage: React.FC = () => {
                 image={serviceData.About.image}
                 />
                 <ServiceProcess
-                title={serviceData.Process.title}
-                subtitle={serviceData.Process.subtitle}
-                data={serviceData.Process.data}
+                title={ProcessData.bannerData.title}
+                subtitle={ProcessData.bannerData.subtitle}
+                data={ProcessData.header}
                 />
                 <ServicesDevelopment
-                title={serviceData.Development.title}
-                subtitle={serviceData.Development.subtitle}
-                leftData={serviceData.Development.leftData}
-                centerContent={serviceData.Development.centerContent}
-                rightData={serviceData.Development.rightData}
-                button={serviceData.Development.button}
+                title={developmentData.bannerData.title}
+                subtitle={developmentData.bannerData.subtitle}
+                leftData={developmentData.headerLeft}
+                centerContent={developmentData.bannerData.centerContent}
+                rightData={developmentData.headerRight}
+                buttonName={developmentData.bannerData.buttonName}
+                buttonLink={developmentData.bannerData.buttonLink}
                 />
                 <ServicesFaq
-                    title={serviceData.Faq.title}
-                    subtitle={serviceData.Faq.subtitle}
-                    button={serviceData.Faq.button}
-                    tabData={serviceData.Faq.tabData}
+                    title={serviceFaqData.bannerData.title}
+                    subtitle={serviceFaqData.bannerData.subtitle}
+                    buttonName={serviceFaqData.bannerData.buttonName}
+                    buttonLink={serviceFaqData.bannerData.buttonLink}
+                    tabData={serviceFaqData.header}
                 />
                     <ServicesAssurance
-                    image={serviceData.Assurance.image}
-                    title={serviceData.Assurance.title}
-                    data={serviceData.Assurance.data}
-                    button={serviceData.Assurance.button}
+                    image={serviceAssurance.bannerData.image}
+                    title={serviceAssurance.bannerData.title}
+                    buttonName={serviceAssurance.bannerData.buttonName}
+                    buttonLink={serviceAssurance.bannerData.buttonLink}
+                    data={serviceAssurance.header}
                     />
-                    <ServiceTech
-                    data={serviceData.Tech.data}
-                    title={serviceData.Tech.title}
-                    subtitle={serviceData.Tech.subtitle}
-                    Paragraph={serviceData.Tech.Paragraph}
-                    button={serviceData.Tech.button}
-                    />
+                    <ServiceTech/>
                     <OurBrands/>
                     <FreeQuotation/>
-
                     <Footer/>
                 </div>
             </div>

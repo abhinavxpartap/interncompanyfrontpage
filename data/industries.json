@@ -2,12 +2,9 @@
   "Banner": {
     "title": "Financial Software Development Services",
     "subtitle": "You deserve a team focused on your mission just as much as you are. Meet Zuca.",
-    "image": "/industriesBanner.jpg",
-    "mobileImage": "/industriesBanner.jpg",
-    "button": {
-      "name": "Book a free consultation",
-      "href": "/"
-    }
+    "backgroundImage": "/industriesBanner.jpg",
+    "buttonName":"Book a free consultation",
+    "buttonLink": "/"
   },
   "About": {
     "title": "Why our fintech app development services?",

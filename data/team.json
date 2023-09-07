@@ -1,0 +1,48 @@
+{
+  "bannerData": {
+    "title": "Meet Our Team",
+    "subtitle": "Meet an exceptional team of technology advisors, growth facilitators, and subject matter experts with proven experience"
+  },
+  "header": [
+    {
+      "name": "Manish Sarsawat",
+      "role": "CEO & Founder",
+      "imageSrc": "/man.svg"
+    },
+    {
+      "name": "Avish Gumber",
+      "role": "CEO & Founder",
+      "imageSrc": "/man.svg"
+    },
+    {
+      "name": "Sahil sharma",
+      "role": "CEO & Founder",
+      "imageSrc": "/man.svg"
+    },
+    {
+      "name": "Md Shahanwaz Siddique",
+      "role": "CEO & Founder",
+      "imageSrc": "/man.svg"
+    },
+    {
+      "name": "Gokul Raj",
+      "role": "CEO & Founder",
+      "imageSrc": "/man.svg"
+    },
+    {
+      "name": "LAkki Kumar  ",
+      "role": "CEO & Founder",
+      "imageSrc": "/man.svg"
+    },
+    {
+      "name": "Mehmedi Ahmad",
+      "role": "CEO & Founder",
+      "imageSrc": "/man.svg"
+    },
+    {
+      "name": "Mehmedi Ahmad",
+      "role": "CEO & Founder",
+      "imageSrc": "/man.svg"
+    }
+  ]
+}

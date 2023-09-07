@@ -8,10 +8,12 @@ import 'react-multi-carousel/lib/styles.css';
 import { Footer } from '../components/footer';
 import React from 'react';
 import aboutUs from '../data/aboutUs.json';
+import values from "../data/aboutOurValue.json"
 import QuiltedImageList from '../components/images';
 import { FreeQuotation } from '../components/freeQuotation';
 import Testimonials from '../components/Testimonials';
 import seoData from "../data/seoData.json";
+
 import Head from "next/head";
 import SuccesStory from "../components/SuccesStory";
 const Home: NextPage = () => {
@@ -25,8 +27,7 @@ const Home: NextPage = () => {
           </Head>
           <div>
               <AboutUsBanner
-                 image={aboutUs.Banner.image}
-                 mobileImage={aboutUs.Banner.mobileImage}
+                 image={aboutUs.Banner.backgroundImage}
                  title={aboutUs.Banner.title}
                  subtitle={aboutUs.Banner.subtitle}
              />
@@ -37,7 +38,7 @@ const Home: NextPage = () => {
               subtitle2={aboutUs.WhatWe.subtitle2}
              />
                <QuiltedImageList />
-               <OurValue items={aboutUs.values} />
+               <OurValue items={values} />
                <Meetour/>
       <div
         style={{ background: '#F9FBFF' }}
@@ -52,10 +53,10 @@ const Home: NextPage = () => {
         <SuccesStory />
       </div>
       <Letswork
-        image={aboutUs.Lets.image}
-        mobileImage={aboutUs.Lets.mobileImage}
+        image={aboutUs.Lets.backgroundImage}
         title={aboutUs.Lets.title}
         subtitle={aboutUs.Lets.subtitle}
+        buttonName={aboutUs.Lets.buttonName}
       />
       <FreeQuotation />
 

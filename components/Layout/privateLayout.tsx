@@ -26,7 +26,7 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
             active: false,
             subLinks: [
                 {
-                    label: 'Company',
+                    label: 'Our Brands',
                     href: '/admin/common/OurBrands',
                     active: false
                 },
@@ -36,8 +36,8 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                     active: false
                 },
                 {
-                    label: 'Services',
-                    href: '/admin/common/Service',
+                    label: 'Testimonials',
+                    href: '/admin/common/Testimonials',
                     active: false
                 },
                 {
@@ -46,13 +46,13 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                     active: false
                 },
                 {
-                    label: 'Testimonials',
-                    href: '/admin/common/Testimonials',
+                    label: 'Headers',
+                    href: '/admin/common/Header',
                     active: false
                 },
                 {
-                    label: 'Headers',
-                    href: '/admin/common/Header',
+                    label:'Our Tech',
+                    href:'/admin/common/OurTech',
                     active: false
                 }
             ]
@@ -190,37 +190,86 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                     label: 'Service',
                     href: '/admin/landing/Service',
                     active: false
-                },
-                {
-                    label: 'Track Your Project',
-                    href: '/admin/home/trackYourProject',
-                    active: false
-                },
-                {
-                    label: 'Stay On Top',
-                    href: '/admin/home/stayOnTop',
-                    active: false
-                },
-                {
-                    label: 'Testimonials',
-                    href: '/admin/home/testimonial',
-                    active: false
-                },
-                {
-                    label: 'Contact Us',
-                    href: '/admin/home/contactUs',
-                    active: false
-                },
+                }
             ]
         },
         {
-            label: 'Contact Page',
+            label: 'About Page',
             href: "",
             active: false,
             subLinks: [
                 {
                     label: 'Banner',
-                    href: '/admin/contact/banner',
+                    href: '/admin/aboutUs/Banner',
+                    active: false
+                },
+                {
+                    label: 'What We',
+                    href: '/admin/aboutUs/WhatWe',
+                    active: false
+                },
+                {
+                    label: 'Image List',
+                    href: '/admin/aboutUs/ImageList',
+                    active: false
+                },
+                {
+                    label:'Our Value',
+                    href:'/admin/aboutUs/OurValue',
+                    active: false
+                },
+                {
+                    label:'Let Work Together',
+                    href:'/admin/aboutUs/LetWorkTogether',
+                    active: false
+                }
+            ]
+        },
+        {
+            label: 'Service Page',
+            href: "",
+            active: false,
+            subLinks: [
+                {
+                    label: 'Banner',
+                    href: '/admin/Service/Banner',
+                    active: false
+                },
+                {
+                    label: 'About',
+                    href: '/admin/Service/About',
+                    active: false
+                },
+                {
+                    label: 'Process',
+                    href: '/admin/Service/Process',
+                    active: false
+                },
+                {
+                    label:'Development',
+                    href:'/admin/Service/Development',
+                    active: false
+                },
+                {
+                    label:'Faq',
+                    href:'/admin/Service/Faq',
+                    active: false
+                },
+                {
+                    label:'Assurance',
+                    href:'/admin/Service/Assurance',
+                    active: false
+                }
+            ]
+        },
+        {
+            label: 'Industries Page',
+            href: "",
+            active: false,
+            subLinks: [
+                {
+                    label: 'Banner',
+                    href: '/admin/Industries/Banner',
                     active: false
                 },
                 {

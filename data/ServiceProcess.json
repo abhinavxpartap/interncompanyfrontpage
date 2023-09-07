@@ -1,0 +1,28 @@
+{
+  "bannerData": {
+    "title": "Web application development process",
+    "subtitle": "Our Solution Development Cycle helps turn your great ideas into profitable business solutions."
+  },
+  "header": [
+    {
+      "image": "/stratergy.svg",
+      "title": "Strategy & Research",
+      "subtitle": "Zuca dives into your business model, market challenges and product positioning, and helps you create a product that delivers unique value."
+    },
+    {
+      "image": "/Development.svg",
+      "title": "Development",
+      "subtitle": "As a top-notch web and mobile app development company, we have highly skilled teams that stay lean and rapidly deploy customized solutions for each client. "
+    },
+    {
+      "image": "/Design.svg",
+      "title": "Product Design",
+      "subtitle": "We deploy cross-functional team made of Strategists, Designers and Developers to help our clients explore what's possible with emerging technologies."
+    },
+    {
+      "image": "/Assurance.svg",
+      "title": "Quality Assurance",
+      "subtitle": "We test in all the iterative stages of product development to create bug-free, reliable, safe and secure solutions."
+    }
+  ]
+}

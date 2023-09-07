@@ -1,213 +1,40 @@
 {
- "Banner": {
-  "title": "Web Application Development Services",
-  "subtitle": "Helping Businesses build secure and scalable Web Applications, Portals and Solutions",
-  "image": "/serviceBanner.jpg",
-  "mobileImage": "/serviceBanner.jpg",
-  "button": {
-   "name": "Book a free consultation",
-   "href": "/"
+  "Banner": {
+    "title": "Web Application Development Services",
+    "subtitle": "Helping Businesses build secure and scalable Web Applications, Portals and Solutions",
+    "backgroundImage": "/serviceBanner.jpg",
+    "buttonName": "Book a free consultation",
+    "buttonLink": "/"
+  },
+  "About": {
+    "title": "Build next-gen web applications",
+    "subtitle": "We provide end-to-end web app development services, tailored exclusively to solve your unique business challenges.",
+    "image": "/about.svg",
+    "paragraph": "We use the latest technologies such as PHP, Web 2.0, HTML, Joomla, WordPress, Drupal, Magento and OSCommerce to create responsive and tailor-made web applications for your business. Our experienced team leverages the dynamism of PHP and combines it with database languages such as MySQL, HTML, CSS, JavaScript, PHP Code. We use frameworks such as ZEND, Codeigniter, Laravel, Yii, and CakePHP to create products that work fluidly across platforms and devices."
+  },
+  "Assurance": {
+    "image": "/AssuraceBanner.png",
+    "title": "Zuca’s Assurance as a Web App Development Company",
+    "button": {
+      "name": "Work with us",
+      "href": "/"
+    },
+    "data": [
+      {
+        "title": "A Quality-First Approach",
+        "subtitle": "Our team is capable of delivering immersive web experiences, magnifying digital transformation",
+        "icon": "/Approach.svg"
+      },
+      {
+        "title": "Steering Web Complexities",
+        "subtitle": "Get your hands on world-class web apps that are capable of driving market disruption",
+        "icon": "/Complexity.svg"
+      },
+      {
+        "title": "Multiple Engagement Model",
+        "subtitle": "Choose your business model as per your budget, essentialities and requirements",
+        "icon": "/Model.svg"
+      }
+    ]
   }
- },
-
- "About": {
-  "title": "Build next-gen web applications",
-  "subtitle": "We provide end-to-end web app development services, tailored exclusively to solve your unique business challenges.",
-  "paragraph": "We use the latest technologies such as PHP, Web 2.0, HTML, Joomla, WordPress, Drupal, Magento and OSCommerce to create responsive and tailor-made web applications for your business. Our experienced team leverages the dynamism of PHP and combines it with database languages such as MySQL, HTML, CSS, JavaScript, PHP Code. We use frameworks such as ZEND, Codeigniter, Laravel, Yii, and CakePHP to create products that work fluidly across platforms and devices.",
-  "image":"/about.svg"
- },
-
- "Process": {
-  "title": "Web application development process",
-  "subtitle": "Our Solution Development Cycle helps turn your great ideas into profitable business solutions.",
-  "data": [
-   {
-    "image": "/stratergy.svg",
-    "title": "Strategy & Research",
-    "subtitle": "Zuca dives into your business model, market challenges and product positioning, and helps you create a product that delivers unique value."
-   },
-   {
-    "image": "/Development.svg",
-    "title": "Development",
-    "subtitle": "As a top-notch web and mobile app development company, we have highly skilled teams that stay lean and rapidly deploy customized solutions for each client. "
-   },
-   {
-    "image": "/Design.svg",
-    "title": "Product Design",
-    "subtitle": "We deploy cross-functional team made of Strategists, Designers and Developers to help our clients explore what's possible with emerging technologies."
-   },
-   {
-    "image": "/Assurance.svg",
-    "title": "Quality Assurance",
-    "subtitle": "We test in all the iterative stages of product development to create bug-free, reliable, safe and secure solutions."
-   }
-  ]
- },
-
- "Development": {
-  "title": "Industries We Serve As a Web App Development Company",
-  "subtitle": "Our web application development services vary across but are not limited to:",
-  "leftData": [
-   {
-    "image": "/Health.svg",
-    "title": "Healthcare"
-   },
-   {
-    "image": "/FineTech.svg",
-    "title":"Fintech"
-   },
-   {
-    "image": "/Factory.svg",
-    "title": "Manufacturing"
-   },
-   {
-    "image": "/Education.svg",
-    "title": "Education"
-   }
-  ],
-  "rightData": [
-   {
-    "image": "/Logistics.svg",
-    "title": "Logistics"
-   },
-   {
-    "image": "/Ecommerce.svg",
-    "title":"Ecommerce"
-   },
-   {
-    "image": "/Factory.svg",
-    "title": "Manufacturing"
-   },
-   {
-    "image": "/Education.svg",
-    "title": "Education"
-   }
-  ],
-  "centerContent":"As a web app development company, we offer top-notch medical and pharmaceutical app development services to enterprises across the world. Our expertise in the custom web application development field enables us to deliver comprehensive healthcare software development services  such as Practice Management Systems (PMS) and Electronic Health Records (EHR) systems, telemedicine platforms, billing, insurance verification software tools, etc., capable of meeting your custom business requirements.",
-  "button": {
-   "name": "Work with us",
-   "href": "/"
-  }
- },
-
- "Faq": {
-  "title": "Web development services we offer",
-  "subtitle": "We provide end-to-end web app development services, tailored exclusively to solve your unique business challenges.",
-  "button": {
-   "name": "Book Consultation Session",
-   "href": "/"
-  },
-  "tabData": [
-   {
-    "id": 1,
-    "title": "Custom application development",
-    "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces."
-   },
-   {
-    "id": 2,
-    "title": "Portal development",
-    "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces"
-   },
-   {
-    "id": 3,
-    "title": "E-Commerce development",
-    "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces"
-   },
-   {
-    "id": 4,
-    "title": "Website development and maintenance",
-    "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces"
-   },
-   {
-    "id": 5,
-    "title": "SaaS products",
-    "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces"
-   },
-   {
-    "id": 6,
-    "title": "Open source web development and revamp",
-    "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces"
-   },
-   {
-    "id": 7,
-    "title": "Web application support and maintenance",
-    "content": "As one of the most sought-after web apps development companies, we also create web portals as well as enterprise portals, capable of adhering to your custom business requirements. Our web portals offer the best of performance, cost-efficiency and growth potential. Our enterprise-level deployments use productive intranets, extranets and engagement workplaces"
-   }
-  ]
- },
-
- "Assurance": {
-  "image": "/AssuraceBanner.png",
-  "title": "Zuca’s Assurance as a Web App Development Company",
-  "button": {
-   "name": "Work with us",
-   "href": "/"
-  },
-  "data": [
-   {
-    "title": "A Quality-First Approach",
-    "subtitle": "Our team is capable of delivering immersive web experiences, magnifying digital transformation",
-    "icon": "/Approach.svg"
-   },
-   {
-    "title": "Steering Web Complexities",
-    "subtitle": "Get your hands on world-class web apps that are capable of driving market disruption",
-    "icon": "/Complexity.svg"
-   },
-   {
-    "title": "Multiple Engagement Model",
-    "subtitle": "Choose your business model as per your budget, essentialities and requirements",
-    "icon": "/Model.svg"
-   }
-  ]
- },
-
- "Tech": {
-  "title": "Tech Stack We Use",
-  "subtitle": "Here is the tech stack used by our team while offering web app development services:",
-  "Paragraph": "Looking for an exact cost and time frame estimate for custom web development services?",
-  "button": {
-   "name": "Get a Quote",
-   "href": "/"
-  },
-  "data": [
-   {
-    "image": "/JavaScript.svg"
-   },
-   {
-    "image": "/html.svg"
-   },
-   {
-    "image": "/css.svg"
-   },
-   {
-    "image": "/angular.svg"
-   },
-   {
-    "image": "/react.svg"
-   },
-   {
-    "image": "/vue.svg"
-   },
-   {
-    "image": "/next.svg"
-   },
-   {
-    "image": "/node.svg"
-   },
-   {
-    "image": "/python.svg"
-   },
-   {
-    "image": "/ruby.svg"
-   },
-   {
-    "image": "/django.svg"
-   },
-   {
-    "image": "/kotlin.svg"
-   }
-  ]
- }
-
 }

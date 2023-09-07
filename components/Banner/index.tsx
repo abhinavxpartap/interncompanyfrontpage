@@ -45,7 +45,7 @@ export const Banner: React.FC<BannerDataInterface> = (props) => {
           <div>
             <Button
                 onClick={handleOpen}
-                className="ButtonTransition fade-in overflow-hidden text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
+                className="ButtonTransition  overflow-hidden text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
                 sx={{
                   '&.MuiButtonBase-root': {
                     backgroundColor: '#FFFFFF',

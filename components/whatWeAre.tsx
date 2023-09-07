@@ -13,7 +13,7 @@ export const WhatWeAre: React.FC<WhatWeInterface> = (props) => {
             <Img
               src="/aboutus.svg"
               alt="aboutus"
-              className="md:w-[600px] w-[300px] -z-0 relative md:top-[150px]  md:left-[-100px] left-[0px]   top-[80px]"
+              className="md:w-[600px] w-[300px] -z-0 relative md:top-[165px] 2xl:left-0 md:left-[-45px] left-[0px]   top-[80px]"
             />
           </div>
           <div>

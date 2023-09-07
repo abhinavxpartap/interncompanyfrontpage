@@ -73,6 +73,7 @@ export interface DevelopmentDataInterface {
 }
 export interface TalkInterface {
     title: string;
+    image:string;
 }
 
 
@@ -237,6 +238,7 @@ export interface WebApplicationDevelopmentProcess {
 export interface ContactBannerInterface {
     title: string;
     subtitle: string;
+    image:string;
 
 }
 
@@ -279,7 +281,7 @@ export  interface FaqInterFace{
 }
 export interface Port{
     title: string;
-
+image:string;
 }
 export interface ServiceBannerInterface {
     title: string;

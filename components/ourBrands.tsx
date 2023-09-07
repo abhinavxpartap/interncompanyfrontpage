@@ -10,7 +10,7 @@ export const OurBrands: React.FC = () => {
           <h1 className="capitalize w-[100%] flex flex-col items-center md:flex-row gap-[4px] font-medium text-[#151448] text-[24px]">
             We are trusted by{' '}
             <span className="flex flex-row gap-[4px]">
-              <span className="relative text-[#3D6EFC]">
+              <span className="relative text-[#8184EB]">
                 brands
                 <Img
                   src="/Line2.svg"

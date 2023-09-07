@@ -20,7 +20,7 @@ export const IndustriesFaq: React.FC<FaqInterFace> = (props) => {
       <div className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[120px]  pt-[80px] pb-[80px] md:pb-[120px]">
         <div className="w-[100%] px-[20px] md:px-[60px] flex flex-col text-start items-center justify-center ">
           <h1 className="text-[#151448] text-[25px] md:text-[40px] pb-[20px] md:pb-[40px] font-bold">
-            {title} <span className="text-[#2C98F0]">{spantitle}</span>
+            {title} <span className="text-[#8184EB]">{spantitle}</span>
           </h1>
           <div className="w-[100%] md:px-0 lg:w-[922px] flex flex-col gap-[20px] ">
             {tabData.map((tab: any) => (
@@ -38,7 +38,7 @@ export const IndustriesFaq: React.FC<FaqInterFace> = (props) => {
                     component={Grid}
                     className={`text-[16px]  md:text-[18px] font-medium leading-[22px] md:leading-[26px] tracking-[0.5px] p-3 ${
                       openTabs.includes(tab.id)
-                        ? 'text-[#177DF0]'
+                        ? 'text-[#8184EB]'
                         : 'text-[#333333]'
                     }`}
                   >

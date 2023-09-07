@@ -65,10 +65,10 @@ export const PortfolioBanner2 = () => {
         </div>
 
         <div>
-          <div className="md:text-[50px] text-[35px] max-w-[510px] md:text-start text-center relative  leading-[63px] z-1 font-bold">
+          <div className="md:text-[50px] fade-in text-[35px] max-w-[510px] md:text-start text-center relative  leading-[63px] z-1 font-bold">
             {portfolio.title}          </div>
         </div>
-        <div className="md:text-[18px] text-[15px] max-w-[570px]  md:text-start text5-center md:ml-[60px] md:pb-[20px] mt-[12px]  font-medium">
+        <div className="md:text-[18px] fade-in text-[15px] max-w-[570px]  md:text-start text5-center md:ml-[60px] md:pb-[20px] mt-[12px]  font-medium">
           {portfolio.subtitle}
         </div>
       </div>
@@ -91,7 +91,7 @@ export const PortfolioBanner2 = () => {
                 {portfolio.items[0].description}
               </p>
               <button>
-                <a className="text-[16px] md:text-[12px] xl:text-[16px]  font-medium text-[#177DF0]">
+                <a className="text-[16px] md:text-[12px] xl:text-[16px]  font-medium text-[#8184EB]">
                   View Case Study
                 </a>
               </button>
@@ -113,7 +113,7 @@ export const PortfolioBanner2 = () => {
                 {portfolio.items[1].description}
               </p>
               <button>
-                <a className="text-[16px] md:text-[12px] xl:text-[16px]  font-medium text-[#177DF0]">
+                <a className="text-[16px] md:text-[12px] xl:text-[16px]  font-medium text-[#8184EB]">
                   View Case Study
                 </a>
               </button>
@@ -142,7 +142,7 @@ export const PortfolioBanner2 = () => {
                 {portfolio.items[2].description}
               </p>
               <button>
-                <a className="text-[16px] md:text-[12px] xl:text-[16px]  font-medium text-[#177DF0]">
+                <a className="text-[16px] md:text-[12px] xl:text-[16px]  font-medium text-[#8184EB]">
                   View Case Study
                 </a>
               </button>

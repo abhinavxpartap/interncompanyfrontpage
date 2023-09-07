@@ -103,7 +103,7 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
               open ? 'block' : 'hidden'
             } bg-white absolute top-[35px] lg:top-[25px] left-[-155px] sm:left-[0] min-w-[300px] lg:min-w-[394px] rounded-[15px] xxl:px-[35] md:px-[20px] px-[2px] xxl:py-[36px] md:py-[22px] py-[8px] dropdown-container z-[99999]`}
           >
-            <div className="text-[13px] leading-[25px] tracking-[0.8px] text-[#101D2C] mb-[14px] uppercase font-montserrat">
+            <div className="text-[13px] leading-[25px] tracking-[0.8px] text-[#8184EB] mb-[14px] uppercase font-montserrat">
               {items.title}
             </div>
             {items && items.data && items.data.length > 0 && (

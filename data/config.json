@@ -4,11 +4,12 @@
         "authorized_sender": "info@alumeltech"
     },
     "logos": {
-        "light": "/images/logo.png",
-        "dark": "/images/logo-dark.png"
+        "light": "/images/logo/logonew.png",
+        "dark": "/images/logo/logonew.png"
     },
-    "logo_dark": "/images/logo-dark.svg",
-    "logo_light": "/images/logo-dark.png",
+    "logo_dark": "/images/logo/logodarknew.png",
+
+    "logo_light": "/images/logo/logonew.png",
     "socialMedia": { 
         "facebook": "https://www.facebook.com/searchmyexpert/",
         "twitter": "https://twitter.com/searchmyexpert",

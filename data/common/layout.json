@@ -5,7 +5,7 @@
       "href":"/aboutus"
     },
     {
-      "title": "Services",
+      "title": "What We Offer",
       "data": [
         {
           "label": "Services",
@@ -28,8 +28,8 @@
       ]
     },
     {
-      "title": "Industries",
-      "heading": "What We Offer",
+      "title": "What We Offer",
+
       "data": [
         {
           "label": "Industries",

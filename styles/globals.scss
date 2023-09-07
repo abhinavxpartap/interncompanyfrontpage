@@ -285,217 +285,7 @@ input:checked::before {
     display: block;
 }
 
-.why-choose-data-overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 780px;
-    height: 100%;
-    background: linear-gradient(152.36deg, #cf3030 0.73%, #f66 66.5%);
-    z-index: 0;
-    -webkit-clip-path: url(#my-clip-path);
-    clip-path: url(#my-clip-path);
-}
 
-@media screen and (min-width: 1020px) and (max-width: 1230px) {
-    .why-choose-data-overlay1 {
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        width: 470px;
-        height: 100%;
-        background: linear-gradient(152.36deg, #cf3030 0.73%, #f66 66.5%);
-        z-index: 0;
-        -webkit-clip-path: url(#my-clip-path);
-        clip-path: url(#my-clip-path);
-    }
-}
-
-@media screen and (min-width: 1230px) and (max-width: 1280px) {
-    .why-choose-data-overlay1 {
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        width: 470px;
-        height: 100%;
-        background: linear-gradient(152.36deg, #cf3030 0.73%, #f66 66.5%);
-        z-index: 0;
-        -webkit-clip-path: url(#my-clip-path);
-        clip-path: url(#my-clip-path);
-    }
-}
-
-@media screen and (min-width: 1280px) and (max-width: 1450px) {
-    .why-choose-data-overlay1 {
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        width: 550px;
-        height: 100%;
-        background: linear-gradient(152.36deg, #cf3030 0.73%, #f66 66.5%);
-        z-index: 0;
-        -webkit-clip-path: url(#my-clip-path);
-        clip-path: url(#my-clip-path);
-    }
-}
-
-@media screen and (min-width: 1450px) and (max-width: 1500px) {
-    .why-choose-data-overlay1 {
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        width: 560px;
-        height: 100%;
-        background: linear-gradient(152.36deg, #cf3030 0.73%, #f66 66.5%);
-        z-index: 0;
-        -webkit-clip-path: url(#my-clip-path);
-        clip-path: url(#my-clip-path);
-    }
-}
-
-@media screen and (min-width: 1500px) and (max-width: 1642px) {
-    .why-choose-data-overlay1 {
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        width: 620px;
-        height: 100%;
-        background: linear-gradient(152.36deg, #cf3030 0.73%, #f66 66.5%);
-        z-index: 0;
-        -webkit-clip-path: url(#my-clip-path);
-        clip-path: url(#my-clip-path);
-    }
-}
-@media screen and (min-width: 1642px) and (max-width: 1718px) {
-    .why-choose-data-overlay1 {
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        width: 650px;
-        height: 100%;
-        background: linear-gradient(152.36deg, #cf3030 0.73%, #f66 66.5%);
-        z-index: 0;
-        -webkit-clip-path: url(#my-clip-path);
-        clip-path: url(#my-clip-path);
-    }
-}
-@media screen and (min-width: 1718px) and (max-width: 1780px) {
-    .why-choose-data-overlay1 {
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        width: 690px;
-        height: 100%;
-        background: linear-gradient(152.36deg, #cf3030 0.73%, #f66 66.5%);
-        z-index: 0;
-        -webkit-clip-path: url(#my-clip-path);
-        clip-path: url(#my-clip-path);
-    }
-}
-@media screen and (min-width: 1780px) and (max-width: 2200px) {
-    .why-choose-data-overlay1 {
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        width: 720px;
-        height: 100%;
-        background: linear-gradient(152.36deg, #cf3030 0.73%, #f66 66.5%);
-        z-index: 0;
-        -webkit-clip-path: url(#my-clip-path);
-        clip-path: url(#my-clip-path);
-    }
-}
-@media screen and (min-width: 1882px) and (max-width: 1928px) {
-    .why-choose-data-overlay1 {
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        width: 760px;
-        height: 100%;
-        background: linear-gradient(152.36deg, #cf3030 0.73%, #f66 66.5%);
-        z-index: 0;
-        -webkit-clip-path: url(#my-clip-path);
-        clip-path: url(#my-clip-path);
-    }
-}
-@media screen and (min-width: 1929px) and (max-width: 2060px) {
-    .why-choose-data-overlay1 {
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        width: 810px;
-        height: 100%;
-        background: linear-gradient(152.36deg, #cf3030 0.73%, #f66 66.5%);
-        z-index: 0;
-        -webkit-clip-path: url(#my-clip-path);
-        clip-path: url(#my-clip-path);
-    }
-}
-@media screen and (min-width: 2060px) and (max-width: 2160px) {
-    .why-choose-data-overlay1 {
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        width: 860px;
-        height: 100%;
-        background: linear-gradient(152.36deg, #cf3030 0.73%, #f66 66.5%);
-        z-index: 0;
-        -webkit-clip-path: url(#my-clip-path);
-        clip-path: url(#my-clip-path);
-    }
-}
-@media screen and (min-width: 2160px) and (max-width: 2270px) {
-    .why-choose-data-overlay1 {
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        width: 890px;
-        height: 100%;
-        background: linear-gradient(152.36deg, #cf3030 0.73%, #f66 66.5%);
-        z-index: 0;
-        -webkit-clip-path: url(#my-clip-path);
-        clip-path: url(#my-clip-path);
-    }
-}
-@media screen and (min-width: 2270px) and (max-width: 10000px) {
-    .why-choose-data-overlay1 {
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        width: 930px;
-        height: 100%;
-        background: linear-gradient(152.36deg, #cf3030 0.73%, #f66 66.5%);
-        z-index: 0;
-        -webkit-clip-path: url(#my-clip-path);
-        clip-path: url(#my-clip-path);
-    }
-}
-@media screen and (min-width: 250px) and (max-width: 1020px) {
-    .why-choose-data-overlay1 {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 330px;
-        background: linear-gradient(152.36deg, #cf3030 0.73%, #f66 66.5%);
-        z-index: 0;
-        -webkit-clip-path: url(#my-clip-path);
-        clip-path: url(#my-clip-path);
-    }
-}
 .why-choose-data-section {
     z-index: 1;
 }
@@ -1380,9 +1170,15 @@ details[open] .arrow-icon {
     border-radius: 10px;
     background-color: #EAEAEA;
 }
+.css-1649q4u-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-1649q4u-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+    color: #8184EB;
+}
 .slick-dots li.slick-active button::before {
-    background: #7699FF;
+    background: #8184EB;
     width: 40px;
+}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+    color: #8184EB;
 }
 
 .slick-dots li.slick-active {
@@ -1405,8 +1201,8 @@ details[open] .arrow-icon {
 
 
 .css-1lhlv3u .QontoStepIcon-circle{
-    display: none;
-}
+    background: #151448}
+
 
 .Mui-completed, .Mui-active {
     position: relative;
@@ -1432,7 +1228,12 @@ details[open] .arrow-icon {
 }
 
 .css-17k0r75 .QontoStepIcon-circle{
-    display: none;
+background: #8184EB;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    border-radius: 50%;
+left:12px;
 }
 
 
@@ -1481,4 +1282,12 @@ details[open] .arrow-icon {
 
 .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
     border-radius: 25px;
+}
+
+.css-1649q4u-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-1649q4u-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+    color: #8184EB;
+}
+.slick-dots li.slick-active button::before {
+    background: #8184EB;
+    width: 40px;
 }

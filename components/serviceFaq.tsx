@@ -104,16 +104,16 @@ export const ServicesFaq: React.FC<Faq> = (props) => {
               className="ButtonTransition overflow-hidden text-[13px] w-[230px] md:w-[290px] md:text-[16px] mt-[20px] font-semibold "
               sx={{
                 '&.MuiButtonBase-root': {
-                  backgroundColor: '#177DF0',
+                  backgroundColor: '#8184EB',
                   color: 'white',
                   textTransform: 'capitalize',
                   padding: '8px 24px 8px 24px',
-                  border: '1px solid #5CA9FF',
+                  border: '1px solid #8184EB',
                   borderRadius: '30px',
                   '&:hover': {
-                    border: '1px solid #5CA9FF',
+                    border: '1px solid #8184EB',
                     backgroundColor: 'transparent',
-                    color: '#177DF0',
+                    color: '#8184EB',
                   },
                 },
               }}
@@ -146,7 +146,7 @@ export const ServicesFaq: React.FC<Faq> = (props) => {
                           component={Grid}
                           className={`text-[13px]  leading-[18px] md:text-[15px] font-medium md:leading-[26px] tracking-[0.5px] p-3 ${
                             activeTab === tab.id
-                              ? 'text-[#177DF0]'
+                              ? 'text-[#8184EB]'
                               : 'text-[#000000]'
                           }`}
                         >

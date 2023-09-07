@@ -1,10 +1,20 @@
-import React from 'react';
-import { Button } from '@mui/material';
+import React, {useState} from 'react';
+import {Button, Dialog, DialogContent} from '@mui/material';
 import {LetsInterface} from "../types";
+import Popupform from "./popupform";
 
 export const Letswork: React.FC<LetsInterface> = (props) => {
+
   const { image, mobileImage, title, subtitle } = props;
 
+    const [open, setOpen] = useState(false);
+
+    const handleOpen = () => {
+        setOpen(true);
+    };
+    const handleClose = () => {
+        setOpen(false);
+    };
   const content = (
     <>
       <div className="w-full pb-[90px]  pt-[100px]  relative md:max-w-[1441px] lg:pl-[80px]  h-full gap-[20px] md:pr-[40px] mx-auto flex  flex-col  ">
@@ -20,26 +30,32 @@ export const Letswork: React.FC<LetsInterface> = (props) => {
 
         <div className="flex pt-[20px] justify-center items-center md:justify-start">
           <Button
-            className="text-[16px] font-semibold "
+              onClick={handleOpen}
+            className="text-[16px]  ButtonTransition overflow-hidden font-semibold "
             sx={{
               '&.MuiButtonBase-root': {
-                backgroundColor: '#177DF0',
+                backgroundColor: '#8184EB',
                 color: 'white',
                 textTransform: 'capitalize',
                 padding: '9px 20px 9px 20px',
-                border: '1px solid #177DF0',
+                border: '1px solid #8184EB',
                 borderRadius: '30px',
                 '&:hover': {
-                  border: '1px solid #5CA9FF',
+                  border: '1px solid #8184EB',
                   backgroundColor: 'transparent',
-                  color: '#177DF0',
+                  color: '#8184EB',
                 },
               },
             }}
           >
-            Get In Touch{' '}
+            Get In Touch
           </Button>
         </div>
+          <Dialog open={open} onClose={handleClose}>
+              <DialogContent>
+                  <Popupform onClose={handleClose} />
+              </DialogContent>
+          </Dialog>
       </div>
     </>
   );

@@ -31,7 +31,7 @@ export const AboutPortfolio: React.FC<PizzaHutInfo> = (props) => {
                 <h1 className="text-[16px] font-medium text-[#757B8A]">
                   Industry
                 </h1>
-                <p className="text-[14px] mt-[7px] font-normal text-[#177DF0]">
+                <p className="text-[14px] mt-[7px] font-normal text-[#8184EB]">
                   {industry}
                 </p>
               </div>

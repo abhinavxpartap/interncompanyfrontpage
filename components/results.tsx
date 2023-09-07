@@ -12,7 +12,7 @@ export const Results = () => {
           <div className="flex md:flex-row  md:gap-[60px]">
             {resultData.result.map((item, index) => (
                 <div key={index}>
-                  <h1 className="text-[37px] font-semibold text-[#3E98FF]">
+                  <h1 className="text-[37px] font-semibold text-[#8184EB]">
                     {item.value}
                   </h1>
                   <p className="text-[16px] font-medium">{item.description}</p>
@@ -25,16 +25,16 @@ export const Results = () => {
               className="text-[16px] font-semibold "
               sx={{
                 '&.MuiButtonBase-root': {
-                  backgroundColor: '#177DF0',
+                  backgroundColor: '#8184EB',
                   color: 'white',
                   textTransform: 'capitalize',
                   padding: '8px 20px 8px 20px',
-                  border: '1px solid #177DF0',
+                  border: '1px solid #8184EB',
                   borderRadius: '30px',
                   '&:hover': {
-                    border: '1px solid #5CA9FF',
+                    border: '1px solid #8184EB',
                     backgroundColor: 'transparent',
-                    color: '#177DF0',
+                    color: '#8184EB',
                   },
                 },
               }}

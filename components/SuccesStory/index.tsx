@@ -17,7 +17,7 @@ const CaseStudy = () => {
                     </div>
 
                 </div>
-                <div className="text-[#E4F0FF] -z-[1] text-[250px] max-w-[1440px] left-[500px] absolute font-medium leading-[70%] -tracking-[20px] bottom-[3px]">
+                <div className="text-[#E8EDFF] -z-[1] text-[250px] max-w-[1440px] left-[500px] absolute font-medium leading-[70%] -tracking-[20px] bottom-[3px]">
 Success                </div>
             </div>
             <div className="w-full h-full overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth flex flex-row max-w-[1377.5px] mx-auto">

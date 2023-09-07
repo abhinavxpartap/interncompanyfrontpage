@@ -42,7 +42,7 @@ export const IndustriesAbout: React.FC<AboutData> = (props) => {
         <div className="w-[60vw] mx-auto md:w-[95vw] lg:w-[900px] gap-[0px]  md:gap-[100px] mt-[40px] md:mt-[80px] justify-between grid  grid-cols-1 md:grid-cols-3">
           {satisfactionData.map((item, index: number) => (
             <div key={index}>
-              <h1 className="text-[#3E98FF] text-[80px] font-bold" key={index}>
+              <h1 className="text-[#8184EB] text-[80px] font-bold" key={index}>
                 {item.number}+{' '}
               </h1>
               <p className="text-[#333333] text-[18px] font-medium">
@@ -57,16 +57,16 @@ export const IndustriesAbout: React.FC<AboutData> = (props) => {
             className="ButtonTransition overflow-hidden text-[14px] md:text-[16px] mt-[30px] md:mt-[-60px] font-semibold "
             sx={{
               '&.MuiButtonBase-root': {
-                backgroundColor: '#177DF0',
+                backgroundColor: '#8184EB',
                 color: 'white',
                 textTransform: 'capitalize',
                 padding: '8px 24px 8px 24px',
-                border: '1px solid #5CA9FF',
+                border: '1px solid #8184EB',
                 borderRadius: '30px',
                 '&:hover': {
-                  border: '1px solid #5CA9FF',
+                  border: '1px solid #8184EB',
                   backgroundColor: 'transparent',
-                  color: '#177DF0',
+                  color: '#8184EB',
                 },
               },
             }}

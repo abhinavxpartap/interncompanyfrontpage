@@ -64,16 +64,16 @@ export const ServicesDevelopment: React.FC<DevelopmentDataInterface> = (props) =
               className="ButtonTransition overflow-hidden text-[14px] md:text-[16px] font-semibold "
               sx={{
                 '&.MuiButtonBase-root': {
-                  backgroundColor: '#177DF0',
+                  backgroundColor: '#8184EB',
                   color: 'white',
                   textTransform: 'capitalize',
                   padding: '8px 24px 8px 24px',
-                  border: '1px solid #5CA9FF',
+                  border: '1px solid #8184EB',
                   borderRadius: '30px',
                   '&:hover': {
-                    border: '1px solid #5CA9FF',
+                    border: '1px solid #8184EB',
                     backgroundColor: 'transparent',
-                    color: '#177DF0',
+                    color: '#8184EB',
                   },
                 },
               }}

@@ -29,7 +29,7 @@ const CaseStudy = () => {
             <div className="bg-[#177DF0] text-[#fff] rounded-[5px] "><ArrowForwardIcon className="w-[30px] h-[30px] md:w-[50px] md:h-[50px] "  /></div>
           </div>
         </div>
-        <div className="text-[#E4F0FF] -z-[1] lg:text-[250px] text-[130px] w-[470px] lg:w-[1440px] lg:left-[370px] left-[2px] absolute font-medium leading-[70%] -tracking-[20px] bottom-[3px]">
+        <div className="text-[#E8EDFF] -z-[1] lg:text-[250px] text-[130px] w-[470px] lg:w-[1440px] lg:left-[370px] left-[2px] absolute font-medium leading-[70%] -tracking-[20px] bottom-[3px]">
           case studY
         </div>
       </div>
@@ -44,7 +44,7 @@ const CaseStudy = () => {
             </div>
             <div className='flex flex-col w-[350px] whitespace-break-spaces ml-[15px] md:ml-[30px]'>
               <div className="text-[#151448] text-[14px] leading-[20px] md:text-[20px] font-bold md:leading-[37.4px]">{caseStudy.heading}</div>
-              <div className="text-[#177DF0] text-[14px] leading-[20px] md:text-[20px] font-bold md:leading-[37.4px] mt-[10px]">{caseStudy.org}</div>
+              <div className="text-[#8184EB] text-[14px] leading-[20px] md:text-[20px] font-bold md:leading-[37.4px] mt-[10px]">{caseStudy.org}</div>
               <div className="text-[#747C85] text-[12px] leading-[18px] md:text-[16px] mt-[5px] font-medium md:leading-[26px]">{caseStudy.description}</div>
               <div>
                 <MUIMaterial.Button

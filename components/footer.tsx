@@ -85,9 +85,9 @@ export const Footer: React.FC<any> = () => {
 
   const content = (
     <div className="max-w-[1477.5px] px-[50px] border-b-2 pb-[30px] pt-[50px]  mx-auto">
-      <div className="md:flex  grid grid-cols-2 gap-[40px] pb-[25px]   md:flex-row w-full justify-between">
+      <div className="md:flex  grid grid-cols-1 gap-[40px] pb-[25px]   md:flex-row w-full justify-between">
         <div>
-          <Img src="/image 5.png" alt="logo" className="w-auto" />
+          <Img src="/images/logo/logodarknew.png" alt="logo" className="w-[220px] " />
           <p className="max-w-[350px] text-[16px] mt-[12px] font-normal">
             Full stack mobile (iOS, Android) and web app design and development
             agency
@@ -99,17 +99,17 @@ export const Footer: React.FC<any> = () => {
                 className="text-[16px] ButtonTransition   overflow-hidden min-w-[200px] font-semibold "
               sx={{
                 '&.MuiButtonBase-root': {
-                  backgroundColor: '#177DF0',
+                  backgroundColor: '#8184EB',
                   color: 'white',
 
                   textTransform: 'capitalize',
                   padding: '9px 20px 9px 20px',
-                  border: '1px solid #177DF0',
+                  border: '1px solid #8184EB',
                   borderRadius: '30px',
                   '&:hover': {
-                    border: '1px solid #5CA9FF',
+                    border: '1px solid #8184EB',
                     backgroundColor: 'transparent',
-                    color: '#177DF0',
+                    color: '#8184EB',
                   },
                   '@media (max-width: 768px)': {
                     display: 'none',

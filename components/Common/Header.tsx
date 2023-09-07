@@ -98,7 +98,7 @@ export const Header= () => {
               <Img
                 src={logo || ''}
                 alt="Header Logo"
-                className="xxl:w-[323px] xl:w-[300px] sm:w-[291.6px] max-w-[130px] w-[130px] xl:h-[41px] sm:h-[37.67px] h-[27px]"
+                className="  max-w-[230px]  xl:h-[41px]  h-[27px]"
               />
             </div>
             <div className="flex-1 md:pl-[34px] sm:pl-[17px] pl-[5px] hidden lg:flex">
@@ -193,16 +193,16 @@ export const Header= () => {
                   onClick={handleOpen}
                   sx={{
                     '&.MuiButtonBase-root': {
-                      backgroundColor: '#177DF0',
+                      backgroundColor: '#8184EB',
                       color: 'white',
                       textTransform: 'capitalize',
                       padding: '8px 24px 8px 24px',
-                      border: '1px solid #5CA9FF',
+                      border: '1px solid #8184EB',
                       borderRadius: '30px',
                       '&:hover': {
-                        border: '1px solid #5CA9FF',
+                        border: '1px solid #8184EB',
                         backgroundColor: 'transparent',
-                        color: '#177DF0',
+                        color: '#8184EB',
                       },
                     },
                   }}

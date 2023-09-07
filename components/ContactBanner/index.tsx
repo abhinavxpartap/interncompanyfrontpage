@@ -18,7 +18,7 @@ import { Header } from '../Common/Header';
 import {ContactBannerInterface} from "../../types";
 
 export const ContactBanner: React.FC<ContactBannerInterface> = (props) => {
-  const { title, subtitle } = props;
+  const { title, subtitle,image } = props;
 
   const [age, setAge] = React.useState('');
   const [checked, setChecked] = useState([false, false]);
@@ -46,14 +46,20 @@ export const ContactBanner: React.FC<ContactBannerInterface> = (props) => {
   };
 
   return (
-    <div>
-      <div className="w-full  relative md:max-w-[1371px] md:pt-[210px] pt-[100px] pb-[270px] lg:pl-[80px]  h-full xl:gap-[80px] mx-auto flex lg:flex-row flex-col  ">
+    <div           style={{
+      backgroundImage: `url(${image})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize:'cover'
+    }}
+    >
+      <div
+          className="w-full  relative md:max-w-[1371px] md:pt-[210px] pt-[100px] pb-[270px] lg:pl-[80px]  h-full xl:gap-[80px] mx-auto flex lg:flex-row flex-col  ">
         <Header />{' '}
         <div>
           <div className="text-white  fade-in md:text-[55px] text-[36px] md:text-start text-center font-bold xl:w-[70%] md:w-[40%] md:leading-[60px]">
             {title}
           </div>
-          <div className="text-white text-[20px] xl:w-[50%] md:w-[30%] md:text-start text-center mt-[20px] font-medium">
+          <div className="text-white fade-in text-[20px] xl:w-[50%] md:w-[30%] md:text-start text-center mt-[20px] font-medium">
             {subtitle}
           </div>
         </div>
@@ -202,16 +208,16 @@ export const ContactBanner: React.FC<ContactBannerInterface> = (props) => {
                     className=" ButtonTransition overflow-hidden text-[14px] animated-button font-semibold "
                     sx={{
                       '&.MuiButtonBase-root': {
-                        backgroundColor: '#177DF0',
+                        backgroundColor: '#8184EB',
                         color: 'white',
                         textTransform: 'capitalize',
                         padding: '8px 24px 8px 24px',
-                        border: '1px solid #5CA9FF',
+                        border: '1px solid #8184EB',
                         borderRadius: '30px',
                         '&:hover': {
-                          border: '1px solid #5CA9FF',
+                          border: '1px solid #8184EB',
                           backgroundColor: 'transparent',
-                          color: '#177DF0',
+                          color: '#8184EB',
                         },
                       },
                     }}
@@ -219,44 +225,7 @@ export const ContactBanner: React.FC<ContactBannerInterface> = (props) => {
                     Book my Demo
                   </Button>
                   <div>
-                    {/*<Button*/}
-                    {/*    className="text-[16px] bg-[#177DF0] capitalize font-semibold"*/}
-                    {/*    sx={{*/}
-                    {/*        border: '2px solid #0092FF',*/}
-                    {/*        padding: '8px 30px',*/}
-                    {/*        borderRadius: '30px',*/}
-                    {/*        color: '#0092FF',*/}
-                    {/*        position: 'relative',*/}
-                    {/*        overflow: 'hidden',*/}
-                    {/*        '&::before': {*/}
-                    {/*            content: '""',*/}
-                    {/*            position: 'absolute',*/}
-                    {/*            top: 0,*/}
-                    {/*            left: 0,*/}
-                    {/*            width: '100%',*/}
-                    {/*            height: '100%',*/}
-                    {/*            zIndex: 0,*/}
-                    {/*            opacity: 1,*/}
-                    {/*            transform: 'translate(-105%, 0px)',*/}
-                    {/*            backgroundColor: 'rgba(255, 255, 255, 0.2)',*/}
-                    {/*            animation: 'btn-animate 1s infinite ease-in-out',*/}
-                    {/*        },*/}
-                    {/*        '&:hover::before': {*/}
-                    {/*            animationPlayState: 'paused',*/}
-                    {/*        },*/}
-                    {/*        '@keyframes btn-animate': {*/}
-                    {/*            '0%': {*/}
-                    {/*                transform: 'translate(-105%, 0px)',*/}
-                    {/*            },*/}
-                    {/*            '100%': {*/}
-                    {/*                transform: 'translate(0, 0)',*/}
-                    {/*            },*/}
-                    {/*        },*/}
-                    {/*    }}*/}
-                    {/*>*/}
-                    {/*    View All Articles*/}
 
-                    {/*</Button>*/}
                   </div>
                 </div>
               </Box>

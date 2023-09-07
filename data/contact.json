@@ -1,11 +1,12 @@
 {
   "Banner": {
     "title": "Kickstart Your Digital Journey Today",
-    "subtitle": "Get all your questions answered by our business development team."
-
+    "subtitle": "Get all your questions answered by our business development team.",
+"image": "/contactBanner.svg"
   },
   "TalkTo": {
-    "title": "Enable Unmatched Digital Transformation Seamlessly"
+    "title": "Enable Unmatched Digital Transformation Seamlessly",
+    "image": "/images/logo/banner.png"
 
   }
 }

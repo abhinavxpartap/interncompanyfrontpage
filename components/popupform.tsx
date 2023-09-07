@@ -32,11 +32,11 @@ const Popupform: React.FC<PopUpFormProps> = ({ onClose }) => {
   };
 
   return (
-    <div className="  bg-white relative flex justify-center items-center">
+    <div className="  bg-white  relative flex justify-center items-center">
       <div className="relative justify-center items-center mx-auto max-w-[460px] rounded-3xl  p-[30px]">
         <Box className="w-[100%] flex flex-row justify-between">
           <Box className="w-[48%]">
-            <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
+            <Typography className="text-[#515458]  text-[10px] md:text-[12px] text-start font-medium">
               First name
             </Typography>
             <FormControl sx={{ width: '100%' }}>

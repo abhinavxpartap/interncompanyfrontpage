@@ -6,35 +6,23 @@
     },
     {
       "title": "Services",
-      "heading": "What We Offer",
       "data": [
         {
           "label": "Services",
           "href": "/service"
         },
-        {
-          "label": "AboutUS",
-          "icon": "/images/icons/ecommerce.svg",
-          "href": "/aboutus"
-        },
-        {
-          "label": "Industries",
-          "href": "/industries"
-        },
+
 
         {
           "label": "Our Team",
-          "icon":"/images/icons/internet.svg",
-          "href": "https://www.searchmyexpert.com"
+          "href": "/"
         },
         {
           "label": "Careers",
-          "icon":"/images/icons/internet.svg",
-          "href": "https://www.searchmyexpert.com"
+          "href": "/"
         },
         {
           "label": "Contact Us",
-          "icon":"/images/icons/internet.svg",
           "href": "/contact"
         }
       ]

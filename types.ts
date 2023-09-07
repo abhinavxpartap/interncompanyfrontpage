@@ -367,7 +367,14 @@ export interface CaseStudyInterface {
     description: string,
     href: string,
 }
-
+export interface SuccessStoryStudyInterface {
+    heading:string,
+    imgUrl: string,
+    description2: string,
+    description: string,
+    href: string,
+    country:string,
+}
 export interface ProductOverviewInterface {
     title: string,
     subtitle: string,

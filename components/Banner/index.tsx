@@ -39,13 +39,13 @@ export const Banner: React.FC<BannerDataInterface> = (props) => {
             {title}
           </h1>
 
-          <div className=" max-w-[1106px]   font-medium text-[#FFFFFF] md:text-[23px] text-[16px] leading-[160%] tracking-[-0.68px] text-center pb-[30px]">
+          <div className=" max-w-[1106px]  fade-in   font-medium text-[#FFFFFF] md:text-[20px] text-[16px] leading-[160%] tracking-[-0.68px] text-center pb-[30px]">
             {subtitle}
           </div>
           <div>
             <Button
                 onClick={handleOpen}
-                className="ButtonTransition overflow-hidden text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
+                className="ButtonTransition fade-in overflow-hidden text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
                 sx={{
                   '&.MuiButtonBase-root': {
                     backgroundColor: '#FFFFFF',

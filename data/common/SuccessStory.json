@@ -1,48 +1,48 @@
 {
+  "bannerData": {
+    "title": "Our Success Stories",
+    "subtitle": "We help you formulate the vision of an open FinTech ecosystem, one that serves your customers in a timely and convenient manner. Here’s a glimpse of a few FinTech brands that we helped scale digitally."
+  },
   "SuccessStory": [
     {
       "heading": "AlumelTech",
       "imgUrl": "/images/unsplash_05gac-Qn0k4.png",
-      "description2": "countries launched the product",
+      "subtitle": "countries launched the product",
       "description": "Since we started working with Medable in late 2017, they have continued to report stratospheric growth, increasing their presence with the world’s leading healthcare institutions and reaching more than 750,000 patients.",
       "href": "/",
-      "country": "12+"
-
+      "country": "12"
     },
     {
       "heading": "good Trial Management Software'",
       "imgUrl": "/images/unsplash_05gac-Qn0k4.png",
-      "description2": "countries launched the product",
+      "subtitle": "countries launched the product",
       "description": "Since we started working with Medable in late 2017, they have continued to report stratospheric growth, increasing their presence with the world’s leading healthcare institutions and reaching more than 750,000 patients.",
       "href": "/",
-      "country": "244+"
+      "country": "224"
     },
     {
       "heading": "Clinical Trial Management Software",
       "imgUrl": "/images/unsplash_05gac-Qn0k4.png",
-      "description2": "countries launched the product",
+      "subtitle": "countries launched the product",
       "description": "Since we started working with Medable in late 2017, they have continued to report stratospheric growth, increasing their presence with the world’s leading healthcare institutions and reaching more than 750,000 patients.",
       "href": "/",
-      "country": "24+"
-
+      "country": "24"
     },
     {
       "heading": "Clinical Trial Management Software",
       "imgUrl": "/images/unsplash_05gac-Qn0k4.png",
-      "description2": "countries launched the product",
+      "subtitle": "countries launched the product",
       "description": "Since we started working with Medable in late 2017, they have continued to report stratospheric growth, increasing their presence with the world’s leading healthcare institutions and reaching more than 750,000 patients.",
       "href": "/",
-      "country": "22+"
-
+      "country": "22"
     },
     {
       "heading": "Clinical Trial Management Software",
       "imgUrl": "/images/unsplash_05gac-Qn0k4.png",
-      "description2": "countries launched the product",
+      "subtitle": "countries launched the product",
       "description": "Since we started working with Medable in late 2017, they have continued to report stratospheric growth, increasing their presence with the world’s leading healthcare institutions and reaching more than 750,000 patients.",
       "href": "/",
-      "country": "23+"
-
+      "country": "23"
     }
   ]
 }

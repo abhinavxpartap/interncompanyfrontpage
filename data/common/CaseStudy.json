@@ -1,4 +1,9 @@
 {
+  "bannerData": {
+    "title": "Case studies",
+    "tagButton": "AMAZING ANALISYS",
+    "subtitle": "Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat."
+  },
   "caseStudies": [
     {
       "heading": "Clinical Trial Management Software",

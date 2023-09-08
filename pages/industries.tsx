@@ -2,6 +2,9 @@ import React from "react";
 import Head from "next/head";
 import seoData from "../data/seoData.json";
 import industryData from "../data/industries.json";
+import FaqData from "../data/common/industriesFAQ.json";
+import industryAboutData from "../data/industriesAbout.json";
+import industryDevelopment from "../data/indsutreisDevelopment.json";
 import {ServiceBanner} from "../components/serviceBanner";
 import {IndustriesAbout} from "../components/industriesAbout";
 import {IndustriesCompliances} from "../components/industriesCompliances";
@@ -33,17 +36,18 @@ const IndustriesPage: React.FC = () => {
                 />
                 <div style={{background:"#F9FBFF"}} >
                 <IndustriesAbout
-                title={industryData.About.title}
-                image={industryData.About.image}
-                button={industryData.About.button}
-                fintechData={industryData.About.fintechData}
-                satisfactionData={industryData.About.satisfactionData}
+                title={industryAboutData.bannerData.title}
+                image={industryAboutData.bannerData.image}
+                fintechData={industryAboutData.header}
+                buttonName={industryAboutData.bannerData.buttonName}
+                buttonLink={industryAboutData.bannerData.buttonLink}
+                satisfactionData={industryAboutData.NumberData}
                 />
                     <IndustriesCompliances
-                    image={industryData.Compliances.image}
-                    title={industryData.Compliances.title}
-                    subtitle={industryData.Compliances.subtitle}
-                    data={industryData.Compliances.data}
+                    image={industryDevelopment.bannerData.image}
+                    title={industryDevelopment.bannerData.title}
+                    subtitle={industryDevelopment.bannerData.subtitle}
+                    data={industryDevelopment.header}
                     />
                     <SuccesStory/>
                     <IndustriesTechnology
@@ -60,7 +64,7 @@ const IndustriesPage: React.FC = () => {
                     button={industryData.Estimation.button}
                     />
                     <IndustriesFaq
-                    tabData={industryData.Faq.tabData}
+                    tabData={FaqData.header}
                     title={industryData.Faq.title}
                     spantitle={industryData.Faq.spantitle}
                     />

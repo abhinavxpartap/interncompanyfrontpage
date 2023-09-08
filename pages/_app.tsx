@@ -39,14 +39,19 @@ function MyApp({ Component, pageProps }: AppProps) {
       "/admin/Service/Development",
       "/admin/Service/Faq",
       "/admin/Service/Assurance",
+      "/admin/Industries/About",
       "/admin/Industries/Banner",
+      "/admin/Industries/Development",
+      "/admin/Industries/Faq",
       "/admin/common/CaseStudy",
       "/admin/common/OurBrands",
       "/admin/common/ProductOverview",
       "/admin/common/Testimonials",
       "/admin/common/Team",
+      "/admin/common/Footer",
       "/admin/common/OurTech",
-      "/admin/common/Header"
+      "/admin/common/Header",
+      "/admin/common/OurSuccessStory",
   ];
 
   return <LoaderContext.Provider value={{isLoading, setIsLoading}}>

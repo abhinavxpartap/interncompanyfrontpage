@@ -16,13 +16,13 @@ const CaseStudy = () => {
         <div className="flex  flex-row">
           <div>
             <Button
-              label={'AMAZING ANALYSIS'}
+              label={caseStudies.bannerData.tagButton}
               type="button"
               // onClick={() => router.push("/getStarted")}
               className="max-w-[150px] px-[10px] py-[4px] bg-[#A1B4F7] text-[white] xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] text-[12px] hover:text-[#A1B4F7]"
             />
-            <div className="text-[#151448] md:text-[40px] text-[30px] font-bold leading-[125%] mt-[13px] max-w-[451px]">Case Studies</div>
-            <div className="text-[#747C85] text-[16px] mt-[13px] font-medium max-w-[502px] leading-[30px]">Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat.</div>
+            <div className="text-[#151448] md:text-[40px] text-[30px] font-bold leading-[125%] mt-[13px] max-w-[451px]">{caseStudies.bannerData.title}</div>
+            <div className="text-[#747C85] text-[16px] mt-[13px] font-medium max-w-[502px] leading-[30px]">{caseStudies.bannerData.subtitle}</div>
           </div>
           <div className="flex flex-row hidden justify-between w-[80px] h-[30px] gap-[5px] md:w-[120px]  md:h-[50px] mt-[43px] ms-auto cursor-pointer">
             <div className="bg-[#177DF0] text-[#fff] rounded-[5px] "><ArrowBackIcon className="w-[30px] h-[30px] md:w-[50px] md:h-[50px] " /></div>

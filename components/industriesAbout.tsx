@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import {AboutData} from "../types";
 
 export const IndustriesAbout: React.FC<AboutData> = (props) => {
-  const { title, image, fintechData, button, satisfactionData } = props;
+  const { title, image, fintechData, buttonLink,buttonName, satisfactionData } = props;
   const router = useRouter();
 
   const content = (
@@ -53,7 +53,7 @@ export const IndustriesAbout: React.FC<AboutData> = (props) => {
         </div>
         <div className="w-[60vw] mx-auto md:w-[95vw] lg:w-[900px] md:mt-[70px] ">
           <Button
-            onClick={() => router.push(button.href)}
+            onClick={() => router.push(buttonLink)}
             className="ButtonTransition overflow-hidden text-[14px] md:text-[16px] mt-[30px] md:mt-[-60px] font-semibold "
             sx={{
               '&.MuiButtonBase-root': {
@@ -71,7 +71,7 @@ export const IndustriesAbout: React.FC<AboutData> = (props) => {
               },
             }}
           >
-            {button.name}
+            {buttonName}
           </Button>
         </div>
       </div>

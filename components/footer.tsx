@@ -44,9 +44,9 @@ export const Footer: React.FC = () => {
   const [open, setOpen] = useState(false);
 
   const renderServices = () => {
-    return services.map((item: Service) => (
-      <div key={item.id} className="text-[16px] font-normal">
-        <a href={item.link}>{item.title}</a>
+    return services.map((service: Service) => (
+      <div key={service.id} className="text-[16px] font-normal">
+        <a href={service.link}>{service.title}</a>
       </div>
     ));
   };
@@ -87,13 +87,15 @@ export const Footer: React.FC = () => {
     <div className="max-w-[1477.5px] px-[50px] border-b-2 pb-[30px] pt-[50px]  mx-auto">
       <div className="md:flex  grid grid-cols-1 gap-[40px] pb-[25px]   md:flex-row w-full justify-between">
         <div>
-          <Img src={data.companyContent.image} alt="logo" className="w-[220px] " />
+          <Img src="/images/logo/logodarknew.png" alt="logo" className="w-[220px] " />
           <p className="max-w-[350px] text-[16px] mt-[12px] font-normal">
-            {data.companyContent.title}
+            Full stack mobile (iOS, Android) and web app design and development
+            agency
           </p>
           <div className="flex pt-[20px] md:block  justify-center items-center md:justify-start">
             <Button
                 onClick={handleOpen}
+
                 className="text-[16px] ButtonTransition   overflow-hidden min-w-[200px] font-semibold "
               sx={{
                 '&.MuiButtonBase-root': {
@@ -115,7 +117,7 @@ export const Footer: React.FC = () => {
                 },
               }}
             >
-              {data.companyContent.buttonName}
+              <a href="#">Book Consultation</a>
             </Button>
           </div>
           <Dialog open={open} onClose={handleClose}>

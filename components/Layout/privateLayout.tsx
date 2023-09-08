@@ -54,6 +54,16 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                     label:'Our Tech',
                     href:'/admin/common/OurTech',
                     active: false
+                },
+                {
+                    label:'Footer',
+                    href:'/admin/common/Footer',
+                    active:false
+                },
+                {
+                    label:'Our Success Story',
+                    href:'/admin/common/OurSuccessStory',
+                    active: false
                 }
             ]
         },
@@ -273,10 +283,20 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                     active: false
                 },
                 {
-                    label: 'Form',
-                    href: '/admin/contact/form',
+                    label: 'About',
+                    href: '/admin/Industries/About',
                     active: false
                 },
+                {
+                    label:'Development',
+                    href:'/admin/Industries/Development',
+                    active:false
+                },
+                {
+                  label:'Faq',
+                  href:'/admin/Industries/Faq',
+                  active: false
+                }
             ]
         },
         {

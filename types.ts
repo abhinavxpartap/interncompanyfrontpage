@@ -172,10 +172,8 @@ export interface LoginInterface {
 export interface AboutData {
     title: string;
     image: string;
-    button: {
-        name: string;
-        href: string;
-    };
+    buttonName:string;
+    buttonLink:string;
     fintechData: {
         title: string;
         subtitle: string;
@@ -389,6 +387,15 @@ export interface CaseStudyInterface {
     org: string,
     description: string,
     href: string,
+}
+
+export interface SuccessStoryInterface {
+    heading:string,
+    imgUrl:string,
+    description:string,
+    subtitle:string,
+    href:string,
+    country:string,
 }
 export interface SuccessStoryStudyInterface {
     heading:string,

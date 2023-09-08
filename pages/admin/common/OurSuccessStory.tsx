@@ -2,40 +2,38 @@ import React, { useContext, useState } from "react";
 import { Button } from "../../../utils/Button";
 import toast from "react-hot-toast";
 import { LoaderContext } from "../../../context/LoaderContext";
-import pageData from "../../../data/common/CaseStudy.json";
+import pageData from "../../../data/common/SuccessStory.json";
 import { ImageOverlay } from "../../../utils/Admin/ImageOverlay";
 import { Input, TextArea } from "../../../utils/Input";
 import PrivateLayout from "../../../components/Layout/privateLayout";
-import {CaseStudyInterface} from "../../../types";
+import {SuccessStoryInterface} from "../../../types";
 
 interface ParamsInterface {
     title: string;
     subtitle: string;
-    tagButton: string;
 }
 interface PageDataInterface {
     bannerData: ParamsInterface;
-    caseStudies:CaseStudyInterface[]
+    SuccessStory:SuccessStoryInterface[]
 }
-const CaseStudyPage = () => {
+const OurSuccessStoryPage = () => {
     const { setIsLoading } = useContext(LoaderContext);
     const [params1, setParams1] = useState<ParamsInterface>({
         title:pageData.bannerData.title,
         subtitle: pageData.bannerData.subtitle,
-        tagButton: pageData.bannerData.tagButton,
     });
 
     const save = async (
         pageData: PageDataInterface,
-        headerData: CaseStudyInterface[],
+        headerData: SuccessStoryInterface[],
         params1: ParamsInterface
     ) => {
         setIsLoading(true);
         const dataToSave = {
-            fileUrl: "/common/CaseStudy.json",
+            fileUrl: "/common/SuccessStory.json",
             updatedContent: JSON.stringify({
                 ...pageData,
-                caseStudies: headerData,
+                SuccessStory: headerData,
                 bannerData: params1
             }),
         };
@@ -64,7 +62,7 @@ const CaseStudyPage = () => {
         setParams1(newParams);
     };
 
-    const [headerData, setHeaderData] = useState<CaseStudyInterface[]>(pageData.caseStudies);
+    const [headerData, setHeaderData] = useState<SuccessStoryInterface[]>(pageData.SuccessStory);
     const setParams = (index: number, key: string, value: string): void => {
         const updatedItems = [...headerData];
         updatedItems[index] = {
@@ -77,11 +75,12 @@ const CaseStudyPage = () => {
     const addLinks = () => {
         const newLinks = [...headerData];
         newLinks.push({
-            heading:"",
-            imgUrl: "",
-            org: "",
-            description: "",
-            href: "",
+            heading:'',
+            imgUrl:'',
+            description:'',
+            subtitle:'',
+            href:'',
+            country:'',
         });
         setHeaderData(newLinks);
     }
@@ -96,11 +95,11 @@ const CaseStudyPage = () => {
         save(pageData,headerData,params1);
     };
 
-    return <PrivateLayout title="Zuca - Case Study">
+    return <PrivateLayout title="Zuca - Our Success Story">
         <div className="flex flex-col gap-[16px]">
             <div className="flex items-center gap-[16px]">
                 <h3 className="flex-1 text-[21px] tracking-[1.2px] font-semibold text-[#101D2C]">
-                    Case Study
+                    Our Success Story
                 </h3>
                 <Button
                     label="Save"
@@ -134,19 +133,10 @@ const CaseStudyPage = () => {
                         className="rounded admin-input"
                     />
                 </div>
-                <div className="p-[10px]">
-                    <Input
-                        label="Tab Button Name"
-                        placeholder="Tag Button Name"
-                        value={params1.tagButton}
-                        onChange={e => setBannerParams('tagButton', e.target.value)}
-                        className="rounded admin-input"
-                    />
-                </div>
             </div>
             <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-[16px]">
                 {
-                    headerData.map((item:CaseStudyInterface, index: number) => {
+                    headerData.map((item:SuccessStoryInterface, index: number) => {
                         return <div key={index} className="rounded border overflow-hidden bg-white">
                             <ImageOverlay
                                 withOverlay
@@ -159,28 +149,28 @@ const CaseStudyPage = () => {
                             <div className="p-[5px]">
                                 <div className="p-[5px]">
                                     <Input
-                                        label="Org"
-                                        placeholder="Label"
-                                        value={item.org}
-                                        onChange={e => setParams(index, "org", e.target.value)}
-                                        className="rounded admin-input"
-                                    />
-                                </div>
-                                <div className="p-[5px]">
-                                    <Input
                                         label="Heading"
-                                        placeholder="Label"
+                                        placeholder="Heading"
                                         value={item.heading}
                                         onChange={e => setParams(index, "heading", e.target.value)}
                                         className="rounded admin-input"
                                     />
                                 </div>
                                 <div className="p-[5px]">
-                                    <TextArea
-                                        label="Description"
-                                        placeholder="Label"
-                                        value={item.description}
-                                        onChange={e => setParams(index, "description", e.target.value)}
+                                    <Input
+                                        label="Subtitle"
+                                        placeholder="subtitle"
+                                        value={item.subtitle}
+                                        onChange={e => setParams(index, "subtitle", e.target.value)}
+                                        className="rounded admin-input"
+                                    />
+                                </div>
+                                <div className="p-[5px]">
+                                    <Input
+                                        label="Country"
+                                        placeholder="Country"
+                                        value={item.country}
+                                        onChange={e => setParams(index, "country", e.target.value)}
                                         className="rounded admin-input"
                                     />
                                 </div>
@@ -193,6 +183,15 @@ const CaseStudyPage = () => {
                                         className="rounded admin-input"
                                     />
                                 </div>
+                                <div className="p-[5px]">
+                                    <TextArea
+                                        label="Description"
+                                        placeholder="Label"
+                                        value={item.description}
+                                        onChange={e => setParams(index, "description", e.target.value)}
+                                        className="rounded admin-input"
+                                    />
+                                </div>
                             </div>
                         </div>
                     })
@@ -202,4 +201,4 @@ const CaseStudyPage = () => {
     </PrivateLayout>
 }
 
-export default CaseStudyPage;
+export default OurSuccessStoryPage;

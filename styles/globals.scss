@@ -1291,3 +1291,40 @@ left:12px;
     background: #8184EB;
     width: 40px;
 }
+
+.text-\[\#177DF0\] {
+    --tw-text-opacity: 1;
+    color: rgba(163, 165, 255, 1)
+}
+.features-box-one {
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: .5s
+}
+
+
+.service-card {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.service-card.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+

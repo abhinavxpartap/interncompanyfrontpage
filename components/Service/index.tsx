@@ -4,17 +4,9 @@ import { Img } from '../../utils/Img';
 import services from "../../data/HomePageService.json"
 
 const Service = () => {
-    const [showCard, setShowCard] = useState(false);
 
-    useEffect(() => {
-        const delay = setTimeout(() => {
-            setShowCard(true);
-        }, 1000);
-
-        return () => clearTimeout(delay);
-    }, []);
   return (
-      <div className={`md:px-[100px] relative flex flex-col items-center py-[40px] pt-[80px] text-center max-w-[1377.5px] overflow-hidden h-auto mx-auto ${showCard ? 'service-card show' : 'service-card'}`}>
+      <div className="md:px-[100px] features-area relative flex flex-col items-center py-[40px] pt-[80px] text-center max-w-[1377.5px] overflow-hidden h-auto mx-auto">
       <Button
         label={'WHAT WE DO?'}
         type="button"
@@ -31,7 +23,7 @@ const Service = () => {
           return (
             <div
               key={index}
-              className="bg-[#ffffff] social-icon:hover social-icon  px-[20px] py-[30px] rounded-[12px]"
+              className="bg-[#ffffff]  social-icon:hover social-icon  px-[20px] py-[30px] rounded-[12px]"
               style={{
                 boxShadow:
                   'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px',

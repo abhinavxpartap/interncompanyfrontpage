@@ -7,7 +7,7 @@ export const ServiceAbout: React.FC<ServiceAboutInterface> = (props) => {
 
   const content = (
     <>
-      <div className="max-w-[1377.5px] mx-auto flex flex-col  md:flex-row items-center justify-between pt-[80px] pb-[80px]">
+      <div className="max-w-[1377.5px] 2xl:max-w-[1650px] mx-auto flex flex-col  md:flex-row items-center justify-between pt-[80px] pb-[80px]">
         <div className=" w-[100%] md:w-[40vw] pb-[30px] sm:pb-[50px] md:pb-0">
           <Img src={image} className="w-[100%]" alt={'AboutImage'} />
         </div>

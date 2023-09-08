@@ -82,8 +82,8 @@ const BlogPage: React.FC = () => {
               <div className="flex flex-wrap mt-[25px] gap-[15px]">
                 {Data.BlogData.map((item, index: number) => (
                   <Button
-                    className={`md:text-[10px] lg:text-[13px] xl:text-[16px] ${
-                      isActive === index ? 'bg-[#177DF0]' : ''
+                    className={`md:text-[10px]  lg:text-[13px] xl:text-[16px] ${
+                      isActive === index ? 'bg-[#9699FF]' : ''
                     }`}
                     key={index}
                     sx={{
@@ -92,13 +92,13 @@ const BlogPage: React.FC = () => {
                       padding: '5px 12px',
                       border:
                         isActive === index
-                          ? '1px solid #177DF0'
-                          : '1px solid #5F5F5F',
+                          ? '1px solid #9699FF'
+                          : '1px solid #9699FF',
                       textTransform: 'capitalize',
                       '&:hover': {
                         color: '#ffffff',
-                        backgroundColor: '#177DF0',
-                        border: '1px solid #177DF0',
+                        backgroundColor: '#9699FF',
+                        border: '1px solid #9699FF',
                       },
                     }}
                     onClick={() => handleClick(index)}
@@ -149,10 +149,10 @@ const BlogPage: React.FC = () => {
                     className="text-[14px] md:text-[16px] capitalize font-semibold"
                     sx={{
                       backgroundColor: 'transparent',
-                      border: '2px solid #0092FF',
+                      border: '2px solid #9699FF',
                       padding: '8px 30px',
                       borderRadius: '30px',
-                      color: '#0092FF',
+                      color: '#9699FF',
                       position: 'relative',
                       overflow: 'hidden',
                       '&::before': {

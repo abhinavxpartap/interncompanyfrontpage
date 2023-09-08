@@ -93,7 +93,7 @@ export const Header= () => {
         }`}
       >
         <div className="max-w-[1377.5px] mx-auto">
-          <div className="flex flex-row  lg:gap-[70px] xl:gap-[250px] items-center ml-[-18px]">
+          <div className="flex flex-row  lg:gap-[70px] xl:gap-[200px] 2xl:gap-[250px] items-center ml-[-18px]">
             <div onClick={() => router.push('/')} className="cursor-pointer">
               <Img
                 src={logo || ''}
@@ -101,7 +101,7 @@ export const Header= () => {
                 className="  max-w-[230px]  xl:h-[41px]  h-[27px]"
               />
             </div>
-            <div className="flex-1 md:pl-[34px] sm:pl-[17px] pl-[5px] hidden lg:flex">
+            <div className="flex-1  hidden lg:flex">
               <div className="flex relative xxl:gap-[43px] md:gap-[30px]">
                 <Dropdown
                   title="About"
@@ -189,7 +189,7 @@ export const Header= () => {
             <div className="hidden lg:block">
 
               <Button
-                  className="ButtonTransition overflow-hidden text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
+                  className="ButtonTransition overflow-hidden text-[10px] sm:text-[12px] lg:text-[12px] 2xl:text-[16px] font-semibold "
                   onClick={handleOpen}
                   sx={{
                     '&.MuiButtonBase-root': {
@@ -277,7 +277,7 @@ export const Header= () => {
               />
               <div className="text-center">
                 <Button
-                    className="ButtonTransition overflow-hidden text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
+                    className="ButtonTransition overflow-hidden text-[10px] sm:text-[12px] md:text-[14px]  2xl:text-[16px] font-semibold "
                     onClick={handleOpen}
                     sx={{
                       '&.MuiButtonBase-root': {

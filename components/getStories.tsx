@@ -27,11 +27,11 @@ export const GetStories = () => {
               className="ButtonTransition overflow-hidden text-[14px] w-[130px] font-semibold "
               sx={{
                 '&.MuiButtonBase-root': {
-                  backgroundColor: '#177DF0',
+                  backgroundColor: '#9699FF',
                   color: 'white',
                   textTransform: 'capitalize',
                   padding: '8px 24px 8px 24px',
-                  border: '1px solid #5CA9FF',
+                  border: '1px solid #9699FF',
                   borderRadius: '30px',
                 },
               }}

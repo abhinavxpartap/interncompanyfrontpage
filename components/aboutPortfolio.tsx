@@ -17,7 +17,7 @@ export const AboutPortfolio: React.FC<PizzaHutInfo> = (props) => {
       <div className="w-[92%]  px-[20px] pt-[10px] pb-[20px] mx-auto flex flex-col bg-white rounded-[15px] boxshad">
         <div className="flex md:flex-row md:gap-[80px] flex-col">
           <div className="max-w-[650px]">
-            <h1 className="text-[30px] font-semibold">{title}</h1>
+            <h1 className="text-[30px] text-[#05227D] font-semibold">{title}</h1>
             <p className="text-[15px] mt-[8px] text-[#757B8A] font-normal">
               {subtitle}
             </p>

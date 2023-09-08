@@ -66,6 +66,7 @@ const ServicePage: React.FC = () => {
                     buttonName={serviceAssurance.bannerData.buttonName}
                     buttonLink={serviceAssurance.bannerData.buttonLink}
                     data={serviceAssurance.header}
+                    sideImage={serviceAssurance.bannerData.sideImage}
                     />
                     <ServiceTech/>
                     <OurBrands/>

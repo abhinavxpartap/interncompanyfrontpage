@@ -18,6 +18,7 @@ interface paramsInterface {
     image:string;
     buttonLink:string;
     buttonName:string;
+    sideImage:string;
 }
 
 interface pageDataInterface {
@@ -32,7 +33,8 @@ const Assurance = () => {
         title: pageData.bannerData.title,
         image:pageData.bannerData.image,
         buttonLink:pageData.bannerData.buttonLink,
-        buttonName:pageData.bannerData.buttonName
+        buttonName:pageData.bannerData.buttonName,
+        sideImage:pageData.bannerData.sideImage
     });
 
     const save = async (pageData:pageDataInterface, companies:ServiceInterface[], params1:paramsInterface) => {
@@ -159,6 +161,20 @@ const Assurance = () => {
                     />
                 </div>
             </div>
+                <div className="font-bold">
+                    Left Side Image
+                </div>
+                <div className="rounded border bg-white overflow-hidden md:h-[450px]">
+                    <ImageOverlay
+                        url={params1.sideImage}
+                        onUploadSuccess={(url) => setBannerParams('sideImage', url)}
+                        className="object-cover h-full"
+                        wrapperHeightClass="h-full"
+                    />
+                </div>
+            </div>
+            <div className="font-bold">
+                Right Side Image
             </div>
             <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[16px]">
                 {companies.map((item:ServiceInterface, index) => {

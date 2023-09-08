@@ -291,6 +291,7 @@ export interface Assurance {
     title: string;
     buttonName:string;
     buttonLink:string;
+    sideImage:string;
     data: {
         title: string;
         subtitle: string;

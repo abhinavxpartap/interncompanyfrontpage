@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import {Assurance} from "../types";
 
 export const ServicesAssurance: React.FC<Assurance> = (props) => {
-  const { image, data,title, buttonName,buttonLink } = props;
+  const { image, data,sideImage,title, buttonName,buttonLink } = props;
   const router = useRouter();
 
   const content = (
@@ -64,7 +64,7 @@ export const ServicesAssurance: React.FC<Assurance> = (props) => {
           </div>
           <div className="w-[100vw] md:w-[50vw] flex justify-center items-center">
             <Img
-              src="/AssuranceImage.svg"
+              src={sideImage}
               className="w-[90%] h-[100%] rounded-[10px]"
               alt={'AssuranceImage'}
             />

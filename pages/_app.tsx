@@ -43,6 +43,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       "/admin/Industries/Banner",
       "/admin/Industries/Development",
       "/admin/Industries/Faq",
+      "/admin/Industries/Technology",
       "/admin/common/CaseStudy",
       "/admin/common/OurBrands",
       "/admin/common/ProductOverview",

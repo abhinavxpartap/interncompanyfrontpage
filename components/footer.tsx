@@ -86,8 +86,8 @@ export const Footer: React.FC<any> = () => {
   const content = (
     <div className="max-w-[1477.5px] px-[50px] border-b-2 pb-[30px] pt-[50px]  mx-auto">
       <div className="md:flex  grid grid-cols-1 gap-[40px] pb-[25px]   md:flex-row w-full justify-between">
-        <div>
-          <Img src="/images/logo/logodarknew.png" alt="logo" className="w-[220px] " />
+        <div  className="social-icon:hover">
+          <Img src="/images/logo/logodarknew.png" alt="logo" className="w-[220px]  " />
           <p className="max-w-[350px] text-[16px] mt-[12px] font-normal">
             Full stack mobile (iOS, Android) and web app design and development
             agency

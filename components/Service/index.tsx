@@ -9,7 +9,7 @@ const Service = () => {
     useEffect(() => {
         const delay = setTimeout(() => {
             setShowCard(true);
-        }, 3000);
+        }, 1000);
 
         return () => clearTimeout(delay);
     }, []);
@@ -18,7 +18,7 @@ const Service = () => {
       <Button
         label={'WHAT WE DO?'}
         type="button"
-        className="max-w-[150px] px-[10px] py-[4px] bg-[#A1B4F7] text-[white] xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] text-[12px] hover:text-[#A1B4F7]"
+        className="max-w-[150px] px-[10px] py-[4px]   bg-[#A1B4F7] text-[white] xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] text-[12px] hover:text-[#A1B4F7]"
       />
       <div className="text-[#151448] md:text-[40px] text-[24px]  font-bold leading-[125%] mt-[13px] max-w-[481px]">
           {services.bannerData.title}

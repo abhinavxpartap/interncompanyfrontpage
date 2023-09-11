@@ -46,7 +46,7 @@ Success                </div>
                                         height: "35px",
                                         marginTop: "10px",
                                         '@media (min-width: 768px)': {
-                                            marginTop: "38px",
+                                            marginTop: "18px",
                                         },
                                         textTransform: "capitalize",
                                         fontWeight: "bold",

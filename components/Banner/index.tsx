@@ -52,7 +52,7 @@ export const Banner: React.FC<BannerDataInterface> = (props) => {
                                 color: 'white',
                                 textTransform: 'capitalize',
                                 padding: '8px 24px 8px 24px',
-                                border: '1px solid #FFFFFF',
+                                border: '1px solid #8184EB',
                                 borderRadius: '30px',
                                 '&:hover': {
                                     border: '1px solid #8184EB',

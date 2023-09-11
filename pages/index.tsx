@@ -12,6 +12,7 @@ import CaseStudy from '../components/Case Study';
 import Testimonials from '../components/Testimonials';
 import DemoForm from '../components/Demo Form';
 import seoData from "../data/seoData.json";
+import FixedButton from '../components/FixedButton';
 
 const Home: NextPage = () => {
   return (
@@ -64,6 +65,8 @@ const Home: NextPage = () => {
       >
         <DemoForm />
       </div>
+      {/*<FixedButton />*/}
+
       <Footer />
     </div>
       </>

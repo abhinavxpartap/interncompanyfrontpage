@@ -24,7 +24,7 @@ interface PageDataInterface {
     header:HeaderDataInterface[]
 }
 
-const DevelopmentPage = () => {
+const CompliancesPage = () => {
     const { setIsLoading } = useContext(LoaderContext);
 
     const [params1, setParams1] = useState<ParamsInterface>({
@@ -206,4 +206,4 @@ const DevelopmentPage = () => {
     </PrivateLayout>
 }
 
-export default DevelopmentPage;
+export default CompliancesPage;

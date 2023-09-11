@@ -160,7 +160,7 @@ const CaseStudyPage = () => {
                                 <div className="p-[5px]">
                                     <Input
                                         label="Org"
-                                        placeholder="Label"
+                                        placeholder="Org"
                                         value={item.org}
                                         onChange={e => setParams(index, "org", e.target.value)}
                                         className="rounded admin-input"
@@ -169,7 +169,7 @@ const CaseStudyPage = () => {
                                 <div className="p-[5px]">
                                     <Input
                                         label="Heading"
-                                        placeholder="Label"
+                                        placeholder="Heading"
                                         value={item.heading}
                                         onChange={e => setParams(index, "heading", e.target.value)}
                                         className="rounded admin-input"
@@ -178,7 +178,7 @@ const CaseStudyPage = () => {
                                 <div className="p-[5px]">
                                     <TextArea
                                         label="Description"
-                                        placeholder="Label"
+                                        placeholder="Description"
                                         value={item.description}
                                         onChange={e => setParams(index, "description", e.target.value)}
                                         className="rounded admin-input"

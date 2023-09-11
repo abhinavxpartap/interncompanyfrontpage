@@ -288,8 +288,8 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                     active: false
                 },
                 {
-                    label:'Development',
-                    href:'/admin/Industries/Development',
+                    label:'Compliances',
+                    href:'/admin/Industries/Compliances',
                     active:false
                 },
                 {

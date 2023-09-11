@@ -41,7 +41,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       "/admin/Service/Assurance",
       "/admin/Industries/About",
       "/admin/Industries/Banner",
-      "/admin/Industries/Development",
+      "/admin/Industries/Compliances",
       "/admin/Industries/Faq",
       "/admin/Industries/Technology",
       "/admin/common/CaseStudy",

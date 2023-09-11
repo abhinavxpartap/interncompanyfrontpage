@@ -15,8 +15,10 @@ interface AuthContextProps {
 
 const AuthContext = createContext<AuthContextProps>({
     user: null,
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
     login: () => {
     },
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
     logout: () => {
     },
 });
@@ -28,7 +30,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
     const login = async (params: User) => {
         setIsLoading(true);
-        const response = await fetch("/api/login", {
+        const response = await fetch("http://localhost:3000/api/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -37,7 +39,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
         });   
         if (response.status === 200) {
             setUser(params);
-            localStorage.setItem("user", JSON.stringify(params)); // Save user to localStorage
+            localStorage.setItem("user", JSON.stringify(params));
             router.push("/admin");
         }
         setIsLoading(false);

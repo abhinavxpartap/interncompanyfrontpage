@@ -26,7 +26,7 @@ interface pageDataInterface {
     bannerData:paramsInterface,
     header:HeaderDataInterface[];
 }
-const CaseStudyPage = () => {
+const ExpertTeamPage = () => {
     const { setIsLoading } = useContext(LoaderContext);
 
     const [params1, setParams1] = useState<paramsInterface>({
@@ -108,11 +108,11 @@ const CaseStudyPage = () => {
     };
 
 
-    return <PrivateLayout title="Zuca - Case Study">
+    return <PrivateLayout title="Zuca - Expert Team">
         <div className="flex flex-col gap-[16px]">
             <div className="flex items-center gap-[16px]">
                 <h3 className="flex-1 text-[21px] tracking-[1.2px] font-semibold text-[#101D2C]">
-                    Case Study
+                    Expert Team
                 </h3>
                 <Button
                     label="Save"
@@ -224,4 +224,4 @@ const CaseStudyPage = () => {
     </PrivateLayout>
 }
 
-export default CaseStudyPage;
+export default ExpertTeamPage;

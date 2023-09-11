@@ -172,8 +172,8 @@ const AboutPage = () => {
                         </div>
                         <div className="p-[10px]">
                             <TextArea
-                                label="Title"
-                                placeholder="Title"
+                                label="Subtitle"
+                                placeholder="Subtitle"
                                 value={item.subtitle}
                                 onChange={e => setParams(index, "subtitle", e.target.value)}
                                 className="rounded admin-input"

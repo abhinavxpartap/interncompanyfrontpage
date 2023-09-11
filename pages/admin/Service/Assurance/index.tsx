@@ -104,11 +104,11 @@ const Assurance = () => {
         save(pageData, companies, params1);
     };
 
-    return <PrivateLayout title="Zuca - Process">
+    return <PrivateLayout title="Zuca - Assurance">
         <div className="flex flex-col gap-[16px]">
             <div className="flex items-center gap-[16px]">
                 <h3 className="flex-1 text-[21px] tracking-[1.2px] font-semibold text-[#101D2C]">
-                    Service Process
+                    Service Assurance
                 </h3>
                 <Button
                     label="Save"
@@ -174,7 +174,7 @@ const Assurance = () => {
                 </div>
             </div>
             <div className="font-bold">
-                Right Side Image
+                Right Side Content
             </div>
             <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[16px]">
                 {companies.map((item:ServiceInterface, index) => {

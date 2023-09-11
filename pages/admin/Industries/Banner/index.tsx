@@ -48,11 +48,11 @@ const BannerPage = () => {
         setParams(newParams);
     }
 
-    return <PrivateLayout title="Zuca - Service Banner Section">
+    return <PrivateLayout title="Zuca - Industries Banner">
         <div className="flex flex-col gap-[16px]">
             <div className="flex items-center gap-[16px]">
                 <h3 className="flex-1 text-[21px] tracking-[1.2px] font-semibold text-[#101D2C]">
-                    Service Banner
+                    Industries Banner
                 </h3>
                 <Button
                     label="Save"

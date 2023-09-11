@@ -100,7 +100,7 @@ const CaseStudyPage = () => {
     };
 
 
-    return <PrivateLayout title="Zuca - Case Study">
+    return <PrivateLayout title="Zuca - Our Team">
         <div className="flex flex-col gap-[16px]">
             <div className="flex items-center gap-[16px]">
                 <h3 className="flex-1 text-[21px] tracking-[1.2px] font-semibold text-[#101D2C]">

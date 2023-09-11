@@ -294,11 +294,11 @@ const FooterPage = () => {
         save(pageData,services,social, help,about,params1);
     };
 
-    return <PrivateLayout title="Zuca - Our Tech">
+    return <PrivateLayout title="Zuca - Footer">
         <div className="flex flex-col gap-[16px]">
             <div className="flex items-center gap-[16px]">
                 <h3 className="flex-1 text-[21px] tracking-[1.2px] font-semibold text-[#101D2C]">
-                    Footer Company Section
+                    Footer Section
                 </h3>
                 <Button
                     label="Save"

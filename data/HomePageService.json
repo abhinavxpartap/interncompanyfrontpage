@@ -1,6 +1,6 @@
 {
   "bannerData": {
-    "title": "Zuca provides all kinds of services you need",
+    "title": "Alumeltech provides all kinds of services you need",
     "subtitle": "Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat."
   },
   "header": [
@@ -10,7 +10,7 @@
         "alt": "Icon 1"
       },
       "title": "Strategy & Research",
-      "description": "layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam."
+      "description": "Your success is our ultimate goal.Count on us for strategy and planning that transforms uncertainty into opportunity, propelling your business toward its full potential. "
     },
     {
       "image": {
@@ -18,7 +18,7 @@
         "alt": "Icon 2"
       },
       "title": "Software Development",
-      "description": "layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam."
+      "description": "Your online presence matters. We build user-friendly, high-impact websites that drive results, providing the digital foundation your business needs. Say goodbye to outdated sites and hello to responsive design and effortless navigation.\n\n"
     },
     {
       "image": {
@@ -26,7 +26,7 @@
         "alt": "Icon 3"
       },
       "title": "Web Design",
-      "description": "layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam."
+      "description": "First impressions count. We design visually stunning websites that captivate and engage visitors, ensuring your brand leaves a lasting mark. Don't let a subpar website deter potential customers; let us transform your vision into reality.\n ."
     }
   ]
 }

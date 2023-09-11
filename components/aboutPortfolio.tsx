@@ -15,17 +15,18 @@ export const AboutPortfolio: React.FC<PizzaHutInfo> = (props) => {
   const contentElement = (
     <div className="max-w-[1377.5px] relative top-[-25px] mx-auto">
       <div className="w-[92%]  px-[20px] pt-[10px] pb-[20px] mx-auto flex flex-col bg-white rounded-[15px] boxshad">
+        <div className="text-[30px] text-[#05227D] font-semibold">{title}</div>
+
         <div className="flex md:flex-row md:gap-[80px] flex-col">
           <div className="max-w-[650px]">
-            <h1 className="text-[30px] text-[#05227D] font-semibold">{title}</h1>
-            <p className="text-[15px] mt-[8px] text-[#757B8A] font-normal">
+            <p className="text-[15px] mt-[30px] text-[#757B8A] font-normal">
               {subtitle}
             </p>
             <p className="text-[15px] mt-[8px] leading-[25px] text-[#757B8A] font-normal">
               {content}
             </p>
           </div>
-          <div className="mt-[50px]">
+          <div className="mt-[30px]">
             <div className="flex md:gap-[120px] flex-row">
               <div>
                 <h1 className="text-[16px] font-medium text-[#757B8A]">

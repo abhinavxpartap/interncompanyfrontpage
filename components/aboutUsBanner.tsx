@@ -12,7 +12,7 @@ export const AboutUsBanner: React.FC<AboutUsBannerInterface> = (props) => {
         <div className=" font-bold fade-in  md:text-[55px] text-[30px] text-[white] justify-center text-center max-w-[750px] md:leading-[65px]">
           {title}
         </div>
-        <p className="font-medium pt-[15px] text-[18px] justify-center text-center text-[white]  max-w-[500px]">
+        <p className="font-medium pt-[15px] text-[18px] justify-center text-center text-[white]  max-w-[550px]">
           {subtitle}
         </p>
       </div>

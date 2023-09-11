@@ -450,15 +450,9 @@ input:checked::before {
         justify-content: center;
     }
 
-    .how-it-work-bg {
-        background-image: url(/images/howitworksbg-mobile.png) !important;
-    }
 
-    .why-choose-data-section-wrapper {
-        background-image: url("/images/why-choose-us-bg.svg");
-        background-repeat: no-repeat;
-        background-size: 165% auto;
-    }
+
+
 
     .why-choose-data-overlay {
         display: none;
@@ -569,12 +563,6 @@ input:checked::before {
     max-height: calc(100vh - 56px);
 }
 
-.banner_landing {
-    background-image: url(/Land_Banner.svg);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 .modal-content {
     position: relative;
@@ -647,12 +635,7 @@ details[open] .arrow-icon {
 }
 
 
-.partnerbanner {
-    background-image: url(/images/partnerbanner.svg);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+
 
 @media screen and (min-width: 767px) {
     .dropdown-button:hover .dropdown-container {
@@ -1051,14 +1034,7 @@ details[open] .arrow-icon {
 .linec{
   background: rgba(255, 102, 102, 0.50);
 }
-@media (min-width: 267px) and (max-width: 100000px ) {
-  .OurStoryBanner {
-    background-image: url("/contactBanner.svg");
-    background-size: cover;
 
-    background-repeat: no-repeat;
-  }
-}
 @media (min-width: 267px) and (max-width: 100000px ) {
   .TalkTo {
     background-image: url("/talkto.svg");

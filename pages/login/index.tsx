@@ -12,7 +12,7 @@ const Login = () => {
         username: '',
         password: ''
     });
-    const [showPassword, setShowPassword] = useState<Boolean>(false);
+    const [showPassword, setShowPassword] = useState<boolean>(false);
     const { login, user } = useAuth();
 
     const setParam = (key: string, value: string) => {

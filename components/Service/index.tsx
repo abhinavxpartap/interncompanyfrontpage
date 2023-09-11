@@ -25,19 +25,22 @@ const Service = () => {
                     return (
                         <div
                             key={index}
-                            className="bg-[#ffffff]  social-icon:hover social-icon  px-[20px] py-[30px] rounded-[12px]"
+                            className="bg-[#ffffff]  social-icon:hover social-icon  px-[20px] pt-[20px] rounded-[12px]"
                             style={{
                                 boxShadow:
                                     'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px',
                             }}
                         >
                             <div className="flex justify-center items-center">
-                                <Img src={service.image.src} className="w-[45px]" alt={service.image.alt}/>
+                                <Img src={service.image.src} className=" relative top-[-50px] w-[45px]" alt={service.image.alt}/>
                             </div>
-                            <h1 className="text-[20px] lg:text-[15px] text-center xl:text-[20px] pt-[15px] font-semibold text-[#042552]">
+                            <h1 className="text-[20px] relative top-[-50px]  lg:text-[15px] text-center xl:text-[20px] pt-[15px] font-semibold text-[#042552]">
                                 {service.title}
                             </h1>
-                            <p className=" pr-[10px] pt-[5px] text-[#757B8A] text-[16px] lg:text-[12px] xl:text-[16px] font-normal">
+                            <p className="  text-center relative top-[-50px] text-[16px] lg:text-[18px]  font-semibold text-[#042552]">
+                                {service.subtitle}
+                            </p>
+                            <p className=" pr-[10px] pt-[5px] relative top-[-50px] text-center text-[#757B8A] text-[16px] lg:text-[12px] xl:text-[16px] font-normal">
                                 {service.description}
                             </p>
                         </div>

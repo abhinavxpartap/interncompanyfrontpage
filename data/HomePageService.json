@@ -10,6 +10,8 @@
         "alt": "Icon 1"
       },
       "title": "Strategy & Research",
+      "subtitle": "Your Path to Success",
+
       "description": "Your success is our ultimate goal.Count on us for strategy and planning that transforms uncertainty into opportunity, propelling your business toward its full potential. "
     },
     {
@@ -18,6 +20,8 @@
         "alt": "Icon 2"
       },
       "title": "Software Development",
+      "subtitle": "Your Digital Success Foundation",
+
       "description": "Your online presence matters. We build user-friendly, high-impact websites that drive results, providing the digital foundation your business needs. Say goodbye to outdated sites and hello to responsive design and effortless navigation.\n\n"
     },
     {
@@ -26,6 +30,8 @@
         "alt": "Icon 3"
       },
       "title": "Web Design",
+      "subtitle": "Captivating User Experiences",
+
       "description": "First impressions count. We design visually stunning websites that captivate and engage visitors, ensuring your brand leaves a lasting mark. Don't let a subpar website deter potential customers; let us transform your vision into reality.\n ."
     }
   ]

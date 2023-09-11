@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import {PortfolioBanner} from "../components/PortfolioBanner";
-import ProjectChallanges from "../components/ProjectChallanges";
+import  {ProjectChallangesNew} from "../components/ProjectChallanges";
 import {AboutPortfolio} from "../components/aboutPortfolio";
 import {Director} from "../components/director";
 import {Journey} from "../components/journey";
@@ -16,6 +16,8 @@ import {Footer} from "../components/footer";
 import data from '../data/aboutPortfolio.json';
 import seoData from "../data/seoData.json";
 import Head from "next/head";
+import {NewPortofilioJourney} from "../components/PortofilioJourney";
+import {PortfolioOurProcess} from "../components/PortfolioOurProcess";
 
 const Portfolio: NextPage = () => {
     return (
@@ -52,16 +54,25 @@ const Portfolio: NextPage = () => {
                 message={serviceData.Director.message}
                 post={serviceData.Director.post}
             />
-            <Journey
-                title={PortData.Journey.title}
-                subtitle1={PortData.Journey.subtitle1}
-                subtitle2={PortData.Journey.subtitle2}
+            <NewPortofilioJourney
+                List1={serviceData.NewJourney.Data1}
+                List2={serviceData.NewJourney.Data2}
+                heading={serviceData.NewJourney.heading}
+                subtitle2={serviceData.NewJourney.subtitle2}
+                title1={serviceData.NewJourney.title1}
+                title2={serviceData.NewJourney.title2}
             />
-    
-            <OurProcess2/>
+            <PortfolioOurProcess
+             List={serviceData.OurProcessNew.Data1}
+             heading={serviceData.OurProcessNew.heading}
+            />
             <OurProcess/>
-            <ProjectChallanges/>
-            <Results/>
+            <ProjectChallangesNew/>
+            <Results
+                List={serviceData.ResultNew.Data}
+                heading={serviceData.ResultNew.heading}
+                subtitle={serviceData.ResultNew.subtitle}
+            />
             <div className="max-w-[1377.5px] justify-center flex mx-auto ">
                 <div className="w-[85%] flex flex-col px-[20px] md:px-[40px] py-[50px]">
                     <h1 className="text-[#151448] text-start mb-[25px] text-[38px] md:text-[40px] font-semibold">More Case Studies</h1>

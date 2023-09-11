@@ -16,10 +16,118 @@
     "image": "/images/logo/director.svg",
     "mobileImage": "/Testimonial.svg"
   },
-  "Journey": {
-    "title": "Zuca’s Development Journey with Pizza Hut:",
-    "subtitle1": "Following a Product Discovery workshop, we invested most of our promised time in product research & wire-framing to lay out the structure & architecture of how Pizza Hut had perceived their new app to look like. Our development team put extensive effort on UI designing that could improve the user's journey across the Pizza Hut app for an easy, speedy and glitch-free food ordering and delivery experience.",
-    "subtitle2": "The pizza hut delivery service app we created assists our client in achieving long-term success along with having regular updates to investigate performance and consistency, resulting in increasing application traffic. Furthermore, our team integrated unique features to automate food ordering & delivery right at the customer's doorstep eliminating unexpected delays."
+  "NewJourney": {
+    "heading": "Alumeltech Development Journey with Dream Homes:",
+    "title1": "Key Features:",
+    "title2": "Our Approach for Dream Homes Realties:",
+    "subtitle2": "At Alumeltech, we embarked on the journey with Dream Homes Realty driven by a shared vision of innovation and excellence. Our approach was centered around harnessing the potential of AI and data to redefine the real estate experience. Here's how we approached this transformative project:",
+    "Data1": [
+      {
+        "id":1,
+        "title":"AI-Driven Property Recommendations",
+        "content":" By analyzing user behavior and preferences, our AI algorithm recommended properties tailored to each visitor's needs."
+      },
+      {
+        "id":2,
+        "title":"Data Analytics",
+        "content":"We implemented data analytics to provide insights into market trends, helping Dream Homes Realty make informed business decisions."
+      },
+      {
+        "id":3,
+        "title":"Fast and Responsive",
+        "content":"Our use of React ensured lightning-fast property searches and a responsive user interface. Efficient"
+      },
+      {
+        "id":4,
+        "title":"Efficient Property Management",
+        "content":"A user-friendly backend powered by Node.js made property management a breeze for the Dream Homes Realty team."
+      }
+    ],
+    "Data2": [
+      {
+        "id":1,
+        "title":"Empathizing with the Vision",
+        "content":"Just as understanding the lay of the land is crucial for explorers, we began by empathizing with Dream Homes Realty's vision, grasping their objectives and unique challenges."
+      },
+      {
+        "id":2,
+        "title":"Leveraging Data Insights",
+        "content":"Similar to explorers studying maps, we gathered critical market insights through data analytics, empowering us with the knowledge needed to chart the course ahead."
+      },
+      {
+        "id":3,
+        "title":"AI-Centric Strategy",
+        "content":" Our approach heavily leaned on AI solutions. We integrated AI algorithms to deliver personalized recommendations, ensuring that every user's real estate journey was unique and efficient."
+      },
+      {
+        "id":4,
+        "title":"Tech-Powered Execution",
+        "content":"We harnessed the prowess of cutting-edge technologies, utilizing advanced frameworks and languages to craft a robust and responsive platform."
+      },
+      {
+        "id":5,
+        "title":"Client-Centric Focus",
+        "content":"Our approach was built on client-centricity, ensuring that every technological innovation and design choice served the ultimate goal of enhancing the real estate experience for Dream Homes Realty's clients."
+      }
+    ]
+  },
+  "OurProcessNew": {
+    "heading": "Our Process for Dream Homes Realties",
+    "Data1": [
+      {
+        "id":1,
+        "title":"Strategic Consultation",
+        "content":"The journey commenced with strategic consultations, deep-diving into Dream Homes Realty's objectives and market dynamics to align our technology with their vision."
+      },
+      {
+        "id":2,
+        "title":"Data-Driven Analysis",
+        "content":"Much like an explorer relies on maps, we gathered and analyzed market data and trends, empowering us with insights that fueled our strategic decisions."
+      },
+      {
+        "id":3,
+        "title":"AI Implementation",
+        "content":"The heart of our process was AI. We implemented AI-driven solutions that delivered tailored recommendations to property seekers, enhancing their experience."
+      },
+      {
+        "id":4,
+        "title":"Tech-Centric Development",
+        "content":"Leveraging cutting-edge technologies such as Python, we developed a robust and efficient platform that met the demands of today's real estate market."
+      },
+      {
+        "id":5,
+        "title":"User-Centric Design",
+        "content":"Our design choices were centered on delivering an exceptional user experience, ensuring that the platform was intuitive and visually engaging."
+      },
+      {
+        "id":6,
+        "title":"Testing and Quality Assurance",
+        "content":"We meticulously tested every aspect of the system, ensuring it met the highest standards of performance and security."
+      },
+      {
+        "id":7,
+        "title":"Deployment and Support",
+        "content":"After thorough testing, we deployed the system and provided ongoing support to guarantee a seamless user experience."
+      }
+    ]
+  },
+  "ResultNew": {
+    "heading": "Benefits",
+    "subtitle": "Working with us, Dream Homes Realties not only revitalized their online presence but also achieved tangible business benefits:",
+    "Data": [
+      {
+        "title": "Improved user experience with faster searches."
+      },
+      {
+        "title": "Increased revenue by attracting more potential buyers."
+      },
+      {
+        "title": "Gained a competitive edge with AI-driven recommendations."
+      },
+      {
+        "title": "Enhanced decision-making through data-driven insights."
+      }
+    ]
   },
   "Portfolio": {
     "title": "Web application development process",

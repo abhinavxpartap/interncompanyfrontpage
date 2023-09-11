@@ -36,12 +36,21 @@ Success                </div>
                             <div className="text[#5A7184] text-[12px] leading-[18px] md:text-[16px]  font-normal md:leading-[26px]">{SuccessStory.subtitle}</div>
                             <div>
                                 <MUIMaterial.Button
-                                    className="text-[12px] max-w-[115px] w-[115px] h-[35px] mt-[10px] md:mt-[18px] capitalize font-bold leading-[150%]"
                                     sx={{
                                         backgroundColor: "transparent",
                                         border: "1px solid #5A7184",
                                         borderRadius: "20px",
                                         color: "#5A7184",
+                                        fontSize: "12px",
+                                        maxWidth: "115px",
+                                        height: "35px",
+                                        marginTop: "10px",
+                                        '@media (min-width: 768px)': {
+                                            marginTop: "38px",
+                                        },
+                                        textTransform: "capitalize",
+                                        fontWeight: "bold",
+                                        lineHeight: "150%",
                                     }}
                                     onClick={() => {
                                         router.push(`${SuccessStory.href}`);

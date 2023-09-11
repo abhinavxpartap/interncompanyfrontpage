@@ -33,7 +33,7 @@ const Home: NextPage = () => {
              />
             <WhatWeAre
               title1={aboutUs.WhatWe.title1}
-              subtitle1={aboutUs.WhatWe.subtitle2}
+              subtitle1={aboutUs.WhatWe.subtitle1}
               title2={aboutUs.WhatWe.title2}
               subtitle2={aboutUs.WhatWe.subtitle2}
              />

@@ -197,7 +197,7 @@ export const Header= () => {
                       color: 'white',
                       textTransform: 'capitalize',
                       padding: '8px 24px 8px 24px',
-                      border: '1px solid #8184EB',
+                      border: '1px solid #FFFFFF',
                       borderRadius: '30px',
                       '&:hover': {
                         border: '1px solid #8184EB',
@@ -207,7 +207,7 @@ export const Header= () => {
                     },
                   }}
               >
-                Book a demo
+                Transform My Startup Now
               </Button>
             </div>
             <Dialog open={open} onClose={handleClose}>

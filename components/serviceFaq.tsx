@@ -123,7 +123,15 @@ export const ServicesFaq: React.FC<Faq> = (props) => {
                   >
                     <Grid
                       key={tab.id}
-                      className="px-[20px] ml-[20px] lg:ml-[40px] rounded-[8px] bg-[white]"
+                      sx={{
+                          paddingLeft: "20px",
+                          marginLeft: "20px",
+                          '@media (min-width: 1024px)': {
+                              marginLeft: "40px",
+                          },
+                          borderRadius: "8px",
+                          backgroundColor: "white",
+                      }}
                       style={{
                         boxShadow:
                           'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px',
@@ -136,11 +144,19 @@ export const ServicesFaq: React.FC<Faq> = (props) => {
                           xs
                           onClick={() => handleTabToggle(tab.id)}
                           component={Grid}
-                          className={`text-[13px]  leading-[18px] md:text-[15px] font-medium md:leading-[26px] tracking-[0.5px] p-3 ${
-                            activeTab === tab.id
-                              ? 'text-[#8184EB]'
-                              : 'text-[#000000]'
-                          }`}
+                          sx={{
+                              fontSize: "13px",
+                              lineHeight: "18px",
+                              '@media (min-width: 768px)': {
+                                  fontSize: "15px",
+                                  lineHeight: "26px",
+                              },
+                              fontWeight: "medium",
+                              letterSpacing: "0.5px",
+                              padding: "3px",
+                              color: activeTab === tab.id ? "#8184EB" : "#000000",
+                          }}
+
                         >
                           <span>{tab.id}.</span> {tab.title}
                         </Typography>
@@ -165,7 +181,19 @@ export const ServicesFaq: React.FC<Faq> = (props) => {
                       {activeTab === tab.id && (
                         <Typography
                           variant="subtitle1"
-                          className="text-[12px] leading-[18px] md:text-[14px] font-normal md:leading-[22px] tracking-[0.5px] pl-3 pb-[20px] text-[#757B8A]"
+                          sx={{
+                              fontSize: "12px",
+                              lineHeight: "18px",
+                              '@media (min-width: 768px)': {
+                                  fontSize: "14px",
+                                  lineHeight: "22px",
+                              },
+                              fontWeight: "normal",
+                              letterSpacing: "0.5px",
+                              paddingLeft: "3px",
+                              paddingBottom: "20px",
+                              color: "#757B8A",
+                          }}
                         >
                           {tab.content}
                         </Typography>
@@ -175,7 +203,6 @@ export const ServicesFaq: React.FC<Faq> = (props) => {
                 </Step>
               ))}
             </Stepper>
-            <div className="gap-[15px] flex flex-col"></div>
           </div>
         </div>
       </div>

@@ -25,7 +25,7 @@ export const WhatWeAre: React.FC<WhatWeInterface> = (props) => {
           </div>
           <div className="flex z-[20] md:flex-row justify-between w-full flex-col">
             <div className="md:text-[50px] z-[20] text-[40px]  font-bold">
-              {title1}{' '}
+              {title1}
             </div>
 
             <div className="bg-white rounded-[12px] z-[20]  md:mt-0 mt-[10px]   p-[15px] border-2">
@@ -43,7 +43,7 @@ export const WhatWeAre: React.FC<WhatWeInterface> = (props) => {
           </div>
           <div className="flex md:flex-row justify-between mt-[35px] w-full flex-col">
             <div className="md:text-[50px] z-[20] text-[40px] font-bold">
-              {title2}{' '}
+              {title2}
             </div>
             <div className="bg-white rounded-[12px] z-[20] md:mt-0 mt-[10px]    p-[15px] border-2">
               <div className="text-[18px] font-normal text-[#333] max-w-[550px]">

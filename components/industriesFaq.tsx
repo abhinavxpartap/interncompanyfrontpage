@@ -36,15 +36,29 @@ export const IndustriesFaq: React.FC<FaqInterFace> = (props) => {
                     xs
                     onClick={() => handleTabToggle(tab.id)}
                     component={Grid}
-                    className={`text-[16px]  md:text-[18px] font-medium leading-[22px] md:leading-[26px] tracking-[0.5px] p-3 ${
-                      openTabs.includes(tab.id)
-                        ? 'text-[#8184EB]'
-                        : 'text-[#333333]'
-                    }`}
+                    sx={{
+                      fontSize: "16px", // text-[16px]
+                      '@media (min-width: 768px)': {
+                        fontSize: "18px", // md:text-[18px]
+                        lineHeight: "26px", // md:leading-[26px]
+                      },
+                      fontWeight: "medium", // font-medium
+                      lineHeight: "22px", // leading-[22px]
+                      letterSpacing: "0.5px", // tracking-[0.5px]
+                      padding: "3px", // p-3
+                      color: openTabs.includes(tab.id) ? "#8184EB" : "#333333", // Conditional text color
+                    }}
+
+
                   >
                     {tab.title}
                   </Typography>
-                  <Grid className="p-1 md:p-3">
+                  <Grid sx={{
+                    padding: "4px", // p-1
+                    '@media (min-width: 768px)': {
+                      padding: "12px", // md:p-3
+                    },
+                  }}>
                     <IconButton onClick={() => handleTabToggle(tab.id)}>
                       {!openTabs.includes(tab.id) ? (
                         <Img
@@ -66,7 +80,21 @@ export const IndustriesFaq: React.FC<FaqInterFace> = (props) => {
                   <>
                     <Typography
                       variant="subtitle1"
-                      className="text-[13px] leading-[20px] md:text-[16px] font-normal md:leading-[22px] tracking-[0.5px] pl-3  pb-[10px] mb:pb-[20px] text-[#4B5A69]"
+                      sx={{
+                        fontSize: "13px", // text-[13px]
+                        lineHeight: "20px", // leading-[20px]
+                        '@media (min-width: 768px)': {
+                          fontSize: "16px", // md:text-[16px]
+                          lineHeight: "22px", // md:leading-[22px]
+                          paddingBottom: "20px", // mb:pb-[20px]
+
+                        },
+                        fontWeight: "normal", // font-normal
+                        letterSpacing: "0.5px", // tracking-[0.5px]
+                        paddingLeft: "3px", // pl-3
+                        paddingBottom: "10px", // pb-[10px]
+                        color: "#4B5A69", // text-[#4B5A69]
+                      }}
                     >
                       {tab.content}
                     </Typography>

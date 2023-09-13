@@ -8,13 +8,13 @@ export const AboutPortfolio: React.FC<PizzaHutInfo> = (props) => {
 
   const imageElements = images.map((imageUrl: string, index: number) => (
     <div key={index}>
-      <Img src={imageUrl} alt={`Image ${index}`} className="w-[340px]" />
+      <Img src={imageUrl} alt={`Image ${index}`} className="w-auto h-auto" />
     </div>
   ));
 
   const contentElement = (
     <div className="max-w-[1377.5px] relative top-[-25px] mx-auto">
-      <div className="w-[92%]  px-[20px] pt-[10px] pb-[20px] mx-auto flex flex-col bg-white rounded-[15px] boxshad">
+      <div className="w-[94%]  px-[20px] pt-[10px] pb-[20px] mx-auto flex flex-col bg-white rounded-[15px] boxshad">
         <div className="text-[30px] text-[#05227D] font-semibold">{title}</div>
 
         <div className="flex md:flex-row md:gap-[80px] flex-col">
@@ -52,7 +52,7 @@ export const AboutPortfolio: React.FC<PizzaHutInfo> = (props) => {
           </div>
         </div>
       </div>
-      <div className="md:flex grid grid-cols-2 mt-[40px] justify-between md:flex-row ">
+      <div className="md:flex grid  w-[94%] mx-auto grid-cols-2 mt-[40px] py-[60px] justify-between md:flex-row ">
         {imageElements}
       </div>
     </div>

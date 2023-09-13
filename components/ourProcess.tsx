@@ -4,11 +4,11 @@ import imagePort from'../data/portfolio.json'
 export const OurProcess = () => {
 
   const content = (
-    <div className="max-w-[1377.5px] relative  mx-auto">
-      <div className=" pt-[40px] grid md:grid-cols-4 grid-cols-2 justify-between md:flex-row flex-col">
+    <div className="max-w-[1377.5px] py-[100px] relative  mx-auto">
+      <div className=" pt-[40px] grid md:grid-cols-4 mb-[50px] grid-cols-2 gap-y-[60px]  md:flex-row flex-col">
         {imagePort.imagePort.map((src, index) => (
           <div key={index}>
-            <Img src={src} alt="w" className="w-[340px]" />
+            <Img src={src} alt="w" className="w-auto h-auto" />
           </div>
         ))}
       </div>

@@ -6,9 +6,9 @@
   "businessType": "Enterprise",
   "services": "Design, Development, Support & Maintenance",
   "images": [
-    "/m1.svg",
-    "/m2.svg",
-    "/m3.svg",
-    "/m4.svg"
+    "/portfolio/m1.svg",
+    "/portfolio/m2.svg",
+    "/portfolio/m3.svg",
+    "/portfolio/m4.svg"
   ]
 }

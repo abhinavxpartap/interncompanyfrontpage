@@ -73,28 +73,7 @@ const Portfolio: NextPage = () => {
                 heading={serviceData.ResultNew.heading}
                 subtitle={serviceData.ResultNew.subtitle}
             />
-            <div className="max-w-[1377.5px] justify-center flex mx-auto ">
-                <div className="w-[85%] flex flex-col px-[20px] md:px-[40px] py-[50px]">
-                    <h1 className="text-[#151448] text-start mb-[25px] text-[38px] md:text-[40px] font-semibold">More Case Studies</h1>
-                    <div className="w-[100%] mx-auto md:mx-0">
-                        <div className="w-[100%] gap-[60px]   grid grid-cols-1 md:grid-cols-2 ">
-                            {Data.BlogData.slice(0, 2).map((item, index:number) => (
-                                <BlogCards
-                                    key={index}
-                                    AuthorName={item.AuthorName}
-                                    img={item.image}
-                                    title={item.title}
-                                    description={item.description}
-                                    url={item.URL}
-                                    categories={item.categories}
-                                    Date={item.Date}
-                                />
-                            ))}
-                        </div>
 
-                    </div>
-                </div>
-            </div>
 
 
 <Footer/>

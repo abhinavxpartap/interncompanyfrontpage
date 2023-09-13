@@ -56,7 +56,7 @@ const responsive = {
 const Testimonials = () => {
   return (
     <div className="md:px-[100px] px-0 pb-[100px] relative flex flex-col items-center py-[40px] pt-[160px] text-center max-w-[1377.5px] overflow-hidden mx-auto">
-      <div className="text-[#E8EDFF] -z-[30] lg:text-[250px] text-[140px] absolute  font-medium leading-[70%] tracking-[-20px] lg:w-[754px] w-[450px] top-[12.5%] text-start ">
+      <div className="text-[#E8EDFF]  -z-[30] lg:text-[250px] text-[140px] absolute  font-medium leading-[70%] tracking-[-20px] lg:w-[754px] w-[450px] top-[12.5%] text-start ">
         Testimonials
       </div>
       <Button
@@ -65,16 +65,15 @@ const Testimonials = () => {
         className="uppercase max-w-[150px] md:px-[10px] py-[4px] bg-[#A1B4F7] text-[white] xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] text-[12px] hover:text-[#A1B4F7]"
       />
         <div>
-            <Img src="/images/logo/quote.png" className="w-full relative sm:left-[-260px] left-[-100px] top-[25px] -z-[10]" alt="arrow"/>
+            <Img src="/images/logo/quote.png" className="w-[50px]  relative md:left-[-355px] left-[-150px]  -z-[10]" alt="arrow"/>
 
         </div>
-      <div className="text-[#151448] md:text-[40px] text-[20px] font-bold leading-[53%] mt-[15px] max-w-[553px] tracking-[-1px]">
+      <div className="text-[#151448]  md:text-[40px] text-[20px] font-bold md:leading-[50px] leading-[30px] mt-[-25px] max-w-[803px] tracking-[-1px]">
         {Data.bannerData.title}
 
       </div>
       <div>
-        <Img src="/images/logo/line.png" className="sm:w-full w-[80px] relative sm:left-[190px] left-[94px] sm:top-[10px] top-[5px]" alt="arrow"/>
-
+        <Img src="/images/logo/line.png" className="lg:w-[159px] w-[90px] relative sm:left-[167px] left-[90px] " alt="arrow"/>
       </div>
       <div className="w-[85%] my-[30px] relative flex flex-col-reverse text-center">
         <Carousel

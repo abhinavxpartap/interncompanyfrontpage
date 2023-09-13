@@ -52,6 +52,7 @@ Success                </div>
                                         fontWeight: "bold",
                                         lineHeight: "150%",
                                     }}
+
                                     onClick={() => {
                                         router.push(`${SuccessStory.href}`);
                                     }}
@@ -59,7 +60,13 @@ Success                </div>
                                 >
                                     Learn more
                                     <span className="ml-[8px]">
-                    <ArrowOutwardIcon className="w-[12px] h-[12px] my-[auto]" />
+                    <ArrowOutwardIcon sx={{
+                        width:"12px",
+                        height:"12px",
+                        marginY:"auto",
+
+                    }}
+                    />
                   </span>
                                 </MUIMaterial.Button>
                             </div>

@@ -1,5 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import { Header } from '../Common/Header';
+// import { Dialog, DialogContent } from '@mui/material';
+// import Popupform from '../../components/popupform';
 import { Button } from '@mui/material';
 import { BannerDataInterface } from '../../types';
 
@@ -70,7 +72,11 @@ export const Banner: React.FC<BannerDataInterface> = (props) => {
 
 
                 </div>
-
+                {/*<Dialog open={open} onClose={handleClose}>*/}
+                {/*    <DialogContent>*/}
+                {/*        <Popupform onClose={handleClose} />*/}
+                {/*    </DialogContent>*/}
+                {/*</Dialog>*/}
                 <div className="mt-[20px]">
                     <hr className="inline-block w-[22px] mb-[4px]" />
                     <span className="text-[16px] text-[white]"> Web, iOS, and Android Solutions for Your Unique Performance </span>

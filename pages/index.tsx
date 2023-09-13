@@ -22,6 +22,7 @@ const Home: NextPage = () => {
           <meta name="description" content={seoData.Homepage.description}/>
           <meta name="keywords" content={seoData.Homepage.keywords}/>
           <meta name="title" content={seoData.Homepage.metaTitle}/>
+
         </Head>
     <div>
       <Banner

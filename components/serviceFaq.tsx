@@ -30,10 +30,10 @@ const QontoStepIconRoot = styled('div')<{ ownerState: { active?: boolean } }>(
       zIndex: 2,
       overflow: 'hidden',
       alignItems: 'start',
-      backgroundImage: `url(/badge.svg)`,
+      backgroundImage: `url(/images/logo/circledot.svg)`,
     }),
     '& .QontoStepIcon-completedIcon': {
-      color: '#784af4',
+      color: '#8184EB',
       zIndex: 1,
       fontSize: 18,
       backgroundColor: '',
@@ -43,13 +43,13 @@ const QontoStepIconRoot = styled('div')<{ ownerState: { active?: boolean } }>(
       height: 20,
       borderRadius: '50%',
       display: 'flex',
-      border: '1.5px solid rgba(196, 196, 196, 1)',
+      border: '1.5px solid #8184EB',
     },
     '& .QontoStepIcon-active': {
       width: 20,
       height: 20,
       borderRadius: '50%',
-      backgroundColor: 'rgba(23, 125, 240, 1)',
+      backgroundColor: '#8184EB',
     },
   })
 );
@@ -114,6 +114,8 @@ export const ServicesFaq: React.FC<Faq> = (props) => {
             </Button>
           </div>
           <div className="flex flex-row w-[85vw] lg:w-[55vw]">
+              <div className="w-[100%]">
+
             <Stepper activeStep={activeTab - 1} orientation="vertical">
               {tabData.map((tab) => (
                 <Step key={tab.id}>
@@ -203,6 +205,8 @@ export const ServicesFaq: React.FC<Faq> = (props) => {
                 </Step>
               ))}
             </Stepper>
+              </div>
+
           </div>
         </div>
       </div>

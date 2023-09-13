@@ -13,7 +13,7 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }: any) => {
   } = rest;
   return (
     <div
-      className="carousel-button-group mb-4   gap-4 flex justify-between
+      className="carousel-button-group    gap-4 flex justify-between
         items-center w-full absolute bottom-[50%]"
     >
       <button
@@ -85,7 +85,7 @@ const Testimonials = () => {
           {Data.header.map((data: TestimonialInterface, index: number) => (
             <div
               key={index}
-              className="md:w-[70%] w-[90%] h-auto my-[30px] bg-white flex flex-col mx-[auto] rounded-[10px] boxshad border-[black] xl:px-[55px] px-[10px]  overflow-hidden md:py-[50px] py-[20px]"
+              className="md:w-[70%] w-[90%] h-auto my-[30px] bg-white flex flex-col mx-[auto] rounded-[10px] boxshad border-[black] md:pb-[45px] xl:px-[35px] px-[10px]  overflow-hidden md:pt-[30px] py-[20px]"
             >
               <div className="text-[#042552] md:text-[18px] text-[14px] mt-[13px] font-normal max-w-[642px] md:leading-[26px]">
                 &quot; {data.comment} &quot;

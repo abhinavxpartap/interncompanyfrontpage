@@ -20,7 +20,7 @@ export const WhatWeAre: React.FC<WhatWeInterface> = (props) => {
             <Img
               src="/Line2.svg"
               alt="aboutus"
-              className="md:w-auto w-[90px] -z-0 relative  left-[0px]   md:top-[70px] top-[55px]"
+              className="md:w-[120px] w-[95px] -z-0 relative  left-[0px]   md:top-[70px] top-[55px]"
             />
           </div>
           <div className="flex z-[20] md:flex-row justify-between w-full flex-col">
@@ -38,7 +38,7 @@ export const WhatWeAre: React.FC<WhatWeInterface> = (props) => {
             <Img
               src="/Line2.svg"
               alt="aboutus"
-              className="md:w-auto w-[90px] -z-0 relative  md:left-[10px] top-[90px]   md:top-[100px]"
+              className="md:w-[120px] w-[90px] -z-0 relative  md:left-[10px] top-[90px]   md:top-[105px]"
             />
           </div>
           <div className="flex md:flex-row justify-between mt-[35px] w-full flex-col">

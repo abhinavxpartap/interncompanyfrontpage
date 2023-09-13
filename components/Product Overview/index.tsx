@@ -18,13 +18,13 @@ const ProductOverview: React.FC = () => {
                                 className="max-w-[406px] inline-block text-[white] md:text-[50px] text-[30px] leading-[64px] tracking-[-1.8px] font-bold md:mt-[30px] mt-[15px] mx-auto">
                                 {pageData.Data.title}
                                 <span>
-                                <Img src="images/logo/emoji.svg" alt="none" className="w-[25px] h-auto relative left-[405px] top-[-42px]"/>
+                                {/*<Img src="images/logo/emoji.svg" alt="none" className="w-[25px] h-auto relative lg:left-[405px] lg:block hidden lg:top-[-42px]"/>*/}
                                 </span>
 
 
                             </div>
                             <div
-                                className="max-w-[804px] ml-[100px] inline-block text-[white] md:mt-[42px] md:text-[20px] text-[16px] font-normal leading-[35px]">
+                                className="max-w-[804px] lg:ml-[100px] inline-block text-[white] md:mt-[42px] md:text-[20px] text-[16px] font-normal leading-[35px]">
 
                                 <div>
 

@@ -7,7 +7,7 @@ import data from '../../data/config.json';
 import headerData from '../../data/common/layout.json';
 import { Dropdown } from '../Common/Dropdown';
 import { Dialog, DialogContent } from '@mui/material';
-import Popupform from '../popupform';
+import Popupform from '../../components/popupform';
 
 export const Header= () => {
   const router = useRouter();

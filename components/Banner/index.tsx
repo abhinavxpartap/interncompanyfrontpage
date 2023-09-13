@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import { Header } from '../Common/Header';
 import { Dialog, DialogContent } from '@mui/material';
-import Popupform from '../popupform';
+import Popupform from '../../components/popupform';
 import { Button } from '@mui/material';
 import { BannerDataInterface } from '../../types';
 

@@ -145,8 +145,7 @@ const DemoForm = () => {
                   },
                 }}
               >
-                Book my Demo
-              </Button>
+Show Me How              </Button>
             </div>
           </Box>
         </div>

@@ -1,7 +1,5 @@
 import React, { useState,useEffect } from 'react';
 import { Header } from '../Common/Header';
-import { Dialog, DialogContent } from '@mui/material';
-import Popupform from '../../components/popupform';
 import { Button } from '@mui/material';
 import { BannerDataInterface } from '../../types';
 
@@ -43,33 +41,36 @@ export const Banner: React.FC<BannerDataInterface> = (props) => {
                     {subtitle}
                 </div>
                 <div>
-                    <Button
-                        onClick={handleOpen}
-                        className="ButtonTransition  overflow-hidden text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
-                        sx={{
-                            '&.MuiButtonBase-root': {
-                                backgroundColor: '#8184EB',
-                                color: 'white',
-                                textTransform: 'capitalize',
-                                padding: '8px 24px 8px 24px',
-                                border: '1px solid #8184EB',
-                                borderRadius: '30px',
-                                '&:hover': {
+                    <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
+                        <Button
+                            className="ButtonTransition overflow-hidden text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
+                            sx={{
+                                '&.MuiButtonBase-root': {
+                                    backgroundColor: '#8184EB',
+                                    color: 'white',
+                                    textTransform: 'capitalize',
+                                    padding: '8px 24px 8px 24px',
                                     border: '1px solid #8184EB',
-                                    backgroundColor: 'transparent',
-                                    color: '#8184EB',
+                                    borderRadius: '30px',
+                                    '&:hover': {
+                                        border: '1px solid #8184EB',
+                                        backgroundColor: 'transparent',
+                                        color: '#8184EB',
+                                    },
                                 },
-                            },
-                        }}
-                    >
-                        {button}
-                    </Button>
+                            }}
+                        >
+                            {button}
+                        </Button>
+                    </a>
+
+
+
+
+
+
                 </div>
-                <Dialog open={open} onClose={handleClose}>
-                    <DialogContent>
-                        <Popupform onClose={handleClose} />
-                    </DialogContent>
-                </Dialog>
+
                 <div className="mt-[20px]">
                     <hr className="inline-block w-[22px] mb-[4px]" />
                     <span className="text-[16px] text-[white]"> Web, iOS, and Android Solutions for Your Unique Performance </span>

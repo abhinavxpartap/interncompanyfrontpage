@@ -1,4 +1,5 @@
 import React from 'react';
+import {Img} from "../../utils/Img";
 
 const FixedButton = () => {
     const handleClick = () => {
@@ -7,9 +8,9 @@ const FixedButton = () => {
 
     return (
         <button
-            className="fixed bottom-4 z-[10] border-amber-950 text-[14px] font-medium left-4 bg-[#4255C9] text-white py-2 px-4 rounded-[20px] transition-colors duration-300 hover:bg-[#6C6FBF] hover:text-[#ffffff]"
+            className="fixed    bottom-4 z-[1000]  right-4  pulse py-2 px-4  "
             onClick={handleClick}>
-            Talk To Our Expert
+            <Img src="/casestudy/whatsapp.svg" alt="" className=" w-[60px]"/>
         </button>
 
     );

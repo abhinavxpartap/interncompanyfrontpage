@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
-import {Button, Dialog, DialogContent} from '@mui/material';
+import {Button} from '@mui/material';
 import { Img } from '../utils/Img';
 import data from '../data/footer.json';
-import Popupform from "./popupform";
 
 type Service = {
   title: string;
@@ -93,8 +92,9 @@ export const Footer: React.FC = () => {
             agency
           </p>
           <div className="flex pt-[20px] md:block  justify-center items-center md:justify-start">
+            <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
+
             <Button
-                onClick={handleOpen}
 
                 className="text-[16px] ButtonTransition   overflow-hidden min-w-[200px] font-semibold "
               sx={{
@@ -117,14 +117,11 @@ export const Footer: React.FC = () => {
                 },
               }}
             >
-              <a href="#">Book Consultation</a>
+              <a href="#">Show Me How </a>
             </Button>
+            </a>
           </div>
-          <Dialog open={open} onClose={handleClose}>
-            <DialogContent>
-              <Popupform onClose={handleClose} />
-            </DialogContent>
-          </Dialog>
+
         </div>
         <div className=" flex flex-col gap-y-[13px]">
           <div className="text-[18px] font-bold">Services</div>

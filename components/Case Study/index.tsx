@@ -36,13 +36,12 @@ const CaseStudy = () => {
                             className="max-w-[150px] px-[10px] py-[4px] bg-[#A1B4F7] text-[white] xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] text-[12px] hover:text-[#A1B4F7]"
                         />
                         <div
-                            className="text-[#151448] md:text-[40px] text-[30px] font-bold leading-[125%] mt-[13px] max-w-[451px]">Case
-                            Studies
+                            className="text-[#151448] md:text-[40px] text-[30px] font-bold leading-[125%] mt-[13px] max-w-[551px]">
+                            Why not to go through this Amazing Case Studies?
                         </div>
                         <div
-                            className="text-[#747C85] text-[16px] mt-[13px] font-medium max-w-[502px] leading-[30px]">Fusce
-                            placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat.
-                        </div>
+                            className="text-[#747C85] text-[16px] mt-[13px] font-medium max-w-[542px] leading-[30px]">
+                            See how we've achieved Digital Transformation to client's businesses like Yours.                        </div>
                     </div>
                     {/*<div*/}
                     {/*    className="flex flex-row  justify-between w-[80px] h-[30px] md:w-[105px]  md:h-[50px] mt-[43px] ms-auto cursor-pointer">*/}
@@ -73,7 +72,7 @@ const CaseStudy = () => {
                         </div>
                         <div className='flex flex-col w-[350px] whitespace-break-spaces ml-[15px] md:ml-[30px]'>
                             <div
-                                className="text-[#151448] text-[14px] leading-[20px] md:text-[20px] font-bold md:leading-[37.4px]">{caseStudy.heading}</div>
+                                className="text-[#151448] text-[14px] leading-[20px] md:text-[20px] font-bold md:leading-[29.4px]">{caseStudy.heading}</div>
                             <div
                                 className="text-[#8184EB] text-[14px] leading-[20px] md:text-[20px] font-bold md:leading-[37.4px] mt-[10px]">{caseStudy.org}</div>
                             <div

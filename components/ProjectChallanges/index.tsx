@@ -5,7 +5,7 @@ export const ProjectChallangesNew = () => {
 
     const content = (
         <div className="max-w-[1377.5px] relative  mx-auto">
-            <div className="w-[100%] px-[60px] flex flex-col items-center justify-center">
+            <div className="w-[100%] md:px-[60px] px-[10px] flex flex-col items-center justify-center">
                 <h1 className="text-center text-[45px] font-semibold text-[#151448] mb-[30px] mt-[60px]">The Results</h1>
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-[80px]">
                     <div className="flex flex-row gap-[20px]">
@@ -25,7 +25,7 @@ export const ProjectChallangesNew = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-[484px] mt-[60px]">
+                <div className="max-w-[484px] mt-[60px]">
                     <h1 className="mb-[25px] text-[#444444] text-[30px] font-semibold text-center">
                         Enhanced Data-Driven Insights
                     </h1>

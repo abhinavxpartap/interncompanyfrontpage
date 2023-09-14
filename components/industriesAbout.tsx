@@ -10,7 +10,7 @@ export const IndustriesAbout: React.FC<AboutData> = (props) => {
 
   const content = (
     <>
-      <div className="max-w-[1377.5px] mx-auto flex flex-col items-start justify-between md:pt-[120px]  pt-[80px] pb-[80px] md:pb-[120px]">
+      <div className="max-w-[1377.5px] mx-auto flex flex-col items-start justify-between   pt-[80px] pb-[80px] ">
         <div className="w-[100%] px-0 md:px-[40px] flex flex-col lg:flex-row text-start items-end justify-between ">
           <div className="w-[100%] px-[30px] pb-0 md:pb-[40px] lg:pb-0 md:px-[40px] lg:px-0 lg:w-[60vw] flex flex-col">
             <h1 className="text-[#151448] text-[23px] md:text-[30px] lg:text-[40px] font-bold ">
@@ -71,8 +71,8 @@ export const IndustriesAbout: React.FC<AboutData> = (props) => {
               },
             }}
           >
-            {buttonName}
-          </Button>
+            <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
+              {buttonName}                    </a>            </Button>
         </div>
       </div>
     </>

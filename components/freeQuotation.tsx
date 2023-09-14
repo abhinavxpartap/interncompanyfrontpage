@@ -22,7 +22,7 @@ export const FreeQuotation = () => {
   const labelNames = ['Software Development', 'Web Design'];
   const content = (
     <>
-      <div className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[100px]  pt-[30px] pb-[30px] md:pb-[100px]">
+      <div className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[10px]  pt-[30px] pb-[30px] md:pb-[100px]">
         <div className="w-[100%] px-[20px] flex flex-row text-start items-center justify-center ">
           <div className="w-[100%] justify-center items-center flex flex-col">
             <div className="w-[85vw] md:w-[380px] flex flex-col justify-center items-center text-center pb-[30px] md:mb-[20px]">

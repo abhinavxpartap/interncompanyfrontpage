@@ -41,9 +41,9 @@ const BlogPage: React.FC = () => {
                 alt={'BlogImage'}
               />
               <div
-                className="absolute top-[11px] right-[11px]  rounded-[5px] px-[10px] xxl:text-[16px] md:text-[13px] leading-[28px] text-[white] font-medium"
+                className="absolute top-[11px] right-[11px]  rounded-[5px] px-[10px] xxl:text-[16px] md:text-[13px] leading-[28px] text-[black] font-medium"
                 style={{
-                  background: '#31D7A9',
+                  background: '#ffffff',
                   boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
                 }}
               >

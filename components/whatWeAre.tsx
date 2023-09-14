@@ -7,7 +7,7 @@ export const WhatWeAre: React.FC<WhatWeInterface> = (props) => {
 
   const content = (
     <>
-      <div className="max-w-[1441.5px] pb-[150px] md:px-[100px] mx-auto   ">
+      <div className="max-w-[1441.5px] pb-[120px] md:px-[100px] mx-auto   ">
         <div>
           <div>
             <Img

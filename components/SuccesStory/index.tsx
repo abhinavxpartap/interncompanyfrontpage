@@ -8,7 +8,7 @@ const CaseStudy = () => {
     const router = useRouter();
     return (
         <div>
-            <div className="w-[90%]  relative md:px-[100px] pt-[64px] pb-[38px] md:max-w-[1377.5px] overflow-hidden mx-auto">
+            <div className="w-[90%]  relative md:px-[100px] pb-[38px] md:max-w-[1377.5px] overflow-hidden mx-auto">
                 <div className="flex  flex-row">
                     <div>
                         <div className="text-[#151448] md:text-[40px] text-[30px] font-bold leading-[125%] mt-[13px] max-w-[451px]">{SuccessStory.bannerData.title}</div>

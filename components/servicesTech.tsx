@@ -10,7 +10,7 @@ export const ServiceTech: React.FC = (props) => {
 
   const content = (
     <>
-      <div className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[100px]  pt-[80px] pb-[80px] md:pb-[100px]">
+      <div className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[100px]  pt-[80px] ">
         <div className="w-[100%] mx-auto flex flex-col text-center items-center justify-center ">
           <h1 className="text-[#333333] font-bold text-[24px] md:text-[30px]">
             {TechData.bannerData.title}

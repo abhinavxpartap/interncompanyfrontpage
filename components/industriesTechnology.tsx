@@ -7,7 +7,7 @@ export const IndustriesTechnology: React.FC<WebApplicationDevelopmentProcess> = 
 
   const content = (
     <>
-      <div className="max-w-[1377.5px] mx-auto flex flex-col items-center justify-center md:pt-[120px]  pt-[80px] pb-[80px] md:pb-[120px]">
+      <div className="max-w-[1377.5px] mx-auto flex flex-col items-center justify-center md:pt-[70px]  pt-[60px] md:pb-[0px] pb-[80px] ">
         <div className="w-[100%] md:w-[85%] mb-[40px] md:mb-[80px]">
           <h1 className="text-[#151448] px-[20px] md:px-0 text-center text-[25px] leading-[30px] md:text-[30px] md:leading-[40px] lg:leading-[42px] lg:text-[40px] font-bold">
             {title}

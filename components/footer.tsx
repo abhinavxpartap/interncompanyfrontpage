@@ -92,7 +92,6 @@ export const Footer: React.FC = () => {
             agency
           </p>
           <div className="flex pt-[20px] md:block  justify-center items-center md:justify-start">
-            <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
 
             <Button
 
@@ -117,9 +116,9 @@ export const Footer: React.FC = () => {
                 },
               }}
             >
-              <a href="#">Show Me How </a>
+              <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">Show Me How </a>
             </Button>
-            </a>
+
           </div>
 
         </div>

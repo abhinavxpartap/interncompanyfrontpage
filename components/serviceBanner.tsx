@@ -38,8 +38,8 @@ export const ServiceBanner: React.FC<ServiceBannerInterface> = (props) => {
               },
             }}
           >
-            {buttonName}
-          </Button>
+              <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
+                  {buttonName}                    </a>          </Button>
         </div>
       </div>
     </>

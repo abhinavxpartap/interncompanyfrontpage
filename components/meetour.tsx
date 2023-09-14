@@ -6,7 +6,7 @@ import Team from "../data/team.json"
 export const Meetour = () => {
 
   const content = (
-      <div className="max-w-[1477.5px] pb-[100px]  mx-auto">
+      <div className="max-w-[1477.5px]   mx-auto">
         <div className="flex md:flex-row justify-between w-auto flex-col">
           <div className="md:px-[50px]">
             <div className="text-[40px] md:text-start text-center font-bold">

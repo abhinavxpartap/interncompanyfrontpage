@@ -55,7 +55,7 @@ const responsive = {
 
 const Testimonials = () => {
   return (
-    <div className="md:px-[100px] px-0 pb-[100px] relative flex flex-col items-center py-[40px] pt-[160px] text-center max-w-[1377.5px] overflow-hidden mx-auto">
+    <div className="md:px-[100px] px-0 pb-[20px] relative flex flex-col items-center py-[40px] pt-[100px] text-center max-w-[1377.5px] overflow-hidden mx-auto">
       <div className="text-[#E8EDFF]  -z-[30] lg:text-[250px] text-[140px] absolute  font-medium leading-[70%] tracking-[-20px] lg:w-[754px] w-[450px] top-[12.5%] text-start ">
         Testimonials
       </div>
@@ -91,7 +91,7 @@ const Testimonials = () => {
                 &quot; {data.comment} &quot;
 
               </div>
-              <div className="flex md:flex-row flex-col mt-[50px] align-center justify-between ">
+              <div className="flex md:flex-row flex-col mt-[50px]  justify-center ">
                 <div className="flex md:flex-row md:justify-normal md:text-start text-center justify-center items-center flex-col">
                   <img
                     className="w-[55px] h-[55px] rounded-full"
@@ -107,13 +107,13 @@ const Testimonials = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex justify-center items-center">
-                  <img
-                    className="mt-[5px]"
-                    src={data.companyLogo}
-                    alt={`Image ${index}`}
-                  />
-                </div>
+                {/*<div className="flex justify-center items-center">*/}
+                {/*  <img*/}
+                {/*    className="mt-[5px]"*/}
+                {/*    src={data.companyLogo}*/}
+                {/*    alt={`Image ${index}`}*/}
+                {/*  />*/}
+                {/*</div>*/}
               </div>
             </div>
           ))}

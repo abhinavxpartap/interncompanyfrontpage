@@ -70,7 +70,6 @@ const Team = () => {
             {pageData.bannerData.subtitle}
           </div>
           <div className="mt-[25px]">
-            <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
 
             <Button
               className="ButtonTransition overflow-hidden text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
@@ -90,9 +89,10 @@ const Team = () => {
                 },
               }}
             >
-              {pageData.bannerData.buttonName}
+              <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
+              {pageData.bannerData.buttonName} </a>
             </Button>
-            </a>
+
           </div>
         </div>
       </div>

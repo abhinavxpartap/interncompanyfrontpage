@@ -17,7 +17,7 @@ export const IndustriesFaq: React.FC<FaqInterFace> = (props) => {
 
   const content = (
     <>
-      <div className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[120px]  pt-[80px] pb-[80px] md:pb-[120px]">
+      <div className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[70px]  pt-[80px] pb-[80px] md:pb-[40px]">
         <div className="w-[100%] px-[20px] md:px-[60px] flex flex-col text-start items-center justify-center ">
           <h1 className="text-[#151448] text-[25px] md:text-[40px] pb-[20px] md:pb-[40px] font-bold">
             {title} <span className="text-[#8184EB]">{spantitle}</span>

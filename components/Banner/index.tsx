@@ -43,7 +43,6 @@ export const Banner: React.FC<BannerDataInterface> = (props) => {
                     {subtitle}
                 </div>
                 <div>
-                    <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
                         <Button
                             className="ButtonTransition overflow-hidden text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
                             sx={{
@@ -62,9 +61,10 @@ export const Banner: React.FC<BannerDataInterface> = (props) => {
                                 },
                             }}
                         >
-                            {button}
-                        </Button>
-                    </a>
+                            <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
+                            {button}                    </a>
+
+                </Button>
 
 
 

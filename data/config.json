@@ -4,8 +4,8 @@
         "authorized_sender": "info@alumeltech"
     },
     "logos": {
-        "light": "/images/logo/logonew.png",
-        "dark": "/images/logo/logonew.png"
+        "light": "/images/logo/logonew.svg",
+        "dark": "/images/logo/logonew.svg"
     },
     "logo_dark": "/images/logo/logodarknew.png",
 

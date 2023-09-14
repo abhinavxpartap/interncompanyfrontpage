@@ -11,19 +11,19 @@ import {Img} from '../../utils/Img';
 const CaseStudy = () => {
     const router = useRouter();
     const [currentSlide, setCurrentSlide] = useState(0);
-    // const handleSlideBack = () => {
-    //     if (currentSlide > 0) {
-    //         setCurrentSlide(currentSlide - 1);
-    //         console.log('Back button clicked. New currentSlide:', currentSlide - 1);
-    //     }
-    // };
-    //
-    // const handleSlideForward = () => {
-    //     if (currentSlide < caseStudies.caseStudies.length - 1) {
-    //         setCurrentSlide(currentSlide + 1);
-    //         console.log('Forward button clicked. New currentSlide:', currentSlide + 1);
-    //     }
-    // };
+    const handleSlideBack = () => {
+        if (currentSlide > 0) {
+            setCurrentSlide(currentSlide - 1);
+            console.log('Back button clicked. New currentSlide:', currentSlide - 1);
+        }
+    };
+
+    const handleSlideForward = () => {
+        if (currentSlide < caseStudies.caseStudies.length - 1) {
+            setCurrentSlide(currentSlide + 1);
+            console.log('Forward button clicked. New currentSlide:', currentSlide + 1);
+        }
+    };
 
     return (
         <div>
@@ -42,21 +42,20 @@ const CaseStudy = () => {
                         </div>
                         <div
                             className="text-[#747C85] text-[16px] mt-[13px] font-medium max-w-[542px] leading-[30px]">
-                            // eslint-disable-next-line react/no-unescaped-entities
                             See how we've achieved Digital Transformation to client's businesses like Yours.                        </div>
                     </div>
-                    {/*<div*/}
-                    {/*    className="flex flex-row  justify-between w-[80px] h-[30px] md:w-[105px]  md:h-[50px] mt-[43px] ms-auto cursor-pointer">*/}
-                    {/*    <button onClick={handleSlideBack}>*/}
-                    {/*        <Img src="/images/logo/arrowback.png" className="w-[45px]" alt="arrow"/>*/}
-                    {/*    </button>*/}
-                    {/*    <button onClick={handleSlideForward}>*/}
-                    {/*        <Img src="/images/logo/arrowforword.png" className="w-[45px]" alt="arrow"/>*/}
-                    {/*    </button>*/}
-                    {/*</div>*/}
+                    <div
+                        className="flex flex-row  justify-between w-[80px] h-[30px] md:w-[105px]  md:h-[50px] mt-[43px] ms-auto cursor-pointer">
+                        <button onClick={handleSlideBack}>
+                            <Img src="/images/logo/arrowback.png" className="w-[45px]" alt="arrow"/>
+                        </button>
+                        <button onClick={handleSlideForward}>
+                            <Img src="/images/logo/arrowforword.png" className="w-[45px]" alt="arrow"/>
+                        </button>
+                    </div>
                 </div>
                 <div
-                    className="text-[#E8EDFF] -z-[1] lg:text-[250px] text-[130px] w-[470px] lg:w-[1440px] lg:left-[370px] left-[2px] absolute font-medium leading-[70%] -tracking-[20px] bottom-[3px]">
+                    className="text-[#E8EDFF] -z-[1] lg:text-[250px] text-[130px] w-[470px] lg:w-[1440px] lg:left-[370px] left-[2px] absolute font-medium leading-[70%] -tracking-[20px] bottom-[0px]">
                     case studY
                 </div>
             </div>
@@ -119,6 +118,7 @@ const CaseStudy = () => {
                     </div>
                 ))}
             </div>
+
         </div>
     );
 };

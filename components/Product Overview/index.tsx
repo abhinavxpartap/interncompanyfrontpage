@@ -5,7 +5,7 @@ import {Img} from '../../utils/Img';
 
 const ProductOverview: React.FC = () => {
     return (
-        <div className="mt-[80px] ">
+        <div >
             <div className="bg-no-repeat bg-cover md:px-[75px] pt-[55px] pb-[20px]"
                  style={{backgroundImage: `url(${pageData.Data.backgroundImage})`}}
             >

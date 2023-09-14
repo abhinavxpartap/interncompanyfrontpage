@@ -16,7 +16,7 @@ const settings = {
 };
 const Team = () => {
   return (
-    <div className="pt-[120px] px-[15px] md:px-[45px] 2xl:px-[40px]   py-[40px] max-w-[1477.5px] mx-auto">
+    <div className="pt-[120px] px-[15px] md:px-[45px] 2xl:px-[40px]   max-w-[1477.5px] mx-auto">
       <div className="w-[100%] h-full flex flex-col lg:flex-row lg:gap-[60px] xl:gap-[80px] items-start">
         <div className="w-[90vw] lg:w-[48vw]">
           <Slider {...settings}>
@@ -55,7 +55,7 @@ const Team = () => {
           </Slider>
         </div>
 
-        <div className="pt-[50px] md:justify-start md:items-start items-center justify-center flex flex-col  lg:pt-[0px] h-[100%] w-[90vw] lg:w-[40vw]">
+        <div className="pt-[50px] md:justify-start md:items-start 2xl:mt-[80px] lg:mt-[30px]  items-center justify-center flex flex-col  lg:pt-[0px] h-[100%] w-[90vw] lg:w-[40vw]">
           <span
             className="rounded-full uppercase items-center flex justify-center   max-w-[150px] px-[20px] py-[5px] bg-[#A1B4F7] text-[white] xxl:leading-[22.99px]
                 tracking-[-0.25px] font-semibold sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px]

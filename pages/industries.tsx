@@ -17,6 +17,7 @@ import Data from "../data/blogData.json";
 import {BlogCards} from "../components/BlogCard";
 import {Footer} from "../components/footer";
 import SuccesStory from "../components/SuccesStory";
+import FixedButton from "../components/FixedButton";
 
 const IndustriesPage: React.FC = () => {
     return (<>
@@ -90,6 +91,8 @@ const IndustriesPage: React.FC = () => {
                         </div>
                     </div>
                     <FreeQuotation/>
+                    <FixedButton />
+
                     <Footer/>
                 </div>
             </div>

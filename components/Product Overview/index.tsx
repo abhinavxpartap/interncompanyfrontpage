@@ -5,76 +5,82 @@ import {Img} from '../../utils/Img';
 
 const ProductOverview: React.FC = () => {
     return (
-        <div >
-            <div className="bg-no-repeat bg-cover md:px-[75px] pt-[55px] pb-[20px]"
-                 style={{backgroundImage: `url(${pageData.Data.backgroundImage})`}}
-            >
-                <div className="max-w-[1377.5px]  mx-auto">
+        <div>
+            <div className="bg-no-repeat  max-w-[1250px] mx-auto rounded-3xl bg-cover md:px-[75px] pt-[90px] pb-[0px] "
+                 style={{backgroundImage: `url(${pageData.Data.backgroundImage})`}}>
+                <div className="max-w-[1077.5px]  mx-auto">
                     <div
                         className="flex flex-col  md:justify-start md:items-start justify-center items-center w-[100%] md:text-start text-center">
 
                         <div className="md:mb-[30px]   justify-between  flex md:flex-row flex-col">
-                            <div
-                                className="max-w-[406px] inline-block text-[white] md:text-[50px] text-[30px] leading-[64px] tracking-[-1.8px] font-bold md:mt-[30px] mt-[15px] mx-auto">
-                                {pageData.Data.title}
-
-                                {/*<Img src="images/logo/emoji.svg" alt="none" className="w-[25px] h-auto relative lg:left-[405px] lg:block hidden lg:top-[-42px]"/>*/}
-
-
-
+                            <div className="max-w-[406px] inline-block  mx-auto">
+                                <Img src="/service/joker.svg" alt="none" className="w-auto h-auto   "/>
                             </div>
-                            <div
-                                className="max-w-[804px] lg:ml-[100px] inline-block text-[white] md:mt-[42px] md:text-[20px] text-[16px] font-normal leading-[35px]">
-
+                            <div className="max-w-[633px] mt-[-50px] lg:ml-[100px] inline-block text-[white]  md:text-[20px] text-[16px] font-normal leading-[35px]">
                                 <div>
-
+                                    <div className="text-[35px] leading-[50px] font-bold mb-[15px]">
+                                        Need more reasons to work with Alumel tech?
+                                    </div>
                                     <div>
-                                        <span className="text-[26px] font-semibold">How Can I Trust Alumel tech? </span> You
-                                        will be only working with industry experts with years of experience and deep
-                                        tech knowledge to your projects.
+                                        <div className="text-[18px] font-medium">
+                                            How Can I Trust Alumel tech?
+                                        </div>
+                                        <div className="text-[16px]  border-b pb-[7px] font-thin leading-[30px]">
+                                            You will be only working with industry experts with years of experience and deep tech knowledge to your projects.
+
+                                        </div>
+                                    </div>
+                                    <div className="mt-[20px]">
+                                        <div className="text-[18px] font-medium">
+                                            Are your solutions tailored to my needs?
+                                        </div>
+                                        <div className="text-[16px] border-b pb-[7px]  font-thin leading-[30px]">
+                                            Yes, every solution we create is customized to meet your specific needs and goals.
+
+                                        </div>
 
                                     </div>
                                     <div className="mt-[20px]">
-                                        <span className="text-[26px] font-semibold">Are your solutions tailored to my needs?</span> Yes, every solution we create is customized to meet your specific needs and goals.
-
+                                        <div className="text-[18px] font-medium">
+                                            Can you solve my tech Challenges?
+                                        </div>
+                                        <div className="text-[16px] font-thin leading-[30px]">
+                                            Absolutely! Partner with us to conquer your most complex tech hurdles and achieve AI & Data Driven Solutions.
+                                        </div>
                                     </div>
-                                    <div className="mt-[20px]">
-                                        <span className="text-[26px] font-semibold"> Can you solve my tech Challenges?  </span> Absolutely! Partner with us to conquer your most complex tech hurdles and achieve AI & Data Driven Solutions.
+                                    <div className="flex  md:w-[100%] w-[90%] mx-auto  flex-row  justify-between">
+                                        <div>
+                                            <div
+                                                className="max-w-[306px] inline-block text-[white] md:text-[50px] text-[30px] leading-[86px] tracking-[-2.4px] font-bold ">
+                                                {pageData.Data.productCount}+
+                                            </div>
+                                            <div className="md:text-[18px]  text-[12px] text-[white]  md:font-medium font-normal   leading-[28px]">
+                                                PRODUCTS
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div
+                                                className="max-w-[336px] inline-block text-[white] md:text-[50px] text-[30px] leading-[86px] tracking-[-2.4px] font-bold ">
+                                                {pageData.Data.webDesignCount}
+                                            </div>
+                                            <div className="md:text-[18px]  text-[12px] text-[white]  md:font-medium font-normal   leading-[28px]">
+                                                WEB DESIGNS
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div className="max-w-[336px] inline-block text-[white] md:text-[50px] text-[30px] leading-[86px] tracking-[-2.4px] font-bold ">
+                                                {pageData.Data.softwareDevelopedCount}
+                                            </div>
+                                            <div className="md:text-[18px]  text-[12px] text-[white] md:font-medium font-normal leading-[28px]">
+                                                SOFTWARES DEVELOPED
+                                            </div>
+                                        </div>
 
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div
-                            className="flex lg:pr-[125px] w-[100%] md:px-0 px-[10px] flex-row pb-[50px] justify-between">
-                            <div>
-                                <div
-                                    className="max-w-[336px] inline-block text-[white] md:text-[60px] text-[30px] leading-[86px] tracking-[-2.4px] font-bold mt-[30px]">
-                                    {pageData.Data.productCount}+
-                                </div>
-                                <div className="md:text-[18px]  text-[12px] text-[white] font-medium leading-[28px]">
-                                    PRODUCTS
-                                </div>
-                            </div>
-                            <div>
-                                <div
-                                    className="max-w-[336px] inline-block text-[white] md:text-[60px] text-[30px] leading-[86px] tracking-[-2.4px] font-bold mt-[30px]">
-                                    {pageData.Data.softwareDevelopedCount}
-                                </div>
-                                <div className="md:text-[18px]  text-[12px] text-[white] font-medium leading-[28px]">
-                                    SOFTWARES DEVELOPED
-                                </div>
-                            </div>
-                            <div>
-                                <div
-                                    className="max-w-[336px] inline-block text-[white] md:text-[60px] text-[30px] leading-[86px] tracking-[-2.4px] font-bold mt-[30px]">
-                                    {pageData.Data.webDesignCount}
-                                </div>
-                                <div className="md:text-[18px]  text-[12px] text-[white] font-medium leading-[28px]">
-                                    WEB DESIGNS
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>

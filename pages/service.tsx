@@ -16,6 +16,7 @@ import {ServiceTech} from "../components/servicesTech";
 import {FreeQuotation} from "../components/freeQuotation";
 import {OurBrands} from "../components/ourBrands";
 import {Footer} from "../components/footer";
+import FixedButton from "../components/FixedButton";
 const ServicePage: React.FC = () => {
     return (<>
             <Head>
@@ -71,6 +72,8 @@ const ServicePage: React.FC = () => {
                     <ServiceTech/>
                     <OurBrands/>
                     <FreeQuotation/>
+                    <FixedButton />
+
                     <Footer/>
                 </div>
             </div>

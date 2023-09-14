@@ -6,7 +6,7 @@ import services from "../../data/HomePageService.json"
 const Service = () => {
 
     return (
-        <div className="md:px-[100px] features-area relative flex flex-col items-center py-[40px] md:pt-[80px] text-center max-w-[1377.5px] overflow-hidden h-auto mx-auto">
+        <div className="md:px-[30px] features-area relative flex flex-col items-center py-[40px] md:pt-[80px] text-center max-w-[1377.5px] overflow-hidden h-auto mx-auto">
             <Button
                 label={'WHAT WE DO?'}
                 type="button"
@@ -19,28 +19,26 @@ const Service = () => {
             <div className="text-[#747C85] text-[18px] mt-[13px] font-medium max-w-[742px] leading-[170%]">
                 {services.bannerData.subtitle}
             </div>
-            <div className="pt-[60px] gap-[35px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-start ">
+            <div className="pt-[60px] gap-[35px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-start ">
                 {services.header.map((service, index: number) => {
                     return (
                         <div
                             key={index}
-                            className="bg-[#ffffff] px-[20px] pt-[20px] rounded-[12px] social-icon:hover social-icon "
+                            className="bg-[#ffffff]  px-[20px] pt-[20px] rounded-[12px] social-icon:hover social-icon "
                             style={{
                                 boxShadow:
                                     'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px',
                             }}
                         >
-                            <div className="flex justify-center items-center">
-                                <Img src={service.image.src} className=" relative top-[-50px] w-[45px]" alt={service.image.alt}/>
+                            <div className="flex justify-start items-center">
+                                <Img src={service.image.src} className=" w-[45px]" alt={service.image.alt}/>
                             </div>
 
-                            <h1 className="text-[20px] relative top-[-50px]  lg:text-[15px]  text-center xl:text-[20px] pt-[15px] font-semibold text-[#042552]">
+                            <h1 className="text-[20px]   lg:text-[15px]   xl:text-[21px] pt-[15px] font-semibold text-[#333333]">
                                 {service.title}
                             </h1>
-                            <p className="  text-center relative top-[-50px] text-[16px] lg:text-[18px]  font-semibold text-[#042552]">
-                                {service.subtitle}
-                            </p>
-                            <p className=" pr-[10px] pt-[5px] relative top-[-50px] text-center text-[#757B8A] text-[16px] lg:text-[12px] xl:text-[16px] font-normal">
+
+                            <p className="  pt-[5px]  pb-[17px]  text-[#757B8A] text-[16px] lg:text-[12px] xl:text-[14px] font-normal">
                                 {service.description}
                             </p>
                         </div>

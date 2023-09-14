@@ -6,6 +6,7 @@ import ContactData from '../data/contact.json';
 import React from 'react';
 import { OurBrands } from '../components/ourBrands';
 import SuccesStory from '../components/SuccesStory';
+import FixedButton from "../components/FixedButton";
 
 const Home: NextPage = () => {
   return (
@@ -35,7 +36,9 @@ const Home: NextPage = () => {
                 image={ContactData.TalkTo.image}
         />
       </div>
-      <Footer />
+        <FixedButton />
+
+        <Footer />
     </div>
   );
 };

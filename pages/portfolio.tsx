@@ -18,6 +18,7 @@ import seoData from "../data/seoData.json";
 import Head from "next/head";
 import {NewPortofilioJourney} from "../components/PortofilioJourney";
 import {PortfolioOurProcess} from "../components/PortfolioOurProcess";
+import FixedButton from "../components/FixedButton";
 
 const Portfolio: NextPage = () => {
     return (
@@ -75,6 +76,7 @@ const Portfolio: NextPage = () => {
             />
 
 
+            <FixedButton />
 
 <Footer/>
 

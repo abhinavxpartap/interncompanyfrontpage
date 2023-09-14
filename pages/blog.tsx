@@ -9,6 +9,7 @@ import { GetStories } from '../components/getStories';
 import { useRouter } from 'next/router';
 import { Header } from '../components/Common/Header';
 import { Footer } from '../components/footer';
+import FixedButton from "../components/FixedButton";
 
 const BlogPage: React.FC = () => {
   const [isActive, setIsActive] = useState(0);
@@ -196,6 +197,8 @@ const BlogPage: React.FC = () => {
           </div>
         </div>
         <GetStories />
+        <FixedButton />
+
         <Footer />
       </div>
     </>

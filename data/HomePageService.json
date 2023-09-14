@@ -6,33 +6,75 @@
   "header": [
     {
       "image": {
-        "src": "/images/wifi-blue.svg",
+        "src": "/service/1.svg",
         "alt": "Icon 1"
       },
-      "title": "Strategy & Research",
-      "subtitle": "Your Path to Success",
+      "title": "Web development",
 
-      "description": "Your success is our ultimate goal.Count on us for strategy and planning that transforms uncertainty into opportunity, propelling your business toward its full potential. "
+      "description": "From responsive websites to complex applications, our developers build solutions that reflect your requirements "
     },
     {
       "image": {
-        "src": "/images/wifi-green.svg",
+        "src": "/service/2.svg",
         "alt": "Icon 2"
       },
-      "title": "Software Development",
-      "subtitle": "Your Digital Success Foundation",
+      "title": "Digital Marketing",
 
-      "description": "Your online presence matters. We build user-friendly, high-impact websites that drive results, providing the digital foundation your business needs. Say goodbye to outdated sites and hello to responsive design and effortless navigation.\n\n"
+      "description": "Enhance your online visibility and reach with data-driven strategies that drive results. "
     },
     {
       "image": {
-        "src": "/images/wifi-orange.svg",
+        "src": "/service/3.svg",
         "alt": "Icon 3"
       },
-      "title": "Web Design",
-      "subtitle": "Captivating User Experiences",
+      "title": "Technology Consulting",
 
-      "description": "First impressions count. We design visually stunning websites that captivate and engage visitors, ensuring your brand leaves a lasting mark. Don't let a subpar website deter potential customers; let us transform your vision into reality.\n ."
+      "description": "Let us be your strategic partner, providing technology consulting that aligns \"Your\" business objectives. "
+    },
+    {
+      "image": {
+        "src": "/service/4.svg",
+        "alt": "Icon 3"
+      },
+      "title": "E-Commerce Solutions",
+
+      "description": "Right mix of web development methodologies along with highly competitive marketing strategies. "
+    },
+    {
+      "image": {
+        "src": "/service/5.svg",
+        "alt": "Icon 5"
+      },
+      "title": "Custom App. Development",
+
+      "description": "Experience the power of applications that cater precisely to your needs. "
+    },
+    {
+      "image": {
+        "src": "/service/6.svg",
+        "alt": "Icon 6"
+      },
+      "title": "Web Design Solution",
+
+      "description": "Our talented designers craft visually stunning websites that captivate your audience. "
+    },
+    {
+      "image": {
+        "src": "/service/7.svg",
+        "alt": "Icon 7"
+      },
+      "title": "UI/UX",
+
+      "description": "With your users in mind, we create seamless interfaces that elevate their experience. "
+    },
+    {
+      "image": {
+        "src": "/service/8.svg",
+        "alt": "Icon 8"
+      },
+      "title": "Startup Acceleration",
+
+      "description": "For startups, we offer specialized services to accelerate growth and establish a strong digital foundation. "
     }
   ]
 }

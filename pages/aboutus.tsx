@@ -16,6 +16,7 @@ import seoData from "../data/seoData.json";
 
 import Head from "next/head";
 import SuccesStory from "../components/SuccesStory";
+import FixedButton from "../components/FixedButton";
 const Home: NextPage = () => {
   return (
       <>
@@ -59,6 +60,7 @@ const Home: NextPage = () => {
         buttonName={aboutUs.Lets.buttonName}
       />
       <FreeQuotation />
+              <FixedButton />
 
       <Footer />
     </div>

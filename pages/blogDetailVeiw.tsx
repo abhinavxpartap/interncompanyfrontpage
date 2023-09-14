@@ -7,6 +7,7 @@ import { Img } from '../utils/Img';
 import { GetStories } from '../components/getStories';
 import { Header } from '../components/Common/Header';
 import { Footer } from '../components/footer';
+import FixedButton from "../components/FixedButton";
 
 const content = [
   {
@@ -363,6 +364,8 @@ const BlogDetailVeiw: React.FC = () => {
           </div>
         </div>
         <GetStories />
+        <FixedButton />
+
         <Footer />
       </div>
     </>

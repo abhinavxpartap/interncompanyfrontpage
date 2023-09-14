@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React, {useState} from 'react';
 import {Button} from '../../utils/Button';
 import * as MUIMaterial from '@mui/material';
@@ -41,6 +42,7 @@ const CaseStudy = () => {
                         </div>
                         <div
                             className="text-[#747C85] text-[16px] mt-[13px] font-medium max-w-[542px] leading-[30px]">
+                            // eslint-disable-next-line react/no-unescaped-entities
                             See how we've achieved Digital Transformation to client's businesses like Yours.                        </div>
                     </div>
                     {/*<div*/}

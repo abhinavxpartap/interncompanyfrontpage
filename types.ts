@@ -187,7 +187,7 @@ export interface AboutData {
 export interface PizzaHutInfo {
     title: string;
     subtitle: string;
-    content: string;
+    client: string;
     industry: string;
     businessType: string;
     services: string;

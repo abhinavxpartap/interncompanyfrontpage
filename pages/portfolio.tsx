@@ -1,17 +1,14 @@
-import type { NextPage } from 'next'
+import type {NextPage} from 'next'
 import {PortfolioBanner} from "../components/PortfolioBanner";
-import  {ProjectChallangesNew} from "../components/ProjectChallanges";
+import {ProjectChallangesNew} from "../components/ProjectChallanges";
 import {AboutPortfolio} from "../components/aboutPortfolio";
 import {Director} from "../components/director";
-import {Journey} from "../components/journey";
 import {OurProcess} from "../components/ourProcess";
-import {OurProcess2} from "../components/ourProcess2";
 import {Results} from "../components/results";
 import PortData from "../data/portfolio.json";
 import React from "react";
 import serviceData from "../data/portfolio.json";
-import Data from "../data/blogData.json";
-import {BlogCards} from "../components/BlogCard";
+
 import {Footer} from "../components/footer";
 import data from '../data/aboutPortfolio.json';
 import seoData from "../data/seoData.json";
@@ -33,14 +30,14 @@ const Portfolio: NextPage = () => {
                 className="bg-cover  bg-center bg-no-repeat relative"
             >
                 <PortfolioBanner
-                title={PortData.Banner.title}
-                image={PortData.Banner.image}/>
+                    title={PortData.Banner.title}
+                    image={PortData.Banner.image}/>
             </div>
             <AboutPortfolio
                 title={data.title}
                 images={data.images}
                 subtitle={data.subtitle}
-                content={data.content}
+                client={data.client}
                 industry={data.industry}
                 services={data.services}
                 businessType={data.businessType}
@@ -64,8 +61,8 @@ const Portfolio: NextPage = () => {
                 title2={serviceData.NewJourney.title2}
             />
             <PortfolioOurProcess
-             List={serviceData.OurProcessNew.Data1}
-             heading={serviceData.OurProcessNew.heading}
+                List={serviceData.OurProcessNew.Data1}
+                heading={serviceData.OurProcessNew.heading}
             />
             <OurProcess/>
             <ProjectChallangesNew/>
@@ -74,11 +71,8 @@ const Portfolio: NextPage = () => {
                 heading={serviceData.ResultNew.heading}
                 subtitle={serviceData.ResultNew.subtitle}
             />
-
-
-            <FixedButton />
-
-<Footer/>
+            <FixedButton/>
+            <Footer/>
 
         </>
     )

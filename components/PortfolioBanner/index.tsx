@@ -29,7 +29,7 @@ export const PortfolioBanner: React.FC<Port> = (props) => {
                 color: 'white',
                 textTransform: 'capitalize',
                 padding: '10px 22px 10px 22px',
-                border: '1px solid #FFFFFF',
+                border: '1px solid #8184EB',
                 borderRadius: '30px',
                 '&:hover': {
                   border: '1px solid #8184EB',

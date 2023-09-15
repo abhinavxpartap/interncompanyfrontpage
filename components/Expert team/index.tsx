@@ -55,7 +55,7 @@ const Team = () => {
           </Slider>
         </div>
 
-        <div className="pt-[50px] md:justify-start md:items-start 2xl:mt-[80px] lg:mt-[30px]  items-center justify-center flex flex-col  lg:pt-[0px] h-[100%] w-[90vw] lg:w-[40vw]">
+        <div className="pt-[50px] md:justify-start md:items-start 2xl:mt-[80px] lg:mt-[30px]  items-center justify-center flex flex-col  lg:pt-[0px] h-[100%] ">
           <span
             className="rounded-full uppercase items-center flex justify-center   max-w-[150px] px-[20px] py-[5px] bg-[#A1B4F7] text-[white] xxl:leading-[22.99px]
                 tracking-[-0.25px] font-semibold sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px]
@@ -66,7 +66,7 @@ const Team = () => {
           <div className="text-[#151448] text-[24px] md:text-start text-center md:text-[40px]   font-bold leading-[125%] mt-[13px]">
             {pageData.bannerData.title}
           </div>
-          <div className="text-[#747C85] pr-[20px] xl:pr-[40px] md:text-start text-center   text-[18px] md:text-[22px] lg:text-[18px] mt-[13px] font-medium  leading-[170%]">
+          <div className="text-[#747C85]  xl:pr-[40px] md:text-start text-center   text-[18px] md:text-[22px] lg:text-[18px] mt-[13px] font-medium  leading-[170%]">
             {pageData.bannerData.subtitle}
           </div>
           <div className="mt-[25px]">

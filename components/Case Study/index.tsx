@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import {Button} from '../../utils/Button';
 import * as MUIMaterial from '@mui/material';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
@@ -10,18 +10,22 @@ import {Img} from '../../utils/Img';
 
 const CaseStudy = () => {
     const router = useRouter();
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const handleSlideBack = () => {
-        if (currentSlide > 0) {
-            setCurrentSlide(currentSlide - 1);
-            console.log('Back button clicked. New currentSlide:', currentSlide - 1);
+    const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+    const [scrollPosition, setScrollPosition] = useState<number>(0);
+
+    const handleScrollLeft = () => {
+        const scrollContainer = scrollContainerRef.current;
+        if (scrollContainer) {
+            scrollContainer.scrollLeft -= 800;
+            setScrollPosition(scrollContainer.scrollLeft);
         }
     };
 
-    const handleSlideForward = () => {
-        if (currentSlide < caseStudies.caseStudies.length - 1) {
-            setCurrentSlide(currentSlide + 1);
-            console.log('Forward button clicked. New currentSlide:', currentSlide + 1);
+    const handleScrollRight = () => {
+        const scrollContainer = scrollContainerRef.current;
+        if (scrollContainer) {
+            scrollContainer.scrollLeft += 800;
+            setScrollPosition(scrollContainer.scrollLeft);
         }
     };
 
@@ -46,13 +50,14 @@ const CaseStudy = () => {
                     </div>
                     <div
                         className="flex flex-row  justify-between w-[80px] h-[30px] md:w-[105px]  md:h-[50px] mt-[43px] ms-auto cursor-pointer">
-                        <button onClick={handleSlideBack}>
+                        <button onClick={handleScrollLeft}>
                             <Img src="/images/logo/arrowback.png" className="w-[45px]" alt="arrow"/>
                         </button>
-                        <button onClick={handleSlideForward}>
+                        <button onClick={handleScrollRight}>
                             <Img src="/images/logo/arrowforword.png" className="w-[45px]" alt="arrow"/>
                         </button>
                     </div>
+
                 </div>
                 <div
                     className="text-[#E8EDFF] -z-[1] lg:text-[250px] text-[130px] w-[470px] lg:w-[1440px] lg:left-[370px] left-[2px] absolute font-medium leading-[70%] -tracking-[20px] bottom-[0px]">
@@ -60,13 +65,14 @@ const CaseStudy = () => {
                 </div>
             </div>
             <div
-                className="w-full h-full overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth flex flex-row max-w-[1377.5px] mx-auto">
+                className="w-full  h-full scroll-container overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth flex flex-row max-w-[1377.5px] mx-auto"
+                ref={scrollContainerRef}
+            >
                 {caseStudies.caseStudies.map((caseStudy: CaseStudyInterface, index: number) => (
                     <div
                         key={index}
-                        className={`max-w-[320px] md:max-w-[711px] md:h-[366px] bg-white  rounded-[20px] boxshad flex flex-row justify-between p-[10px] md:px-[23px] md:py-[20px] m-4 ${
-                            index === currentSlide ? 'active-slide' : '' 
-                        }`}
+                        className="max-w-[320px] md:max-w-[711px] md:h-[366px] bg-white  rounded-[20px] boxshad flex flex-row justify-between p-[10px] md:px-[23px] md:py-[20px] m-4 "
+
                     >
                         <div className="md:w-[280px] md:h-[326px] inline-block rounded-[15px]">
                             <img src={caseStudy.imgUrl} className="w-[100%] h-[100%] bg-cover" alt={caseStudy.imgUrl}/>

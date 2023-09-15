@@ -49,12 +49,12 @@ const CaseStudy = () => {
                             See how we've achieved Digital Transformation to client's businesses like Yours.                        </div>
                     </div>
                     <div
-                        className="flex flex-row  justify-between w-[80px] h-[30px] md:w-[105px]  md:h-[50px] mt-[43px] ms-auto cursor-pointer">
+                        className="flex flex-row gap-[20px]    justify-between w-[80px] h-[30px] md:w-[105px]  md:h-[50px] mt-[43px] ms-auto cursor-pointer">
                         <button onClick={handleScrollLeft}>
-                            <Img src="/images/logo/arrowback.png" className="w-[45px]" alt="arrow"/>
+                            <Img src="/images/logo/arrowback.png" className="w-[45px] md:block hidden" alt="arrow"/>
                         </button>
                         <button onClick={handleScrollRight}>
-                            <Img src="/images/logo/arrowforword.png" className="w-[45px]" alt="arrow"/>
+                            <Img src="/images/logo/arrowforword.png" className="w-[45px] md:block hidden " alt="arrow"/>
                         </button>
                     </div>
 

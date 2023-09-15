@@ -16,6 +16,19 @@ type AboutItem = {
   link: string;
 
 };
+type IndustryItem = {
+  title: string;
+  id: number;
+  link: string;
+
+};
+type PortfolioItem = {
+  title: string;
+  id: number;
+  link: string;
+
+};
+
 
 type HelpItem = {
   title: string;
@@ -33,13 +46,15 @@ type SocialIcon = {
 
 type FooterData = {
   services: Service[];
+  portfolio:PortfolioItem[];
+  industry:IndustryItem[];
   about: AboutItem[];
   help: HelpItem[];
   social: SocialIcon[];
 };
 
 export const Footer: React.FC = () => {
-  const { services, about, help, social } = data as FooterData;
+  const { services, about, help, social,industry,portfolio } = data as FooterData;
   const [open, setOpen] = useState(false);
 
   const renderServices = () => {
@@ -55,6 +70,20 @@ export const Footer: React.FC = () => {
       <div key={item.id} className="text-[16px] font-normal">
         <a href={item.link}>{item.title}</a>
       </div>
+    ));
+  };
+  const renderIndustry = () => {
+    return industry.map((item: IndustryItem) => (
+        <div key={item.id} className="text-[16px] font-normal">
+          <a href={item.link}>{item.title}</a>
+        </div>
+    ));
+  };
+  const renderPortfolio = () => {
+    return portfolio.map((item: PortfolioItem) => (
+        <div key={item.id} className="text-[16px] font-normal">
+          <a href={item.link}>{item.title}</a>
+        </div>
     ));
   };
 
@@ -123,15 +152,22 @@ export const Footer: React.FC = () => {
 
         </div>
         <div className=" flex flex-col gap-y-[13px]">
-          <div className="text-[18px] font-bold">Services</div>
-          {renderServices()}
-        </div>
-        <div className=" flex flex-col gap-y-[13px]">
           <div className="text-[18px] font-bold">About</div>
           {renderAbout()}
         </div>
         <div className=" flex flex-col gap-y-[13px]">
-          <div className="text-[18px] font-bold">Help</div>
+          <div className="text-[18px] font-bold">Services</div>
+          {renderServices()}
+        </div>
+        <div className=" flex flex-col gap-y-[13px]">
+          <div className="text-[18px] font-bold">Industries</div>
+          {renderIndustry()}
+        </div><div className=" flex flex-col gap-y-[13px]">
+        <div className="text-[18px] font-bold">Portfolio</div>
+        {renderPortfolio()}
+      </div>
+        <div className=" flex flex-col gap-y-[13px]">
+          <div className="text-[18px] font-bold">Blog</div>
           {renderHelp()}
         </div>
         <div className=" flex flex-col gap-y-[13px]">

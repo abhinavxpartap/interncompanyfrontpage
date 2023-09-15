@@ -21,6 +21,50 @@
       "link": "#"
     }
   ],
+  "industry": [
+    {
+      "title": "Email Marketing",
+      "id": 1,
+      "link": "#"
+    },
+    {
+      "title": "Campaigns",
+      "id": 2,
+      "link": "#"
+    },
+    {
+      "title": "Branding",
+      "id": 3,
+      "link": "#"
+    },
+    {
+      "title": "Offline",
+      "id": 4,
+      "link": "#"
+    }
+  ],
+  "portfolio": [
+  {
+    "title": "Email Marketing",
+    "id": 1,
+    "link": "#"
+  },
+  {
+    "title": "Campaigns",
+    "id": 2,
+    "link": "#"
+  },
+  {
+    "title": "Branding",
+    "id": 3,
+    "link": "#"
+  },
+  {
+    "title": "Offline",
+    "id": 4,
+    "link": "#"
+  }
+],
   "about": [
     {
       "title": "Our Story",

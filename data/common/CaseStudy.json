@@ -7,7 +7,7 @@
   "caseStudies": [
     {
       "heading": "How be Transformed Real Estate: 50% Faster Property Searches, 30% Increase in Sales.",
-      "imgUrl": "/images/unsplash_05gac-Qn0k4.png",
+      "imgUrl": "/portfolio/casefin.svg",
       "org": "Dream Homes Realties",
       "description": "How we Optimized the Real Estate with Tech Driven Web Development using MERN stack, AI powered solutions, & Data Driven Approach. ",
       "href": "/portfolio"
@@ -16,22 +16,16 @@
       "heading": "Redefining FinTech Through Tech-Driven Digital Transformation",
       "imgUrl": "/casestudy/1.svg",
       "org": "Finance pvt. ltd.",
-      "description": "Since we started working with Medable in late 2017, they have continued to report stratospheric growth, increasing their presence with the world’s leading healthcare institutions and reaching more than 750,000 patients.",
-      "href": "/"
+      "description": "A research-led brainstorming, enhanced UI/UX & customized development approach transformed the Pizza Hut app into a more efficient & smarter food delivery management system.",
+      "href": "/finance"
     },
     {
       "heading": "Accelerating Automobile Industry: 40% Faster Processes, 25% Increase in Efficiency",
-      "imgUrl": "/images/unsplash_05gac-Qn0k4.png",
+      "imgUrl": "/portfolio/car.svg",
       "org": "AutomotiveCo.",
-      "description": "Since we started working with Medable in late 2017, they have continued to report stratospheric growth, increasing their presence with the world’s leading healthcare institutions and reaching more than 750,000 patients.",
-      "href": "/"
-    },
-    {
-      "heading": "Clinical Trial Management Software",
-      "imgUrl": "/casestudy/2.svg",
-      "org": "Medable",
-      "description": "Since we started working with Medable in late 2017, they have continued to report stratospheric growth, increasing their presence with the world’s leading healthcare institutions and reaching more than 750,000 patients.",
-      "href": "/"
+      "description": "A research-led brainstorming, enhanced UI/UX & customized development approach transformed the Pizza Hut app into a more efficient & smarter food delivery management system.",
+      "href": "/automobile"
     }
+
   ]
 }

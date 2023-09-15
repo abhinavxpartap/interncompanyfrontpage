@@ -37,8 +37,8 @@ export const TalkTo: React.FC<TalkInterface> = (props) => {
               },
             }}
           >
-            Talk to Our Experts{' '}
-          </Button>
+            <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
+           Talk  To Our Expert          </a>          </Button>
         </div>
       </div>
     </div>

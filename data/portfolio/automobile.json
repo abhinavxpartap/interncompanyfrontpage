@@ -1,0 +1,301 @@
+{
+  "Banner": {
+    "title": "Accelerating Automobile Industry: 40% Faster Processes, 25% Increase in Efficiency",
+    "image": "/portfolio/auto.svg"
+  },
+  "processInfo": {
+    "title": "Accelerating Automobile Industry: 40% Faster Processes, 25% Increase in Efficiency",
+    "subtitle": "In an era of rapid technological advancement, the automobileco was facing a pressing need for digital transformation. With increasing consumer expectations, evolving market dynamics, and the demand for eco-friendly vehicles, one leading automobile manufacturer decided it was time for a change. Their processes needed a significant overhaul to stay competitive and meet the demands of the future. They turned to us for a solution.",
+    "industry": "Automobile",
+    "client": "Automobile Co  ",
+    "businessType": "Enterprise",
+    "services": "Design, Development, Support & Maintenance",
+    "images": [
+      "/portfolio/m1.svg",
+      "/portfolio/m2.svg",
+      "/portfolio/m3.svg",
+      "/portfolio/m4.svg"
+    ]
+  },
+  "TalkTo": {
+    "title": "Enable Unmatched Digital Transformation Seamlessly"
+  },
+  "Director": {
+    "name": " Yacob Sudwarmaji",
+    "company": " Technology Americana Group",
+    "icon": "/director.svg",
+    "address": "(kuwait Food Co.)",
+    "message": "  Alumeltech has been a transformative partner for Dream Homes Realty. Their expertise in web design and software development, powered by AI and data analytics, revolutionized our online presence. The lightning-fast website they crafted significantly improved user experience, and their AI-driven recommendations led to a 30% increase in property inquiries and sales. Their team's dedication and innovative approach have been invaluable. We're thrilled with the results and the future opportunities this partnership holds..",
+    "post": "Director - Restaurant",
+    "image": "/images/logo/director.svg",
+    "mobileImage": "/Testimonial.svg"
+  },
+  "NewJourney": {
+    "heading": "Alumeltech Development Journey with AutoMotiveCo:",
+    "title1": "Key Features:",
+    "title2": "Our Approach for AutoMotiveCo:",
+    "subtitle2": "  At Alumeltech, we embarked on this transformative journey with AutoMotiveCo, sharing their vision of modernizing the automobile industry. Our approach was centered on harnessing the potential of cutting-edge technology to redefine their processes and customer experience. Here's how we approached this monumental project:",
+    "Data1": [
+      {
+        "id": 1,
+        "title": "AI-Powered Production Optimization",
+        "content": "  We implemented AI algorithms to optimize production processes, minimize waste, and maximize efficiency."
+      },
+      {
+        "id": 2,
+        "title": "IoT Integration",
+        "content": " By incorporating Internet of Things (IoT) technology, we enabled real-time monitoring and diagnostics for vehicles on the road."
+      },
+      {
+        "id": 3,
+        "title": "Streamlined Supply Chain",
+        "content": " Our solutions streamlined the supply chain, reducing lead times and ensuring components were readily available."
+      },
+      {
+        "id": 4,
+        "title": "Enhanced Customer Experience",
+        "content": "A user-friendly mobile app allowed customers to easily schedule maintenance, track their vehicle's performance, and receive personalized recommendations."
+      }
+    ],
+    "Data2": [
+      {
+        "id": 1,
+        "title": "Understanding the Vision",
+        "content": "Just as a navigator charts a course, we began by fully understanding AutoMotiveCo's vision, challenges, and objectives, aligning our strategy with their goals."
+      },
+      {
+        "id": 2,
+        "title": "Leveraging Data Insights",
+        "content": "Similar to explorers gathering intelligence, we gathered and analyzed data on production, supply chains, and customer behavior to inform our strategy."
+      },
+      {
+        "id": 3,
+        "title": "AI-Centric Strategy",
+        "content": " Our approach heavily relied on AI. We integrated AI algorithms to optimize production, reduce waste, and enhance customer experience, ensuring every interaction was efficient and personalized. "
+      },
+      {
+        "id": 4,
+        "title": "IoT Integration",
+        "content": " Embracing IoT technology, we enabled real-time monitoring and diagnostics, transforming vehicles into smart, connected assets."
+      },
+      {
+        "id": 5,
+        "title": "Efficient Supply Chain",
+        "content": " Like efficient supply chains, we streamlined AutoMotiveCo's processes, reducing lead times, and ensuring components arrived promptly."
+      },
+      {
+        "id": 6,
+        "title": "User-Centric Design",
+        "content": "Our design choices were rooted in delivering a superior customer experience. We designed a user-friendly mobile app that simplified vehicle maintenance and provided real-time insights."
+      },
+      {
+        "id": 7,
+        "title": "Testing and Quality Assurance",
+        "content": "We meticulously tested all systems to ensure they met the highest standards of performance, security, and reliability."
+      },
+      {
+        "id": 8,
+        "title": "Deployment and Support",
+        "content": " Following thorough testing, we deployed the solutions, providing ongoing support to ensure a seamless user experience."
+      }
+    ]
+  },
+  "OurProcessNew": {
+    "heading": "Our Process for FintechPro:",
+    "Data1": [
+      {
+        "id": 1,
+        "title": "Strategic Consultation",
+        "content": "We initiated our journey with AutoMotiveCo through extensive strategic consultations, delving deep into their objectives, challenges, and market dynamics. These discussions allowed us to align our technology solutions precisely with their vision for digital transformation."
+      },
+      {
+        "id": 2,
+        "title": "Data-Driven Analysis",
+        "content": "Just as explorers meticulously study maps, we gathered and analyzed critical data related to production processes, supply chain dynamics, and customer preferences. This intelligence formed the bedrock of our strategy, enabling us to make informed decisions that shaped the transformation process effectively."
+      },
+      {
+        "id": 3,
+        "title": "AI Implementation",
+        "content": "At the core of our approach was the strategic integration of artificial intelligence (AI). Much like skilled navigators, we harnessed AI algorithms to optimize production, minimize waste, and elevate the overall customer experience. This meant every interaction became efficient and tailored, leading to improved efficiency, reduced costs, and a higher level of personalization."
+      },
+      {
+        "id": 4,
+        "title": "IoT Implementation",
+        "content": "Similar to advanced navigation instruments, we seamlessly integrated Internet of Things (IoT) technology. This transformed vehicles into smart, connected assets, allowing real-time monitoring and diagnostics. IoT brought an unprecedented level of visibility into vehicle performance and maintenance needs, empowering both AutoMotiveCo and their customers."
+      },
+      {
+        "id": 5,
+        "title": "Efficient Supply Chain: ",
+"content": "Streamlining the supply chain, we reduced lead times by a remarkable 30%, ensuring that components and materials were available precisely when needed. Much like efficient supply chains in exploration, this optimization enhanced overall operational efficiency and reduced costs significantly."      },
+      {
+        "id": 6,
+        "title": "User Centric Design",
+"content": "In crafting the user experience, our design choices were inspired by the need for an exceptional customer journey. Similar to ensuring smooth exploration, our team meticulously designed a user-friendly mobile app. This app simplified vehicle maintenance scheduling, offered real-time insights, and provided personalized recommendations, elevating the overall customer experience."      },
+      {
+        "id": 7,
+        "title": "Testing and Quality Assurance:",
+"content": "In crafting the user experience, our design choices were inspired by the need for an exceptional customer journey. Similar to ensuring smooth exploration, our team meticulously designed a user-friendly mobile app. This app simplified vehicle maintenance scheduling, offered real-time insights, and provided personalized recommendations, elevating the overall customer experience."      },
+      {
+        "id": 8,
+        "title": "Deployment and Support",
+"content": "Following successful testing, we deployed the solutions seamlessly. Our commitment extended beyond deployment as we provided ongoing support to AutoMotiveCo. This ensured a smooth and uninterrupted user experience, securing the full benefits of digital transformation for the long term."      }
+    ]
+  },
+  "ResultNew": {
+    "heading": "Benefits",
+    "subtitle": "Digital transformation has not only made AutoMotiveCo more competitive but has also positioned them as an industry leader prepared for the future of the automobile sector:",
+    "Data": [
+      {
+        "title": "Enhanced production efficiency with 40% faster processes."
+      },
+      {
+        "title": "Improved overall operational efficiency, increasing productivity by 25%."
+      },
+      {
+        "title": "A streamlined supply chain, reducing lead times and improving component availability."
+      }
+    ]
+  },
+  "Portfolio": {
+    "title": "Web application development process",
+    "subtitle": "Our Solution Development Cycle helps turn your great ideas into profitable business solutions.",
+    "itmes": [
+      {
+        "sideimage1": "/stratergy.svg",
+        "sideimage2": "Strategy & Research",
+        "title": "Web application development process",
+        "description": "",
+        "link": "",
+        "subtitle": "Zuca dives into your business model, market challenges and product positioning, and helps you create a product that delivers unique value."
+      },
+      {
+        "sideimage1": "/stratergy.svg",
+        "sideimage2": "Strategy & Research",
+        "title": "Web application development process",
+        "description": "",
+        "link": "",
+        "subtitle": "Zuca dives into your business model, market challenges and product positioning, and helps you create a product that delivers unique value."
+      },
+      {
+        "sideimage1": "/stratergy.svg",
+        "sideimage2": "Strategy & Research",
+        "title": "Web application development process",
+        "description": "",
+        "link": "",
+        "subtitle": "Zuca dives into your business model, market challenges and product positioning, and helps you create a product that delivers unique value."
+      }
+    ]
+  },
+  "processSteps": [
+    {
+      "number": "1",
+      "title": "Design",
+      "subSteps": [
+        "Wireframe",
+        "User Journey Mapping"
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Development",
+      "subSteps": [
+        "Backend Development",
+        "Architecture Development"
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Support & Maintenance",
+      "subSteps": [
+        "Quality Testing",
+        "Post-launch Maintenance"
+      ]
+    }
+  ],
+  "imagePort": [
+    "/portfolio/m5.svg",
+    "/portfolio/m6.svg",
+    "/portfolio/m7.svg",
+    "/portfolio/m8.svg",
+    "/portfolio/m9.svg",
+    "/portfolio/m10.svg",
+    "/portfolio/m11.svg",
+    "/portfolio/m12.svg"
+  ],
+  "challenges": [
+    {
+      "id": 1,
+      "title": "Design",
+      "description": "With large data sets in the form of multiple food menus and extensive user base in various countries, achieving quick screen transition was a challenge. Our team with its immaculate planning and use of the right tools ensured a much quicker Pizza Hut delivery app screen transition."
+    },
+    {
+      "id": 2,
+      "title": "Operational Changes",
+      "description": "At the starting of the project, there were different operational issues due to product management. Our team keenly studied all the issues across the layers and the legacy system, and resolved the challenge by taking appropriate actions at the right time."
+    }
+  ],
+  "result": [
+    {
+      "title": "Downloads",
+      "value": "51K+",
+      "description": "Downloads"
+    },
+    {
+      "title": "Conversion Rate Increased",
+      "value": "30%",
+      "description": "Conversion Rate Increased"
+    },
+    {
+      "title": "Screen Transition Time Increased",
+      "value": "7 secs",
+      "description": "Screen Transition Time Increased"
+    }
+  ],
+  "resultNew": {
+    "heading": "The Results",
+    "list": [
+      {
+        "percentage": 40,
+        "title": "Faster Manufacturing Processes",
+        "content": "Through AI-driven production optimization, AutoMotiveCo's manufacturing processes became nearly 40% faster, improving efficiency and reducing costs."
+      },
+      {
+        "percentage": 25,
+        "title": "Increase in Efficiency",
+        "content": "The integration of IoT technology led to a 25% increase in overall operational efficiency, enhancing productivity and reducing downtime."
+      },
+      {
+        "percentage": 0,
+        "title": "Streamlined Supply Chain",
+        "content": "The streamlined supply chain reduced lead times by 30%, ensuring components were readily available when needed."
+      }
+    ]
+  },
+  "portfolioMain": {
+    "title": " Crafted With Love. Built With Passion",
+    "subtitle": " Zuca offers transformative technology and software solutions to  startups, global brands & Fortune 500 companies. Some of our major  clients include IKEA, Domino, Adidas, KPMG, BCG & Pizza Hut.",
+    "items": [
+      {
+        "image": "/portfolio1.svg",
+        "mobile": "/phoneportfolio.svg",
+        "title": " Pizza App",
+        "subtitle": " Engaging users through a robust and visually appealing food           delivery mobile app",
+        "description": " A research-led brainstorming, enhanced UI/UX & customized development approach transformed the Pizza Hut app into a more efficient & smarter food delivery management system."
+      },
+      {
+        "image": "/portfolio1.svg",
+        "mobile": "/phoneportfolio.svg",
+        "title": " Pizza App",
+        "subtitle": " Engaging users through a robust and visually appealing food           delivery mobile app",
+        "description": " A research-led brainstorming, enhanced UI/UX & customized development approach transformed the Pizza Hut app into a more efficient & smarter food delivery management system."
+      },
+      {
+        "image": "/portfolio1.svg",
+        "mobile": "/phoneportfolio.svg",
+        "title": " Pizza App",
+        "subtitle": " Engaging users through a robust and visually appealing food           delivery mobile app",
+        "description": " A research-led brainstorming, enhanced UI/UX & customized development approach transformed the Pizza Hut app into a more efficient & smarter food delivery management system."
+      }
+    ]
+  }
+}

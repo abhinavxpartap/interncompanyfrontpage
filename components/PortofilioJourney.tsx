@@ -30,20 +30,21 @@ export const NewPortofilioJourney: React.FC<NewJourney> = ( props ) => {
                 <h1 className="text-[#151448] text-[40px] font-semibold">{heading}</h1>
                 <h2 className="text-[#6E73FF] text-[25px] font-semibold mt-[30px]">{title1}</h2>
                 {List1.map((item,index) => (
-                <p key={index} className="text-[#757B8A] lg:leading-[30px] xl:leading-[40px] font-normal mt-[10px]">
+                <p key={index} className="text-[#757B8A] lg:leading-[22px] xl:leading-[25px] font-normal mt-[10px]">
                     <span className="mr-[6px] text-[#757B8A] font-semibold">{item.id}.</span>
                     <span className="mr-[6px] text-[#151448] font-semibold">{item.title}:</span>
-                    {item.content}
+                    <span className="mr-[6px] text-[#151448]">                    {item.content}
+</span>
                 </p>
                 ))}
                 <h1 className="text-[#6E73FF] text-[25px] font-semibold mt-[30px]">{title2}</h1>
-                <p className="text-[#757B8A] mt-[10px] lg:mb-[40px] xl:mb-[60px] text-[18px] lg:leading-[30px] xl:leading-[40px] font-normal">{subtitle2}</p>
+                <p className="text-[#757B8A] mt-[10px] lg:mb-[30px] text-[18px] lg:leading-[32px]  font-normal">{subtitle2}</p>
                 {List2.map((item,index) => (
-                    <p key={index} className="text-[#757B8A] lg:leading-[30px] xl:leading-[40px] font-normal mt-[10px]">
+                    <p key={index} className="text-[#757B8A] lg:leading-[26px] xl:leading-[30px] font-normal mt-[10px]">
                         <span className="mr-[6px] text-[#757B8A] font-semibold">{item.id}.</span>
                         <span className="mr-[6px] text-[#151448] font-semibold">{item.title}:</span>
-                        {item.content}
-                    </p>
+                        <span className="mr-[6px] text-[#111C3A]">                    {item.content}
+</span>                    </p>
                 ))}
             </div>
         </div>

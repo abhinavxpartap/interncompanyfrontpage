@@ -222,8 +222,8 @@ export const ContactBanner: React.FC<ContactBannerInterface> = (props) => {
                       },
                     }}
                   >
-                    Book my Demo
-                  </Button>
+                    <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
+                      Show Me How                  </a>                  </Button>
                   <div>
 
                   </div>

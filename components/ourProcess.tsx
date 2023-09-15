@@ -1,6 +1,8 @@
 import React from 'react';
 import { Img } from '../utils/Img';
 import imagePort from'../data/portfolio.json'
+
+
 export const OurProcess = () => {
 
   const content = (

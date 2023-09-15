@@ -152,8 +152,8 @@ const Popupform: React.FC<PopUpFormProps> = ({ onClose }) => {
                 },
               }}
             >
-              Book my Demo
-            </Button>
+              <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
+            Show me How               </a>            </Button>
           </div>
         </Box>
       </div>

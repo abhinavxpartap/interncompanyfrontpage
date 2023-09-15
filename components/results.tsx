@@ -17,7 +17,7 @@ export const Results: React.FC<ResultInterface> = ( props ) => {
       <div className="max-w-[1377.5px] relative mx-auto">
         <div className="flex flex-col items-center justify-center w-[100%] py-[50px] px-[10px] md:px-[60px]">
             <h1 className="text-[#151448] text-[45px] font-semibold">{heading}</h1>
-            <p className="text-[#3D4852] text-[18px] max-w-[600px] text-center font-medium">{subtitle}</p>
+            <p className="text-[#3D4852] text-[18px] max-w-[800px] text-center font-medium">{subtitle}</p>
             <ul className="text-center text-[#151448] text-[20px] font-medium list-none mt-[40px]">
                 {List.map((item,index) => (
                 <li key={index} className="mb-[20px] flex flex-row justify-center items-center text-center gap-[10px]"><Img src="/newbullet.svg" className="w-[8px]" alt={"Icon"}/> {item.title}</li>

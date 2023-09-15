@@ -145,7 +145,8 @@ const DemoForm = () => {
                   },
                 }}
               >
-Show Me How              </Button>
+                <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
+                  Show Me How                    </a>           </Button>
             </div>
           </Box>
         </div>

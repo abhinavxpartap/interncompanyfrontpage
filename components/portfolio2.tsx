@@ -75,11 +75,11 @@ export const PortfolioBanner2 = () => {
       <div className="max-w-[1440.5px] mx-auto">
         <div className="flex flex-col md:flex-row mt-[50px] md:mt-[110px]">
           <div className="w-full md:w-[450px] lg:w-[680px] xl:w-[800px] px-0">
-            <Img src="/portfolio1.svg" alt="n" className="w-[100%]" />
+            <Img src="/portfolio/portbanner1.svg" alt="n" className="w-[100%]" />
           </div>
           <div className="flex flex-col px-[20px] md:px-0">
             <div className="relative w-[40vw] md:w-[150px] lg:w-[300px] xl:w-[340px] top-[-100px] left-[55%] lg:top-[40px] xl:top-[60px] md:top-[30px]  md:left-[-60px] lg:left-[-120px] xl:left-[-160px]">
-              <Img src="/phoneportfolio.svg" alt="n" className="w-[100%] " />
+              <Img src="/portfolio/portphone1.svg" alt="n" className="w-[100%] " />
             </div>
             <div className="bg-white relative top-[-100px]  md:top-[20px] lg:top-[30px] xl:top-[80px] md:left-[-20px] lg:left-[-30px]  rounded-[15px] px-[25px] pt-[16px]  pb-[25px] md:w-[300px] lg:w-[380px] xl:w-[480px] boxshad">
               <h1 className="text-[25px] md:text-[20px] lg:text-[25px] xl:text-[30px] font-semibold">
@@ -91,7 +91,7 @@ export const PortfolioBanner2 = () => {
                 {portfolio.items[0].description}
               </p>
               <button>
-                <a className="text-[16px] md:text-[12px] xl:text-[16px]  font-medium text-[#8184EB]">
+                <a href={portfolio.items[0].link} className="text-[16px] md:text-[12px] xl:text-[16px]  font-medium text-[#8184EB]">
                   View Case Study
                 </a>
               </button>
@@ -113,23 +113,23 @@ export const PortfolioBanner2 = () => {
                 {portfolio.items[1].description}
               </p>
               <button>
-                <a className="text-[16px] md:text-[12px] xl:text-[16px]  font-medium text-[#8184EB]">
+                <a  href={portfolio.items[1].link} className="text-[16px] md:text-[12px] xl:text-[16px]  font-medium text-[#8184EB]">
                   View Case Study
                 </a>
               </button>
             </div>
           </div>
           <div className="w-full md:w-[450px] lg:w-[680px] xl:w-[800px] px-0">
-            <Img src="/plane.svg" alt="n" className="w-[100%]" />
+            <Img src="/portfolio/portbanner2.svg" alt="n" className="w-[100%]" />
           </div>
         </div>
         <div className="flex flex-col md:flex-row mt-[50px] md:mt-[110px]">
           <div className="w-full md:w-[450px] lg:w-[680px] xl:w-[800px] px-0">
-            <Img src="/portfolio1.svg" alt="n" className="w-[100%]" />
+            <Img src="/portfolio/portbanner3.svg" alt="n" className="w-[100%]" />
           </div>
           <div className="flex flex-col px-[20px] md:px-0">
             <div className="relative w-[40vw] md:w-[150px] lg:w-[300px] xl:w-[340px] top-[-100px] left-[55%] lg:top-[40px] xl:top-[60px] md:top-[30px]  md:left-[-60px] lg:left-[-120px] xl:left-[-160px]">
-              <Img src="/phoneportfolio.svg" alt="n" className="w-[100%] " />
+              <Img src="/portfolio/portphone1.svg" alt="n" className="w-[100%] " />
             </div>
             <div className="bg-white relative top-[-100px]  md:top-[20px] lg:top-[30px] xl:top-[80px] md:left-[-20px] lg:left-[-30px]  rounded-[15px] px-[25px] pt-[16px]  pb-[25px] md:w-[300px] lg:w-[380px] xl:w-[480px] boxshad">
               <h1 className="text-[25px] md:text-[20px] lg:text-[25px] xl:text-[30px] font-semibold">
@@ -142,7 +142,7 @@ export const PortfolioBanner2 = () => {
                 {portfolio.items[2].description}
               </p>
               <button>
-                <a className="text-[16px] md:text-[12px] xl:text-[16px]  font-medium text-[#8184EB]">
+                <a  href={portfolio.items[2].link} className="text-[16px] md:text-[12px] xl:text-[16px]  font-medium text-[#8184EB]">
                   View Case Study
                 </a>
               </button>

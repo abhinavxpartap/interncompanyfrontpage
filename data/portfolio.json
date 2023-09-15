@@ -208,6 +208,26 @@
       "description": "At the starting of the project, there were different operational issues due to product management. Our team keenly studied all the issues across the layers and the legacy system, and resolved the challenge by taking appropriate actions at the right time."
     }
   ],
+  "resultNew": {
+    "heading": "The Results",
+    "list": [
+      {
+        "percentage": 40,
+        "title": "Faster Manufacturing Processes",
+        "content": "Through AI-driven production optimization, AutoMotiveCo's manufacturing processes became nearly 40% faster, improving efficiency and reducing costs."
+      },
+      {
+        "percentage": 25,
+        "title": "Increase in Efficiency",
+        "content": "The integration of IoT technology led to a 25% increase in overall operational efficiency, enhancing productivity and reducing downtime."
+      },
+      {
+        "percentage":0,
+        "title": "Streamlined Supply Chain",
+        "content": "The streamlined supply chain reduced lead times by 30%, ensuring components were readily available when needed."
+      }
+    ]
+  },
   "result": [
     {
       "title": "Downloads",

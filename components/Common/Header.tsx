@@ -207,14 +207,14 @@ export const Header= () => {
                     },
                   }}
               >
-                Transform My Startup Now
-              </Button>
+                <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
+           Transform My StartUp Now                  </a>              </Button>
             </div>
-            <Dialog open={open} onClose={handleClose}>
-              <DialogContent>
-                <Popupform onClose={handleClose} />
-              </DialogContent>
-            </Dialog>
+            {/*<Dialog open={open} onClose={handleClose}>*/}
+            {/*  <DialogContent>*/}
+            {/*    <Popupform onClose={handleClose} />*/}
+            {/*  </DialogContent>*/}
+            {/*</Dialog>*/}
           </div>
         </div>
         <div

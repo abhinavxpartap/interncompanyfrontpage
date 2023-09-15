@@ -22,19 +22,19 @@ type IndustryItem = {
   link: string;
 
 };
-type PortfolioItem = {
-  title: string;
-  id: number;
-  link: string;
+// type PortfolioItem = {
+//   title: string;
+//   id: number;
+//   link: string;
+//
+// };
 
-};
 
-
-type HelpItem = {
-  title: string;
-  id: number;
-  link: string;
-};
+// type HelpItem = {
+//   title: string;
+//   id: number;
+//   link: string;
+// };
 
 type SocialIcon = {
   icon: string;
@@ -46,15 +46,15 @@ type SocialIcon = {
 
 type FooterData = {
   services: Service[];
-  portfolio:PortfolioItem[];
+  // portfolio:PortfolioItem[];
   industry:IndustryItem[];
   about: AboutItem[];
-  help: HelpItem[];
+  // help: HelpItem[];
   social: SocialIcon[];
 };
 
 export const Footer: React.FC = () => {
-  const { services, about, help, social,industry,portfolio } = data as FooterData;
+  const { services, about, social,industry } = data as FooterData;
   const [open, setOpen] = useState(false);
 
   const renderServices = () => {
@@ -79,21 +79,21 @@ export const Footer: React.FC = () => {
         </div>
     ));
   };
-  const renderPortfolio = () => {
-    return portfolio.map((item: PortfolioItem) => (
-        <div key={item.id} className="text-[16px] font-normal">
-          <a href={item.link}>{item.title}</a>
-        </div>
-    ));
-  };
+  // const renderPortfolio = () => {
+  //   return portfolio.map((item: PortfolioItem) => (
+  //       <div key={item.id} className="text-[16px] font-normal">
+  //         <a href={item.link}>{item.title}</a>
+  //       </div>
+  //   ));
+  // };
 
-  const renderHelp = () => {
-    return help.map((item: HelpItem) => (
-      <div key={item.id} className="text-[16px] font-normal">
-        <a href={item.link}>{item.title}</a>
-      </div>
-    ));
-  };
+  // const renderHelp = () => {
+  //   return help.map((item: HelpItem) => (
+  //     <div key={item.id} className="text-[16px] font-normal">
+  //       <a href={item.link}>{item.title}</a>
+  //     </div>
+  //   ));
+  // };
 
   const renderSocialIcons = () => {
     return social.map((icon: SocialIcon) => (
@@ -151,25 +151,27 @@ export const Footer: React.FC = () => {
           </div>
 
         </div>
-        <div className=" flex flex-col gap-y-[13px]">
-          <div className="text-[18px] font-bold">About</div>
+        <div className="flex flex-col gap-y-[13px] group">
+          <div className="text-[18px] font-bold group-hover:text-[#6E73FF] transition-colors duration-300">About</div>
+
           {renderAbout()}
         </div>
-        <div className=" flex flex-col gap-y-[13px]">
-          <div className="text-[18px] font-bold">Services</div>
+        <div className=" flex flex-col group gap-y-[13px]">
+          <div className="text-[18px]  group-hover:text-[#6E73FF] transition-colors duration-300 font-bold">Services</div>
           {renderServices()}
         </div>
-        <div className=" flex flex-col gap-y-[13px]">
-          <div className="text-[18px] font-bold">Industries</div>
+        <div className=" flex flex-col group gap-y-[13px]">
+          <div className="text-[18px] group-hover:text-[#6E73FF] transition-colors duration-300 font-bold">Industries</div>
           {renderIndustry()}
-        </div><div className=" flex flex-col gap-y-[13px]">
-        <div className="text-[18px] font-bold">Portfolio</div>
-        {renderPortfolio()}
-      </div>
-        <div className=" flex flex-col gap-y-[13px]">
-          <div className="text-[18px] font-bold">Blog</div>
-          {renderHelp()}
         </div>
+      {/*  <div className=" flex flex-col gap-y-[13px]">*/}
+      {/*  <div className="text-[18px] font-bold">Portfolio</div>*/}
+      {/*  {renderPortfolio()}*/}
+      {/*</div>*/}
+        {/*<div className=" flex flex-col gap-y-[13px]">*/}
+        {/*  <div className="text-[18px] font-bold">Blog</div>*/}
+        {/*  {renderHelp()}*/}
+        {/*</div>*/}
         <div className=" flex flex-col gap-y-[13px]">
           <div className="text-[18px] font-bold">Follow Us</div>
           <div className="flex md:gap-[20px]    gap-[7px] flex-row">

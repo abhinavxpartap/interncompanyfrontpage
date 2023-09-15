@@ -101,24 +101,26 @@ const CaseStudy = () => {
                                         textTransform: "capitalize",
                                         fontWeight: "bold",
                                         lineHeight: "150%",
+                                        transition: "background-color 0.3s, color 0.3s", // Add transition for smooth effect
+                                        '&:hover': {
+                                            backgroundColor: "#6E73FF",
+                                            color: "#fff",
+                                        },
                                     }}
-
                                     onClick={() => {
                                         router.push(`${caseStudy.href}`);
                                     }}
-
                                 >
                                     Learn more
                                     <span className="ml-[8px]">
-                    <ArrowOutwardIcon sx={{
-                        width:"12px",
-                        height:"12px",
-                        marginY:"auto",
-
-                    }}
-                    />
-                  </span>
+        <ArrowOutwardIcon sx={{
+            width:"12px",
+            height:"12px",
+            marginY:"auto",
+        }} />
+    </span>
                                 </MUIMaterial.Button>
+
                             </div>
                         </div>
                     </div>

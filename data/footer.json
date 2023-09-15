@@ -1,44 +1,44 @@
 {
   "services": [
     {
-      "title": "Email Marketing",
+      "title": "Web Development",
       "id": 1,
       "link": "#"
     },
     {
-      "title": "Campaigns",
+      "title": "Digital Marketing",
       "id": 2,
       "link": "#"
     },
     {
-      "title": "Branding",
+      "title": "Web Design",
       "id": 3,
       "link": "#"
     },
     {
-      "title": "Offline",
+      "title": "UI/UX",
       "id": 4,
       "link": "#"
     }
   ],
   "industry": [
     {
-      "title": "Email Marketing",
+      "title": "Finance",
       "id": 1,
       "link": "#"
     },
     {
-      "title": "Campaigns",
+      "title": "Real Estate",
       "id": 2,
       "link": "#"
     },
     {
-      "title": "Branding",
+      "title": "Auto Mobile",
       "id": 3,
       "link": "#"
     },
     {
-      "title": "Offline",
+      "title": "Health & Wellness",
       "id": 4,
       "link": "#"
     }

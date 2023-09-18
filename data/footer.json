@@ -1,22 +1,22 @@
 {
   "services": [
     {
-      "title": "Web Development",
+      "title": "Android Application Development",
       "id": 1,
       "link": "#"
     },
     {
-      "title": "Digital Marketing",
+      "title": "Flutter Application Development",
       "id": 2,
       "link": "#"
     },
     {
-      "title": "Web Design",
+      "title": "Web Application Development",
       "id": 3,
       "link": "#"
     },
     {
-      "title": "UI/UX",
+      "title": "iOS Application Development",
       "id": 4,
       "link": "#"
     }

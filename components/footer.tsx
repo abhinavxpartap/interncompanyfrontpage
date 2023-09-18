@@ -157,11 +157,11 @@ export const Footer: React.FC = () => {
           {renderAbout()}
         </div>
         <div className=" flex flex-col group gap-y-[13px]">
-          <div className="text-[18px]  group-hover:text-[#6E73FF] transition-colors duration-300 font-bold">Services</div>
+          <div className="text-[18px]  group-hover:text-[#6E73FF] transition-colors duration-300 font-bold">Services to hit your goals</div>
           {renderServices()}
         </div>
         <div className=" flex flex-col group gap-y-[13px]">
-          <div className="text-[18px] group-hover:text-[#6E73FF] transition-colors duration-300 font-bold">Industries</div>
+          <div className="text-[18px] group-hover:text-[#6E73FF] transition-colors duration-300 font-bold">Technologies Your business loves</div>
           {renderIndustry()}
         </div>
       {/*  <div className=" flex flex-col gap-y-[13px]">*/}

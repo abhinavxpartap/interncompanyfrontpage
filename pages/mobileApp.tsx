@@ -51,13 +51,11 @@ const ServicePage: React.FC = () => {
                         image={MobileApp.About.image}
                     />
                     <Service/>
-                    <ProductOverview/>
+                    <div className="md:pt-[70px] pb-[30px] pt-[30px]">
+                        <ProductOverview/>
 
-                    <ServiceProcess
-                        title={ProcessData.bannerData.title}
-                        subtitle={ProcessData.bannerData.subtitle}
-                        data={ProcessData.header}
-                    />
+                    </div>
+
                     <ServicesDevelopment
                         title={MobileApp.bannerData.title}
                         subtitle={MobileApp.bannerData.subtitle}
@@ -67,17 +65,23 @@ const ServicePage: React.FC = () => {
                         buttonName={MobileApp.bannerData.buttonName}
                         buttonLink={MobileApp.bannerData.buttonLink}
                     />
-                    <PortfolioOurProcess
-                        List={MobileApp.OurProcessNew.Data1}
-                        heading={MobileApp.OurProcessNew.heading}
-                    />
-                    <ServicesFaq
-                        title={MobileApp.FaqBanner.title}
-                        subtitle={MobileApp.FaqBanner.subtitle}
-                        buttonName={MobileApp.FaqBanner.buttonName}
-                        buttonLink={MobileApp.FaqBanner.buttonLink}
-                        tabData={MobileApp.header}
-                    />
+                    <div className="">
+                        <PortfolioOurProcess
+                            List={MobileApp.OurProcessNew.Data1}
+                            heading={MobileApp.OurProcessNew.heading}
+                        />
+                    </div>
+
+                    <div className="md:pt-[70px] pt-[30px] pb-[30px]">
+                        <ServicesFaq
+                            title={MobileApp.FaqBanner.title}
+                            subtitle={MobileApp.FaqBanner.subtitle}
+                            buttonName={MobileApp.FaqBanner.buttonName}
+                            buttonLink={MobileApp.FaqBanner.buttonLink}
+                            tabData={MobileApp.header}
+                        />
+                    </div>
+
                     <ServicesAssurance
                         image={serviceAssurance.bannerData.image}
                         title={serviceAssurance.bannerData.title}
@@ -87,8 +91,10 @@ const ServicePage: React.FC = () => {
                         sideImage={serviceAssurance.bannerData.sideImage}
                     />
                     <ServiceTech/>
-                    <OurBrands/>
-                    <FreeQuotation/>
+                    <div className="pt-[50px]">
+                        <FreeQuotation/>
+
+                    </div>
                     <FixedButton/>
 
                     <Footer/>

@@ -83,7 +83,7 @@ const CaseStudy = () => {
                             <div
                                 className="text-[#8184EB] text-[14px] leading-[20px] md:text-[20px] font-bold md:leading-[37.4px] mt-[10px]">{caseStudy.org}</div>
                             <div
-                                className="text-[#747C85] text-[12px] leading-[18px] md:text-[16px] mt-[5px] font-medium md:leading-[26px]">{caseStudy.description}</div>
+                                className="text-[#747C85] text-[12px] leading-[18px] md:text-[13px] mt-[5px] font-medium md:leading-[26px]">{caseStudy.description}</div>
                             <div>
                                 <MUIMaterial.Button
                                     sx={{

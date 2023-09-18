@@ -26,6 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       "/admin",
      "/finance",
       "/realestate",
+      "/mobileApp",
       "/automobile"
 
   ];

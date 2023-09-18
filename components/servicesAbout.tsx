@@ -21,6 +21,13 @@ export const ServiceAbout: React.FC<ServiceAboutInterface> = (props) => {
           <p className="text-[#757B8A] font-normal text-[12px] leading-[20px] sm:text-[15px] sm:leading-[30px] md:text-[10px] md:leading-[18px] lg:text-[13px] lg:leading-[30px] xl:text-[15px] xl:leading-[30px] ">
             {paragraph}
           </p>
+            <p className="text-[#757B8A] font-normal text-[12px] leading-[20px] sm:text-[15px] sm:leading-[30px] md:text-[10px] md:leading-[18px] lg:text-[13px] lg:leading-[30px] xl:text-[15px] xl:leading-[30px] ">
+                Custom Android and iOS Mobile App Development            </p> <p className="text-[#757B8A] font-normal text-[12px] leading-[20px] sm:text-[15px] sm:leading-[30px] md:text-[10px] md:leading-[18px] lg:text-[13px] lg:leading-[30px] xl:text-[15px] xl:leading-[30px] ">
+            Native and Cross-platform Solutions        </p> <p className="text-[#757B8A] font-normal text-[12px] leading-[20px] sm:text-[15px] sm:leading-[30px] md:text-[10px] md:leading-[18px] lg:text-[13px] lg:leading-[30px] xl:text-[15px] xl:leading-[30px] ">
+            Responsive UI/UX Design        </p> <p className="text-[#757B8A] font-normal text-[12px] leading-[20px] sm:text-[15px] sm:leading-[30px] md:text-[10px] md:leading-[18px] lg:text-[13px] lg:leading-[30px] xl:text-[15px] xl:leading-[30px] ">
+            App Consulting & Prototyping        </p> <p className="text-[#757B8A] font-normal text-[12px] leading-[20px] sm:text-[15px] sm:leading-[30px] md:text-[10px] md:leading-[18px] lg:text-[13px] lg:leading-[30px] xl:text-[15px] xl:leading-[30px] ">
+            Notification and Geofencing        </p> <p className="text-[#757B8A] font-normal text-[12px] leading-[20px] sm:text-[15px] sm:leading-[30px] md:text-[10px] md:leading-[18px] lg:text-[13px] lg:leading-[30px] xl:text-[15px] xl:leading-[30px] ">
+            Automated QA and Testing        </p>
         </div>
       </div>
     </>

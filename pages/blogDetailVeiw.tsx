@@ -8,6 +8,7 @@ import { GetStories } from '../components/getStories';
 import { Header } from '../components/Common/Header';
 import { Footer } from '../components/footer';
 import FixedButton from "../components/FixedButton";
+import Float from "../components/Float";
 
 const content = [
   {
@@ -365,7 +366,7 @@ const BlogDetailVeiw: React.FC = () => {
         </div>
         <GetStories />
         <FixedButton />
-
+<Float/>
         <Footer />
       </div>
     </>

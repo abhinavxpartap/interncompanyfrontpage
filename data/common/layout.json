@@ -8,22 +8,22 @@
       "title": "What We Offer",
       "data": [
         {
-          "label": "Services",
-          "href": "/service"
+          "label": "Data Analytics",
+          "href": "/dataAnalytics"
         },
 
 
         {
-          "label": "Our Team",
-          "href": "/"
+          "label": "Product Design",
+          "href": "/product "
         },
         {
-          "label": "Careers",
-          "href": "/"
+          "label": "Mobile App Development",
+          "href": "/mobileApp"
         },
         {
-          "label": "Contact Us",
-          "href": "/contact"
+          "label": "Web Application Development",
+          "href": "/webDevelopment"
         }
       ]
     },
@@ -32,19 +32,33 @@
 
       "data": [
         {
-          "label": "Industries",
+          "label": "Industry 4.0",
           "href": "/industries"
         },
         {
-          "label": "Privacy Policy",
+          "label": "IoT Development",
           "href": "/"
         },
         {
-          "label": "Terms of Services",
+          "label": "Machine Learning",
           "href": "/"
         },
         {
-          "label": "Cookie Policy",
+          "label": "Artificial Intelligence",
+          "href": "/"
+        }
+      ,
+        {
+          "label": "Robotic Process Automation",
+          "href": "/"
+        },
+        {
+          "label": "Cloud Application Development",
+          "href": "/"
+        }
+      ,
+        {
+          "label": "Blockchain Application Development",
           "href": "/"
         }
 

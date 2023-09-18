@@ -14,6 +14,7 @@ import {NewPortofilioJourney} from "../components/PortofilioJourney";
 import {PortfolioOurProcess} from "../components/PortfolioOurProcess";
 import FixedButton from "../components/FixedButton";
 import CaseStudy from "../components/Case Study";
+import Float from "../components/Float";
 
 const Portfolio: NextPage = () => {
     return (
@@ -31,6 +32,8 @@ const Portfolio: NextPage = () => {
                     title={PortData.Banner.title}
                     image={PortData.Banner.image}/>
             </div>
+
+            <Float/>
             <AboutPortfolio
                 title={PortData.processInfo.title}
                 images={PortData.processInfo.images}

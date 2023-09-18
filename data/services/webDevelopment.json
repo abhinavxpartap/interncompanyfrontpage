@@ -1,16 +1,16 @@
 {
   "Banner": {
-    "title": "Supercharge Your Business with Tailored Mobile Apps for Skyrocketing Success",
-    "subtitle": "Explore Our Expertise: Custom Mobile Apps, UI/UX Excellence, and Seamless Development for Your Success.",
+    "title": "Supercharge Your Digital Presence with Custom Web Applications",
+    "subtitle": "Solving Your Unique Challenges with Web Applications Engineered for Business Success",
     "backgroundImage": "/serviceBanner.jpg",
     "buttonName": "Show Me How",
     "buttonLink": "/"
   },
   "About": {
-    "title": "Fuel Your Brand with Mobile Application Excellence",
-    "subtitle": "As a renowned mobile application development company with a global presence, including the USA, India, and Noida, we specialize in creating user-friendly mobile applications for both iOS and Android platforms. At Alumeltech, we house a talented pool of mobile app developers dedicated to delivering cutting-edge solutions.",
+    "title": "Your Web App Solution: Customized for Your Business Success",
+    "subtitle": "At AlumelTech, we excel in solving your unique business challenges through tailored web applications. Our seasoned team is committed to crafting user-centric designs that transform your vision into a seamless, engaging, and highly effective web app. Expect results that fuel your brand's growth and elevate your digital presence.",
     "image": "/about.svg",
-    "paragraph": "We embrace both native and cross-platform mobile app development, incorporating the latest technologies such as Blockchain, Artificial Intelligence, chatbots, IoT, and more. Our innovative mobile app solutions have elevated business efficiency, making us a prominent player on the world stage. Our mobile app development services encompass:  ",
+    "paragraph": " ",
     "data": [
       {
         "title": "Custom Web Applications"
@@ -33,8 +33,7 @@
         "title": "Notification and Geofencing"
       }
     ]
-
-},
+  },
   "Assurance": {
     "image": "/AssuraceBanner.png",
     "title": "Zuca’s Assurance as a Web App Development Company",
@@ -61,7 +60,7 @@
     ]
   },
   "bannerData": {
-    "title": "Industries We Serve As a Mobile App Development Company",
+    "title": "Industries We Serve As a  Web Development Company",
     "subtitle": "Our web application development services vary across but are not limited to:",
     "centerContent": "As a web app development company, we offer top-notch medical and pharmaceutical app development services to enterprises across the world. Our expertise in the custom web application development field enables us to deliver comprehensive healthcare software development services  such as Practice Management Systems (PMS) and Electronic Health Records (EHR) systems, telemedicine platforms, billing, insurance verification software tools, etc., capable of meeting your custom business requirements.",
     "buttonName": "Work with us",
@@ -104,7 +103,7 @@
     }
   ],
   "OurProcessNew": {
-    "heading": "Our Process for Mobile App Develoment ",
+    "heading": "Our Process for Web App Develoment ",
     "Data1": [
       {
         "id": 1,
@@ -152,54 +151,74 @@
   "header": [
     {
       "id": 1,
-      "title": " What types of mobile apps do you develop?",
-      "content": "We specialize in developing a wide range of mobile applications, including native iOS and Android apps, cross-platform apps, e-commerce apps, social networking apps, healthcare apps, gaming apps, and more. Our team can bring your app idea to life, regardless of the industry or niche."
+      "title": " What types of web apps do you develop?",
+      "content": "We specialize in developing a wide range of custom web applications, including Real Estate Apps, Automobile Apps, e-commerce websites, content management systems (CMS), social platforms, data analytics dashboards, and more. Our expertise covers various industries and niches."
     },
     {
       "id": 2,
       "title": " How do I get started with app development?",
-      "content": " Getting started is easy. Simply click on our \"Let's Build My App\" CTA, and one of our experts will reach out to you to discuss your app idea. We'll guide you through the entire process, from concept to deployment."
+      "content": "To kickstart your web application project, simply click on our Show Me How CTA, and one of our experts will reach out to discuss your requirements. We'll guide you through the entire development process."
     },
     {
       "id": 3,
       "title": " What sets your mobile app development services apart?",
-      "content": "Our mobile app development services stand out thanks to our experienced team, innovative technologies, and client-centric approach. We focus on delivering exceptional user experiences, ensuring your app not only functions flawlessly but also delights your users."
+      "content": "Our web application development services stand out due to our experienced team, innovative technologies, and client-focused approach. We prioritize user-centric design, ensuring your web app delivers a seamless and engaging experience."
     },
     {
       "id": 4,
       "title": " Do you provide UI/UX design services?",
-      "content": " Yes, we offer comprehensive UI/UX design services. Our design team ensures that your app not only looks visually appealing but also provides an intuitive and user-friendly experience."
+      "content": "Yes, we offer responsive design as a standard feature. This ensures that your web application adapts seamlessly to various devices and screen sizes, providing an optimal user experience."
     },
     {
       "id": 5,
       "title": " Can you develop apps for both iOS and Android platforms?",
-      "content": "Absolutely. We have expertise in native app development for both iOS and Android, as well as cross-platform app development using technologies like Flutter and React Native. This ensures that your app can reach a wider audience."
+      "content": "Absolutely. We have expertise in integrating third-party APIs for various functionalities, such as payment gateways, social media integration, geolocation services, and more. This allows your web app to leverage external services and features."
     },
     {
       "id": 6,
       "title": " What is the typical app development timeline?",
-      "content": "The timeline can vary depending on the complexity of your app and your specific requirements. We'll provide you with a detailed project plan and timeline during our initial discussions to give you a clear idea of when you can expect your app to be ready."
+      "content": "The timeline can vary depending on the complexity of your web application and your specific requirements. During our initial discussions, we'll provide you with a detailed project plan and timeline."
     },
     {
       "id": 7,
       "title": " How do you ensure the security of mobile apps?",
-      "content": " Security is a top priority for us. We follow industry best practices and implement robust security measures to protect your app and user data. Our team conducts thorough security testing and ensures compliance with all necessary security standards."
+      "content": "Security is a top priority for us. We follow industry best practices and implement robust security measures to protect your web app and user data. Our team conducts thorough security testing and ensures compliance with all necessary security standards."
     },
     {
       "id": 8,
       "title": " Do you provide ongoing support and maintenance for mobile apps?",
-      "content": "Yes, we offer ongoing support and maintenance services to ensure your app continues to perform optimally. We can also assist with updates, bug fixes, and feature enhancements as your app evolves."
+      "content": "Yes, we offer ongoing support and maintenance services to keep your web application running smoothly. We can also assist with updates, bug fixes, and feature enhancements as your web app evolves."
     }
   ,
     {
       "id": 9,
       "title": " Can you provide references or examples of past mobile app projects?",
-      "content": "Certainly, we have an extensive portfolio of successful mobile app projects and can provide references upon request. You can also explore our case studies to see real-world examples of our work."
+      "content": "Certainly, we have an extensive portfolio of successful web application projects and can provide references upon request. You can also explore our case studies to see real-world examples of our work."
     },
     {
       "id": 10,
       "title": "How much does mobile app development cost?",
-      "content": "The cost of app development varies based on factors such as complexity, features, and platform. We'll provide you with a customized quote after discussing your project requirements in detail."
+      "content": "The cost of web application development varies based on factors such as complexity, features, and scope. We'll provide you with a customized quote after discussing your project requirements in detail."
     }
-  ]
+  ],
+  "reasons": {
+    "title": "                                    Need more reasons to work with Alumel tech?",
+    "data": [
+      {
+        "title":"Tech-Driven Excellence"
+      },
+      {
+        "title":"Client-Centric Approach"
+      },{
+        "title":"Effective Synergy"
+      },{
+        "title":"Scalable Team"
+      }
+    ,{
+        "title":"A Comprehensive Suite of Services"
+      },{
+        "title":"Strong Expertise"
+      }
+    ]
+  }
 }

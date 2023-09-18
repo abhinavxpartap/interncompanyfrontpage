@@ -1,4 +1,3 @@
-// components/FloatingButton.js
 import React, {useState} from 'react';
 import {Img} from "../utils/Img";
 
@@ -12,10 +11,12 @@ const FloatingButton = () => {
     return (
         <div className="floatingButton">
             <button className="toggleButton pulse" onClick={toggleDropdown}>
-                {isOpen ? '<' : '>'}
+              <div className="ml-[12px] mb-[5px]">
+                  {isOpen ? '<' : '>'}
+              </div>
             </button>
             {isOpen && (
-                <div className="dropdown pulse">
+                <div className="dropdown ml-[7px] pulse">
                     <div className="icon ">
                         <Img src="/portfolio/call.svg" alt="none" className="w-[50px]"/>
                     </div>

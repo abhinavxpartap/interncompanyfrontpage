@@ -7,6 +7,7 @@ import React from 'react';
 import { OurBrands } from '../components/ourBrands';
 import SuccesStory from '../components/SuccesStory';
 import FixedButton from "../components/FixedButton";
+import Float from "../components/Float";
 
 const Home: NextPage = () => {
   return (
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
           style={{ background: '#F9FBFF' }}
 
           className="py-[35px]">
-
+<Float/>
         <OurBrands />
       </div>
       <div

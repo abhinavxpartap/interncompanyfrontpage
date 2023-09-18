@@ -14,6 +14,7 @@ import {NewPortofilioJourney} from "../components/PortofilioJourney";
 import {PortfolioOurProcess} from "../components/PortfolioOurProcess";
 import FixedButton from "../components/FixedButton";
 import CaseStudy from "../components/Case Study";
+import Float from "../components/Float";
 
 const Portfolio: NextPage = () => {
     return (
@@ -40,6 +41,7 @@ const Portfolio: NextPage = () => {
                 services={PortData.processInfo.services}
                 businessType={PortData.processInfo.businessType}
             />
+            <Float/>
             <Director
                 image={PortData.Director.image}
                 mobileImage={PortData.Director.mobileImage}

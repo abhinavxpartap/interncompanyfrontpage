@@ -17,6 +17,7 @@ import seoData from "../data/seoData.json";
 import Head from "next/head";
 import SuccesStory from "../components/SuccesStory";
 import FixedButton from "../components/FixedButton";
+import Float from "../components/Float";
 const Home: NextPage = () => {
   return (
       <>
@@ -38,6 +39,7 @@ const Home: NextPage = () => {
               title2={aboutUs.WhatWe.title2}
               subtitle2={aboutUs.WhatWe.subtitle2}
              />
+              <Float/>
                <QuiltedImageList />
                <OurValue items={values} />
                <Meetour/>

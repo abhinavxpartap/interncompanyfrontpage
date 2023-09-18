@@ -10,6 +10,7 @@ import { useRouter } from 'next/router';
 import { Header } from '../components/Common/Header';
 import { Footer } from '../components/footer';
 import FixedButton from "../components/FixedButton";
+import Float from "../components/Float";
 
 const BlogPage: React.FC = () => {
   const [isActive, setIsActive] = useState(0);
@@ -29,6 +30,7 @@ const BlogPage: React.FC = () => {
       <div className="main mx-auto" style={{ background: '#F9FBFF' }}>
         <div className="bg-white">
           <Header />
+          <Float/>
         </div>
         <div
           className="w-[100%] max-w-[1377.5px] mx-auto flex flex-col px-0 md:px-[40px] items-center justify-center"

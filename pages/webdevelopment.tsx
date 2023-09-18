@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import seoData from "../data/seoData.json";
-import MobileApp from "../data/services/mobileApp.json";
+import WebApp from "../data/services/webDevelopment.json";
 import serviceAssurance from "../data/serviceAssurance.json"
 import {ServiceBanner} from "../components/serviceBanner";
 import {ServiceAbout} from "../components/servicesAbout";
@@ -18,7 +18,6 @@ import ProductOverview from "../components/Product Overview";
 import {PortfolioOurProcess} from "../components/PortfolioOurProcess";
 import Float from "../components/Float"
 import Reasons from "../components/reasons";
-import WebApp from "../data/services/webDevelopment.json";
 
 const ServicePage: React.FC = () => {
     return (<>
@@ -30,11 +29,11 @@ const ServicePage: React.FC = () => {
             </Head>
             <div className="main">
                 <ServiceBanner
-                    image={MobileApp.Banner.backgroundImage}
-                    title={MobileApp.Banner.title}
-                    subtitle={MobileApp.Banner.subtitle}
-                    buttonName={MobileApp.Banner.buttonName}
-                    buttonLink={MobileApp.Banner.buttonLink}
+                    image={WebApp.Banner.backgroundImage}
+                    title={WebApp.Banner.title}
+                    subtitle={WebApp.Banner.subtitle}
+                    buttonName={WebApp.Banner.buttonName}
+                    buttonLink={WebApp.Banner.buttonLink}
                 />
                 <Float/>
 
@@ -45,13 +44,15 @@ const ServicePage: React.FC = () => {
 
                 <div style={{background: "#F9FBFF"}}>
                     <ServiceAbout
-                        title={MobileApp.About.title}
-                        subtitle={MobileApp.About.subtitle}
-                        paragraph={MobileApp.About.paragraph}
-                        image={MobileApp.About.image}
-                        data={MobileApp.About.data}
+                        title={WebApp.About.title}
+                        subtitle={WebApp.About.subtitle}
+                        paragraph={WebApp.About.paragraph}
+                        image={WebApp.About.image}
+                        data={WebApp.About.data}
                     />
+
                     <Service/>
+
                     <div className="md:pt-[70px] pb-[30px] pt-[30px]">
                         <Reasons
                             title={WebApp.reasons.title}
@@ -59,28 +60,28 @@ const ServicePage: React.FC = () => {
                     </div>
 
                     <ServicesDevelopment
-                        title={MobileApp.bannerData.title}
-                        subtitle={MobileApp.bannerData.subtitle}
-                        leftData={MobileApp.headerLeft}
-                        centerContent={MobileApp.bannerData.centerContent}
-                        rightData={MobileApp.headerRight}
-                        buttonName={MobileApp.bannerData.buttonName}
-                        buttonLink={MobileApp.bannerData.buttonLink}
+                        title={WebApp.bannerData.title}
+                        subtitle={WebApp.bannerData.subtitle}
+                        leftData={WebApp.headerLeft}
+                        centerContent={WebApp.bannerData.centerContent}
+                        rightData={WebApp.headerRight}
+                        buttonName={WebApp.bannerData.buttonName}
+                        buttonLink={WebApp.bannerData.buttonLink}
                     />
                     <div className="">
                         <PortfolioOurProcess
-                            List={MobileApp.OurProcessNew.Data1}
-                            heading={MobileApp.OurProcessNew.heading}
+                            List={WebApp.OurProcessNew.Data1}
+                            heading={WebApp.OurProcessNew.heading}
                         />
                     </div>
 
                     <div className="md:pt-[70px] pt-[30px] pb-[30px]">
                         <ServicesFaq
-                            title={MobileApp.FaqBanner.title}
-                            subtitle={MobileApp.FaqBanner.subtitle}
-                            buttonName={MobileApp.FaqBanner.buttonName}
-                            buttonLink={MobileApp.FaqBanner.buttonLink}
-                            tabData={MobileApp.header}
+                            title={WebApp.FaqBanner.title}
+                            subtitle={WebApp.FaqBanner.subtitle}
+                            buttonName={WebApp.FaqBanner.buttonName}
+                            buttonLink={WebApp.FaqBanner.buttonLink}
+                            tabData={WebApp.header}
                         />
                     </div>
                     <ServicesAssurance

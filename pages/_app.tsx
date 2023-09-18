@@ -25,9 +25,12 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/login",
     "/admin",
     "/finance",
+      "/product",
     "/realestate",
     "/mobileApp",
-    "/automobile"
+    "/automobile",
+      "/dataAnalytics",
+      "/webdevelopment"
 
   ];
 

@@ -18,6 +18,7 @@ import {BlogCards} from "../components/BlogCard";
 import {Footer} from "../components/footer";
 import SuccesStory from "../components/SuccesStory";
 import FixedButton from "../components/FixedButton";
+import Float from "../components/Float";
 
 const IndustriesPage: React.FC = () => {
     return (<>
@@ -50,6 +51,7 @@ const IndustriesPage: React.FC = () => {
                     subtitle={industryDevelopment.bannerData.subtitle}
                     data={industryDevelopment.header}
                     />
+                    <Float/>
                     <SuccesStory/>
                     <IndustriesTechnology
                     title={industryData.Technology.title}

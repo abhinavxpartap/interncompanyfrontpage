@@ -16,6 +16,7 @@ import Head from "next/head";
 import {NewPortofilioJourney} from "../components/PortofilioJourney";
 import {PortfolioOurProcess} from "../components/PortfolioOurProcess";
 import FixedButton from "../components/FixedButton";
+import Float from "../components/Float";
 
 const RealEstate: NextPage = () => {
     return (
@@ -33,6 +34,7 @@ const RealEstate: NextPage = () => {
                     title={PortData.Banner.title}
                     image={PortData.Banner.image}/>
             </div>
+            <Float/>
             <AboutPortfolio
                 title={data.title}
                 images={data.images}

@@ -1,9 +1,9 @@
 {
   "services": [
     {
-      "title": "Android Application Development",
+      "title": "Data Analytics ",
       "id": 1,
-      "link": "#"
+      "link": "/dataAnalytics"
     },
     {
       "title": "Flutter Application Development",
@@ -13,22 +13,22 @@
     {
       "title": "Web Application Development",
       "id": 3,
-      "link": "#"
+      "link": "/webdevelopment"
     },
     {
-      "title": "Product Engineering",
+      "title": "Product Design",
       "id": 4,
-      "link": "#"
+      "link": "/product"
     },
     {
-      "title": "Android Application Development",
+      "title": "UI/UX Consulting ",
       "id": 5,
       "link": "#"
     },
     {
       "title": "Mobile App Development",
       "id": 6,
-      "link": "#"
+      "link": "/mobileApp"
     },
     {
       "title": "Cloud Infrastructure Setup",
@@ -41,18 +41,13 @@
       "link": "#"
     },
     {
-      "title": "Web Application Development",
+      "title": "Android  Application Development",
       "id": 9,
       "link": "#"
     },
     {
       "title": "Chat Bot Development",
       "id": 10,
-      "link": "#"
-    },
-    {
-      "title": "Android Application Development",
-      "id": 11,
       "link": "#"
     }
   ],

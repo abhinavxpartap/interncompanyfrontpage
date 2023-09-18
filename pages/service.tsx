@@ -17,6 +17,7 @@ import {FreeQuotation} from "../components/freeQuotation";
 import {OurBrands} from "../components/ourBrands";
 import {Footer} from "../components/footer";
 import FixedButton from "../components/FixedButton";
+import Float from "../components/Float";
 const ServicePage: React.FC = () => {
     return (<>
             <Head>
@@ -33,12 +34,14 @@ const ServicePage: React.FC = () => {
                 buttonName={serviceData.Banner.buttonName}
                 buttonLink={serviceData.Banner.buttonLink}
                  />
+                <Float/>
                 <div style={{background:"#F9FBFF"}} >
                 <ServiceAbout
                 title={serviceData.About.title}
                 subtitle={serviceData.About.subtitle}
                 paragraph={serviceData.About.paragraph}
                 image={serviceData.About.image}
+                data={serviceData.About.data}
                 />
                 <ServiceProcess
                 title={ProcessData.bannerData.title}

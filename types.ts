@@ -51,7 +51,13 @@ export interface TechSectionInterface {
         image: string;
     }[];
 }
+export interface ReasonsInterface {
+    title: string;
 
+    data: {
+        title: string;
+    }[];
+}
 
 
 export interface DevelopmentDataInterface {
@@ -205,6 +211,22 @@ export interface ServiceAboutInterface {
     subtitle: string;
     paragraph: string;
     image: string;
+    data: {
+        title: string;
+    }[];
+
+}
+export interface ServiceInterface {
+    title: string;
+    subtitle: string;
+
+    data: {
+        image:string;
+        description:string;
+        title: string;
+        subtitle: string;
+
+    }[];
 
 }
 export interface LetsInterface {
@@ -422,10 +444,7 @@ export interface DataServiceInterface{
     description:string
 }
 
-export interface ImageInterface {
-    image:string,
 
-}
 
 export interface PortfolioDataInterface {
     title: string;

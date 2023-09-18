@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import seoData from "../data/seoData.json";
-import MobileApp from "../data/services/mobileApp.json";
+import Product from "../data/services/product.json";
 import serviceAssurance from "../data/serviceAssurance.json"
 import {ServiceBanner} from "../components/serviceBanner";
 import {ServiceAbout} from "../components/servicesAbout";
@@ -14,11 +14,9 @@ import {Footer} from "../components/footer";
 import FixedButton from "../components/FixedButton";
 import CaseStudy from "../components/Case Study";
 import Service from "../components/Service";
-import ProductOverview from "../components/Product Overview";
 import {PortfolioOurProcess} from "../components/PortfolioOurProcess";
 import Float from "../components/Float"
 import Reasons from "../components/reasons";
-import WebApp from "../data/services/webDevelopment.json";
 
 const ServicePage: React.FC = () => {
     return (<>
@@ -30,11 +28,11 @@ const ServicePage: React.FC = () => {
             </Head>
             <div className="main">
                 <ServiceBanner
-                    image={MobileApp.Banner.backgroundImage}
-                    title={MobileApp.Banner.title}
-                    subtitle={MobileApp.Banner.subtitle}
-                    buttonName={MobileApp.Banner.buttonName}
-                    buttonLink={MobileApp.Banner.buttonLink}
+                    image={Product.Banner.backgroundImage}
+                    title={Product.Banner.title}
+                    subtitle={Product.Banner.subtitle}
+                    buttonName={Product.Banner.buttonName}
+                    buttonLink={Product.Banner.buttonLink}
                 />
                 <Float/>
 
@@ -45,42 +43,45 @@ const ServicePage: React.FC = () => {
 
                 <div style={{background: "#F9FBFF"}}>
                     <ServiceAbout
-                        title={MobileApp.About.title}
-                        subtitle={MobileApp.About.subtitle}
-                        paragraph={MobileApp.About.paragraph}
-                        image={MobileApp.About.image}
-                        data={MobileApp.About.data}
+                        title={Product.About.title}
+                        subtitle={Product.About.subtitle}
+                        paragraph={Product.About.paragraph}
+                        image={Product.About.image}
+                        data={Product.About.data}
                     />
+
                     <Service/>
+
                     <div className="md:pt-[70px] pb-[30px] pt-[30px]">
                         <Reasons
-                            title={WebApp.reasons.title}
-                            data={WebApp.reasons.data}/>
+                        title={Product.reasons.title}
+                        data={Product.reasons.data}/>
+
                     </div>
 
                     <ServicesDevelopment
-                        title={MobileApp.bannerData.title}
-                        subtitle={MobileApp.bannerData.subtitle}
-                        leftData={MobileApp.headerLeft}
-                        centerContent={MobileApp.bannerData.centerContent}
-                        rightData={MobileApp.headerRight}
-                        buttonName={MobileApp.bannerData.buttonName}
-                        buttonLink={MobileApp.bannerData.buttonLink}
+                        title={Product.bannerData.title}
+                        subtitle={Product.bannerData.subtitle}
+                        leftData={Product.headerLeft}
+                        centerContent={Product.bannerData.centerContent}
+                        rightData={Product.headerRight}
+                        buttonName={Product.bannerData.buttonName}
+                        buttonLink={Product.bannerData.buttonLink}
                     />
                     <div className="">
                         <PortfolioOurProcess
-                            List={MobileApp.OurProcessNew.Data1}
-                            heading={MobileApp.OurProcessNew.heading}
+                            List={Product.OurProcessNew.Data1}
+                            heading={Product.OurProcessNew.heading}
                         />
                     </div>
 
                     <div className="md:pt-[70px] pt-[30px] pb-[30px]">
                         <ServicesFaq
-                            title={MobileApp.FaqBanner.title}
-                            subtitle={MobileApp.FaqBanner.subtitle}
-                            buttonName={MobileApp.FaqBanner.buttonName}
-                            buttonLink={MobileApp.FaqBanner.buttonLink}
-                            tabData={MobileApp.header}
+                            title={Product.FaqBanner.title}
+                            subtitle={Product.FaqBanner.subtitle}
+                            buttonName={Product.FaqBanner.buttonName}
+                            buttonLink={Product.FaqBanner.buttonLink}
+                            tabData={Product.header}
                         />
                     </div>
                     <ServicesAssurance

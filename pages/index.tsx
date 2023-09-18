@@ -13,6 +13,7 @@ import Testimonials from '../components/Testimonials';
 import DemoForm from '../components/Demo Form';
 import seoData from "../data/seoData.json";
 import FixedButton from "../components/FixedButton";
+import Float from "../components/Float";
 
 const Home: NextPage = () => {
   return (
@@ -31,6 +32,7 @@ const Home: NextPage = () => {
         subtitle={data.bannerData.subtitle}
         button={data.bannerData.buttonName}
       />
+      <Float/>
       <div>
         <OurBrands/>
       </div>

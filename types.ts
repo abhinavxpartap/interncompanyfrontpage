@@ -211,9 +211,9 @@ export interface ServiceAboutInterface {
     subtitle: string;
     paragraph: string;
     image: string;
-    data: {
-        title: string;
-    }[];
+    // data: {
+    //     title: string;
+    // }[];
 
 }
 export interface ServiceInterface {

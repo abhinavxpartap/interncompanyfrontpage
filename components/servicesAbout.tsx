@@ -3,7 +3,7 @@ import {Img} from '../utils/Img';
 import {ServiceAboutInterface} from "../types";
 
 export const ServiceAbout: React.FC<ServiceAboutInterface> = (props) => {
-    const {title, subtitle, paragraph, image,data} = props;
+    const {title, subtitle, paragraph, image} = props;
 
     const content = (
         <>
@@ -23,14 +23,14 @@ export const ServiceAbout: React.FC<ServiceAboutInterface> = (props) => {
                     <p className="text-[#757B8A] font-normal text-[12px] leading-[20px] sm:text-[15px] sm:leading-[30px] md:text-[10px] md:leading-[18px] lg:text-[13px] lg:leading-[30px] xl:text-[15px] xl:leading-[30px] ">
                         {paragraph}
                     </p>
-                    {data.map((item, index) => (
-                        <p
-                            key={index}
-                            className="text-[#757B8A] font-normal text-[12px] leading-[20px] sm:text-[15px] sm:leading-[30px] md:text-[10px] md:leading-[18px] lg:text-[13px] lg:leading-[30px] xl:text-[15px] xl:leading-[30px]"
-                        >
-                            {item.title}
-                        </p>
-                    ))}
+                    {/*{data.map((item, index) => (*/}
+                    {/*    <p*/}
+                    {/*        key={index}*/}
+                    {/*        className="text-[#757B8A] font-normal text-[12px] leading-[20px] sm:text-[15px] sm:leading-[30px] md:text-[10px] md:leading-[18px] lg:text-[13px] lg:leading-[30px] xl:text-[15px] xl:leading-[30px]"*/}
+                    {/*    >*/}
+                    {/*        {item.title}*/}
+                    {/*    </p>*/}
+                    {/*))}*/}
                 </div>
             </div>
         </>

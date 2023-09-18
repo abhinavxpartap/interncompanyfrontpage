@@ -1318,5 +1318,49 @@ left:12px;
 }
 
 .pulse {
-    animation: pulse 1s infinite; /* Adjust the duration as needed */
+    animation: pulse 1s infinite;
 }
+
+.floatingButton {
+    position: fixed;
+    left: -12px;
+    top: 50%;
+    z-index: 999;
+}
+
+.toggleButton {
+    background-color: #8184EB;
+    color: #fff;
+    border: none;
+    border-radius: 30%;
+    width: 40px;
+    height: 60px;
+    font-size: 28px;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggleButton:hover {
+    background-color: #8184EB;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    margin-top: 10px;
+    position: absolute; /* Position absolutely */
+    top: 100%; /* Place the dropdown below the button */
+    left: 10px; /* Align the dropdown with the button */
+    min-width: 60px; /* Adjust the dropdown width as needed */
+}
+
+.icon {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: transparent;
+}
+

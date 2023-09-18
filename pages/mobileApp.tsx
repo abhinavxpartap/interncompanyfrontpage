@@ -2,25 +2,21 @@ import React from "react";
 import Head from "next/head";
 import seoData from "../data/seoData.json";
 import MobileApp from "../data/services/mobileApp.json";
-import ProcessData from "../data/ServiceProcess.json"
-import serviceFaqData from "../data/serviceFaq.json"
 import serviceAssurance from "../data/serviceAssurance.json"
 import {ServiceBanner} from "../components/serviceBanner";
 import {ServiceAbout} from "../components/servicesAbout";
-import {ServiceProcess} from "../components/serviceProcess";
 import {ServicesDevelopment} from "../components/servicesDevelopment";
 import {ServicesFaq} from "../components/serviceFaq";
 import {ServicesAssurance} from "../components/serviceAssurance";
 import {ServiceTech} from "../components/servicesTech";
 import {FreeQuotation} from "../components/freeQuotation";
-import {OurBrands} from "../components/ourBrands";
 import {Footer} from "../components/footer";
 import FixedButton from "../components/FixedButton";
 import CaseStudy from "../components/Case Study";
 import Service from "../components/Service";
 import ProductOverview from "../components/Product Overview";
 import {PortfolioOurProcess} from "../components/PortfolioOurProcess";
-import serviceData from "../data/portfolio.json";
+import Float from "../components/Float"
 
 const ServicePage: React.FC = () => {
     return (<>
@@ -38,6 +34,8 @@ const ServicePage: React.FC = () => {
                     buttonName={MobileApp.Banner.buttonName}
                     buttonLink={MobileApp.Banner.buttonLink}
                 />
+                <Float/>
+
                 <div className="md:mb-[80px] mb-[30px]">
                     <CaseStudy/>
 
@@ -81,7 +79,6 @@ const ServicePage: React.FC = () => {
                             tabData={MobileApp.header}
                         />
                     </div>
-
                     <ServicesAssurance
                         image={serviceAssurance.bannerData.image}
                         title={serviceAssurance.bannerData.title}

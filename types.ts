@@ -216,6 +216,16 @@ export interface ServiceAboutInterface {
     // }[];
 
 }
+export interface ServiceAboutnewInterface {
+    title: string;
+    subtitle: string;
+    paragraph: string;
+    image: string;
+    data: {
+        title: string;
+    }[];
+
+}
 export interface ServiceInterface {
     title: string;
     subtitle: string;

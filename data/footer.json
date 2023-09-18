@@ -16,29 +16,74 @@
       "link": "#"
     },
     {
-      "title": "iOS Application Development",
+      "title": "Product Engineering",
       "id": 4,
+      "link": "#"
+    },
+    {
+      "title": "Android Application Development",
+      "id": 5,
+      "link": "#"
+    },
+    {
+      "title": "Mobile App Development",
+      "id": 6,
+      "link": "#"
+    },
+    {
+      "title": "Cloud Infrastructure Setup",
+      "id": 7,
+      "link": "#"
+    },
+    {
+      "title": "iOS Application Development",
+      "id": 8,
+      "link": "#"
+    },
+    {
+      "title": "Web Application Development",
+      "id": 9,
+      "link": "#"
+    },
+    {
+      "title": "Chat Bot Development",
+      "id": 10,
+      "link": "#"
+    },
+    {
+      "title": "Android Application Development",
+      "id": 11,
       "link": "#"
     }
   ],
   "industry": [
     {
-      "title": "Finance",
+      "title": "Press Releases",
       "id": 1,
       "link": "#"
     },
     {
-      "title": "Real Estate",
+      "title": "Case Studies",
       "id": 2,
       "link": "#"
     },
     {
-      "title": "Auto Mobile",
+      "title": "Portfolio",
       "id": 3,
       "link": "#"
     },
     {
-      "title": "Health & Wellness",
+      "title": "Sitemap",
+      "id": 4,
+      "link": "#"
+    },
+    {
+      "title": "Blogs",
+      "id": 4,
+      "link": "#"
+    },
+    {
+      "title": "Events",
       "id": 4,
       "link": "#"
     }
@@ -67,22 +112,33 @@
 ],
   "about": [
     {
-      "title": "Our Story",
+      "title": "Blockchain Application Development",
       "id": 1,
       "link": "/aboutus"
     },
     {
-      "title": "Benefits",
+      "title": "Cloud Application Development",
       "id": 2,
       "link": "#"
     },
     {
-      "title": "Team",
+      "title": "Artificial Intelligence",
       "id": 3,
       "link": "#"
     },
     {
-      "title": "Careers",
+      "title": "Machine Learning",
+      "id": 4,
+      "link": "google.com"
+    }
+  ,
+    {
+      "title": "IoT Development",
+      "id": 4,
+      "link": "google.com"
+    }  ,
+    {
+      "title": "Industry 4.0",
       "id": 4,
       "link": "google.com"
     }

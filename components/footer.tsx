@@ -79,21 +79,6 @@ export const Footer: React.FC = () => {
         </div>
     ));
   };
-  // const renderPortfolio = () => {
-  //   return portfolio.map((item: PortfolioItem) => (
-  //       <div key={item.id} className="text-[16px] font-normal">
-  //         <a href={item.link}>{item.title}</a>
-  //       </div>
-  //   ));
-  // };
-
-  // const renderHelp = () => {
-  //   return help.map((item: HelpItem) => (
-  //     <div key={item.id} className="text-[16px] font-normal">
-  //       <a href={item.link}>{item.title}</a>
-  //     </div>
-  //   ));
-  // };
 
   const renderSocialIcons = () => {
     return social.map((icon: SocialIcon) => (
@@ -113,7 +98,7 @@ export const Footer: React.FC = () => {
 
   const content = (
     <div className="max-w-[1477.5px] z-[-10] px-[50px] border-b-2 pb-[30px] pt-[50px]  mx-auto">
-      <div className="md:flex  grid grid-cols-1 gap-[40px] pb-[25px]   md:flex-row w-full justify-between">
+      <div className=" md:flex  md:justify-between grid grid-cols-1 gap-[40px] pb-[25px]    ">
         <div>
           <Img src="/images/logo/logodarknew.png" alt="logo" className="w-[220px] " />
           <p className="max-w-[350px] text-[16px] mt-[12px] font-normal">
@@ -150,34 +135,34 @@ export const Footer: React.FC = () => {
 
           </div>
 
-        </div>
-        <div className="flex flex-col gap-y-[13px] group">
-          <div className="text-[18px] font-bold group-hover:text-[#6E73FF] transition-colors duration-300">About</div>
 
-          {renderAbout()}
         </div>
+        <div >
+          <div className="flex flex-col gap-y-[13px] group">
+            <div className="text-[18px] font-bold group-hover:text-[#6E73FF] transition-colors duration-300">Technologies Your business loves:
+            </div>
+
+            {renderAbout()}
+          </div>
+          <div className=" flex flex-col mt-[20px] group gap-y-[13px]">
+            <div className="text-[18px] group-hover:text-[#6E73FF] transition-colors duration-300 font-bold">Discover Resources for You
+            </div>
+            {renderIndustry()}
+          </div>
+          </div>
+
         <div className=" flex flex-col group gap-y-[13px]">
           <div className="text-[18px]  group-hover:text-[#6E73FF] transition-colors duration-300 font-bold">Services to hit your goals</div>
           {renderServices()}
         </div>
-        <div className=" flex flex-col group gap-y-[13px]">
-          <div className="text-[18px] group-hover:text-[#6E73FF] transition-colors duration-300 font-bold">Technologies Your business loves</div>
-          {renderIndustry()}
-        </div>
-      {/*  <div className=" flex flex-col gap-y-[13px]">*/}
-      {/*  <div className="text-[18px] font-bold">Portfolio</div>*/}
-      {/*  {renderPortfolio()}*/}
-      {/*</div>*/}
-        {/*<div className=" flex flex-col gap-y-[13px]">*/}
-        {/*  <div className="text-[18px] font-bold">Blog</div>*/}
-        {/*  {renderHelp()}*/}
-        {/*</div>*/}
-        <div className=" flex flex-col gap-y-[13px]">
+        <div className=" flex flex-col  gap-y-[13px]">
           <div className="text-[18px] font-bold">Follow Us</div>
           <div className="flex md:gap-[20px]    gap-[7px] flex-row">
             {renderSocialIcons()}
           </div>
         </div>
+
+
       </div>
       <div className="flex border-t-2 pt-[10px] social-icon:hover social-icon text-[14px] font-normal text-[#2A2C33] justify-center items-center">
         © 2021 All Rights Reserved

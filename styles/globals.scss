@@ -1364,3 +1364,28 @@ left:12px;
     background-color: transparent;
 }
 
+.css-8t49rw-MuiStepConnector-line {
+    display: block;
+    border-color: #8184EB;
+    border-left-style: solid;
+    border-left-width: 1px;
+    min-height: 24px;
+    margin-left: -3px;
+}
+.Mui-completed .MuiStepConnector-lineVertical, .Mui-active .MuiStepConnector-lineVertical {
+    position: absolute;
+    height: 110px;
+    top: -30px;
+    border-left-width: 2px;
+    border-color: #8184EB;
+    left: 0px;
+}
+.css-gre6ov .QontoStepIcon-circle {
+
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1.5px solid transparent;
+}

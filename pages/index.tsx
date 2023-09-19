@@ -9,7 +9,7 @@ import { Footer } from '../components/footer';
 import Team from '../components/Expert team';
 import Service from '../components/Service';
 import CaseStudy from '../components/Case Study';
-// import Testimonials from '../components/Testimonials';
+import Testimonials from '../components/Testimonials';
 import DemoForm from '../components/Demo Form';
 import seoData from "../data/seoData.json";
 import FixedButton from "../components/FixedButton";
@@ -60,7 +60,7 @@ const Home: NextPage = () => {
         style={{ background: '#F9FBFF' }}
         className="bg-cover bg-center -z-0 bg-no-repeat relative  block"
       >
-        {/*<Testimonials />*/}
+        <Testimonials />
       </div>
       <div
         style={{ background: '#F9FBFF' }}

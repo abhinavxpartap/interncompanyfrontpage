@@ -60,7 +60,10 @@ const Home: NextPage = () => {
         subtitle={aboutUs.Lets.subtitle}
         buttonName={aboutUs.Lets.buttonName}
       />
-      <FreeQuotation />
+              <div className="mt-[60px]">
+                  <FreeQuotation />
+
+              </div>
               <FixedButton />
 
       <Footer />

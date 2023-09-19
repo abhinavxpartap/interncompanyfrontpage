@@ -30,11 +30,13 @@ export const Letswork: React.FC<LetsInterface> = (props) => {
         <div className="flex pt-[20px] justify-center items-center md:justify-start">
           <Button
               // onClick={handleOpen}
-            className="text-[16px]  ButtonTransition overflow-hidden font-semibold "
+            className="  ButtonTransition overflow-hidden  "
             sx={{
               '&.MuiButtonBase-root': {
                 backgroundColor: '#8083EA',
                 color: 'white',
+                  fontSize:'16px',
+                  fontWeight: 'bold',
                 textTransform: 'capitalize',
                 padding: '9px 20px 9px 20px',
                 border: '1px solid #8083EA',

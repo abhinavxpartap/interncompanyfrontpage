@@ -41,11 +41,18 @@ export const ServicesAssurance: React.FC<Assurance> = (props) => {
             <div className="pt-[20px] lg:pt-[30px]  pl-[40px]">
               <Button
                 onClick={() => router.push(buttonLink)}
-                className="ButtonTransition overflow-hidden text-[12px]  lg:text-[16px] font-semibold "
+                className="ButtonTransition  "
                 sx={{
                   '&.MuiButtonBase-root': {
                     backgroundColor: '#8184EB',
                     color: 'white',
+                    overflow: 'hidden',
+                    fontSize: {
+                      xs: '12px',
+                      sm: '12px',
+
+                    },
+                    fontWeight: 'bold',
                     textTransform: 'capitalize',
                     padding: '8px 24px 8px 24px',
                     border: '1px solid #8184EB;',

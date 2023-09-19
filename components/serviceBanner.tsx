@@ -21,14 +21,21 @@ export const ServiceBanner: React.FC<ServiceBannerInterface> = (props) => {
         <div className="flex pt-[15px] md:pt-[20px] justify-center items-center md:justify-start">
           <Button
             onClick={() => router.push(buttonLink)}
-            className="ButtonTransition overflow-hidden text-[12px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
+            className="ButtonTransition  "
             sx={{
               '&.MuiButtonBase-root': {
                 backgroundColor: '#8184EB',
                 color: 'white',
+                  overflow: 'hidden',
+                  fontSize: {
+                      xs: '12px',
+                      sm: '12px',
+                      md: '14px',
+                      lg: '16px',
+                  },
+                  fontWeight: 'bold',
                 textTransform: 'capitalize',
                 padding: '8px 24px 8px 24px',
-                  fontWeight: 'bold',
                   border: '1px solid #8184EB',
                 borderRadius: '30px',
                 '&:hover': {

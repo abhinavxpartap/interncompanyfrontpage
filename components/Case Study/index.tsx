@@ -59,10 +59,10 @@ const CaseStudy = () => {
                     </div>
 
                 </div>
-                <div
-                    className="text-[#E8EDFF] -z-[1] lg:text-[250px] text-[130px] w-[470px] lg:w-[1440px] lg:left-[370px] left-[2px] absolute font-medium leading-[70%] -tracking-[20px] bottom-[0px]">
-                    case studY
-                </div>
+                {/*<div*/}
+                {/*    className="text-[#E8EDFF] -z-[1] lg:text-[250px] text-[130px] w-[470px] lg:w-[1440px] lg:left-[370px] left-[2px] absolute font-medium leading-[70%] -tracking-[20px] bottom-[0px]">*/}
+                {/*    case studY*/}
+                {/*</div>*/}
             </div>
             <div
                 className="w-full  h-full scroll-container overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth flex flex-row max-w-[1377.5px] mx-auto"

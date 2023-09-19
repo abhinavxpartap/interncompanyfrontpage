@@ -40,11 +40,18 @@ export const ServiceTech: React.FC = (props) => {
           <div className="mt-[20px]">
             <Button
               onClick={() => router.push(TechData.bannerData.buttonLink)}
-              className="ButtonTransition overflow-hidden text-[14px] md:text-[16px] font-semibold "
+              className="ButtonTransition  "
               sx={{
                 '&.MuiButtonBase-root': {
                   backgroundColor: '#8184EB',
                   color: 'white',
+                  overflow: 'hidden',
+                  fontSize: {
+                    xs: '14px',
+                    md: '16px',
+
+                  },
+                  fontWeight: 'bold',
                   textTransform: 'capitalize',
                   padding: '8px 24px 8px 24px',
                   border: '1px solid #8184EB',

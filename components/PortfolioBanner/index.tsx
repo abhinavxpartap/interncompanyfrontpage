@@ -22,11 +22,12 @@ export const PortfolioBanner: React.FC<Port> = (props) => {
         </div>
         <div className="flex  mt-[50px] justify-center items-center ">
           <Button
-            className="text-[16px] font-semibold "
             sx={{
               '&.MuiButtonBase-root': {
                 backgroundColor: '#8184EB',
                 color: 'white',
+                fontSize: '16px',
+                fontWeight: 'bold',
                 textTransform: 'capitalize',
                 padding: '10px 22px 10px 22px',
                 border: '1px solid #8184EB',

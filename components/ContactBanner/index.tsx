@@ -67,11 +67,11 @@ export const ContactBanner: React.FC<ContactBannerInterface> = (props) => {
           <div className="text-[22px]  z-[30] flex flex-col font-semibold">
             Build the Next Big Thing
             <div className="mt-[20px]">
-              <Box className="w-[100%] flex flex-row justify-between">
-                <Box className="w-[48%]">
-                  <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
+              <div className="w-[100%] flex flex-row justify-between">
+                <div className="w-[48%]">
+                  <div className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
                     First name
-                  </Typography>
+                  </div>
                   <FormControl sx={{ width: '100%' }}>
                     <OutlinedInput
                       placeholder="enter first name"
@@ -79,11 +79,11 @@ export const ContactBanner: React.FC<ContactBannerInterface> = (props) => {
                       inputProps={{ style: { fontSize: '12px' } }}
                     />
                   </FormControl>
-                </Box>
-                <Box className="w-[48%]">
-                  <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
+                </div>
+                <div className="w-[48%]">
+                  <div className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
                     Last name
-                  </Typography>
+                  </div>
                   <FormControl sx={{ width: '100%' }}>
                     <OutlinedInput
                       placeholder="enter last name"
@@ -91,12 +91,12 @@ export const ContactBanner: React.FC<ContactBannerInterface> = (props) => {
                       inputProps={{ style: { fontSize: '12px' } }}
                     />
                   </FormControl>
-                </Box>
-              </Box>
-              <Box className="mt-[15px] w-[100%]">
-                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
+                </div>
+              </div>
+              <div className="mt-[15px] w-[100%]">
+                <div className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
                   Email
-                </Typography>
+                </div>
                 <FormControl sx={{ width: '100%' }}>
                   <OutlinedInput
                     placeholder="enter email address"
@@ -104,11 +104,11 @@ export const ContactBanner: React.FC<ContactBannerInterface> = (props) => {
                     inputProps={{ style: { fontSize: '12px' } }}
                   />
                 </FormControl>
-              </Box>
-              <Box className="mt-[15px] w-[100%]">
-                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
+              </div>
+              <div className="mt-[15px] w-[100%]">
+                <div className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
                   Select a budget range
-                </Typography>
+                </div>
                 <FormControl sx={{ minWidth: '100%' }}>
                   <Select
                     value={age}
@@ -127,11 +127,11 @@ export const ContactBanner: React.FC<ContactBannerInterface> = (props) => {
                     <MenuItem value="3000">$1000+</MenuItem>
                   </Select>
                 </FormControl>
-              </Box>
-              <Box className="mt-[15px]">
-                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
+              </div>
+              <div className="mt-[15px]">
+                <div className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
                   Project Description
-                </Typography>
+                </div>
                 <FormControl sx={{ width: '100%' }}>
                   <OutlinedInput
                     placeholder="enter your Message"
@@ -155,11 +155,11 @@ export const ContactBanner: React.FC<ContactBannerInterface> = (props) => {
                     }}
                   />
                 </FormControl>
-              </Box>
-              <Box className="mt-[15px] w-[100%]">
-                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
+              </div>
+              <div className="mt-[15px] w-[100%]">
+                <div className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
                   Attach File
-                </Typography>
+                </div>
                 <FormControl sx={{ width: '100%' }}>
                   <OutlinedInput
                     placeholder="attach"
@@ -172,11 +172,11 @@ export const ContactBanner: React.FC<ContactBannerInterface> = (props) => {
                     }
                   />
                 </FormControl>
-              </Box>
-              <Box className="mt-[15px] flex flex-col ">
-                <Typography className="text-[#2C3238] text-[16px] font-medium">
+              </div>
+              <div className="mt-[15px] flex flex-col ">
+                <div className="text-[#2C3238] text-[16px] font-medium">
                   What are you more interested in:
-                </Typography>
+                </div>
                 <Grid container xs={12} className="mt-[7px] w-[100%]">
                   {checked.map((_, index) => (
                     <Grid item xs={6} key={index}>
@@ -228,7 +228,7 @@ export const ContactBanner: React.FC<ContactBannerInterface> = (props) => {
 
                   </div>
                 </div>
-              </Box>
+              </div>
             </div>
           </div>
         </div>

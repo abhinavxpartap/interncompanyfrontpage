@@ -44,11 +44,19 @@ export const Banner: React.FC<BannerDataInterface> = (props) => {
                 </div>
                 <div>
                         <Button
-                            className="ButtonTransition overflow-hidden text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold "
+                            className="ButtonTransition overflow-hidden  "
                             sx={{
                                 '&.MuiButtonBase-root': {
                                     backgroundColor: '#8184EB',
                                     color: 'white',
+                                    overflow: 'hidden',
+                                    fontSize: {
+                                        xs: '10px',
+                                        sm: '12px',
+                                        md: '14px',
+                                        lg: '16px',
+                                    },
+                                    fontWeight: 'bold',
                                     textTransform: 'capitalize',
                                     padding: '8px 24px 8px 24px',
                                     border: '1px solid #8184EB',
@@ -65,12 +73,6 @@ export const Banner: React.FC<BannerDataInterface> = (props) => {
                             {button}                    </a>
 
                 </Button>
-
-
-
-
-
-
                 </div>
                 {/*<Dialog open={open} onClose={handleClose}>*/}
                 {/*    <DialogContent>*/}

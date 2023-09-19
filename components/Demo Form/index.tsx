@@ -128,11 +128,15 @@ const DemoForm = () => {
             </Grid>
             <div className="mt-[20px]">
               <Button
-                className="text-[12px] md:text-[14px] font-semibold "
                 sx={{
                   '&.MuiButtonBase-root': {
                     backgroundColor: '#8184EB',
                     color: 'white',
+                    fontSize: {
+                      xs: '12px',
+                      md: '14px',
+                    },
+                    fontWeight: 'bold',
                     textTransform: 'capitalize',
                     padding: '8px 24px 8px 24px',
                     border: '1px solid #8184EB',

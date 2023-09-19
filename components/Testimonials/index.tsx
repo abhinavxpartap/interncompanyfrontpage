@@ -5,8 +5,6 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Data from "../../data/common/testimonial.json"
 import { Img } from '../../utils/Img';
-
-import {TestimonialInterface} from "../../types";
 const ButtonGroup = ({ next, previous, goToSlide, ...rest }: any) => {
   const {
     carouselState: { currentSlide },
@@ -56,9 +54,9 @@ const responsive = {
 const Testimonials = () => {
   return (
     <div className="md:px-[100px] px-0 pb-[20px] relative flex flex-col items-center py-[40px] pt-[100px] text-center max-w-[1377.5px] overflow-hidden mx-auto">
-      <div className="text-[#E8EDFF]  -z-[30] lg:text-[250px] text-[140px] absolute  font-medium leading-[70%] tracking-[-20px] lg:w-[754px] w-[450px] top-[12.5%] text-start ">
-        Testimonials
-      </div>
+      {/*<div className="text-[#E8EDFF]  -z-[30] lg:text-[250px] text-[140px] absolute  font-medium leading-[70%] tracking-[-20px] lg:w-[754px] w-[450px] top-[12.5%] text-start ">*/}
+      {/*  Testimonials*/}
+      {/*</div>*/}
       <Button
         label={Data.bannerData.tagButtonName}
         type="button"

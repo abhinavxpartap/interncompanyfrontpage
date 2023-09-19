@@ -43,11 +43,11 @@ export const FreeQuotation = () => {
                   'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px',
               }}
             >
-              <Box className="w-[100%] flex flex-row justify-between">
-                <Box className="w-[48%]">
-                  <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
+              <div className="w-[100%] flex flex-row justify-between">
+                <div className="w-[48%]">
+                  <div className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
                     First name
-                  </Typography>
+                  </div>
                   <FormControl sx={{ width: '100%' }}>
                     <OutlinedInput
                       placeholder="enter first name"
@@ -55,11 +55,11 @@ export const FreeQuotation = () => {
                       inputProps={{ style: { fontSize: '12px' } }}
                     />
                   </FormControl>
-                </Box>
+                </div>
                 <Box className="w-[48%]">
-                  <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
+                  <div className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
                     Last name
-                  </Typography>
+                  </div>
                   <FormControl sx={{ width: '100%' }}>
                     <OutlinedInput
                       placeholder="enter last name"
@@ -68,11 +68,11 @@ export const FreeQuotation = () => {
                     />
                   </FormControl>
                 </Box>
-              </Box>
-              <Box className="mt-[20px] w-[100%]">
-                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
+              </div>
+              <div className="mt-[20px] w-[100%]">
+                <div className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
                   Email
-                </Typography>
+                </div>
                 <FormControl sx={{ width: '100%' }}>
                   <OutlinedInput
                     placeholder="enter email address"
@@ -80,11 +80,11 @@ export const FreeQuotation = () => {
                     inputProps={{ style: { fontSize: '12px' } }}
                   />
                 </FormControl>
-              </Box>
-              <Box className="mt-[20px]">
-                <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
+              </div>
+              <div className="mt-[20px]">
+                <div className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
                   Your Message
-                </Typography>
+                </div>
                 <FormControl sx={{ width: '100%' }}>
                   <OutlinedInput
                     placeholder="enter your Message"
@@ -108,11 +108,11 @@ export const FreeQuotation = () => {
                     }}
                   />
                 </FormControl>
-              </Box>
-              <Box className="mt-[20px] flex flex-col ">
-                <Typography className="text-[#2C3238] text-[14px] md:text-[16px] font-medium">
+              </div>
+              <div className="mt-[20px] flex flex-col ">
+                <div className="text-[#2C3238] text-[14px] md:text-[16px] font-medium">
                   What are you more interested in:
-                </Typography>
+                </div>
                 <Grid container xs={12} className="mt-[7px] w-[100%]">
                   {checked.map((_, index) => (
                     <Grid item xs={6} key={index}>
@@ -142,11 +142,17 @@ export const FreeQuotation = () => {
                 <div className="mt-[20px]">
                   <Button
                     onClick={() => router.push('/')}
-                    className="ButtonTransition overflow-hidden text-[12px] md:text-[14px] font-semibold "
+                    className="ButtonTransition  "
                     sx={{
                       '&.MuiButtonBase-root': {
                         backgroundColor: '#8184EB',
                         color: 'white',
+                        overflow: 'hidden',
+                        fontSize: {
+                          xs: '12px',
+                          md: '14px',
+                        },
+                        fontWeight: 'bold',
                         textTransform: 'capitalize',
                         padding: '8px 24px 8px 24px',
                         border: '1px solid #8184EB',
@@ -162,7 +168,7 @@ export const FreeQuotation = () => {
                     Book my Demo
                   </Button>
                 </div>
-              </Box>
+              </div>
             </div>
           </div>
         </div>

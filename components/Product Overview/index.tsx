@@ -23,20 +23,18 @@ const ProductOverview: React.FC = () => {
                                     </div>
                                     <div>
                                         <div className="text-[18px] font-medium">
-                                            How Can I Trust Alumel tech?
+                                            {pageData.Data.Q1}
                                         </div>
                                         <div className="text-[16px]  border-b pb-[7px] font-thin leading-[30px]">
-                                            You will be only working with industry experts with years of experience and deep tech knowledge to your projects.
-
+                                            {pageData.Data.A1}
                                         </div>
                                     </div>
                                     <div className="mt-[20px]">
                                         <div className="text-[18px] font-medium">
-                                            Are your solutions tailored to my needs?
+                                            {pageData.Data.Q2}
                                         </div>
                                         <div className="text-[16px] border-b pb-[7px]  font-thin leading-[30px]">
-                                            Yes, every solution we create is customized to meet your specific needs and goals.
-
+                                            {pageData.Data.A2}
                                         </div>
 
                                     </div>
@@ -55,7 +53,7 @@ const ProductOverview: React.FC = () => {
                                                 {pageData.Data.productCount}+
                                             </div>
                                             <div className="md:text-[18px]  text-[12px] text-[white]  md:font-medium font-normal   leading-[28px]">
-                                                PRODUCTS
+                                                {pageData.Data.productText}
                                             </div>
                                         </div>
                                         <div>
@@ -64,7 +62,7 @@ const ProductOverview: React.FC = () => {
                                                 {pageData.Data.webDesignCount}
                                             </div>
                                             <div className="md:text-[18px]  text-[12px] text-[white]  md:font-medium font-normal   leading-[28px]">
-                                                WEB DESIGNS
+                                                {pageData.Data.webText}
                                             </div>
                                         </div>
                                         <div>
@@ -72,7 +70,7 @@ const ProductOverview: React.FC = () => {
                                                 {pageData.Data.softwareDevelopedCount}
                                             </div>
                                             <div className="md:text-[18px]  text-[12px] text-[white] md:font-medium font-normal leading-[28px]">
-                                                SOFTWARES DEVELOPED
+                                                {pageData.Data.softwareText}
                                             </div>
                                         </div>
 

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ClipLoader } from "react-spinners";
-import { LoaderContext } from "../context/LoaderContext";
+import { LoaderContext } from "../pages/context/LoaderContext";
 
 const Loader: React.FC = () => {
     const { isLoading } = useContext(LoaderContext);

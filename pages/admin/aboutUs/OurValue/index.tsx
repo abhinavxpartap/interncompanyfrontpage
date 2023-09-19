@@ -1,63 +1,83 @@
-import React, { useContext, useState } from "react";
+import React, {useContext, useEffect, useState} from "react";
 import { Button } from "../../../../utils/Button";
 import { Input } from "../../../../utils/Input";
 import toast from "react-hot-toast";
-import { LoaderContext } from "../../../../context/LoaderContext";
+import { LoaderContext } from "../../../context/LoaderContext";
 import pageData from "../../../../data/aboutOurValue.json";
 import PrivateLayout from "../../../../components/Layout/privateLayout";
-import {OurValueInterface} from "../../../../types";
+import { ourValueArray, OurValueInterface} from "../../../../types";
 
 const OurValuePage = () => {
     const { setIsLoading } = useContext(LoaderContext);
-    const [companies, setCompanies] = useState<OurValueInterface[]>(pageData);
+    const [params, setParams] = useState<OurValueInterface>({
+        _id:"",
+        aboutOurValue:[]
+    });
 
-    const setParams = (index: number, key: string, value: string): void => {
-        const newCompany = [...companies];
-        newCompany[index] = {
-            ...newCompany[index],
-            [key]: value
-        };
-        setCompanies(newCompany);
-    }
+    useEffect(() => {
+        fetch("/api/aboutUs/GET/OurValue")
+            .then((response) => response.json())
+            .then((data) => {
+                setParams({
+                    ...params,
+                    _id:data._id,
+                    aboutOurValue: data.aboutOurValue.map((headerItem:ourValueArray) => {
+                        return ({
+                            number: headerItem.number,
+                            title: headerItem.title,
+                            subtitle:headerItem.subtitle,
+                        });
+                    }),
+                });
+            })
+            .catch((error) => {
+                console.error("Error fetching banner data:", error);
+            });
+    }, []);
 
-    const addCompany = () => {
-        const newCompany = [...companies];
-        newCompany.push({
-            number: "",
-            title: "",
-            subtitle:""
+
+
+    const updateValue = (index: number, field: string, value: string) => {
+        setParams((prevParams) => {
+            const updatedHeader = [...prevParams.aboutOurValue];
+            updatedHeader[index][field] = value;
+            return {
+                ...prevParams,
+                aboutOurValue: updatedHeader,
+            };
         });
-        setCompanies(newCompany);
-    }
+    };
 
-    const removeCompany = (index: number) => {
-        const newCompany = [...companies];
-        newCompany.splice(index, 1);
-        setCompanies(newCompany);
-    }
 
     const save = async () => {
-        setIsLoading(true);
-        const response = await fetch('/api/save', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                fileUrl: '/aboutOurValue.json',
-                updatedContent: JSON.stringify(companies)
-            })
-        });
+        try {
+            setIsLoading(true);
+            const response = await fetch('/api/aboutUs/PUT/OurValue', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    _id: params._id,
+                    aboutOurValue: params.aboutOurValue,
+                }),
+            });
 
-        const data = await response.json();
-        console.log(response)
-
-        if (data.success) {
-            toast.success("Changes saved successfully!");
-        } else {
-            toast.error(`Error saving changes: ${data.message}`);
+            if (response.ok) {
+                const data = await response.json();
+                if (data.message) {
+                    console.log('Update successful:', data.message);
+                } else {
+                    console.error('Update operation failed');
+                }
+            } else {
+                // Handle non-200 status codes
+                console.error('Server error while updating data');
+            }
+            setIsLoading(false);
+        } catch (error) {
+            console.error('Error updating data:', error);
         }
-        setIsLoading(false);
     };
 
     return <PrivateLayout title="Zuca - About Our Values">
@@ -74,7 +94,7 @@ const OurValuePage = () => {
                 />
             </div>
             <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[16px]">
-                {companies.map((item:OurValueInterface, index) => {
+                {params.aboutOurValue.map((item:ourValueArray, index) => {
                         return <div key={index} className="rounded border overflow-hidden bg-white">
                             <div className="p-[10px]">
                                 <h1 className="font-bold">{item.number}</h1>
@@ -84,7 +104,7 @@ const OurValuePage = () => {
                                     label="Title"
                                     placeholder="Title"
                                     value={item.title}
-                                    onChange={e => setParams(index, "title", e.target.value)}
+                                    onChange={e => updateValue(index, "title", e.target.value)}
                                     className="rounded admin-input"
                                 />
                             </div>
@@ -93,7 +113,7 @@ const OurValuePage = () => {
                                     label="Sub Title"
                                     placeholder="Sub Title"
                                     value={item.subtitle}
-                                    onChange={e => setParams(index, "subtitle", e.target.value)}
+                                    onChange={e => updateValue(index, "subtitle", e.target.value)}
                                     className="rounded admin-input"
                                 />
                             </div>

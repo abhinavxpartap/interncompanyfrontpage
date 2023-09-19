@@ -8,9 +8,9 @@ const Service = () => {
     return (
         <div className="md:px-[30px] features-area relative flex flex-col items-center py-[40px] md:pt-[20px] text-center max-w-[1377.5px] overflow-hidden h-auto mx-auto">
             <Button
-                label={'WHAT WE DO?'}
+                label={services.bannerData.tagButtonName}
                 type="button"
-                className="max-w-[150px] px-[10px] py-[4px]   bg-[#A1B4F7] text-[white] xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] text-[12px] hover:text-[#A1B4F7]"
+                className="max-w-[150px] uppercase px-[10px] py-[4px]   bg-[#A1B4F7] text-[white] xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] text-[12px] hover:text-[#A1B4F7]"
             />
             <div
                 className="text-[#151448] md:text-[40px] text-[24px]  font-bold leading-[125%] mt-[13px] max-w-[641px]">

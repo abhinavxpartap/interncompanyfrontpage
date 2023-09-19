@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { Button } from "../../../../utils/Button";
 import {Input} from "../../../../utils/Input";
 import toast from "react-hot-toast";
-import { LoaderContext } from "../../../../context/LoaderContext";
+import { LoaderContext } from "../../../context/LoaderContext";
 import { ImageOverlay } from "../../../../utils/Admin/ImageOverlay";
 import pageData from "../../../../data/serviceAssurance.json";
 import PrivateLayout from "../../../../components/Layout/privateLayout";

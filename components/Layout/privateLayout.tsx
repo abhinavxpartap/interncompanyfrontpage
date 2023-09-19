@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {SideNav} from "../../utils/Admin/SideNav";
 import {AdminLinksInterface} from "../../types";
 import Head from "next/head";
-import {useAuth} from "../../context/AuthContext";
+import {useAuth} from "../../pages/context/AuthContext";
 import {useRouter} from "next/router";
 
 interface PrivateLayoutInterface {

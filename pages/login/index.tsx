@@ -4,25 +4,20 @@ import { Img } from "../../utils/Img";
 import { Input } from "../../utils/Input";
 import { Button } from "../../utils/Button";
 import Head from "next/head";
-import { useAuth } from "../../context/AuthContext";
-
+import { useAuth } from "../context/AuthContext";
 const Login = () => {
-
     const [params, setParams] = useState<LoginInterface>({
         username: '',
         password: ''
     });
     const [showPassword, setShowPassword] = useState<boolean>(false);
     const { login, user } = useAuth();
-
     const setParam = (key: string, value: string) => {
         setParams({
-          ...params,
-          [key]: value,
+            ...params,
+            [key]: value,
         });
-      };
-
-
+    };
     return <>
         <Head>
             <title>Zuca - Login</title>
@@ -62,7 +57,7 @@ const Login = () => {
                             className="xxl:text-[19px] xxl:leading-[22.99px] font-semibold sm:text-[17px] text-[14px] sm:leading-[20.57px] leading-[14px] tracking-[-0.22px] md:w-[145px] w-[115px] xl:h-[44px] md:h-[38px] h-[35px]"
                             onClick={async () => {
                                 await login(params);
-                              }}
+                            }}
                         />
                     </div>
                 </div>
@@ -70,5 +65,4 @@ const Login = () => {
         }
     </>
 }
-
 export default Login

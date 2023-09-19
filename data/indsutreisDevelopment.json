@@ -1,1 +1,41 @@
-{"bannerData":{"title":"We Build Custom FinTech Application Development Solutions that Follow All Industry Compliances","subtitle":"Your FinTech product must adhere to all the stringent governmental and financial regulations. Ensuring that you are following the rules would require you to be transparent and strict about how you use users’ data in your application. We can help you keep your data secure and regulations compliant.","image":"/Compliances.jpg"},"header":[{"id":1,"title":"Alumel"},{"id":2,"title":"google"},{"id":3,"title":"amazon"},{"id":4,"title":"zs"},{"id":5,"title":"Neo"},{"id":6,"title":"Tata"},{"id":7,"title":"Mahina"},{"id":8,"title":"hero"}]}
+{
+  "bannerData": {
+    "title": "We Build Custom FinTech Application Development Solutions that Follow All Industry Compliances",
+    "subtitle": "Your FinTech product must adhere to all the stringent governmental and financial regulations. Ensuring that you are following the rules would require you to be transparent and strict about how you use users’ data in your application. We can help you keep your data secure and regulations compliant.",
+    "image": "/Compliances.jpg"
+  },
+  "header": [
+    {
+      "id": 1,
+      "title": "Alumel"
+    },
+    {
+      "id": 2,
+      "title": "google"
+    },
+    {
+      "id": 3,
+      "title": "amazon"
+    },
+    {
+      "id": 4,
+      "title": "zs"
+    },
+    {
+      "id": 5,
+      "title": "Neo"
+    },
+    {
+      "id": 6,
+      "title": "Tata"
+    },
+    {
+      "id": 7,
+      "title": "Mahina"
+    },
+    {
+      "id": 8,
+      "title": "hero"
+    }
+  ]
+}

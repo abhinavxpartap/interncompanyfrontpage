@@ -1,1 +1,18 @@
-[{"number":"1000+","title":"Projects Delivered"},{"number":"800+","title":"Happy Clients"},{"number":"500+","title":"Verified Agencies"},{"number":"800+","title":"Happy Clients"}]
+[
+  {
+    "number": "1000+",
+    "title": "Projects Delivered"
+  },
+  {
+    "number": "800+",
+    "title": "Happy Clients"
+  },
+  {
+    "number": "500+",
+    "title": "Verified Agencies"
+  },
+  {
+    "number": "800+",
+    "title": "Happy Clients"
+  }
+]

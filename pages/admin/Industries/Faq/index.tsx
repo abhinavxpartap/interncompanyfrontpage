@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Button } from "../../../../utils/Button";
 import toast from "react-hot-toast";
-import { LoaderContext } from "../../../../context/LoaderContext";
+import { LoaderContext } from "../../../context/LoaderContext";
 import jsonData from "../../../../data/common/industriesFAQ.json";
 import {Input, TextArea} from "../../../../utils/Input";
 import PrivateLayout from "../../../../components/Layout/privateLayout";

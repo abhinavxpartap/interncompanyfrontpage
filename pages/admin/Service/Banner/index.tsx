@@ -4,7 +4,7 @@ import pageData from "../../../../data/service.json";
 import {ImageOverlay} from "../../../../utils/Admin/ImageOverlay";
 import {Button} from "../../../../utils/Button";
 import toast from "react-hot-toast";
-import {LoaderContext} from "../../../../context/LoaderContext";
+import {LoaderContext} from "../../../context/LoaderContext";
 import PrivateLayout from "../../../../components/Layout/privateLayout";
 import {ServiceBannerInterface1} from "../../../../types";
 

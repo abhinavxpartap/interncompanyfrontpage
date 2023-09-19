@@ -10,7 +10,6 @@ interface RequestBody {
 const handler = (req: NextApiRequest, res: NextApiResponse) => {
     if (req.method === 'POST') {
         const { fileUrl, updatedContent }: RequestBody = req.body;
-
         try {
             fs.writeFileSync(path.join(process.cwd(), './data', fileUrl), updatedContent);
             res.status(200).json({ success: true });

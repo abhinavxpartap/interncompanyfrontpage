@@ -1,51 +1,72 @@
-import React, {useContext, useState} from "react";
+import React, { useContext, useState, useEffect } from "react";
 import {Input} from "../../../../utils/Input";
-import pageData from "../../../../data/homepage.json";
 import {ImageOverlay} from "../../../../utils/Admin/ImageOverlay";
 import {Button} from "../../../../utils/Button";
 import toast from "react-hot-toast";
-import {LoaderContext} from "../../../../context/LoaderContext";
+import {LoaderContext} from "../../../context/LoaderContext";
 import PrivateLayout from "../../../../components/Layout/privateLayout";
 import {BannerAdminInterface} from "../../../../types";
 
 const BannerPage = () => {
     const {setIsLoading} = useContext(LoaderContext);
-    const [params, setParams] = useState<BannerAdminInterface>({
-        title: pageData.bannerData.title,
-        subtitle: pageData.bannerData.subtitle,
-        backgroundImage: pageData.bannerData.backgroundImage,
-        buttonName:pageData.bannerData.buttonName
-    });
+
+    const [params, setParams] = useState({
+        _id :"",
+        updatedBannerData:{
+         title: "",
+         subtitle: "",
+         backgroundImage: "",
+         buttonName: ""
+       }
+    })
+
+
+    useEffect(() => {
+        fetch("/api/landing/GET/Banner")
+          .then((response) => response.json())
+          .then((data) => {
+            setParams({
+              ...params,
+              _id:data._id,
+              updatedBannerData: {
+                title: data.title,
+                subtitle: data.subtitle,
+                backgroundImage: data.backgroundImage,
+                buttonName: data.buttonName,
+              },
+            });
+          })
+          .catch((error) => {
+            console.error("Error fetching banner data:", error);
+          });
+      }, []);
 
     const save = async () => {
-        setIsLoading(true);
-        const response = await fetch('/api/save', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                fileUrl: '/homepage.json',
-                updatedContent: JSON.stringify({...pageData, bannerData: params})
-            }),
-        });
+        try {
+            setIsLoading(true);
+            const response = await fetch('/api/landing/PUT/Banner', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(params),
+            });
 
-        const data = await response.json();
-
-
-        if (data.success) {
-            toast.success("Changes saved successfully!");
-        } else {
-            toast.error(`Error saving changes: ${data.message}`);
+            if (response.ok) {
+                const data = await response.json();
+                if (data.message) {
+                    console.log('Update successful:', data.message);
+                } else {
+                    console.error('Update operation failed');
+                }
+            } else {
+                console.error('Server error while updating banner data');
+            }
+            setIsLoading(false);
+        } catch (error) {
+            console.error('Error updating banner data:', error);
         }
-        setIsLoading(false);
     };
-
-    const setBannerParams = (key:keyof BannerAdminInterface, value:string) => {
-        const newParams = {...params};
-        newParams[key] = value;
-        setParams(newParams);
-    }
 
     return <PrivateLayout title="Zuca - Landing Banner">
         <div className="flex flex-col gap-[16px]">
@@ -63,8 +84,16 @@ const BannerPage = () => {
             <div className="flex flex-col gap-[16px]">
                 <div className="rounded border bg-white overflow-hidden md:h-[450px]">
                     <ImageOverlay
-                        url={params.backgroundImage}
-                        onUploadSuccess={(url) => setBannerParams('backgroundImage', url)}
+                        url={params.updatedBannerData.backgroundImage}
+                        onUploadSuccess={(url) =>
+                            setParams({
+                              ...params,
+                              updatedBannerData: {
+                                ...params.updatedBannerData,
+                                backgroundImage: url,
+                              },
+                            })
+                          }
                         className="object-cover h-full"
                         wrapperHeightClass="h-full"
                     />
@@ -75,8 +104,16 @@ const BannerPage = () => {
                         <Input
                             label="Title"
                             placeholder="Title"
-                            value={params.title}
-                            onChange={e => setBannerParams('title', e.target.value)}
+                            value={params.updatedBannerData.title}
+                            onChange={(e) =>
+                                setParams({
+                                  ...params,
+                                  updatedBannerData: {
+                                    ...params.updatedBannerData,
+                                    title: e.target.value,
+                                  },
+                                })
+                              }
                             className="rounded admin-input"
                         />
                     </div>
@@ -84,8 +121,16 @@ const BannerPage = () => {
                         <Input
                             label="Sub Title"
                             placeholder="Sub Title"
-                            value={params.subtitle}
-                            onChange={e => setBannerParams('subtitle', e.target.value)}
+                            value={params.updatedBannerData.subtitle}
+                            onChange={(e) =>
+                                setParams({
+                                  ...params,
+                                  updatedBannerData: {
+                                    ...params.updatedBannerData,
+                                    subtitle: e.target.value,
+                                  },
+                                })
+                              }
                             className="rounded admin-input"
                         />
                     </div>
@@ -93,8 +138,16 @@ const BannerPage = () => {
                         <Input
                             label="Button Name"
                             placeholder="Button Name"
-                            value={params.buttonName}
-                            onChange={e => setBannerParams('buttonName', e.target.value)}
+                            value={params.updatedBannerData.buttonName}
+                            onChange={(e) =>
+                                setParams({
+                                  ...params,
+                                  updatedBannerData: {
+                                    ...params.updatedBannerData,
+                                    buttonName: e.target.value,
+                                  },
+                                })
+                            }              
                             className="rounded admin-input"
                         />
                     </div>

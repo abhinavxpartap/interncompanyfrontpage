@@ -1,8 +1,6 @@
-import React, { useContext, useState } from "react";
+import React, {useContext, useEffect, useState} from "react";
 import { Button } from "../../../utils/Button";
-import toast from "react-hot-toast";
-import { LoaderContext } from "../../../context/LoaderContext";
-import pageData from "../../../data/common/SuccessStory.json";
+import { LoaderContext } from "../../context/LoaderContext";
 import { ImageOverlay } from "../../../utils/Admin/ImageOverlay";
 import { Input, TextArea } from "../../../utils/Input";
 import PrivateLayout from "../../../components/Layout/privateLayout";
@@ -13,87 +11,114 @@ interface ParamsInterface {
     subtitle: string;
 }
 interface PageDataInterface {
-    bannerData: ParamsInterface;
+    _id:string,
+    bannerData: ParamsInterface,
     SuccessStory:SuccessStoryInterface[]
 }
 const OurSuccessStoryPage = () => {
     const { setIsLoading } = useContext(LoaderContext);
-    const [params1, setParams1] = useState<ParamsInterface>({
-        title:pageData.bannerData.title,
-        subtitle: pageData.bannerData.subtitle,
+    const [params, setParams] = useState<PageDataInterface>({
+        _id:"",
+        bannerData:{
+            title:"",
+            subtitle:"",
+        },
+        SuccessStory:[]
     });
 
-    const save = async (
-        pageData: PageDataInterface,
-        headerData: SuccessStoryInterface[],
-        params1: ParamsInterface
-    ) => {
-        setIsLoading(true);
-        const dataToSave = {
-            fileUrl: "/common/SuccessStory.json",
-            updatedContent: JSON.stringify({
-                ...pageData,
-                SuccessStory: headerData,
-                bannerData: params1
-            }),
-        };
+    useEffect(() => {
+        fetch("/api/common/GET/successStory")
+            .then((response) => response.json())
+            .then((data) => {
+                setParams({
+                    ...params,
+                    _id:data._id,
+                    bannerData: {
+                        title: data.bannerData.title,
+                        subtitle: data.bannerData.subtitle,
+                    },
+                    SuccessStory: data.SuccessStory.map((headerItem:SuccessStoryInterface) => {
+                        return ({
+                            heading:headerItem.heading,
+                            imgUrl:headerItem.imgUrl,
+                            description:headerItem.description,
+                            subtitle:headerItem.subtitle,
+                            href:headerItem.href,
+                            country:headerItem.country,
+                        });
+                    }),
+                });
+            })
+            .catch((error) => {
+                console.error("Error fetching banner data:", error);
+            });
+    }, []);
 
-        const response = await fetch("/api/save", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(dataToSave),
+    const updateSuccessStory = (index: number, field: string, value: string) => {
+        setParams((prevParams) => {
+            const updatedHeader = [...prevParams.SuccessStory];
+            updatedHeader[index][field] = value;
+            return {
+                ...prevParams,
+                SuccessStory: updatedHeader,
+            };
         });
+    };
 
-        const data = await response.json();
 
-        if (data.success) {
-            toast.success("Changes saved successfully!");
-        } else {
-            toast.error(`Error saving changes: ${data.message}`);
+    const addSuccesStory = () => {
+        setParams((prevState) => ({
+            ...prevState,
+            SuccessStory: [...prevState.SuccessStory, {
+                heading:"",
+                imgUrl:"",
+                description:"",
+                subtitle:"",
+                href:"",
+                country:"",
+            }],
+        }));
+    };
+
+    const removeSuccessStory = (indexToRemove:number) => {
+        setParams((prevState) => ({
+            ...prevState,
+            SuccessStory: prevState.SuccessStory.filter((_, index) => index !== indexToRemove),
+        }));
+    };
+
+    const save = async () => {
+        try {
+            setIsLoading(true);
+            const response = await fetch('/api/common/PUT/successStory', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    _id: params._id,
+                    bannerData: params.bannerData,
+                    SuccessStory: params.SuccessStory,
+                }),
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                if (data.message) {
+                    console.log('Update successful:', data.message);
+                } else {
+                    console.error('Update operation failed');
+                }
+            } else {
+                // Handle non-200 status codes
+                console.error('Server error while updating data');
+            }
+            setIsLoading(false);
+        } catch (error) {
+            console.error('Error updating data:', error);
         }
-        setIsLoading(false);
     };
 
-    const setBannerParams = (key: keyof ParamsInterface, value: string) => {
-        const newParams = { ...params1 };
-        newParams[key] = value;
-        setParams1(newParams);
-    };
-
-    const [headerData, setHeaderData] = useState<SuccessStoryInterface[]>(pageData.SuccessStory);
-    const setParams = (index: number, key: string, value: string): void => {
-        const updatedItems = [...headerData];
-        updatedItems[index] = {
-            ...updatedItems[index],
-            [key]: value
-        };
-        setHeaderData(updatedItems);
-    }
-
-    const addLinks = () => {
-        const newLinks = [...headerData];
-        newLinks.push({
-            heading:'',
-            imgUrl:'',
-            description:'',
-            subtitle:'',
-            href:'',
-            country:'',
-        });
-        setHeaderData(newLinks);
-    }
-
-    const removeLink = (index: number) => {
-        const newLinks = [...headerData];
-        newLinks.splice(index, 1);
-        setHeaderData(newLinks);
-    }
-
-    const handleSaveClick = () => {
-        save(pageData,headerData,params1);
-    };
 
     return <PrivateLayout title="Zuca - Our Success Story">
         <div className="flex flex-col gap-[16px]">
@@ -105,13 +130,13 @@ const OurSuccessStoryPage = () => {
                     label="Save"
                     type="button"
                     className="px-[24px] py-[4px] rounded"
-                    onClick={handleSaveClick}
+                    onClick={save}
                 />
                 <Button
                     label="Add New"
                     type="button"
                     className="px-[24px] py-[4px] rounded"
-                    onClick={addLinks}
+                    onClick={addSuccesStory}
                 />
             </div>
             <div className="rounded border bg-white mt-[10px] p-[10px]">
@@ -119,8 +144,16 @@ const OurSuccessStoryPage = () => {
                     <Input
                         label="Title"
                         placeholder="Title"
-                        value={params1.title}
-                        onChange={e => setBannerParams('title', e.target.value)}
+                        value={params.bannerData.title}
+                        onChange={(e) =>
+                            setParams({
+                                ...params,
+                                bannerData: {
+                                    ...params.bannerData,
+                                    title: e.target.value,
+                                },
+                            })
+                        }
                         className="rounded admin-input"
                     />
                 </div>
@@ -128,23 +161,31 @@ const OurSuccessStoryPage = () => {
                     <Input
                         label="subtitle"
                         placeholder="subtitle"
-                        value={params1.subtitle}
-                        onChange={e => setBannerParams('subtitle', e.target.value)}
+                        value={params.bannerData.subtitle}
+                        onChange={(e) =>
+                            setParams({
+                                ...params,
+                                bannerData: {
+                                    ...params.bannerData,
+                                    subtitle: e.target.value,
+                                },
+                            })
+                        }
                         className="rounded admin-input"
                     />
                 </div>
             </div>
             <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-[16px]">
                 {
-                    headerData.map((item:SuccessStoryInterface, index: number) => {
+                    params.SuccessStory.map((item:SuccessStoryInterface, index: number) => {
                         return <div key={index} className="rounded border overflow-hidden bg-white">
                             <ImageOverlay
                                 withOverlay
                                 url={item.imgUrl}
                                 id={`icon-${index}`}
                                 className="h-[220px]"
-                                remove={() => removeLink(index)}
-                                onUploadSuccess={(url) => setParams(index, "imgUrl", url)}
+                                remove={() => removeSuccessStory(index)}
+                                onUploadSuccess={(url) => updateSuccessStory(index, "imgUrl", url)}
                             />
                             <div className="p-[5px]">
                                 <div className="p-[5px]">
@@ -152,7 +193,7 @@ const OurSuccessStoryPage = () => {
                                         label="Heading"
                                         placeholder="Heading"
                                         value={item.heading}
-                                        onChange={e => setParams(index, "heading", e.target.value)}
+                                        onChange={e => updateSuccessStory(index, "heading", e.target.value)}
                                         className="rounded admin-input"
                                     />
                                 </div>
@@ -161,7 +202,7 @@ const OurSuccessStoryPage = () => {
                                         label="Subtitle"
                                         placeholder="subtitle"
                                         value={item.subtitle}
-                                        onChange={e => setParams(index, "subtitle", e.target.value)}
+                                        onChange={e => updateSuccessStory(index, "subtitle", e.target.value)}
                                         className="rounded admin-input"
                                     />
                                 </div>
@@ -170,7 +211,7 @@ const OurSuccessStoryPage = () => {
                                         label="Country"
                                         placeholder="Country"
                                         value={item.country}
-                                        onChange={e => setParams(index, "country", e.target.value)}
+                                        onChange={e => updateSuccessStory(index, "country", e.target.value)}
                                         className="rounded admin-input"
                                     />
                                 </div>
@@ -179,7 +220,7 @@ const OurSuccessStoryPage = () => {
                                         label="Href"
                                         placeholder="href"
                                         value={item.href}
-                                        onChange={e => setParams(index, "href", e.target.value)}
+                                        onChange={e => updateSuccessStory(index, "href", e.target.value)}
                                         className="rounded admin-input"
                                     />
                                 </div>
@@ -188,7 +229,7 @@ const OurSuccessStoryPage = () => {
                                         label="Description"
                                         placeholder="Label"
                                         value={item.description}
-                                        onChange={e => setParams(index, "description", e.target.value)}
+                                        onChange={e => updateSuccessStory(index, "description", e.target.value)}
                                         className="rounded admin-input"
                                     />
                                 </div>

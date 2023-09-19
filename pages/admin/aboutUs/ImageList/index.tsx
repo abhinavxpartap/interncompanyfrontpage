@@ -1,63 +1,98 @@
-import React, { useContext, useState } from "react";
+import React, {useContext, useEffect, useState} from "react";
 import { Button } from "../../../../utils/Button";
 import { Input } from "../../../../utils/Input";
-import toast from "react-hot-toast";
-import { LoaderContext } from "../../../../context/LoaderContext";
+import { LoaderContext } from "../../../context/LoaderContext";
 import { ImageOverlay } from "../../../../utils/Admin/ImageOverlay";
-import pageData from "../../../../data/imageList.json";
 import PrivateLayout from "../../../../components/Layout/privateLayout";
-import {ImageListInterface} from "../../../../types";
+import {ImageListInterface,ImageListMainInterface} from "../../../../types";
 
 const ImageListPage = () => {
     const { setIsLoading } = useContext(LoaderContext);
-    const [companies, setCompanies] = useState<ImageListInterface[]>(pageData);
 
-    const setParams = (index: number, key: string, value: string): void => {
-        const newCompany = [...companies];
-        newCompany[index] = {
-            ...newCompany[index],
-            [key]: value
-        };
-        setCompanies(newCompany);
-    }
+    const [params, setParams] = useState<ImageListMainInterface>({
+        _id:"",
+        ImageList:[]
+    });
 
-    const addCompany = () => {
-        const newCompany = [...companies];
-        newCompany.push({
-            img: "",
-            title: ""
+    useEffect(() => {
+        fetch("/api/aboutUs/GET/ImageList")
+            .then((response) => response.json())
+            .then((data) => {
+                setParams({
+                    ...params,
+                    _id:data._id,
+                    ImageList: data.ImageList.map((headerItem:ImageListInterface) => {
+                        return ({
+                            img: headerItem.img,
+                            title: headerItem.title,
+                        });
+                    }),
+                });
+            })
+            .catch((error) => {
+                console.error("Error fetching banner data:", error);
+            });
+    }, []);
+
+
+
+    const updateImageList = (index: number, field: string, value: string) => {
+        setParams((prevParams) => {
+            const updatedHeader = [...prevParams.ImageList];
+            updatedHeader[index][field] = value;
+            return {
+                ...prevParams,
+                ImageList: updatedHeader,
+            };
         });
-        setCompanies(newCompany);
-    }
+    };
 
-    const removeCompany = (index: number) => {
-        const newCompany = [...companies];
-        newCompany.splice(index, 1);
-        setCompanies(newCompany);
-    }
+    const addImageList = () => {
+        setParams((prevState) => ({
+            ...prevState,
+            ImageList: [...prevState.ImageList, {
+                img:'',
+                title:''
+            }],
+        }));
+    };
+
+    const removeHeaderItem = (indexToRemove:number) => {
+        setParams((prevState) => ({
+            ...prevState,
+            ImageList: prevState.ImageList.filter((_, index) => index !== indexToRemove),
+        }));
+    };
 
     const save = async () => {
-        setIsLoading(true);
-        const response = await fetch('/api/save', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                fileUrl: '/imageList.json',
-                updatedContent: JSON.stringify(companies)
-            })
-        });
+        try {
+            setIsLoading(true);
+            const response = await fetch('/api/aboutUs/PUT/ImageList', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    _id: params._id,
+                    ImageList: params.ImageList,
+                }),
+            });
 
-        const data = await response.json();
-        console.log(response)
-
-        if (data.success) {
-            toast.success("Changes saved successfully!");
-        } else {
-            toast.error(`Error saving changes: ${data.message}`);
+            if (response.ok) {
+                const data = await response.json();
+                if (data.message) {
+                    console.log('Update successful:', data.message);
+                } else {
+                    console.error('Update operation failed');
+                }
+            } else {
+                // Handle non-200 status codes
+                console.error('Server error while updating data');
+            }
+            setIsLoading(false);
+        } catch (error) {
+            console.error('Error updating data:', error);
         }
-        setIsLoading(false);
     };
 
     return <PrivateLayout title="Zuca - About Image List">
@@ -76,26 +111,26 @@ const ImageListPage = () => {
                     label="Add New"
                     type="button"
                     className="px-[24px] py-[4px] rounded"
-                    onClick={addCompany}
+                    onClick={addImageList}
                 />
             </div>
             <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-[16px]">
-                {companies.map((item:ImageListInterface, index) => {
+                {params.ImageList.map((item:ImageListInterface, index) => {
                         return <div key={index} className="rounded border overflow-hidden bg-white">
                             <ImageOverlay
                                 withOverlay
                                 url={item.img}
                                 id={`image-${index}`}
-                                onUploadSuccess={(url) => setParams(index, "img", url)}
+                                onUploadSuccess={(url) => updateImageList(index, "img", url)}
                                 className="h-[120px]"
-                                remove={() => removeCompany(index)}
+                                remove={() => removeHeaderItem(index)}
                             />
                             <div className="p-[10px]">
                                 <Input
                                     label="Title"
                                     placeholder="Title"
                                     value={item.title}
-                                    onChange={e => setParams(index, "title", e.target.value)}
+                                    onChange={e => updateImageList(index, "title", e.target.value)}
                                     className="rounded admin-input"
                                 />
                             </div>

@@ -1,52 +1,74 @@
-import React, {useContext, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import {Input} from "../../../../utils/Input";
-import pageData from "../../../../data/aboutUs.json";
 import {ImageOverlay} from "../../../../utils/Admin/ImageOverlay";
 import {Button} from "../../../../utils/Button";
-import toast from "react-hot-toast";
-import {LoaderContext} from "../../../../context/LoaderContext";
+import {LoaderContext} from "../../../context/LoaderContext";
 import PrivateLayout from "../../../../components/Layout/privateLayout";
 import {AboutLetWorkTogether} from "../../../../types";
 
 const BannerPage = () => {
     const {setIsLoading} = useContext(LoaderContext);
     const [params, setParams] = useState<AboutLetWorkTogether>({
-        title: pageData.Lets.title,
-        subtitle: pageData.Lets.subtitle,
-        backgroundImage: pageData.Lets.backgroundImage,
-        buttonName:pageData.Lets.buttonName
+        _id:"",
+        Lets: {
+            title: "",
+            subtitle: "",
+            backgroundImage: "",
+            buttonName:""
+        }
     });
 
+    useEffect(() => {
+        fetch("/api/aboutUs/GET/LetWorkTogether")
+            .then((response) => response.json())
+            .then((data) => {
+                setParams({
+                    ...params,
+                    _id:data._id,
+                    Lets: {
+                        title: data.Lets.title,
+                        subtitle: data.Lets.subtitle,
+                        backgroundImage: data.Lets.backgroundImage,
+                        buttonName:data.Lets.buttonName
+                    }
+                });
+            })
+            .catch((error) => {
+                console.error("Error fetching banner data:", error);
+            });
+    }, []);
+
+
     const save = async () => {
-        setIsLoading(true);
-        const response = await fetch('/api/save', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                fileUrl: '/aboutUs.json',
-                updatedContent: JSON.stringify({...pageData, Lets: params})
-            }),
-        });
+        try {
+            setIsLoading(true);
+            const response = await fetch('/api/aboutUs/PUT/LetWorkTogether', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    _id: params._id,
+                    Lets: params.Lets,
+                }),
+            });
 
-        const data = await response.json();
-
-
-        if (data.success) {
-            toast.success("Changes saved successfully!");
-        } else {
-            toast.error(`Error saving changes: ${data.message}`);
+            if (response.ok) {
+                const data = await response.json();
+                if (data.message) {
+                    console.log('Update successful:', data.message);
+                } else {
+                    console.error('Update operation failed');
+                }
+            } else {
+                // Handle non-200 status codes
+                console.error('Server error while updating data');
+            }
+            setIsLoading(false);
+        } catch (error) {
+            console.error('Error updating data:', error);
         }
-        setIsLoading(false);
     };
-
-    const setBannerParams = (key:keyof AboutLetWorkTogether, value:string) => {
-        const newParams = {...params};
-        newParams[key] = value;
-        setParams(newParams);
-    }
-
     return <PrivateLayout title="Zuca - About Let Work Together">
         <div className="flex flex-col gap-[16px]">
             <div className="flex items-center gap-[16px]">
@@ -63,8 +85,16 @@ const BannerPage = () => {
             <div className="flex flex-col gap-[16px]">
                 <div className="rounded border bg-white overflow-hidden md:h-[450px]">
                     <ImageOverlay
-                        url={params.backgroundImage}
-                        onUploadSuccess={(url) => setBannerParams('backgroundImage', url)}
+                        url={params.Lets.backgroundImage}
+                        onUploadSuccess={(url) =>
+                            setParams({
+                                ...params,
+                                Lets: {
+                                    ...params.Lets,
+                                    backgroundImage: url,
+                                },
+                            })
+                        }
                         className="object-cover h-full"
                         wrapperHeightClass="h-full"
                     />
@@ -75,8 +105,16 @@ const BannerPage = () => {
                         <Input
                             label="Title"
                             placeholder="Title"
-                            value={params.title}
-                            onChange={e => setBannerParams('title', e.target.value)}
+                            value={params.Lets.title}
+                            onChange={(e) =>
+                                setParams({
+                                    ...params,
+                                    Lets: {
+                                        ...params.Lets,
+                                        title: e.target.value,
+                                    },
+                                })
+                            }
                             className="rounded admin-input"
                         />
                     </div>
@@ -84,8 +122,16 @@ const BannerPage = () => {
                         <Input
                             label="Sub Title"
                             placeholder="Sub Title"
-                            value={params.subtitle}
-                            onChange={e => setBannerParams('subtitle', e.target.value)}
+                            value={params.Lets.subtitle}
+                            onChange={(e) =>
+                                setParams({
+                                    ...params,
+                                    Lets: {
+                                        ...params.Lets,
+                                        subtitle: e.target.value,
+                                    },
+                                })
+                            }
                             className="rounded admin-input"
                         />
                     </div>
@@ -93,8 +139,16 @@ const BannerPage = () => {
                         <Input
                             label="Button Name"
                             placeholder="Button Name"
-                            value={params.buttonName}
-                            onChange={e => setBannerParams('buttonName', e.target.value)}
+                            value={params.Lets.buttonName}
+                            onChange={(e) =>
+                                setParams({
+                                    ...params,
+                                    Lets: {
+                                        ...params.Lets,
+                                        buttonName: e.target.value,
+                                    },
+                                })
+                            }
                             className="rounded admin-input"
                         />
                     </div>

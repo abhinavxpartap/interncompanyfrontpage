@@ -1,8 +1,6 @@
-import React, { useContext, useState } from "react";
+import React, {useContext, useEffect, useState} from "react";
 import { Button } from "../../../utils/Button";
-import toast from "react-hot-toast";
-import { LoaderContext } from "../../../context/LoaderContext";
-import pageData from "../../../data/common/testimonial.json";
+import { LoaderContext } from "../../context/LoaderContext";
 import { ImageOverlay } from "../../../utils/Admin/ImageOverlay";
 import { Input } from "../../../utils/Input";
 import PrivateLayout from "../../../components/Layout/privateLayout";
@@ -15,92 +13,115 @@ interface paramsInterface {
 interface HeaderDataInterface {
     imageUrl: string,
     comment: string,
-    companyLogo: string,
     username: string,
     designation: string,
+    [key:string]:string
 }
 
 interface pageDataInterface {
+    _id:string;
     bannerData:paramsInterface,
     header:HeaderDataInterface[];
 }
 const CaseStudyPage = () => {
     const { setIsLoading } = useContext(LoaderContext);
 
-    const [params1, setParams1] = useState<paramsInterface>({
-        title: pageData.bannerData.title,
-        tagButtonName:pageData.bannerData.tagButtonName
+    const [params, setParams] = useState<pageDataInterface>({
+        _id:"",
+        bannerData:{
+            title:"",
+            tagButtonName:"",
+        },
+        header:[]
     });
-    const save = async (pageData:pageDataInterface, headerData:HeaderDataInterface[], params1:paramsInterface) => {
-        setIsLoading(true);
-        const dataToSave = {
-            fileUrl: '/common/testimonial.json',
-            updatedContent: JSON.stringify({
-                ...pageData,
-                header: headerData,
-                bannerData: params1
+
+    useEffect(() => {
+        fetch("/api/common/GET/testimonials")
+            .then((response) => response.json())
+            .then((data) => {
+                setParams({
+                    ...params,
+                    _id:data._id,
+                    bannerData: {
+                        title: data.bannerData.title,
+                        tagButtonName: data.bannerData.tagButtonName,
+                    },
+                    header: data.header.map((headerItem:HeaderDataInterface) => {
+                        return ({
+                            imageUrl: headerItem.imageUrl,
+                            comment: headerItem.comment,
+                            username: headerItem.username,
+                            designation: headerItem.designation,
+                        });
+                    }),
+                });
             })
-        };
+            .catch((error) => {
+                console.error("Error fetching banner data:", error);
+            });
+    }, []);
 
-        const response = await fetch('/api/save', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(dataToSave),
+    const updateTestimonials = (index: number, field: string, value: string) => {
+        setParams((prevParams) => {
+            const updatedHeader = [...prevParams.header];
+            updatedHeader[index][field] = value;
+            return {
+                ...prevParams,
+                header: updatedHeader,
+            };
         });
-
-        const data = await response.json();
-
-        if (data.success) {
-            toast.success("Changes saved successfully!");
-        } else {
-            toast.error(`Error saving changes: ${data.message}`);
-        }
-        setIsLoading(false);
     };
 
 
+    const addTestimonilas = () => {
+        setParams((prevState) => ({
+            ...prevState,
+            header: [...prevState.header, {
+                imageUrl: "",
+                comment: "",
+                username: "",
+                designation: "",
+            }],
+        }));
+    };
 
-    const setBannerParams = (key: keyof paramsInterface, value: string) => {
-        const newParams = {...params1};
-        newParams[key] = value;
-        setParams1(newParams);
-    }
+    const removeHeaderItem = (indexToRemove:number) => {
+        setParams((prevState) => ({
+            ...prevState,
+            header: prevState.header.filter((_, index) => index !== indexToRemove),
+        }));
+    };
 
+    const save = async () => {
+        try {
+            setIsLoading(true);
+            const response = await fetch('/api/common/PUT/testimonials', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    _id: params._id,
+                    bannerData: params.bannerData,
+                    header: params.header,
+                }),
+            });
 
-
-    const [headerData, setHeaderData] = useState<HeaderDataInterface[]>(pageData.header);
-
-    const setParams = (index: number, key: string, value: string): void => {
-        const updatedItems = [...headerData];
-        updatedItems[index] = {
-            ...updatedItems[index],
-            [key]: value
-        };
-        setHeaderData(updatedItems);
-    }
-
-    const addLinks = () => {
-        const newLinks = [...headerData];
-        newLinks.push({
-            imageUrl: "",
-            comment: "",
-            companyLogo: "",
-            username: "",
-            designation: "",
-        });
-        setHeaderData(newLinks);
-    }
-
-    const removeLink = (index: number) => {
-        const newLinks = [...headerData];
-        newLinks.splice(index, 1);
-        setHeaderData(newLinks);
-    }
-
-    const handleSaveClick = () => {
-        save(pageData, headerData, params1);
+            if (response.ok) {
+                const data = await response.json();
+                if (data.message) {
+                    console.log('Update successful:', data.message);
+                } else {
+                    console.error('Update operation failed');
+                }
+            } else {
+                // Handle non-200 status codes
+                console.error('Server error while updating data');
+            }
+            setIsLoading(false);
+        } catch (error) {
+            console.error('Error updating data:', error);
+        }
     };
 
 
@@ -114,13 +135,13 @@ const CaseStudyPage = () => {
                     label="Save"
                     type="button"
                     className="px-[24px] py-[4px] rounded"
-                    onClick={handleSaveClick}
+                    onClick={save}
                 />
                 <Button
                     label="Add New"
                     type="button"
                     className="px-[24px] py-[4px] rounded"
-                    onClick={addLinks}
+                    onClick={addTestimonilas}
                 />
             </div>
             <div className="rounded border bg-white mt-[10px] p-[10px]">
@@ -128,8 +149,16 @@ const CaseStudyPage = () => {
                     <Input
                         label="Title"
                         placeholder="Title"
-                        value={params1.title}
-                        onChange={e => setBannerParams('title', e.target.value)}
+                        value={params.bannerData.title}
+                        onChange={(e) =>
+                            setParams({
+                                ...params,
+                                bannerData: {
+                                    ...params.bannerData,
+                                    title: e.target.value,
+                                },
+                            })
+                        }
                         className="rounded admin-input"
                     />
                 </div>
@@ -137,41 +166,39 @@ const CaseStudyPage = () => {
                     <Input
                         label="Upper Tag Name"
                         placeholder="Upper Tag Name"
-                        value={params1.tagButtonName}
-                        onChange={e => setBannerParams('tagButtonName', e.target.value)}
+                        value={params.bannerData.tagButtonName}
+                        onChange={(e) =>
+                            setParams({
+                                ...params,
+                                bannerData: {
+                                    ...params.bannerData,
+                                    tagButtonName: e.target.value,
+                                },
+                            })
+                        }
                         className="rounded admin-input"
                     />
                 </div>
             </div>
             <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-[16px]">
                 {
-                    headerData.map((item: HeaderDataInterface, index: number) => {
+                    params.header.map((item: HeaderDataInterface, index: number) => {
                         return <div key={index} className="rounded border overflow-hidden bg-white">
                             <ImageOverlay
                                 withOverlay
                                 url={item.imageUrl}
                                 id={`icon-${index}`}
                                 className="h-[200px]"
-                                remove={() => removeLink(index)}
-                                onUploadSuccess={(url) => setParams(index, "imageUrl", url)}
+                                remove={() => removeHeaderItem(index)}
+                                onUploadSuccess={(url) =>  updateTestimonials(index, "imageUrl", url)}
                             />
                             <div className="p-[5px]">
-                                <div className="p-[5px]">
-                                    <ImageOverlay
-                                        withOverlay
-                                        url={item.companyLogo}
-                                        id={`icon-${index}`}
-                                        className="h-[50px]"
-                                        remove={() => removeLink(index)}
-                                        onUploadSuccess={(url) => setParams(index, "companyLogo", url)}
-                                    />
-                                </div>
                                 <div className="p-[5px]">
                                     <Input
                                         label="UserName"
                                         placeholder="UserName"
                                         value={item.username}
-                                        onChange={e => setParams(index, "username", e.target.value)}
+                                        onChange={e => updateTestimonials(index, "username", e.target.value)}
                                         className="rounded admin-input"
                                     />
                                 </div>
@@ -180,7 +207,7 @@ const CaseStudyPage = () => {
                                         label="Designation"
                                         placeholder="Designation"
                                         value={item.designation}
-                                        onChange={e => setParams(index, "designation", e.target.value)}
+                                        onChange={e => updateTestimonials(index, "designation", e.target.value)}
                                         className="rounded admin-input"
                                     />
                                 </div>
@@ -189,7 +216,7 @@ const CaseStudyPage = () => {
                                         label="Comment"
                                         placeholder="Comment"
                                         value={item.comment}
-                                        onChange={e => setParams(index, "comment", e.target.value)}
+                                        onChange={e => updateTestimonials(index, "comment", e.target.value)}
                                         className="rounded admin-input"
                                     />
                                 </div>

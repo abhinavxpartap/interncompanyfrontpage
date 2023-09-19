@@ -1,5 +1,3 @@
-import pageData from "./data/service.json";
-
 export interface UserInterface {
     username?: string;
     name?: string;
@@ -25,10 +23,13 @@ export interface DirectorInterface {
     icon: string;
 }
 export interface WhatWeInterface {
-    title1: string;
-    subtitle1: string;
-    title2: string;
-    subtitle2: string;
+    _id:string,
+    WhatWe:{
+        title1: string;
+        subtitle1: string;
+        title2: string;
+        subtitle2: string;
+    }
 }
 
 export interface TestimonialInterface {
@@ -90,17 +91,8 @@ export interface OurValuesItemInterface {
     title: string;
     subtitle: string;
 }
-export interface TestimonialsInterface {
 
-    items: TestimonialsItemInterface[];
-}
-export interface TestimonialsItemInterface {
-    comment: string;
-    imageUrl: string;
-    companyLogo: string;
-    username:string;
-    designation:string;
-}
+
 
 
 export interface TeemInterface {
@@ -340,6 +332,7 @@ export interface BannerDataInterface {
 }
 
 export interface BannerAdminInterface {
+    _id:string,
     title: string,
     subtitle: string,
     backgroundImage: string,
@@ -347,16 +340,22 @@ export interface BannerAdminInterface {
 }
 
 export interface AboutBannerInterface{
-    title: string,
-    subtitle: string,
-    backgroundImage: string,
+    _id:string,
+    Banner: {
+        title: string,
+        subtitle: string,
+        backgroundImage: string,
+    }
 }
 
 export interface AboutLetWorkTogether {
-    title:string,
-    subtitle:string,
-    backgroundImage:string,
-    buttonName:string
+    _id:string,
+    Lets:{
+        title:string,
+        subtitle:string,
+        backgroundImage:string,
+        buttonName:string
+    }
 }
 
 export interface ServiceBannerInterface1 {
@@ -368,9 +367,15 @@ export interface ServiceBannerInterface1 {
 }
 
 export interface OurValueInterface {
+    _id:string,
+    aboutOurValue:ourValueArray[]
+}
+
+export interface  ourValueArray{
     number: string,
     title: string,
-    subtitle:string
+    subtitle:string,
+    [key:string]:string,
 }
 
 export interface Faq {
@@ -393,6 +398,12 @@ export interface BrandData {
 export interface ImageListInterface{
     img: string,
     title: string,
+    [key:string]:string
+}
+
+export interface ImageListMainInterface{
+    _id:string,
+    ImageList:ImageListInterface[],
 }
 export interface TestimonialInterface {
     comment: string;
@@ -420,6 +431,7 @@ export interface CaseStudyInterface {
     org: string,
     description: string,
     href: string,
+    [key:string]:string,
 }
 
 export interface SuccessStoryInterface {
@@ -429,6 +441,7 @@ export interface SuccessStoryInterface {
     subtitle:string,
     href:string,
     country:string,
+    [key:string]:string,
 }
 export interface SuccessStoryStudyInterface {
     heading:string,
@@ -439,12 +452,22 @@ export interface SuccessStoryStudyInterface {
     country:string,
 }
 export interface ProductOverviewInterface {
-    title: string,
-    subtitle: string,
-    backgroundImage: string,
-    productCount: string,
-    softwareDevelopedCount: string,
-    webDesignCount:string,
+    _id:string,
+    Data:{title: string,
+        backgroundImage: string,
+        Q1:string,
+        Q2:string,
+        Q3:string,
+        A1:string,
+        A2:string,
+        A3:string,
+        leftImage:string,
+        productCount: string,
+        productText:string,
+        softwareText:string,
+        webText:string,
+        softwareDevelopedCount: string,
+        webDesignCount:string,}
 }
 
 export interface DataServiceInterface{

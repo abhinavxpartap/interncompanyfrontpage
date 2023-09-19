@@ -1,18 +1,21 @@
-import React, { useContext, useState } from "react";
+import React, {useContext, useEffect, useState} from "react";
 import { Button } from "../../../../utils/Button";
-import toast from "react-hot-toast";
-import { LoaderContext } from "../../../../context/LoaderContext";
-import pageData from "../../../../data/expertTeam.json";
+import { LoaderContext } from "../../../context/LoaderContext";
 import { ImageOverlay } from "../../../../utils/Admin/ImageOverlay";
 import { Input } from "../../../../utils/Input";
 import PrivateLayout from "../../../../components/Layout/privateLayout";
 
-interface paramsInterface {
-    title:string;
-    subtitle:string;
-    tagButtonName:string;
-    buttonName:string;
+interface AppState {
+    _id: string;
+    bannerData: {
+        title: string;
+        subtitle: string;
+        tagButtonName: string;
+        buttonName: string;
+    };
+    header:HeaderDataInterface[];
 }
+
 
 interface HeaderDataInterface {
     src: string;
@@ -20,92 +23,117 @@ interface HeaderDataInterface {
     icon: string;
     icontitle: string;
     iconsubtitle: string;
+    [key: string]: string;
 }
 
-interface pageDataInterface {
-    bannerData:paramsInterface,
-    header:HeaderDataInterface[];
-}
 const ExpertTeamPage = () => {
     const { setIsLoading } = useContext(LoaderContext);
 
-    const [params1, setParams1] = useState<paramsInterface>({
-        title: pageData.bannerData.title,
-        subtitle: pageData.bannerData.subtitle,
-        tagButtonName:pageData.bannerData.tagButtonName,
-        buttonName:pageData.bannerData.buttonName
+    const [params, setParams] = useState<AppState>({
+        _id: "",
+        bannerData: {
+            title: "",
+            subtitle: "",
+            tagButtonName: "",
+            buttonName: "",
+        },
+        header: [],
     });
-    const save = async (pageData:pageDataInterface, headerData:HeaderDataInterface[], params1:paramsInterface) => {
-        setIsLoading(true);
-        const dataToSave = {
-            fileUrl: '/expertTeam.json',
-            updatedContent: JSON.stringify({
-                ...pageData,
-                header: headerData,
-                bannerData: params1
+
+    useEffect(() => {
+        fetch("/api/landing/GET/ExpertTeam")
+            .then((response) => response.json())
+            .then((data) => {
+                setParams({
+                    ...params,
+                    _id:data._id,
+                    bannerData: {
+                        title: data.bannerData.title,
+                        subtitle: data.bannerData.subtitle,
+                        tagButtonName: data.bannerData.tagButtonName,
+                        buttonName: data.bannerData.buttonName,
+                    },
+                    header: data.header.map((headerItem:HeaderDataInterface) => {
+                        return ({
+                            src: headerItem.src,
+                            alt: headerItem.alt,
+                            icon: headerItem.icon,
+                            icontitle: headerItem.icontitle,
+                            iconsubtitle: headerItem.iconsubtitle,
+                        });
+                    }),
+                });
             })
-        };
+            .catch((error) => {
+                console.error("Error fetching banner data:", error);
+            });
+    }, []);
 
-        const response = await fetch('/api/save', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(dataToSave),
+    const updateHeaderField = (index: number, field: string, value: string) => {
+        setParams((prevParams) => {
+            const updatedHeader = [...prevParams.header];
+            updatedHeader[index][field] = value;
+            return {
+                ...prevParams,
+                header: updatedHeader,
+            };
         });
+    };
 
-        const data = await response.json();
 
-        if (data.success) {
-            toast.success("Changes saved successfully!");
-        } else {
-            toast.error(`Error saving changes: ${data.message}`);
+    const addHeaderItem = () => {
+        setParams((prevState) => ({
+            ...prevState,
+            header: [...prevState.header, {
+                src: "",
+                alt: "",
+                icon: "",
+                icontitle: "",
+                iconsubtitle: "",
+            }],
+        }));
+    };
+
+    const removeHeaderItem = (indexToRemove:number) => {
+        setParams((prevState) => ({
+            ...prevState,
+            header: prevState.header.filter((_, index) => index !== indexToRemove),
+        }));
+    };
+
+
+    const save = async () => {
+        try {
+            setIsLoading(true);
+            const response = await fetch('/api/landing/PUT/ExpertTeam', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    _id: params._id,
+                    bannerData: params.bannerData,
+                    header: params.header,
+                }),
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                if (data.message) {
+                    console.log('Update successful:', data.message);
+                } else {
+                    console.error('Update operation failed');
+                }
+            } else {
+                // Handle non-200 status codes
+                console.error('Server error while updating data');
+            }
+            setIsLoading(false);
+        } catch (error) {
+            console.error('Error updating data:', error);
         }
-        setIsLoading(false);
     };
 
-
-
-    const setBannerParams = (key: keyof paramsInterface, value: string) => {
-        const newParams = {...params1};
-        newParams[key] = value;
-        setParams1(newParams);
-    }
-
-
-
-    const [headerData, setHeaderData] = useState<HeaderDataInterface[]>(pageData.header);
-
-    const setParams = (index: number, key: string, value: string): void => {
-        const updatedItems = [...headerData];
-        updatedItems[index] = {
-            ...updatedItems[index],
-            [key]: value
-        };
-        setHeaderData(updatedItems);
-    }
-
-    const addLinks = () => {
-        const newLinks = [...headerData];
-        newLinks.push({
-            src: "",
-            alt: "",
-            icon:"",
-            icontitle:"",
-            iconsubtitle:""
-        });
-        setHeaderData(newLinks);
-    }
-
-    const removeLink = (index: number) => {
-        const newLinks = [...headerData];
-        newLinks.splice(index, 1);
-        setHeaderData(newLinks);
-    }
-
-    const handleSaveClick = () => {
-        save(pageData, headerData, params1);
-    };
 
 
     return <PrivateLayout title="Zuca - Expert Team">
@@ -118,13 +146,13 @@ const ExpertTeamPage = () => {
                     label="Save"
                     type="button"
                     className="px-[24px] py-[4px] rounded"
-                    onClick={handleSaveClick}
+                    onClick={save}
                 />
                 <Button
                     label="Add New"
                     type="button"
                     className="px-[24px] py-[4px] rounded"
-                    onClick={addLinks}
+                    onClick={addHeaderItem}
                 />
             </div>
             <div className="rounded border bg-white mt-[10px] p-[10px]">
@@ -132,8 +160,16 @@ const ExpertTeamPage = () => {
                     <Input
                         label="Title"
                         placeholder="Title"
-                        value={params1.title}
-                        onChange={e => setBannerParams('title', e.target.value)}
+                        value={params.bannerData.title}
+                        onChange={(e) =>
+                            setParams({
+                                ...params,
+                                bannerData: {
+                                    ...params.bannerData,
+                                    title: e.target.value,
+                                },
+                            })
+                        }
                         className="rounded admin-input"
                     />
                 </div>
@@ -141,8 +177,16 @@ const ExpertTeamPage = () => {
                     <Input
                         label="Sub Title"
                         placeholder="Sub Title"
-                        value={params1.subtitle}
-                        onChange={e => setBannerParams('subtitle', e.target.value)}
+                        value={params.bannerData.subtitle}
+                        onChange={(e) =>
+                            setParams({
+                                ...params,
+                                bannerData: {
+                                    ...params.bannerData,
+                                    subtitle: e.target.value,
+                                },
+                            })
+                        }
                         className="rounded admin-input"
                     />
                 </div>
@@ -150,8 +194,16 @@ const ExpertTeamPage = () => {
                     <Input
                         label="Upper Tag Name"
                         placeholder="Upper Tag Name"
-                        value={params1.tagButtonName}
-                        onChange={e => setBannerParams('tagButtonName', e.target.value)}
+                        value={params.bannerData.tagButtonName}
+                        onChange={(e) =>
+                            setParams({
+                                ...params,
+                                bannerData: {
+                                    ...params.bannerData,
+                                    tagButtonName: e.target.value,
+                                },
+                            })
+                        }
                         className="rounded admin-input"
                     />
                 </div>
@@ -159,23 +211,31 @@ const ExpertTeamPage = () => {
                     <Input
                         label="Button Name"
                         placeholder="Button Name"
-                        value={params1.buttonName}
-                        onChange={e => setBannerParams('buttonName', e.target.value)}
+                        value={params.bannerData.buttonName}
+                        onChange={(e) =>
+                            setParams({
+                                ...params,
+                                bannerData: {
+                                    ...params.bannerData,
+                                    buttonName: e.target.value,
+                                },
+                            })
+                        }
                         className="rounded admin-input"
                     />
                 </div>
             </div>
             <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-[16px]">
                 {
-                    headerData.map((item: HeaderDataInterface, index: number) => {
+                    params.header.map((item: HeaderDataInterface, index: number) => {
                         return <div key={index} className="rounded border overflow-hidden bg-white">
                             <ImageOverlay
                                 withOverlay
                                 url={item.src}
                                 id={`icon-${index}`}
                                 className="h-[220px]"
-                                remove={() => removeLink(index)}
-                                onUploadSuccess={(url) => setParams(index, "src", url)}
+                                remove={() => removeHeaderItem(index)}
+                                onUploadSuccess={(url) => updateHeaderField(index, "src", url)}
                             />
                             <div className="p-[5px]">
                                 <div className="p-[5px]">
@@ -184,8 +244,7 @@ const ExpertTeamPage = () => {
                                         url={item.icon}
                                         id={`icon-${index}`}
                                         className="h-[50px]"
-                                        remove={() => removeLink(index)}
-                                        onUploadSuccess={(url) => setParams(index, "icon", url)}
+                                        onUploadSuccess={(url) => updateHeaderField(index, "icon", url)}
                                     />
                                 </div>
                                 <div className="p-[5px]">
@@ -193,7 +252,7 @@ const ExpertTeamPage = () => {
                                         label="alt"
                                         placeholder="alt"
                                         value={item.alt}
-                                        onChange={e => setParams(index, "alt", e.target.value)}
+                                        onChange={(e) => updateHeaderField(index, "alt", e.target.value)}
                                         className="rounded admin-input"
                                     />
                                 </div>
@@ -202,7 +261,7 @@ const ExpertTeamPage = () => {
                                         label="Icon Title"
                                         placeholder="Icon Title"
                                         value={item.icontitle}
-                                        onChange={e => setParams(index, "icontitle", e.target.value)}
+                                        onChange={e => updateHeaderField(index, "icontitle", e.target.value)}
                                         className="rounded admin-input"
                                     />
                                 </div>
@@ -211,7 +270,7 @@ const ExpertTeamPage = () => {
                                         label="Icon Sub Title"
                                         placeholder="Label"
                                         value={item.iconsubtitle}
-                                        onChange={e => setParams(index, "iconsubtitle", e.target.value)}
+                                        onChange={e => updateHeaderField(index, "iconsubtitle", e.target.value)}
                                         className="rounded admin-input"
                                     />
                                 </div>

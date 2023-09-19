@@ -28,7 +28,8 @@ export const ServiceBanner: React.FC<ServiceBannerInterface> = (props) => {
                 color: 'white',
                 textTransform: 'capitalize',
                 padding: '8px 24px 8px 24px',
-                border: '1px solid #8184EB',
+                  fontWeight: 'bold',
+                  border: '1px solid #8184EB',
                 borderRadius: '30px',
                 '&:hover': {
                   border: '1px solid #8184EB',
@@ -39,7 +40,9 @@ export const ServiceBanner: React.FC<ServiceBannerInterface> = (props) => {
             }}
           >
               <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
-                  {buttonName}                    </a>          </Button>
+                  {buttonName}
+              </a>
+          </Button>
         </div>
       </div>
     </>

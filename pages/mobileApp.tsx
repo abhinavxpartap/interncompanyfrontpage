@@ -49,7 +49,7 @@ const ServicePage: React.FC = () => {
                         subtitle={MobileApp.About.subtitle}
                         paragraph={MobileApp.About.paragraph}
                         image={MobileApp.About.image}
-                        // data={MobileApp.About.data}
+                        data={MobileApp.About.data}
                     />
                     <Service/>
                     <div className="md:pt-[70px] pb-[30px] pt-[30px]">

@@ -32,6 +32,15 @@ export interface WhatWeInterface {
     }
 }
 
+export interface WhatWeNewInterface {
+
+        title1: string;
+        subtitle1: string;
+        title2: string;
+        subtitle2: string;
+
+}
+
 export interface TestimonialInterface {
     comment: string;
     companyLogo: string;

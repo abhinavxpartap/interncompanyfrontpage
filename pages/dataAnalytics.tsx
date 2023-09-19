@@ -47,7 +47,7 @@ const ServicePage: React.FC = () => {
                         subtitle={dataAnalytics.About.subtitle}
                         paragraph={dataAnalytics.About.paragraph}
                         image={dataAnalytics.About.image}
-                        // data={dataAnalytics.About.data}
+                        data={dataAnalytics.About.data}
                     />
 
                     <Service/>

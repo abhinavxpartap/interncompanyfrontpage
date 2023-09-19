@@ -16,7 +16,7 @@ const settings = {
 };
 const Team = () => {
   return (
-    <div className="pt-[120px] px-[15px] md:px-[45px] 2xl:px-[40px]   max-w-[1477.5px] mx-auto">
+    <div className="md:pt-[120px] pt-[50px] px-[15px] md:px-[45px] 2xl:px-[40px]   max-w-[1477.5px] mx-auto">
       <div className="w-[100%] h-full flex flex-col lg:flex-row lg:gap-[60px] xl:gap-[80px] items-start">
         <div className="w-[90vw] lg:w-[48vw]">
           <Slider {...settings}>

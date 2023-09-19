@@ -6,7 +6,7 @@ import {Img} from '../../utils/Img';
 const ProductOverview: React.FC = () => {
     return (
         <div>
-            <div className="bg-no-repeat  max-w-[1250px] mx-auto rounded-3xl bg-cover md:px-[75px] pt-[90px] pb-[0px] "
+            <div className="bg-no-repeat  max-w-[1250px] mx-auto md:rounded-3xl bg-cover md:px-[75px] md:pt-[90px] md:pb-0 pt-[50px] pb-[20px] "
                  style={{backgroundImage: `url(${pageData.Data.backgroundImage})`}}>
                 <div className="max-w-[1077.5px]  mx-auto">
                     <div
@@ -14,11 +14,11 @@ const ProductOverview: React.FC = () => {
 
                         <div className="md:mb-[30px]   justify-between  flex md:flex-row flex-col">
                             <div className="max-w-[406px] inline-block  mx-auto">
-                                <Img src="/service/joker.svg" alt="none" className="w-auto h-auto   "/>
+                                <Img src="/service/joker.svg" alt="none" className="w-auto h-auto  pb-[30px] -z-[100]  "/>
                             </div>
-                            <div className="max-w-[633px] mt-[-50px] lg:ml-[100px] inline-block text-[white]  md:text-[20px] text-[16px] font-normal leading-[35px]">
+                            <div className="max-w-[633px] mt-[-50px] z-[100] lg:ml-[100px] inline-block text-[white]  md:text-[20px] text-[16px] font-normal leading-[35px]">
                                 <div>
-                                    <div className="text-[35px] leading-[50px] font-bold mb-[15px]">
+                                    <div className="text-[35px] z-[100] leading-[50px] font-bold mb-[15px]">
                                         Need more reasons to work with Alumel tech?
                                     </div>
                                     <div>

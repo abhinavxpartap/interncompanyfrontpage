@@ -5,7 +5,7 @@ import {BrandData} from "../types";
 export const OurBrands: React.FC = () => {
   const content = (
     <>
-      <div className="max-w-[1377.5px] mx-auto flex flex-col items-center justify-between  py-[80px] ">
+      <div className="max-w-[1377.5px] mx-auto flex flex-col items-center justify-between py-[50px]  md:py-[80px] ">
         <div className="mb-[20px]">
           <h1 className="capitalize w-[100%] flex flex-col items-center md:flex-row gap-[4px] font-medium text-[#151448] text-[24px]">
             We are trusted by{' '}
@@ -23,11 +23,11 @@ export const OurBrands: React.FC = () => {
           </h1>
         </div>
 
-        <div className="w-auto h-auto overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth brands-container">
+        <div className="w-full h-full overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth">
           {CompanyImage.map((item: BrandData, index) => (
             <div
                 key={index}
-              className="w-[120px]  md:w-[200px] bg-white h-[50px] inline-block m-4 cursor-pointer brands-items rounded-[10px] "
+              className="w-[120px]  md:w-[200px] bg-white h-[50px] inline-block m-4 cursor-pointer rounded-[10px] "
               style={{
                 boxShadow:
                   'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px',

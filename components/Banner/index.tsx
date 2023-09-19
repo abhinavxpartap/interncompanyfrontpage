@@ -34,7 +34,7 @@ export const Banner: React.FC<BannerDataInterface> = (props) => {
             <Header />
             <div className="max-w-[1377.5px] mx-[auto] flex flex-col items-center justify-center md:pt-[175px] pt-[117px] pb-[71px] md:px-0 px-[10px]">
                 <h1
-                    className="md:text-[80px] text-[40px] text-[#FFFFFF] font-bold leading-[50px] md:leading-[90px] md:tracking-[-2.4px] max-w-[1300px] text-center md:pb-[25px] pb-[18px] fade-in"
+                    className="md:text-[80px] text-[32px] text-[#FFFFFF] font-bold leading-[40px] md:leading-[90px] md:tracking-[-2.4px] max-w-[1300px] text-center md:pb-[25px] pb-[18px] fade-in"
                 >
                     {title}
                 </h1>
@@ -77,9 +77,9 @@ export const Banner: React.FC<BannerDataInterface> = (props) => {
                 {/*        <Popupform onClose={handleClose} />*/}
                 {/*    </DialogContent>*/}
                 {/*</Dialog>*/}
-                <div className="mt-[20px]">
-                    <hr className="inline-block w-[22px] mb-[4px]" />
-                    <span className="text-[16px] text-[white]"> Web, iOS, and Android Solutions for Your Unique Performance </span>
+                <div className="mt-[20px] text-center">
+                    <hr className="inline-block text-center w-[22px] mb-[4px]" />
+                    <span className="text-[16px] text-center text-[white]"> Web, iOS, and Android Solutions for Your Unique Performance </span>
                 </div>
             </div>
         </div>

@@ -33,12 +33,12 @@ const CaseStudy = () => {
         <div>
             <div
                 className="w-[90%]  relative md:px-[100px] pt-[64px] pb-[38px] md:max-w-[1377.5px] overflow-hidden mx-auto">
-                <div className="flex  flex-row">
-                    <div>
+                <div className="flex   flex-row">
+                    <div >
                         <Button
                             label={'AMAZING ANALYSIS'}
                             type="button"
-                            className="max-w-[150px] px-[10px] py-[4px] bg-[#A1B4F7] text-[white] xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] text-[12px] hover:text-[#A1B4F7]"
+                            className="max-w-[150px] px-[10px] py-[4px] justify-center bg-[#A1B4F7] text-[white] xxl:leading-[22.99px] tracking-[-0.25px] font-semibold sm:leading-[20.57px] leading-[14px] xxl:w-[238px] md:w-[200px] w-[160px] text-[12px] hover:text-[#A1B4F7]"
                         />
                         <div
                             className="text-[#151448] md:text-[40px] text-[30px] font-bold leading-[125%] mt-[13px] max-w-[551px]">
@@ -71,11 +71,11 @@ const CaseStudy = () => {
                 {caseStudies.caseStudies.map((caseStudy: CaseStudyInterface, index: number) => (
                     <div
                         key={index}
-                        className="max-w-[320px] md:max-w-[711px] md:h-[366px] bg-white  rounded-[20px] boxshad flex flex-row justify-between p-[10px] md:px-[23px] md:py-[20px] m-4 "
+                        className="max-w-[320px] md:max-w-[711px] md:h-[366px] bg-white  rounded-[20px] boxshad flex-col flex md:flex-row justify-between p-[10px] md:px-[23px] md:py-[20px] m-4 "
 
                     >
                         <div className="md:w-[280px] md:h-[326px] inline-block rounded-[15px]">
-                            <img src={caseStudy.imgUrl} className="w-[100%] h-[100%] bg-cover" alt={caseStudy.imgUrl}/>
+                            <img src={caseStudy.imgUrl} className="md:w-[100%] w-[90%] h-[90%] md:h-[100%] bg-cover" alt={caseStudy.imgUrl}/>
                         </div>
                         <div className='flex flex-col w-[350px] whitespace-break-spaces ml-[15px] md:ml-[30px]'>
                             <div

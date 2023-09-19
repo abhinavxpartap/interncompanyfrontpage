@@ -1391,20 +1391,18 @@ left:12px;
 }
 
 
-@keyframes scrollRightToLeft {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-.brands-container {
-    animation: scrollRightToLeft 20s linear infinite; /* Adjust the duration and timing function as needed */
-    white-space: nowrap;
-    overflow: hidden;
-}
+//@keyframes scrollRightToLeft {
+//    0% {
+//        transform: translateX(100%);
+//    }
+//    100% {
+//        transform: translateX(-100%);
+//    }
+//}
+//.brands-container {
+//    animation: scrollRightToLeft 30s linear infinite;
+//    white-space: nowrap;
+//    overflow: hidden;
+//}
 
-.brand-item {
-    /* Your existing styles for brand items */
-}
+

@@ -135,7 +135,15 @@ export const Footer: React.FC = () => {
 
           </div>
 
-
+<div className="mt-[20px] ">
+  <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38104.93913818031!2d76.6655969601468!3d30.709932228006494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fef07cb70c8b3%3A0xee15426001ff750c!2sVeer%20ji%20Tower!5e0!3m2!1sen!2sin!4v1695115381886!5m2!1sen!2sin"
+      width="auto" height="200" style={{
+        border:0,
+        borderRadius:"15px"
+  }} loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"></iframe>
+</div>
         </div>
         <div >
           <div className="flex flex-col gap-y-[13px] group">

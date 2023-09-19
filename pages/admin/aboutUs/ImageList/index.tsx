@@ -1,7 +1,7 @@
 import React, {useContext, useEffect, useState} from "react";
 import { Button } from "../../../../utils/Button";
 import { Input } from "../../../../utils/Input";
-import { LoaderContext } from "../../../context/LoaderContext";
+import { LoaderContext } from "../../../../context/LoaderContext";
 import { ImageOverlay } from "../../../../utils/Admin/ImageOverlay";
 import PrivateLayout from "../../../../components/Layout/privateLayout";
 import {ImageListInterface,ImageListMainInterface} from "../../../../types";

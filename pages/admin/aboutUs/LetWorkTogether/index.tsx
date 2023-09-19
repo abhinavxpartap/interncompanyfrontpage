@@ -2,7 +2,7 @@ import React, {useContext, useEffect, useState} from "react";
 import {Input} from "../../../../utils/Input";
 import {ImageOverlay} from "../../../../utils/Admin/ImageOverlay";
 import {Button} from "../../../../utils/Button";
-import {LoaderContext} from "../../../context/LoaderContext";
+import {LoaderContext} from "../../../../context/LoaderContext";
 import PrivateLayout from "../../../../components/Layout/privateLayout";
 import {AboutLetWorkTogether} from "../../../../types";
 

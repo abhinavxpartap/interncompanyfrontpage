@@ -2,7 +2,7 @@ import React, {useContext, useEffect, useState} from "react";
 import { Button } from "../../../../utils/Button";
 import { Input } from "../../../../utils/Input";
 import toast from "react-hot-toast";
-import { LoaderContext } from "../../../context/LoaderContext";
+import { LoaderContext } from "../../../../context/LoaderContext";
 import pageData from "../../../../data/aboutOurValue.json";
 import PrivateLayout from "../../../../components/Layout/privateLayout";
 import { ourValueArray, OurValueInterface} from "../../../../types";

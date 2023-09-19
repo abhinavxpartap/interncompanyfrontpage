@@ -3,7 +3,7 @@ import {Input} from "../../../../utils/Input";
 import pageData from "../../../../data/aboutUs.json";
 import {Button} from "../../../../utils/Button";
 import toast from "react-hot-toast";
-import {LoaderContext} from "../../../context/LoaderContext";
+import {LoaderContext} from "../../../../context/LoaderContext";
 import PrivateLayout from "../../../../components/Layout/privateLayout";
 import { WhatWeInterface} from "../../../../types";
 

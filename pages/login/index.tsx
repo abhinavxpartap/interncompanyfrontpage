@@ -4,7 +4,7 @@ import { Img } from "../../utils/Img";
 import { Input } from "../../utils/Input";
 import { Button } from "../../utils/Button";
 import Head from "next/head";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../../context/AuthContext";
 const Login = () => {
     const [params, setParams] = useState<LoginInterface>({
         username: '',

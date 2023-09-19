@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Button } from "../../../utils/Button";
 import toast from "react-hot-toast";
-import { LoaderContext } from "../../context/LoaderContext";
+import { LoaderContext } from "../../../context/LoaderContext";
 import pageData from "../../../data/common/layout.json";
 import { ImageOverlay } from "../../../utils/Admin/ImageOverlay";
 import { Input } from "../../../utils/Input";

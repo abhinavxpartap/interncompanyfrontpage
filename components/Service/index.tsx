@@ -6,7 +6,7 @@ import services from "../../data/HomePageService.json"
 const Service = () => {
 
     return (
-        <div className="md:px-[30px] features-area relative flex flex-col items-center py-[40px] md:pt-[80px] text-center max-w-[1377.5px] overflow-hidden h-auto mx-auto">
+        <div className="md:px-[30px] features-area relative flex flex-col items-center py-[40px] md:pt-[20px] text-center max-w-[1377.5px] overflow-hidden h-auto mx-auto">
             <Button
                 label={'WHAT WE DO?'}
                 type="button"

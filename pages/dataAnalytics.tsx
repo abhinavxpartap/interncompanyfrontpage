@@ -66,7 +66,7 @@ const ServicePage: React.FC = () => {
                         buttonName={dataAnalytics.bannerData.buttonName}
                         buttonLink={dataAnalytics.bannerData.buttonLink}
                     />
-                    <div className="">
+                    <div className="mt-[-20px]">
                         <PortfolioOurProcess
                             List={dataAnalytics.OurProcessNew.Data1}
                             heading={dataAnalytics.OurProcessNew.heading}

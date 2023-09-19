@@ -23,11 +23,11 @@ export const OurBrands: React.FC = () => {
           </h1>
         </div>
 
-        <div className="w-full h-full overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth">
+        <div className="w-auto h-auto overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth brands-container">
           {CompanyImage.map((item: BrandData, index) => (
             <div
                 key={index}
-              className="w-[120px]  md:w-[200px] bg-white h-[50px] inline-block m-4 cursor-pointer rounded-[10px] "
+              className="w-[120px]  md:w-[200px] bg-white h-[50px] inline-block m-4 cursor-pointer brands-items rounded-[10px] "
               style={{
                 boxShadow:
                   'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px',

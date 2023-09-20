@@ -64,7 +64,8 @@ const IndustriesPage: React.FC = () => {
                     title={industryData.Estimation.title}
                     subtitle={industryData.Estimation.subtitle}
                     data={industryData.Estimation.data}
-                    button={industryData.Estimation.button}
+                    buttonName={industryData.Estimation.button.name}
+                    buttonHref={industryData.Estimation.button.href}
                     />
                     <IndustriesFaq
                     tabData={FaqData.header}

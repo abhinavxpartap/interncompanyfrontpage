@@ -286,10 +286,8 @@ export interface Estimation {
     image: string;
     title: string;
     subtitle: string;
-    button: {
-        name: string;
-        href: string;
-    };
+    buttonName: string,
+    buttonHref:string,
     data: {
         content: string;
     }[];

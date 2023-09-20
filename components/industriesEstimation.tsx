@@ -5,14 +5,14 @@ import { useRouter } from 'next/router';
 import {Estimation} from "../types";
 
 export const IndustriesEstimation: React.FC<Estimation> = (props) => {
-  const { image, title, subtitle, data, button } = props;
+  const { image, title, subtitle, data, buttonName,buttonHref } = props;
   const router = useRouter();
 
   const content = (
     <>
       <div className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[60px]  mt-[40px] pt-[30px] pb-[30px] md:pb-[0px]">
         <div className="w-[100%]  px-[20px] md:px-[60px] flex flex-col text-start items-start justify-start ">
-          <div className="w-[100%] md:w-[625px]">
+          <div className="w-[100%] md:w-[625px] mb-[35px]">
             <h1 className="text-white font-bold md:leading-[52px] leading-[38px] text-[31px] md:text-[42px]">
               {title}
             </h1>
@@ -37,7 +37,7 @@ export const IndustriesEstimation: React.FC<Estimation> = (props) => {
               ))}
               <div>
                 <Button
-                  onClick={() => router.push(button.href)}
+                  onClick={() => router.push(buttonHref)}
                   className="ButtonTransition overflow-hidden text-[14px] md:text-[16px] mt-[15px] md:mt-[20px] font-semibold "
                   sx={{
                     '&.MuiButtonBase-root': {
@@ -55,7 +55,7 @@ export const IndustriesEstimation: React.FC<Estimation> = (props) => {
                     },
                   }}
                 >
-                  {button.name}
+                  {buttonName}
                 </Button>
               </div>
             </div>

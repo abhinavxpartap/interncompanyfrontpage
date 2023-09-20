@@ -11,6 +11,48 @@
     "keywords": "zuca, zuca.com",
     "metaTitle": "Lorem Ipsum Lorem"
   },
+  "industriesNew": {
+    "title": "Industries4.0",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
+  },
+  "IoT_Development": {
+    "title": "IoT Development",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
+  },
+  "Machine_Learning": {
+    "title": "Machine Learning",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
+  },
+  "Artificial_Intelligence": {
+    "title": "Artificial Intelligence",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
+  },
+  "Robot_Process":{
+    "title": "Robot Process",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
+  },
+  "Cloud_Application_Development": {
+    "title": "Cloud Application Development",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
+  },
+  "Blockchain_Application_Development": {
+    "title": "Blockchain Application Development",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
+  },
   "Blog": {
     "title": "Blogs",
     "description": "Lorem Ipsum Lorem",

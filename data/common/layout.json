@@ -12,7 +12,6 @@
           "href": "/dataAnalytics"
         },
 
-
         {
           "label": "Product Design",
           "href": "/product "
@@ -33,33 +32,33 @@
       "data": [
         {
           "label": "Industry 4.0",
-          "href": "/industries"
+          "href": "/industries/industry_4.0"
         },
         {
           "label": "IoT Development",
-          "href": "/"
+          "href": "/industries/IoT_Development"
         },
         {
           "label": "Machine Learning",
-          "href": "/"
+          "href": "/industries/Machine_Learning"
         },
         {
           "label": "Artificial Intelligence",
-          "href": "/"
+          "href": "/industries/Artificial_Intelligence"
         }
       ,
         {
           "label": "Robotic Process Automation",
-          "href": "/"
+          "href": "/industries/Robot_Process_Automation"
         },
         {
           "label": "Cloud Application Development",
-          "href": "/"
+          "href": "/industries/Cloud_Application_Development"
         }
       ,
         {
           "label": "Blockchain Application Development",
-          "href": "/"
+          "href": "/industries/Blockchain_Application_Development"
         }
 
       ]

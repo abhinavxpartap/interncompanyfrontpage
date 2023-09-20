@@ -2,12 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Img } from '../../utils/Img';
 import { useRouter } from 'next/router';
 import { Button } from '@mui/material';
-
 import data from '../../data/config.json';
 import headerData from '../../data/common/layout.json';
-import { Dropdown } from '../Common/Dropdown';
-import { Dialog, DialogContent } from '@mui/material';
-import Popupform from '../../components/popupform';
+import { Dropdown } from './Dropdown';
 
 export const Header= () => {
   const router = useRouter();

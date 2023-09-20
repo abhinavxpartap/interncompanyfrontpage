@@ -98,7 +98,7 @@ export const Header= () => {
               <Img
                 src={logo || ''}
                 alt="Header Logo"
-                className="  max-w-[230px]  xl:h-[41px]  h-[27px]"
+                className="  max-w-[230px]  xl:h-[41px]  lg:h-[35px] md:h-[27px]"
               />
             </div>
             <div className="flex-1  hidden lg:flex">

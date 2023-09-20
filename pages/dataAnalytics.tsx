@@ -18,7 +18,7 @@ import ProductOverview from "../components/Product Overview";
 import {PortfolioOurProcess} from "../components/PortfolioOurProcess";
 import Float from "../components/Float"
 
-const ServicePage: React.FC = () => {
+const DataAnalytics: React.FC = () => {
     return (<>
             <Head>
                 <title>{seoData.service.title}</title>
@@ -103,4 +103,4 @@ const ServicePage: React.FC = () => {
         </>
     );
 };
-export default ServicePage;
+export default DataAnalytics;

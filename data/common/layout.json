@@ -9,20 +9,43 @@
       "data": [
         {
           "label": "Data Analytics",
-          "href": "/dataAnalytics"
-        },
-
-        {
-          "label": "Product Design",
-          "href": "/product "
+          "href": "/services/Data_Analytics"
         },
         {
-          "label": "Mobile App Development",
-          "href": "/mobileApp"
+          "label": "Flutter Application Development",
+          "href": "/services/Flutter_Application_Development"
         },
         {
           "label": "Web Application Development",
-          "href": "/webDevelopment"
+          "href": "/services/Web_Application_Development"
+        },
+        {
+          "label": "Product Design",
+          "href": "/services/Product_Design"
+        },
+        {
+          "label": "UX/UI Consulting",
+          "href": "/services/UX_UI_Consulting"
+        },
+        {
+          "label": "Mobile App Development",
+          "href": "/services/Mobile_App_Development"
+        },
+        {
+          "label": "Cloud Infrastructure Setup",
+          "href": "/services/Cloud_Infrastructure_Setup"
+        },
+        {
+          "label": "iOS Application Development",
+          "href": "/services/IOS_Application_Development"
+        },
+        {
+          "label":"Android Application Development",
+          "href": "/services/Android_Application_Development"
+        },
+        {
+          "label": "Chat Bot Development",
+          "href": "/services/Chat_Bot_Development"
         }
       ]
     },

@@ -3,52 +3,52 @@
     {
       "title": "Data Analytics ",
       "id": 1,
-      "link": "/dataAnalytics"
+      "link": "/services/Data_Analytics"
     },
     {
       "title": "Flutter Application Development",
       "id": 2,
-      "link": "#"
+      "link": "/services/Flutter_Application_Development"
     },
     {
       "title": "Web Application Development",
       "id": 3,
-      "link": "/webdevelopment"
+      "link": "/services/Web_Application_Development"
     },
     {
       "title": "Product Design",
       "id": 4,
-      "link": "/product"
+      "link": "/services/Product_Design"
     },
     {
       "title": "UI/UX Consulting ",
       "id": 5,
-      "link": "#"
+      "link": "/services/UX_UI_Consulting"
     },
     {
       "title": "Mobile App Development",
       "id": 6,
-      "link": "/mobileApp"
+      "link": "/services/Mobile_App_Development"
     },
     {
       "title": "Cloud Infrastructure Setup",
       "id": 7,
-      "link": "#"
+      "link": "/services/Cloud_Infrastructure_Setup"
     },
     {
       "title": "iOS Application Development",
       "id": 8,
-      "link": "#"
+      "link": "/services/IOS_Application_Development"
     },
     {
       "title": "Android  Application Development",
       "id": 9,
-      "link": "#"
+      "link": "/services/Android_Application_Development"
     },
     {
       "title": "Chat Bot Development",
       "id": 10,
-      "link": "#"
+      "link": "/services/Chat_Bot_Development"
     }
   ],
   "industry": [
@@ -109,33 +109,38 @@
     {
       "title": "Blockchain Application Development",
       "id": 1,
-      "link": "/aboutus"
+      "link": "/industries/Blockchain_Application_Development"
     },
     {
       "title": "Cloud Application Development",
       "id": 2,
-      "link": "#"
+      "link": "/industries/Cloud_Application_Development"
+    },
+    {
+      "title": "Robot Process Automation",
+      "id": 3,
+      "link": "/industries/Robot_Process_Automation"
     },
     {
       "title": "Artificial Intelligence",
-      "id": 3,
-      "link": "#"
+      "id": 4,
+      "link": "/industries/Artificial_Intelligence"
     },
     {
       "title": "Machine Learning",
-      "id": 4,
-      "link": "google.com"
+      "id": 5,
+      "link": "/industries/Machine_Learning"
     }
   ,
     {
       "title": "IoT Development",
-      "id": 4,
-      "link": "google.com"
+      "id": 6,
+      "link": "/industries/IoT_Development"
     }  ,
     {
       "title": "Industry 4.0",
-      "id": 4,
-      "link": "google.com"
+      "id": 7,
+      "link": "/industries/industry_4.0"
     }
   ],
   "help": [

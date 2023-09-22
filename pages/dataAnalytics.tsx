@@ -3,6 +3,7 @@ import Head from "next/head";
 import seoData from "../data/seoData.json";
 import dataAnalytics from "../data/services/dataAnalytics.json";
 import serviceAssurance from "../data/serviceAssurance.json"
+import pageData from "../data/productOverview.json"
 import {ServiceBanner} from "../components/serviceBanner";
 import {ServiceAbout} from "../components/servicesAbout";
 import {ServicesDevelopment} from "../components/servicesDevelopment";
@@ -53,7 +54,18 @@ const DataAnalytics: React.FC = () => {
                     <Service/>
 
                     <div className="md:pt-[70px] pb-[30px] pt-[30px]">
-                        <ProductOverview/>
+                        <ProductOverview
+                         SoftwareCount={pageData.Data.softwareDevelopedCount}
+                         SoftwareText={pageData.Data.softwareText}
+                         WebCount={pageData.Data.webDesignCount}
+                         WebText={pageData.Data.webText}
+                         backgroundImage={pageData.Data.backgroundImage}
+                         leftImage={pageData.Data.leftImage}
+                         productCount={pageData.Data.productCount}
+                         productText={pageData.Data.productText}
+                         reasonData={pageData.reasonData}
+                         title={pageData.Data.title}
+                        />
 
                     </div>
 

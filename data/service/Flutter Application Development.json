@@ -1,0 +1,200 @@
+{
+  "BannerData": {
+    "title": "Uncover Insights, Drive Decisions: Our Data Analytics Expertise",
+    "subtitle": "Harness the Power of Data for Informed Choices and Business Growth",
+    "backgroundImage": "/serviceBanner.jpg",
+    "ButtonName": "Show me how",
+    "ButtonHref": "/"
+  },
+  "AboutBanner": {
+    "title": "Empower Your Business with Data Analytics Excellence",
+    "subtitle": "As a leading data analytics service provider, we specialize in delivering insights that matter to your business. Our experienced team is dedicated to helping you make data-driven decisions that drive growth, enhance efficiency, and uncover hidden opportunities.",
+    "image": "/about.svg",
+    "paragraph": " "
+  },
+  "AboutData": [
+    {
+      "title": "Custom Web Applications"
+    },
+    {
+      "title": "Responsive UI/UX Design"
+    },
+    {
+      "title": "App Consulting & Prototyping"
+    },
+    {
+      "title": "Notification and Geofencing"
+    },
+    {
+      "title": "Automated QA and Testing"
+    },
+    {
+      "title": "Notification and Geofencing"
+    }
+  ],
+  "ReasonBanner": {
+    "title": "Why Choose Alumeltech for Data Analytics?",
+    "backgroundImage": "/service/jokerbanner.png",
+    "leftImage": "/service/joker.svg",
+    "productCount": "270",
+    "productText": "PRODUCTS",
+    "softwareDevelopedCount": "165",
+    "softwareText": "SOFTWARES DEVELOPED",
+    "webDesignCount": "115",
+    "webText": "WEB DESIGNS"
+  },
+  "ReasonData": [
+    {
+      "title":"Data-Driven Excellence"
+    },
+    {
+      "title":"Customized Insights for Your Industry"
+    },
+    {
+      "title":"Expert Data Analysts"
+    },
+    {
+      "title":"Cutting-Edge Tools and Technologies"
+    },
+    {
+      "title":"Ongoing Support and Optimization"
+    },
+    {
+      "title":"Measurable Business Impact"
+    }
+  ],
+  "DevelopmentBanner": {
+    "title": "Industries We love to Serve",
+    "subtitle": "Our web application development services vary across but are not limited to:",
+    "centerContent": "As a web app development company, we offer top-notch medical and pharmaceutical app development services to enterprises across the world. Our expertise in the custom web application development field enables us to deliver comprehensive healthcare software development services  such as Practice Management Systems (PMS) and Electronic Health Records (EHR) systems, telemedicine platforms, billing, insurance verification software tools, etc., capable of meeting your custom business requirements.",
+    "buttonName": "Work with us",
+    "buttonLink": "/"
+  },
+  "DevelopmentHeaderLeft": [
+    {
+      "image": "/Health.svg",
+      "title": "Travel Apps"
+    },
+    {
+      "image": "/FineTech.svg",
+      "title": "Fintech Apps"
+    },
+    {
+      "image": "/Factory.svg",
+      "title": "Dating Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "RealEstate Apps"
+    }
+  ],
+  "DevelopmentHeaderRight": [
+    {
+      "image": "/Logistics.svg",
+      "title": "Automobile Apps"
+    },
+    {
+      "image": "/Ecommerce.svg",
+      "title": "E-commerce & Retail Apps"
+    },
+    {
+      "image": "/Factory.svg",
+      "title": "Media & Entertainment Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "Healthcare & Telehealth Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "Restaurants Management Apps"
+    }
+  ],
+  "ProcessBanner": {
+    "title": "Our Proven Data Analytics Process"
+  },
+  "ProcessData": [
+    {
+      "id": 1,
+      "title": "Data Collection and Preparation",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "id": 2,
+      "title": "Data Analysis and Modeling",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+    },
+    {
+      "id": 3,
+      "title": "Insights and Recommendations",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+    },
+    {
+      "id": 4,
+      "title": "Implementation and Optimization",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+    }
+  ],
+  "FaqBanner": {
+    "title": "Questions in Mind? 🤔",
+    "subtitle": "We provide end-to-end web app development services, tailored exclusively to solve your unique business challenges.",
+    "buttonName": "Book Consultation Session",
+    "buttonLink": "/"
+  },
+  "FaqData": [
+    {
+      "id": 1,
+      "title": "Why is optimizing cloud infrastructure important for my business?",
+      "content":"Optimizing your cloud infrastructure allows you to scale resources efficiently, enhance data security, reduce operational costs, and improve overall performance, directly addressing the challenges faced by businesses today."
+    },
+    {
+      "id": 2,
+      "title": "Can you migrate our existing infrastructure to the cloud seamlessly?",
+      "content":"Absolutely, our team is equipped to ensure a smooth and secure transition of your existing operations to the cloud, reducing any disruptions."
+    },
+    {
+      "id": 3,
+      "title": "Which cloud platforms do you work with?",
+      "content":"We're experienced in working with leading cloud platforms, including Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), and more. We'll choose the one that best aligns with your goals."
+    },
+    {
+      "id": 4,
+      "title": "What's the typical timeline for cloud infrastructure setup?",
+      "content":"The timeline varies based on project complexity, but we'll provide an estimate during our initial discussions to align with your needs."
+    },
+    {
+      "id": 5,
+      "title": "Do I need to be technically skilled to use your cloud infrastructure setup services?",
+      "content":"No technical expertise is necessary. Our experts will collaborate with you to understand your requirements and objectives."
+    },
+    {
+      "id": 6,
+      "title": "How secure is my data in the cloud with your setup services?",
+      "content":"Data security is a top priority for us. We employ stringent security measures and compliance standards to ensure your data remains protected in the cloud."
+    }
+  ],
+  "AssuranceBanner": {
+    "title": "Zuca’s Assurance as a Web App Development Company",
+    "image": "/AssuraceBanner.png",
+    "buttonLink": "/",
+    "buttonName": "Work with us",
+    "sideImage": "/AssuranceImage.svg"
+  },
+  "AssuranceData": [
+    {
+      "title": "A Quality-First Approach",
+      "subtitle": "Our team is capable of delivering immersive web experiences, magnifying digital transformation",
+      "icon": "/Approach.svg"
+    },
+    {
+      "title": "Steering Web Complexities",
+      "subtitle": "Get your hands on world-class web apps that are capable of driving market disruption",
+      "icon": "/Complexity.svg"
+    },
+    {
+      "title": "Multiple Engagement Model",
+      "subtitle": "Choose your business model as per your budget, essentialities and requirements",
+      "icon": "/Model.svg"
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "BannerData": {
+    "title": "Transform Your Vision into Exceptional iOS Apps",
+    "subtitle": "Your Vision, Our Expertise – Delivering Innovative Android Solutions",
+    "backgroundImage": "/serviceBanner.jpg",
+    "ButtonName": "Show me how",
+    "ButtonHref": "/"
+  },
+  "AboutBanner": {
+    "title": "Empower Your Business with Our Android App Development",
+    "subtitle": "As a leading Android application development company, we specialize in turning your ideas into user-friendly, high-performing Android applications. Our dedicated team is committed to ensuring your app not only meets your goals but exceeds them. Say goodbye to app development challenges and hello to success.",
+    "image": "/about.svg",
+    "paragraph": " "
+  },
+  "AboutData": [],
+  "ReasonBanner": {
+    "title": "Need Reasons to Choose Alumeltech?",
+    "backgroundImage": "/service/jokerbanner.png",
+    "leftImage": "/service/joker.svg",
+    "productCount": "270",
+    "productText": "PRODUCTS",
+    "softwareDevelopedCount": "165",
+    "softwareText": "SOFTWARES DEVELOPED",
+    "webDesignCount": "115",
+    "webText": "WEB DESIGNS"
+  },
+  "ReasonData": [
+    {
+      "title":"Continuous Support and Enhancement"
+    },
+    {
+      "title":"Experienced Android Developers"
+    },
+    {
+      "title":"Measurable Achievements"
+    },
+    {
+      "title":"Customized Android Solutions"
+    },
+    {
+      "title":"Cutting-Edge Technology"
+    }
+  ],
+  "DevelopmentBanner": {
+    "title": "Industries We love to Serve",
+    "subtitle": "Our web application development services vary across but are not limited to:",
+    "centerContent": "As a web app development company, we offer top-notch medical and pharmaceutical app development services to enterprises across the world. Our expertise in the custom web application development field enables us to deliver comprehensive healthcare software development services  such as Practice Management Systems (PMS) and Electronic Health Records (EHR) systems, telemedicine platforms, billing, insurance verification software tools, etc., capable of meeting your custom business requirements.",
+    "buttonName": "Work with us",
+    "buttonLink": "/"
+  },
+  "DevelopmentHeaderLeft": [
+    {
+      "image": "/Health.svg",
+      "title": "Travel Apps"
+    },
+    {
+      "image": "/FineTech.svg",
+      "title": "Fintech Apps"
+    },
+    {
+      "image": "/Factory.svg",
+      "title": "Dating Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "RealEstate Apps"
+    }
+  ],
+  "DevelopmentHeaderRight": [
+    {
+      "image": "/Logistics.svg",
+      "title": "Automobile Apps"
+    },
+    {
+      "image": "/Ecommerce.svg",
+      "title": "E-commerce & Retail Apps"
+    },
+    {
+      "image": "/Factory.svg",
+      "title": "Media & Entertainment Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "Healthcare & Telehealth Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "Restaurants Management Apps"
+    }
+  ],
+  "ProcessBanner": {
+    "title": "Our Proven Process for Your Android App Success"
+  },
+  "ProcessData": [
+    {
+      "id": 1,
+      "title": "Concept to Strategy",
+      "content": "We start by understanding your vision and crafting a strategic plan."
+    },
+    {
+      "id": 2,
+      "title": "Design and Prototyping",
+      "content": "Our designers create intuitive interfaces and prototypes."
+    },
+    {
+      "id": 3,
+      "title": "Development and Testing",
+      "content": "Skilled developers bring your app to life while rigorous testing ensures quality."
+    },
+    {
+      "id": 4,
+      "title": "App Store Ready",
+      "content": "We prepare your app for a seamless launch on the App Store."
+    },
+    {
+      "id": 5,
+      "title": "Ongoing Support",
+      "content": "Post-launch, we're here to maintain and enhance your app."
+    }
+  ],
+  "FaqBanner": {
+    "title": "Questions in Mind? 🤔",
+    "subtitle": "We provide end-to-end web app development services, tailored exclusively to solve your unique business challenges.",
+    "buttonName": "Book Consultation Session",
+    "buttonLink": "/"
+  },
+  "FaqData": [
+    {
+      "id": 1,
+      "title": "Why is Android app development essential for my business?",
+      "content":"Android app development provides access to a vast user base, allowing businesses to reach a broader audience and provide excellent user experiences."
+    },
+    {
+      "id": 2,
+      "title": "Can you develop an Android app based on my unique idea and requirements?",
+      "content": "Absolutely, we specialize in turning your unique app idea into a reality, tailoring it to your specific needs."
+    },
+    {
+      "id": 3,
+      "title": "What's the typical timeline for Android app development?",
+      "content": "The timeline varies based on project complexity, but we'll provide an estimate during our initial discussions to align with your project goals."
+    },
+    {
+      "id": 4,
+      "title": "Do I need technical expertise to use your Android app development services?",
+      "content": "No technical expertise is required. Our team will collaborate closely with you to bring your vision to life."
+    },
+    {
+      "id": 5,
+      "title": "How do you ensure that my Android app will perform well and deliver value to my users?",
+      "content":"We employ rigorous testing and quality assurance measures throughout the development process to ensure your app performs optimally and meets user expectations."
+    },
+    {
+      "id": 6,
+      "title":"What kind of post-launch support and maintenance do you provide for Android apps?",
+      "content":"We offer comprehensive post-launch support, including regular updates, bug fixes, and enhancements, to ensure your app remains up-to-date and effective."
+    }
+  ],
+  "AssuranceBanner": {
+    "title": "Zuca’s Assurance as a Web App Development Company",
+    "image": "/AssuraceBanner.png",
+    "buttonLink": "/",
+    "buttonName": "Work with us",
+    "sideImage": "/AssuranceImage.svg"
+  },
+  "AssuranceData": [
+    {
+      "title": "A Quality-First Approach",
+      "subtitle": "Our team is capable of delivering immersive web experiences, magnifying digital transformation",
+      "icon": "/Approach.svg"
+    },
+    {
+      "title": "Steering Web Complexities",
+      "subtitle": "Get your hands on world-class web apps that are capable of driving market disruption",
+      "icon": "/Complexity.svg"
+    },
+    {
+      "title": "Multiple Engagement Model",
+      "subtitle": "Choose your business model as per your budget, essentialities and requirements",
+      "icon": "/Model.svg"
+    }
+  ]
+}

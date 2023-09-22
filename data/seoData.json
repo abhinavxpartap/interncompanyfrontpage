@@ -77,5 +77,65 @@
     "description": "Lorem Ipsum Lorem",
     "keywords": "zuca, zuca.com",
     "metaTitle": "Lorem Ipsum Lorem"
+  },
+  "Android_Application_Development": {
+    "title": "Android Application Development",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
+  },
+  "Chat_Bot_Development": {
+    "title": "Chat Bot Development",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
+  },
+  "Cloud_Infrastructure_Setup": {
+    "title": "Cloud Infrastructure Setup",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
+  },
+  "Data_Analytics": {
+    "title": "Data Analytics",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
+  },
+  "Flutter_Application_Development": {
+    "title": "Flutter Application Development",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
+  },
+  "IOS_Application_development": {
+    "title": "iOS Application Development",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
+  },
+  "Product_Design": {
+    "title": "Product Design",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
+  },
+  "UX_UI_Consulting": {
+    "title": "UX/UI Consulting",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
+  },
+  "Web_Application_Development": {
+    "title": "Web Application Development",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
+  },
+  "Mobile_App_Development": {
+    "title": "Mobile App Development",
+    "description": "Lorem Ipsum Lorem",
+    "keywords": "zuca, zuca.com",
+    "metaTitle": "Lorem Ipsum Lorem"
   }
 }

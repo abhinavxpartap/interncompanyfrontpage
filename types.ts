@@ -63,7 +63,6 @@ export interface TechSectionInterface {
 }
 export interface ReasonsInterface {
     title: string;
-
     data: {
         title: string;
     }[];
@@ -496,4 +495,21 @@ export interface PortfolioDataInterface {
         subtitle: string;
         description: string;
     }[];
+}
+
+export interface ReasonInterface {
+    backgroundImage:string,
+    title:string,
+    leftImage:string,
+    reasonData:reasonData[],
+    productCount:string,
+    productText:string,
+    WebCount:string,
+    WebText:string,
+    SoftwareCount:string,
+    SoftwareText:string
+}
+
+export interface reasonData {
+    title:string
 }

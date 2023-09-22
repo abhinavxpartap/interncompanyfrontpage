@@ -1,0 +1,183 @@
+{
+  "BannerData": {
+    "title": "Transform Your Customer Engagement with Custom Chatbots",
+    "subtitle": "Your Needs, Our Expertise – Delivering Innovative Chatbot Solutions",
+    "backgroundImage": "/serviceBanner.jpg",
+    "ButtonName": "Show me how",
+    "ButtonHref": "/"
+  },
+  "AboutBanner": {
+    "title": "Enhance Customer Engagement with Our Chatbot Development",
+    "subtitle": "As a leading chatbot development company, we specialize in creating conversational AI solutions that revolutionize customer interactions. Our dedicated team is committed to ensuring your chatbot not only meets but exceeds your customer engagement goals. Say goodbye to customer service bottlenecks and hello to elevated experiences.",
+    "image": "/about.svg",
+    "paragraph": " "
+  },
+  "AboutData": [],
+  "ReasonBanner": {
+    "title": "Need Reasons to Choose Alumeltech?",
+    "backgroundImage": "/service/jokerbanner.png",
+    "leftImage": "/service/joker.svg",
+    "productCount": "270",
+    "productText": "PRODUCTS",
+    "softwareDevelopedCount": "165",
+    "softwareText": "SOFTWARES DEVELOPED",
+    "webDesignCount": "115",
+    "webText": "WEB DESIGNS"
+  },
+  "ReasonData": [
+    {
+      "title":"Customized Chatbot Solutions"
+    },
+    {
+      "title":"Expert Chatbot Developers "
+    },
+    {
+      "title":"Cutting-Edge AI Technology"
+    },
+    {
+      "title":"Continuous Support and Enhancement "
+    },
+    {
+      "title":"Measurable Customer Engagement"
+    }
+  ],
+  "DevelopmentBanner": {
+    "title": "Industries We love to Serve",
+    "subtitle": "Our web application development services vary across but are not limited to:",
+    "centerContent": "As a web app development company, we offer top-notch medical and pharmaceutical app development services to enterprises across the world. Our expertise in the custom web application development field enables us to deliver comprehensive healthcare software development services  such as Practice Management Systems (PMS) and Electronic Health Records (EHR) systems, telemedicine platforms, billing, insurance verification software tools, etc., capable of meeting your custom business requirements.",
+    "buttonName": "Work with us",
+    "buttonLink": "/"
+  },
+  "DevelopmentHeaderLeft": [
+    {
+      "image": "/Health.svg",
+      "title": "Travel Apps"
+    },
+    {
+      "image": "/FineTech.svg",
+      "title": "Fintech Apps"
+    },
+    {
+      "image": "/Factory.svg",
+      "title": "Dating Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "RealEstate Apps"
+    }
+  ],
+  "DevelopmentHeaderRight": [
+    {
+      "image": "/Logistics.svg",
+      "title": "Automobile Apps"
+    },
+    {
+      "image": "/Ecommerce.svg",
+      "title": "E-commerce & Retail Apps"
+    },
+    {
+      "image": "/Factory.svg",
+      "title": "Media & Entertainment Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "Healthcare & Telehealth Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "Restaurants Management Apps"
+    }
+  ],
+  "ProcessBanner": {
+    "title": "Our Proven Process for Your Chatbot Success"
+  },
+  "ProcessData": [
+    {
+      "id": 1,
+      "title": "Strategy and Planning",
+      "content": "We start by understanding your business goals and customer needs."
+    },
+    {
+      "id": 2,
+      "title": "Design and Prototyping",
+      "content": "Our designers create chatbot interactions and user flows."
+    },
+    {
+      "id": 3,
+      "title": "Development and Testing",
+      "content": "Skilled developers bring your chatbot to life while rigorous testing ensures reliability."
+    },
+    {
+      "id": 4,
+      "title": "Integration and Deployment",
+      "content": "We seamlessly integrate your chatbot across your preferred platforms."
+    },
+    {
+      "id": 5,
+      "title": "Continuous Optimization",
+      "content": "Post-launch, we continuously optimize your chatbot for enhanced performance."
+    }
+  ],
+  "FaqBanner": {
+    "title": "Questions in Mind? 🤔",
+    "subtitle": "We provide end-to-end web app development services, tailored exclusively to solve your unique business challenges.",
+    "buttonName": "Book Consultation Session",
+    "buttonLink": "/"
+  },
+  "FaqData": [
+    {
+      "id": 1,
+      "title": "Why is chatbot development crucial for my business?",
+      "content":"Chatbots enhance customer engagement, reduce response times, and provide personalized experiences, all of which are vital for business growth."
+    },
+    {
+      "id": 2,
+      "title": "Can you develop a chatbot based on my unique business needs?",
+      "content":"Absolutely, we specialize in crafting custom chatbot solutions tailored to your specific requirements."
+    },
+    {
+      "id": 3,
+      "title": "What's the typical timeline for chatbot development?",
+      "content":"Timelines vary depending on project complexity, but we'll provide an estimate during our initial discussions to align with your goals."
+    },
+    {
+      "id": 4,
+      "title": "Do I need technical expertise to use your chatbot development services?",
+      "content":"No technical expertise is required. Our team collaborates closely with you to bring your vision to life."
+    },
+    {
+      "id": 5,
+      "title": "How do you ensure that my chatbot provides optimal customer engagement?",
+      "content":"We employ rigorous testing and continuous optimization to ensure your chatbot delivers exceptional customer engagement."
+    },
+    {
+      "id": 6,
+      "title": "What kind of post-launch support and maintenance do you provide for chatbots?",
+      "content":"We offer comprehensive post-launch support, including regular updates, performance monitoring, and enhancements, to ensure your chatbot remains effective."
+    }
+  ],
+  "AssuranceBanner": {
+    "title": "Zuca’s Assurance as a Web App Development Company",
+    "image": "/AssuraceBanner.png",
+    "buttonLink": "/",
+    "buttonName": "Work with us",
+    "sideImage": "/AssuranceImage.svg"
+  },
+  "AssuranceData": [
+    {
+      "title": "A Quality-First Approach",
+      "subtitle": "Our team is capable of delivering immersive web experiences, magnifying digital transformation",
+      "icon": "/Approach.svg"
+    },
+    {
+      "title": "Steering Web Complexities",
+      "subtitle": "Get your hands on world-class web apps that are capable of driving market disruption",
+      "icon": "/Complexity.svg"
+    },
+    {
+      "title": "Multiple Engagement Model",
+      "subtitle": "Choose your business model as per your budget, essentialities and requirements",
+      "icon": "/Model.svg"
+    }
+  ]
+}

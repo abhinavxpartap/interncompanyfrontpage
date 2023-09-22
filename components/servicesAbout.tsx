@@ -23,14 +23,16 @@ export const ServiceAbout: React.FC<ServiceAboutInterface> = (props) => {
                     <p className="text-[#757B8A] font-normal text-[12px] leading-[20px] sm:text-[15px] sm:leading-[30px] md:text-[10px] md:leading-[18px] lg:text-[13px] lg:leading-[30px] xl:text-[15px] xl:leading-[30px] ">
                         {paragraph}
                     </p>
+                    <div className="grid grid-cols-2 gap-[20px]">
                     {data.map((item, index) => (
                         <p
                             key={index}
-                            className="text-[#757B8A] font-normal text-[12px] leading-[20px] sm:text-[15px] sm:leading-[30px] md:text-[10px] md:leading-[18px] lg:text-[13px] lg:leading-[30px] xl:text-[15px] xl:leading-[30px]"
+                            className="text-[#757B8A] flex flex-row gap-[5px] font-normal text-[12px] leading-[20px] sm:text-[15px] sm:leading-[30px] md:text-[10px] md:leading-[18px] lg:text-[13px] lg:leading-[30px] xl:text-[15px] xl:leading-[30px]"
                         >
-                            {item.title}
+                            <Img src="/iconNew.png" className="w-[25px]" alt={"Icon"}/> {item.title}
                         </p>
                     ))}
+                    </div>
                 </div>
             </div>
         </>

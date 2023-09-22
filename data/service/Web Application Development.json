@@ -1,0 +1,234 @@
+{
+  "BannerData": {
+    "title": "Supercharge Your Digital Presence with Custom Web Applications",
+    "subtitle": "Solving Your Unique Challenges with Web Applications Engineered for Business Success",
+    "backgroundImage": "/serviceBanner.jpg",
+    "ButtonName": "Show me how",
+    "ButtonHref": "/"
+  },
+  "AboutBanner": {
+    "title": "Your Web App Solution: Customized for Your Business Success",
+    "subtitle": "At AlumelTech, we excel in solving your unique business challenges through tailored web applications. Our seasoned team is committed to crafting user-centric designs that transform your vision into a seamless, engaging, and highly effective web app. Expect results that fuel your brand's growth and elevate your digital presence.",
+    "image": "/about.svg",
+    "paragraph": ""
+  },
+  "AboutData": [
+    {
+      "title": "Custom Web Applications"
+    },
+    {
+      "title": "Responsive UI/UX Design"
+    },
+    {
+      "title": "App Consulting & Prototyping"
+    },
+    {
+      "title": "Notification and Geofencing"
+    },
+    {
+      "title": "Automated QA and Testing"
+    },
+    {
+      "title": "Notification and Geofencing"
+    }
+  ],
+  "ReasonBanner": {
+    "title": "Need Reasons to Choose Alumeltech?",
+    "backgroundImage": "/service/jokerbanner.png",
+    "leftImage": "/service/joker.svg",
+    "productCount": "270",
+    "productText": "PRODUCTS",
+    "softwareDevelopedCount": "165",
+    "softwareText": "SOFTWARES DEVELOPED",
+    "webDesignCount": "115",
+    "webText": "WEB DESIGNS"
+  },
+  "ReasonData": [
+    {
+      "title":"Tech-Driven Excellence"
+    },
+    {
+      "title":"Client-Centric Approach"
+    },
+    {
+      "title":"All Experts in One Place"
+    },
+    {
+      "title":"Effective Synergy"
+    },
+    {
+      "title":"Scalable Team"
+    },
+    {
+      "title": "A Comprehensive Suite of Services"
+    },
+    {
+      "title": "Strong Expertise"
+    },
+    {
+      "title": "Data Security and Protection"
+    },
+    {
+      "title": "Strategic Solutions for Competitive Edge"
+    }
+  ],
+  "DevelopmentBanner": {
+    "title": "Industries We love to Serve",
+    "subtitle": "Our web application development services vary across but are not limited to:",
+    "centerContent": "As a web app development company, we offer top-notch medical and pharmaceutical app development services to enterprises across the world. Our expertise in the custom web application development field enables us to deliver comprehensive healthcare software development services  such as Practice Management Systems (PMS) and Electronic Health Records (EHR) systems, telemedicine platforms, billing, insurance verification software tools, etc., capable of meeting your custom business requirements.",
+    "buttonName": "Work with us",
+    "buttonLink": "/"
+  },
+  "DevelopmentHeaderLeft": [
+    {
+      "image": "/Health.svg",
+      "title": "Travel Apps"
+    },
+    {
+      "image": "/FineTech.svg",
+      "title": "Fintech Apps"
+    },
+    {
+      "image": "/Factory.svg",
+      "title": "Dating Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "RealEstate Apps"
+    }
+  ],
+  "DevelopmentHeaderRight": [
+    {
+      "image": "/Logistics.svg",
+      "title": "Automobile Apps"
+    },
+    {
+      "image": "/Ecommerce.svg",
+      "title": "E-commerce & Retail Apps"
+    },
+    {
+      "image": "/Factory.svg",
+      "title": "Media & Entertainment Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "Healthcare & Telehealth Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "Restaurants Management Apps"
+    }
+  ],
+  "ProcessBanner": {
+    "title": "Our Proven UI/UX Design Process "
+  },
+  "ProcessData": [
+    {
+      "id": 1,
+      "title": "User Research and Analysis",
+      "content": "We start by understanding your vision and crafting a strategic plan."
+    },
+    {
+      "id": 2,
+      "title": "Information Architecture",
+      "content": "Our designers create intuitive interfaces and prototypes."
+    },
+    {
+      "id": 3,
+      "title": "Wireframing and Prototyping",
+      "content": "Skilled developers bring your app to life while rigorous testing ensures quality."
+    },
+    {
+      "id": 4,
+      "title": "Visual Design and Branding",
+      "content": "We prepare your app for a seamless launch on the App Store."
+    },
+    {
+      "id": 5,
+      "title": "User Testing and Iteration",
+      "content": "We prepare your app for a seamless launch on the App Store."
+    }
+  ],
+  "FaqBanner": {
+    "title": "Questions in Mind? 🤔",
+    "subtitle": "We provide end-to-end web app development services, tailored exclusively to solve your unique business challenges.",
+    "buttonName": "Book Consultation Session",
+    "buttonLink": "/"
+  },
+  "FaqData": [
+    {
+      "id": 1,
+      "title": "What types of web applications do you develop?",
+      "content":"We specialize in developing a wide range of custom web applications, including Real Estate Apps, Automobile Apps, e-commerce websites, content management systems (CMS), social platforms, data analytics dashboards, and more. Our expertise covers various industries and niches."
+    },
+    {
+      "id": 2,
+      "title": "How do I get started with web application development?",
+      "content":"To kickstart your web application project, simply click on our \"Show Me How\" CTA, and one of our experts will reach out to discuss your requirements. We'll guide you through the entire development process."
+    },
+    {
+      "id": 3,
+      "title": "What sets your web application development services apart?",
+      "content":"Our web application development services stand out due to our experienced team, innovative technologies, and client-focused approach. We prioritize user-centric design, ensuring your web app delivers a seamless and engaging experience."
+    },
+    {
+      "id": 4,
+      "title": "Do you provide responsive design for web applications?",
+      "content":"Yes, we offer responsive design as a standard feature. This ensures that your web application adapts seamlessly to various devices and screen sizes, providing an optimal user experience."
+    },
+    {
+      "id": 5,
+      "title": "Can you integrate third-party APIs into web applications?",
+      "content":"Absolutely. We have expertise in integrating third-party APIs for various functionalities, such as payment gateways, social media integration, geolocation services, and more. This allows your web app to leverage external services and features."
+    },
+    {
+      "id": 6,
+      "title": "What is the typical timeline for web application development?",
+      "content":"The timeline can vary depending on the complexity of your web application and your specific requirements. During our initial discussions, we'll provide you with a detailed project plan and timeline."
+    },
+    {
+      "id": 7,
+      "title": "How do you ensure the security of web applications?",
+      "content":"Security is a top priority for us. We follow industry best practices and implement robust security measures to protect your web app and user data. Our team conducts thorough security testing and ensures compliance with all necessary security standards."
+    },
+    {
+      "id": 8,
+      "title": "Do you provide ongoing support and maintenance for web applications?",
+      "content":"Yes, we offer ongoing support and maintenance services to keep your web application running smoothly. We can also assist with updates, bug fixes, and feature enhancements as your web app evolves."
+    },
+    {
+      "id": 9,
+      "title": "Can you provide references or examples of past web application projects?",
+      "content":"Certainly, we have an extensive portfolio of successful web application projects and can provide references upon request. You can also explore our case studies to see real-world examples of our work."
+    },
+    {
+      "id": 10,
+      "title": "How much does web application development cost?",
+      "content":"The cost of web application development varies based on factors such as complexity, features, and scope. We'll provide you with a customized quote after discussing your project requirements in detail."
+    }
+  ],
+  "AssuranceBanner": {
+    "title": "Zuca’s Assurance as a Web App Development Company",
+    "image": "/AssuraceBanner.png",
+    "buttonLink": "/",
+    "buttonName": "Work with us",
+    "sideImage": "/AssuranceImage.svg"
+  },
+  "AssuranceData": [
+    {
+      "title": "A Quality-First Approach",
+      "subtitle": "Our team is capable of delivering immersive web experiences, magnifying digital transformation",
+      "icon": "/Approach.svg"
+    },
+    {
+      "title": "Steering Web Complexities",
+      "subtitle": "Get your hands on world-class web apps that are capable of driving market disruption",
+      "icon": "/Complexity.svg"
+    },
+    {
+      "title": "Multiple Engagement Model",
+      "subtitle": "Choose your business model as per your budget, essentialities and requirements",
+      "icon": "/Model.svg"
+    }
+  ]
+}

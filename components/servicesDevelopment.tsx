@@ -42,7 +42,7 @@ export const ServicesDevelopment: React.FC<DevelopmentDataInterface> = (props) =
             <div className="w-[100%] md:w-[55vw] flex justify-start text-start px-[20px] text-[16px] leading-[30px] text-[#757B8A] lg:text-[13px] lg:leading-[26px] xl:text-[14px] font-normal xl:leading-[32px] py-[30px] xl:py-[60px] lg:py-[50px] ">
               {centerContent}
             </div>
-            <div className="w-[100%] md:w-[18vw] pl-[10px] md:pl-[15px] py-[25px] lg:py-[40px] xl:py-[50px] flex flex-col gap-[15px] lg:gap-[18px] xl:gap-[25px] justify-start bg-[#E0E1FF] rounded-b-[10px] md:rounded-r-[10px] ">
+            <div className="w-[100%] md:w-[20vw] pl-[10px] md:pl-[15px] py-[25px] lg:py-[40px] xl:py-[50px] flex flex-col gap-[15px] lg:gap-[18px] xl:gap-[25px] justify-start bg-[#E0E1FF] rounded-b-[10px] md:rounded-r-[10px] ">
               {rightData.map((item, index: number) => (
                   <div className="flex flex-row gap-[10px] items-center" key={index}>
                     <Img

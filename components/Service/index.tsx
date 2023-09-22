@@ -3,8 +3,13 @@ import {Button} from '../../utils/Button';
 import {Img} from '../../utils/Img';
 import services from "../../data/HomePageService.json"
 
-const Service = () => {
+interface Interface {
+    title:string,
+    subtitle:string
+}
 
+const Service:React.FC<Interface> = (props) => {
+    const {title, subtitle} = props;
     return (
         <div className="md:px-[30px] features-area relative flex flex-col items-center py-[40px] md:pt-[20px] text-center max-w-[1377.5px] overflow-hidden h-auto mx-auto">
             <Button
@@ -14,10 +19,10 @@ const Service = () => {
             />
             <div
                 className="text-[#151448] md:text-[40px] text-[24px]  font-bold leading-[125%] mt-[13px] max-w-[641px]">
-                {services.bannerData.title}
+                {title}
             </div>
             <div className="text-[#747C85] text-[18px] mt-[13px] font-medium max-w-[742px] leading-[170%]">
-                {services.bannerData.subtitle}
+                {subtitle}
             </div>
             <div className="pt-[60px] md:px-0 px-[20px] gap-[35px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-start ">
                 {services.header.map((service, index: number) => {

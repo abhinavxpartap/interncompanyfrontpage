@@ -45,7 +45,10 @@ const ProductDesignPage: React.FC = () => {
                         image={pageData.AboutBanner.image}
                         data={pageData.AboutData}
                     />
-                    <Service/>
+                    <Service
+                        title={pageData.EaseBanner.title}
+                        subtitle={pageData.EaseBanner.subtitle}
+                    />
                     <div className="md:pt-[70px] pb-[30px] pt-[30px]">
                         <ProductOverview
                             SoftwareCount={pageData.ReasonBanner.softwareDevelopedCount}

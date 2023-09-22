@@ -15,6 +15,7 @@ import {PortfolioOurProcess} from "../components/PortfolioOurProcess";
 import FixedButton from "../components/FixedButton";
 import CaseStudy from "../components/Case Study";
 import Float from "../components/Float";
+import {OurProcessFin} from "../components/ourprocessFin";
 
 const Portfolio: NextPage = () => {
     return (
@@ -64,7 +65,7 @@ const Portfolio: NextPage = () => {
                 List={PortData.OurProcessNew.Data1}
                 heading={PortData.OurProcessNew.heading}
             />
-            <OurProcess/>
+            <OurProcessFin/>
             <ProjectChallangesNew
             list={PortData.resultNew.list}
             heading={PortData.resultNew.heading}
@@ -75,8 +76,10 @@ const Portfolio: NextPage = () => {
                 heading={PortData.ResultNew.heading}
                 subtitle={PortData.ResultNew.subtitle}
             />
-            <CaseStudy/>
-            <FixedButton/>
+            <div className="pb-[80px]">
+                <CaseStudy/>
+
+            </div>            <FixedButton/>
             <Footer/>
 
         </>

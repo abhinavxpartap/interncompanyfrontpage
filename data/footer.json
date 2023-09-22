@@ -1,51 +1,59 @@
 {
   "services": [
     {
-      "title": "Data Analytics ",
-      "id": 1,
-      "link": "/services/Data_Analytics"
-    },
-
-    {
       "title": "Web Application Development",
-      "id": 2,
+      "id": 1,
       "link": "/services/Web_Application_Development"
     },
     {
-      "title": "Product Design",
-      "id": 3,
-      "link": "/services/Product_Design"
-    },
-    {
-      "title": "UI/UX Consulting ",
-      "id": 4,
-      "link": "/services/UX_UI_Consulting"
-    },
-    {
-      "title": "Mobile App Development",
-      "id": 5,
-      "link": "/services/Mobile_App_Development"
-    },
-    {
-      "title": "Cloud Infrastructure Setup",
-      "id": 6,
-      "link": "/services/Cloud_Infrastructure_Setup"
-    },
-    {
-      "title": "iOS Application Development",
-      "id": 7,
-      "link": "/services/IOS_Application_Development"
-    },
-    {
-      "title": "Android  Application Development",
-      "id": 8,
+      "title": "Android  App Development",
+      "id": 2,
       "link": "/services/Android_Application_Development"
     },
     {
+      "title": "Cloud Infrastructure Setup",
+      "id": 3,
+      "link": "/services/Cloud_Infrastructure_Setup"
+    },
+    {
+      "title": "Mobile App Development",
+      "id": 4,
+      "link": "/services/Mobile_App_Development"
+    },
+
+
+    {
       "title": "Chat Bot Development",
-      "id": 9,
+      "id": 5,
       "link": "/services/Chat_Bot_Development"
+    },
+    {
+      "title": "iOS App Development",
+      "id": 6,
+      "link": "/services/IOS_Application_Development"
+    },
+    {
+      "title": "UI/UX Consulting ",
+      "id": 7,
+      "link": "/services/UX_UI_Consulting"
+    },
+    {
+      "title": "Product Design",
+      "id": 8,
+      "link": "/services/Product_Design"
+    },
+    {
+      "title": "Data Analytics ",
+      "id": 9,
+      "link": "/services/Data_Analytics"
     }
+
+
+
+
+
+
+
   ],
   "industry": [
     {

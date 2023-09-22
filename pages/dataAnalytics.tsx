@@ -89,7 +89,6 @@ const DataAnalytics: React.FC = () => {
                         <ServicesFaq
                             title={dataAnalytics.FaqBanner.title}
                             subtitle={dataAnalytics.FaqBanner.subtitle}
-                            buttonName={dataAnalytics.FaqBanner.buttonName}
                             buttonLink={dataAnalytics.FaqBanner.buttonLink}
                             tabData={dataAnalytics.header}
                         />

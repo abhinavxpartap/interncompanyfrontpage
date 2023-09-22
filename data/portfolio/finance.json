@@ -11,10 +11,10 @@
     "businessType": "Enterprise",
     "services": "Design, Development, Support & Maintenance",
     "images": [
-      "/portfolio/m1.svg",
-      "/portfolio/m2.svg",
-      "/portfolio/m3.svg",
-      "/portfolio/m4.svg"
+      "/fin/m1.svg",
+      "/fin/m2.svg",
+      "/fin/m3.svg",
+      "/fin/m4.svg"
     ]
   },
 
@@ -22,10 +22,10 @@
     "title": "Enable Unmatched Digital Transformation Seamlessly"
   },
   "Director": {
-    "name": " Yacob Sudwarmaji",
-    "company": " Technology Americana Group",
-    "icon": "/director.svg",
-    "address": "(kuwait Food Co.)",
+    "name": " Lisa Brown",
+    "company": " FinTech Pro",
+    "icon": "/fin/fingirl.svg",
+    "address": "(USA)",
     "message": "  Alumeltech has been a transformative partner for Dream Homes Realty. Their expertise in web design and software development, powered by AI and data analytics, revolutionized our online presence. The lightning-fast website they crafted significantly improved user experience, and their AI-driven recommendations led to a 30% increase in property inquiries and sales. Their team's dedication and innovative approach have been invaluable. We're thrilled with the results and the future opportunities this partnership holds..",
     "post": "Director - Restaurant",
     "image": "/images/logo/director.svg",
@@ -212,14 +212,14 @@
     }
   ],
   "imagePort": [
-    "/portfolio/m5.svg",
-    "/portfolio/m6.svg",
-    "/portfolio/m7.svg",
-    "/portfolio/m8.svg",
-    "/portfolio/m9.svg",
-    "/portfolio/m10.svg",
-    "/portfolio/m11.svg",
-    "/portfolio/m12.svg"
+    "/fin/m5.svg",
+    "/fin/m6.svg",
+    "/fin/m7.svg",
+    "/fin/m8.svg",
+    "/fin/m9.svg",
+    "/fin/m10.svg",
+    "/fin/m11.svg",
+    "/fin/m12.svg"
 
   ],
   "challenges": [

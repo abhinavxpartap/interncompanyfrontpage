@@ -70,7 +70,7 @@ function QontoStepIcon(props: StepIconProps) {
 
 
 export const ServicesFaq: React.FC<Faq> = (props) => {
-    const {title, subtitle, buttonName, buttonLink, tabData} = props;
+    const {title, subtitle, buttonLink, tabData} = props;
     const router = useRouter();
     const [activeTab, setActiveTab] = useState(2);
 
@@ -92,7 +92,7 @@ export const ServicesFaq: React.FC<Faq> = (props) => {
                         </p>
                         <Button
                             onClick={() => router.push(buttonLink)}
-                            className="ButtonTransition overflow-hidden text-[13px] w-[230px] md:w-[290px] md:text-[16px]  font-semibold "
+                            className="ButtonTransition overflow-hidden text-[13px] w-[180px]  md:text-[16px]  font-semibold "
                             sx={{
                                 '&.MuiButtonBase-root': {
                                     backgroundColor: '#8184EB',
@@ -110,8 +110,7 @@ export const ServicesFaq: React.FC<Faq> = (props) => {
                                 },
                             }}
                         >
-                            {buttonName}
-                        </Button>
+Show Me How                        </Button>
                     </div>
                     <div className="flex flex-row w-[85vw] lg:w-[55vw]">
                         <div className="w-[100%]">

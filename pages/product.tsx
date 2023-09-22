@@ -79,7 +79,6 @@ const ServicePage: React.FC = () => {
                         <ServicesFaq
                             title={Product.FaqBanner.title}
                             subtitle={Product.FaqBanner.subtitle}
-                            buttonName={Product.FaqBanner.buttonName}
                             buttonLink={Product.FaqBanner.buttonLink}
                             tabData={Product.header}
                         />

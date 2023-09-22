@@ -60,7 +60,6 @@ const ServicePage: React.FC = () => {
                 <ServicesFaq
                     title={serviceFaqData.bannerData.title}
                     subtitle={serviceFaqData.bannerData.subtitle}
-                    buttonName={serviceFaqData.bannerData.buttonName}
                     buttonLink={serviceFaqData.bannerData.buttonLink}
                     tabData={serviceFaqData.header}
                 />

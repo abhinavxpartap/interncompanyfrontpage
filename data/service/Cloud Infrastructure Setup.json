@@ -2,7 +2,7 @@
   "BannerData": {
     "title": "Optimize Your Business with Tailored Cloud Solutions",
     "subtitle": "Scale, Secure, and Streamline Operations for Maximum Efficiency",
-    "backgroundImage": "/serviceBanner.jpg",
+    "backgroundImage": "/service/banner5.svg",
     "ButtonName": "Show me how",
     "ButtonHref": "/"
   },
@@ -121,7 +121,7 @@
   "FaqBanner": {
     "title": "Questions in Mind? 🤔",
     "subtitle": "We provide end-to-end web app development services, tailored exclusively to solve your unique business challenges.",
-    "buttonName": "Book Consultation Session",
+    "buttonName": "show Me How",
     "buttonLink": "/"
   },
   "FaqData": [

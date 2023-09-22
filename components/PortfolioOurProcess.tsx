@@ -22,7 +22,7 @@ export const PortfolioOurProcess: React.FC<OurProcess> = ( props) => {
                    <div className="text-[#CFD3D7] mt-[-30px] text-[90px] font-bold">{item.id}</div>
                    <div className="flex flex-col">
                        <h1 className="text-[#151448] text-[25px] leading-[40px] font-semibold">{item.title}:</h1>
-                       <p className="text-[#757B8A] text-[16px] font-normal lg:leading-[30px] xl:leading-[22px]">{item.content}</p>
+                       <p className="text-[#151448] text-[16px] font-normal lg:leading-[30px] xl:leading-[22px]">{item.content}</p>
                    </div>
                </div>
                 ))}

@@ -48,7 +48,10 @@ const Home: NextPage = () => {
                     style={{background: '#F9FBFF'}}
                     className="bg-cover pt-[35px]  md:pt-[70px] bg-center bg-no-repeat relative  block"
                 >
-                    <Service/>
+                    <Service
+                    title={data.EaseBanner.title}
+                    subtitle={data.EaseBanner.subtitle}
+                    />
                 </div>
                 <div
                     style={{background: '#F9FBFF'}}

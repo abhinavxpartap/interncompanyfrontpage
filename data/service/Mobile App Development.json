@@ -120,7 +120,7 @@
     }
   ],
   "ProcessBanner": {
-    "title": "Our Proven Process for Your iOS App Success"
+    "title": "Our Proven Process for Your Mobile App Success"
   },
   "ProcessData": [
     {
@@ -164,7 +164,7 @@
     {
       "id": 2,
       "title": "How do I get started with app development?",
-      "content":"Getting started is easy. Simply click on our \"Let's Build My App\" CTA, and one of our experts will reach out to you to discuss your app idea. We'll guide you through the entire process, from concept to deployment."
+      "content":"Getting started is easy. Simply click on our Let's Build My App CTA, and one of our experts will reach out to you to discuss your app idea. We'll guide you through the entire process, from concept to deployment."
     },
     {
       "id": 3,

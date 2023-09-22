@@ -5,49 +5,45 @@
       "id": 1,
       "link": "/services/Data_Analytics"
     },
-    {
-      "title": "Flutter Application Development",
-      "id": 2,
-      "link": "/services/Flutter_Application_Development"
-    },
+
     {
       "title": "Web Application Development",
-      "id": 3,
+      "id": 2,
       "link": "/services/Web_Application_Development"
     },
     {
       "title": "Product Design",
-      "id": 4,
+      "id": 3,
       "link": "/services/Product_Design"
     },
     {
       "title": "UI/UX Consulting ",
-      "id": 5,
+      "id": 4,
       "link": "/services/UX_UI_Consulting"
     },
     {
       "title": "Mobile App Development",
-      "id": 6,
+      "id": 5,
       "link": "/services/Mobile_App_Development"
     },
     {
       "title": "Cloud Infrastructure Setup",
-      "id": 7,
+      "id": 6,
       "link": "/services/Cloud_Infrastructure_Setup"
     },
     {
       "title": "iOS Application Development",
-      "id": 8,
+      "id": 7,
       "link": "/services/IOS_Application_Development"
     },
     {
       "title": "Android  Application Development",
-      "id": 9,
+      "id": 8,
       "link": "/services/Android_Application_Development"
     },
     {
       "title": "Chat Bot Development",
-      "id": 10,
+      "id": 9,
       "link": "/services/Chat_Bot_Development"
     }
   ],

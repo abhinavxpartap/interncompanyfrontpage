@@ -1,23 +1,23 @@
 import React from "react";
 import Head from "next/head";
 import seoData from "../../data/seoData.json";
+import pageData from "../../data/industries/Blockchain_Application_Development.json";
 import {ServiceBanner} from "../../components/serviceBanner";
-import {IndustriesAbout} from "../../components/industriesAbout";
-import {IndustriesCompliances} from "../../components/industriesCompliances";
-import {IndustriesTechnology} from "../../components/industriesTechnology";
+import {ServiceAbout} from "../../components/servicesAbout";
+import {ServicesDevelopment} from "../../components/servicesDevelopment";
+import {ServicesFaq} from "../../components/serviceFaq";
+import {ServicesAssurance} from "../../components/serviceAssurance";
 import {ServiceTech} from "../../components/servicesTech";
-import {IndustriesEstimation} from "../../components/industriesEstimation";
-import {IndustriesFaq} from "../../components/industriesFaq";
 import {FreeQuotation} from "../../components/freeQuotation";
-import Data from "../../data/blogData.json";
-import {BlogCards} from "../../components/BlogCard";
 import {Footer} from "../../components/footer";
-import SuccesStory from "../../components/SuccesStory";
 import FixedButton from "../../components/FixedButton";
-import Float from "../../components/Float";
-import pageData from "../../data/industry/Blockchain Application Development.json";
+import CaseStudy from "../../components/Case Study";
+import Service from "../../components/Service";
+import {PortfolioOurProcess} from "../../components/PortfolioOurProcess";
+import Float from "../../components/Float"
+import ProductOverview from "../../components/Product Overview";
 
-const BlockChainPage: React.FC = () => {
+const BlockChainpage: React.FC = () => {
     return (<>
             <Head>
                 <title>{seoData.Blockchain_Application_Development.title}</title>
@@ -30,74 +30,76 @@ const BlockChainPage: React.FC = () => {
                     image={pageData.BannerData.backgroundImage}
                     title={pageData.BannerData.title}
                     subtitle={pageData.BannerData.subtitle}
-                    buttonName={pageData.BannerData.buttonName}
-                    buttonLink={pageData.BannerData.buttonLink}
+                    buttonName={pageData.BannerData.ButtonName}
+                    buttonLink={pageData.BannerData.ButtonHref}
                 />
+                <Float/>
+                <div className="md:mb-[80px] mb-[30px]">
+                    <CaseStudy/>
+                </div>
                 <div style={{background: "#F9FBFF"}}>
-                    <IndustriesAbout
+                    <ServiceAbout
                         title={pageData.AboutBanner.title}
+                        subtitle={pageData.AboutBanner.subtitle}
+                        paragraph={pageData.AboutBanner.paragraph}
                         image={pageData.AboutBanner.image}
-                        fintechData={pageData.AboutData}
-                        buttonName={pageData.AboutBanner.buttonName}
-                        buttonLink={pageData.AboutBanner.buttonLink}
-                        satisfactionData={pageData.AboutNumberData}
+                        data={pageData.AboutData}
                     />
-                    <IndustriesCompliances
-                        image={pageData.DevelopmentBanner.image}
+                    <Service
+                        title={pageData.EaseBanner.title}
+                        subtitle={pageData.EaseBanner.subtitle}
+                    />
+                    <div className="md:pt-[70px] pb-[30px] pt-[30px]">
+                        <ProductOverview
+                            SoftwareCount={pageData.ReasonBanner.softwareDevelopedCount}
+                            SoftwareText={pageData.ReasonBanner.softwareText}
+                            WebCount={pageData.ReasonBanner.webDesignCount}
+                            WebText={pageData.ReasonBanner.webText}
+                            backgroundImage={pageData.ReasonBanner.backgroundImage}
+                            leftImage={pageData.ReasonBanner.leftImage}
+                            productCount={pageData.ReasonBanner.productCount}
+                            productText={pageData.ReasonBanner.productText}
+                            reasonData={pageData.ReasonData}
+                            title={pageData.ReasonBanner.title}
+                        />
+                    </div>
+                    <ServicesDevelopment
                         title={pageData.DevelopmentBanner.title}
                         subtitle={pageData.DevelopmentBanner.subtitle}
-                        data={pageData.DevelopmentData}
+                        leftData={pageData.DevelopmentHeaderLeft}
+                        centerContent={pageData.DevelopmentBanner.centerContent}
+                        rightData={pageData.DevelopmentHeaderRight}
+                        buttonName={pageData.DevelopmentBanner.buttonName}
+                        buttonLink={pageData.DevelopmentBanner.buttonLink}
                     />
-                    <Float/>
-                    <div className="md:py-[30px] py-0">
-                        <SuccesStory/>
+                    <div className="">
+                        <PortfolioOurProcess
+                            List={pageData.ProcessData}
+                            heading={pageData.ProcessBanner.title}
+                        />
+                    </div>
 
+                    <div className="md:pt-[70px] pt-[30px] pb-[30px]">
+                        <ServicesFaq
+                            title={pageData.FaqBanner.title}
+                            subtitle={pageData.FaqBanner.subtitle}
+                            buttonName={pageData.FaqBanner.buttonName}
+                            buttonLink={pageData.FaqBanner.buttonLink}
+                            tabData={pageData.FaqData}
+                        />
                     </div>
-                    <IndustriesTechnology
-                        title={pageData.TechnologyBanner.title}
-                        subtitle={pageData.TechnologyBanner.subtitle}
-                        data={pageData.TechnologyData}
+                    <ServicesAssurance
+                        image={pageData.AssuranceBanner.image}
+                        title={pageData.AssuranceBanner.title}
+                        buttonName={pageData.AssuranceBanner.buttonName}
+                        buttonLink={pageData.AssuranceBanner.buttonLink}
+                        data={pageData.AssuranceData}
+                        sideImage={pageData.AssuranceBanner.sideImage}
                     />
-                    <div className="pb-[30px]">
-                        <ServiceTech/>
-
+                    <ServiceTech/>
+                    <div className="pt-[50px]">
+                        <FreeQuotation/>
                     </div>
-                    <IndustriesEstimation
-                        image={pageData.EstimationBanner.image}
-                        title={pageData.EstimationBanner.title}
-                        subtitle={pageData.EstimationBanner.subtitle}
-                        data={pageData.EstimationData}
-                        buttonName={pageData.EstimationBanner.buttonName}
-                        buttonHref={pageData.EstimationBanner.buttonHref}
-                    />
-                    <IndustriesFaq
-                        tabData={pageData.FaqData}
-                        title={pageData.Faq.title}
-                        spantitle={pageData.Faq.spantitle}
-                    />
-                    <div className="max-w-[1377.5px] md:py-[50px] mx-auto">
-                        <div className=" w-[100%] flex flex-col px-[20px] md:px-[40px] mb-[30px]">
-                            <h1 className="text-[#151448] text-center mb-[25px]  text-[30px] md:text-[60px] font-semibold">Resources
-                                & Articles </h1>
-                            <div className="w-[100%] mx-auto md:mx-0">
-                                <div className="w-[100%] gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                                    {Data.BlogData.slice(0, 3).map((item, index: number) => (
-                                        <BlogCards
-                                            key={index}
-                                            AuthorName={item.AuthorName}
-                                            img={item.image}
-                                            title={item.title}
-                                            description={item.description}
-                                            url={item.URL}
-                                            categories={item.categories}
-                                            Date={item.Date}
-                                        />
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <FreeQuotation/>
                     <FixedButton/>
 
                     <Footer/>
@@ -106,4 +108,4 @@ const BlockChainPage: React.FC = () => {
         </>
     );
 };
-export default BlockChainPage;
+export default BlockChainpage;

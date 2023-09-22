@@ -32,6 +32,10 @@
       "title": "Notification and Geofencing"
     }
   ],
+  "EaseBanner": {
+    "title": "How can we ease your journey?",
+    "subtitle": "At Alumel Tech, you'll the best services in custom software, AI, and data solutions, as well as dynamic web and mobile applications all tailored to drive your startup's success."
+  },
   "ReasonBanner": {
     "title": "Why Choose Alumeltech for Data Analytics?",
     "backgroundImage": "/service/jokerbanner.png",

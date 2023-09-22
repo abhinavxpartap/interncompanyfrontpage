@@ -1,0 +1,222 @@
+{
+  "BannerData": {
+    "title": "Elevate Your Business with Cloud Application Development",
+    "subtitle": "Your Goals, Our Solutions – Transforming Enterprises through Cloud Innovation",
+    "backgroundImage": "/industry/6.svg",
+    "ButtonName": "Show me how",
+    "ButtonHref": "/"
+  },
+  "AboutBanner": {
+    "title": "Empower Your Business with Cloud Application Development",
+    "subtitle": "At AlumelTech, we recognize the evolving challenges your business faces in the digital age. Our cloud application development services are meticulously crafted to empower your enterprise with scalable, flexible, and agile solutions. Whether you aim to enhance collaboration, boost efficiency, or embrace digital transformation, our expertise in cloud technology will propel your business towards success.",
+    "image": "/about.svg",
+    "paragraph": "Tech Stack for Cloud Application Development:"
+  },
+  "AboutData": [
+    {
+      "title": "AWS (Amazon Web Services)"
+    },
+    {
+      "title": "Microsoft Azure"
+    },
+    {
+      "title": "Google Cloud Platform"
+    },
+    {
+      "title": "Kubernetes"
+    }
+  ],
+  "EaseBanner": {
+    "title": "How can we ease your journey?",
+    "subtitle": "We're committed to simplifying your path through the intricate world of cloud technology, offering accessible and value-driven solutions. Let's partner to turn your challenges into growth opportunities."
+  },
+  "ReasonBanner": {
+    "title": "Need Reasons to Choose Alumeltech?",
+    "backgroundImage": "/service/jokerbanner.png",
+    "leftImage": "/service/joker.svg",
+    "productCount": "270",
+    "productText": "PRODUCTS",
+    "softwareDevelopedCount": "165",
+    "softwareText": "SOFTWARES DEVELOPED",
+    "webDesignCount": "115",
+    "webText": "WEB DESIGNS"
+  },
+  "ReasonData": [
+    {
+      "title":"Tech-Driven Excellence"
+    },
+    {
+      "title":"Client-Centric Approach"
+    },
+    {
+      "title":"All Experts in One Place"
+    },
+    {
+      "title":"Effective Synergy"
+    },
+    {
+      "title":"Scalable Team"
+    },
+    {
+      "title": "A Comprehensive Suite of Services"
+    },
+    {
+      "title": "Strong Expertise"
+    },
+    {
+      "title": "Data Security and Protection"
+    },
+    {
+      "title": "Strategic Solutions for Competitive Edge"
+    }
+  ],
+  "DevelopmentBanner": {
+    "title": "Industries We love to Serve",
+    "subtitle": "Our blockchain application development services vary across but are not limited to:",
+    "centerContent": "As a web app development company, we offer top-notch medical and pharmaceutical app development services to enterprises across the world. Our expertise in the custom web application development field enables us to deliver comprehensive healthcare software development services  such as Practice Management Systems (PMS) and Electronic Health Records (EHR) systems, telemedicine platforms, billing, insurance verification software tools, etc., capable of meeting your custom business requirements.",
+    "buttonName": "Work with us",
+    "buttonLink": "/"
+  },
+  "DevelopmentHeaderLeft": [
+    {
+      "image": "/Health.svg",
+      "title": "Travel Apps"
+    },
+    {
+      "image": "/FineTech.svg",
+      "title": "Fintech Apps"
+    },
+    {
+      "image": "/Factory.svg",
+      "title": "Dating Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "RealEstate Apps"
+    }
+  ],
+  "DevelopmentHeaderRight": [
+    {
+      "image": "/Logistics.svg",
+      "title": "Automobile Apps"
+    },
+    {
+      "image": "/Ecommerce.svg",
+      "title": "E-commerce & Retail Apps"
+    },
+    {
+      "image": "/Factory.svg",
+      "title": "Media & Entertainment Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "Healthcare & Telehealth Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "Restaurants Management Apps"
+    }
+  ],
+  "ProcessBanner": {
+    "title": "Our Proven Cloud Application Development Process"
+  },
+  "ProcessData": [
+    {
+      "id": 1,
+      "title": "Requirement Analysis",
+      "content": "We understand your specific business objectives to tailor cloud solutions accordingly."
+    },
+    {
+      "id": 2,
+      "title": "Strategic Planning",
+      "content": "A comprehensive strategy is crafted, defining scope, timelines, and resources."
+    },
+    {
+      "id": 3,
+      "title": "Cloud Architecture Design",
+      "content": "We design a resilient cloud architecture that guarantees scalability, security, and high performance."
+    },
+    {
+      "id": 4,
+      "title": "Application Development",
+      "content": "Our team develops cloud-native applications that align with your goals."
+    },
+    {
+      "id": 5,
+      "title": "Testing and Quality Assurance",
+      "content": "Rigorous testing ensures applications perform seamlessly under various scenarios."
+    },
+    {
+      "id": 6,
+      "title": "Deployment and Migration",
+      "content": "We deploy applications and handle the migration process with minimal disruption."
+    },
+    {
+      "id": 7,
+      "title": "Ongoing Support",
+      "content": "Our support includes updates, maintenance, and security enhancements to ensure long-term success."
+    }
+  ],
+  "FaqBanner": {
+    "title": "Questions in Mind? 🤔",
+    "subtitle": "",
+    "buttonName": "Book Consultation Session",
+    "buttonLink": "/"
+  },
+  "FaqData": [
+    {
+      "id": 1,
+      "title": "Why should my business consider cloud application development?",
+      "content":"Cloud applications offer scalability, accessibility, and cost-efficiency, enabling business growth."
+    },
+    {
+      "id": 2,
+      "title": "Can you tailor cloud solutions for my industry-specific needs?",
+      "content": "Absolutely, our expertise spans various industries, ensuring solutions are customized to your requirements."
+    },
+    {
+      "id": 3,
+      "title": "What is the typical timeline for developing a cloud application?",
+      "content": "Timelines vary depending on project complexity, but we'll provide an estimate during initial discussions."
+    },
+    {
+      "id": 4,
+      "title": "How secure are cloud applications for sensitive data?",
+      "content": "We prioritize data security and follow industry best practices to safeguard sensitive information."
+    },
+    {
+      "id": 5,
+      "title": "Can you migrate our existing applications to the cloud?",
+      "content":"Yes, we offer cloud migration services to seamlessly transition your applications."
+    },
+    {
+      "id": 6,
+      "title":"Do you provide post-launch support for cloud applications?",
+      "content":"We offer comprehensive post-launch support, including updates, maintenance, and security enhancements."
+    }
+  ],
+  "AssuranceBanner": {
+    "title": "Zuca’s Assurance as a Web App Development Company",
+    "image": "/AssuraceBanner.png",
+    "buttonLink": "/",
+    "buttonName": "Work with us",
+    "sideImage": "/AssuranceImage.svg"
+  },
+  "AssuranceData": [
+    {
+      "title": "A Quality-First Approach",
+      "subtitle": "Our team is capable of delivering immersive web experiences, magnifying digital transformation",
+      "icon": "/Approach.svg"
+    },
+    {
+      "title": "Steering Web Complexities",
+      "subtitle": "Get your hands on world-class web apps that are capable of driving market disruption",
+      "icon": "/Complexity.svg"
+    },
+    {
+      "title": "Multiple Engagement Model",
+      "subtitle": "Choose your business model as per your budget, essentialities and requirements",
+      "icon": "/Model.svg"
+    }
+  ]
+}

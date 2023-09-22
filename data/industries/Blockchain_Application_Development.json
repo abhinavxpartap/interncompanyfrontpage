@@ -1,0 +1,222 @@
+{
+  "BannerData": {
+    "title": "Revolutionize Your Business with Blockchain Solutions",
+    "subtitle": "Your Challenges, Our Expertise – Transforming Industries with Blockchain Solutions",
+    "backgroundImage": "/industry/7.svg",
+    "ButtonName": "Show me how",
+    "ButtonHref": "/"
+  },
+  "AboutBanner": {
+    "title": "Empower Your Business with Blockchain Development",
+    "subtitle": "At AlumelTech, we understand the challenges you face in today's fast-paced digital landscape. Our blockchain development services are tailored to empower your business by offering secure, transparent, and efficient solutions. Whether you're looking to streamline operations, enhance security, or explore new revenue streams, our expertise in blockchain technology will help you achieve your goals.",
+    "image": "/about.svg",
+    "paragraph": "Tech Stack for Blockchain Development:"
+  },
+  "AboutData": [
+    {
+      "title": "Ethereum"
+    },
+    {
+      "title": "Hyperledger Fabric"
+    },
+    {
+      "title": "Solidity"
+    },
+    {
+      "title": "Truffle"
+    }
+  ],
+  "EaseBanner": {
+    "title": "How can we ease your journey?",
+    "subtitle": "We're here to guide you through the complex world of blockchain technology, making it accessible and valuable for your business. Let's collaborate to transform your challenges into opportunities."
+  },
+  "ReasonBanner": {
+    "title": "Need Reasons to Choose Alumeltech?",
+    "backgroundImage": "/service/jokerbanner.png",
+    "leftImage": "/service/joker.svg",
+    "productCount": "270",
+    "productText": "PRODUCTS",
+    "softwareDevelopedCount": "165",
+    "softwareText": "SOFTWARES DEVELOPED",
+    "webDesignCount": "115",
+    "webText": "WEB DESIGNS"
+  },
+  "ReasonData": [
+    {
+      "title":"Tech-Driven Excellence"
+    },
+    {
+      "title":"Client-Centric Approach"
+    },
+    {
+      "title":"All Experts in One Place"
+    },
+    {
+      "title":"Effective Synergy"
+    },
+    {
+      "title":"Scalable Team"
+    },
+    {
+      "title": "A Comprehensive Suite of Services"
+    },
+    {
+      "title": "Strong Expertise"
+    },
+    {
+      "title": "Data Security and Protection"
+    },
+    {
+      "title": "Strategic Solutions for Competitive Edge"
+    }
+  ],
+  "DevelopmentBanner": {
+    "title": "Industries We love to Serve",
+    "subtitle": "Our blockchain application development services vary across but are not limited to:",
+    "centerContent": "As a web app development company, we offer top-notch medical and pharmaceutical app development services to enterprises across the world. Our expertise in the custom web application development field enables us to deliver comprehensive healthcare software development services  such as Practice Management Systems (PMS) and Electronic Health Records (EHR) systems, telemedicine platforms, billing, insurance verification software tools, etc., capable of meeting your custom business requirements.",
+    "buttonName": "Work with us",
+    "buttonLink": "/"
+  },
+  "DevelopmentHeaderLeft": [
+    {
+      "image": "/Health.svg",
+      "title": "Travel Apps"
+    },
+    {
+      "image": "/FineTech.svg",
+      "title": "Fintech Apps"
+    },
+    {
+      "image": "/Factory.svg",
+      "title": "Dating Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "RealEstate Apps"
+    }
+  ],
+  "DevelopmentHeaderRight": [
+    {
+      "image": "/Logistics.svg",
+      "title": "Automobile Apps"
+    },
+    {
+      "image": "/Ecommerce.svg",
+      "title": "E-commerce & Retail Apps"
+    },
+    {
+      "image": "/Factory.svg",
+      "title": "Media & Entertainment Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "Healthcare & Telehealth Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "Restaurants Management Apps"
+    }
+  ],
+  "ProcessBanner": {
+    "title": "Our Proven Blockchain Development Process"
+  },
+  "ProcessData": [
+    {
+      "id": 1,
+      "title": "Requirement Analysis",
+      "content": "We start by understanding your unique business needs and objectives to tailor a blockchain solution that aligns perfectly with your goals."
+    },
+    {
+      "id": 2,
+      "title": "Strategic Planning",
+      "content": "Our team devises a comprehensive strategy that outlines the project scope, timeline, and resources required for successful development."
+    },
+    {
+      "id": 3,
+      "title": "Blockchain Architecture",
+      "content": "We design a robust blockchain architecture that ensures scalability, security, and performance."
+    },
+    {
+      "id": 4,
+      "title": "Smart Contract Development",
+      "content": "Our experts create custom smart contracts to automate processes and enforce trust within your blockchain network."
+    },
+    {
+      "id": 5,
+      "title": "Prototype Development",
+      "content": "We develop a prototype to provide a visual representation of the blockchain solution, allowing you to visualize the end product."
+    },
+    {
+      "id": 6,
+      "title": "Testing and Optimization",
+      "content": "Rigorous testing ensures the blockchain system functions seamlessly, and we continually optimize performance."
+    },
+    {
+      "id": 7,
+      "title": "Deployment and Support",
+      "content": "We deploy the solution, provide training, and offer ongoing support and maintenance to ensure long-term success."
+    }
+  ],
+  "FaqBanner": {
+    "title": "Questions in Mind? 🤔",
+    "subtitle": "",
+    "buttonName": "Book Consultation Session",
+    "buttonLink": "/"
+  },
+  "FaqData": [
+    {
+      "id": 1,
+      "title": "Why should my business consider blockchain technology?",
+      "content":"Blockchain offers enhanced security, transparency, and efficiency, reducing fraud and streamlining processes."
+    },
+    {
+      "id": 2,
+      "title": "Can you create a custom blockchain solution for my unique business needs?",
+      "content": "Absolutely, our blockchain experts specialize in tailoring solutions to meet your specific requirements."
+    },
+    {
+      "id": 3,
+      "title": "How long does it take to develop a blockchain-based application?",
+      "content": "Timelines vary based on complexity, but we'll provide an estimate during our initial discussions."
+    },
+    {
+      "id": 4,
+      "title": "Is blockchain technology secure for sensitive data?",
+      "content": "Yes, blockchain is known for its high level of security, making it ideal for protecting sensitive data."
+    },
+    {
+      "id": 5,
+      "title": "Can you integrate blockchain into existing systems?",
+      "content":"Yes, we can seamlessly integrate blockchain into your existing infrastructure."
+    },
+    {
+      "id": 6,
+      "title":"What ongoing support do you offer for blockchain applications?",
+      "content":"We provide comprehensive post-launch support, including updates, maintenance, and security enhancements."
+    }
+  ],
+  "AssuranceBanner": {
+    "title": "Zuca’s Assurance as a Web App Development Company",
+    "image": "/AssuraceBanner.png",
+    "buttonLink": "/",
+    "buttonName": "Work with us",
+    "sideImage": "/AssuranceImage.svg"
+  },
+  "AssuranceData": [
+    {
+      "title": "A Quality-First Approach",
+      "subtitle": "Our team is capable of delivering immersive web experiences, magnifying digital transformation",
+      "icon": "/Approach.svg"
+    },
+    {
+      "title": "Steering Web Complexities",
+      "subtitle": "Get your hands on world-class web apps that are capable of driving market disruption",
+      "icon": "/Complexity.svg"
+    },
+    {
+      "title": "Multiple Engagement Model",
+      "subtitle": "Choose your business model as per your budget, essentialities and requirements",
+      "icon": "/Model.svg"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "BannerData": {
+    "title": "Elevate Your Business with Machine Learning Solutions",
+    "subtitle": "Your Challenges, Our Expertise – Transforming Enterprises with Machine Learning",
+    "backgroundImage": "/industry/3.svg",
+    "ButtonName": "Show me how",
+    "ButtonHref": "/"
+  },
+  "AboutBanner": {
+    "title": "Empower Your Business with Machine Learning",
+    "subtitle": "At AlumelTech, we recognize the challenges businesses face in harnessing the power of Machine Learning (ML). Our ML solutions are designed to empower your enterprise with cutting-edge technology that enhances decision-making, automates processes, and unlocks new possibilities. Whether you seek predictive analytics, recommendation systems, or anomaly detection, our ML expertise will drive your business forward.",
+    "image": "/about.svg",
+    "paragraph": "Tech Stack for ML Development:"
+  },
+  "AboutData": [
+    {
+      "title": "TensorFlow"
+    },
+    {
+      "title": "Scikit-Learn"
+    },
+    {
+      "title": "PyTorch"
+    },
+    {
+      "title": "XGBoost"
+    }
+  ],
+  "EaseBanner": {
+    "title": "How can we ease your journey?",
+    "subtitle": "We're here to simplify your journey into the world of Machine Learning, making complex technology accessible and valuable for your business. Let's collaborate to turn your ML challenges into strategic advantages."
+  },
+  "ReasonBanner": {
+    "title": "Need Reasons to Choose Alumeltech?",
+    "backgroundImage": "/service/jokerbanner.png",
+    "leftImage": "/service/joker.svg",
+    "productCount": "270",
+    "productText": "PRODUCTS",
+    "softwareDevelopedCount": "165",
+    "softwareText": "SOFTWARES DEVELOPED",
+    "webDesignCount": "115",
+    "webText": "WEB DESIGNS"
+  },
+  "ReasonData": [
+    {
+      "title":"Tech-Driven Excellence"
+    },
+    {
+      "title":"Client-Centric Approach"
+    },
+    {
+      "title":"All Experts in One Place"
+    },
+    {
+      "title":"Effective Synergy"
+    },
+    {
+      "title":"Scalable Team"
+    },
+    {
+      "title": "A Comprehensive Suite of Services"
+    },
+    {
+      "title": "Strong Expertise"
+    },
+    {
+      "title": "Data Security and Protection"
+    },
+    {
+      "title": "Strategic Solutions for Competitive Edge"
+    }
+  ],
+  "DevelopmentBanner": {
+    "title": "Industries We love to Serve",
+    "subtitle": "Our blockchain application development services vary across but are not limited to:",
+    "centerContent": "As a web app development company, we offer top-notch medical and pharmaceutical app development services to enterprises across the world. Our expertise in the custom web application development field enables us to deliver comprehensive healthcare software development services  such as Practice Management Systems (PMS) and Electronic Health Records (EHR) systems, telemedicine platforms, billing, insurance verification software tools, etc., capable of meeting your custom business requirements.",
+    "buttonName": "Work with us",
+    "buttonLink": "/"
+  },
+  "DevelopmentHeaderLeft": [
+    {
+      "image": "/Health.svg",
+      "title": "Travel Apps"
+    },
+    {
+      "image": "/FineTech.svg",
+      "title": "Fintech Apps"
+    },
+    {
+      "image": "/Factory.svg",
+      "title": "Dating Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "RealEstate Apps"
+    }
+  ],
+  "DevelopmentHeaderRight": [
+    {
+      "image": "/Logistics.svg",
+      "title": "Automobile Apps"
+    },
+    {
+      "image": "/Ecommerce.svg",
+      "title": "E-commerce & Retail Apps"
+    },
+    {
+      "image": "/Factory.svg",
+      "title": "Media & Entertainment Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "Healthcare & Telehealth Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "Restaurants Management Apps"
+    }
+  ],
+  "ProcessBanner": {
+    "title": "Our Proven ML Development Process"
+  },
+  "ProcessData": [
+    {
+      "id": 1,
+      "title": "Requirement Analysis",
+      "content": "We understand your business goals and ML needs to define the project scope."
+    },
+    {
+      "id": 2,
+      "title": "Strategic Planning",
+      "content": "A comprehensive strategy outlines the ML solution, resources, and timelines."
+    },
+    {
+      "id": 3,
+      "title": "Data Preparation",
+      "content": "We gather and prepare data for ML model training, ensuring accuracy."
+    },
+    {
+      "id": 4,
+      "title": "Model Development",
+      "content": "Our ML experts create and fine-tune ML models tailored to your objectives."
+    },
+    {
+      "id": 5,
+      "title": "Testing and Validation",
+      "content": "Rigorous testing and validation ensure ML models perform effectively."
+    },
+    {
+      "id": 6,
+      "title": "Deployment and Integration",
+      "content": "We seamlessly deploy ML solutions into your existing systems."
+    },
+    {
+      "id": 7,
+      "title": "Ongoing Support",
+      "content": "Post-launch, we provide continuous support, updates, and improvements to ensure ML success."
+    }
+  ],
+  "FaqBanner": {
+    "title": "Questions in Mind? 🤔",
+    "subtitle": "",
+    "buttonName": "Book Consultation Session",
+    "buttonLink": "/"
+  },
+  "FaqData": [
+    {
+      "id": 1,
+      "title": "Why should my business invest in machine learning?",
+      "content":"ML enhances decision-making, automates tasks, and drives innovation for business growth."
+    },
+    {
+      "id": 2,
+      "title": "Can you develop custom ML solutions for my industry-specific needs?",
+      "content": "Absolutely, we specialize in tailoring ML solutions to meet your unique requirements."
+    },
+    {
+      "id": 3,
+      "title": "How long does it take to develop an ML solution?",
+      "content": "Project timelines vary based on complexity; we'll provide estimates during initial discussions."
+    },
+    {
+      "id": 4,
+      "title": "Is ML secure for sensitive data handling?",
+      "content": "Yes, we prioritize data security and adhere to best practices for data protection."
+    },
+    {
+      "id": 5,
+      "title": "Can ML be integrated into our existing systems?",
+      "content":"We can seamlessly integrate ML into your current infrastructure for enhanced functionality."
+    },
+    {
+      "id": 6,
+      "title":"What ongoing support is offered for ML solutions?",
+      "content":"We provide comprehensive post-launch support, including updates, maintenance, and performance enhancements."
+    }
+  ],
+  "AssuranceBanner": {
+    "title": "Zuca’s Assurance as a Web App Development Company",
+    "image": "/AssuraceBanner.png",
+    "buttonLink": "/",
+    "buttonName": "Work with us",
+    "sideImage": "/AssuranceImage.svg"
+  },
+  "AssuranceData": [
+    {
+      "title": "A Quality-First Approach",
+      "subtitle": "Our team is capable of delivering immersive web experiences, magnifying digital transformation",
+      "icon": "/Approach.svg"
+    },
+    {
+      "title": "Steering Web Complexities",
+      "subtitle": "Get your hands on world-class web apps that are capable of driving market disruption",
+      "icon": "/Complexity.svg"
+    },
+    {
+      "title": "Multiple Engagement Model",
+      "subtitle": "Choose your business model as per your budget, essentialities and requirements",
+      "icon": "/Model.svg"
+    }
+  ]
+}

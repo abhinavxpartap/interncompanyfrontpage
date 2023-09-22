@@ -1,0 +1,222 @@
+{
+  "BannerData": {
+    "title": "Transforming Industries with Industry 4.0 Solutions",
+    "subtitle": "Your Challenges, Our Expertise – Leading the Fourth Industrial Revolution for Your Success",
+    "backgroundImage": "/industry/1.svg",
+    "ButtonName": "Show me how",
+    "ButtonHref": "/"
+  },
+  "AboutBanner": {
+    "title": "Empower Your Business with Industry 4.0 Solutions",
+    "subtitle": "At AlumelTech, we understand the intricate demands of Industry 4.0 and the transformative potential it holds. Our Industry 4.0 solutions are designed to empower your business by integrating advanced technologies like IoT, AI, data analytics, and automation. Whether you seek enhanced productivity, efficiency, or agility, our Industry 4.0 expertise will elevate your operations.",
+    "image": "/about.svg",
+    "paragraph": "Tech Stack for Industry 4.0 Solutions:"
+  },
+  "AboutData": [
+    {
+      "title": "IoT Sensors"
+    },
+    {
+      "title": "Artificial Intelligence"
+    },
+    {
+      "title": "Big Data Analytics"
+    },
+    {
+      "title": "Robotics and Automation"
+    }
+  ],
+  "EaseBanner": {
+    "title": "How can we ease your journey?",
+    "subtitle": "We're here to simplify your Industry 4.0 journey, making the adoption of cutting-edge technologies seamless and beneficial for your business. Let's collaborate to turn your Industry 4.0 challenges into strategic advantages."
+  },
+  "ReasonBanner": {
+    "title": "Need Reasons to Choose Alumeltech?",
+    "backgroundImage": "/service/jokerbanner.png",
+    "leftImage": "/service/joker.svg",
+    "productCount": "270",
+    "productText": "PRODUCTS",
+    "softwareDevelopedCount": "165",
+    "softwareText": "SOFTWARES DEVELOPED",
+    "webDesignCount": "115",
+    "webText": "WEB DESIGNS"
+  },
+  "ReasonData": [
+    {
+      "title":"Tech-Driven Excellence"
+    },
+    {
+      "title":"Client-Centric Approach"
+    },
+    {
+      "title":"All Experts in One Place"
+    },
+    {
+      "title":"Effective Synergy"
+    },
+    {
+      "title":"Scalable Team"
+    },
+    {
+      "title": "A Comprehensive Suite of Services"
+    },
+    {
+      "title": "Strong Expertise"
+    },
+    {
+      "title": "Data Security and Protection"
+    },
+    {
+      "title": "Strategic Solutions for Competitive Edge"
+    }
+  ],
+  "DevelopmentBanner": {
+    "title": "Industries We love to Serve",
+    "subtitle": "Our blockchain application development services vary across but are not limited to:",
+    "centerContent": "As a web app development company, we offer top-notch medical and pharmaceutical app development services to enterprises across the world. Our expertise in the custom web application development field enables us to deliver comprehensive healthcare software development services  such as Practice Management Systems (PMS) and Electronic Health Records (EHR) systems, telemedicine platforms, billing, insurance verification software tools, etc., capable of meeting your custom business requirements.",
+    "buttonName": "Work with us",
+    "buttonLink": "/"
+  },
+  "DevelopmentHeaderLeft": [
+    {
+      "image": "/Health.svg",
+      "title": "Travel Apps"
+    },
+    {
+      "image": "/FineTech.svg",
+      "title": "Fintech Apps"
+    },
+    {
+      "image": "/Factory.svg",
+      "title": "Dating Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "RealEstate Apps"
+    }
+  ],
+  "DevelopmentHeaderRight": [
+    {
+      "image": "/Logistics.svg",
+      "title": "Automobile Apps"
+    },
+    {
+      "image": "/Ecommerce.svg",
+      "title": "E-commerce & Retail Apps"
+    },
+    {
+      "image": "/Factory.svg",
+      "title": "Media & Entertainment Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "Healthcare & Telehealth Apps"
+    },
+    {
+      "image": "/Education.svg",
+      "title": "Restaurants Management Apps"
+    }
+  ],
+  "ProcessBanner": {
+    "title": "Our Proven Industry4.0 Process"
+  },
+  "ProcessData": [
+    {
+      "id": 1,
+      "title": "Requirement Analysis",
+      "content": "We dive deep into your business objectives to define the scope of your Industry 4.0 project."
+    },
+    {
+      "id": 2,
+      "title": "Strategic Planning",
+      "content": "We create a comprehensive strategy outlining the Industry 4.0 solution, resources, and timelines."
+    },
+    {
+      "id": 3,
+      "title": "Technology Selection",
+      "content": "We identify the right mix of technologies to achieve your Industry 4.0 goals."
+    },
+    {
+      "id": 4,
+      "title": "Software and Hardware Development",
+      "content": "Our experts develop custom software and select hardware components tailored to your needs."
+    },
+    {
+      "id": 5,
+      "title": "Integration and Deployment",
+      "content": "We seamlessly integrate Industry 4.0 solutions into your existing systems."
+    },
+    {
+      "id": 6,
+      "title": "Testing and Validation",
+      "content": "Rigorous testing and validation ensure your Industry 4.0 systems perform effectively."
+    },
+    {
+      "id": 7,
+      "title": "Support and Maintenance",
+      "content": "We deploy the solution, provide training, and offer ongoing support and maintenance for Industry 4.0 success."
+    }
+  ],
+  "FaqBanner": {
+    "title": "Questions in Mind? 🤔",
+    "subtitle": "",
+    "buttonName": "Book Consultation Session",
+    "buttonLink": "/"
+  },
+  "FaqData": [
+    {
+      "id": 1,
+      "title": "Why is Industry 4.0 essential for my business?",
+      "content":"Industry 4.0 enhances productivity, efficiency, and competitiveness through advanced technologies."
+    },
+    {
+      "id": 2,
+      "title": "Can you tailor Industry 4.0 solutions to my specific industry?",
+      "content": "Absolutely, we specialize in customizing Industry 4.0 solutions to meet your industry's unique requirements."
+    },
+    {
+      "id": 3,
+      "title": "How long does it take to implement an Industry 4.0 solution?",
+      "content": "Project timelines vary based on complexity; we'll provide estimates during initial discussions."
+    },
+    {
+      "id": 4,
+      "title": "Is data security a concern in Industry 4.0?",
+      "content": "We prioritize data security and adhere to the highest standards to protect your business."
+    },
+    {
+      "id": 5,
+      "title": "Can I integrate Industry 4.0 technologies into my existing infrastructure?",
+      "content":"Yes, we seamlessly integrate Industry 4.0 solutions into your current systems."
+    },
+    {
+      "id": 6,
+      "title":"What ongoing support do you offer for Industry 4.0 solutions?",
+      "content":"We provide comprehensive post-launch support, including updates, maintenance, and performance enhancements."
+    }
+  ],
+  "AssuranceBanner": {
+    "title": "Zuca’s Assurance as a Web App Development Company",
+    "image": "/AssuraceBanner.png",
+    "buttonLink": "/",
+    "buttonName": "Work with us",
+    "sideImage": "/AssuranceImage.svg"
+  },
+  "AssuranceData": [
+    {
+      "title": "A Quality-First Approach",
+      "subtitle": "Our team is capable of delivering immersive web experiences, magnifying digital transformation",
+      "icon": "/Approach.svg"
+    },
+    {
+      "title": "Steering Web Complexities",
+      "subtitle": "Get your hands on world-class web apps that are capable of driving market disruption",
+      "icon": "/Complexity.svg"
+    },
+    {
+      "title": "Multiple Engagement Model",
+      "subtitle": "Choose your business model as per your budget, essentialities and requirements",
+      "icon": "/Model.svg"
+    }
+  ]
+}

@@ -33,7 +33,7 @@ const BlockChainPage: React.FC = () => {
                     buttonName={pageData.BannerData.buttonName}
                     buttonLink={pageData.BannerData.buttonLink}
                 />
-                <div style={{background:"#F9FBFF"}} >
+                <div style={{background: "#F9FBFF"}}>
                     <IndustriesAbout
                         title={pageData.AboutBanner.title}
                         image={pageData.AboutBanner.image}
@@ -49,13 +49,19 @@ const BlockChainPage: React.FC = () => {
                         data={pageData.DevelopmentData}
                     />
                     <Float/>
-                    <SuccesStory/>
+                    <div className="md:py-[30px] py-0">
+                        <SuccesStory/>
+
+                    </div>
                     <IndustriesTechnology
                         title={pageData.TechnologyBanner.title}
                         subtitle={pageData.TechnologyBanner.subtitle}
                         data={pageData.TechnologyData}
                     />
-                    <ServiceTech/>
+                    <div className="pb-[30px]">
+                        <ServiceTech/>
+
+                    </div>
                     <IndustriesEstimation
                         image={pageData.EstimationBanner.image}
                         title={pageData.EstimationBanner.title}
@@ -69,12 +75,13 @@ const BlockChainPage: React.FC = () => {
                         title={pageData.Faq.title}
                         spantitle={pageData.Faq.spantitle}
                     />
-                    <div className="max-w-[1377.5px] mx-auto">
+                    <div className="max-w-[1377.5px] md:py-[50px] mx-auto">
                         <div className=" w-[100%] flex flex-col px-[20px] md:px-[40px] mb-[30px]">
-                            <h1 className="text-[#151448] text-center mb-[25px]  text-[30px] md:text-[60px] font-semibold">Resources & Articles </h1>
+                            <h1 className="text-[#151448] text-center mb-[25px]  text-[30px] md:text-[60px] font-semibold">Resources
+                                & Articles </h1>
                             <div className="w-[100%] mx-auto md:mx-0">
                                 <div className="w-[100%] gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                                    {Data.BlogData.slice(0, 3).map((item, index:number) => (
+                                    {Data.BlogData.slice(0, 3).map((item, index: number) => (
                                         <BlogCards
                                             key={index}
                                             AuthorName={item.AuthorName}
@@ -91,7 +98,7 @@ const BlockChainPage: React.FC = () => {
                         </div>
                     </div>
                     <FreeQuotation/>
-                    <FixedButton />
+                    <FixedButton/>
 
                     <Footer/>
                 </div>

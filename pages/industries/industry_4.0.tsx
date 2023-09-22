@@ -49,13 +49,19 @@ const industryPage: React.FC = () => {
                         data={pageData.DevelopmentData}
                     />
                     <Float/>
-                    <SuccesStory/>
+                    <div className="md:py-[30px] py-0">
+                        <SuccesStory/>
+
+                    </div>
                     <IndustriesTechnology
                         title={pageData.TechnologyBanner.title}
                         subtitle={pageData.TechnologyBanner.subtitle}
                         data={pageData.TechnologyData}
                     />
-                    <ServiceTech/>
+                    <div className="pb-[30px]">
+                        <ServiceTech/>
+
+                    </div>
                     <IndustriesEstimation
                         image={pageData.EstimationBanner.image}
                         title={pageData.EstimationBanner.title}
@@ -69,7 +75,7 @@ const industryPage: React.FC = () => {
                         title={pageData.Faq.title}
                         spantitle={pageData.Faq.spantitle}
                     />
-                    <div className="max-w-[1377.5px] mx-auto">
+                    <div className="max-w-[1377.5px]  md:py-[50px] mx-auto">
                         <div className=" w-[100%] flex flex-col px-[20px] md:px-[40px] mb-[30px]">
                             <h1 className="text-[#151448] text-center mb-[25px]  text-[30px] md:text-[60px] font-semibold">Resources & Articles </h1>
                             <div className="w-[100%] mx-auto md:mx-0">

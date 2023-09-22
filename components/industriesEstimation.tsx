@@ -35,7 +35,7 @@ export const IndustriesEstimation: React.FC<Estimation> = (props) => {
                   </p>
                 </div>
               ))}
-              <div>
+              <div className="pb-[25px]">
                 <Button
                   onClick={() => router.push(buttonHref)}
                   className="ButtonTransition overflow-hidden text-[14px] md:text-[16px] mt-[15px] md:mt-[20px] font-semibold "

@@ -90,12 +90,12 @@ export const Header= () => {
         }`}
       >
         <div className="max-w-[1377.5px] mx-auto">
-          <div className="flex flex-row  lg:gap-[70px] xl:gap-[200px] 2xl:gap-[250px] items-center ml-[-18px]">
+          <div className="flex flex-row  lg:gap-[70px] xl:gap-[170px] 2xl:gap-[200px] items-center ml-[-18px]">
             <div onClick={() => router.push('/')} className="cursor-pointer">
               <Img
                 src={logo || ''}
                 alt="Header Logo"
-                className="  max-w-[230px]  xl:h-[41px]  lg:h-[35px] md:h-[27px]"
+                className="  max-w-[210px]  xl:h-[41px]  lg:h-[35px] md:h-[27px]"
               />
             </div>
             <div className="flex-1  hidden lg:flex">
@@ -117,7 +117,7 @@ export const Header= () => {
                   href={undefined}
                 />
                 <Dropdown
-                  title="Industries"
+                  title="Technologies"
                   items={headerData.header[2]}
                   open={openResources}
                   isSticky={isSticky}
@@ -196,8 +196,9 @@ export const Header= () => {
                       fontSize: {
                         xs: '10px',
                         sm: '12px',
-                        md: '14px',
-                        lg: '16px',
+                        md: '13px',
+                        lg: '13px',
+                        xl:'16px',
                       },
                       fontWeight: 'bold',
                       textTransform: 'capitalize',
@@ -257,7 +258,7 @@ export const Header= () => {
                 href={undefined}
               />
               <Dropdown
-                title="Industry"
+                title="Technologies"
                 items={headerData.header[2]}
                 open={openResources}
                 isSticky={isSticky}

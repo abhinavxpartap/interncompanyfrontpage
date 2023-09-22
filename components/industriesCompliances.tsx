@@ -15,7 +15,7 @@ export const IndustriesCompliances: React.FC<Compliance> = (props) => {
             <p className="text-white font-normal pt-[10px] md:pt-[20px] text-[14px] md:text-[16px]">
               {subtitle}
             </p>
-            <div className="w-[300px] mt-[20px] grid grid-cols-3 gap-[10px]">
+            <div className="max-w-[400px] mt-[20px] grid grid-cols-3 gap-[10px]">
               {data.map((item, index: number) => (
                 <div key={index}>
                   <p className="font-medium text-[16px] md:text-[18px] text-white">

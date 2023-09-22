@@ -25,7 +25,7 @@ export const OurBrands: React.FC = () => {
             </span>
                     </h1>
                 </div>
-                <div className="carousel-container">
+                <div className="carousel-container mt-[10px]">
                     <div className="carousel-track">
                         {CompanyImage.map((item: BrandData, index) => (
                             <div

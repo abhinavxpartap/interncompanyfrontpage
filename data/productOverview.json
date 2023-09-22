@@ -4,49 +4,17 @@
     "subtitle": " At Alumeltech, we don't just dream, architect, design, & develop. We are passionate individuals on a mission to empower you with cutting-edge AI solutions and data-driven strategies that redefine possibilities and guarantee exceptional outcomes",
     "backgroundImage": "/service/jokerbanner.png",
     "leftImage": "/service/joker.svg",
+    "Q1": "How Can I Trust Alumel tech?",
+    "A1": "You will be only working with industry experts with years of experience and deep tech knowledge to your projects.",
+    "Q2": "Are your solutions tailored to my needs?",
+    "A2": "Yes, every solution we create is customized to meet your specific needs and goals.",
+    "Q3": "Can you solve my tech Challenges?",
+    "A3": "Absolutely! Partner with us to conquer your most complex tech hurdles and achieve AI & Data Driven Solutions.",
     "productCount": "270",
     "productText": "PRODUCTS",
     "softwareDevelopedCount": "165",
     "softwareText": "SOFTWARES DEVELOPED",
     "webDesignCount": "115",
     "webText": "WEB DESIGNS"
-  },
-  "reasonData":[
-    {
-      "title":"Tech-Driven Excellence",
-      "Content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-    },
-    {
-      "title":"Client-Centric Approach",
-      "Content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-    },
-    {
-      "title":"All Experts in One Place",
-      "Content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-    },
-    {
-      "title":"Effective Synergy",
-      "Content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-    },
-    {
-      "title":"Scalable Team",
-      "Content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-    },
-    {
-      "title": "A Comprehensive Suite of Services",
-      "Content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-    },
-    {
-      "title": "Strong Expertise",
-      "Content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-    },
-    {
-      "title": "Data Security and Protection",
-      "Content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-    },
-    {
-      "title": "Strategic Solutions for Competitive Edge",
-      "Content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-    }
-  ]
+  }
 }

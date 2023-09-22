@@ -3,7 +3,6 @@ import {Banner} from '../components/Banner';
 import data from '../data/homepage.json';
 import Head from "next/head";
 import {OurBrands} from '../components/ourBrands';
-import ProductOverview from '../components/Product Overview';
 import React from 'react';
 import {Footer} from '../components/footer';
 import Team from '../components/Expert team';
@@ -14,6 +13,7 @@ import DemoForm from '../components/Demo Form';
 import seoData from "../data/seoData.json";
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
+import HomeProductOverview from "../components/HomeProductOverview";
 
 const Home: NextPage = () => {
     return (
@@ -36,7 +36,7 @@ const Home: NextPage = () => {
                 <div>
                     <OurBrands/>
                 </div>
-                <ProductOverview/>
+                <HomeProductOverview/>
                 <div
                     style={{background: '#F9FBFF'}}
                     className="bg-cover bg-center bg-no-repeat relative  block"

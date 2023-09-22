@@ -387,6 +387,7 @@ export interface  ourValueArray{
 export interface Faq {
     title: string;
     subtitle: string;
+    buttonName:string;
     buttonLink:string;
     tabData: {
         id: number;

@@ -63,7 +63,7 @@ const DataAnalytics: React.FC = () => {
                          leftImage={pageData.Data.leftImage}
                          productCount={pageData.Data.productCount}
                          productText={pageData.Data.productText}
-                         reasonData={pageData.reasonData}
+                         reasonData={pageData.ReasonData}
                          title={pageData.Data.title}
                         />
 
@@ -89,6 +89,7 @@ const DataAnalytics: React.FC = () => {
                         <ServicesFaq
                             title={dataAnalytics.FaqBanner.title}
                             subtitle={dataAnalytics.FaqBanner.subtitle}
+                            buttonName={dataAnalytics.FaqBanner.buttonName}
                             buttonLink={dataAnalytics.FaqBanner.buttonLink}
                             tabData={dataAnalytics.header}
                         />

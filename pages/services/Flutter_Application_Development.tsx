@@ -80,6 +80,7 @@ const FlutterApplicationPage: React.FC = () => {
                         <ServicesFaq
                             title={pageData.FaqBanner.title}
                             subtitle={pageData.FaqBanner.subtitle}
+                            buttonName={pageData.FaqBanner.buttonName}
                             buttonLink={pageData.FaqBanner.buttonLink}
                             tabData={pageData.FaqData}
                         />

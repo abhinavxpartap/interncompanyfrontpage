@@ -6,7 +6,6 @@ import {ServiceBanner} from "../../components/serviceBanner";
 import {ServiceAbout} from "../../components/servicesAbout";
 import {ServicesDevelopment} from "../../components/servicesDevelopment";
 import {ServicesFaq} from "../../components/serviceFaq";
-import {ServicesAssurance} from "../../components/serviceAssurance";
 import {ServiceTech} from "../../components/servicesTech";
 import {FreeQuotation} from "../../components/freeQuotation";
 import {Footer} from "../../components/footer";
@@ -88,14 +87,6 @@ const Robotpage: React.FC = () => {
                             tabData={pageData.FaqData}
                         />
                     </div>
-                    <ServicesAssurance
-                        image={pageData.AssuranceBanner.image}
-                        title={pageData.AssuranceBanner.title}
-                        buttonName={pageData.AssuranceBanner.buttonName}
-                        buttonLink={pageData.AssuranceBanner.buttonLink}
-                        data={pageData.AssuranceData}
-                        sideImage={pageData.AssuranceBanner.sideImage}
-                    />
                     <ServiceTech/>
                     <div className="pt-[50px]">
                         <FreeQuotation/>

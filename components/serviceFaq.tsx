@@ -42,8 +42,7 @@ const QontoStepIconRoot = styled('div')<{ ownerState: { active?: boolean } }>(
             width: 20,
             height: 20,
             borderRadius: '50%',
-            display: 'flex',
-            border: '1.5px solid #8184EB',
+            display: 'flex'
         },
         '& .QontoStepIcon-active': {
             width: 20,

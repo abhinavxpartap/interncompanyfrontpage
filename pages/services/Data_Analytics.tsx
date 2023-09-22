@@ -88,14 +88,7 @@ const DataAnalyticsPage: React.FC = () => {
                             tabData={pageData.FaqData}
                         />
                     </div>
-                    <ServicesAssurance
-                        image={pageData.AssuranceBanner.image}
-                        title={pageData.AssuranceBanner.title}
-                        buttonName={pageData.AssuranceBanner.buttonName}
-                        buttonLink={pageData.AssuranceBanner.buttonLink}
-                        data={pageData.AssuranceData}
-                        sideImage={pageData.AssuranceBanner.sideImage}
-                    />
+
                     <ServiceTech/>
                     <div className="pt-[50px]">
                         <FreeQuotation/>

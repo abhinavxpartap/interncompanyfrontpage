@@ -2,7 +2,7 @@
   "BannerData": {
     "title": "Uncover Insights, Drive Decisions: Our Data Analytics Expertise",
     "subtitle": "Harness the Power of Data for Informed Choices and Business Growth",
-    "backgroundImage": "/serviceBanner.jpg",
+    "backgroundImage": "/service/banner11.svg",
     "ButtonName": "Show me how",
     "ButtonHref": "/"
   },
@@ -123,7 +123,7 @@
   "FaqBanner": {
     "title": "Questions in Mind? 🤔",
     "subtitle": "We provide end-to-end web app development services, tailored exclusively to solve your unique business challenges.",
-    "buttonName": "Book Consultation Session",
+    "buttonName": "Show Me How",
     "buttonLink": "/"
   },
   "FaqData": [

@@ -92,7 +92,7 @@ export const ServicesFaq: React.FC<Faq> = (props) => {
                         </p>
                         <Button
                             onClick={() => router.push(buttonLink)}
-                            className="ButtonTransition overflow-hidden text-[13px] w-[230px] md:w-[290px] md:text-[16px]  font-semibold "
+                            className="ButtonTransition overflow-hidden text-[13px] w-[190px] md:text-[16px]  font-semibold "
                             sx={{
                                 '&.MuiButtonBase-root': {
                                     backgroundColor: '#8184EB',

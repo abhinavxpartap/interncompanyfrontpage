@@ -2,7 +2,7 @@
   "BannerData": {
     "title": "Supercharge Your Business with Tailored Mobile Apps for Skyrocketing Success",
     "subtitle": "Explore Our Expertise: Custom Mobile Apps, UI/UX Excellence, and Seamless Development for Your Success.",
-    "backgroundImage": "/serviceBanner.jpg",
+    "backgroundImage": "/service/banner4.svg",
     "ButtonName": "Show me how",
     "ButtonHref": "/"
   },
@@ -156,7 +156,7 @@
   "FaqBanner": {
     "title": "Questions in Mind? 🤔",
     "subtitle": "We provide end-to-end web app development services, tailored exclusively to solve your unique business challenges.",
-    "buttonName": "Book Consultation Session",
+    "buttonName": "Show Me How",
     "buttonLink": "/"
   },
   "FaqData": [

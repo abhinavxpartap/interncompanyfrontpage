@@ -14,7 +14,7 @@ export const Director: React.FC<DirectorInterface> = (props) => {
                 <div
                     className="flex md:flex-row md:ml-[80px] md:gap-[90px] md:justify-normal items-center justify-center   text-center flex-col">
                     <div>
-                        <div className=" md:ml-[44px] w-[140px] justify-center items-center mx-auto rounded-full ">
+                        <div className="  w-[140px] justify-center items-center mx-auto rounded-full ">
                             <Img src={icon} alt="w" className="w-auto rounded-full"/>
                         </div>
                         <div className="text-[20px] font-bold text-white">{name}</div>

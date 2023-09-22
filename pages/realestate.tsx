@@ -17,6 +17,7 @@ import {NewPortofilioJourney} from "../components/PortofilioJourney";
 import {PortfolioOurProcess} from "../components/PortfolioOurProcess";
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
+import CaseStudy from "../components/Case Study";
 
 const RealEstate: NextPage = () => {
     return (
@@ -76,6 +77,10 @@ const RealEstate: NextPage = () => {
                 heading={serviceData.ResultNew.heading}
                 subtitle={serviceData.ResultNew.subtitle}
             />
+            <div className="pb-[80px]">
+                <CaseStudy/>
+
+            </div>
             <FixedButton/>
             <Footer/>
 

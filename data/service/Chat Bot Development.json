@@ -2,7 +2,7 @@
   "BannerData": {
     "title": "Transform Your Customer Engagement with Custom Chatbots",
     "subtitle": "Your Needs, Our Expertise – Delivering Innovative Chatbot Solutions",
-    "backgroundImage": "/serviceBanner.jpg",
+    "backgroundImage": "/service/banner8.svg",
     "ButtonName": "Show me how",
     "ButtonHref": "/"
   },
@@ -125,7 +125,7 @@
   "FaqBanner": {
     "title": "Questions in Mind? 🤔",
     "subtitle": "We provide end-to-end web app development services, tailored exclusively to solve your unique business challenges.",
-    "buttonName": "Book Consultation Session",
+    "buttonName": "Show Me How",
     "buttonLink": "/"
   },
   "FaqData": [

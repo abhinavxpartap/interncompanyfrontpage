@@ -11,6 +11,23 @@
     "Q3": "Can you solve my tech Challenges?",
     "A3": "Absolutely! Partner with us to conquer your most complex tech hurdles and achieve AI & Data Driven Solutions.",
     "productCount": "270",
+    "ReasonData": [
+      {
+        "title":"User-Centric Design Excellence"
+      },
+      {
+        "title":"Expert UI/UX Designers"
+      },
+      {
+        "title":"Cutting-Edge Tools and Technologies"
+      },
+      {
+        "title":"Ongoing Support and Optimization"
+      },
+      {
+        "title":"Measurable User Engagement"
+      }
+    ],
     "productText": "PRODUCTS",
     "softwareDevelopedCount": "165",
     "softwareText": "SOFTWARES DEVELOPED",

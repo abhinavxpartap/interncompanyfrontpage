@@ -63,7 +63,7 @@ const DataAnalytics: React.FC = () => {
                          leftImage={pageData.Data.leftImage}
                          productCount={pageData.Data.productCount}
                          productText={pageData.Data.productText}
-                         reasonData={pageData.reasonData}
+                         reasonData={pageData.ReasonData}
                          title={pageData.Data.title}
                         />
 

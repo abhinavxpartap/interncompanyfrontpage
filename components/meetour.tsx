@@ -25,13 +25,13 @@ export const Meetour = () => {
             {Team.header.map((item:TeamData, index:number) => (
                 <div
                     key={index}
-                    className="bg-white shad5 rounded-[10px] mt-[45px] md:w-[265px] w-[170px] justify-center items-center md:p-[20px] md:h-[300px] h-[200px]"
+                    className="bg-white shad5 rounded-[10px] mt-[45px] md:w-[265px] w-[170px] justify-center items-center md:p-[20px] md:h-[330px] h-[240px]"
                 >
                   <div>
                     <Img
                         src={item.imageSrc}
                         alt={item.name}
-                        className="md:w-auto w-[160px] h-[190px] rounded-[12px] md:ml-0 ml-[4px]"
+                        className="md:w-auto w-[160px] h-auto rounded-[12px] md:mt-0 mt-[5px] md:ml-0 ml-[4px]"
                     />
                   </div>
                   <div className="text-center text-[18px] mt-[15px] font-semibold">

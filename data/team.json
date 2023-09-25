@@ -7,42 +7,42 @@
     {
       "name": "Manish Sarsawat",
       "role": "CEO & Founder",
-      "imageSrc": "/man.svg"
+      "imageSrc": "/banner/avatar.jpg"
     },
     {
       "name": "Sahil Sharma",
       "role": "CEO & Founder",
-      "imageSrc": "/man.svg"
+      "imageSrc": "/banner/avatar.jpg"
     },
     {
       "name": "Avish Gumber",
       "role": "AI&ML Developer",
-      "imageSrc": "/man.svg"
+      "imageSrc": "/banner/avatar.jpg"
     },
     {
       "name": "Lakki Kumar ",
       "role": "Full Stack developer",
-      "imageSrc": "/man.svg"
+      "imageSrc": "/banner/avatar.jpg"
     },
     {
       "name": "Md Shahanawaj ",
       "role": "Full Stack developer",
-      "imageSrc": "/man.svg"
+      "imageSrc": "/banner/avatar.jpg"
     },
     {
       "name": "Gokul Raj  ",
       "role": "UI/UX",
-      "imageSrc": "/man.svg"
+      "imageSrc": "/banner/avatar.jpg"
     },
     {
       "name": "Asim Ansari",
       "role": "Full Stack developer",
-      "imageSrc": "/man.svg"
+      "imageSrc": "/banner/avatar.jpg"
     },
     {
       "name": "Nishant Singh",
       "role": "Business Development",
-      "imageSrc": "/man.svg"
+      "imageSrc": "/banner/avatar.jpg"
     }
   ]
 }

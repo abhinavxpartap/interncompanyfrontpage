@@ -3,7 +3,7 @@ import {Img} from "../../utils/Img";
 
 const FixedButton = () => {
     const handleClick = () => {
-        const phoneNumber = '917017753736';
+        const phoneNumber = '919814490141';
         const whatsappLink = `https://wa.me/${phoneNumber}`;
 
         window.open(whatsappLink, '_blank');

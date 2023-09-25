@@ -17,6 +17,7 @@ import Head from "next/head";
 import SuccesStory from "../components/SuccesStory";
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
+import CaseStudy from "../components/Case Study";
 const Home: NextPage = () => {
   return (
       <>
@@ -52,7 +53,7 @@ const Home: NextPage = () => {
         style={{ background: '#F9FBFF' }}
         className="bg-cover bg-center pb-[100px] -z-0 bg-no-repeat relative  block"
       >
-        <SuccesStory />
+        <CaseStudy />
       </div>
       <Letswork
         image={aboutUs.Lets.backgroundImage}

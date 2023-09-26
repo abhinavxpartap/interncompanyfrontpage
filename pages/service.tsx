@@ -77,7 +77,7 @@ const ServicePage: React.FC = () => {
                     <OurBrands/>
                     <FreeQuotation/>
                     <FixedButton />
-                    <Chat/>
+                    {/*<Chat/>*/}
 
                     <Footer/>
                 </div>

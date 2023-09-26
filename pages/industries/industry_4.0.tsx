@@ -93,7 +93,7 @@ const Industrypage: React.FC = () => {
                         <FreeQuotation/>
                     </div>
                     <FixedButton/>
-                    <Chat/>
+                    {/*<Chat/>*/}
 
                     <Footer/>
                 </div>

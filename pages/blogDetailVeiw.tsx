@@ -367,7 +367,8 @@ const BlogDetailVeiw: React.FC = () => {
         </div>
         <GetStories />
         <FixedButton />
-<Float/>                    <Chat/>
+<Float/>
+        {/*<Chat/>*/}
 
         <Footer />
       </div>

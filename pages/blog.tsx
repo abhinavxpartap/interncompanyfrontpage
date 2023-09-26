@@ -201,7 +201,7 @@ const BlogPage: React.FC = () => {
         </div>
         <GetStories />
         <FixedButton />
-        <Chat/>
+        {/*<Chat/>*/}
 
         <Footer />
       </div>

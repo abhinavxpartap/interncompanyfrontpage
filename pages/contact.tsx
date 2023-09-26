@@ -39,7 +39,7 @@ const Home: NextPage = () => {
                 />
             </div>
             <FixedButton/>
-            <Chat/>
+            {/*<Chat/>*/}
 
             <Footer/>
         </div>

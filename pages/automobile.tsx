@@ -81,7 +81,7 @@ const Portfolio: NextPage = () => {
                 <CaseStudy/>
 
             </div>
-            <Chat/>
+            {/*<Chat/>*/}
 
             <FixedButton/>
             <Footer/>

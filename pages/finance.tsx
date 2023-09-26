@@ -81,7 +81,7 @@ const Portfolio: NextPage = () => {
 
             </div>            <FixedButton/>
             <Footer/>
-            <Chat/>
+            {/*<Chat/>*/}
 
         </>
     )

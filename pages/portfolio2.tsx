@@ -20,7 +20,8 @@ const Portfolio2: NextPage = () => {
 
                 <PortfolioBanner2 />
             <FixedButton />
-<Float/>                    <Chat/>
+<Float/>
+            {/*<Chat/>*/}
 
             <Footer/>
 

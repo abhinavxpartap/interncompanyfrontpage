@@ -94,7 +94,7 @@ const ProductDesignPage: React.FC = () => {
                         <FreeQuotation/>
                     </div>
                     <FixedButton/>
-                    <Chat/>
+                    {/*<Chat/>*/}
 
                     <Footer/>
                 </div>

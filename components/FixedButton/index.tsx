@@ -12,7 +12,7 @@ const FixedButton = () => {
     return (<>
 
         <button
-            className="fixed bottom-20 z-[1000]  right-4  pulse py-3 px-1  "
+            className="fixed bottom-4 z-[1000]  right-2  pulse py-3 px-1  "
             onClick={handleClick}>
             <Img src="/casestudy/whatsapp.svg" alt="" className=" w-[60px]"/>
 

@@ -65,7 +65,7 @@ const Home: NextPage = () => {
                   <FreeQuotation />
 
               </div>
-              <Chat/>
+              {/*<Chat/>*/}
 
               <FixedButton />
 

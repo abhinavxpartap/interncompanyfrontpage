@@ -81,7 +81,8 @@ const RealEstate: NextPage = () => {
             <div className="pb-[80px]">
                 <CaseStudy/>
 
-            </div>                    <Chat/>
+            </div>
+            {/*<Chat/>*/}
 
             <FixedButton/>
             <Footer/>

@@ -171,13 +171,16 @@ export const Footer: React.FC = () => {
                 <div className=" flex flex-col  gap-y-[13px]">
                     <div className=" flex flex-col  group gap-y-[13px]">
                         <div
-                            className="text-[18px] group-hover:text-[#6E73FF] transition-colors duration-300 font-bold">Discover
+                            className="text-[18px] group-hover:text-[#6E73FF] transition-colors duration-300 font-bold">
+                            Discover
                             Resources for You
                         </div>
-                        {renderIndustry()}
+                            {renderIndustry()}
+
+
                     </div>
                     <div className="text-[18px]  mt-[50px] font-bold">Follow Us</div>
-                    <div className="flex md:gap-[20px]    gap-[7px] flex-row">
+                    <div className="flex md:gap-[20px]     gap-[7px] flex-row">
                         {renderSocialIcons()}
                     </div>
 

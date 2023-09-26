@@ -109,8 +109,8 @@ export const ServicesFaq: React.FC<Faq> = (props) => {
                                 },
                             }}
                         >
-                            {buttonName}
-                        </Button>
+                            <a href="https://calendly.com/sahillshrm/30min" target="_blank" rel="noopener noreferrer">
+                                {buttonName}                    </a>                        </Button>
                     </div>
                     <div className="flex flex-row w-[85vw] lg:w-[55vw]">
                         <div className="w-[100%]">

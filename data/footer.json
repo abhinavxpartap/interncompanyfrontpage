@@ -164,7 +164,7 @@
       "icon": "/insta.svg",
       "alt": "insta",
       "id": 1,
-      "link": "https://www.google.com"
+      "link": ""
     },
     {
       "icon": "/linkedin.svg",
@@ -176,13 +176,13 @@
       "icon": "/facebook1.svg",
       "alt": "facebook",
       "id": 3,
-      "link": "https://www.google.com"
+      "link": ""
     },
     {
       "icon": "/twitter2.svg",
       "alt": "twitter",
       "id": 4,
-      "link": "https://www.google.com"
+      "link": ""
     }
   ],
   "companyContent": {

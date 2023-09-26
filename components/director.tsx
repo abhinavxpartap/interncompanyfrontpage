@@ -59,7 +59,7 @@ export const Director: React.FC<DirectorInterface> = (props) => {
                                 }}
                             >
                                 <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
-                         Schedule consultation                  </a>                            </Button>
+                         Show Me How                 </a>                            </Button>
                         </div>
                     </div>
                 </div>

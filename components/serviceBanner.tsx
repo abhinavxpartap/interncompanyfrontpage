@@ -46,7 +46,7 @@ export const ServiceBanner: React.FC<ServiceBannerInterface> = (props) => {
               },
             }}
           >
-              <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendly.com/sahillshrm/30min" target="_blank" rel="noopener noreferrer">
                   {buttonName}
               </a>
           </Button>

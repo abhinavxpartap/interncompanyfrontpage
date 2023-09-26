@@ -69,7 +69,7 @@ export const Banner: React.FC<BannerDataInterface> = (props) => {
                                 },
                             }}
                         >
-                            <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
+                            <a href="https://calendly.com/sahillshrm/30min" target="_blank" rel="noopener noreferrer">
                             {button}                    </a>
 
                 </Button>

@@ -165,8 +165,7 @@ export const FreeQuotation = () => {
                       },
                     }}
                   >
-                    Book my Demo
-                  </Button>
+Show Me How</Button>
                 </div>
               </div>
             </div>

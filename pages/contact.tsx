@@ -8,6 +8,7 @@ import {OurBrands} from '../components/ourBrands';
 import SuccesStory from '../components/SuccesStory';
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
+import CaseStudy from "../components/Case Study";
 
 const Home: NextPage = () => {
     return (
@@ -30,7 +31,7 @@ const Home: NextPage = () => {
                 style={{background: '#F9FBFF'}}
                 className='bg-cover bg-center pb-[120px] -z-0 bg-no-repeat relative  block'
             >
-                <SuccesStory/>
+                <CaseStudy/>
             </div>
             <div className='bg-cover TalkTo bg-center bg-no-repeat  relative'>
                 <TalkTo title={ContactData.TalkTo.title}

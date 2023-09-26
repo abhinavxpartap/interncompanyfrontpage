@@ -61,7 +61,7 @@ export const ProjectChallangesNew:React.FC<Result> = (props) => {
                         }}
                     >
                         <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
-                        Work With Us                   </a>                    </Button>
+                     Show Me How                  </a>                    </Button>
                 </div>
             </div>
         </div>

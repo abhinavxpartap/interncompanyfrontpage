@@ -41,7 +41,7 @@ export const PortfolioBanner: React.FC<Port> = (props) => {
             }}
           >
             <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
-          Expand Your Bussiness                   </a>          </Button>
+         Show Me How                 </a>          </Button>
         </div>
       </div>
     </div>

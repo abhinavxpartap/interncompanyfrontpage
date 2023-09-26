@@ -14,6 +14,7 @@ import seoData from "../data/seoData.json";
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
 import HomeProductOverview from "../components/HomeProductOverview";
+import Chat from "../components/Chat";
 
 const Home: NextPage = () => {
     return (
@@ -63,6 +64,8 @@ const Home: NextPage = () => {
                     style={{background: '#F9FBFF'}}
                     className="bg-cover bg-center -z-0 bg-no-repeat relative  block"
                 >
+                    <Chat/>
+
                     <Testimonials/>
                 </div>
                 <div

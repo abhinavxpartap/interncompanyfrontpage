@@ -1,0 +1,290 @@
+{
+  "Banner": {
+    "title": "Transforming Ecommerce: A 40% Sales Boost with AI & Web3 Integration",
+    "image": "/images/logo/portbanner.png"
+  },
+  "TalkTo": {
+    "title": "Enable Unmatched Digital Transformation Seamlessly"
+  },
+  "Director": {
+    "name": " Yacob Sudwarmaji",
+    "company": " Technology Americana Group",
+    "icon": "/director.svg",
+    "address": "(kuwait Food Co.)",
+    "message": "  Alumeltech has been a transformative partner for Dream Homes Realty. Their expertise in web design and software development, powered by AI and data analytics, revolutionized our online presence. The lightning-fast website they crafted significantly improved user experience, and their AI-driven recommendations led to a 30% increase in property inquiries and sales. Their team's dedication and innovative approach have been invaluable. We're thrilled with the results and the future opportunities this partnership holds..",
+    "post": "Director - Restaurant",
+    "image": "/images/logo/director.svg",
+    "mobileImage": "/Testimonial.svg"
+  },
+  "NewJourney": {
+    "heading": "Our Journey with Ecommerce Ventures:",
+    "title1": "Key Features:",
+    "title2": "Our Approach:",
+    "subtitle2": "At Alumeltech, we embarked on this transformative project with Ecommerce Ventures, guided by the common goal of redefining the online shopping experience. Our approach centered around leveraging AI and Web3 technology to create a secure, engaging, and hyper-personalized ecommerce platform.",
+    "Data1": [
+      {
+        "id": 1,
+        "title": "AI-Powered Personalization",
+        "content": " We implemented a state-of-the-art AI recommendation engine that analyzed user behavior, preferences, and purchase history to provide highly personalized product recommendations."
+      },
+      {
+        "id": 2,
+        "title": "Blockchain Integration",
+        "content": "Our team integrated Web3 technology, leveraging blockchain for enhanced security, transparency, and traceability in transactions and supply chain management."
+      },
+      {
+        "id": 3,
+        "title": "NFT Integration",
+        "content": "To foster customer engagement and loyalty, we introduced non-fungible tokens (NFTs) for exclusive product collections and limited-edition items.\n"
+      }
+    ],
+    "Data2": [
+      {
+        "id": 1,
+        "title": "Empathizing with the Vision",
+        "content": "We started by deeply understanding Ecommerce Ventures' vision and objectives, aligning our approach with their unique challenges."
+      },
+      {
+        "id": 2,
+        "title": "Leveraging Data Insights",
+        "content": "We gathered valuable market insights through data analytics, enabling us to make informed decisions throughout the project."
+      },
+      {
+        "id": 3,
+        "title": "AI-Centric Strategy",
+        "content": " Our strategy heavily leaned on AI, integrating sophisticated algorithms for personalized recommendations."
+      },
+      {
+        "id": 4,
+        "title": "Blockchain-Powered Security",
+        "content": "We implemented blockchain for end-to-end security, ensuring trust and transparency in transactions."
+      },
+      {
+        "id": 5,
+        "title": "NFT Integration",
+        "content": "o enhance customer engagement and create a sense of exclusivity, we integrated NFTs into the platform."
+      }
+    ,
+      {
+        "id": 6,
+        "title": "Tech-Powered Execution",
+        "content": "We harnessed cutting-edge technologies like Python, React, and Ethereum to craft a robust, responsive, and secure ecommerce application."
+      },
+      {
+        "id": 7,
+        "title": "Client-Centric Focus",
+        "content": "Our design and development choices revolved around enhancing the user experience, ensuring that every interaction with the platform was seamless and engaging."
+      }, {
+        "id": 8,
+        "title": "Testing and Quality Assurance",
+        "content": "Rigorous testing ensured the platform's performance, security, and scalability met the highest standards."
+      }, {
+        "id": 9,
+        "title": "Deployment and Support",
+        "content": "After thorough testing, we deployed the platform and provided ongoing support to ensure its continued success"
+      }
+    ]
+  },
+  "OurProcessNew": {
+    "heading": "Our Process for Ecommerce Transformation",
+    "Data1": [
+      {
+        "id": 1,
+        "title": "Strategic Consultation",
+        "content": "The journey began with strategic consultations, diving deep into Ecommerce Ventures' objectives and market dynamics. These sessions allowed us to align our technology solutions with their vision.\n"
+      },
+      {
+        "id": 2,
+        "title": "Data-Driven Analysis",
+        "content": "Similar to explorers studying maps, we gathered and analyzed market data and trends, empowering us with insights that fueled our strategic decisions.\n"
+      },  {
+        "id": 3,
+        "title": "AI Implementation",
+        "content": "The heart of our process was AI. We implemented AI-driven solutions that delivered tailored product recommendations, ensuring each user's shopping journey was unique and efficient.\n"
+      },  {
+        "id": 4,
+        "title": "Blockchain Integration",
+        "content": "We seamlessly integrated blockchain technology to enhance security, transparency, and traceability in transactions, creating a safer and more trustworthy shopping environment.\n"
+      },  {
+        "id": 5,
+        "title": "NFT Strategy",
+        "content": "Our NFT strategy involved creating a framework for exclusive product launches and limited-edition items, increasing customer engagement and loyalty.\n"
+      },  {
+        "id": 6,
+        "title": "Tech-Centric Development",
+        "content": "Leveraging cutting-edge technologies like Python, React, and Ethereum, we developed a robust and efficient platform that met the demands of the modern ecommerce market.\n"
+      },  {
+        "id": 7,
+        "title": "User-Centric Design",
+        "content": "Our design choices were centered on delivering an exceptional user experience, ensuring the platform was intuitive, visually appealing, and easy to navigate.\n"
+      },  {
+        "id": 8,
+        "title": "Testing and Quality Assurance",
+        "content": "We meticulously tested every aspect of the system, ensuring it met the highest standards of performance, security, and scalability.\n"
+      },  {
+        "id": 9,
+        "title": "Deployment and Support",
+        "content": "After thorough testing, we deployed the platform and provided training, ensuring a seamless user experience. Ongoing support and maintenance were also offered to guarantee long-term success.\n"
+      }
+
+    ]
+  },
+  "ResultNew": {
+    "heading": "Benefits",
+    "subtitle": "By partnering with us, Ecommerce Ventures not only enhanced their online shopping experience but also achieved tangible business benefits:",
+    "Data": [
+      {
+        "title": "Significant Sales Growth: AI-driven recommendations increased sales by 40%."
+      },{
+        "title": "Enhanced Customer Loyalty: NFTs and blockchain technology fostered customer engagement and trust."
+      },
+      {
+        "title": "Market Competitiveness: With advanced technology integration, Ecommerce Ventures gained a competitive edge in the ecommerce industry."
+      },{
+        "title": "Data-Driven Insights: The platform now provided valuable data for informed decision-making and strategy development."
+      }
+    ]
+  },
+  "Portfolio": {
+    "title": "Web application development process",
+    "subtitle": "Our Solution Development Cycle helps turn your great ideas into profitable business solutions.",
+    "itmes": [
+      {
+        "sideimage1": "/stratergy.svg",
+        "sideimage2": "Strategy & Research",
+        "title": "Web application development process",
+        "description": "",
+        "link": "",
+        "subtitle": "Zuca dives into your business model, market challenges and product positioning, and helps you create a product that delivers unique value."
+      },
+      {
+        "sideimage1": "/stratergy.svg",
+        "sideimage2": "Strategy & Research",
+        "title": "Web application development process",
+        "description": "",
+        "link": "",
+        "subtitle": "Zuca dives into your business model, market challenges and product positioning, and helps you create a product that delivers unique value."
+      },
+      {
+        "sideimage1": "/stratergy.svg",
+        "sideimage2": "Strategy & Research",
+        "title": "Web application development process",
+        "description": "",
+        "link": "",
+        "subtitle": "Zuca dives into your business model, market challenges and product positioning, and helps you create a product that delivers unique value."
+      }
+    ]
+  },
+  "processSteps": [
+    {
+      "number": "1",
+      "title": "Design",
+      "subSteps": [
+        "Wireframe",
+        "User Journey Mapping"
+      ]
+    },
+    {
+      "number": "2",
+      "title": "Development",
+      "subSteps": [
+        "Backend Development",
+        "Architecture Development"
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Support & Maintenance",
+      "subSteps": [
+        "Quality Testing",
+        "Post-launch Maintenance"
+      ]
+    }
+  ],
+  "imagePort": [
+    "/portfolio/m5.svg",
+    "/portfolio/m6.svg",
+    "/portfolio/m7.svg",
+    "/portfolio/m8.svg",
+    "/portfolio/m9.svg",
+    "/portfolio/m10.svg",
+    "/portfolio/m11.svg",
+    "/portfolio/m12.svg"
+  ],
+  "challenges": [
+    {
+      "id": 1,
+      "title": "Design",
+      "description": "With large data sets in the form of multiple food menus and extensive user base in various countries, achieving quick screen transition was a challenge. Our team with its immaculate planning and use of the right tools ensured a much quicker Pizza Hut delivery app screen transition."
+    },
+    {
+      "id": 2,
+      "title": "Operational Changes",
+      "description": "At the starting of the project, there were different operational issues due to product management. Our team keenly studied all the issues across the layers and the legacy system, and resolved the challenge by taking appropriate actions at the right time."
+    }
+  ],
+  "resultNew": {
+    "heading": "The Results",
+    "list": [
+      {
+        "percentage": 40,
+        "title": " Sales Increase",
+        "content": "The implementation of AI-driven personalization led to a significant boost in sales, contributing to a 40% increase in revenue"
+      },
+      {
+        "percentage": 25,
+        "title": "Enhanced Customer Engagement",
+        "content": "The integration of NFTs created excitement and engagement, with customers actively participating in exclusive product releases."
+      },
+      {
+        "percentage": 0,
+        "title": "Improved Security",
+        "content": "Blockchain integration not only ensured the security of transactions but also enhanced trust among customers."
+      }
+    ]
+  },
+  "result": [
+    {
+      "title": "Downloads",
+      "value": "51K+",
+      "description": "Downloads"
+    },
+    {
+      "title": "Conversion Rate Increased",
+      "value": "30%",
+      "description": "Conversion Rate Increased"
+    },
+    {
+      "title": "Screen Transition Time Increased",
+      "value": "7 secs",
+      "description": "Screen Transition Time Increased"
+    }
+  ],
+  "portfolioMain": {
+    "title": " Crafted With Love. Built With Passion",
+    "subtitle": " Zuca offers transformative technology and software solutions to  startups, global brands & Fortune 500 companies. Some of our major  clients include IKEA, Domino, Adidas, KPMG, BCG & Pizza Hut.",
+    "items": [
+      {
+        "image": "/portfolio1.svg",
+        "mobile": "/phoneportfolio.svg",
+        "title": " Pizza App",
+        "subtitle": " Engaging users through a robust and visually appealing food           delivery mobile app",
+        "description": " A research-led brainstorming, enhanced UI/UX & customized development approach transformed the Pizza Hut app into a more efficient & smarter food delivery management system."
+      },
+      {
+        "image": "/portfolio1.svg",
+        "mobile": "/phoneportfolio.svg",
+        "title": " Pizza App",
+        "subtitle": " Engaging users through a robust and visually appealing food           delivery mobile app",
+        "description": " A research-led brainstorming, enhanced UI/UX & customized development approach transformed the Pizza Hut app into a more efficient & smarter food delivery management system."
+      },
+      {
+        "image": "/portfolio1.svg",
+        "mobile": "/phoneportfolio.svg",
+        "title": " Pizza App",
+        "subtitle": " Engaging users through a robust and visually appealing food           delivery mobile app",
+        "description": " A research-led brainstorming, enhanced UI/UX & customized development approach transformed the Pizza Hut app into a more efficient & smarter food delivery management system."
+      }
+    ]
+  }
+}

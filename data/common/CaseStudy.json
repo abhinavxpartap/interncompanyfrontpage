@@ -20,12 +20,40 @@
       "href": "/finance"
     },
     {
+      "heading": "Transforming Travel Booking: 37% More Bookings, Enhanced Security, and Web3 Integration",
+      "imgUrl": "/casestudy/1.svg",
+      "org": "TravelTrips",
+      "description": "Redefining Travel Booking with AI, Cloud, Cybersecurity, and Web3 Integration",
+      "href": "/travel"
+    },
+    {
+      "heading": "Revolutionizing Live Streaming: A 27% Increase in Viewer Engagement and Seamless Monetization",
+      "imgUrl": "/casestudy/1.svg",
+      "org": "HotFlix",
+      "description": "Unleashing the Power of AI and Web3 for an Unmatched Live Streaming Experience",
+      "href": "/hotflix"
+    },
+    {
       "heading": "Accelerating Automobile Industry: 40% Faster Processes, 25% Increase in Efficiency",
       "imgUrl": "/portfolio/car.svg",
       "org": "AutomotiveCo.",
       "description": "A research-led brainstorming, enhanced UI/UX & customized development approach transformed the Pizza Hut app into a more efficient & smarter food delivery management system.",
       "href": "/automobile"
     }
-
+  ,
+    {
+      "heading": "Transforming Ecommerce: A 40% Sales Boost with AI & Web3 Integration",
+      "imgUrl": "/portfolio/car.svg",
+      "org": "OnKart",
+      "description": "Revolutionizing Online Shopping with Advanced AI and Web3 Technology",
+      "href": "/ecommerce"
+    },
+    {
+      "heading": "Transforming Health & Wellness with Innovative Technology",
+      "imgUrl": "/casestudy/1.svg",
+      "org": "ElthMe",
+      "description": "How We Enhanced User Health and Safety with AI, Cloud, Cybersecurity, and Web3",
+      "href": "/health"
+    }
   ]
 }

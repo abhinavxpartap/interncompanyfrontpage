@@ -101,7 +101,7 @@ export const PortfolioBanner2 = () => {
         <div className="flex md:flex-row mt-[0px] md:mt-[110px] justify-end  flex-col-reverse">
           <div className="flex px-[20px] md:px-0 flex-col">
             <div className="relative w-[40vw] md:w-[250px] lg:w-[400px] xl:w-[600px] top-[-50px] left-[55%] md:top-[10px] md:left-[130px] xl:top-[30px]   lg:top-[20px]  lg:left-[100px] xl:left-[170px] ">
-              <Img src="/lid.svg" alt="n" className="[100%] " />
+              <Img src="/lid.png" alt="n" className="[100%] " />
             </div>
             <div className="bg-white relative top-[-30px] md:top-[20px] lg:top-[70px]  md:left-[40px] lg:left-[80px] xl:top-[70px] xl:left-[170px]  rounded-[15px] px-[25px] pt-[16px]  pb-[25px] md:w-[300px] lg:w-[380px] xl:w-[480px] boxshad">
               <h1 className="text-[25px] md:text-[20px] lg:text-[25px] xl:text-[30px] font-semibold">

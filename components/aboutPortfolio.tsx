@@ -64,7 +64,7 @@ export const AboutPortfolio: React.FC<PizzaHutInfo> = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="md:flex grid  w-[94%] mx-auto grid-cols-2 mt-[40px] py-[60px] justify-between md:flex-row ">
+            <div className="md:flex grid  md:w-[94%] w-[97%] md:gap-0 gap-3 mx-auto grid-cols-2 mt-[40px] py-[60px] justify-between md:flex-row ">
                 {imageElements}
             </div>
         </div>

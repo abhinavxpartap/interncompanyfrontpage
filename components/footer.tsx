@@ -82,9 +82,9 @@ export const Footer: React.FC = () => {
 
     const renderSocialIcons = () => {
         return social.map((icon: SocialIcon) => (
-            <a key={icon.id} href={icon.link}>
+            <a key={icon.id} target="_blank" rel="noopener noreferrer" href={icon.link}>
                 <button key={icon.id}>
-                    <Img src={icon.icon} alt={icon.alt} className="w-auto social-icon:hover social-icon "/>
+                    <Img src={icon.icon} alt={icon.alt}  className="w-auto social-icon:hover social-icon "/>
                 </button>
             </a>
         ));

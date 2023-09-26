@@ -70,6 +70,11 @@ const CaseStudy = () => {
             >
                 {caseStudies.caseStudies.map((caseStudy: CaseStudyInterface, index: number) => (
                     <div
+
+                        onClick={() => {
+                            router.push(`${caseStudy.href}`);
+                        }}
+
                         key={index}
                         className="max-w-[320px] md:max-w-[711px] md:h-[366px] bg-white  rounded-[20px] boxshad flex flex-row justify-between p-[10px] md:px-[23px] md:py-[20px] m-4 "
 

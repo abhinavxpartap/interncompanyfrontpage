@@ -1436,3 +1436,43 @@ left:12px;
         transform: translateX(-100%);
     }
 }
+
+
+
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.animated-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.animated-text span {
+    color: white; /* Initial text color */
+    position: relative;
+    line-height: 90px;
+}
+
+.animated-text span.active-line {
+    color: transparent;
+    background-image: linear-gradient(to right, white 0%, #6E73FF 100%);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: fillText 10s linear forwards;
+}
+
+@keyframes fillText {
+    0% {
+        background-position: 200% 0;
+        color: transparent;
+    }
+    100% {
+        background-position: -200% 0;
+        color: #6E73FF; /* Text color when active */
+    }
+}

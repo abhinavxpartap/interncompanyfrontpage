@@ -2,10 +2,11 @@ import React from 'react';
 import { Button } from '@mui/material';
 import { useRouter } from 'next/router';
 import { Header } from './Common/Header';
-import {ServiceBannerInterface} from "../types";
+import { ServiceBannerInterface} from "../types";
 
 export const ServiceBanner: React.FC<ServiceBannerInterface> = (props) => {
   const { image, buttonName,buttonLink, title,  subtitle } = props;
+
   const router = useRouter();
 
   const content = (

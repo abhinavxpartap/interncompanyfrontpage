@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {
   Box,
   Typography,
@@ -9,15 +9,72 @@ import {
   Checkbox,
   Button,
 } from '@mui/material';
+import { LoaderContext } from "../../context/LoaderContext";
 
 const DemoForm = () => {
-  const [checked, setChecked] = useState([false, false]);
-  const handleToggle = (index: number) => () => {
+  const { setIsLoading } = useContext(LoaderContext);
+  const labelNames = ['Software Development', 'Web Design'];
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [checked, setChecked] = useState<boolean[]>(new Array(labelNames.length).fill(false));
+  const [id , setId] = useState('');
+
+
+  useEffect(() => {
+    fetch("/api/ContactUS/GET")
+        .then((response) => response.json())
+        .then((data) => {
+          setId(data._id);
+        })
+        .catch((error) => {
+          console.error("Error fetching banner data:", error);
+        });
+  }, []);
+
+
+  const handleToggle = (index:number) => () => {
     const newChecked = [...checked];
     newChecked[index] = !newChecked[index];
     setChecked(newChecked);
   };
-  const labelNames = ['Software Development', 'Web Design'];
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const interestedInArray = labelNames
+        .filter((label, index) => checked[index])
+        .map((label) => ({ title: label }));
+    setIsLoading(true);
+    const response = await fetch('/api/ContactUS/POST', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(
+          {
+            _id: id, // Replace with the actual document ID
+            ContactData: [
+              {
+                "First Name": firstName,
+                "Last Name": lastName,
+                "Email": email,
+                "Message": message,
+                "Interested In": interestedInArray,
+              },
+            ],
+          }),
+    });
+
+    if (response.ok) {
+      console.log('Update successful');
+      setIsLoading(false);
+    } else {
+      console.error('Update failed');
+      setIsLoading(false);
+    }
+  };
+
   return (
     <div className="bg-[url('/images/logo/productover.png')] bg-cover md:px-[70px] md:pt-[103px]  md:pb-[206px] pb-[150px] pt-[190px] relative">
       <div className="max-w-[1377.5px] relative mx-auto flex md:flex-row flex-col justify-between ">
@@ -30,6 +87,7 @@ const DemoForm = () => {
           </div>
         </div>
         <div className="md:absolute relative justify-center items-center mx-auto  md:right-0 md:top-[-170px] top-[70px] max-w-[460px] bg-white rounded-[10px] p-[20px]">
+          <form onSubmit={handleSubmit}>
           <Box className="w-[100%] flex flex-row justify-between">
             <Box className="w-[48%]">
               <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
@@ -38,6 +96,8 @@ const DemoForm = () => {
               <FormControl sx={{ width: '100%' }}>
                 <OutlinedInput
                   placeholder="enter first name"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
                   style={{ borderRadius: '8px' }}
                   inputProps={{ style: { fontSize: '12px' } }}
                 />
@@ -51,6 +111,8 @@ const DemoForm = () => {
                 <OutlinedInput
                   placeholder="enter last name"
                   style={{ borderRadius: '8px' }}
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
                   inputProps={{ style: { fontSize: '12px' } }}
                 />
               </FormControl>
@@ -63,6 +125,8 @@ const DemoForm = () => {
             <FormControl sx={{ width: '100%' }}>
               <OutlinedInput
                 placeholder="enter email address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 style={{ borderRadius: '8px' }}
                 inputProps={{ style: { fontSize: '12px' } }}
               />
@@ -75,6 +139,8 @@ const DemoForm = () => {
             <FormControl sx={{ width: '100%' }}>
               <OutlinedInput
                 placeholder="enter your Message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 style={{
                   width: '100%',
                   height: '70px',
@@ -148,11 +214,13 @@ const DemoForm = () => {
                     },
                   },
                 }}
+                type="submit"
               >
-                <a href="https://calendly.com/sahillshrm" target="_blank" rel="noopener noreferrer">
-                  Show Me How                    </a>           </Button>
+                Show Me How
+              </Button>
             </div>
           </Box>
+          </form>
         </div>
       </div>
     </div>

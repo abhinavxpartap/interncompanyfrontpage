@@ -50,16 +50,21 @@ export interface TestimonialInterface {
 }
 
 export interface TechSectionInterface {
-    title: string;
-    subtitle: string;
-    Paragraph: string;
-    button: {
-        name: string;
-        href: string;
-    };
-    data: {
-        image: string;
-    }[];
+    bannerData:TechBanner,
+    header:TechHeader[],
+
+}
+
+export interface TechHeader{
+    image:string,
+    alt:string,
+}
+export interface TechBanner{
+    title: string,
+    subtitle1: string,
+    subtitle2: string,
+    buttonName:string,
+    buttonLink:string,
 }
 export interface ReasonsInterface {
     title: string;
@@ -313,7 +318,7 @@ export interface ServiceBannerInterface {
     subtitle: string;
     image: string;
     buttonName:string,
-    buttonLink:string
+    buttonLink:string,
 }
 
 export interface Assurance {
@@ -331,7 +336,7 @@ export interface Assurance {
 
 
 export interface BannerDataInterface {
-    title: string;
+    title: string[];
     subtitle: string;
     image: string;
     button:string;
@@ -512,4 +517,97 @@ export interface ReasonInterface {
 
 export interface reasonData {
     title:string
+}
+
+
+interface BannerData {
+    title: string;
+    subtitle: string;
+    backgroundImage: string;
+    ButtonName: string;
+    ButtonHref: string;
+}
+
+interface AboutBanner {
+    title: string;
+    subtitle: string;
+    image: string;
+    paragraph: string;
+}
+
+export interface AboutDataItem {
+    title: string;
+}
+
+interface EaseBanner {
+    title: string;
+    subtitle: string;
+}
+
+interface ReasonBanner {
+    title: string;
+    backgroundImage: string;
+    leftImage: string;
+    productCount: string;
+    productText: string;
+    softwareDevelopedCount: string;
+    softwareText: string;
+    webDesignCount: string;
+    webText: string;
+}
+
+export interface ReasonDataItem {
+    title: string;
+}
+
+interface DevelopmentBanner {
+    title: string;
+    subtitle: string;
+    centerContent: string;
+    buttonName: string;
+    buttonLink: string;
+}
+
+export interface DevelopmentHeaderItem {
+    image: string;
+    title: string;
+}
+
+interface ProcessBanner {
+    title: string;
+}
+
+export interface ProcessDataItem {
+    id: number;
+    title: string;
+    content: string;
+}
+
+interface FaqBanner {
+    title: string;
+    subtitle: string;
+    buttonName: string;
+    buttonLink: string;
+}
+
+export interface FaqDataItem {
+    id: number;
+    title: string;
+    content: string;
+}
+
+export interface InterfaceINDSERPage {
+    BannerData: BannerData;
+    AboutBanner: AboutBanner;
+    AboutData: AboutDataItem[];
+    EaseBanner: EaseBanner;
+    ReasonBanner: ReasonBanner;
+    ReasonData: ReasonDataItem[];
+    DevelopmentBanner: DevelopmentBanner;
+    DevelopmentHeaderLeft: DevelopmentHeaderItem[];
+    DevelopmentHeaderRight: DevelopmentHeaderItem[];
+    ProcessBanner: ProcessBanner;
+    ProcessData: ProcessDataItem[];
+    FaqBanner: FaqBanner;
+    FaqData: FaqDataItem[];
 }

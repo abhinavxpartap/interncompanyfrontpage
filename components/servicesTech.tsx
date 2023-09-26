@@ -1,12 +1,37 @@
-import React from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import { Img } from '../utils/Img';
 import { Button } from '@mui/material';
 import { useRouter } from 'next/router';
-import {TechSectionInterface} from "../types";
-import TechData from "../data/OurTech.json"
+import { TechHeader, TechSectionInterface} from "../types";
+import {LoaderContext} from "../context/LoaderContext";
 
-export const ServiceTech: React.FC = (props) => {
+export const ServiceTech: React.FC = () => {
   const router = useRouter();
+  const { setIsLoading } = useContext(LoaderContext);
+
+  const [TechData, setTechData] = useState<TechSectionInterface>({
+    bannerData:{
+      title: '',
+      subtitle1: '',
+      subtitle2: '',
+      buttonName:'',
+      buttonLink:'',
+    },
+    header:[],
+  });
+
+  useEffect(() => {
+    setIsLoading(true);
+    fetch("/api/common/GET/OurTech")
+        .then((response) => response.json())
+        .then((data) => {
+          setTechData(data);
+          setIsLoading(false);
+        })
+        .catch((error) => {
+          console.error("Error fetching banner data:", error);
+        });
+  }, []);
 
   const content = (
     <>
@@ -20,7 +45,7 @@ export const ServiceTech: React.FC = (props) => {
           </p>
           <div className="w-[100%] flex items-center justify-center">
             <div className="w-[90%] pt-[60px]  justify-between gap-[50px]  grid grid-cols-3 md:grid-cols-6 text-start ">
-              {TechData.header.map((item , index: number) => (
+              {TechData.header.map((item:TechHeader, index: number) => (
                 <div
                   key={index}
                   className="w-[70px] mx-auto flex items-center jusitfy-center"

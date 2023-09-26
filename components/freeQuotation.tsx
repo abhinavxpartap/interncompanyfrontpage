@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {
   Box,
   Typography,
@@ -9,17 +9,72 @@ import {
   Checkbox,
   Button,
 } from '@mui/material';
-import { useRouter } from 'next/router';
+import {LoaderContext} from "../context/LoaderContext";
 
 export const FreeQuotation = () => {
-  const [checked, setChecked] = useState([false, false]);
-  const handleToggle = (index: number) => () => {
+  const { setIsLoading } = useContext(LoaderContext);
+  const labelNames = ['Software Development', 'Web Design'];
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [checked, setChecked] = useState<boolean[]>(new Array(labelNames.length).fill(false));
+  const [id , setId] = useState('');
+
+
+  useEffect(() => {
+    fetch("/api/ContactUS/GET")
+        .then((response) => response.json())
+        .then((data) => {
+          setId(data._id);
+        })
+        .catch((error) => {
+          console.error("Error fetching banner data:", error);
+        });
+  }, []);
+
+
+  const handleToggle = (index:number) => () => {
     const newChecked = [...checked];
     newChecked[index] = !newChecked[index];
     setChecked(newChecked);
   };
-  const router = useRouter();
-  const labelNames = ['Software Development', 'Web Design'];
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const interestedInArray = labelNames
+        .filter((label, index) => checked[index])
+        .map((label) => ({ title: label }));
+    setIsLoading(true);
+    const response = await fetch('/api/ContactUS/POST', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(
+          {
+            _id: id, // Replace with the actual document ID
+            ContactData: [
+              {
+                "First Name": firstName,
+                "Last Name": lastName,
+                "Email": email,
+                "Message": message,
+                "Interested In": interestedInArray,
+              },
+            ],
+          }),
+    });
+
+    if (response.ok) {
+      console.log('Update successful');
+      setIsLoading(false);
+    } else {
+      console.error('Update failed');
+      setIsLoading(false);
+    }
+  };
+
   const content = (
     <>
       <div className="max-w-[1377.5px] mx-auto flex items-center justify-between md:pt-[10px]  pt-[30px] pb-[30px] md:pb-[100px]">
@@ -43,6 +98,7 @@ export const FreeQuotation = () => {
                   'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px',
               }}
             >
+              <form onSubmit={handleSubmit}>
               <div className="w-[100%] flex flex-row justify-between">
                 <div className="w-[48%]">
                   <div className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
@@ -52,6 +108,8 @@ export const FreeQuotation = () => {
                     <OutlinedInput
                       placeholder="enter first name"
                       style={{ borderRadius: '8px' }}
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
                       inputProps={{ style: { fontSize: '12px' } }}
                     />
                   </FormControl>
@@ -64,6 +122,8 @@ export const FreeQuotation = () => {
                     <OutlinedInput
                       placeholder="enter last name"
                       style={{ borderRadius: '8px' }}
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
                       inputProps={{ style: { fontSize: '12px' } }}
                     />
                   </FormControl>
@@ -77,6 +137,8 @@ export const FreeQuotation = () => {
                   <OutlinedInput
                     placeholder="enter email address"
                     style={{ borderRadius: '8px' }}
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     inputProps={{ style: { fontSize: '12px' } }}
                   />
                 </FormControl>
@@ -88,6 +150,8 @@ export const FreeQuotation = () => {
                 <FormControl sx={{ width: '100%' }}>
                   <OutlinedInput
                     placeholder="enter your Message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     style={{
                       width: '100%',
                       height: '70px',
@@ -141,7 +205,7 @@ export const FreeQuotation = () => {
                 </Grid>
                 <div className="mt-[20px]">
                   <Button
-                    onClick={() => router.push('/')}
+                      type="submit"
                     className="ButtonTransition  "
                     sx={{
                       '&.MuiButtonBase-root': {
@@ -168,6 +232,7 @@ export const FreeQuotation = () => {
 Show Me How</Button>
                 </div>
               </div>
+              </form>
             </div>
           </div>
         </div>

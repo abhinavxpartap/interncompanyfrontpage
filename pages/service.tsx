@@ -18,6 +18,7 @@ import {OurBrands} from "../components/ourBrands";
 import {Footer} from "../components/footer";
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
+import Chat from "../components/Chat";
 const ServicePage: React.FC = () => {
     return (<>
             <Head>
@@ -76,6 +77,7 @@ const ServicePage: React.FC = () => {
                     <OurBrands/>
                     <FreeQuotation/>
                     <FixedButton />
+                    <Chat/>
 
                     <Footer/>
                 </div>

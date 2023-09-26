@@ -16,6 +16,7 @@ import FixedButton from "../components/FixedButton";
 import CaseStudy from "../components/Case Study";
 import Float from "../components/Float";
 import {OurProcessFin} from "../components/ourprocessFin";
+import Chat from "../components/Chat";
 
 const Portfolio: NextPage = () => {
     return (
@@ -81,6 +82,7 @@ const Portfolio: NextPage = () => {
 
             </div>            <FixedButton/>
             <Footer/>
+            <Chat/>
 
         </>
     )

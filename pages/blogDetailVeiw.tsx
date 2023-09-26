@@ -9,6 +9,7 @@ import { Header } from '../components/Common/Header';
 import { Footer } from '../components/footer';
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
+import Chat from "../components/Chat";
 
 const content = [
   {
@@ -366,7 +367,8 @@ const BlogDetailVeiw: React.FC = () => {
         </div>
         <GetStories />
         <FixedButton />
-<Float/>
+<Float/>                    <Chat/>
+
         <Footer />
       </div>
     </>

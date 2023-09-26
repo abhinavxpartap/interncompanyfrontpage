@@ -27,7 +27,7 @@ const ProductOverview: React.FC<ReasonInterface> = (props) => {
                                         {reasonData.map((item,index) => (
                                             <div key={index}>
                                                 <div className="flex flex-row gap-[10px] text-[18px] font-medium">
-                                                    <span><Img src="/iconNew.png" className="w-[25px]" alt={"Icon"}/></span> {item.title}
+                                                    <span><Img src="/banner/tick.png" className="w-[22px] mt-[5px]" alt={"Icon"}/></span> {item.title}
                                                 </div>
                                             </div>
                                         ))}

@@ -29,7 +29,7 @@ export const ServiceAbout: React.FC<ServiceAboutInterface> = (props) => {
                             key={index}
                             className="text-[#757B8A] flex flex-row gap-[5px] font-normal text-[12px] leading-[20px] sm:text-[15px] sm:leading-[30px] md:text-[10px] md:leading-[18px] lg:text-[13px] lg:leading-[30px] xl:text-[15px] xl:leading-[30px]"
                         >
-                            <Img src="/iconNew.png" className="w-[25px]" alt={"Icon"}/> {item.title}
+                            <Img src="/banner/tick.png" className="w-[22px]" alt={"Icon"}/> {item.title}
                         </p>
                     ))}
                     </div>

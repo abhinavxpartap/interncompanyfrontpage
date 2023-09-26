@@ -15,6 +15,7 @@ import Service from "../../components/Service";
 import {PortfolioOurProcess} from "../../components/PortfolioOurProcess";
 import Float from "../../components/Float"
 import ProductOverview from "../../components/Product Overview";
+import Chat from "../../components/Chat";
 
 const CloudInfrastructurePage: React.FC = () => {
     return (<>
@@ -93,6 +94,7 @@ const CloudInfrastructurePage: React.FC = () => {
                         <FreeQuotation/>
                     </div>
                     <FixedButton/>
+                    <Chat/>
 
                     <Footer/>
                 </div>

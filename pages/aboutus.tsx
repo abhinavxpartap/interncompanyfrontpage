@@ -18,6 +18,7 @@ import SuccesStory from "../components/SuccesStory";
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
 import CaseStudy from "../components/Case Study";
+import Chat from "../components/Chat";
 const Home: NextPage = () => {
   return (
       <>
@@ -65,6 +66,8 @@ const Home: NextPage = () => {
                   <FreeQuotation />
 
               </div>
+              <Chat/>
+
               <FixedButton />
 
       <Footer />

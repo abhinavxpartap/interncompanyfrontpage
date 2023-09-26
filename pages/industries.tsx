@@ -19,6 +19,7 @@ import {Footer} from "../components/footer";
 import SuccesStory from "../components/SuccesStory";
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
+import Chat from "../components/Chat";
 
 const IndustriesPage: React.FC = () => {
     return (<>
@@ -95,6 +96,7 @@ const IndustriesPage: React.FC = () => {
                     </div>
                     <FreeQuotation/>
                     <FixedButton />
+                    <Chat/>
 
                     <Footer/>
                 </div>

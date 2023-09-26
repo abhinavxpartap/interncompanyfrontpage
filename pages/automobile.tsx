@@ -16,6 +16,7 @@ import FixedButton from "../components/FixedButton";
 import CaseStudy from "../components/Case Study";
 import Float from "../components/Float";
 import {OurProcessAuto} from "../components/ouProcessAuto";
+import Chat from "../components/Chat";
 
 const Portfolio: NextPage = () => {
     return (
@@ -81,6 +82,8 @@ const Portfolio: NextPage = () => {
                 <CaseStudy/>
 
             </div>
+            <Chat/>
+
             <FixedButton/>
             <Footer/>
 

@@ -15,6 +15,7 @@ import Service from "../../components/Service";
 import {PortfolioOurProcess} from "../../components/PortfolioOurProcess";
 import Float from "../../components/Float"
 import ProductOverview from "../../components/Product Overview";
+import Chat from "../../components/Chat";
 
 const BlockChainpage: React.FC = () => {
     return (<>
@@ -92,6 +93,7 @@ const BlockChainpage: React.FC = () => {
                         <FreeQuotation/>
                     </div>
                     <FixedButton/>
+                    <Chat/>
 
                     <Footer/>
                 </div>

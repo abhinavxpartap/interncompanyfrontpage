@@ -18,6 +18,7 @@ import {PortfolioOurProcess} from "../components/PortfolioOurProcess";
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
 import CaseStudy from "../components/Case Study";
+import Chat from "../components/Chat";
 
 const RealEstate: NextPage = () => {
     return (
@@ -80,7 +81,8 @@ const RealEstate: NextPage = () => {
             <div className="pb-[80px]">
                 <CaseStudy/>
 
-            </div>
+            </div>                    <Chat/>
+
             <FixedButton/>
             <Footer/>
 

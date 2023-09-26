@@ -9,6 +9,7 @@ import React from "react";
 import {Footer} from "../components/footer";
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
+import Chat from "../components/Chat";
 
 
 
@@ -19,7 +20,8 @@ const Portfolio2: NextPage = () => {
 
                 <PortfolioBanner2 />
             <FixedButton />
-<Float/>
+<Float/>                    <Chat/>
+
             <Footer/>
 
 

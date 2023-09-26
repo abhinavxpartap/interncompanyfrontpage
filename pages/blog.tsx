@@ -11,6 +11,7 @@ import { Header } from '../components/Common/Header';
 import { Footer } from '../components/footer';
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
+import Chat from "../components/Chat";
 
 const BlogPage: React.FC = () => {
   const [isActive, setIsActive] = useState(0);
@@ -200,6 +201,7 @@ const BlogPage: React.FC = () => {
         </div>
         <GetStories />
         <FixedButton />
+        <Chat/>
 
         <Footer />
       </div>

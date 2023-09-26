@@ -14,7 +14,6 @@ import { FreeQuotation } from '../components/freeQuotation';
 import Testimonials from '../components/Testimonials';
 import seoData from "../data/seoData.json";
 import Head from "next/head";
-import SuccesStory from "../components/SuccesStory";
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
 import CaseStudy from "../components/Case Study";

@@ -3,7 +3,6 @@ import {PortfolioBanner} from "../components/PortfolioBanner";
 import {ProjectChallangesNew} from "../components/ProjectChallanges";
 import {AboutPortfolio} from "../components/aboutPortfolio";
 import {Director} from "../components/director";
-import {OurProcess} from "../components/ourProcess";
 import {Results} from "../components/results";
 import PortData from "../data/portfolio/finance.json";
 import React from "react";

@@ -5,7 +5,6 @@ import {TalkTo} from '../components/TalkToExpert';
 import ContactData from '../data/contact.json';
 import React from 'react';
 import {OurBrands} from '../components/ourBrands';
-import SuccesStory from '../components/SuccesStory';
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
 import CaseStudy from "../components/Case Study";

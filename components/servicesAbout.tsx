@@ -1,6 +1,6 @@
 import React from 'react';
 import {Img} from '../utils/Img';
-import {ServiceAboutInterface, ServiceAboutnewInterface} from "../types";
+import {ServiceAboutInterface} from "../types";
 
 export const ServiceAbout: React.FC<ServiceAboutInterface> = (props) => {
     const {title, subtitle, paragraph, image,data} = props;

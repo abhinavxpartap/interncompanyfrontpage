@@ -1476,3 +1476,19 @@ left:12px;
         color: #6E73FF; /* Text color when active */
     }
 }
+/* styles.css */
+.fade-in-title {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+

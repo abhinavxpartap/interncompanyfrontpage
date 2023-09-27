@@ -29,6 +29,7 @@ const Home: NextPage = () => {
           </Head>
           <div>
               <AboutUsBanner
+                  fix={aboutUs.Banner.fix}
                  image={aboutUs.Banner.backgroundImage}
                  title={aboutUs.Banner.title}
                  subtitle={aboutUs.Banner.subtitle}

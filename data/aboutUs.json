@@ -1,6 +1,7 @@
 {
   "Banner": {
-    "title": "Your success is our mission, and digital transformation is our expertise.",
+    "fix": "Your success is our mission",
+    "title": ["digital transformation is our expertise"," and much more."],
     "subtitle": "Crafting Conversational Infrastructure Tailored to Your Brand and Entrepreneurial Journey.",
     "backgroundImage": "/banner/about.jpg"
   },

@@ -205,7 +205,8 @@ export interface PizzaHutInfo {
     images: string[];
 }
 export interface AboutUsBannerInterface {
-    title: string;
+    fix:string,
+    title: string[];
     subtitle: string;
     image: string;
 

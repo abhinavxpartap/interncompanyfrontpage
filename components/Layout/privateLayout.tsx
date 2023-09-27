@@ -12,7 +12,7 @@ interface PrivateLayoutInterface {
 
 const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
     const router = useRouter();
-    // const {logout, user} = useAuth();
+    const {logout, user} = useAuth();
     const links: AdminLinksInterface[] = [
         {
             label: 'Dashboard',
@@ -339,7 +339,7 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                         </div>
                         <div>
                             <a
-                                // onClick={logout}
+                                onClick={logout}
                                 className="text-[#FF0000] font-semibold text-[14px] cursor-pointer"
                             >
                                 Logout

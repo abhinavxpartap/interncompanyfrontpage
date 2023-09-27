@@ -5,12 +5,12 @@ import {AboutPortfolio} from "../components/aboutPortfolio";
 import {Director} from "../components/director";
 import {OurProcess} from "../components/ourProcess";
 import {Results} from "../components/results";
-import PortData from "../data/portfolio/hotflix.json";
+import PortData from "../data/portfolio/travel.json";
 import React from "react";
-import serviceData from "../data/portfolio/hotflix.json";
+import serviceData from "../data/portfolio/travel.json";
 
 import {Footer} from "../components/footer";
-import data from '../data/hotflixportfolio.json';
+import data from '../data/travelportfolio.json';
 import seoData from "../data/seoData.json";
 import Head from "next/head";
 import {NewPortofilioJourney} from "../components/PortofilioJourney";

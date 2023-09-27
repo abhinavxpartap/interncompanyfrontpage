@@ -182,15 +182,10 @@
     }
   ],
   "imagePort": [
-    "/travel/m5.svg",
-    "/travel/m6.svg",
-    "/travel/m7.svg",
-    "/travel/m8.svg",
-    "/portfolio/m9.svg",
-    "/portfolio/m10.svg",
-    "/portfolio/m11.svg",
-    "/portfolio/m12.svg"
-
+    "/portfolio/m5.png",
+    "/portfolio/m6.png",
+    "/portfolio/m7.png",
+    "/portfolio/m8.png"
   ],
   "challenges": [
     {

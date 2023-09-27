@@ -41,6 +41,12 @@ export interface WhatWeNewInterface {
 
 }
 
+
+export interface ImageInterface {
+    image: string[];
+
+}
+
 export interface TestimonialInterface {
     comment: string;
     companyLogo: string;

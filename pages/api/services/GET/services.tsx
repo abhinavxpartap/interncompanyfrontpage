@@ -16,9 +16,7 @@ export default async function handler(
 
         const db = client.db('Alumel'); // Replace 'YourDatabaseName' with your database name
         const collection = db.collection('Services'); // Replace 'YourCollectionName' with your collection name
-
         const data = await collection.find({}).toArray(); // Retrieves a single object
-
         client.close();
 
         res.status(200).json(data);

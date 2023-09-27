@@ -17,7 +17,7 @@ export const PortfolioOurProcess: React.FC<OurProcess> = ( props) => {
         <div className="max-w-[1377.5px] relative  mx-auto">
             <h1 className="text-[#151448] text-[40px] font-semibold w-[100%] text-center pt-[10px]">{heading}</h1>
             <div className="mx-[60px] pt-[60px] gap-[30px] grid md:grid-cols-2 grid-cols-1 justify-between md:flex-row flex-col">
-                {List.map((item,index) => (
+                {List && List.length>0 && ( List.map((item,index) => (
                <div key={index} className="flex flex-row gap-[20px]">
                    <div className="text-[#CFD3D7] mt-[-30px] text-[90px] font-bold">{item.id}</div>
                    <div className="flex flex-col">
@@ -25,7 +25,7 @@ export const PortfolioOurProcess: React.FC<OurProcess> = ( props) => {
                        <p className="text-[#151448] text-[16px] font-normal lg:leading-[30px] xl:leading-[22px]">{item.content}</p>
                    </div>
                </div>
-                ))}
+                )))}
             </div>
         </div>
     );

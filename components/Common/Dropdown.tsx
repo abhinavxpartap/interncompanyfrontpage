@@ -72,13 +72,6 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
                                 key={index}
                                 className="flex gap-[14px] items-center hover:bg-[#D8D8D837] transition-all rounded-[6px] px-[15px]  py-[4px]"
                             >
-                              {item.icon && (
-                                  <Img
-                                      src={item.icon}
-                                      alt={item.label}
-                                      className="w-[20px] h-[20px]"
-                                  />
-                              )}
                               <Link href={item.href}>
                                 <div className="text-[#101D2C] xxl:text-[20px] text-[16px] xxl:leading-[44px] leading-[32px] tracking-[-0.18px]">
                                   {item.label}

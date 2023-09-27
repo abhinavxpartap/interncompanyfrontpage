@@ -109,14 +109,14 @@ export const ServicesFaq: React.FC<Faq> = (props) => {
                                 },
                             }}
                         >
-                            <a href="https://calendly.com/sahillshrm/30min" target="_blank" rel="noopener noreferrer">
-                                {buttonName}                    </a>                        </Button>
+                                {buttonName}
+                        </Button>
                     </div>
                     <div className="flex flex-row w-[85vw] lg:w-[55vw]">
                         <div className="w-[100%]">
 
                             <Stepper activeStep={activeTab - 1} orientation="vertical">
-                                {tabData.map((tab) => (
+                                {tabData && tabData.length>0 && ( tabData.map((tab) => (
                                     <Step key={tab.id}>
                                         <StepLabel
                                             StepIconComponent={QontoStepIcon}
@@ -202,7 +202,7 @@ export const ServicesFaq: React.FC<Faq> = (props) => {
                                             </Grid>
                                         </StepLabel>
                                     </Step>
-                                ))}
+                                )))}
                             </Stepper>
                         </div>
 

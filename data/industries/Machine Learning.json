@@ -194,29 +194,5 @@
       "title":"What ongoing support is offered for ML solutions?",
       "content":"We provide comprehensive post-launch support, including updates, maintenance, and performance enhancements."
     }
-  ],
-  "AssuranceBanner": {
-    "title": "Zuca’s Assurance as a Web App Development Company",
-    "image": "/AssuraceBanner.png",
-    "buttonLink": "/",
-    "buttonName": "Work with us",
-    "sideImage": "/AssuranceImage.svg"
-  },
-  "AssuranceData": [
-    {
-      "title": "A Quality-First Approach",
-      "subtitle": "Our team is capable of delivering immersive web experiences, magnifying digital transformation",
-      "icon": "/Approach.svg"
-    },
-    {
-      "title": "Steering Web Complexities",
-      "subtitle": "Get your hands on world-class web apps that are capable of driving market disruption",
-      "icon": "/Complexity.svg"
-    },
-    {
-      "title": "Multiple Engagement Model",
-      "subtitle": "Choose your business model as per your budget, essentialities and requirements",
-      "icon": "/Model.svg"
-    }
   ]
 }

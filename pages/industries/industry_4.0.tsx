@@ -1,7 +1,6 @@
-import React from "react";
+import React, {useContext, useEffect, useState} from "react";
 import Head from "next/head";
 import seoData from "../../data/seoData.json";
-import pageData from "../../data/industries/Industry4.0.json";
 import {ServiceBanner} from "../../components/serviceBanner";
 import {ServiceAbout} from "../../components/servicesAbout";
 import {ServicesDevelopment} from "../../components/servicesDevelopment";
@@ -16,8 +15,77 @@ import {PortfolioOurProcess} from "../../components/PortfolioOurProcess";
 import Float from "../../components/Float"
 import ProductOverview from "../../components/Product Overview";
 import Chat from "../../components/Chat";
+import {LoaderContext} from "../../context/LoaderContext";
+import {InterfaceINDSERPage} from "../../types";
 
 const Industrypage: React.FC = () => {
+    const { setIsLoading } = useContext(LoaderContext);
+    const [pageData, setPageData] = useState<InterfaceINDSERPage>({
+        BannerData:{
+            title: '',
+            subtitle: '',
+            backgroundImage: '',
+            ButtonName: '',
+            ButtonHref: '',
+        },
+        AboutBanner:{
+            title: '',
+            subtitle: '',
+            image: '',
+            paragraph: '',
+        },
+        AboutData: [],
+        EaseBanner: {
+            title: '',
+            subtitle: '',
+        },
+        ReasonBanner:{
+            title: '',
+            backgroundImage: '',
+            leftImage: '',
+            productCount: '',
+            productText: '',
+            softwareDevelopedCount: '',
+            softwareText: '',
+            webDesignCount: '',
+            webText: '',
+        },
+        ReasonData: [],
+        DevelopmentBanner: {
+            title: '',
+            subtitle: '',
+            centerContent: '',
+            buttonName: '',
+            buttonLink: '',
+        },
+        DevelopmentHeaderLeft: [],
+        DevelopmentHeaderRight: [],
+        ProcessBanner: {
+            title: '',
+        },
+        ProcessData: [],
+        FaqBanner: {
+            title: '',
+            subtitle: '',
+            buttonName: '',
+            buttonLink: '',
+        },
+        FaqData: [],
+    })
+
+
+    useEffect(() => {
+        setIsLoading(true);
+        fetch("/api/industries/GET/industry")
+            .then((response) => response.json())
+            .then((data) => {
+                setPageData(data);
+                setIsLoading(false);
+            })
+            .catch((error) => {
+                console.error("Error fetching banner data:", error);
+            });
+    }, []);
     return (<>
             <Head>
                 <title>{seoData.industriesNew.title}</title>

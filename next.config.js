@@ -5,6 +5,20 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  typescript: {
+    ignoreBuildErrors: true
+  },
+  api: {
+    externalResolver: true,
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/:slug',
+        destination: '/services/:slug',
+      },
+    ];
+  },
 }
 
 

@@ -158,29 +158,5 @@
       "title": "Is my product idea and data safe with your product design services?",
       "content":"Absolutely. We prioritize the confidentiality and security of your product idea and data. Our team follows strict data protection and privacy measures to ensure that your information remains secure and confidential throughout the design process."
     }
-  ],
-  "AssuranceBanner": {
-    "title": "Zuca’s Assurance as a Web App Development Company",
-    "image": "/AssuraceBanner.png",
-    "buttonLink": "/",
-    "buttonName": "Work with us",
-    "sideImage": "/AssuranceImage.svg"
-  },
-  "AssuranceData": [
-    {
-      "title": "A Quality-First Approach",
-      "subtitle": "Our team is capable of delivering immersive web experiences, magnifying digital transformation",
-      "icon": "/Approach.svg"
-    },
-    {
-      "title": "Steering Web Complexities",
-      "subtitle": "Get your hands on world-class web apps that are capable of driving market disruption",
-      "icon": "/Complexity.svg"
-    },
-    {
-      "title": "Multiple Engagement Model",
-      "subtitle": "Choose your business model as per your budget, essentialities and requirements",
-      "icon": "/Model.svg"
-    }
   ]
 }

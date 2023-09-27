@@ -24,13 +24,14 @@ const ProductOverview: React.FC<ReasonInterface> = (props) => {
                                         {title}
                                     </div>
                                     <div className="flex flex-wrap gap-[20px] my-[20px]">
-                                        {reasonData.map((item,index) => (
+                                        {reasonData && reasonData.length>0 && (
+                                            reasonData.map((item,index) => (
                                             <div key={index}>
                                                 <div className="flex flex-row gap-[10px] text-[18px] font-medium">
                                                     <span><Img src="/banner/tick.png" className="w-[22px] mt-[5px]" alt={"Icon"}/></span> {item.title}
                                                 </div>
                                             </div>
-                                        ))}
+                                        )))}
                                     </div>
                                     <div className="flex  md:w-[100%] w-[90%] mx-auto  flex-row  justify-between">
                                         <div>

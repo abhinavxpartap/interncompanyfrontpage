@@ -217,7 +217,7 @@ export interface ServiceAboutInterface {
     subtitle: string;
     paragraph: string;
     image: string;
-    data: {
+    data?: {
         title: string;
     }[];
 
@@ -611,4 +611,21 @@ export interface InterfaceINDSERPage {
     ProcessData: ProcessDataItem[];
     FaqBanner: FaqBanner;
     FaqData: FaqDataItem[];
+}
+
+export interface caseStudyInterface {
+    bannerData:{
+        title:string,
+        subtitle:string,
+        tagButton:string
+    },
+    caseStudies:caseStudiesHeader[]
+}
+
+export interface caseStudiesHeader{
+    heading:string,
+    imgUrl:string,
+    org:string,
+    description:string,
+    href:string
 }

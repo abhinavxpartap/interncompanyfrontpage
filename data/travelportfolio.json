@@ -6,9 +6,9 @@
   "businessType": "Enterprise",
   "services": "Entertainment, Travel",
   "images": [
-    "/portfolio/m1.svg",
-    "/portfolio/m2.svg",
-    "/portfolio/m3.svg",
-    "/portfolio/m4.svg"
+    "/travel/m1.png",
+    "/travel/m2.svg",
+    "/travel/m3.svg",
+    "/travel/m4.svg"
   ]
 }

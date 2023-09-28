@@ -636,3 +636,21 @@ export interface caseStudiesHeader{
     description:string,
     href:string
 }
+
+export interface BlogInterface {
+    id?: number
+    body: any
+    image?: any
+    slug: string
+    title: string
+    is_featured: string
+    description: string
+    meta_title?: string
+    meta_description?: string
+    meta_keywords?: string
+}
+export interface BlogPageInterface {
+    slug: string;
+    blog: BlogInterface;
+    blogs: BlogInterface[];
+}

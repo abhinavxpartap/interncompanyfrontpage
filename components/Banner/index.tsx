@@ -39,7 +39,7 @@ export const Banner: React.FC<BannerDataInterface> = (props) => {
                 </div>
 
                 <div
-                    className="md:text-[70px] transition-text  text-[32px] text-[#FFFFFF] font-bold leading-[40px] md:leading-[90px] md:tracking-[-2.4px] max-w-[1300px] text-center md:pb-[25px] pb-[18px] fade-in"
+                    className="md:text-[52px]   text-[32px] text-[#FFFFFF] font-bold leading-[40px] md:leading-[60px] md:tracking-[-2.4px] max-w-[1000px] text-center md:pb-[25px] pb-[18px] fade-in"
                 >
                     {currentTitle}
 

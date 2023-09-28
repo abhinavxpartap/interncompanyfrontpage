@@ -59,9 +59,9 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
               <div
                   className={`${
                       open ? 'block' : 'hidden'
-                  } bg-white absolute top-[35px] lg:top-[25px] left-[-155px] sm:left-[0] min-w-[300px] lg:min-w-[394px] rounded-[15px] xxl:px-[35] md:px-[20px] px-[2px] xxl:py-[36px] md:py-[22px] py-[8px] dropdown-container z-[99999]`}
+                  } bg-[#151448] absolute top-[35px] lg:top-[25px] left-[-155px] sm:left-[0] min-w-[300px] lg:min-w-[394px] rounded-[15px] xxl:px-[35] md:px-[20px] px-[2px] xxl:py-[36px] md:py-[22px] py-[8px] dropdown-container z-[99999]`}
               >
-                <div className="text-[13px] leading-[25px] tracking-[0.8px] text-[#8184EB] mb-[14px] uppercase font-montserrat">
+                <div className="text-[16px] font-semibold leading-[25px] tracking-[0.8px] text-[#ffffff] mb-[14px] uppercase font-montserrat">
                   {items.title}
                 </div>
                 {items && items.data && items.data.length > 0 && (
@@ -73,7 +73,7 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
                                 className="flex gap-[14px] items-center hover:bg-[#D8D8D837] transition-all rounded-[6px] px-[15px]  py-[4px]"
                             >
                               <Link href={item.href}>
-                                <div className="text-[#101D2C] xxl:text-[20px] text-[16px] xxl:leading-[44px] leading-[32px] tracking-[-0.18px]">
+                                <div className="text-[#ffffff] xxl:text-[20px] text-[16px] xxl:leading-[44px] leading-[32px] tracking-[-0.18px]">
                                   {item.label}
                                 </div>
                               </Link>

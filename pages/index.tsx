@@ -14,7 +14,6 @@ import seoData from "../data/seoData.json";
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
 import HomeProductOverview from "../components/HomeProductOverview";
-import Chat from "../components/Chat";
 
 const Home: NextPage = () => {
     return (

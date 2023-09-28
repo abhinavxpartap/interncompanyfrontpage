@@ -18,7 +18,7 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
 
   // Define the initial conditions to determine text color and arrow color
   const isInitiallyBlack = [
-    '/portfolio2',
+    '/portfolio',
     '/blog',
     'blogDetailVeiw'
   ].includes(router.pathname);

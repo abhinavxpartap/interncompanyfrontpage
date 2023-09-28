@@ -45,12 +45,13 @@ const PortFolioPage: React.FC<PortFolioPageInterface> = (props) => {
                 <Float/>
                 <AboutPortfolio
                     title={page.processInfo?.title}
-                    images={page.processInfo?.images}
                     subtitle={page.processInfo?.subtitle}
                     client={page.processInfo?.client}
                     industry={page.processInfo?.industry}
                     services={page.processInfo?.services}
                     businessType={page.processInfo?.businessType}
+                    images={page.images}
+
                 />
                 <Director
                     image={page.Director?.image}
@@ -63,32 +64,34 @@ const PortFolioPage: React.FC<PortFolioPageInterface> = (props) => {
                     post={page.Director?.post}
                 />
                 <NewPortofilioJourney
-                    List1={page.NewJourney?.data1}
-                    List2={page.NewJourney?.Data2}
+                    List1={page.key_features}
+                    List2={page.approach}
                     heading={page.NewJourney?.heading}
                     subtitle2={page.NewJourney?.subtitle2}
                     title1={page.NewJourney?.title1}
                     title2={page.NewJourney?.title2}
                 />
                 <PortfolioOurProcess
-                    List={page.OurProcessNew?.data1}
+                    List={page.process}
                     heading={page.OurProcessNew?.heading}
                 />
                 <OurProcess
                     image={page.imagePort}
                 />
+
                 <ProjectChallangesNew
-                    list={page.resultNew?.list}
+                    list={page.resultData}
                     heading={page.resultNew?.heading}
 
                 />
                 <Results
-                    List={page.ResultNew?.Data}
+                    List={page.benefits}
                     heading={page.ResultNew?.heading}
                     subtitle={page.ResultNew?.subtitle}
                 />
                 <div className="pb-[80px]">
                     <CaseStudy/>
+
                 </div>
                 <FixedButton/>
                 <Footer/>

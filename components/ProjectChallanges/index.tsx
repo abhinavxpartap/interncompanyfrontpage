@@ -6,12 +6,12 @@ import {Button} from "@mui/material";
 
 interface Result {
     heading:string,
-    list:Data[],
+    list?:Data[],
 }
 interface Data{
     percentage?:number,
-    title:string,
-    content:string
+    title?:string,
+    content?:string
 }
 export const ProjectChallangesNew:React.FC<Result> = (props) => {
     const {heading,list}=props;

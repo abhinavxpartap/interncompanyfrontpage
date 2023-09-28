@@ -68,7 +68,7 @@ export const Header= () => {
     '/blog',
     '/ourStory',
     '/term',
-    '/portfolio2'
+    '/portfolio'
   ].includes(router.pathname)
     ? data.logo_light
     : isSticky

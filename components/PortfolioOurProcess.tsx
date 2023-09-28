@@ -1,13 +1,13 @@
 import React from 'react';
 
 interface OurProcess {
-    heading:string,
-    List:Data[],
+    heading?:string,
+    List?:Data[],
 }
 interface Data{
-    id:number,
-    title:string,
-    content:string
+    id?:number,
+    title?:string,
+    content?:string
 }
 export const PortfolioOurProcess: React.FC<OurProcess> = ( props) => {
 

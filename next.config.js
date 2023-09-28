@@ -17,6 +17,10 @@ const nextConfig = {
         source: '/:slug',
         destination: '/services/:slug',
       },
+      {
+        source: '/:slug',
+        destination: '/portfolios/:slug',
+      }
     ];
   },
 }

@@ -15,7 +15,7 @@ export default async function handler(
         await client.connect();
 
         const db = client.db('Alumel'); // Replace 'YourDatabaseName' with your database name
-        const collection = db.collection('PortFolios'); // Replace 'YourCollectionName' with your collection name
+        const collection = db.collection('Portfolios'); // Replace 'YourCollectionName' with your collection name
         const data = await collection.find({}).toArray(); // Retrieves a single object
         client.close();
 

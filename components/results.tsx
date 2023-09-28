@@ -19,9 +19,9 @@ export const Results: React.FC<ResultInterface> = ( props ) => {
             <h1 className="text-[#151448] text-[45px] font-semibold">{heading}</h1>
             <p className="text-[#3D4852] text-[18px] max-w-[800px] text-center font-medium">{subtitle}</p>
             <ul className="text-center text-[#151448] text-[20px] font-medium list-none mt-[40px]">
-                {List.map((item,index) => (
+                {List && List.length>0 && (List.map((item,index) => (
                 <li key={index} className="mb-[20px] flex flex-row justify-center items-center text-center gap-[10px]"><Img src="/newbullet.svg" className="w-[8px]" alt={"Icon"}/> {item.title}</li>
-                ))}
+                )))}
             </ul>
         </div>
       </div>

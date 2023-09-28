@@ -22,24 +22,40 @@ export const ProjectChallangesNew:React.FC<Result> = (props) => {
                 <h1 className="text-center text-[45px] font-semibold text-[#151448] mb-[30px] mt-[60px]">{heading}</h1>
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-[80px]">
                     <div className="flex flex-row gap-[20px]">
-                        <div className="text-[#6E73FF] text-[50px] font-semibold mt-[-10px]">{list[0].percentage}%</div>
-                        <div className="flex flex-col gap-[10px]">
-                            <h1 className="text-[#444444] text-[30px] font-semibold">{list[0].title}</h1>
-                            <p className="text-[#444444] text-[18px] leading-auto font-normal">{list[0].content}</p>
-                        </div>
+                        {list && list.length > 0 && (
+                            <>
+                                <div className="text-[#6E73FF] text-[50px] font-semibold mt-[-10px]">
+                                    {list[0].percentage}%
+                                </div>
+                                <div className="flex flex-col gap-[10px]">
+                                    <h1 className="text-[#444444] text-[30px] font-semibold">{list[0].title}</h1>
+                                    <p className="text-[#444444] text-[18px] leading-auto font-normal">
+                                        {list[0].content}
+                                    </p>
+                                </div>
+                            </>
+                        )}
                     </div>
                     <div className="flex flex-row gap-[20px]">
+                        {list && list.length > 0 && (
+                            <>
                         <div className="text-[#6E73FF] text-[50px] font-semibold mt-[-10px]">{list[1].percentage}%</div>
                         <div className="flex flex-col gap-[10px]">
                             <h1 className="text-[#444444] text-[30px] font-semibold">{list[1].title}</h1>
                             <p className="text-[#444444] text-[18px] leading-auto font-normal">{list[1].content}</p>
                         </div>
+                            </>
+                        )}
                     </div>
                 </div>
                 <div className="max-w-[484px] mt-[60px]">
+                    {list && list.length > 0 && (
+                        <>
                     <h1 className="mb-[10px] text-[#444444] text-[30px] font-semibold text-center">
                         {list[2].title}                    </h1>
                     <p className="mb-[25px] text-center text-[#444444] text-[18px] leading-auto font-normal">{list[2].content}</p>
+                </>
+                )}
                 </div>
                 <div className="flex mt-[30px] justify-center pb-[50px] items-center ">
                     <Button

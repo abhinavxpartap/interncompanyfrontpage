@@ -77,9 +77,6 @@ const PortFolioPage: React.FC<PortFolioPageInterface> = (props) => {
                 <OurProcess
                     image={page.imagePort}
                 />
-                <div className="md:mb-[80px] mb-[30px]">
-                    <CaseStudy/>
-                </div>
                 <ProjectChallangesNew
                     list={page.resultNew?.list}
                     heading={page.resultNew?.heading}
@@ -92,7 +89,6 @@ const PortFolioPage: React.FC<PortFolioPageInterface> = (props) => {
                 />
                 <div className="pb-[80px]">
                     <CaseStudy/>
-
                 </div>
                 <FixedButton/>
                 <Footer/>

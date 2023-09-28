@@ -6,11 +6,12 @@ export const AboutPortfolio: React.FC<PizzaHutInfo> = (props) => {
     const {title, subtitle, industry,client, businessType, services, images} =
         props;
 
-    const imageElements = images.map((imageUrl: string, index: number) => (
+    const imageElements = images && images.length > 0 && images.map((imageUrl: string, index: number) => (
         <div key={index}>
-            <Img src={imageUrl} alt={`Image ${index}`} className="w-auto h-auto"/>
+            <Img src={imageUrl} alt={`Image ${index}`} className="w-auto h-auto" />
         </div>
     ));
+
 
     const contentElement = (
         <div className="max-w-[1377.5px] relative top-[-25px] mx-auto">

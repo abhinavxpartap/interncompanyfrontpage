@@ -15,7 +15,7 @@ export const Results: React.FC<ResultInterface> = ( props ) => {
 
   const content = (
       <div className="max-w-[1377.5px] relative mx-auto">
-        <div className="flex flex-col items-center justify-center w-[100%] py-[50px] px-[10px] md:px-[60px]">
+        <div className="flex flex-col items-center justify-center w-[100%] py-[10px] px-[10px] md:px-[60px]">
             <h1 className="text-[#151448] text-[45px] font-semibold">{heading}</h1>
             <p className="text-[#3D4852] text-[18px] max-w-[800px] text-center font-medium">{subtitle}</p>
             <ul className="text-center text-[#151448] text-[20px] font-medium list-none mt-[40px]">

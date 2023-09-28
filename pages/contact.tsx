@@ -8,7 +8,6 @@ import {OurBrands} from '../components/ourBrands';
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
 import CaseStudy from "../components/Case Study";
-import Chat from "../components/Chat";
 
 const Home: NextPage = () => {
     return (
@@ -39,7 +38,6 @@ const Home: NextPage = () => {
                 />
             </div>
             <FixedButton/>
-            {/*<Chat/>*/}
 
             <Footer/>
         </div>

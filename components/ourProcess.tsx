@@ -8,7 +8,7 @@ export const OurProcess:React.FC<ImageInterface> = (props) => {
     console.log('image prop:', props.image);
 
   const content = (
-    <div className="max-w-[1477.5px] py-[100px] relative  mx-auto">
+    <div className="max-w-[1477.5px] py-[40px] relative  mx-auto">
       <div className=" pt-[40px] grid md:grid-cols-4 mb-[50px] grid-cols-2 md:gap-[60px] gap-3  mx-auto w-[94%]  md:flex-row flex-col">
         {image && image.length>0 && ( image.map((src, index) => (
           <div key={index}>

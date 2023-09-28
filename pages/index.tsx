@@ -38,44 +38,27 @@ const Home: NextPage = () => {
                     <OurBrands/>
                 </div>
                 <HomeProductOverview/>
-                <div
-                    style={{background: '#F9FBFF'}}
-                    className="bg-cover bg-center bg-no-repeat relative  block"
-                >
-
+                <div style={{background: '#F9FBFF'}} className="bg-cover bg-center bg-no-repeat relative  block">
                     <Team/>
                 </div>
-                <div
-                    style={{background: '#F9FBFF'}}
-                    className="bg-cover pt-[35px]  md:pt-[70px] bg-center bg-no-repeat relative  block"
-                >
+                <div style={{background: '#F9FBFF'}}
+                     className="bg-cover pt-[35px]  md:pt-[70px] bg-center bg-no-repeat relative  block">
                     <Service
-                    title={data.EaseBanner.title}
-                    subtitle={data.EaseBanner.subtitle}
-                    />
+                        title={data.EaseBanner.title}
+                        subtitle={data.EaseBanner.subtitle}/>
                 </div>
-                <div
-                    style={{background: '#F9FBFF'}}
-                    className="bg-cover bg-center -z-0 bg-no-repeat relative  block"
-                >
+                <div style={{background: '#F9FBFF'}} className="bg-cover bg-center -z-0 bg-no-repeat relative  block">
                     <CaseStudy/>
                 </div>
-                <div
-                    style={{background: '#F9FBFF'}}
-                    className="bg-cover bg-center -z-0 bg-no-repeat relative  block"
-                >
-                    {/*<Chat/>*/}
-
+                <div style={{background: '#F9FBFF'}} className="bg-cover bg-center -z-0 bg-no-repeat relative  block">
                     <Testimonials/>
                 </div>
-                <div
-                    style={{background: '#F9FBFF'}}
-                    className="bg-cover bg-center pt-[40px] -z-0 bg-no-repeat relative  block"
-                >
+                <div style={{background: '#F9FBFF'}}
+                     className="bg-cover bg-center pt-[40px] -z-0 bg-no-repeat relative  block">
                     <DemoForm/>
                 </div>
                 <FixedButton/>
-              <Footer/>
+                <Footer/>
             </div>
         </>
     );

@@ -80,11 +80,7 @@ export const Banner: React.FC<BannerDataInterface> = (props) => {
 
                     </Button>
                 </div>
-                {/*<Dialog open={open} onClose={handleClose}>*/}
-                {/*    <DialogContent>*/}
-                {/*        <Popupform onClose={handleClose} />*/}
-                {/*    </DialogContent>*/}
-                {/*</Dialog>*/}
+
                 <div className="mt-[20px] text-center">
                     <hr className="inline-block text-center w-[22px] mb-[4px]"/>
                     <span className="text-[16px] text-center text-[white]"> Web, iOS, and Android Solutions for Your Unique Performance </span>

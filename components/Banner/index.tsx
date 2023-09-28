@@ -4,19 +4,23 @@ import {Button} from '@mui/material';
 import {BannerDataInterface} from '../../types';
 
 export const Banner: React.FC<BannerDataInterface> = (props) => {
-    const {title, subtitle, image, button} = props;
+    const {title, subtitle, image, button,fix} = props;
 
-    const [activeLine, setActiveLine] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentTitle, setCurrentTitle] = useState(title[0]);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setActiveLine((prevActiveLine) => (prevActiveLine + 1) % title.length);
-        }, 3000); // Adjust the interval as needed
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % title.length);
+        }, 2000);
 
         return () => {
             clearInterval(interval);
         };
-    }, []);
+    }, [title]);
+    useEffect(() => {
+        setCurrentTitle(title[currentIndex]);
+    }, [currentIndex, title]);
 
 
     return (
@@ -28,20 +32,17 @@ export const Banner: React.FC<BannerDataInterface> = (props) => {
             <div
                 className="max-w-[1377.5px] mx-[auto] flex flex-col items-center justify-center md:pt-[175px] pt-[117px] pb-[71px] md:px-0 px-[10px]">
                 <div
-                    className="md:text-[70px] text-[32px] text-[#FFFFFF] font-bold leading-[40px] md:leading-[90px] md:tracking-[-2.4px] max-w-[1300px] text-center md:pb-[25px] pb-[18px] fade-in"
+                    className="md:text-[70px]   text-[32px] text-[#FFFFFF] font-bold leading-[40px] md:leading-[90px] md:tracking-[-2.4px] max-w-[1300px] text-center md:pb-[5px] pb-[18px] fade-in"
                 >
-                    <div className="text-container">
-                        <div className="animated-text">
-                            {title.map((line, index) => (
-                                <span
-                                    key={index}
-                                    className={index === activeLine ? 'active-line' : ''}
-                                >
-                             {line}
-                        </span>
-                            ))}
-                        </div>
-                    </div>
+                    {fix}
+
+                </div>
+
+                <div
+                    className="md:text-[70px] transition-text  text-[32px] text-[#FFFFFF] font-bold leading-[40px] md:leading-[90px] md:tracking-[-2.4px] max-w-[1300px] text-center md:pb-[25px] pb-[18px] fade-in"
+                >
+                    {currentTitle}
+
                 </div>
                 <div
                     className=" max-w-[906px]  fade-in   font-medium text-[#FFFFFF] md:text-[20px] text-[16px] leading-[160%] tracking-[-0.68px] text-center pb-[30px]">

@@ -344,6 +344,7 @@ export interface Assurance {
 
 export interface BannerDataInterface {
     title: string[];
+    fix:string;
     subtitle: string;
     image: string;
     button:string;

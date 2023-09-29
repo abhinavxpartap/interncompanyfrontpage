@@ -13,6 +13,41 @@ interface PrivateLayoutInterface {
 const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
     const router = useRouter();
     const {logout, user} = useAuth();
+    const [navlink, setData] = useState<any[]>([]);
+    useEffect(() => {
+        fetch("/api/services/GET/services")
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then((data) => {
+                setData(data);
+            })
+            .catch((error) => {
+                console.error("Error fetching banner data:", error);
+            });
+    }, []);
+
+    const [navlink1, setData1] = useState<any[]>([]);
+    useEffect(() => {
+        fetch("/api/industry/GET/indsutries")
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then((data) => {
+                setData1(data);
+            })
+            .catch((error) => {
+                console.error("Error fetching banner data:", error);
+            });
+    }, []);
+
+
     const links: AdminLinksInterface[] = [
         {
             label: 'Dashboard',
@@ -235,43 +270,92 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                 }
             ]
         },
-        {
-            label: 'Service Page',
-            href: "",
+        ...navlink.map((d:any) => ({
+                label: d.name,
+                href: `/admin/${d.name}`,
+                active: false,
+                subLinks: [
+                    {
+                        label: 'Banner',
+                        href: `/admin/${d.name}/Banner`,
+                        active: false
+                    },
+                    {
+                        label: 'About',
+                        href: `/admin/${d.name}/About`,
+                        active: false
+                    },
+                    {
+                        label:'EaseBanner',
+                        href:`/admin/${d.name}/EaseBanner`,
+                        active: false
+                    },
+                    {
+                        label:'ReasonBanner',
+                        href:`/admin/${d.name}/PrcessBanner`,
+                        active: false
+                    },
+                    {
+                        label: 'DevelopmentBanner',
+                        href: `/admin/${d.name}/DevelopmentBanner`,
+                        active: false
+                    },
+
+                    {
+                        label:'ProcessBanner',
+                        href:`/admin/${d.name}/PrcessBanner`,
+                        active: false
+                    },
+                    {
+                        label:'Faq',
+                        href:`/admin/${d.name}/Faq`,
+                        active: false
+                    }
+                ]
+        })),
+        ...navlink1.map((d:any) => ({
+            label: d.name,
+            href: `/admin/${d.name}`,
             active: false,
             subLinks: [
                 {
                     label: 'Banner',
-                    href: '/admin/Service/Banner',
+                    href: `/admin/${d.name}/Banner`,
                     active: false
                 },
                 {
                     label: 'About',
-                    href: '/admin/Service/About',
+                    href: `/admin/${d.name}/About`,
                     active: false
                 },
                 {
-                    label: 'Process',
-                    href: '/admin/Service/Process',
+                    label:'EaseBanner',
+                    href:`/admin/${d.name}/EaseBanner`,
                     active: false
                 },
                 {
-                    label:'Development',
-                    href:'/admin/Service/Development',
+                    label:'ReasonBanner',
+                    href:`/admin/${d.name}/PrcessBanner`,
+                    active: false
+                },
+                {
+                    label: 'DevelopmentBanner',
+                    href: `/admin/${d.name}/DevelopmentBanner`,
+                    active: false
+                },
+
+                {
+                    label:'ProcessBanner',
+                    href:`/admin/${d.name}/PrcessBanner`,
                     active: false
                 },
                 {
                     label:'Faq',
-                    href:'/admin/Service/Faq',
-                    active: false
-                },
-                {
-                    label:'Assurance',
-                    href:'/admin/Service/Assurance',
+                    href:`/admin/${d.name}/Faq`,
                     active: false
                 }
             ]
-        },
+        })),
         {
             label: 'Industries Page',
             href: "",
@@ -328,6 +412,8 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
             <title>{title}</title>
         </Head>
         <div className="main bg-[#F5F9FF]">
+            {
+                user ?
             <div className="flex  min-h-[100vh]">
                 <div className="w-[230px] bg-white border-r-2 flex flex-col">
                     <SideNav links={activeLinks}/>
@@ -350,7 +436,8 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                         {children}
                     </div>
                 </div>
-            </div>
+            </div>:<div/>
+            }
         </div>
     </>
 }

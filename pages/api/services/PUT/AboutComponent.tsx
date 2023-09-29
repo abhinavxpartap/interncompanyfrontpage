@@ -1,37 +1,35 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { MongoClient, MongoClientOptions, ObjectId } from 'mongodb';
+import { MongoClient } from 'mongodb';
+import { MongoClientOptions, ObjectId } from 'mongodb';
 import { MONGODB_URI } from '../../config';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-    if (req.method !== 'POST') {
+    if (req.method !== 'PUT') {
         return res.status(405).end();
     }
-
     try {
-        const { _id, ContactData } = req.body;
-
-        if (!_id || !ContactData) {
+        const { _id, AboutBanner , AboutData } = req.body;
+        if (!_id || !AboutBanner || !AboutData) {
             return res.status(400).json({ error: 'Invalid request data' });
         }
-
         const client = new MongoClient(MONGODB_URI, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         } as MongoClientOptions);
         await client.connect();
-
         const db = client.db('Alumel');
-        const collection = db.collection('ContactUs'); // Replace with your collection name
+        const collection = db.collection('Services'); // Replace with your collection name
 
         const objectId = new ObjectId(_id); // Convert _id to ObjectId
-
+        const existingDocument = await collection.findOne({ _id: objectId });
+        if (!existingDocument) {
+            return res.status(404).json({ error: 'Document not found' });
+        }
         const result = await collection.updateOne(
             { _id: objectId },
-            { $push: { ContactData: { $each: ContactData } } }
+            { $set: { "data.AboutBanner": AboutBanner, "data.AboutData":AboutData } }
         );
-
         client.close();
-
         if (result.modifiedCount === 1) {
             res.status(200).json({ message: 'Update successful' });
         } else {

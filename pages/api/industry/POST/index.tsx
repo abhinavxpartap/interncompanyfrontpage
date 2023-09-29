@@ -24,7 +24,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         const collection = db.collection('Industries');
 
         // Clone the first page with the name "Data_Analytics"
-        const cloneSourcePage = pages.find((page) => page.name === 'Data_Analytics');
+        const cloneSourcePage = pages.find((page) => page.name === 'Industry4_0');
 
         if (!cloneSourcePage) {
             client.close();

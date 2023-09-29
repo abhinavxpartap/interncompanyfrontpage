@@ -1,0 +1,298 @@
+{
+  "bannerData": {
+    "title": "Revolutionizing Your Tomorrow, Today with AI and Innovation.",
+    "image": "/portfolio/banner.png",
+    "icon": "/portfoliotech/logo.svg"
+  },
+  "Empowerment": {
+    "title": "How We Empower Our Clients?",
+    "subtitle1": "We lead innovation by crafting elite teams that harness cutting-edge technology. Our mission is to amplify your vision with customized squads skilled in the latest tech advancements. With a proven track record in diverse domains and programming languages, we offer a solution to scale your projects effectively.",
+    "subtitle2": "We're here to enhance, not replace, your in-house teams. Together, we leverage advanced technology to supercharge your projects, ensuring rapid development without compromising quality. Experience the efficiency of accelerated development while saving time and resources.",
+    "image": "/portfolio/empower.svg",
+    "year": "7  ",
+    "business": "90+",
+    "yearTitle": "Years of Sustainability and Growth",
+    "businesspeople": "Referral Business from Satisfied Clients Growth"
+  },
+  "portfoliotech": {
+    "title": "Key Technologies",
+    "subtitle": "We're not just tech enthusiasts; we're your conductors, weaving a seamless and exciting melody of innovation for your journey with us",
+    "image": [
+      "/portfoliotech/js.svg",
+      "/portfoliotech/html.svg",
+      "/portfoliotech/css.svg",
+      "/portfoliotech/ang.svg",
+      "/portfoliotech/react.svg",
+      "/portfoliotech/vue.svg",
+      "/portfoliotech/7.svg",
+      "/portfoliotech/node.svg",
+      "/portfoliotech/python.svg",
+      "/portfoliotech/jquerry.svg",
+      "/portfoliotech/django.svg",
+      "/portfoliotech/post.svg",
+      "/portfoliotech/tail.svg",
+      "/portfoliotech/boot.svg",
+      "/portfoliotech/mysql.svg",
+      "/portfoliotech/word.svg",
+      "/portfoliotech/java.svg",
+      "/portfoliotech/wordpress.svg",
+      "/portfoliotech/aws.svg",
+      "/portfoliotech/php.svg",
+      "/portfoliotech/lara.svg",
+      "/portfoliotech/less.svg",
+      "/portfoliotech/docker.svg",
+      "/portfoliotech/symp.svg",
+      "/portfoliotech/code.svg",
+      "/portfoliotech/yi.svg",
+      "/portfoliotech/webpack.svg",
+      "/portfoliotech/ai.svg",
+      "/portfoliotech/cloud.svg",
+      "/portfoliotech/saas.svg"
+    ]
+  },
+  "Solution": {
+    "title": "Solutions We Deliver",
+    "subtitle": "At Alumeltech, we understand that every challenge is unique, which is why our services are designed to meet your specific needs. Explore the range of innovative solutions we offer, all aimed at helping you thrive in the digital age.",
+    "data": [
+      {
+        "title": "Bespoke Software Development",
+        "image": "/portfoliotech/solution1.svg"
+      },
+      {
+        "title": "AI and Machine Learning Solutions",
+        "image": "/portfoliotech/solution2.svg"
+      },
+      {
+        "title": "Internet of Things Solutions",
+        "image": "/portfoliotech/solution3.svg"
+      },
+      {
+        "title": "Mobile App Development",
+        "image": "/portfoliotech/solution4.svg"
+      },
+      {
+        "title": "Cloud Infrastructure Setup",
+        "image": "/portfoliotech/solution5.svg"
+      },
+      {
+        "title": "Blockchain App Development",
+        "image": "/portfoliotech/solution6.svg"
+      },
+      {
+        "title": "Web Application Development",
+        "image": "/portfoliotech/solution7.svg"
+      },
+      {
+        "title": "Cybersecurity Services",
+        "image": "/portfoliotech/solution8.svg"
+      },
+      {
+        "title": "Web3 and Decentralized App",
+        "image": "/portfoliotech/solution9.svg"
+      },
+      {
+        "title": "Data Analytics and Insights",
+        "image": "/portfoliotech/solution10.svg"
+      },
+      {
+        "title": "Industry 4.0 Integration",
+        "image": "/portfoliotech/solution11.svg"
+      }
+    ]
+  },
+  "portfolioindustry": {
+    "title": "  Industries We Work With ",
+    "subtitle": " Explore the industries Alumeltech has partnered with on their journey to success. Our expertise\n                        spans various sectors, and we've had the privilege of collaborating with companies like yours.\n                        See how our solutions have made a significant impact in your industry.",
+    "data": [
+      {
+        "image": "/portfoliotech/portindus1.svg",
+        "title": "Finance and Fintech",
+        "features": [
+          "Financial Software Development",
+          "Blockchain for Payments",
+          "Robotic Process Automation"
+        ]
+      },
+      {
+        "image": "/portfoliotech/portindus2.svg",
+        "title": "Retail and E-commerce",
+        "features": [
+          "E-commerce App Development",
+          "AI-Powered Recommendations",
+          "Inventory Management Solutions"
+        ]
+      },
+      {
+        "image": "/portfoliotech/portindus3.svg",
+        "title": "Healthcare and Life Sciences",
+        "features": [
+          "Bespoke Healthcare Solutions",
+          "Telehealth Applications",
+          "AI-Powered Diagnostics"
+        ]
+      },
+      {
+        "image": "/portfoliotech/portindus4.svg",
+        "title": "Real Estate",
+        "features": [
+          "Property Management Software",
+          "Real-Time Property Listings",
+          "AI-Enhanced Property Search"
+        ]
+      },
+      {
+        "image": "/portfoliotech/portindus5.svg",
+        "title": "Travel and Hospitality",
+        "features": [
+          "Travel Booking Solutions",
+          "AI-Driven Travel Apps",
+          "Blockchain-Based Loyalty Programs"
+        ]
+      },
+      {
+        "image": "/portfoliotech/portindus6.svg",
+        "title": "Manufacturing & Industry 4.0",
+        "features": [
+          "Industry 4.0 Integration",
+          "Smart Manufacturing Solutions",
+          "IoT-Enabled Process Optimization"
+        ]
+      },
+      {
+        "image": "/portfoliotech/portindus7.svg",
+        "title": "Media and Entertainment",
+        "features": [
+          "Media Streaming Platforms",
+          "AR/VR Experiences",
+          "Content Recommendation Engines"
+        ]
+      },
+      {
+        "image": "/portfoliotech/portindus8.svg",
+        "title": "Restaurants and FoodTech",
+        "features": [
+          "Food Ordering and Delivery Apps",
+          "Contactless Dining Solutions",
+          "Customer Loyalty Programs"
+        ]
+      },
+      {
+        "image": "/portfoliotech/portindus9.svg",
+        "title": "Automotive",
+        "features": [
+          "Connected Car Solutions",
+          "Vehicle Telematics",
+          "AI-Powered Driver Assistance"
+        ]
+      },
+      {
+        "image": "/portfoliotech/portindus10.svg",
+        "title": "Education and EdTech",
+        "features": [
+          "Learning Management Systems",
+          "Personalized Learning Apps",
+          "Edutainment Platformse"
+        ]
+      }
+    ]
+  },
+  "challenges": {
+    "title": "  Challenges We Help You Tackle ",
+    "subtitle": " Your challenges are our challenges. We understand that navigating the complex world of technology and business can be daunting. Identify the hurdles you face, and rest assured that we're here to understand and address them, no matter how big or small.",
+    "data": [
+      {
+        "number": "01",
+        "title": "Technological Complexity: ",
+        "features": "Staying up-to-date with rapidly evolving technology can be overwhelming. We simplify complex tech issues, ensuring your solutions are future-proof."
+      },
+      {
+        "number": "02",
+        "title": "Competition: ",
+        "features": "In a competitive landscape, standing out is essential. Our solutions enhance your competitiveness and position you for success."
+      },
+      {
+        "number": "03",
+        "title": "Digital Transformation: ",
+        "features": "Transitioning your business for the digital age can be challenging. We provide tailored strategies and solutions for a seamless transformation."
+      },
+      {
+        "number": "04",
+        "title": "Scaling: ",
+        "features": "Scaling your operations requires careful planning. We offer scalable solutions that grow with your business, preventing bottlenecks."
+      },
+      {
+        "number": "05",
+        "title": "Data Security: ",
+        "features": "Protecting sensitive data is paramount. Our cybersecurity experts keep your information safe from threats, ensuring compliance with regulations."
+      },
+      {
+        "number": "06",
+        "title": "User Experience: ",
+        "features": "Creating exceptional user experiences is crucial. Our UI/UX design expertise ensures user-centric solutions."
+      },
+      {
+        "number": "07",
+        "title": "Cost Optimization: ",
+        "features": "Maximizing ROI while managing costs is a universal challenge. Our solutions are designed for efficiency and cost-effectiveness."
+      },
+      {
+        "number": "08",
+        "title": "Regulatory Compliance: ",
+        "features": "Navigating industry regulations can be tricky. We help you meet compliance requirements with confidence."
+      },
+      {
+        "number": "09",
+        "title": "Integration: ",
+        "features": "Seamlessly integrating new solutions with existing systems can be complex. We ensure smooth integration and data flow."
+      }
+    ]
+  },
+  "Review": {
+    "title": "  Customer Reviews ",
+    "data": [
+      {
+        "image": "/portfoliotech/review.svg",
+        "type": " Real Estate",
+        "message": "\"Working with Alumeltech has been a game-changer for our real estate business. Their AI-driven solutions transformed the way we connect with buyers, resulting in a 30% increase in sales. Highly recommended!\"",
+        "name": "John ",
+        "company": "Dream Homes Realty,"
+      },
+      {
+        "image": "/portfoliotech/review.svg",
+        "type": "Finance",
+        "message": "\"Alumeltech's expertise in cybersecurity and Web3 technology has given our fintech app the edge it needed. Our users trust us more than ever, thanks to their innovative solutions.\"",
+        "name": "Sara ",
+        "company": "9AceX Solutions,"
+      },
+      {
+        "image": "/portfoliotech/review.svg",
+        "type": "Restaurant",
+        "message": "\"Our restaurant management app now offers efficient ordering, on-time delivery, and hassle-free payment options—all thanks to Alumeltech's exceptional work. Our customers love it!\"",
+        "name": "Michael ",
+        "company": "TastyBytes Restaurants,"
+      },
+      {
+        "image": "/portfoliotech/review.svg",
+        "type": "Travel",
+        "message": "\"Alumeltech's scalable travel app solution has improved our user experience significantly. Travelers can now connect virtually anytime, anywhere, making our travel services more accessible than ever.\"",
+        "name": "Emily ",
+        "company": "ExploreMore Travels,"
+      },
+      {
+        "image": "/portfoliotech/review.svg",
+        "type": "Healthcare",
+        "message": "\"Their telehealth apps have revolutionized our healthcare practice. We can now connect with patients remotely, providing healthcare services whenever they need them.\"",
+        "name": " Dr. Smith",
+        "company": "HealthHub Clinics,"
+      },
+      {
+        "image": "/portfoliotech/review.svg",
+        "type": "Dating",
+        "message": "\"We were stuck with a complicated development project until Alumeltech stepped in. They simplified our dating app's architecture, resulting in a seamless user experience and skyrocketing user engagement.\"",
+        "name": "Lisa ",
+        "company": "LoveHook Dating,"
+      }
+
+    ]
+  }
+}

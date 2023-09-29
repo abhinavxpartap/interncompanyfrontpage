@@ -68,7 +68,9 @@ export const Header= () => {
     '/blog',
     '/ourStory',
     '/term',
-    '/portfolio'
+    '/portfolio',
+    '/portfolios'
+
   ].includes(router.pathname)
     ? data.logo_light
     : isSticky
@@ -125,7 +127,7 @@ export const Header= () => {
                   href={undefined}
                 />
                 <Dropdown
-                  title="Portfolio"
+                  title="Case Study"
                   items={headerData.header[3]}
                   open={openSupport}
                   isSticky={isSticky}

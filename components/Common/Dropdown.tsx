@@ -20,6 +20,7 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
   const isInitiallyBlack = [
     '/portfolio',
     '/blog',
+      '/portfolios',
     'blogDetailVeiw'
   ].includes(router.pathname);
 
@@ -59,7 +60,7 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
               <div
                   className={`${
                       open ? 'block' : 'hidden'
-                  } bg-[#151448] absolute top-[35px] lg:top-[25px] left-[-155px] sm:left-[0] min-w-[300px] lg:min-w-[394px] rounded-[15px] xxl:px-[35] md:px-[20px] px-[2px] xxl:py-[36px] md:py-[22px] py-[8px] dropdown-container z-[99999]`}
+                  } bg-[#7F75FC] absolute top-[35px] lg:top-[25px] left-[-155px] sm:left-[0] min-w-[300px] lg:min-w-[394px] rounded-[15px] xxl:px-[35] md:px-[20px] px-[2px] xxl:py-[36px] md:py-[22px] py-[8px] dropdown-container z-[99999]`}
               >
                 <div className="text-[16px] font-semibold leading-[25px] tracking-[0.8px] text-[#ffffff] mb-[14px] uppercase font-montserrat">
                   {items.title}

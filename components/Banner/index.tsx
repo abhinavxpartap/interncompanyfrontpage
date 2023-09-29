@@ -12,7 +12,7 @@ export const Banner: React.FC<BannerDataInterface> = (props) => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % title.length);
-        }, 2000);
+        }, 3500);
 
         return () => {
             clearInterval(interval);
@@ -39,13 +39,13 @@ export const Banner: React.FC<BannerDataInterface> = (props) => {
                 </div>
 
                 <div
-                    className="md:text-[52px]   text-[32px] text-[#FFFFFF] font-bold leading-[40px] md:leading-[60px] md:tracking-[-2.4px] max-w-[1000px] text-center md:pb-[25px] pb-[18px] fade-in"
+                    className="md:text-[40px]   text-[32px] text-[#FFFFFF] font-normal leading-[40px] md:leading-[60px] md:tracking-[-2.4px] max-w-[1200px] text-center md:pb-[25px] pb-[18px] fade-in"
                 >
                     {currentTitle}
 
                 </div>
                 <div
-                    className=" max-w-[906px]  fade-in   font-medium text-[#FFFFFF] md:text-[20px] text-[16px] leading-[160%] tracking-[-0.68px] text-center pb-[30px]">
+                    className=" max-w-[906px]  fade-in   font-normal text-[#FFFFFF] md:text-[20px] text-[16px] leading-[160%] tracking-[-0.68px] text-center pb-[30px]">
                     {subtitle}
                 </div>
                 <div>

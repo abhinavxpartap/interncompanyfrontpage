@@ -1087,10 +1087,10 @@
         "services": "Design, Development, Support & Maintenance"
       },
       "images": [
-        "/fin/m1.svg",
-        "/fin/m2.svg",
-        "/fin/m3.svg",
-        "/fin/m4.svg"
+        "/fin/m1.png",
+        "/fin/m2.png",
+        "/fin/m3.png",
+        "/fin/m4.png"
       ],
 
       "Director": {
@@ -1210,14 +1210,14 @@
         }
       ],
       "imagePort": [
-        "/fin/m5.svg",
-        "/fin/m6.svg",
-        "/fin/m7.svg",
-        "/fin/m8.svg",
-        "/fin/m9.svg",
-        "/fin/m10.svg",
-        "/fin/m11.svg",
-        "/fin/m12.svg"
+        "/fin/m5.png",
+        "/fin/m6.png",
+        "/fin/m7.png",
+        "/fin/m8.png",
+        "/fin/m9.png",
+        "/fin/m10.png",
+        "/fin/m11.png",
+        "/fin/m12.png"
 
       ],
       "ResultNew": {

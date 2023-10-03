@@ -8,7 +8,7 @@ import {useRouter} from "next/router";
 import {BlockNoteView, useBlockNote} from '@blocknote/react';
 import {BlockNoteEditor} from "@blocknote/core/types/src/BlockNoteEditor";
 import {GetServerSideProps} from "next";
-import {blogApi} from "../../../helper/blog";
+import {blogApi} from "../../../../helper/blog";
 import {BlogInterface} from "../../../../types";
 
 const fieldNames: any = {
@@ -31,7 +31,19 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
     const [editorData, setEditorData] = useState<any>({});
     const [errors, setErrors] = useState<any>("");
     // const [isFeatured, setIsFeatured] = useState<any>(false);
-    const data = JSON.parse(props.blog.body);
+    let data;
+
+    try {
+        // Check if props.blog.body is a JSON array
+        data = Array.isArray(props.blog.body) ? props.blog.body : JSON.parse(props.blog.body);
+    } catch (error) {
+        // Handle the parsing error
+        console.error("Error parsing JSON:", error);
+        // Provide a default value (empty array) as a fallback
+        data = [];
+    }
+
+// Now you can work with the data, which is an array
     const updatedData = data.map((item: any) => {
         const filteredContent = item.content.filter(
             (contentItem: any) => contentItem?.text?.trim() !== ""
@@ -98,7 +110,7 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
             formData.append("file", params.image);
 
             const response = await fetch("/api/update/blog", {
-                method: "POST",
+                method: "PUT",
                 body: formData,
             });
             const data = await response.json();
@@ -132,14 +144,6 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
                     Recommended Image Size: 1920x1080 & Allowed Image Format: .png, .jpg, .jpeg, .webp
                 </h3>
             </div>
-            {/*<div>*/}
-            {/*    <Button*/}
-            {/*        label={!isFeatured ? 'Add to Featured' : 'Remove from Featured'}*/}
-            {/*        color="secondary"*/}
-            {/*        className="h-[40px] rounded"*/}
-            {/*        onClick={() => setIsFeatured(!isFeatured)}*/}
-            {/*    />*/}
-            {/*</div>*/}
             <div>
                 <Button
                     label="Update"

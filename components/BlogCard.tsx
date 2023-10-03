@@ -1,32 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
-import { Skeleton } from '@mui/material';
-import { Img } from '../utils/Img';
+import {Skeleton} from '@mui/material';
+import {Img} from '../utils/Img';
 
 interface CardBlog {
   img: string;
   title: string;
   description: string;
-  className?: string;
   url: string;
-  Date: string;
-  categories: string;
-  AuthorName: string;
 }
 
 export const BlogCards: React.FC<CardBlog> = ({
   img,
   title,
   description,
-  className,
   url,
-  Date,
-  AuthorName,
-  categories,
 }) => {
   return (
     <div
-      className={`rounded-[20px] bg-white overflow-hidden flex flex-col ${className}`}
+      className={`rounded-[20px] bg-white overflow-hidden flex flex-col`}
       style={{
         boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25);',
       }}
@@ -45,36 +37,8 @@ export const BlogCards: React.FC<CardBlog> = ({
             </Link>
           </div>
         )}
-        <div
-          className="absolute top-[11px] right-[11px]  rounded-[5px] px-[10px] xxl:text-[16px] md:text-[13px] leading-[28px] text-[black] font-medium"
-          style={{
-            background: '#ffffff',
-            boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
-          }}
-        >
-          {!categories ? (
-            <Skeleton
-              variant="rectangular"
-              className="p-[12px] mb-[10px]"
-              height={10}
-            />
-          ) : (
-            <p>{categories}</p>
-          )}
-        </div>
       </div>
       <div className="flex-1 flex flex-col items-stretch py-[10px] px-[16px] h-auto  mt-[5px]">
-        {!Date ? (
-          <Skeleton
-            variant="rectangular"
-            className="p-[12px] mb-[10px]"
-            height={10}
-          />
-        ) : (
-          <p className="capitalize text-[#757B8A] mt-[-2px] pb-[4px] text-[16px] font-normal">
-            {AuthorName} {Date}
-          </p>
-        )}
         {!title ? (
           <Skeleton
             variant="rectangular"
@@ -96,7 +60,7 @@ export const BlogCards: React.FC<CardBlog> = ({
       </div>
       <div className="flex flex-end justify-end  pb-[12px]  px-[18px]">
         <Link
-          href={`/blog/${url}`}
+          href={`/blogs/${url}`}
           className="text-[#8184EB]  md:text-[15px] text-[12px] leading-[29px] font-medium"
         >
           {`Read more >>`}

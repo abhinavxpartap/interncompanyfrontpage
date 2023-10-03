@@ -1,17 +1,16 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Head from 'next/head';
 import seoData from '../data/seoData.json';
 import Data from '../data/blogData.json';
-import { BlogCards } from '../components/BlogCard';
-import { Img } from '../utils/Img';
-import { Button } from '@mui/material';
-import { GetStories } from '../components/getStories';
-import { useRouter } from 'next/router';
-import { Header } from '../components/Common/Header';
-import { Footer } from '../components/footer';
+import {BlogCards} from '../components/BlogCard';
+import {Img} from '../utils/Img';
+import {Button} from '@mui/material';
+import {GetStories} from '../components/getStories';
+import {useRouter} from 'next/router';
+import {Header} from '../components/Common/Header';
+import {Footer} from '../components/footer';
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
-import Chat from "../components/Chat";
 
 const BlogPage: React.FC = () => {
   const [isActive, setIsActive] = useState(0);
@@ -116,13 +115,10 @@ const BlogPage: React.FC = () => {
               {Data.BlogData.slice(0, 6).map((item, index: number) => (
                 <BlogCards
                   key={index}
-                  AuthorName={item.AuthorName}
                   img={item.image}
                   title={item.title}
                   description={item.description}
                   url={item.URL}
-                  categories={item.categories}
-                  Date={item.Date}
                 />
               ))}
             </div>
@@ -137,13 +133,10 @@ const BlogPage: React.FC = () => {
                   {Data.BlogData.slice(0, 3).map((item, index: number) => (
                     <BlogCards
                       key={index}
-                      AuthorName={item.AuthorName}
                       img={item.image}
                       title={item.title}
                       description={item.description}
                       url={item.URL}
-                      categories={item.categories}
-                      Date={item.Date}
                     />
                   ))}
                 </div>

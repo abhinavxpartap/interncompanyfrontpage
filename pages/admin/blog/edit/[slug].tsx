@@ -10,6 +10,7 @@ import {BlockNoteEditor} from "@blocknote/core/types/src/BlockNoteEditor";
 import {GetServerSideProps} from "next";
 import {blogApi} from "../../../../helper/blog";
 import {BlogInterface} from "../../../../types";
+import {convertToSlug} from "../../../../utils/utils";
 
 const fieldNames: any = {
     title: "Title",
@@ -31,17 +32,7 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
     const [editorData, setEditorData] = useState<any>({});
     const [errors, setErrors] = useState<any>("");
     // const [isFeatured, setIsFeatured] = useState<any>(false);
-    let data;
-
-    try {
-        // Check if props.blog.body is a JSON array
-        data = Array.isArray(props.blog.body) ? props.blog.body : JSON.parse(props.blog.body);
-    } catch (error) {
-        // Handle the parsing error
-        console.error("Error parsing JSON:", error);
-        // Provide a default value (empty array) as a fallback
-        data = [];
-    }
+    const data = props.blog.body;
 
 // Now you can work with the data, which is an array
     const updatedData = data.map((item: any) => {
@@ -79,6 +70,7 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
         });
     };
 
+
     const save = async () => {
         setIsLoading(true);
 
@@ -89,30 +81,34 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
                 acc[cur] = `${fieldNames[cur]} is required`;
                 return acc;
             }, {});
-            setErrors((prevErrors: any) => ({...prevErrors, ...newErrors}));
+            setErrors((prevErrors: any) => ({ ...prevErrors, ...newErrors }));
         }
 
         if (Object.keys(errors).length > 0 || emptyParams.length > 0) {
             setIsLoading(false);
             return;
         }
-        try {
-            const formData = new FormData();
-            formData.append("id", params.id);
-            formData.append("title", params.title);
-            formData.append("slug", params.slug);
-            formData.append("body", JSON.stringify(editorData));
-            formData.append("meta_title", params.meta_title || "");
-            formData.append("description", params.description || "");
-            formData.append("meta_description", params.meta_description || "");
-            formData.append("meta_keywords", params.meta_keywords || "");
-            // formData.append("is_featured", JSON.stringify(isFeatured));
-            formData.append("file", params.image);
 
-            const response = await fetch("/api/update/blog", {
+        try {
+            const requestBody = {
+                id: params._id,
+                title: params.title,
+                slug: convertToSlug(params.title),
+                body: editorData,
+                meta_title: params.meta_title,
+                description: params.description,
+                meta_description: params.meta_description,
+                meta_keywords: params.meta_keywords,
+                image: params.image,
+            };
+            const response = await fetch("/api/Blog/PUT/blogs", {
                 method: "PUT",
-                body: formData,
+                headers: {
+                    "Content-Type": "application/json", // Set the content type to JSON
+                },
+                body: JSON.stringify(requestBody), // Convert the request body to JSON
             });
+
             const data = await response.json();
             if (data.error) {
                 console.log(data.error);
@@ -124,6 +120,7 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
         }
         setIsLoading(false);
     };
+
 
     useEffect(() => {
         setIsLoading(true);
@@ -231,7 +228,7 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
                             variant="outlined"
                             error={!!errors.title}
                             helperText={errors.title}
-                            value={params.slug}
+                            value={convertToSlug(params.title || "")}
                         />
                     </div>
                 </div>

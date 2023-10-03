@@ -25,6 +25,10 @@ const nextConfig = {
       {
         source: '/:slug',
         destination: '/admin/blog/edit/:slug',
+      },
+      {
+        source: '/:slug',
+        destination: '/blogs/:slug',
       }
     ];
   },

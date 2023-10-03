@@ -130,15 +130,18 @@ const List: React.FC = () => {
         setIsLoading(false);
     }
 
-    const removeBlog = async (slug: any) => {
+    const removeBlog = async (id: string) => {
         setIsLoading(true);
-        const response = await fetch(`/api/Blog/DELETE/blog?slug=${slug}`, {method: 'DELETE'});
+        const response = await fetch(`/api/Blog/DELETE/blog?id=${id}`, {
+            method: 'DELETE',
+        });
         const data = await response.json();
-        if (data.success) {
+        if (data.message === 'Delete successful') {
             getBlogs();
         }
         setIsLoading(false);
-    }
+    };
+
 
     React.useEffect(() => {
         getBlogs();
@@ -169,7 +172,7 @@ const List: React.FC = () => {
                         key={index}
                         index={index}
                         row={row}
-                        removeBlog={() => removeBlog(row.slug)}
+                        removeBlog={() => removeBlog(row._id)}
                     />)}
                 </TableBody>
             </Table>

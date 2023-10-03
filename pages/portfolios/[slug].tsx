@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import Head from "next/head";
 import {Footer} from "../../components/footer";
 import FixedButton from "../../components/FixedButton";
@@ -103,12 +103,11 @@ export default PortFolioPage;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
     const slug: any = context.query.slug;
-    const timestamp = Date.now();
     let data: any;
     let seo: any;
 
     // Fetch data from your API endpoint
-    const response = await fetch(`http://localhost:3000/api/portfolios/GET/portfolios`, {
+    const response = await fetch(`${process.env.BASE_URL}/api/portfolios/GET/portfolios`, {
         method: "GET",
     });
 

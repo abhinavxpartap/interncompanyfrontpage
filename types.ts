@@ -748,3 +748,4 @@ export interface BlogPageInterface {
     blog: BlogInterface;
     blogs: BlogInterface[];
 }
+

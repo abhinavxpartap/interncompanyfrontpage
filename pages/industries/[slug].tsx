@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import Head from "next/head";
 import {ServiceBanner} from "../../components/serviceBanner";
 import {ServiceAbout} from "../../components/servicesAbout";
@@ -113,12 +113,11 @@ export default IndustryPage;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
     const slug: any = context.query.slug;
-    const timestamp = Date.now();
     let data: any;
     let seo: any;
 
     // Fetch data from your API endpoint
-    const response = await fetch(`http://localhost:3000/api/industry/GET/indsutries`, {
+    const response = await fetch(`${process.env.BASE_URL}/api/industry/GET/indsutries`, {
         method: "GET",
     });
 

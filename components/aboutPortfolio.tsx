@@ -3,12 +3,12 @@ import {Img} from '../utils/Img';
 import {PizzaHutInfo} from "../types";
 
 export const AboutPortfolio: React.FC<PizzaHutInfo> = (props) => {
-    const {title, subtitle, industry,client, businessType, services, images} =
+    const {title, subtitle, industry, client, businessType, services, images} =
         props;
 
     const imageElements = images && images.length > 0 && images.map((imageUrl: string, index: number) => (
         <div key={index}>
-            <Img src={imageUrl} alt={`Image ${index}`} className="w-auto h-auto" />
+            <Img src={imageUrl} alt={`Image ${index}`} className="w-auto h-auto"/>
         </div>
     ));
 
@@ -27,7 +27,7 @@ export const AboutPortfolio: React.FC<PizzaHutInfo> = (props) => {
 
                     </div>
                     <div className="mt-[20px]">
-                        <div className="flex md:gap-[120px] flex-row">
+                        <div className="grid md:gap-[60px] gap-[30px] grid-cols-2 ">
                             <div>
                                 <h1 className="text-[16px] font-medium text-[#757B8A]">
                                     Industry
@@ -36,7 +36,7 @@ export const AboutPortfolio: React.FC<PizzaHutInfo> = (props) => {
                                     {industry}
                                 </p>
                             </div>
-                            <div className="md:ml-0 ml-[40px]">
+                            <div className="">
                                 <h1 className="text-[16px] font-medium text-[#757B8A]">
                                     Business Type
                                 </h1>
@@ -45,8 +45,8 @@ export const AboutPortfolio: React.FC<PizzaHutInfo> = (props) => {
                                 </p>
                             </div>
                         </div>
-                        <div className="flex  md:gap-[90px] flex-row">
-                            <div className="md:ml-0 mt-[7px] ml-[40px]">
+                        <div className="grid md:gap-[60px] gap-[30px] grid-cols-2 ">
+                            <div className="mt-[7px] ">
                                 <h1 className="text-[16px] mt-[7px] font-medium text-[#757B8A]">
                                     Business Type
                                 </h1>
@@ -54,7 +54,7 @@ export const AboutPortfolio: React.FC<PizzaHutInfo> = (props) => {
                                     {businessType}
                                 </p>
                             </div>
-                            <div className="ml-[10px] md:ml-0">
+                            <div className="">
                                 <div className="text-[16px] mt-[15px] font-medium text-[#757B8A]">
                                     Services
                                 </div>
@@ -65,8 +65,9 @@ export const AboutPortfolio: React.FC<PizzaHutInfo> = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="md:flex grid  md:w-[94%] w-[97%] md:gap-0 gap-3 mx-auto grid-cols-2 mt-[40px] py-[60px] justify-between md:flex-row ">
-                {imageElements}
+            <div className=" pt-[40px] grid md:grid-cols-4 mb-[50px] grid-cols-2 md:gap-[60px] gap-3  mx-auto w-[94%]  md:flex-row flex-col">
+
+            {imageElements}
             </div>
         </div>
     );

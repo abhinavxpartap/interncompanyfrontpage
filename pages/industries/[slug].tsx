@@ -118,6 +118,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
     // Fetch data from your API endpoint
     const response = await fetch(`${process.env.BASE_URL}/api/industry/GET/indsutries`, {
+
         method: "GET",
     });
 

@@ -316,6 +316,22 @@ export interface PortfolioIndustryInterface {
 
 
 }
+export interface ProjectInterface {
+    title: string;
+    data: {
+        subtitle:string;
+        tech:string[];
+        description:string;
+        type:string[];
+        duration:string;
+        platform:string;
+        image: string;
+        link:string;
+        title: string;
+    }[];
+
+
+}
 export interface ChallengesInterface {
     title: string;
     subtitle: string;
@@ -410,6 +426,18 @@ export interface PortFolioBannerInterface {
 
     image: string;
     icon: string,
+}
+export interface PortFolioFooterInterface {
+    title: string;
+
+    image: string;
+    subtitle: string,
+    link:string,
+    address:string;
+    linkedIn:string;
+    contact:string;
+    email:string;
+
 }
 
 export interface Assurance {

@@ -107,7 +107,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     let seo: any;
 
     // Fetch data from your API endpoint
-    const response = await fetch(`${process.env.BASE_URL}/api/portfolios/GET/portfolios`, {
+
+        const response = await fetch(`${process.env.BASE_URL}/api/portfolios/GET/portfolios`, {
         method: "GET",
     });
 

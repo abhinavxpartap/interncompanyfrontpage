@@ -68,7 +68,7 @@ const CaseStudy = () => {
                             {caseStudies.bannerData.title}
                         </div>
                         <div
-                            className="text-[#747C85] text-[16px] mt-[13px] font-medium max-w-[542px] leading-[30px]">
+                            className="text-[#747C85] text-[18px] mt-[13px] font-medium max-w-[542px] leading-[30px]">
                             {caseStudies.bannerData.subtitle}
                         </div>
                     </div>

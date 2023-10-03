@@ -87,7 +87,7 @@ export const FreeQuotation = () => {
               <h1 className="text-[#151448] text-[30px] pb-[5px] md:pb-0 md:text-[35px] font-semibold">
                 Get a Free Quotation
               </h1>
-              <p className="text-[#444444] text-[18px] md:text-[19px] font-medium">
+              <p className="text-[#747C85] text-[18px] md:text-[18px] font-medium">
                 Do not Worry Your Data and Business Ideas Are Safe With Us.
               </p>
             </div>

@@ -14,9 +14,9 @@ export const Challenges: React.FC<ChallengesInterface> = (props) => {
         <>
             <div className="max-w-[1377.5px] pt-[50px] mx-auto flex items-center justify-between   ">
                 <div className="w-[100%] mx-auto flex flex-col text-center items-center justify-center ">
-                    <h1 className="text-[#333333] font-bold text-[24px] md:text-[50px]">
+                    <h1 className="text-[#141548] font-bold text-[24px] md:text-[50px]">
                         {title}</h1>
-                    <p className="text-[#645C5C] max-w-[950px] font-normal text-[14px] md:text-[18px] pt-[10px] ">{subtitle}</p>
+                    <p className="text-[#747C85] max-w-[950px] font-medium text-[14px] md:text-[18px] pt-[10px] ">{subtitle}</p>
 
 
                     <div className="w-[100%] flex items-center justify-center">

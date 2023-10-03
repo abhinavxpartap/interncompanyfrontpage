@@ -33,7 +33,6 @@ const Home: NextPage = () => {
                     subtitle={data.bannerData.subtitle}
                     button={data.bannerData.buttonName}
                 />
-                <Float/>
                 <div>
                     <OurBrands/>
                 </div>
@@ -50,6 +49,7 @@ const Home: NextPage = () => {
                 <div style={{background: '#F9FBFF'}} className="bg-cover bg-center -z-0 bg-no-repeat relative  block">
                     <CaseStudy/>
                 </div>
+                <Float/>
                 <div style={{background: '#F9FBFF'}} className="bg-cover bg-center -z-0 bg-no-repeat relative  block">
                     <Testimonials/>
                 </div>

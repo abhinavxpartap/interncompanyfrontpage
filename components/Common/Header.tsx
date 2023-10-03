@@ -127,7 +127,7 @@ export const Header= () => {
                   href={undefined}
                 />
                 <Dropdown
-                  title="Case Study"
+                  title="Portfolios"
                   items={headerData.header[3]}
                   open={openSupport}
                   isSticky={isSticky}
@@ -142,6 +142,7 @@ export const Header= () => {
                   setOpen={toggleSupport}
                   href={undefined}
                 />
+
               </div>
             </div>
             <div className="lg:hidden flex flex-1 justify-end">

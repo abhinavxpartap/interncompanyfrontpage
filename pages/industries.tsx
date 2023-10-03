@@ -81,13 +81,11 @@ const IndustriesPage: React.FC = () => {
                                     {Data.BlogData.slice(0, 3).map((item, index:number) => (
                                         <BlogCards
                                             key={index}
-                                            AuthorName={item.AuthorName}
                                             img={item.image}
                                             title={item.title}
                                             description={item.description}
                                             url={item.URL}
-                                            categories={item.categories}
-                                            Date={item.Date}
+
                                         />
                                     ))}
                                 </div>

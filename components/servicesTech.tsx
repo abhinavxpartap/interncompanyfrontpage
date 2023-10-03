@@ -40,7 +40,7 @@ export const ServiceTech: React.FC = () => {
           <h1 className="text-[#333333] font-bold text-[24px] md:text-[30px]">
             {TechData.bannerData.title}
           </h1>
-          <p className="text-[#333333] w-[90%] font-medium text-[14px] md:text-[14px] pt-[10px] ">
+          <p className="text-[#747C85] w-[90%] font-medium text-[14px] md:text-[18px] pt-[10px] ">
             {TechData.bannerData.subtitle1}
           </p>
           <div className="w-[100%] flex items-center justify-center">
@@ -59,7 +59,7 @@ export const ServiceTech: React.FC = () => {
               ))}
             </div>
           </div>
-          <p className="text-[#333333] font-medium text-[14px] md:text-[14px] mt-[60px] ">
+          <p className="text-[#747C85] font-medium text-[14px] md:text-[18px] mt-[60px] ">
             {TechData.bannerData.subtitle2}
           </p>
           <div className="mt-[20px]">

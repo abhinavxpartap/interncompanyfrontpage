@@ -15,7 +15,7 @@ export const ServicesDevelopment: React.FC<DevelopmentDataInterface> = (props) =
           <h1 className="text-[#151448] font-bold text-[19px] leading-[25px] sm:text-[20px] sm:leading-[30px] md:text-[30px] md:leading-[40px] w-[300px] sm:w-[350px] md:w-[500px] ">
             {title}
           </h1>
-          <p className="text-[#333333] font-normal w-[90%] text-[13px] sm:text-[12px] md:text-[14px] pt-[10px] ">
+          <p className="text-[#747C85] font-normal w-[90%] text-[14px] sm:text-[18px] md:text-[18px] pt-[10px] ">
             {subtitle}
           </p>
           <div
@@ -78,7 +78,9 @@ export const ServicesDevelopment: React.FC<DevelopmentDataInterface> = (props) =
                 },
               }}
             >
-              {buttonName}
+              <a href="https://calendly.com/sahillshrm/30min" target="_blank" rel="noopener noreferrer">
+                {buttonName}
+              </a>
             </Button>
           </div>
         </div>

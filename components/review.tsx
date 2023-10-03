@@ -11,7 +11,7 @@ export const Review: React.FC<ReviewInterfaces> = (props) => {
         <>
             <div className="max-w-[1377.5px] py-[50px] mx-auto flex items-center justify-between   ">
                 <div className="w-[100%] mx-auto flex flex-col text-center items-center justify-center ">
-                    <h1 className="text-[#333333] font-bold text-[24px] md:text-[50px]">
+                    <h1 className="text-[#141548] font-bold text-[24px] md:text-[50px]">
                         {title}</h1>
                     <div className="w-[100%] flex items-center justify-center">
                         <div

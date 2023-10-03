@@ -9,7 +9,7 @@ import Chat from "../components/Chat";
 
 
 
-const Portfolio: NextPage = () => {
+const Case_studies: NextPage = () => {
     return (
         <div >
 
@@ -33,4 +33,4 @@ const Portfolio: NextPage = () => {
     )
 }
 
-export default Portfolio
+export default Case_studies

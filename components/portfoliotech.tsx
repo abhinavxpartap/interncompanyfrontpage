@@ -13,9 +13,9 @@ export const Portfoliotech: React.FC<PortFolioInterfaces> = (props) => {
         <>
             <div className="max-w-[1377.5px] mx-auto flex items-center justify-between   ">
                 <div className="w-[100%] mx-auto flex flex-col text-center items-center justify-center ">
-                    <h1 className="text-[#333333] font-bold text-[24px] md:text-[50px]">
+                    <h1 className="text-[#151448] font-bold text-[24px] md:text-[50px]">
                         {title} </h1>
-                    <p className="text-[#645C5C] max-w-[700px] font-normal text-[14px] md:text-[18px] pt-[10px] ">
+                    <p className="text-[#747C85] max-w-[700px] font-medium text-[14px] md:text-[18px] pt-[10px] ">
                         {subtitle}</p>
                     <div className="w-[100%] flex items-center justify-center">
                         <div

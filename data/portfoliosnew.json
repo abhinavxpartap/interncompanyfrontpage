@@ -196,6 +196,56 @@
       }
     ]
   },
+  "footer": {
+    "title": "LET’S CREATE SOMETHING SPECIAL TOGETHER!",
+    "subtitle": "Alumel Tech makes up a perfect combination of strategy, creativity and technology to achieve our clients' objectives. Our team pursues values of professionalism, cooperation and constant development.",
+    "image": "/portfoliotech/footer.png",
+    "link": "https://www.alumeltech.com",
+    "address": "G Block Sector 63 Noida UP - 201301, India",
+    "email": "https://calendly.com/sahillshrm",
+    "contact": "",
+    "linkedIn": ""
+  },
+  "project": {
+    "title": "Case Studies",
+    "data": [
+      {
+        "title": "Real Estate App",
+        "subtitle": "Engaging users through a robust and visually appealing food delivery mobile app",
+        "type": ["Web App","softwares"],
+        "tech": ["HtMl","Css","MySql"],
+        "image": "/portfoliotech/portfolioproject1.svg",
+        "description": "With lots of unique blocks, you can easily build a page without coding. Unique blocks, you can easily build a page without coding. Build your next website fast. With lots of unique blocks, you can easily build a page without coding. Build your next website fast. With lots of unique blocks, you can easily build a page without coding. Build your next website fast. With lots of unique blocks, you can easily build a page without coding. Unique blocks, you can easily build a page without coding...",
+        "link": "/portfolios/Real_Estate",
+
+        "duration": "6 month",
+        "platform": " Web App (SPA) + Responsive"
+      },
+      {
+        "title": "AutomotiveCo",
+        "subtitle": "Engaging users through a robust and visually appealing food delivery mobile app",
+        "type": ["Web App","softwares"],
+        "tech": ["HtMl","Css","Js"],
+        "image": "/portfoliotech/portfolioproject2.svg",
+        "description": "With lots of unique blocks, you can easily build a page without coding. Unique blocks, you can easily build a page without coding. Build your next website fast. With lots of unique blocks, you can easily build a page without coding. Build your next website fast. With lots of unique blocks, you can easily build a page without coding. Build your next website fast. With lots of unique blocks, you can easily build a page without coding. Unique blocks, you can easily build a page without coding...",
+        "link": "/portfolios/Auto_Mobile",
+
+        "duration": "6 month",
+        "platform": " Web App (SPA) + Responsive"
+      },   {
+        "title": "FintechPro  App",
+        "subtitle": "Engaging users through a robust and visually appealing food delivery mobile app",
+        "type": ["Web App","softwares"],
+        "tech": ["HtMl","Css","React Js"],
+        "image": "/portfoliotech/portfolioproject3.svg",
+        "description": "With lots of unique blocks, you can easily build a page without coding. Unique blocks, you can easily build a page without coding. Build your next website fast. With lots of unique blocks, you can easily build a page without coding. Build your next website fast. With lots of unique blocks, you can easily build a page without coding. Build your next website fast. With lots of unique blocks, you can easily build a page without coding. Unique blocks, you can easily build a page without coding...",
+        "link": "/portfolios/Finance",
+
+        "duration": "6 month",
+        "platform": " Web App (SPA) + Responsive"
+      }
+    ]
+  },
   "challenges": {
     "title": "  Challenges We Help You Tackle ",
     "subtitle": " Your challenges are our challenges. We understand that navigating the complex world of technology and business can be daunting. Identify the hurdles you face, and rest assured that we're here to understand and address them, no matter how big or small.",
@@ -247,6 +297,11 @@
       }
     ]
   },
+
+
+
+
+
   "Review": {
     "title": "  Customer Reviews ",
     "data": [

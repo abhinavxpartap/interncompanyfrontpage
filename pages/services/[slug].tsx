@@ -101,7 +101,6 @@ const AndroidApplicationPage: React.FC<LandingPageInterface> = (props) => {
                         <FreeQuotation/>
                     </div>
                     <FixedButton/>
-                    {/*<Chat/>*/}
 
                     <Footer/>
                 </div>

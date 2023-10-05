@@ -65,7 +65,7 @@ export const PortfolioBanner2 = () => {
         </div>
 
         <div>
-          <div className="md:text-[50px] fade-in text-[35px] max-w-[510px] md:text-start text-center relative  leading-[63px] z-1 font-bold">
+          <div className="md:text-[50px] fade-in text-[35px] max-w-[510px] md:text-start text-center relative  md:leading-[63px] z-1 font-bold">
             {portfolio.title}          </div>
         </div>
         <div className="md:text-[18px] fade-in text-[15px] max-w-[570px]  md:text-start text5-center md:ml-[60px] md:pb-[20px] mt-[12px]  font-medium">

@@ -39,7 +39,7 @@ const CaseStudy = () => {
     const handleScrollLeft = () => {
         const scrollContainer = scrollContainerRef.current;
         if (scrollContainer) {
-            scrollContainer.scrollLeft -= 800;
+            scrollContainer.scrollLeft -= 500;
             setScrollPosition(scrollContainer.scrollLeft);
         }
     };
@@ -47,7 +47,7 @@ const CaseStudy = () => {
     const handleScrollRight = () => {
         const scrollContainer = scrollContainerRef.current;
         if (scrollContainer) {
-            scrollContainer.scrollLeft += 800;
+            scrollContainer.scrollLeft += 500;
             setScrollPosition(scrollContainer.scrollLeft);
         }
     };

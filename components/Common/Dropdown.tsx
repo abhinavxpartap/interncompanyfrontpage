@@ -20,6 +20,7 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
   const isInitiallyBlack = [
     '/portfolio',
     '/blog',
+      '/case_studies',
       '/portfolios',
     'blogDetailVeiw'
   ].includes(router.pathname);
@@ -90,7 +91,7 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
           <div className="flex flex-row" onClick={setOpen}>
             <div
                 onClick={handleRedirect}
-                className={`${textColor}  text-[17px] gap-[6px] flex justify-start items-start w-full md:leading-[27px] sm:leading-[17px] leading-[14px] tracking-[-0.24px] cursor-pointer`}
+                className={`text-black  text-[17px] gap-[6px] flex justify-start items-start w-full md:leading-[27px] sm:leading-[17px] leading-[14px] tracking-[-0.24px] cursor-pointer`}
             >
               <span className="mb-[10px] text-[16px] font-medium">{title}</span>
             </div>
@@ -110,7 +111,7 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
           <div
               className={`${
                   open ? 'block' : 'hidden'
-              } bg-white relative w-full lg:my-[10px] rounded-[15px] xxl:px-[50] lg:px-[30px] px-[12px] xxl:py-[44px] lg:py-[30px] dropdown-container z-[99999]`}
+              } bg-[#7F75FC] relative w-full lg:my-[10px] rounded-[15px] xxl:px-[50] lg:px-[30px] px-[12px] xxl:py-[44px] lg:py-[30px] dropdown-container z-[99999]`}
           >
             {items && items.data && items.data.length > 0 && (
                 <div className="text-[13px] leading-[25px] font-medium tracking-[0.8px] text-[#101D2C] mb-[14px] uppercase font-montserrat">

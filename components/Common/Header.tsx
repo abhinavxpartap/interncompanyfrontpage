@@ -69,7 +69,8 @@ export const Header= () => {
     '/ourStory',
     '/term',
     '/portfolio',
-    '/portfolios'
+    '/portfolios',
+      '/case_studies'
 
   ].includes(router.pathname)
     ? data.logo_light
@@ -92,7 +93,7 @@ export const Header= () => {
         }`}
       >
         <div className="max-w-[1377.5px] mx-auto">
-          <div className="flex flex-row  lg:gap-[70px] xl:gap-[170px] 2xl:gap-[200px] items-center ml-[-18px]">
+          <div className="flex flex-row  lg:gap-[40px] xl:gap-[140px] 2xl:gap-[200px] items-center ml-[-18px]">
             <div onClick={() => router.push('/')} className="cursor-pointer">
               <Img
                 src={logo || ''}
@@ -135,7 +136,7 @@ export const Header= () => {
                   href={undefined}
                 />
                 <Dropdown
-                  title="Blog"
+                  title="Case Studies"
                   items={headerData.header[4]}
                   open={openSupport}
                   isSticky={isSticky}
@@ -290,16 +291,16 @@ export const Header= () => {
                     onClick={handleOpen}
                     sx={{
                       '&.MuiButtonBase-root': {
-                        backgroundColor: '#177DF0',
+                        backgroundColor: '#7F75FC',
                         color: 'white',
                         textTransform: 'capitalize',
                         padding: '8px 24px 8px 24px',
-                        border: '1px solid #5CA9FF',
+                        border: '1px solid #7F75FC',
                         borderRadius: '30px',
                         '&:hover': {
-                          border: '1px solid #5CA9FF',
+                          border: '1px solid #7F75FC',
                           backgroundColor: 'transparent',
-                          color: '#177DF0',
+                          color: '#7F75FC',
                         },
                       },
                     }}

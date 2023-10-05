@@ -53,7 +53,7 @@ const DemoForm = () => {
       },
       body: JSON.stringify(
           {
-            _id: id, // Replace with the actual document ID
+            _id: id,
             ContactData: [
               {
                 "First Name": firstName,
@@ -74,6 +74,18 @@ const DemoForm = () => {
       setIsLoading(false);
     }
   };
+  const styles = {
+    root: {
+      color: "#515458",
+      fontSize: "12px",
+      "@media (min-width: 768px)": {
+        fontSize: "12px",
+      },
+      textAlign: "start",
+      fontWeight: "600",
+    },
+  };
+
 
   return (
     <div className="bg-[url('/images/logo/productover.png')] bg-cover md:px-[70px] md:pt-[103px]  md:pb-[206px] pb-[150px] pt-[190px] relative">
@@ -90,7 +102,7 @@ const DemoForm = () => {
           <form onSubmit={handleSubmit}>
           <Box className="w-[100%] flex flex-row justify-between">
             <Box className="w-[48%]">
-              <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
+              <Typography sx={styles.root}>
                 First name
               </Typography>
               <FormControl sx={{ width: '100%' }}>
@@ -104,7 +116,7 @@ const DemoForm = () => {
               </FormControl>
             </Box>
             <Box className="w-[48%]">
-              <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
+              <Typography sx={styles.root}>
                 Last name
               </Typography>
               <FormControl sx={{ width: '100%' }}>
@@ -119,7 +131,7 @@ const DemoForm = () => {
             </Box>
           </Box>
           <Box className="mt-[20px] w-[100%]">
-            <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
+            <Typography sx={styles.root}>
               Email
             </Typography>
             <FormControl sx={{ width: '100%' }}>
@@ -133,7 +145,7 @@ const DemoForm = () => {
             </FormControl>
           </Box>
           <Box className="mt-[20px]">
-            <Typography className="text-[#515458] text-[10px] md:text-[12px] text-start font-medium">
+            <Typography sx={styles.root}>
               Your Message
             </Typography>
             <FormControl sx={{ width: '100%' }}>
@@ -163,7 +175,7 @@ const DemoForm = () => {
             </FormControl>
           </Box>
           <Box className="mt-[20px] flex flex-col ">
-            <Typography className="text-[#2C3238] text-[12px] md:text-[16px] font-medium">
+            <Typography sx={styles.root}>
               What are you more interested in:
             </Typography>
             <Grid container className="mt-[7px] w-[100%]">

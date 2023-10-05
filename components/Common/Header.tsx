@@ -270,7 +270,7 @@ export const Header= () => {
                 href={undefined}
               />
               <Dropdown
-                title="Realestate"
+                title="Portfolios"
                 items={headerData.header[3]}
                 open={openSupport}
                 isSticky={isSticky}
@@ -278,7 +278,7 @@ export const Header= () => {
                 href={undefined}
               />
               <Dropdown
-                title="Blog"
+                title="Case Studyies"
                 items={headerData.header[4]}
                 open={openSupport}
                 isSticky={isSticky}

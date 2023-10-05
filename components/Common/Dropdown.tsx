@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
-import { Img } from '../../utils/Img';
+import React, {FC} from 'react';
+import {Img} from '../../utils/Img';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import {useRouter} from 'next/router';
 
 interface DropdownInterface {
   title: string;
@@ -20,7 +20,8 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
   const isInitiallyBlack = [
     '/portfolio',
     '/blog',
-      '/portfolios',
+    '/blogs/:slug',
+    '/portfolios',
     'blogDetailVeiw'
   ].includes(router.pathname);
 

@@ -1,10 +1,11 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import PrivateLayout from "../../../components/Layout/privateLayout";
 import {
     Button,
     Collapse,
     Grid,
     IconButton,
+    Pagination,
     Paper,
     Table,
     TableBody,
@@ -13,7 +14,7 @@ import {
     TableHead,
     TableRow,
     TextField,
-    Typography
+    Typography,
 } from "@mui/material";
 import Link from "next/link";
 import {ChevronDown, Edit, Trash2} from "react-feather";
@@ -121,31 +122,48 @@ const Row: React.FC<BlogRowInterface> = (props) => {
 
 const List: React.FC = () => {
     const [rows, setRows] = React.useState([]);
+    const [page, setPage] = useState(1);
+    const [pagination, setPagination]= useState({
+        currentPage: '',
+        totalPages: '',
+        pageSize: '',
+    })
     const {setIsLoading} = useContext(LoaderContext)
-    const getBlogs = async () => {
+
+    const getBlogs = async (page:number) => {
         setIsLoading(true);
-        const response = await fetch(`/api/Blog/GET/blogs?withoutPagination=true`);
+        const response = await fetch(`/api/Blog/GET/blogs?page=${page}`);
         const data = await response.json();
         setRows(data.data);
+        setPagination({
+            currentPage: data.page,
+            totalPages: data.totalPages,
+            pageSize: data.pageSize,
+        });
         setIsLoading(false);
-    }
+    };
 
-    const removeBlog = async (id: string) => {
+    const handlePageChange = (event:any, newPage:any) => {
+        setPagination({ ...pagination, currentPage: newPage });
+        getBlogs(newPage);
+    };
+
+    const removeBlog = async ( page:number,id: string) => {
         setIsLoading(true);
         const response = await fetch(`/api/Blog/DELETE/blog?id=${id}`, {
             method: 'DELETE',
         });
         const data = await response.json();
         if (data.message === 'Delete successful') {
-            getBlogs();
+            getBlogs(page);
         }
         setIsLoading(false);
     };
 
 
     React.useEffect(() => {
-        getBlogs();
-    }, []);
+        getBlogs(page);
+    }, [page]);
 
     return <PrivateLayout title="Enjoy Mondays Pre Launch - Blog List">
         <Grid container alignItems="center" className="gap-[8px] mb-[12px]">
@@ -172,11 +190,18 @@ const List: React.FC = () => {
                         key={index}
                         index={index}
                         row={row}
-                        removeBlog={() => removeBlog(row._id)}
+                        removeBlog={(id:string) => removeBlog(page,row._id)}
                     />)}
                 </TableBody>
             </Table>
         </TableContainer>
+        <div className="flex justify-end mt-[20px]">
+        <Pagination
+            count={parseInt(pagination.totalPages)} // Make sure to parse the string to a number
+            page={parseInt(pagination.currentPage)}
+            onChange={handlePageChange}
+        />
+        </div>
     </PrivateLayout>
 }
 

@@ -2,13 +2,16 @@ import React from 'react';
 import {Img} from '../utils/Img';
 import {PizzaHutInfo} from "../types";
 
+interface images {
+    src:string
+}
 export const AboutPortfolio: React.FC<PizzaHutInfo> = (props) => {
     const {title, subtitle, industry, client, businessType, services, images} =
         props;
 
-    const imageElements = images && images.length > 0 && images.map((imageUrl: string, index: number) => (
+    const imageElements = images && images.length > 0 && images.map((imageUrl:images, index: number) => (
         <div key={index}>
-            <Img src={imageUrl} alt={`Image ${index}`} className="w-auto h-auto"/>
+            <Img src={imageUrl.src} alt={`Image ${index}`} className="w-auto h-auto"/>
         </div>
     ));
 

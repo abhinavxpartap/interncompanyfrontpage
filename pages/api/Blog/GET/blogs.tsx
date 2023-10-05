@@ -17,8 +17,8 @@ export default async function handler(
         const db = client.db('Alumel');
         const collection = db.collection('blogs');
 
-        const parsedPage = parseInt(req.query.page as string, 10) || 1; // Get the requested page from query parameters
-        const parsedPageSize = parseInt(req.query.pageSize as string, 10) || 10; // Get the requested page size from query parameters
+        const parsedPage = parseInt(req.query.page as string, 9) || 1; // Get the requested page from query parameters
+        const parsedPageSize = parseInt(req.query.pageSize as string, 9) || 9; // Get the requested page size from query parameters
         const startIndex = (parsedPage - 1) * parsedPageSize;
 
         const totalItems = await collection.countDocuments(); // Count total documents

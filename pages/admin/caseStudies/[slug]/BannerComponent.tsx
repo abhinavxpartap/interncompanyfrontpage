@@ -1,9 +1,9 @@
 import React, {FC, useContext, useState} from "react";
-import {Input} from "../../../../../utils/Input";
-import {ImageOverlay} from "../../../../../utils/Admin/ImageOverlay";
-import {Button} from "../../../../../utils/Button";
-import {LoaderContext} from "../../../../../context/LoaderContext";
-import PrivateLayout from "../../../../../components/Layout/privateLayout";
+import {Input} from "../../../../utils/Input";
+import {ImageOverlay} from "../../../../utils/Admin/ImageOverlay";
+import {Button} from "../../../../utils/Button";
+import {LoaderContext} from "../../../../context/LoaderContext";
+import PrivateLayout from "../../../../components/Layout/privateLayout";
 import {GetServerSideProps} from "next";
 
 interface CloneInnerPageInterface {
@@ -14,32 +14,26 @@ interface PageInterface {
     _id:string,
     bannerData:{
         title: string,
-        subtitle: string,
-        backgroundImage: string,
-        ButtonName:string,
-        ButtonHref:string,
+        image:string,
     }
 }
 
-const BannerPage: FC<CloneInnerPageInterface> = ({ slug, pageContent }) => {
+const BannerComponent: FC<CloneInnerPageInterface> = ({ slug, pageContent }) => {
     const { setIsLoading } = useContext(LoaderContext);
     const _id = pageContent.filter((dd:any) => dd.name === slug)[0]._id;
     const data = pageContent.filter((dd: any) => dd.name === slug)[0].data;
     const [params, setParams] = useState<PageInterface>({
         _id:_id,
         bannerData:{
-            title: data.BannerData.title,
-            subtitle: data.BannerData.subtitle,
-            backgroundImage: data.BannerData.backgroundImage,
-            ButtonName:data.BannerData.ButtonName,
-            ButtonHref:data.BannerData.ButtonHref,
+            title: data.Banner.title,
+            image:data.Banner.image
         }
     })
 
     const save = async () => {
         try {
             setIsLoading(true);
-            const response = await fetch('/api/services/PUT/BannerComponent', {
+            const response = await fetch('/api/portfolios/PUT/BannerComponent', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -79,13 +73,13 @@ const BannerPage: FC<CloneInnerPageInterface> = ({ slug, pageContent }) => {
             <div className="flex flex-col gap-[16px]">
                 <div className="rounded border bg-white overflow-hidden md:h-[450px]">
                     <ImageOverlay
-                        url={params.bannerData.backgroundImage}
+                        url={params.bannerData.image}
                         onUploadSuccess={(url) =>
                             setParams({
                                 ...params,
                                 bannerData: {
                                     ...params.bannerData,
-                                    backgroundImage: url,
+                                    image: url,
                                 },
                             })
                         }
@@ -112,68 +106,17 @@ const BannerPage: FC<CloneInnerPageInterface> = ({ slug, pageContent }) => {
                             className="rounded admin-input"
                         />
                     </div>
-                    <div className="p-[10px]">
-                        <Input
-                            label="Sub Title"
-                            placeholder="Sub Title"
-                            value={params.bannerData.subtitle}
-                            onChange={(e) =>
-                                setParams({
-                                    ...params,
-                                    bannerData: {
-                                        ...params.bannerData,
-                                        subtitle: e.target.value,
-                                    },
-                                })
-                            }
-                            className="rounded admin-input"
-                        />
-                    </div>
-                    <div className="p-[10px]">
-                        <Input
-                            label="Button Name"
-                            placeholder="Button Name"
-                            value={params.bannerData.ButtonName}
-                            onChange={(e) =>
-                                setParams({
-                                    ...params,
-                                    bannerData: {
-                                        ...params.bannerData,
-                                        ButtonName: e.target.value,
-                                    },
-                                })
-                            }
-                            className="rounded admin-input"
-                        />
-                    </div>
-                    <div className="p-[10px]">
-                        <Input
-                            label="Button Name"
-                            placeholder="Button Name"
-                            value={params.bannerData.ButtonHref}
-                            onChange={(e) =>
-                                setParams({
-                                    ...params,
-                                    bannerData: {
-                                        ...params.bannerData,
-                                        ButtonHref: e.target.value,
-                                    },
-                                })
-                            }
-                            className="rounded admin-input"
-                        />
-                    </div>
                 </div>
             </div>
         </div>
     </PrivateLayout>
 }
 
-export default BannerPage;
+export default BannerComponent;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
     const slug: any = context.query.slug;
-    const response: any = await fetch(`http://localhost:3000/api/services/GET/services`)
+    const response: any = await fetch(`http://localhost:3000/api/portfolios/GET/portfolios`)
         .then((response) => response.json())
 
     return {

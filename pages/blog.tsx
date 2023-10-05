@@ -1,10 +1,9 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Head from 'next/head';
 import seoData from '../data/seoData.json';
-import Data from '../data/blogData.json';
 import {BlogCards} from '../components/BlogCard';
 import {Img} from '../utils/Img';
-import {Button} from '@mui/material';
+import {Pagination} from '@mui/material';
 import {GetStories} from '../components/getStories';
 import {useRouter} from 'next/router';
 import {Header} from '../components/Common/Header';
@@ -19,6 +18,26 @@ const BlogPage: React.FC = () => {
     setIsActive(index);
   };
   const router = useRouter();
+
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [apiData, setApiData] = useState<any | null>(null);
+
+  useEffect(() => {
+    // Fetch data from your API
+    fetch(`/api/Blog/GET/blogs?page=${currentPage}`)
+        .then((response) => response.json())
+        .then((data) => {
+          setApiData(data);
+        })
+        .catch((error) => {
+          console.error("Error fetching data:", error);
+        });
+  }, [currentPage]);
+
+  const handlePageChange = (event: React.ChangeEvent<any>, value: number) => {
+    setCurrentPage(value);
+  };
+
   return (
     <>
       <Head>
@@ -75,121 +94,31 @@ const BlogPage: React.FC = () => {
               Latest Articles
             </h1>{' '}
           </div>
+          <div>
+            <div className="w-[100%] px-[20px] gap-[20px] md:px-0 flex justify-between">
+              <div className="w-[95vw] gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                {apiData &&
+                    apiData.data.map((item:any, index:number) => (
+                        <BlogCards
+                            key={index}
+                            img={item.image}
+                            title={item.title}
+                            description={item.description}
+                            url={item.slug}
+                        />
+                    ))}
+              </div>
+            </div>
 
-          <div className="w-[100%] px-[20px] gap-[20px] md:px-0  flex flex-col lg:flex-row  justify-between">
-            <div className=" w-[90vw] md:w-[90vw] pb-[40px] lg:pb-0 lg:w-[30vw] flex flex-col">
-              <h1 className="text-[#444444] text-[24px] font-normal">
-                Categories
-              </h1>
-              <hr className="border-[1px] w-[97%] mt-[10px] border-[#818181]" />
-              <div className="flex flex-wrap mt-[25px] gap-[15px]">
-                {Data.BlogData.map((item, index: number) => (
-                  <Button
-                    className={`md:text-[10px]  lg:text-[13px] xl:text-[16px] ${
-                      isActive === index ? 'bg-[#9699FF]' : ''
-                    }`}
-                    key={index}
-                    sx={{
-                      color: isActive === index ? '#ffffff' : '#444',
-                      borderRadius: '10px',
-                      padding: '5px 12px',
-                      border:
-                        isActive === index
-                          ? '1px solid #9699FF'
-                          : '1px solid #9699FF',
-                      textTransform: 'capitalize',
-                      '&:hover': {
-                        color: '#ffffff',
-                        backgroundColor: '#9699FF',
-                        border: '1px solid #9699FF',
-                      },
-                    }}
-                    onClick={() => handleClick(index)}
-                  >
-                    {item.categories}
-                  </Button>
-                ))}
-              </div>
-            </div>
-            <div className="w-[90vw] lg:w-[60vw]   gap-[40px] grid grid-cols-1 md:grid-cols-2">
-              {Data.BlogData.slice(0, 6).map((item, index: number) => (
-                <BlogCards
-                  key={index}
-                  img={item.image}
-                  title={item.title}
-                  description={item.description}
-                  url={item.URL}
+            {apiData && (
+                <div className="w-[100%] flex justify-center items-center mt-[40px]">
+                <Pagination
+                    count={apiData.totalPages}
+                    page={apiData.page}
+                    onChange={handlePageChange}
                 />
-              ))}
-            </div>
-          </div>
-          <div className="max-w-[1377.5px] ">
-            <div className="w-[100%] flex flex-col px-[20px] md:px-[40px] py-[50px]">
-              <h1 className="text-[#151448] text-start mb-[25px] text-[38px] md:text-[60px] font-semibold">
-                Popular Articles
-              </h1>
-              <div className="w-[100%] mx-auto md:mx-0">
-                <div className="w-[100%] gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                  {Data.BlogData.slice(0, 3).map((item, index: number) => (
-                    <BlogCards
-                      key={index}
-                      img={item.image}
-                      title={item.title}
-                      description={item.description}
-                      url={item.URL}
-                    />
-                  ))}
                 </div>
-                <div className="flex justify-center items-center mt-[30px]">
-                  <Button
-                    onClick={() => router.push('/')}
-                    className="text-[14px] md:text-[16px] capitalize font-semibold"
-                    sx={{
-                      backgroundColor: 'transparent',
-                      border: '2px solid #9699FF',
-                      padding: '8px 30px',
-                      borderRadius: '30px',
-                      color: '#9699FF',
-                      position: 'relative',
-                      overflow: 'hidden',
-                      '&::before': {
-                        content: '""',
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        width: '100%',
-                        height: '100%',
-                        zIndex: 0,
-                        opacity: 1,
-                        transform: 'translate(-105%, 0px)',
-                        backgroundColor: 'rgba(0, 146, 255, 0.1)',
-                        animation: 'btn-animate 1s infinite ease-in-out',
-                      },
-                      '&:hover::before': {
-                        display: 'none',
-                      },
-                      '@keyframes btn-animate': {
-                        '0%': {
-                          transform: 'translate(-105%, 0px)',
-                        },
-                        '100%': {
-                          transform: 'translate(0, 0)',
-                        },
-                      },
-                    }}
-                  >
-                    View All Articles
-                    <span className="ml-[10px]">
-                      <Img
-                        src="/rightArrow.svg"
-                        className="w-[80%]"
-                        alt={'Icon'}
-                      />
-                    </span>
-                  </Button>
-                </div>
-              </div>
-            </div>
+            )}
           </div>
         </div>
         <GetStories />

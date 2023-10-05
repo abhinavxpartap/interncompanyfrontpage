@@ -75,7 +75,7 @@ export const Director: React.FC<DirectorInterface> = (props) => {
                 {content}
             </div>
             <div
-                style={{backgroundImage: `url(${mobileImage})`}}
+                style={{backgroundImage: `url(${image})`}}
                 className="bg-cover bg-center bg-no-repeat relative md:pb-[248px] pb-[100px] md:hidden block"
             >
                 {content}

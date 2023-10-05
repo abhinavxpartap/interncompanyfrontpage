@@ -44,7 +44,9 @@ export interface WhatWeNewInterface {
 
 
 export interface ImageInterface {
-    image: string[];
+    image: {
+        src:string
+    }[];
 
 }
 
@@ -212,7 +214,7 @@ export interface PizzaHutInfo {
     industry: string;
     businessType: string;
     services: string;
-    images: string[];
+    images: {src:string}[];
 }
 
 export interface AboutUsBannerInterface {

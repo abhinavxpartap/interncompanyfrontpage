@@ -20,24 +20,25 @@
       },
       "images": [
         {
-          "item": "/auto/m1.svg"
+          "src": "/auto/m1.svg"
         },
         {
-          "item": "/auto/m2.svg"
+          "src": "/auto/m2.svg"
         },
         {
-
+          "src": "/auto/m3.svg"
         },
-        "/auto/m3.svg",
-        "/auto/m4.svg"
+        {
+          "src": "/auto/m4.svg"
+        }
       ],
       "Director": {
         "name": " Jack Fernandes",
-        "company": " craze",
+        "company": "AutoMotive Co",
         "icon": "/auto/boy.svg",
         "address": "(USA)",
         "message": "  Alumeltech has been a transformative partner for Dream Homes Realty. Their expertise in web design and software development, powered by AI and data analytics, revolutionized our online presence. The lightning-fast website they crafted significantly improved user experience, and their AI-driven recommendations led to a 30% increase in property inquiries and sales. Their team's dedication and innovative approach have been invaluable. We're thrilled with the results and the future opportunities this partnership holds..",
-        "post": "Director - Craze",
+        "post": "Director - AutoMotive Co",
         "image": "/images/logo/director.svg",
         "mobileImage": "/Testimonial.svg"
       },
@@ -157,14 +158,30 @@
         }
       ],
       "imagePort": [
-        "/auto/m5.svg",
-        "/auto/m6.svg",
-        "/auto/m7.svg",
-        "/auto/m8.svg",
-        "/auto/m9.svg",
-        "/auto/m10.svg",
-        "/auto/m11.svg",
-        "/auto/m12.svg"
+        {
+          "src": "/auto/m5.svg"
+        },
+        {
+          "src": "/auto/m6.svg"
+        },
+        {
+          "src": "/auto/m7.svg"
+        },
+        {
+          "src": "/auto/m8.svg"
+        },
+        {
+          "src": "/auto/m9.svg"
+        },
+        {
+          "src": "/auto/m10.svg"
+        },
+        {
+          "src": "/auto/m11.svg"
+        },
+        {
+          "src": "/auto/m12.svg"
+        }
       ],
       "ResultNew": {
         "heading": "Benefits",
@@ -223,18 +240,26 @@
         "services": "Design, Development, Support & Maintenance"
       },
       "images": [
-        "/portfolio/m1.png",
-        "/portfolio/m2.png",
-        "/portfolio/m3.png",
-        "/portfolio/m4.png"
+        {
+          "src": "/portfolio/m1.png"
+        },
+        {
+          "src": "/portfolio/m2.png"
+        },
+        {
+          "src": "/portfolio/m3.png"
+        },
+        {
+          "src": "/portfolio/m4.png"
+        }
       ],
       "Director": {
         "name": " Yacob Sudwarmaji",
-        "company": " Technology Americana Group",
+        "company": "Dream Homes Realty",
         "icon": "/director.svg",
-        "address": "(kuwait Food Co.)",
+        "address": "(USA)",
         "message": "  Alumeltech has been a transformative partner for Dream Homes Realty. Their expertise in web design and software development, powered by AI and data analytics, revolutionized our online presence. The lightning-fast website they crafted significantly improved user experience, and their AI-driven recommendations led to a 30% increase in property inquiries and sales. Their team's dedication and innovative approach have been invaluable. We're thrilled with the results and the future opportunities this partnership holds..",
-        "post": "Director - Restaurant",
+        "post": "Director-Dream Homes Realty ",
         "image": "/images/logo/director.svg",
         "mobileImage": "/Testimonial.svg"
       },
@@ -334,14 +359,30 @@
         }
       ],
       "imagePort": [
-        "/portfolio/m5.png",
-        "/portfolio/m6.png",
-        "/portfolio/m7.png",
-        "/portfolio/m8.png",
-        "/portfolio/m9.png",
-        "/portfolio/m10.png",
-        "/portfolio/m11.png",
-        "/portfolio/m12.png"
+        {
+          "src": "/portfolio/m5.png"
+        },
+        {
+          "src": "/portfolio/m6.png"
+        },
+        {
+          "src": "/portfolio/m7.png"
+        },
+        {
+          "src": "/portfolio/m8.png"
+        },
+        {
+          "src": "/portfolio/m9.png"
+        },
+        {
+          "src": "/portfolio/m10.png"
+        },
+        {
+          "src": "/portfolio/m11.png"
+        },
+        {
+          "src": "/portfolio/m12.png"
+        }
       ],
       "ResultNew": {
         "heading": "Benefits",
@@ -363,7 +404,6 @@
       ],
       "resultNew": {
         "heading": "The Results"
-
       },
       "resultData": [
         {
@@ -377,7 +417,7 @@
           "content": "The integration of IoT technology led to a 25% increase in overall operational efficiency, enhancing productivity and reducing downtime."
         },
         {
-          "percentage":0,
+          "percentage": 0,
           "title": "Streamlined Supply Chain",
           "content": "The streamlined supply chain reduced lead times by 30%, ensuring components were readily available when needed."
         }
@@ -385,173 +425,191 @@
     }
   },
   {
-  "name": "Hot_Flix",
-  "page_title": " Hot_Flix",
-  "meta_title": "Hot_Flix",
-  "meta_description": "Hot_Flix desription",
-  "meta_keywords": "Hot_Flix keywords keywords",
-  "data": {
-    "Banner": {
-      "title": "Revolutionizing Live Streaming: A 27% Increase in Viewer Engagement and Seamless Monetization",
-      "image": "/images/logo/portbanner.png"
-    },
-    "processInfo": {
-      "title": "Unleashing the Power of AI and Web3 for an Unmatched Live Streaming Experience",
-      "subtitle": "Hotflix, an emerging player in the live streaming industry, was facing stiff competition and a need for innovative features to keep viewers engaged while exploring new revenue streams. Their existing platform lacked the necessary scalability and security, and they turned to us for a solution",
-      "industry": "Streaming",
-      "client": "Hotflix",
-      "businessType": "Enterprise",
-      "services": "Entertainment, Development, Support & Maintenance"
-    },
-    "images": [
-      "/portfolio/m1.svg",
-      "/portfolio/m2.svg",
-      "/portfolio/m3.svg",
-      "/portfolio/m4.svg"
-    ],
-    "Director": {
-      "name": " Yacob Sudwarmaji",
-      "company": " Technology Americana Group",
-      "icon": "/director.svg",
-      "address": "(kuwait Food Co.)",
-      "message": "  Alumeltech has been a transformative partner for Dream Homes Realty. Their expertise in web design and software development, powered by AI and data analytics, revolutionized our online presence. The lightning-fast website they crafted significantly improved user experience, and their AI-driven recommendations led to a 30% increase in property inquiries and sales. Their team's dedication and innovative approach have been invaluable. We're thrilled with the results and the future opportunities this partnership holds..",
-      "post": "Director - Restaurant",
-      "image": "/images/logo/director.svg",
-      "mobileImage": "/Testimonial.svg"
-    },
-    "NewJourney": {
-      "heading": "Alumeltech Development Journey with Hot Flix:",
-      "title1": "",
-      "title2": "Our Approach for Hot flix:",
-      "subtitle2": "At Alumeltech, we embarked on the journey with Dream Homes Realty driven by a shared vision of innovation and excellence. Our approach was centered around harnessing the potential of AI and data to redefine the real estate experience. Here's how we approached this transformative project:"
-    },
-    "key_features": [],
-    "approach": [
-      {
-        "id":1,
-        "title":"Empathizing with the Vision",
-        "content":"Just as explorers study maps, we began by empathizing with Hotflix vision. We delved into their unique challenges and objectives."
+    "name": "Hot_Flix",
+    "page_title": " Hot_Flix",
+    "meta_title": "Hot_Flix",
+    "meta_description": "Hot_Flix desription",
+    "meta_keywords": "Hot_Flix keywords keywords",
+    "data": {
+      "Banner": {
+        "title": "Revolutionizing Live Streaming: A 27% Increase in Viewer Engagement and Seamless Monetization",
+        "image": "/images/logo/portbanner.png"
       },
-      {
-        "id":2,
-        "title":"Leveraging Data Insights",
-        "content":"Similar to explorers gathering critical data, we harnessed data analytics to understand viewer behavior and preferences, shaping our strategy.."
+      "processInfo": {
+        "title": "Unleashing the Power of AI and Web3 for an Unmatched Live Streaming Experience",
+        "subtitle": "Hotflix, an emerging player in the live streaming industry, was facing stiff competition and a need for innovative features to keep viewers engaged while exploring new revenue streams. Their existing platform lacked the necessary scalability and security, and they turned to us for a solution",
+        "industry": "Streaming",
+        "client": "Hotflix",
+        "businessType": "Enterprise",
+        "services": "Entertainment, Development, Support & Maintenance"
       },
-      {
-        "id":3,
-        "title":"AI-Centric Strategy",
-        "content":" Our approach heavily leaned on AI solutions. We integrated AI algorithms to personalize content recommendations and automate video tagging, enhancing user engagement."
+      "images": [
+        {
+          "src": "/portfolio/hotflix4.png"
+        },
+        {
+          "src": "/portfolio/hotflix2.png"
+        },
+        {
+          "src": "/portfolio/hotflix3.png"
+        },
+        {
+          "src": "/portfolio/hotflix7.png"
+        }
+      ],
+      "Director": {
+        "name": " MJ Mathew  ",
+        "company": " Hot Flix",
+        "icon": "/director.svg",
+        "address": "(USA)",
+        "message": "  Alumeltech has been a transformative partner for Dream Homes Realty. Their expertise in web design and software development, powered by AI and data analytics, revolutionized our online presence. The lightning-fast website they crafted significantly improved user experience, and their AI-driven recommendations led to a 30% increase in property inquiries and sales. Their team's dedication and innovative approach have been invaluable. We're thrilled with the results and the future opportunities this partnership holds..",
+        "post": "CEO -  Hot Flix",
+        "image": "/images/logo/director.svg",
+        "mobileImage": "/Testimonial.svg"
       },
-      {
-        "id":4,
-        "title":"Web3 Integration",
-        "content":"We seamlessly integrated Web3 technology to create blockchain-based tokens for rewards, enhancing viewer participation and loyalty."
+      "NewJourney": {
+        "heading": "Alumeltech Development Journey with Hot Flix:",
+        "title1": "",
+        "title2": "Our Approach for Hot flix:",
+        "subtitle2": "At Alumeltech, we embarked on the journey with Dream Homes Realty driven by a shared vision of innovation and excellence. Our approach was centered around harnessing the potential of AI and data to redefine the real estate experience. Here's how we approached this transformative project:"
       },
-      {
-        "id":5,
-        "title":"Tech-Powered Execution",
-        "content":"We harnessed the prowess of cutting-edge technologies like React, Python, Ethereum, and IPFS to craft a robust, decentralized, and responsive live streaming platform."
+      "key_features": [],
+      "approach": [
+        {
+          "id": 1,
+          "title": "Empathizing with the Vision",
+          "content": "Just as explorers study maps, we began by empathizing with Hotflix vision. We delved into their unique challenges and objectives."
+        },
+        {
+          "id": 2,
+          "title": "Leveraging Data Insights",
+          "content": "Similar to explorers gathering critical data, we harnessed data analytics to understand viewer behavior and preferences, shaping our strategy.."
+        },
+        {
+          "id": 3,
+          "title": "AI-Centric Strategy",
+          "content": " Our approach heavily leaned on AI solutions. We integrated AI algorithms to personalize content recommendations and automate video tagging, enhancing user engagement."
+        },
+        {
+          "id": 4,
+          "title": "Web3 Integration",
+          "content": "We seamlessly integrated Web3 technology to create blockchain-based tokens for rewards, enhancing viewer participation and loyalty."
+        },
+        {
+          "id": 5,
+          "title": "Tech-Powered Execution",
+          "content": "We harnessed the prowess of cutting-edge technologies like React, Python, Ethereum, and IPFS to craft a robust, decentralized, and responsive live streaming platform."
+        },
+        {
+          "id": 6,
+          "title": "User-Centric Focus",
+          "content": "Every design choice was driven by a user-centric approach, ensuring that the platform was intuitive, visually appealing, and optimized for mobile and desktop."
+        },
+        {
+          "id": 7,
+          "title": "Testing and Quality Assurance",
+          "content": "Like explorers who ensure their gear is in top condition, we rigorously tested every aspect of the platform, ensuring it met high standards of performance, security, and scalability."
+        },
+        {
+          "id": 8,
+          "title": "Deployment and Support",
+          "content": "After thorough testing, we deployed the platform, provided training, and offered ongoing support, ensuring a seamless user experience and uninterrupted live streams."
+        }
+      ],
+      "OurProcessNew": {
+        "heading": "Our Process for AutoMob:"
       },
-      {
-        "id":6,
-        "title":"User-Centric Focus",
-        "content":"Every design choice was driven by a user-centric approach, ensuring that the platform was intuitive, visually appealing, and optimized for mobile and desktop."
+      "process": [
+        {
+          "id": 1,
+          "title": "Requirement Gathering:",
+          "content": "Our journey began with in-depth consultations, where we gained a deep understanding of LiveStreamNow's objectives, challenges, and market dynamics."
+        },
+        {
+          "id": 2,
+          "title": "Data-Driven Analysis",
+          "content": "Much like explorers rely on maps, we gathered and analyzed data on viewer behavior, content preferences, and industry trends. This data informed our decisions throughout the project.\n"
+        },
+        {
+          "id": 3,
+          "title": " AI and Web3 Strategy",
+          "content": "With valuable insights in hand, we devised a strategy that heavily leveraged AI for personalized content recommendations and Web3 for blockchain-based rewards."
+        },
+        {
+          "id": 4,
+          "title": "Tech-Driven Development",
+          "content": "We harnessed cutting-edge technologies such as React, Python, Ethereum, and IPFS to develop a robust and scalable live streaming platform."
+        },
+        {
+          "id": 5,
+          "title": "User-Centric Design",
+          "content": "Our design choices prioritized creating an exceptional user experience, ensuring that viewers and content creators could easily navigate and interact with the platform."
+        },
+        {
+          "id": 6,
+          "title": "Rigorous Testing",
+          "content": "We conducted extensive testing to ensure the platform's performance, security, and scalability met the highest industry standards."
+        },
+        {
+          "id": 7,
+          "title": " Deployment and Ongoing Support",
+          "content": "After rigorous testing, we deployed the platform and provided comprehensive training to Hotflix team. We continue to offer ongoing support, ensuring the"
+        }
+      ],
+      "imagePort": [
+        {
+          "src": "/portfolio/hotflix4.png"
+        },
+        {
+          "src": "/portfolio/hotflix5.png"
+        },
+        {
+          "src": "/portfolio/hotflix6.png"
+        },
+        {
+          "src": "/portfolio/hotflix7.png"
+        }
+      ],
+      "ResultNew": {
+        "heading": "Benefits",
+        "subtitle": "Working with us, Hotflix not only transformed its live streaming platform but also achieved tangible business benefits"
       },
-      {"id":7,
-        "title":"Testing and Quality Assurance",
-        "content":"Like explorers who ensure their gear is in top condition, we rigorously tested every aspect of the platform, ensuring it met high standards of performance, security, and scalability."
+      "benefits": [
+        {
+          "title": "Increased viewer engagement and loyalty"
+        },
+        {
+          "title": "Enhanced monetization through Web3 rewards"
+        },
+        {
+          "title": "Improved security and reliability"
+        },
+        {
+          "title": "Competitive edge in the live streaming market"
+        }
+      ],
+      "resultNew": {
+        "heading": "The Results"
       },
-      {
-        "id":8,
-        "title":"Deployment and Support",
-        "content":"After thorough testing, we deployed the platform, provided training, and offered ongoing support, ensuring a seamless user experience and uninterrupted live streams."
-      }
-    ],
-    "OurProcessNew": {
-      "heading": "Our Process for AutoMob:"
-    },
-    "process": [
-      {
-        "id":1,
-        "title":"Requirement Gathering:",
-        "content":"Our journey began with in-depth consultations, where we gained a deep understanding of LiveStreamNow's objectives, challenges, and market dynamics."
-      }, {
-        "id":2,
-        "title":"Data-Driven Analysis",
-        "content":"Much like explorers rely on maps, we gathered and analyzed data on viewer behavior, content preferences, and industry trends. This data informed our decisions throughout the project.\n"
-      }, {
-        "id":3,
-        "title":" AI and Web3 Strategy",
-        "content":"With valuable insights in hand, we devised a strategy that heavily leveraged AI for personalized content recommendations and Web3 for blockchain-based rewards."
-      }, {
-        "id":4,
-        "title":"Tech-Driven Development",
-        "content":"We harnessed cutting-edge technologies such as React, Python, Ethereum, and IPFS to develop a robust and scalable live streaming platform."
-      }, {
-        "id":5,
-        "title":"User-Centric Design",
-        "content":"Our design choices prioritized creating an exceptional user experience, ensuring that viewers and content creators could easily navigate and interact with the platform."
-      }, {
-        "id":6,
-        "title":"Rigorous Testing",
-        "content":"We conducted extensive testing to ensure the platform's performance, security, and scalability met the highest industry standards."
-      }, {
-        "id":7,
-        "title":" Deployment and Ongoing Support",
-        "content":"After rigorous testing, we deployed the platform and provided comprehensive training to Hotflix team. We continue to offer ongoing support, ensuring the"
-      }
-    ],
-    "imagePort": [
-      "/portfolio/m5.svg",
-      "/portfolio/m6.svg",
-      "/portfolio/m7.svg",
-      "/portfolio/m8.svg",
-      "/portfolio/m9.svg",
-      "/portfolio/m10.svg",
-      "/portfolio/m11.svg",
-      "/portfolio/m12.svg"
-
-    ],
-    "ResultNew": {
-      "heading": "Benefits",
-      "subtitle": "Working with us, Hotflix not only transformed its live streaming platform but also achieved tangible business benefits"
-    },
-    "benefits": [
-      {
-        "title": "Increased viewer engagement and loyalty"
-      },
-      {
-        "title": "Enhanced monetization through Web3 rewards"
-      },
-      {
-        "title": "Improved security and reliability"
-      },
-      {
-        "title": "Competitive edge in the live streaming market"
-      }
-    ],
-    "resultNew": {
-      "heading": "The Results"
-    },
-    "resultData": [
-      {
-        "percentage": 27,
-        "title": "Increase in Viewer Engagemen",
-        "content": ""
-      },
-      {
-        "percentage": 25,
-        "title": "Enhanced Monetization through Blockchain-Based Tokens",
-        "content": ""
-      },
-      {
-        "percentage":0,
-        "title": "Greater Viewer Satisfaction",
-        "content": ""
-      }
-    ]
-  }
-},
+      "resultData": [
+        {
+          "percentage": 27,
+          "title": "Increase in Viewer Engagemen",
+          "content": ""
+        },
+        {
+          "percentage": 25,
+          "title": "Enhanced Monetization through Blockchain-Based Tokens",
+          "content": ""
+        },
+        {
+          "percentage": 0,
+          "title": "Greater Viewer Satisfaction",
+          "content": ""
+        }
+      ]
+    }
+  },
   {
     "name": "Health",
     "page_title": " Health",
@@ -572,18 +630,26 @@
         "services": "Health & wellness"
       },
       "images": [
-        "/portfolio/m1.svg",
-        "/portfolio/m2.svg",
-        "/portfolio/m3.svg",
-        "/portfolio/m4.svg"
+        {
+          "src": "/portfolio/health1.png"
+        },
+        {
+          "src": "/portfolio/health2.png"
+        },
+        {
+          "src": "/portfolio/health3.png"
+        },
+        {
+          "src": "/portfolio/health4.png"
+        }
       ],
       "Director": {
-        "name": " Yacob Sudwarmaji",
-        "company": " Technology Americana Group",
+        "name": " steve George ",
+        "company": "ElthMe",
         "icon": "/director.svg",
-        "address": "(kuwait Food Co.)",
+        "address": "( America)",
         "message": "  Alumeltech has been a transformative partner for Dream Homes Realty. Their expertise in web design and software development, powered by AI and data analytics, revolutionized our online presence. The lightning-fast website they crafted significantly improved user experience, and their AI-driven recommendations led to a 30% increase in property inquiries and sales. Their team's dedication and innovative approach have been invaluable. We're thrilled with the results and the future opportunities this partnership holds..",
-        "post": "Director - Restaurant",
+        "post": "Director - ElthMe ",
         "image": "/images/logo/director.svg",
         "mobileImage": "/Testimonial.svg"
       },
@@ -604,27 +670,33 @@
           "id": 2,
           "title": "Data-Driven Analysis",
           "content": "Much like medical professionals rely on patient data for diagnosis, we gathered and analyzed healthcare industry data and trends. This empowered us with insights to make informed decisions in the development process.\n"
-        },  {
+        },
+        {
           "id": 3,
           "title": "Secure Cloud Infrastructure",
           "content": "To accommodate the increasing volume of user data and ensure scalability, we implemented a robust cloud infrastructure. This ensured that ElthMe platform could handle the growing user base without compromising performance.\n"
-        },  {
+        },
+        {
           "id": 4,
           "title": "Cybersecurity Measures",
           "content": "Security was a top priority. We implemented stringent cybersecurity measures to protect user data and ensure compliance with healthcare data privacy regulations.\n"
-        },  {
+        },
+        {
           "id": 5,
           "title": "Web3 Integration",
           "content": "To enhance transparency, data integrity, and user trust, we integrated Web3 technology. Blockchain-based smart contracts were used to record health data securely and enable secure telehealth consultations."
-        },  {
+        },
+        {
           "id": 6,
           "title": "Tech-Centric Development",
           "content": "Our development team utilized a stack of cutting-edge technologies, including React, Node.js, Ethereum, and IPFS, to create a user-friendly and secure health and wellness platform."
-        },  {
+        },
+        {
           "id": 7,
           "title": "Testing and Quality Assurance",
           "content": "To ensure the highest standards of performance and security, every aspect of the system underwent meticulous testing. This phase also involved validating the accuracy of AI-driven health recommendations.\n"
-        },  {
+        },
+        {
           "id": 8,
           "title": "Deployment and Ongoing Support",
           "content": "Following extensive testing, we deployed the platform and provided training to ElthMe team. We continued to offer ongoing support and maintenance to ensure a seamless user experience."
@@ -643,45 +715,56 @@
           "id": 2,
           "title": "Data-Driven Analysis",
           "content": "Just as a healthcare provider relies on patient data for diagnosis, we gathered and analyzed healthcare industry data and trends. This phase empowered us with insights to make informed decisions throughout the development process.\n"
-        },  {
+        },
+        {
           "id": 3,
           "title": "AI-Powered Health Recommendations",
           "content": "Leveraging AI, we developed algorithms to provide personalized health recommendations to users. This allowed ElthMe Pro to offer tailored wellness plans and enhance user engagement.\n"
-        },  {
+        },
+        {
           "id": 4,
           "title": "Secure Cloud Infrastructure",
           "content": "As the user base expanded, we implemented a robust cloud infrastructure to accommodate the increasing volume of user data while maintaining scalability. This ensured that ElthMe Pro's platform could handle growth without compromising performance.\n"
-        },  {
+        },
+        {
           "id": 5,
           "title": "Cybersecurity Measures",
           "content": "Security was a top priority. We implemented stringent cybersecurity measures to protect user data and ensure compliance with healthcare data privacy regulations. This safeguarded sensitive health information.\n"
-        },  {
+        },
+        {
           "id": 6,
           "title": "Web3 Integration",
           "content": "To enhance transparency and data integrity, we integrated Web3 technology. Blockchain-based smart contracts were used to securely record health data and enable secure telehealth consultations."
-        },  {
+        },
+        {
           "id": 7,
           "title": "Tech-Centric Development",
           "content": "Our development team utilized a stack of cutting-edge technologies, including React, Node.js, Ethereum, and IPFS. This ensured the creation of a user-friendly and secure health and wellness platform."
-        },  {
+        },
+        {
           "id": 8,
           "title": "Testing and Quality Assurance",
           "content": "Every aspect of the system underwent meticulous testing to ensure the highest standards of performance and security. This phase also involved validating the accuracy of AI-driven health recommendations."
-        },  {
+        },
+        {
           "id": 9,
           "title": "Deployment and Ongoing Support",
           "content": "Following extensive testing, we deployed the platform and provided training to ElthMe team. We continued to offer ongoing support and maintenance to ensure a seamless user experience."
         }
       ],
       "imagePort": [
-        "/portfolio/m5.svg",
-        "/portfolio/m6.svg",
-        "/portfolio/m7.svg",
-        "/portfolio/m8.svg",
-        "/portfolio/m9.svg",
-        "/portfolio/m10.svg",
-        "/portfolio/m11.svg",
-        "/portfolio/m12.svg"
+        {
+          "src": "/portfolio/health1.png"
+        },
+        {
+          "src": "/portfolio/health1.png"
+        },
+        {
+          "src": "/portfolio/health1.png"
+        },
+        {
+          "src": "/portfolio/health1.png"
+        }
       ],
       "ResultNew": {
         "heading": "Benefits",
@@ -694,7 +777,6 @@
       ],
       "resultNew": {
         "heading": "The Results"
-
       },
       "resultData": [
         {
@@ -706,8 +788,7 @@
           "percentage": 25,
           "title": "",
           "content": "The platform's secure cloud infrastructure allowed for seamless scalability as the user base grew."
-        }
-      ,
+        },
         {
           "percentage": 0,
           "title": "",
@@ -736,18 +817,26 @@
         "services": "Entertainment, Travel"
       },
       "images": [
-        "/travel/m1.png",
-        "/travel/m2.svg",
-        "/travel/m3.svg",
-        "/travel/m4.svg"
+        {
+          "src": "/travel/m1.png"
+        },
+        {
+          "src": "/travel/m2.svg"
+        },
+        {
+          "src": "/travel/m3.svg"
+        },
+        {
+          "src": "/travel/m4.svg"
+        }
       ],
       "Director": {
-        "name": " Yacob Sudwarmaji",
-        "company": " Technology Americana Group",
+        "name": " jacob Steve",
+        "company": " TravelTrips",
         "icon": "/director.svg",
-        "address": "(kuwait Food Co.)",
+        "address": "(Canada )",
         "message": "  Alumeltech has been a transformative partner for Dream Homes Realty. Their expertise in web design and software development, powered by AI and data analytics, revolutionized our online presence. The lightning-fast website they crafted significantly improved user experience, and their AI-driven recommendations led to a 30% increase in property inquiries and sales. Their team's dedication and innovative approach have been invaluable. We're thrilled with the results and the future opportunities this partnership holds..",
-        "post": "Director - Restaurant",
+        "post": "Director -  TravelTrips ",
         "image": "/images/logo/director.svg",
         "mobileImage": "/Testimonial.svg"
       },
@@ -760,38 +849,44 @@
       "key_features": [],
       "approach": [
         {
-          "id":1,
-          "title":" Requirement Gathering",
-          "content":"We began by immersing ourselves in TravelTrips Pro's vision, understanding their objectives, and studying market trends and pain points."
+          "id": 1,
+          "title": " Requirement Gathering",
+          "content": "We began by immersing ourselves in TravelTrips Pro's vision, understanding their objectives, and studying market trends and pain points."
         },
         {
-          "id":2,
-          "title":"Data-Driven Insights",
-          "content":"We gathered data on traveler behavior, preferences, and emerging travel trends to inform our strategic decisions.\n"
-        },   {
-          "id":3,
-          "title":"AI-Powered Recommendations",
-          "content":"Our strategy heavily relied on AI solutions. We integrated AI algorithms to deliver personalized travel recommendations, ensuring each user's experience was unique and efficient.\n"
-        },   {
-          "id":4,
-          "title":"Cloud Infrastructure",
-          "content":"We leveraged cloud technology for scalability, ensuring that TravelTrips could handle increased traffic and data storage requirements.\n"
-        },   {
-          "id":5,
-          "title":"Cybersecurity Measures",
-          "content":"To address security concerns, we implemented robust cybersecurity protocols to protect user data and payment information."
-        },   {
-          "id":6,
-          "title":"Web3 Integration",
-          "content":"We integrated Web3 technology, incorporating blockchain-based smart contracts to secure bookings and facilitate transparent and secure transactions."
-        },   {
-          "id":7,
-          "title":" Development and Testing",
-          "content":"Our development team utilized cutting-edge technologies such as React, Node.js, Ethereum, and IPFS to create a user-friendly and secure travel booking platform. Rigorous testing ensured performance and security met industry standards."
-        },   {
-          "id":8,
-          "title":"Deployment and Ongoing Support",
-          "content":"After successful testing, we deployed the platform, provided training to TravelTrips team, and continue to offer comprehensive support, ensuring a seamless and secure user experience.\n"
+          "id": 2,
+          "title": "Data-Driven Insights",
+          "content": "We gathered data on traveler behavior, preferences, and emerging travel trends to inform our strategic decisions.\n"
+        },
+        {
+          "id": 3,
+          "title": "AI-Powered Recommendations",
+          "content": "Our strategy heavily relied on AI solutions. We integrated AI algorithms to deliver personalized travel recommendations, ensuring each user's experience was unique and efficient.\n"
+        },
+        {
+          "id": 4,
+          "title": "Cloud Infrastructure",
+          "content": "We leveraged cloud technology for scalability, ensuring that TravelTrips could handle increased traffic and data storage requirements.\n"
+        },
+        {
+          "id": 5,
+          "title": "Cybersecurity Measures",
+          "content": "To address security concerns, we implemented robust cybersecurity protocols to protect user data and payment information."
+        },
+        {
+          "id": 6,
+          "title": "Web3 Integration",
+          "content": "We integrated Web3 technology, incorporating blockchain-based smart contracts to secure bookings and facilitate transparent and secure transactions."
+        },
+        {
+          "id": 7,
+          "title": " Development and Testing",
+          "content": "Our development team utilized cutting-edge technologies such as React, Node.js, Ethereum, and IPFS to create a user-friendly and secure travel booking platform. Rigorous testing ensured performance and security met industry standards."
+        },
+        {
+          "id": 8,
+          "title": "Deployment and Ongoing Support",
+          "content": "After successful testing, we deployed the platform, provided training to TravelTrips team, and continue to offer comprehensive support, ensuring a seamless and secure user experience.\n"
         }
       ],
       "OurProcessNew": {
@@ -799,48 +894,64 @@
       },
       "process": [
         {
-          "id":1,
-          "title":"Strategic Consultation",
-          "content":"The journey commenced with strategic consultations, deep-diving into TravelEase Pro's objectives and the dynamics of the travel booking industry. This step allowed us to align our technology solutions with their vision.\n"
-        }, {
-          "id":2,
-          "title":"Data-Driven Analysis",
-          "content":"Much like travelers plan their trips, we gathered and analyzed market data and trends. This empowered us with insights that fueled our strategic decisions for TravelEase Pro."
-        }, {
-          "id":3,
-          "title":"AI Implementation",
-          "content":"The heart of our process was AI. We implemented AI-driven solutions that delivered tailored travel recommendations, enhancing the user experience and boosting bookings"
-        }, {
-          "id":4,
-          "title":"Cloud Infrastructure Setup",
-          "content":"We harnessed the scalability and flexibility of cloud infrastructure to accommodate increased traffic and data storage requirements."
-        }, {
-          "id":5,
-          "title":"Cybersecurity Measures",
-          "content":"To secure user data and transactions, we implemented robust cybersecurity measures, ensuring that TravelTrips platform was safe from threats"
-        }, {
-          "id":6,
-          "title":"Web3 Integration",
-          "content":"Incorporating Web3 technology, we introduced blockchain-based smart contracts to ensure transparent and secure booking processes."
-        }, {
-          "id":7,
-          "title":"Tech-Centric Development",
-          "content":"Our development team utilized a stack of advanced technologies, including React, Node.js, Ethereum, and IPFS, to create a user-friendly and secure travel booking platform."
-        }, {
-          "id":8,
-          "title":"Testing and Quality Assurance",
-          "content":"Every aspect of the system underwent meticulous testing, ensuring it met the highest standards of performance and security."
-        }, {
-          "id":9,
-          "title":"Deployment and Ongoing Support",
-          "content":"After thorough testing, we deployed the platform, provided training, and offered ongoing support and maintenance to guarantee a seamless user experience."
+          "id": 1,
+          "title": "Strategic Consultation",
+          "content": "The journey commenced with strategic consultations, deep-diving into TravelEase Pro's objectives and the dynamics of the travel booking industry. This step allowed us to align our technology solutions with their vision.\n"
+        },
+        {
+          "id": 2,
+          "title": "Data-Driven Analysis",
+          "content": "Much like travelers plan their trips, we gathered and analyzed market data and trends. This empowered us with insights that fueled our strategic decisions for TravelEase Pro."
+        },
+        {
+          "id": 3,
+          "title": "AI Implementation",
+          "content": "The heart of our process was AI. We implemented AI-driven solutions that delivered tailored travel recommendations, enhancing the user experience and boosting bookings"
+        },
+        {
+          "id": 4,
+          "title": "Cloud Infrastructure Setup",
+          "content": "We harnessed the scalability and flexibility of cloud infrastructure to accommodate increased traffic and data storage requirements."
+        },
+        {
+          "id": 5,
+          "title": "Cybersecurity Measures",
+          "content": "To secure user data and transactions, we implemented robust cybersecurity measures, ensuring that TravelTrips platform was safe from threats"
+        },
+        {
+          "id": 6,
+          "title": "Web3 Integration",
+          "content": "Incorporating Web3 technology, we introduced blockchain-based smart contracts to ensure transparent and secure booking processes."
+        },
+        {
+          "id": 7,
+          "title": "Tech-Centric Development",
+          "content": "Our development team utilized a stack of advanced technologies, including React, Node.js, Ethereum, and IPFS, to create a user-friendly and secure travel booking platform."
+        },
+        {
+          "id": 8,
+          "title": "Testing and Quality Assurance",
+          "content": "Every aspect of the system underwent meticulous testing, ensuring it met the highest standards of performance and security."
+        },
+        {
+          "id": 9,
+          "title": "Deployment and Ongoing Support",
+          "content": "After thorough testing, we deployed the platform, provided training, and offered ongoing support and maintenance to guarantee a seamless user experience."
         }
       ],
       "imagePort": [
-        "/portfolio/m5.png",
-        "/portfolio/m6.png",
-        "/portfolio/m7.png",
-        "/portfolio/m8.png"
+        {
+          "src": "/portfolio/m5.png"
+        },
+        {
+          "src": "/portfolio/m6.png"
+        },
+        {
+          "src": "/portfolio/m7.png"
+        },
+        {
+          "src": "/portfolio/m8.png"
+        }
       ],
       "ResultNew": {
         "heading": "Benefits",
@@ -872,7 +983,7 @@
           "title": ""
         },
         {
-          "percentage":0,
+          "percentage": 0,
           "content": "Web3 Integration: The adoption of blockchain technology enhanced transparency and trust in the booking process.\n",
           "title": ""
         }
@@ -880,7 +991,7 @@
     }
   },
   {
-    "name": "E_commerce",
+    "name": "E_Commerce",
     "page_title": " E_commerce",
     "meta_title": "E_commerce",
     "meta_description": "E_commerce desription",
@@ -899,16 +1010,24 @@
         "services": "E-commerce, Development, Support & Maintenance"
       },
       "images": [
-        "/portfolio/m1.svg",
-        "/portfolio/m2.svg",
-        "/portfolio/m3.svg",
-        "/portfolio/m4.svg"
+        {
+          "src": "/portfolio/onkart1.png"
+        },
+        {
+          "src": "/portfolio/onkart2.png"
+        },
+        {
+          "src": "/portfolio/onkart3.png"
+        },
+        {
+          "src": "/portfolio/onkart7.png"
+        }
       ],
       "Director": {
         "name": " Yacob Sudwarmaji",
-        "company": " Technology Americana Group",
+        "company": "  OnKart ",
         "icon": "/director.svg",
-        "address": "(kuwait Food Co.)",
+        "address": "(USA)",
         "message": "  Alumeltech has been a transformative partner for Dream Homes Realty. Their expertise in web design and software development, powered by AI and data analytics, revolutionized our online presence. The lightning-fast website they crafted significantly improved user experience, and their AI-driven recommendations led to a 30% increase in property inquiries and sales. Their team's dedication and innovative approach have been invaluable. We're thrilled with the results and the future opportunities this partnership holds..",
         "post": "Director - Restaurant",
         "image": "/images/logo/director.svg",
@@ -962,8 +1081,7 @@
           "id": 5,
           "title": "NFT Integration",
           "content": "o enhance customer engagement and create a sense of exclusivity, we integrated NFTs into the platform."
-        }
-      ,
+        },
         {
           "id": 6,
           "title": "Tech-Powered Execution",
@@ -973,11 +1091,13 @@
           "id": 7,
           "title": "Client-Centric Focus",
           "content": "Our design and development choices revolved around enhancing the user experience, ensuring that every interaction with the platform was seamless and engaging."
-        }, {
+        },
+        {
           "id": 8,
           "title": "Testing and Quality Assurance",
           "content": "Rigorous testing ensured the platform's performance, security, and scalability met the highest standards."
-        }, {
+        },
+        {
           "id": 9,
           "title": "Deployment and Support",
           "content": "After thorough testing, we deployed the platform and provided ongoing support to ensure its continued success"
@@ -996,45 +1116,56 @@
           "id": 2,
           "title": "Data-Driven Analysis",
           "content": "Similar to explorers studying maps, we gathered and analyzed market data and trends, empowering us with insights that fueled our strategic decisions.\n"
-        },  {
+        },
+        {
           "id": 3,
           "title": "AI Implementation",
           "content": "The heart of our process was AI. We implemented AI-driven solutions that delivered tailored product recommendations, ensuring each user's shopping journey was unique and efficient.\n"
-        },  {
+        },
+        {
           "id": 4,
           "title": "Blockchain Integration",
           "content": "We seamlessly integrated blockchain technology to enhance security, transparency, and traceability in transactions, creating a safer and more trustworthy shopping environment.\n"
-        },  {
+        },
+        {
           "id": 5,
           "title": "NFT Strategy",
           "content": "Our NFT strategy involved creating a framework for exclusive product launches and limited-edition items, increasing customer engagement and loyalty.\n"
-        },  {
+        },
+        {
           "id": 6,
           "title": "Tech-Centric Development",
           "content": "Leveraging cutting-edge technologies like Python, React, and Ethereum, we developed a robust and efficient platform that met the demands of the modern ecommerce market.\n"
-        },  {
+        },
+        {
           "id": 7,
           "title": "User-Centric Design",
           "content": "Our design choices were centered on delivering an exceptional user experience, ensuring the platform was intuitive, visually appealing, and easy to navigate.\n"
-        },  {
+        },
+        {
           "id": 8,
           "title": "Testing and Quality Assurance",
           "content": "We meticulously tested every aspect of the system, ensuring it met the highest standards of performance, security, and scalability.\n"
-        },  {
+        },
+        {
           "id": 9,
           "title": "Deployment and Support",
           "content": "After thorough testing, we deployed the platform and provided training, ensuring a seamless user experience. Ongoing support and maintenance were also offered to guarantee long-term success.\n"
         }
       ],
       "imagePort": [
-        "/portfolio/m5.svg",
-        "/portfolio/m6.svg",
-        "/portfolio/m7.svg",
-        "/portfolio/m8.svg",
-        "/portfolio/m9.svg",
-        "/portfolio/m10.svg",
-        "/portfolio/m11.svg",
-        "/portfolio/m12.svg"
+        {
+          "src": "/portfolio/onkart4.png"
+        },
+        {
+          "src": "/portfolio/onkart5.png"
+        },
+        {
+          "src": "/portfolio/onkart6.png"
+        },
+        {
+          "src": "/portfolio/onkart7.png"
+        }
       ],
       "ResultNew": {
         "heading": "Benefits",
@@ -1043,12 +1174,14 @@
       "benefits": [
         {
           "title": "Significant Sales Growth: AI-driven recommendations increased sales by 40%."
-        },{
+        },
+        {
           "title": "Enhanced Customer Loyalty: NFTs and blockchain technology fostered customer engagement and trust."
         },
         {
           "title": "Market Competitiveness: With advanced technology integration, Ecommerce Ventures gained a competitive edge in the ecommerce industry."
-        },{
+        },
+        {
           "title": "Data-Driven Insights: The platform now provided valuable data for informed decision-making and strategy development."
         }
       ],
@@ -1094,19 +1227,26 @@
         "services": "Design, Development, Support & Maintenance"
       },
       "images": [
-        "/fin/m1.png",
-        "/fin/m2.png",
-        "/fin/m3.png",
-        "/fin/m4.png"
+        {
+          "src": "/fin/m1.svg"
+        },
+        {
+          "src": "/fin/m2.svg"
+        },
+        {
+          "src": "/fin/m3.svg"
+        },
+        {
+          "src": "/fin/m4.svg"
+        }
       ],
-
       "Director": {
         "name": " Lisa Brown",
         "company": " FinTech Pro",
         "icon": "/fin/fingirl.svg",
         "address": "(USA)",
         "message": "  Alumeltech has been a transformative partner for Dream Homes Realty. Their expertise in web design and software development, powered by AI and data analytics, revolutionized our online presence. The lightning-fast website they crafted significantly improved user experience, and their AI-driven recommendations led to a 30% increase in property inquiries and sales. Their team's dedication and innovative approach have been invaluable. We're thrilled with the results and the future opportunities this partnership holds..",
-        "post": "Director - Restaurant",
+        "post": "Director -  FinTech Pro ",
         "image": "/images/logo/director.svg",
         "mobileImage": "/Testimonial.svg"
       },
@@ -1118,62 +1258,61 @@
       },
       "key_features": [
         {
-          "id":1,
-          "title":"AI-Powered Security",
-          "content":"  Our AI algorithms bolstered security measures, reducing fraud incidents significantly."
+          "id": 1,
+          "title": "AI-Powered Security",
+          "content": "  Our AI algorithms bolstered security measures, reducing fraud incidents significantly."
         },
         {
-          "id":2,
-          "title":"Real-time Transaction Processing",
-          "content":"We implemented real-time transaction processing, resulting in a 50% reduction in transaction times."
+          "id": 2,
+          "title": "Real-time Transaction Processing",
+          "content": "We implemented real-time transaction processing, resulting in a 50% reduction in transaction times."
         },
         {
-          "id":3,
-          "title":"Enhanced User Experience",
-          "content":"Our user-centric design overhaul improved customer satisfaction and retention."
+          "id": 3,
+          "title": "Enhanced User Experience",
+          "content": "Our user-centric design overhaul improved customer satisfaction and retention."
         },
         {
-          "id":4,
-          "title":"Data-Driven Insights",
-          "content":"Comprehensive data analytics provided valuable market insights, aiding strategic decisions"
+          "id": 4,
+          "title": "Data-Driven Insights",
+          "content": "Comprehensive data analytics provided valuable market insights, aiding strategic decisions"
         }
       ],
       "approach": [
         {
-          "id":1,
-          "title":"Understanding the Vision",
-          "content":"Just as a navigator understands their course, we began by immersing ourselves in FinTechPro's vision. We comprehensively grasped their objectives, market dynamics, and unique challenges."
+          "id": 1,
+          "title": "Understanding the Vision",
+          "content": "Just as a navigator understands their course, we began by immersing ourselves in FinTechPro's vision. We comprehensively grasped their objectives, market dynamics, and unique challenges."
         },
         {
-          "id":2,
-          "title":"Leveraging Data Insights",
-          "content":"Like explorers studying maps, we gathered and analyzed extensive data on transaction patterns, customer behavior, and emerging fintech trends. These insights drove informed strategic decisions."
+          "id": 2,
+          "title": "Leveraging Data Insights",
+          "content": "Like explorers studying maps, we gathered and analyzed extensive data on transaction patterns, customer behavior, and emerging fintech trends. These insights drove informed strategic decisions."
         },
         {
-          "id":3,
-          "title":"AI-Centric Strategy",
-          "content":" AI was at the forefront of our strategy. We integrated AI algorithms to enhance security, reduce fraud, and optimize transaction processing. This approach ensured not only safer transactions but also increased efficiency. "
+          "id": 3,
+          "title": "AI-Centric Strategy",
+          "content": " AI was at the forefront of our strategy. We integrated AI algorithms to enhance security, reduce fraud, and optimize transaction processing. This approach ensured not only safer transactions but also increased efficiency. "
         },
         {
-          "id":4,
-          "title":"Efficient Developmen",
-          "content":"We harnessed cutting-edge technologies and advanced programming languages to develop a robust and responsive platform. Our tech-centric approach laid the foundation for faster and secure transactions."
+          "id": 4,
+          "title": "Efficient Developmen",
+          "content": "We harnessed cutting-edge technologies and advanced programming languages to develop a robust and responsive platform. Our tech-centric approach laid the foundation for faster and secure transactions."
         },
         {
-          "id":5,
-          "title":"User-Centric Design",
-          "content":"Just as explorers prepare for their journey, we designed the fintech platform with the user in mind. The result was an intuitive, visually engaging interface that simplified complex transactions and enhanced the overall customer experience."
-        }
-      ,
-        {
-          "id":6,
-          "title":"Testing and Quality Assurance",
-          "content":"Like thorough exploration preparation, we conducted exhaustive testing and quality assurance at every stage. This rigorous process ensured the highest standards of performance, security, and reliability."
+          "id": 5,
+          "title": "User-Centric Design",
+          "content": "Just as explorers prepare for their journey, we designed the fintech platform with the user in mind. The result was an intuitive, visually engaging interface that simplified complex transactions and enhanced the overall customer experience."
         },
         {
-          "id":7,
-          "title":"Deployment and Support",
-          "content":"Following successful testing, we deployed the solutions seamlessly. Our commitment extended beyond deployment as we provided ongoing support to FinTechPro, ensuring that their digital transformation benefits were consistently realized."
+          "id": 6,
+          "title": "Testing and Quality Assurance",
+          "content": "Like thorough exploration preparation, we conducted exhaustive testing and quality assurance at every stage. This rigorous process ensured the highest standards of performance, security, and reliability."
+        },
+        {
+          "id": 7,
+          "title": "Deployment and Support",
+          "content": "Following successful testing, we deployed the solutions seamlessly. Our commitment extended beyond deployment as we provided ongoing support to FinTechPro, ensuring that their digital transformation benefits were consistently realized."
         }
       ],
       "OurProcessNew": {
@@ -1181,51 +1320,66 @@
       },
       "process": [
         {
-          "id":1,
-          "title":"Strategic Consultation",
-          "content":"The journey commenced with strategic consultations, deep-diving into Dream Homes Realty's objectives and market dynamics to align our technology with their vision."
+          "id": 1,
+          "title": "Strategic Consultation",
+          "content": "The journey commenced with strategic consultations, deep-diving into Dream Homes Realty's objectives and market dynamics to align our technology with their vision."
         },
         {
-          "id":2,
-          "title":"Data-Driven Analysis",
-          "content":"Much like an explorer relies on maps, we gathered and analyzed market data and trends, empowering us with insights that fueled our strategic decisions."
+          "id": 2,
+          "title": "Data-Driven Analysis",
+          "content": "Much like an explorer relies on maps, we gathered and analyzed market data and trends, empowering us with insights that fueled our strategic decisions."
         },
         {
-          "id":3,
-          "title":"AI Implementation",
-          "content":"The heart of our process was AI. We implemented AI-driven solutions that delivered tailored recommendations to property seekers, enhancing their experience."
+          "id": 3,
+          "title": "AI Implementation",
+          "content": "The heart of our process was AI. We implemented AI-driven solutions that delivered tailored recommendations to property seekers, enhancing their experience."
         },
         {
-          "id":4,
-          "title":"Tech-Centric Development",
-          "content":"Leveraging cutting-edge technologies such as Python, we developed a robust and efficient platform that met the demands of today's real estate market."
+          "id": 4,
+          "title": "Tech-Centric Development",
+          "content": "Leveraging cutting-edge technologies such as Python, we developed a robust and efficient platform that met the demands of today's real estate market."
         },
         {
-          "id":5,
-          "title":"User-Centric Design",
-          "content":"Our design choices were centered on delivering an exceptional user experience, ensuring that the platform was intuitive and visually engaging."
+          "id": 5,
+          "title": "User-Centric Design",
+          "content": "Our design choices were centered on delivering an exceptional user experience, ensuring that the platform was intuitive and visually engaging."
         },
         {
-          "id":6,
-          "title":"Testing and Quality Assurance",
-          "content":"We meticulously tested every aspect of the system, ensuring it met the highest standards of performance and security."
+          "id": 6,
+          "title": "Testing and Quality Assurance",
+          "content": "We meticulously tested every aspect of the system, ensuring it met the highest standards of performance and security."
         },
         {
-          "id":7,
-          "title":"Deployment and Support",
-          "content":"After thorough testing, we deployed the system and provided ongoing support to guarantee a seamless user experience."
+          "id": 7,
+          "title": "Deployment and Support",
+          "content": "After thorough testing, we deployed the system and provided ongoing support to guarantee a seamless user experience."
         }
       ],
       "imagePort": [
-        "/fin/m5.png",
-        "/fin/m6.png",
-        "/fin/m7.png",
-        "/fin/m8.png",
-        "/fin/m9.png",
-        "/fin/m10.png",
-        "/fin/m11.png",
-        "/fin/m12.png"
-
+        {
+          "src": "/fin/m5.svg"
+        },
+        {
+          "src": "/fin/m6.svg"
+        },
+        {
+          "src": "/fin/m7.svg"
+        },
+        {
+          "src": "/fin/m8.svg"
+        },
+        {
+          "src": "/fin/m9.svg"
+        },
+        {
+          "src": "/fin/m10.svg"
+        },
+        {
+          "src": "/fin/m11.svg"
+        },
+        {
+          "src": "/fin/m12.svg"
+        }
       ],
       "ResultNew": {
         "heading": "Benefits",
@@ -1260,13 +1414,11 @@
           "content": "The integration of IoT technology led to a 25% increase in overall operational efficiency, enhancing productivity and reducing downtime."
         },
         {
-          "percentage":0,
+          "percentage": 0,
           "title": "Streamlined Supply Chain",
           "content": "The streamlined supply chain reduced lead times by 30%, ensuring components were readily available when needed."
         }
       ]
     }
   }
-
-
 ]

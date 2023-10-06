@@ -59,7 +59,7 @@ const ImageComponent: FC<CloneInnerPageInterface> = ({ slug, pageContent }) => {
     const save = async () => {
         try {
             setIsLoading(true);
-            const response = await fetch('/api/portfolios/PUT/ImageComponent', {
+            const response = await fetch('/api/caseStudies/PUT/ImageComponent', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -129,7 +129,7 @@ export default ImageComponent;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
     const slug: any = context.query.slug;
-    const response: any = await fetch(`http://localhost:3000/api/portfolios/GET/portfolios`)
+    const response: any = await fetch(`http://localhost:3000/api/caseStudies/GET/portfolios`)
         .then((response) => response.json())
     return {
         props: {

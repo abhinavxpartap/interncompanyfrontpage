@@ -53,7 +53,7 @@ export const BlogCards: React.FC<CardBlog> = ({
         {!description ? (
           <Skeleton variant="rectangular" className="p-[12px]" height={80} />
         ) : (
-          <p className="text-[14px] font-normal text-[#464646] mt-[6px] ">
+          <p className="text-[14px] font-normal ellipsis-text text-[#464646] mt-[6px] ">
             {description}
           </p>
         )}

@@ -26,7 +26,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         }
         const result = await collection.updateOne(
             { _id: objectId },
-            { $set: { "data.processInfo": ProcessBanner, "data.process":ProcessList } }
+            { $set: { "data.OurProcessNew": ProcessBanner, "data.process":ProcessList } }
         );
         client.close();
         if (result.modifiedCount === 1) {

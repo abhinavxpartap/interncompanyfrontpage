@@ -91,7 +91,6 @@ const PortFolioPage: React.FC<PortFolioPageInterface> = (props) => {
                 />
                 <div className="pb-[80px]">
                     <CaseStudy/>
-
                 </div>
                 <FixedButton/>
                 <Footer/>
@@ -108,10 +107,9 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
     // Fetch data from your API endpoint
 
-        const response = await fetch(`${process.env.BASE_URL}/api/portfolios/GET/portfolios`, {
+        const response = await fetch(`${process.env.BASE_URL}/api/caseStudies/GET/portfolios`, {
         method: "GET",
     });
-
 
     if (response.status === 200) {
         const jsonData = await response.json();

@@ -33,7 +33,7 @@ const BannerComponent: FC<CloneInnerPageInterface> = ({ slug, pageContent }) => 
     const save = async () => {
         try {
             setIsLoading(true);
-            const response = await fetch('/api/portfolios/PUT/BannerComponent', {
+            const response = await fetch('/api/caseStudies/PUT/BannerComponent', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ const BannerComponent: FC<CloneInnerPageInterface> = ({ slug, pageContent }) => 
         <div className="flex flex-col gap-[16px]">
             <div className="flex items-center gap-[16px]">
                 <h3 className="flex-1 text-[21px] tracking-[1.2px] font-semibold text-[#101D2C]">
-                    Banner
+                    Banner Component
                 </h3>
                 <Button
                     label="Save"
@@ -116,7 +116,7 @@ export default BannerComponent;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
     const slug: any = context.query.slug;
-    const response: any = await fetch(`http://localhost:3000/api/portfolios/GET/portfolios`)
+    const response: any = await fetch(`http://localhost:3000/api/caseStudies/GET/portfolios`)
         .then((response) => response.json())
 
     return {

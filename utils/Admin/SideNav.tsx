@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Img } from "../Img";
+import React, {useEffect, useState} from "react";
+import {Img} from "../Img";
 import Link from "next/link";
 import data from "../../data/config.json";
 
@@ -34,7 +34,7 @@ export const SideNav: React.FC<SideNavInterface> = (props) => {
                 links.map((link, index) => {
                     return <div key={index} className="w-full">
                         {
-                            link.subLinks.length !== 0 ?
+                            link.subLinks?.length !== 0 ?
                                 <div>
                                     <div
                                         className="flex items-center gap-[10x] p-[12px] cursor-pointer"
@@ -59,7 +59,7 @@ export const SideNav: React.FC<SideNavInterface> = (props) => {
                                     <div
                                         className={`flex-col pl-[15px] ${showDropdownIndex === index ? 'flex' : 'hidden'}`}>
                                         {
-                                            link.subLinks.map((subLink: any, index: number) => {
+                                            link.subLinks?.map((subLink: any, index: number) => {
                                                 return <Link key={index} href={subLink.href}>
                                                     <div
                                                         className={`cursor-pointer font-medium text-[13px] tracking-[1px] p-[12px] ${subLink?.active ? 'text-[#101D2C]' : 'text-[#707070]'}`}>

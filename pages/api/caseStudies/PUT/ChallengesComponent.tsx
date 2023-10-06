@@ -8,7 +8,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
     try {
         const { _id, ChalengesBanner, ChalengesData } = req.body;
-        if (!_id || !ChalengesData || ChalengesBanner) {
+        if (!_id || !ChalengesBanner || !ChalengesData) {
             return res.status(400).json({ error: 'Invalid request data' });
         }
         const client = new MongoClient(MONGODB_URI, {
@@ -26,7 +26,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         }
         const result = await collection.updateOne(
             { _id: objectId },
-            { $set: { "data.resultNew": ChalengesBanner,"data.resultData":ChalengesData } }
+            { $set: { "data.resultNew":ChalengesBanner,"data.resultData":ChalengesData } }
         );
         client.close();
         if (result.modifiedCount === 1) {

@@ -149,7 +149,7 @@ const JourneyComponent: FC<CloneInnerPageInterface> = ({slug, pageContent}) => {
     const save = async () => {
         try {
             setIsLoading(true);
-            const response = await fetch('/api/portfolios/PUT/JourneyComponent', {
+            const response = await fetch('/api/caseStudies/PUT/JourneyComponent', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -382,7 +382,7 @@ export default JourneyComponent;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
     const slug: any = context.query.slug;
-    const response: any = await fetch(`http://localhost:3000/api/portfolios/GET/portfolios`)
+    const response: any = await fetch(`http://localhost:3000/api/caseStudies/GET/portfolios`)
         .then((response) => response.json())
     return {
         props: {

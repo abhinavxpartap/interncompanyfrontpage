@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import {SideNav} from "../../utils/Admin/SideNav";
-import {AdminLinksInterface} from "../../types";
 import Head from "next/head";
 import {useAuth} from "../../context/AuthContext";
 import {useRouter} from "next/router";
@@ -13,7 +12,7 @@ interface PrivateLayoutInterface {
 const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
     const router = useRouter();
     const {logout, user} = useAuth();
-    const [navlink, setData] = useState<any[]>([]);
+    const [navlink, setNavlink] = useState<any[]>([]);
     useEffect(() => {
         fetch("/api/services/GET/services")
             .then((response) => {
@@ -23,14 +22,16 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                 return response.json();
             })
             .then((data) => {
-                setData(data);
+                setNavlink(data);
             })
             .catch((error) => {
                 console.error("Error fetching banner data:", error);
             });
     }, []);
 
-    const [navlink1, setData1] = useState<any[]>([]);
+    console.log(navlink);
+
+    const [navlink1, setNavlink1] = useState<any[]>([]);
     useEffect(() => {
         fetch("/api/industry/GET/indsutries")
             .then((response) => {
@@ -40,7 +41,7 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                 return response.json();
             })
             .then((data) => {
-                setData1(data);
+                setNavlink1(data);
             })
             .catch((error) => {
                 console.error("Error fetching banner data:", error);
@@ -48,7 +49,9 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
     }, []);
 
 
-    const links: AdminLinksInterface[] = [
+    console.log(navlink1);
+
+    const links: any[] = [
         {
             label: 'Dashboard',
             href: '/admin',
@@ -212,6 +215,23 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
             ]
         },
         {
+            label: 'Blog',
+            href: '',
+            active: false,
+            subLinks: [
+                {
+                    label: 'Add Blog',
+                    href: '/admin/blog/form',
+                    active: false
+                },
+                {
+                    label: 'Blog List',
+                    href: '/admin/blog/list',
+                    active: false
+                }
+            ]
+        },
+        {
             label:'Home Page',
             href: "",
             active: false,
@@ -270,7 +290,44 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                 }
             ]
         },
-        ...navlink.map((d:any) => ({
+        {
+            label: 'Industries Page',
+            href: "",
+            active: false,
+            subLinks: [
+                {
+                    label: 'Banner',
+                    href: '/admin/Industries/Banner',
+                    active: false
+                },
+                {
+                    label: 'About',
+                    href: '/admin/Industries/About',
+                    active: false
+                },
+                {
+                    label:'Compliances',
+                    href:'/admin/Industries/Compliances',
+                    active:false
+                },
+                {
+                  label:'Faq',
+                  href:'/admin/Industries/Faq',
+                  active: false
+                },
+                {
+                    label:'Technology',
+                    href:'/admin/Industries/Technology',
+                    active: false
+                }
+            ]
+        },
+    ];
+    const [activeLinks, setActiveLinks] = useState(links);
+
+    useEffect( () =>{
+        if(navlink1){
+            links.push([...links,...navlink1.map((d:any) => ({
                 label: d.name,
                 href: `/admin/${d.name}`,
                 active: false,
@@ -312,93 +369,66 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                         active: false
                     }
                 ]
-        })),
-        ...navlink1.map((d:any) => ({
-            label: d.name,
-            href: `/admin/${d.name}`,
-            active: false,
-            subLinks: [
-                {
-                    label: 'Banner',
-                    href: `/admin/${d.name}/Banner`,
-                    active: false
-                },
-                {
-                    label: 'About',
-                    href: `/admin/${d.name}/About`,
-                    active: false
-                },
-                {
-                    label:'EaseBanner',
-                    href:`/admin/${d.name}/EaseBanner`,
-                    active: false
-                },
-                {
-                    label:'ReasonBanner',
-                    href:`/admin/${d.name}/PrcessBanner`,
-                    active: false
-                },
-                {
-                    label: 'DevelopmentBanner',
-                    href: `/admin/${d.name}/DevelopmentBanner`,
-                    active: false
-                },
+            }))])
+        }
+    }, [navlink1])
 
-                {
-                    label:'ProcessBanner',
-                    href:`/admin/${d.name}/PrcessBanner`,
-                    active: false
-                },
-                {
-                    label:'Faq',
-                    href:`/admin/${d.name}/Faq`,
-                    active: false
-                }
-            ]
-        })),
-        {
-            label: 'Industries Page',
-            href: "",
-            active: false,
-            subLinks: [
-                {
-                    label: 'Banner',
-                    href: '/admin/Industries/Banner',
-                    active: false
-                },
-                {
-                    label: 'About',
-                    href: '/admin/Industries/About',
-                    active: false
-                },
-                {
-                    label:'Compliances',
-                    href:'/admin/Industries/Compliances',
-                    active:false
-                },
-                {
-                  label:'Faq',
-                  href:'/admin/Industries/Faq',
-                  active: false
-                },
-                {
-                    label:'Technology',
-                    href:'/admin/Industries/Technology',
-                    active: false
-                }
-            ]
-        },
-    ];
-    const [activeLinks, setActiveLinks] = useState(links);
+    useEffect( () =>{
+        if(navlink){
+            links.push([...links,...navlink.map((d:any) => ({
+                label: d.name,
+                href: `/admin/${d.name}`,
+                active: false,
+                subLinks: [
+                    {
+                        label: 'Banner',
+                        href: `/admin/${d.name}/Banner`,
+                        active: false
+                    },
+                    {
+                        label: 'About',
+                        href: `/admin/${d.name}/About`,
+                        active: false
+                    },
+                    {
+                        label:'EaseBanner',
+                        href:`/admin/${d.name}/EaseBanner`,
+                        active: false
+                    },
+                    {
+                        label:'ReasonBanner',
+                        href:`/admin/${d.name}/PrcessBanner`,
+                        active: false
+                    },
+                    {
+                        label: 'DevelopmentBanner',
+                        href: `/admin/${d.name}/DevelopmentBanner`,
+                        active: false
+                    },
+
+                    {
+                        label:'ProcessBanner',
+                        href:`/admin/${d.name}/PrcessBanner`,
+                        active: false
+                    },
+                    {
+                        label:'Faq',
+                        href:`/admin/${d.name}/Faq`,
+                        active: false
+                    }
+                ]
+            }))])
+        }
+    }, [navlink])
 
     useEffect(() => {
-        const updatedLinks = activeLinks.map((link) => {
-            if (link.subLinks.length !== 0) {
-                link.subLinks = link.subLinks.map((subLink) => ({
+        const updatedLinks = activeLinks.map((link:any) => {
+            if (link.subLinks?.length !== 0) {
+                link.subLinks = link.subLinks?.map((subLink:any) => ({
                     ...subLink,
                     active: subLink.href === router.asPath,
                 }));
-                link.active = link.subLinks.some((subLink) => subLink.active);
+                link.active = link.subLinks?.some((subLink:any) => subLink.active);
             } else {
                 link.active = link.href === router.asPath;
             }

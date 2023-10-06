@@ -70,7 +70,7 @@ const ChallengesComponent: FC<CloneInnerPageInterface> = ({ slug, pageContent })
     const save = async () => {
         try {
             setIsLoading(true);
-            const response = await fetch('/api/portfolios/PUT/AboutComponent', {
+            const response = await fetch('/api/caseStudies/PUT/ChallengesComponent', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -185,7 +185,7 @@ export default ChallengesComponent;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
     const slug: any = context.query.slug;
-    const response: any = await fetch(`http://localhost:3000/api/portfolios/GET/portfolios`)
+    const response: any = await fetch(`http://localhost:3000/api/caseStudies/GET/portfolios`)
         .then((response) => response.json())
     return {
         props: {

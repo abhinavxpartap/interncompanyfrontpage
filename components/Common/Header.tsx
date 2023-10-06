@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { Img } from '../../utils/Img';
-import { useRouter } from 'next/router';
-import { Button } from '@mui/material';
+import React, {useEffect, useState} from 'react';
+import {Img} from '../../utils/Img';
+import {useRouter} from 'next/router';
+import {Button} from '@mui/material';
 import data from '../../data/config.json';
 import headerData from '../../data/common/layout.json';
-import { Dropdown } from './Dropdown';
+import {Dropdown} from './Dropdown';
 
 export const Header= () => {
   const router = useRouter();
@@ -70,13 +70,10 @@ export const Header= () => {
     '/term',
     '/portfolio',
     '/portfolios',
-      '/case_studies'
+      '/case_studies',
+      ].includes(router.pathname) &&
+      !router.pathname.startsWith('/blogs/') ? data.logo_light : isSticky ? data.logo_light : data.logo_dark;
 
-  ].includes(router.pathname)
-    ? data.logo_light
-    : isSticky
-    ? data.logo_light
-    : data.logo_dark;
 
   const handleScroll = () => {
     if (window.pageYOffset > 56) {
@@ -93,7 +90,7 @@ export const Header= () => {
         }`}
       >
         <div className="max-w-[1377.5px] mx-auto">
-          <div className="flex flex-row  lg:gap-[40px] xl:gap-[140px] 2xl:gap-[200px] items-center ml-[-18px]">
+          <div className="flex flex-row  lg:gap-[70px] xl:gap-[170px] 2xl:gap-[200px] items-center ml-[-18px]">
             <div onClick={() => router.push('/')} className="cursor-pointer">
               <Img
                 src={logo || ''}
@@ -239,7 +236,7 @@ export const Header= () => {
             style={{ maxHeight: 'calc(100vh - 96px)' }}
           >
             <div
-              className={`flex flex-col bg-[#3200FF] w-[100%] h-[100%] p-[20px]  gap-[20px] relative ${
+              className={`flex flex-col bg-white w-[100%] h-[100%] p-[20px]  gap-[20px] relative ${
                 !isSticky
                   ? 'rounded'
                   : 'border-b md:px-[55px] sm:px-[30px] px-[16px]'
@@ -270,7 +267,7 @@ export const Header= () => {
                 href={undefined}
               />
               <Dropdown
-                title="Portfolios"
+                title="Realestate"
                 items={headerData.header[3]}
                 open={openSupport}
                 isSticky={isSticky}
@@ -278,7 +275,7 @@ export const Header= () => {
                 href={undefined}
               />
               <Dropdown
-                title="Case Studies"
+                title="Blog"
                 items={headerData.header[4]}
                 open={openSupport}
                 isSticky={isSticky}
@@ -291,16 +288,16 @@ export const Header= () => {
                     onClick={handleOpen}
                     sx={{
                       '&.MuiButtonBase-root': {
-                        backgroundColor: '#7F75FC',
+                        backgroundColor: '#177DF0',
                         color: 'white',
                         textTransform: 'capitalize',
                         padding: '8px 24px 8px 24px',
-                        border: '1px solid #7F75FC',
+                        border: '1px solid #5CA9FF',
                         borderRadius: '30px',
                         '&:hover': {
-                          border: '1px solid #7F75FC',
+                          border: '1px solid #5CA9FF',
                           backgroundColor: 'transparent',
-                          color: '#7F75FC',
+                          color: '#177DF0',
                         },
                       },
                     }}

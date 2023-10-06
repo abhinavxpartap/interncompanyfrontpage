@@ -22,10 +22,14 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
     '/blog',
       '/case_studies',
       '/portfolios',
+    '/blogs',
     '/blogs/:slug',
     '/portfolios',
-    'blogDetailVeiw'
-  ].includes(router.pathname);
+    'blogDetailVeiw',
+  ].includes(router.pathname) || (
+      router.pathname.startsWith('/blogs/') && router.pathname !== '/blogs'
+  );
+
 
   const isBlackText = isInitiallyBlack && !isSticky;
   const isWhiteText = !isBlackText;

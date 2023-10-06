@@ -26,7 +26,7 @@ const CloneConfig: FC<CloneConfigInterface> = ({ data }) => {
         setIsLoading(true);
         try {
             // Fetch the data for the new page from your API endpoint
-            const response = await fetch('/api/services/POST', {
+            const response = await fetch('/api/caseStudies/POST', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ const CloneConfig: FC<CloneConfigInterface> = ({ data }) => {
     const deleteService = async (serviceId: string) => {
         setIsLoading(true);
         try {
-            const response = await fetch(`/api/services/DELETE?serviceId=${serviceId}`, {
+            const response = await fetch(`/api/caseStudies/DELETE?serviceId=${serviceId}`, {
                 method: 'DELETE',
             });
             if (response.status === 200) {
@@ -65,7 +65,7 @@ const CloneConfig: FC<CloneConfigInterface> = ({ data }) => {
 
     const save = async () => {
         setIsLoading(true);
-        const response = await fetch('/api/services/PUT/services', {
+        const response = await fetch('/api/caseStudies/PUT/clone', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -169,7 +169,7 @@ const CloneConfig: FC<CloneConfigInterface> = ({ data }) => {
 export default CloneConfig;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-    const response: any = await fetch(`http://localhost:3000/api/services/GET/services`)
+    const response: any = await fetch(`http://localhost:3000/api/caseStudies/GET/portfolios`)
         .then((response) => response.json())
     return {
         props: {

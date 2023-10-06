@@ -748,8 +748,7 @@ export interface caseStudyInterface {
         title: string,
         subtitle: string,
         tagButton: string
-    },
-    caseStudies: caseStudiesHeader[]
+    }
 }
 
 export interface caseStudiesHeader {

@@ -1716,5 +1716,13 @@ left:12px;
     }
 }
 
-
+.ellipsis-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Allow for about 3.5 lines with a partial fourth line */
+    -webkit-box-orient: vertical;
+    max-height: 10em; /* Approximately 3.5 lines worth of text */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
 

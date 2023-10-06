@@ -141,12 +141,20 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
                     Recommended Image Size: 1920x1080 & Allowed Image Format: .png, .jpg, .jpeg, .webp
                 </h3>
             </div>
-            <div>
+            <div className="flex flex-row gap-[20px]">
+                <Button
+                    label="Back"
+                    type="button"
+                    onClick={() => router.push('/admin/blog/list')}
+                    color="secondary"
+                    className="px-[24px] py-[4px] rounded font-bold border-black"
+                />
                 <Button
                     label="Update"
+                    type="button"
                     onClick={save}
                     color="secondary"
-                    className="w-[100px] h-[40px] rounded"
+                    className="px-[24px] py-[4px] rounded font-bold border-black"
                 />
             </div>
         </div>
@@ -250,7 +258,7 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
                 <div className="font-medium text-primary text-[14px] block pb-[10px]">
                     Body
                 </div>
-                <Paper className="min-h-[500px] pt-[20px] block-editor">
+                <Paper className="min-h-[500px] pt-[30px] p-[50px] block-editor">
                     <BlockNoteView editor={editor}/>
                 </Paper>
             </div>
@@ -258,9 +266,10 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
         <div className="flex justify-end mt-[24px]">
             <Button
                 onClick={save}
+                type="button"
                 color="secondary"
                 label="Update"
-                className="w-[100px] h-[40px] rounded"
+                className="w-[100px] h-[40px] rounded font-bold border-black"
             />
         </div>
     </PrivateLayout>

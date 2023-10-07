@@ -1,18 +1,15 @@
 import type {NextPage} from 'next'
 import React from "react";
 import {Footer} from "../components/footer";
-import FixedButton from "../components/FixedButton";
 
 import {PortFolios} from "../components/porfoliosbanner";
 import portfolio from "../data/portfoliosnew.json";
 import Head from "next/head";
 import seoData from "../data/seoData.json";
 import {Empowerment} from "../components/empowerment";
-import {ServiceTech} from "../components/servicesTech";
 import {Portfoliotech} from "../components/portfoliotech";
 import {Solution} from "../components/solution";
 import {Projects} from "../components/Projects";
-
 import {PortfolioIndustry} from "../components/portfolioindustry";
 import {Challenges} from "../components/challenges";
 import {Review} from "../components/review";
@@ -28,6 +25,9 @@ const Portfolio: NextPage = () => {
                 <meta name="keywords" content={seoData.industries.keywords}/>
                 <meta name="title" content={seoData.industries.metaTitle}/>
             </Head>
+            <div className="flex flex-col gap-[40px]"
+
+            >
             <PortFolios
                 image={portfolio.bannerData.image}
                 icon={portfolio.bannerData.icon}
@@ -83,6 +83,7 @@ const Portfolio: NextPage = () => {
 
 
             />
+            </div>
             <Footer/>
 
 

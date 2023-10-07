@@ -17,7 +17,7 @@ export const Projects: React.FC<ProjectInterface> = (props) => {
                     {data.map((project, index) => (
                         <div
                             key={index}
-                            className={`flex flex-col md:mt-[40px] mt-[40px] md:flex-row ${index === 1 ? 'md:flex-row-reverse' : ''}`}>
+                            className={`flex flex-col gap-[40px] md:mt-[40px] mt-[40px] md:flex-row ${index === 1 ? 'md:flex-row-reverse' : ''}`}>
                             <div className="md:px-[30px] md:py-[0px] lg:p-[60px] p-[20px]">
                                 <div className="text-[45px] md:text-start text-center  font-bold text-[#151448]">
                                     {project.title}

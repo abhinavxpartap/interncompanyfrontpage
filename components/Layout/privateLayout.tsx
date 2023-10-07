@@ -11,45 +11,22 @@ interface PrivateLayoutInterface {
 
 const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
     const router = useRouter();
-    const {logout, user} = useAuth();
+    const { logout, user } = useAuth();
     const [navlink, setNavlink] = useState<any[]>([]);
     useEffect(() => {
-        fetch("/api/services/GET/services")
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! Status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then((data) => {
-                setNavlink(data);
-            })
-            .catch((error) => {
-                console.error("Error fetching banner data:", error);
-            });
+        fetch('/api/services/GET/services')
+            .then((response) => response.json())
+            .then((data) => setNavlink(data))
+            .catch((error) => console.error('Error fetching services data:', error));
     }, []);
-
-    console.log(navlink);
 
     const [navlink1, setNavlink1] = useState<any[]>([]);
     useEffect(() => {
-        fetch("/api/industry/GET/indsutries")
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! Status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then((data) => {
-                setNavlink1(data);
-            })
-            .catch((error) => {
-                console.error("Error fetching banner data:", error);
-            });
+        fetch('/api/industry/GET/indsutries')
+            .then((response) => response.json())
+            .then((data) => setNavlink1(data))
+            .catch((error) => console.error('Error fetching industries data:', error));
     }, []);
-
-
-    console.log(navlink1);
 
     const links: any[] = [
         {
@@ -323,104 +300,59 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
             ]
         },
     ];
+    const combinedLinks = [...links];
+    console.log(combinedLinks);
+    useEffect(() => {
+        if (navlink1) {
+            const newLinks1 = navlink1.map((d: any) => ({
+                label: d.name,
+                href: `/admin/${d.name}`,
+                active: false,
+                subLinks: [
+                    {
+                        label: 'Banner',
+                        href: `/admin/${d.name}/Banner`,
+                        active: false
+                    },
+                    {
+                        label: 'About',
+                        href: `/admin/${d.name}/About`,
+                        active: false
+                    },
+                    {
+                        label: 'EaseBanner',
+                        href: `/admin/${d.name}/EaseBanner`,
+                        active: false
+                    },
+                    {
+                        label: 'ReasonBanner',
+                        href: `/admin/${d.name}/PrcessBanner`,
+                        active: false
+                    },
+                    {
+                        label: 'DevelopmentBanner',
+                        href: `/admin/${d.name}/DevelopmentBanner`,
+                        active: false
+                    },
+                    {
+                        label: 'ProcessBanner',
+                        href: `/admin/${d.name}/PrcessBanner`,
+                        active: false
+                    },
+                    {
+                        label: 'Faq',
+                        href: `/admin/${d.name}/Faq`,
+                        active: false
+                    }
+                ]
+            }));
+
+            // Add the new links to the combinedLinks array outside the object
+            combinedLinks.push(...newLinks1);
+        }
+    }, [navlink1]);
+
     const [activeLinks, setActiveLinks] = useState(links);
-
-    useEffect( () =>{
-        if(navlink1){
-            links.push([...links,...navlink1.map((d:any) => ({
-                label: d.name,
-                href: `/admin/${d.name}`,
-                active: false,
-                subLinks: [
-                    {
-                        label: 'Banner',
-                        href: `/admin/${d.name}/Banner`,
-                        active: false
-                    },
-                    {
-                        label: 'About',
-                        href: `/admin/${d.name}/About`,
-                        active: false
-                    },
-                    {
-                        label:'EaseBanner',
-                        href:`/admin/${d.name}/EaseBanner`,
-                        active: false
-                    },
-                    {
-                        label:'ReasonBanner',
-                        href:`/admin/${d.name}/PrcessBanner`,
-                        active: false
-                    },
-                    {
-                        label: 'DevelopmentBanner',
-                        href: `/admin/${d.name}/DevelopmentBanner`,
-                        active: false
-                    },
-
-                    {
-                        label:'ProcessBanner',
-                        href:`/admin/${d.name}/PrcessBanner`,
-                        active: false
-                    },
-                    {
-                        label:'Faq',
-                        href:`/admin/${d.name}/Faq`,
-                        active: false
-                    }
-                ]
-            }))])
-        }
-    }, [navlink1])
-
-    useEffect( () =>{
-        if(navlink){
-            links.push([...links,...navlink.map((d:any) => ({
-                label: d.name,
-                href: `/admin/${d.name}`,
-                active: false,
-                subLinks: [
-                    {
-                        label: 'Banner',
-                        href: `/admin/${d.name}/Banner`,
-                        active: false
-                    },
-                    {
-                        label: 'About',
-                        href: `/admin/${d.name}/About`,
-                        active: false
-                    },
-                    {
-                        label:'EaseBanner',
-                        href:`/admin/${d.name}/EaseBanner`,
-                        active: false
-                    },
-                    {
-                        label:'ReasonBanner',
-                        href:`/admin/${d.name}/PrcessBanner`,
-                        active: false
-                    },
-                    {
-                        label: 'DevelopmentBanner',
-                        href: `/admin/${d.name}/DevelopmentBanner`,
-                        active: false
-                    },
-
-                    {
-                        label:'ProcessBanner',
-                        href:`/admin/${d.name}/PrcessBanner`,
-                        active: false
-                    },
-                    {
-                        label:'Faq',
-                        href:`/admin/${d.name}/Faq`,
-                        active: false
-                    }
-                ]
-            }))])
-        }
-    }, [navlink])
-
     useEffect(() => {
         const updatedLinks = activeLinks.map((link:any) => {
             if (link.subLinks?.length !== 0) {
@@ -446,7 +378,7 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                 user ?
             <div className="flex  min-h-[100vh]">
                 <div className="w-[230px] bg-white border-r-2 flex flex-col">
-                    <SideNav links={activeLinks}/>
+                    <SideNav links={combinedLinks}/>
                 </div>
                 <div className="flex-1 flex-col">
                     <div className="bg-white flex items-center gap-[20px] p-[20px] border-b-2 h-[56px]">
@@ -473,3 +405,10 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
 }
 
 export default PrivateLayout;
+
+
+
+
+
+
+

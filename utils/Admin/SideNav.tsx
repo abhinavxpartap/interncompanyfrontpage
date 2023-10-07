@@ -4,7 +4,7 @@ import Link from "next/link";
 import data from "../../data/config.json";
 
 interface SideNavInterface {
-    links: any[];
+    links:any[];
 }
 
 export const SideNav: React.FC<SideNavInterface> = (props) => {
@@ -31,7 +31,7 @@ export const SideNav: React.FC<SideNavInterface> = (props) => {
         </div>
         <div className="flex-1 overflow-y-auto  p-[10px]" style={{ maxHeight: 'calc(100vh - 120px)' }}>
             {
-                links.map((link, index) => {
+                links && links.length>0 && links.map((link:any, index:number) => {
                     return <div key={index} className="w-full">
                         {
                             link.subLinks?.length !== 0 ?

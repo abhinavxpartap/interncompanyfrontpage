@@ -1,5 +1,5 @@
 import React from 'react';
-import {EmpowermentInterfaces, JourneyInterface} from "../types";
+import {EmpowermentInterfaces} from "../types";
 import {Img} from "../utils/Img";
 
 export const Empowerment: React.FC<EmpowermentInterfaces> = (props) => {
@@ -8,7 +8,7 @@ export const Empowerment: React.FC<EmpowermentInterfaces> = (props) => {
     const content = (
         <>
             <div
-                className="max-w-[1377.5px] flex justify-center items-center  py-[50px] lg:pl-[60px] lg:py-[100px] mx-auto ">
+                className="max-w-[1377.5px]  flex justify-center items-center  py-[50px] lg:pl-[60px] lg:py-[100px] mx-auto ">
                 <div className="flex md:flex-row   flex-col">
                     <div className="flex flex-col">
                         <div className="md:text-[40px]  text-[#151448] text-[25px] max-w-[500px] font-bold ">

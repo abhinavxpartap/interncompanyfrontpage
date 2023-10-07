@@ -1,9 +1,6 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React from 'react';
 import {Img} from '../utils/Img';
-import {Button} from '@mui/material';
-import {useRouter} from 'next/router';
-import {PortFolioInterfaces, TechHeader, TechSectionInterface} from "../types";
-import {LoaderContext} from "../context/LoaderContext";
+import {PortFolioInterfaces} from "../types";
 
 export const Portfoliotech: React.FC<PortFolioInterfaces> = (props) => {
     const {title,subtitle,image}=props;
@@ -41,7 +38,7 @@ export const Portfoliotech: React.FC<PortFolioInterfaces> = (props) => {
     );
     return (
         <>
-            <div>{content}</div>
+            <div className="">{content}</div>
         </>
     );
 };

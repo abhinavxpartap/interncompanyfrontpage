@@ -119,8 +119,6 @@ const BulletListItem: FC<BlockItemInterface> = ({textColor, backgroundColor, tex
         style={{color: textColor, backgroundColor, textAlign: textAlignment}}
         className="w-full flex items-center gap-[16px] pb-[12px]"
     >
-        <Img src="/images/check.svg" alt="Check"
-             className="w-[13px] h-[13px]"/>
         <p className="font-normal xxl:text-[16px] md:text-[14px] sm:text-[12px] text-[10px] md:leading-[27px] leading-[15px] tracking-[0.6px] text-[#5B6570]">
             {children}
         </p>
@@ -131,9 +129,6 @@ const NumberedListItem: FC<BlockItemInterface> = ({textColor, backgroundColor, t
         style={{color: textColor, backgroundColor, textAlign: textAlignment}}
         className="w-full flex items-center gap-[16px] pb-[12px]"
     >
-        <div>
-
-        </div>
         <p className="font-normal xxl:text-[16px] md:text-[14px] sm:text-[12px] text-[10px] md:leading-[27px] leading-[15px] tracking-[0.6px] text-[#5B6570]">
             {children}
         </p>

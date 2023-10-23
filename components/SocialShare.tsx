@@ -7,10 +7,10 @@ interface SocialShareInterface {
 
 export const SocialShare: React.FC<SocialShareInterface> = ({ url }) => {
     const social = [
-        "/images/social/linkedIn.svg",
+        "/images/social/linkedein.png",
         "/images/social/twitter.svg",
-        "/images/social/whatsapp.svg",
-        "/images/social/line.svg",
+        "/images/social/whatsapp.png",
+        "/images/social/instagram.png",
     ];
     return <div className="flex gap-[12px]">
         {

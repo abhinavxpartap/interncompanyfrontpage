@@ -28,7 +28,7 @@ export const BlogCards: React.FC<CardBlog> = ({
           <Skeleton variant="rectangular" className="p-[12px]" height={200} />
         ) : (
           <div>
-            <Link href={`/blog/${url}`}>
+            <Link href={`/blogs/${url}`}>
               <Img
                 src={img || ''}
                 alt="Avatar"

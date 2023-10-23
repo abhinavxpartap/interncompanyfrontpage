@@ -81,7 +81,7 @@ const CaseStudy:React.FC<any> = () => {
                 className="w-full  h-full scroll-container overflow-x-scroll scrollbar scroll whitespace-nowrap scroll-smooth flex flex-row max-w-[1377.5px] mx-auto"
                 ref={scrollContainerRef}
             >
-                {caseStudies && caseStudies.map((caseStudy:any, index: number) => (
+                {caseStudies && caseStudies.length>0 && caseStudies.map((caseStudy:any, index: number) => (
                     <div
                         onClick={() => {
                             router.push(`portfolios/${caseStudy.name}`);

@@ -90,7 +90,7 @@ export const Header= () => {
         }`}
       >
         <div className="max-w-[1377.5px] mx-auto">
-          <div className="flex flex-row  lg:gap-[70px] xl:gap-[170px] 2xl:gap-[200px] items-center ml-[-18px]">
+          <div className="flex flex-row  justify-between w-[100%] items-center ml-[-18px]">
             <div onClick={() => router.push('/')} className="cursor-pointer">
               <Img
                 src={logo || ''}
@@ -98,8 +98,8 @@ export const Header= () => {
                 className="  max-w-[210px]  xl:h-[41px]  lg:h-[35px] md:h-[27px]"
               />
             </div>
-            <div className="flex-1  hidden lg:flex">
-              <div className="flex relative xxl:gap-[43px] md:gap-[30px]">
+            <div className="flex-1  hidden lg:flex justify-center items-center">
+              <div className="flex relative w-[70%]  justify-between">
                 <Dropdown
                   title="About"
                   items={headerData.header[0]}
@@ -140,13 +140,20 @@ export const Header= () => {
                   setOpen={toggleSupport}
                   href={undefined}
                 />
-
+                <Dropdown
+                    title="Blog"
+                    items={headerData.header[5]}
+                    open={openSupport}
+                    isSticky={isSticky}
+                    setOpen={toggleSupport}
+                    href={undefined}
+                />
               </div>
             </div>
-            <div className="lg:hidden flex flex-1 justify-end">
+            <div className="lg:hidden flex flex-1 ml-[10px] justify-end">
               <button
                 type="button"
-                className="inline-flex p-3 rounded-full text-white hover:text-white bg-primary"
+                className="inline-flex p-3 rounded-full text-[#808080] hover:text-[#808080] bg-primary"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
                 onClick={toggleNavbar}
@@ -185,7 +192,6 @@ export const Header= () => {
               </button>
             </div>
             <div className="hidden lg:block">
-
               <Button
                   className="ButtonTransition overflow-hidden "
                   onClick={handleOpen}
@@ -236,7 +242,7 @@ export const Header= () => {
             style={{ maxHeight: 'calc(100vh - 96px)' }}
           >
             <div
-              className={`flex flex-col bg-white w-[100%] h-[100%] p-[20px]  gap-[20px] relative ${
+              className={`flex flex-col bg-[#808080] w-[100%] h-[100%] p-[20px]  gap-[20px] relative ${
                 !isSticky
                   ? 'rounded'
                   : 'border-b md:px-[55px] sm:px-[30px] px-[16px]'
@@ -275,8 +281,16 @@ export const Header= () => {
                 href={undefined}
               />
               <Dropdown
+                  title="Case Studies"
+                  items={headerData.header[4]}
+                  open={openSupport}
+                  isSticky={isSticky}
+                  setOpen={toggleSupport}
+                  href={undefined}
+              />
+              <Dropdown
                 title="Blog"
-                items={headerData.header[4]}
+                items={headerData.header[5]}
                 open={openSupport}
                 isSticky={isSticky}
                 setOpen={toggleSupport}

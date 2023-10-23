@@ -22,17 +22,17 @@ const BlogPage: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [apiData, setApiData] = useState<any | null>(null);
 
-  // useEffect(() => {
-  //   // Fetch data from your API
-  //   fetch(`/api/Blog/GET/blogs?page=${currentPage}`)
-  //       .then((response) => response.json())
-  //       .then((data) => {
-  //         setApiData(data);
-  //       })
-  //       .catch((error) => {
-  //         console.error("Error fetching data:", error);
-  //       });
-  // }, [currentPage]);
+  useEffect(() => {
+    // Fetch data from your API
+    fetch(`/api/Blog/GET/blogs?page=${currentPage}`)
+        .then((response) => response.json())
+        .then((data) => {
+          setApiData(data);
+        })
+        .catch((error) => {
+          console.error("Error fetching data:", error);
+        });
+  }, [currentPage]);
 
   const handlePageChange = (event: React.ChangeEvent<any>, value: number) => {
     setCurrentPage(value);
@@ -61,32 +61,32 @@ const BlogPage: React.FC = () => {
               Latest Articles
             </h1>{' '}
           </div>
-          {/*<div>*/}
-          {/*  <div className="w-[100%] px-[20px] py-[40px] gap-[20px] md:px-0 flex justify-between">*/}
-          {/*    <div className="w-[95vw] gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">*/}
-          {/*      {apiData &&*/}
-          {/*          apiData.data.map((item:any, index:number) => (*/}
-          {/*              <BlogCards*/}
-          {/*                  key={index}*/}
-          {/*                  img={item.image}*/}
-          {/*                  title={item.title}*/}
-          {/*                  description={item.description}*/}
-          {/*                  url={item.slug}*/}
-          {/*              />*/}
-          {/*          ))}*/}
-          {/*    </div>*/}
-          {/*  </div>*/}
+          <div>
+            <div className="w-[100%] px-[20px] py-[40px] gap-[20px] md:px-0 flex justify-between">
+              <div className="w-[95vw] gap-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                {apiData &&
+                    apiData.data.map((item:any, index:number) => (
+                        <BlogCards
+                            key={index}
+                            img={item.image}
+                            title={item.title}
+                            description={item.description}
+                            url={item.slug}
+                        />
+                    ))}
+              </div>
+            </div>
 
-          {/*  {apiData && (*/}
-          {/*      <div className="w-[100%] flex justify-center items-center mt-[40px]">*/}
-          {/*      <Pagination*/}
-          {/*          count={apiData.totalPages}*/}
-          {/*          page={apiData.page}*/}
-          {/*          onChange={handlePageChange}*/}
-          {/*      />*/}
-          {/*      </div>*/}
-          {/*  )}*/}
-          {/*</div>*/}
+            {apiData && (
+                <div className="w-[100%] flex justify-center items-center mt-[40px]">
+                <Pagination
+                    count={apiData.totalPages}
+                    page={apiData.page}
+                    onChange={handlePageChange}
+                />
+                </div>
+            )}
+          </div>
         </div>
         <GetStories />
         <FixedButton />

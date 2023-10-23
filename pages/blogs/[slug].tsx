@@ -96,7 +96,7 @@ const Blog: React.FC<any> = (props) => {
                                 <Button
                                     label="See All"
                                     color="secondary"
-                                    className="w-[100px] h-[40px] md:text-[16px] text-[14px]"
+                                    className="w-[250px] h-[40px] md:text-[16px] text-[14px]"
                                     onClick={() => router.push("/blog")}
                                 />
                             </Grid>

@@ -78,7 +78,7 @@ const BlogPage: React.FC = () => {
             </div>
 
             {apiData && (
-                <div className="w-[100%] flex justify-center items-center mt-[40px]">
+                <div className="w-[100%] flex py-[40px] justify-center items-center mt-[40px]">
                 <Pagination
                     count={apiData.totalPages}
                     page={apiData.page}

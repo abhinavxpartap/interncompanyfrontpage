@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react';
-import {SideNav} from "../../utils/Admin/SideNav";
+import React, { useEffect, useState } from 'react';
+import { SideNav } from "../../utils/Admin/SideNav";
 import Head from "next/head";
-import {useAuth} from "../../context/AuthContext";
-import {useRouter} from "next/router";
+import { useAuth } from "../../context/AuthContext";
+import { useRouter } from "next/router";
 
 interface PrivateLayoutInterface {
     title: string;
@@ -192,23 +192,6 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
             ]
         },
         {
-            label: 'Blog',
-            href: '',
-            active: false,
-            subLinks: [
-                {
-                    label: 'Add Blog',
-                    href: '/admin/blog/form',
-                    active: false
-                },
-                {
-                    label: 'Blog List',
-                    href: '/admin/blog/list',
-                    active: false
-                }
-            ]
-        },
-        {
             label:'Home Page',
             href: "",
             active: false,
@@ -298,6 +281,12 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                     active: false
                 }
             ]
+        },
+        {
+            label: 'Blog',
+            href: '/admin/blog/list',
+            active: false,
+            subLinks: []
         },
     ];
     const combinedLinks = [...links];

@@ -1,8 +1,7 @@
-import React, {useContext, useState} from "react";
+import React, { useContext, useState } from "react";
 import PrivateLayout from "../../../components/Layout/privateLayout";
 import {
     Button,
-    Collapse,
     Grid,
     IconButton,
     Pagination,
@@ -13,13 +12,11 @@ import {
     TableContainer,
     TableHead,
     TableRow,
-    TextField,
     Typography,
 } from "@mui/material";
 import Link from "next/link";
-import {ChevronDown, Edit, Trash2} from "react-feather";
-import {Img} from "../../../utils/Img";
-import {LoaderContext} from "../../../context/LoaderContext";
+import { ChevronDown, Edit, Trash2 } from "react-feather";
+import { LoaderContext } from "../../../context/LoaderContext";
 
 interface BlogRowInterface {
     row: any;
@@ -44,7 +41,7 @@ const Row: React.FC<BlogRowInterface> = (props) => {
                 </Link>
             </TableCell>
             <TableCell>{row.title}</TableCell>
-            <TableCell>{row.description}</TableCell>
+            <TableCell><div className="line-clamp-3">{row.description}</div></TableCell>
             <TableCell align="right" className="w-[150px]">
                 <Link href={`edit/${row.slug}`}>
                     <IconButton aria-label="edit">
@@ -59,70 +56,13 @@ const Row: React.FC<BlogRowInterface> = (props) => {
                 </IconButton>
             </TableCell>
         </TableRow>
-        <TableRow>
-            <TableCell colSpan={6} className="py-0">
-                <Collapse in={open} timeout="auto" unmountOnExit>
-                    <Grid container alignItems="stretch" className="py-[16px] gap-[16px]">
-                        <Grid item md={4} sm={6} xs={12}>
-                            <Img
-                                src={row.image}
-                                alt={row.title}
-                                className="w-full h-[300px] rounded object-cover border"
-                            />
-                        </Grid>
-                        <Grid item xs>
-                            <Grid
-                                container
-                                wrap="nowrap"
-                                direction="column"
-                                className="gap-[16px]"
-                            >
-                                <TextField
-                                    fullWidth
-                                    rows={5}
-                                    multiline
-                                    disabled
-                                    size="small"
-                                    label="Sort Description"
-                                    variant="outlined"
-                                    value={row.description}
-                                />
-                                <TextField
-                                    fullWidth
-                                    disabled
-                                    size="small"
-                                    label="Meta Title"
-                                    variant="outlined"
-                                    value={row.meta_title}
-                                />
-                                <TextField
-                                    fullWidth
-                                    disabled
-                                    size="small"
-                                    label="Meta Description"
-                                    variant="outlined"
-                                    value={row.meta_description}
-                                />
-                                <TextField
-                                    fullWidth
-                                    disabled
-                                    size="small"
-                                    label="Meta Keywords"
-                                    variant="outlined"
-                                    value={row.meta_keywords}
-                                />
-                            </Grid>
-                        </Grid>
-                    </Grid>
-                </Collapse>
-            </TableCell>
-        </TableRow>
     </React.Fragment>
 }
 
 const List: React.FC = () => {
     const [rows, setRows] = React.useState([]);
     const [page, setPage] = useState(1);
+    const [total, setTotal] = useState<any>(10);
     const [pagination, setPagination]= useState({
         currentPage: '',
         totalPages: '',
@@ -135,6 +75,7 @@ const List: React.FC = () => {
         const response = await fetch(`/api/Blog/GET/blogs?page=${page}`);
         const data = await response.json();
         setRows(data.data);
+        setTotal(data.totalItems);
         setPagination({
             currentPage: data.page,
             totalPages: data.totalPages,
@@ -165,7 +106,7 @@ const List: React.FC = () => {
         getBlogs(page);
     }, [page]);
 
-    return <PrivateLayout title="Enjoy Mondays Pre Launch - Blog List">
+    return <PrivateLayout title="Alumel - Blog List">
         <Grid container alignItems="center" className="gap-[8px] mb-[12px]">
             <Typography variant="h5" component={Grid} item xs className="font-medium">
                 Blogs
@@ -195,13 +136,15 @@ const List: React.FC = () => {
                 </TableBody>
             </Table>
         </TableContainer>
-        <div className="flex justify-end mt-[20px]">
-        <Pagination
-            count={parseInt(pagination.totalPages)} // Make sure to parse the string to a number
-            page={parseInt(pagination.currentPage)}
-            onChange={handlePageChange}
-        />
-        </div>
+        {
+            rows.length > total && <div className="flex justify-end mt-[20px]">
+                <Pagination
+                    count={parseInt(pagination.totalPages)}
+                    page={parseInt(pagination.currentPage)}
+                    onChange={handlePageChange}
+                />
+            </div>
+        }
     </PrivateLayout>
 }
 

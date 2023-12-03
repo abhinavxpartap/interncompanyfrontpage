@@ -1,18 +1,18 @@
-import React, {useContext, useEffect, useState} from "react";
-import {Header} from "../../components/Common/Header";
-import {Img} from "../../utils/Img";
-import {Footer} from "../../components/footer";
-import {SocialShare} from "../../components/SocialShare";
-import {useRouter} from "next/router";
-import {BlogCards} from "../../components/BlogCard";
+import React, { useContext, useEffect, useState } from "react";
+import { Header } from "../../components/Common/Header";
+import { Img } from "../../utils/Img";
+import { Footer } from "../../components/footer";
+import { SocialShare } from "../../components/SocialShare";
+import { useRouter } from "next/router";
+import { BlogCards } from "../../components/BlogCard";
 import Head from "next/head";
-import {GetServerSideProps} from "next";
-import {blogApi} from "../../helper/blog";
-import {BlogInterface} from "../../types";
-import {BlogBody} from "../../components/BlogBody";
-import {Grid, Skeleton} from "@mui/material";
-import {Button} from "../../utils/Button";
-import {LoaderContext} from "../../context/LoaderContext";
+import { GetServerSideProps } from "next";
+import { blogApi } from "../../helper/blog";
+import { BlogInterface } from "../../types";
+import { Grid, Skeleton } from "@mui/material";
+import { Button } from "../../utils/Button";
+import { LoaderContext } from "../../context/LoaderContext";
+import ReactHtmlParser from 'react-html-parser'
 
 const Blog: React.FC<any> = (props) => {
     const router = useRouter();
@@ -70,13 +70,13 @@ const Blog: React.FC<any> = (props) => {
                                     className="w-full h-[400px] object-cover"
                                 />
                         }
-                        <div className="mt-[60px]">
+                        <div className="mt-[60px] blog-parser-body">
                             {
                                 !params.body ? <Skeleton
                                     variant="rectangular"
                                     className="p-[12px]"
                                     height={700}
-                                /> : <BlogBody content={params.body}/>
+                                /> : ReactHtmlParser(params.body)
                             }
                         </div>
                         <div className="flex flex-col items-center mt-[30px] md:mb-[200px]">

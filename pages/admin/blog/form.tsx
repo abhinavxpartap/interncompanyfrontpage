@@ -1,14 +1,12 @@
-import React, {useContext, useState} from "react";
+import React, { useContext, useState } from "react";
 import PrivateLayout from "../../../components/Layout/privateLayout";
-import {convertToSlug} from "../../../utils/utils";
-import {ImageOverlay} from "../../../utils/Admin/ImageOverlay";
-import {Button} from "../../../utils/Button";
-import {useRouter} from "next/router";
-import {LoaderContext} from "../../../context/LoaderContext";
-import {Paper, TextField} from "@mui/material";
-import {BlockNoteEditor} from "@blocknote/core";
-import {BlockNoteView, useBlockNote} from "@blocknote/react";
-import "@blocknote/core/style.css";
+import { convertToSlug } from "../../../utils/utils";
+import { ImageOverlay } from "../../../utils/Admin/ImageOverlay";
+import { Button } from "../../../utils/Button";
+import { useRouter } from "next/router";
+import { LoaderContext } from "../../../context/LoaderContext";
+import { TextField } from "@mui/material";
+import { Editor } from '@tinymce/tinymce-react';
 
 const fieldNames: any = {
     title: "Title",
@@ -24,17 +22,6 @@ const Form: React.FC = () => {
     const router = useRouter();
 
     const {slug} = router.query;
-
-
-    const [editorData, setEditorData] = useState<any>({});
-
-    // const [isFeatured, setIsFeatured] = useState<any>(false);
-
-    const editor: BlockNoteEditor | null = useBlockNote({
-        onEditorContentChange: (editor: BlockNoteEditor) =>
-            setEditorData(editor.topLevelBlocks)
-    });
-
 
     const {setIsLoading} = useContext(LoaderContext)
 
@@ -60,7 +47,7 @@ const Form: React.FC = () => {
             const requestBody = {
                 title: params.title,
                 slug: convertToSlug(params.title),
-                body: editorData,
+                body: JSON.stringify(params.body),
                 meta_title: params.meta_title,
                 description: params.description,
                 meta_description: params.meta_description,
@@ -101,14 +88,6 @@ const Form: React.FC = () => {
                     Recommended Image Size: 1920x1080 & Allowed Image Format: .png, .jpg, .jpeg, .webp
                 </h3>
             </div>
-            {/*<div>*/}
-            {/*    <Button*/}
-            {/*        label={!isFeatured ? 'Add to Featured' : 'Remove from Featured'}*/}
-            {/*        color="secondary"*/}
-            {/*        className="h-[40px] rounded"*/}
-            {/*        onClick={() => setIsFeatured(!isFeatured)}*/}
-            {/*    />*/}
-            {/*</div>*/}
             <div>
                 <Button
                     label={!slug ? 'Save' : 'Update'}
@@ -220,9 +199,22 @@ const Form: React.FC = () => {
                 <div className="font-medium text-primary text-[14px] block pb-[10px]">
                     Body
                 </div>
-                <Paper className="min-h-[500px] pt-[20px] block-editor">
-                    <BlockNoteView editor={editor}/>
-                </Paper>
+                <Editor
+                    apiKey="952tjndgzfl5xhhoishqghgcnq8c6wtzfjvie21wefbt0fw2"
+                    onEditorChange={(newValue, editor) => {
+                        setParam('body', newValue);
+                    }}
+                    onInit={(evt, editor) => {
+                        if (params.body) editor.setContent(params.body);
+                    }}
+                    value={params.body}
+                    init={{
+                        plugins:
+                            'a11ychecker advcode advlist advtable anchor autocorrect autolink autoresize autosave casechange charmap checklist code codesample directionality editimage emoticons export footnotes formatpainter fullscreen image importcss inlinecss insertdatetime link linkchecker lists media mediaembed mentions mergetags nonbreaking pagebreak pageembed permanentpen powerpaste preview quickbars save searchreplace table tableofcontents template tinydrive tinymcespellchecker typography visualblocks visualchars wordcount',
+                        automatic_uploads: true,
+                        images_replace_blob_uris: true,
+                    }}
+                />
             </div>
         </div>
         <div className="flex justify-end mt-[24px]">

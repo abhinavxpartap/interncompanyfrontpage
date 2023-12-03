@@ -1,16 +1,15 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, { useContext, useEffect, useState } from "react";
 import PrivateLayout from "../../../../components/Layout/privateLayout";
-import {ImageOverlay} from "../../../../utils/Admin/ImageOverlay";
-import {Button} from "../../../../utils/Button";
-import {LoaderContext} from "../../../../context/LoaderContext";
-import {Paper, TextField} from "@mui/material";
-import {useRouter} from "next/router";
-import {BlockNoteView, useBlockNote} from '@blocknote/react';
-import {BlockNoteEditor} from "@blocknote/core/types/src/BlockNoteEditor";
-import {GetServerSideProps} from "next";
-import {blogApi} from "../../../../helper/blog";
-import {BlogInterface} from "../../../../types";
-import {convertToSlug} from "../../../../utils/utils";
+import { ImageOverlay } from "../../../../utils/Admin/ImageOverlay";
+import { Button } from "../../../../utils/Button";
+import { LoaderContext } from "../../../../context/LoaderContext";
+import { TextField } from "@mui/material";
+import { useRouter } from "next/router";
+import { GetServerSideProps } from "next";
+import { blogApi } from "../../../../helper/blog";
+import { BlogInterface } from "../../../../types";
+import { convertToSlug } from "../../../../utils/utils";
+import { Editor } from "@tinymce/tinymce-react";
 
 const fieldNames: any = {
     title: "Title",
@@ -29,12 +28,9 @@ interface BlogEditFormInterface {
 const Edit: React.FC<BlogEditFormInterface> = (props) => {
     const router: any = useRouter();
     const {setIsLoading} = useContext(LoaderContext)
-    const [editorData, setEditorData] = useState<any>({});
     const [errors, setErrors] = useState<any>("");
-    // const [isFeatured, setIsFeatured] = useState<any>(false);
     const data = props.blog.body;
 
-// Now you can work with the data, which is an array
     const updatedData = data.map((item: any) => {
         const filteredContent = item.content.filter(
             (contentItem: any) => contentItem?.text?.trim() !== ""
@@ -43,14 +39,6 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
             ...item,
             content: filteredContent,
         };
-    });
-
-    const initialContent: null = props.blog ? updatedData : null;
-
-    const editor: BlockNoteEditor | null = useBlockNote({
-        initialContent: initialContent ? initialContent : undefined,
-        onEditorContentChange: (editor: BlockNoteEditor) =>
-            setEditorData(editor.topLevelBlocks)
     });
 
     const [imageUrl, setImageUrl] = useState<string>('');
@@ -94,7 +82,7 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
                 id: params._id,
                 title: params.title,
                 slug: convertToSlug(params.title),
-                body: editorData,
+                body: JSON.stringify(params.body),
                 meta_title: params.meta_title,
                 description: params.description,
                 meta_description: params.meta_description,
@@ -258,9 +246,22 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
                 <div className="font-medium text-primary text-[14px] block pb-[10px]">
                     Body
                 </div>
-                <Paper className="min-h-[500px] pt-[30px] p-[50px] block-editor">
-                    <BlockNoteView editor={editor}/>
-                </Paper>
+                <Editor
+                    apiKey="952tjndgzfl5xhhoishqghgcnq8c6wtzfjvie21wefbt0fw2"
+                    onEditorChange={(newValue, editor) => {
+                        setParam('body', newValue);
+                    }}
+                    onInit={(evt, editor) => {
+                        if (params.body) editor.setContent(params.body);
+                    }}
+                    value={params.body}
+                    init={{
+                        plugins:
+                            'a11ychecker advcode advlist advtable anchor autocorrect autolink autoresize autosave casechange charmap checklist code codesample directionality editimage emoticons export footnotes formatpainter fullscreen image importcss inlinecss insertdatetime link linkchecker lists media mediaembed mentions mergetags nonbreaking pagebreak pageembed permanentpen powerpaste preview quickbars save searchreplace table tableofcontents template tinydrive tinymcespellchecker typography visualblocks visualchars wordcount',
+                        automatic_uploads: true,
+                        images_replace_blob_uris: true,
+                    }}
+                />
             </div>
         </div>
         <div className="flex justify-end mt-[24px]">

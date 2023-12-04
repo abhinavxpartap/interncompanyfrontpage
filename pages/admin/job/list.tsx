@@ -35,15 +35,11 @@ const Row: React.FC<BlogRowInterface> = (props) => {
             <TableCell component="th" scope="row">
                 {index + 1}
             </TableCell>
-            <TableCell>
-                <Link href={`edit/${row.slug}`}>
-                    <span> {row.slug}</span>
-                </Link>
-            </TableCell>
             <TableCell>{row.title}</TableCell>
             <TableCell><div className="line-clamp-3">{row.description}</div></TableCell>
+            <TableCell>{row.type}</TableCell>
             <TableCell align="right" className="w-[150px]">
-                <Link href={`edit/${row.slug}`}>
+                <Link href={`edit/${row._id}`}>
                     <IconButton aria-label="edit">
                         <Edit size={16}/>
                     </IconButton>
@@ -69,7 +65,7 @@ const List: React.FC = () => {
 
     const getBlogs = async (page:number) => {
         setIsLoading(true);
-        const response = await fetch(`/api/Blog/GET/blogs?page=${page}`);
+        const response = await fetch(`/api/Jobs/GET/jobs?page=${page}`);
         const data = await response.json();
         setRows(data.data);
         setTotal(data.totalItems);
@@ -88,7 +84,7 @@ const List: React.FC = () => {
 
     const removeBlog = async ( page:number, id: string) => {
         setIsLoading(true);
-        const response = await fetch(`/api/Blog/DELETE/blog?id=${id}`, {
+        const response = await fetch(`/api/Jobs/DELETE/job?id=${id}`, {
             method: 'DELETE',
         });
         await response.json();
@@ -101,12 +97,12 @@ const List: React.FC = () => {
         getBlogs(page);
     }, [page]);
 
-    return <PrivateLayout title="Alumel - Blog List">
+    return <PrivateLayout title="Alumel - Job List">
         <Grid container alignItems="center" className="gap-[8px] mb-[12px]">
             <Typography variant="h5" component={Grid} item xs className="font-medium">
-                Blogs
+                Jobs
             </Typography>
-            <Link href="/admin/blog/form">
+            <Link href="/admin/job/form">
                 <Button variant="outlined" size="small" color="primary">Add</Button>
             </Link>
         </Grid>
@@ -115,9 +111,9 @@ const List: React.FC = () => {
                 <TableHead>
                     <TableRow>
                         <TableCell className="font-semibold">#</TableCell>
-                        <TableCell className="font-semibold">Slug</TableCell>
                         <TableCell className="font-semibold">Title</TableCell>
                         <TableCell className="font-semibold">Description</TableCell>
+                        <TableCell className="font-semibold">Type</TableCell>
                         <TableCell className="font-semibold" align="right">Actions</TableCell>
                     </TableRow>
                 </TableHead>
@@ -126,12 +122,13 @@ const List: React.FC = () => {
                         <div className="text-center w-full">
                             No Data Available
                         </div>
-                    </TableCell> : rows.map((row: any, index: number) => <Row
+                    </TableCell> :  rows.map((row: any, index: number) => <Row
                         key={index}
                         index={index}
                         row={row}
                         removeBlog={(id:string) => removeBlog(page,row._id)}
                     />)}
+
                 </TableBody>
             </Table>
         </TableContainer>

@@ -1,15 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import PrivateLayout from "../../../../components/Layout/privateLayout";
-import { ImageOverlay } from "../../../../utils/Admin/ImageOverlay";
 import { Button } from "../../../../utils/Button";
 import { LoaderContext } from "../../../../context/LoaderContext";
-import { TextField } from "@mui/material";
+import { Autocomplete, MenuItem, TextField } from "@mui/material";
 import { useRouter } from "next/router";
 import { GetServerSideProps } from "next";
-import { blogApi } from "../../../../helper/blog";
 import { BlogInterface } from "../../../../types";
-import { convertToSlug } from "../../../../utils/utils";
-import { Editor } from "@tinymce/tinymce-react";
+import { jobsApi } from "../../../../helper/jobs";
 
 const fieldNames: any = {
     title: "Title",
@@ -22,10 +19,17 @@ const fieldNames: any = {
 };
 
 interface BlogEditFormInterface {
-    blog: BlogInterface;
+    blog: any;
 }
 
 const Edit: React.FC<BlogEditFormInterface> = (props) => {
+    const jobTypes = [
+        'Full Time',
+        'Remote Only',
+        'Hybrid',
+        'Part Time',
+        'Freelance',
+    ];
     const router: any = useRouter();
     const {setIsLoading} = useContext(LoaderContext)
     const [errors, setErrors] = useState<any>("");
@@ -70,15 +74,14 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
             const requestBody = {
                 id: params._id,
                 title: params.title,
-                slug: convertToSlug(params.title),
-                body: params.body,
-                meta_title: params.meta_title,
+                jobType: params.job_type,
+                zipCodes: params.zip_codes,
                 description: params.description,
+                meta_title: params.meta_title,
                 meta_description: params.meta_description,
                 meta_keywords: params.meta_keywords,
-                image: params.image,
             };
-            const response = await fetch("/api/Blog/PUT/blogs", {
+            const response = await fetch("/api/Jobs/PUT/jobs", {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json", // Set the content type to JSON
@@ -107,11 +110,11 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
         setIsLoading(false);
     }, [props]);
 
-    return <PrivateLayout title="Enjoy Mondays Pre Launch - Blog Slug">
+    return <PrivateLayout title="Alumel Admin - Job">
         <div className="flex items-center mb-[24px] gap-[12px]">
             <div className="flex-1">
                 <h1 className="font-semibold text-[20px] tracking-[1px]">
-                    Update Blog
+                    Update Job
                 </h1>
                 <h3 className="font-medium text-[12px] tracking-[1px]">
                     Recommended Image Size: 1920x1080 & Allowed Image Format: .png, .jpg, .jpeg, .webp
@@ -136,24 +139,57 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
         </div>
         <div className="flex flex-col gap-[12px]">
             <div className="flex gap-[12px] items-stretched">
-                <div className="flex-1 bg-white rounded-[8px] overflow-hidden border">
-                    <ImageOverlay
-                        id="image"
-                        withOverlay
-                        url={imageUrl}
-                        onUploadSuccess={(url) => {
-                            setImageUrl(url);
-                        }}
-                        className="object-cover w-full h-[265px]"
-                        wrapperHeightClass="h-full"
-                    />
-                    <div className="pl-2">
-                        <div className="inline text-[13px] font-medium text-red-700 p-2 w-auto rounded" style={{ background: "rgba(255,255,255,.75)" }}>
-                            Allowed Maximum Size: 4MB
-                        </div>
+                <div className="flex-1 flex flex-col gap-[16px]">
+                    <div>
+                        <TextField
+                            fullWidth
+                            label="Title"
+                            variant="outlined"
+                            error={!!errors.title}
+                            helperText={errors.title}
+                            value={params.title || ""}
+                            onChange={e => setParam("title", e.target.value)}
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            select
+                            fullWidth
+                            color="primary"
+                            label="Job Type"
+                            variant="outlined"
+                            value={params.job_type}
+                            onChange={(e) => setParam('job_type', e.target.value)}
+                        >
+                            {jobTypes.map((type, index) => (
+                                <MenuItem key={index} value={type}>
+                                    {type}
+                                </MenuItem>
+                            ))}
+                        </TextField>
+                    </div>
+                    <div>
+                        <Autocomplete
+                            freeSolo
+                            multiple
+                            options={[]}
+                            value={params.zip_codes}
+                            getOptionLabel={(option) => option}
+                            onChange={(e, newVal) => setParam('zip_codes', newVal)}
+                            renderInput={(params) => (
+                                <TextField
+                                    {...params}
+                                    required
+                                    type="number"
+                                    label="Enter Worksite Zip Code(s)"
+                                    helperText="Press Enter after each worksite zip code"
+                                    variant="outlined"
+                                />
+                            )}
+                        />
                     </div>
                 </div>
-                <div className="w-[400px] flex flex-col gap-[16px]">
+                <div className="flex-1 flex flex-col gap-[16px]">
                     <div>
                         <TextField
                             fullWidth
@@ -192,36 +228,12 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
                 </div>
             </div>
             <div className="flex flex-col gap-[16px] items-stretched">
-                <div className="flex gap-[16px]">
-                    <div className="flex-1">
-                        <TextField
-                            fullWidth
-                            label="Title"
-                            variant="outlined"
-                            error={!!errors.title}
-                            helperText={errors.title}
-                            value={params.title || ""}
-                            onChange={e => setParam("title", e.target.value)}
-                        />
-                    </div>
-                    <div className="flex-1">
-                        <TextField
-                            disabled
-                            fullWidth
-                            label="Slug"
-                            variant="outlined"
-                            error={!!errors.title}
-                            helperText={errors.title}
-                            value={convertToSlug(params.title || "")}
-                        />
-                    </div>
-                </div>
                 <div>
                     <TextField
-                        rows={5}
+                        rows={10}
                         fullWidth
                         multiline
-                        label="Description"
+                        label="Paste Job Description"
                         variant="outlined"
                         error={!!errors.description}
                         helperText={errors.description}
@@ -229,27 +241,6 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
                         onChange={e => setParam("description", e.target.value)}
                     />
                 </div>
-            </div>
-            <div>
-                <div className="font-medium text-primary text-[14px] block pb-[10px]">
-                    Body
-                </div>
-                <Editor
-                    apiKey="952tjndgzfl5xhhoishqghgcnq8c6wtzfjvie21wefbt0fw2"
-                    onEditorChange={(newValue, editor) => {
-                        setParam('body', newValue);
-                    }}
-                    onInit={(evt, editor) => {
-                        if (params.body) editor.setContent(params.body);
-                    }}
-                    value={params.body}
-                    init={{
-                        plugins:
-                            'a11ychecker advcode advlist advtable anchor autocorrect autolink autoresize autosave casechange charmap checklist code codesample directionality editimage emoticons export footnotes formatpainter fullscreen image importcss inlinecss insertdatetime link linkchecker lists media mediaembed mentions mergetags nonbreaking pagebreak pageembed permanentpen powerpaste preview quickbars save searchreplace table tableofcontents template tinydrive tinymcespellchecker typography visualblocks visualchars wordcount',
-                        automatic_uploads: true,
-                        images_replace_blob_uris: true,
-                    }}
-                />
             </div>
         </div>
         <div className="flex justify-end mt-[24px]">
@@ -266,7 +257,7 @@ const Edit: React.FC<BlogEditFormInterface> = (props) => {
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
     const slug: any = context.query.slug;
-    const data: BlogInterface = await blogApi.getSingleBlog(slug);
+    const data: BlogInterface = await jobsApi.getSingleJob(slug);
     return {
         props: {
             blog: data || null,

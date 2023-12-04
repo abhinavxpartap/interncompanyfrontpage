@@ -55,7 +55,7 @@ const Form: React.FC = () => {
                 image: params.image,
             };
 
-            const response = await fetch("/api/Blog/POST/blogs", {
+            const response = await fetch("/api/News/POST/news", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -67,7 +67,7 @@ const Form: React.FC = () => {
             if (data.error) {
                 console.log(data.error, "error");
             } else if (data.message) {
-                router.push("/admin/blog/list");
+                router.push("/admin/news/list");
                 console.log(data.message, "success");
             }
         } catch (e: any) {
@@ -78,11 +78,11 @@ const Form: React.FC = () => {
 
 
 
-    return <PrivateLayout title="Enjoy Mondays Pre Launch - Blog Slug">
+    return <PrivateLayout title="Alumel - News">
         <div className="flex items-center mb-[24px] gap-[12px]">
             <div className="flex-1">
                 <h1 className="font-semibold text-[20px] tracking-[1px]">
-                    Add New Blog
+                    Add New News
                 </h1>
                 <h3 className="font-medium text-[12px] tracking-[1px]">
                     Recommended Image Size: 1920x1080 & Allowed Image Format: .png, .jpg, .jpeg, .webp

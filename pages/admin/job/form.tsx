@@ -1,12 +1,9 @@
 import React, { useContext, useState } from "react";
 import PrivateLayout from "../../../components/Layout/privateLayout";
-import { convertToSlug } from "../../../utils/utils";
-import { ImageOverlay } from "../../../utils/Admin/ImageOverlay";
 import { Button } from "../../../utils/Button";
 import { useRouter } from "next/router";
 import { LoaderContext } from "../../../context/LoaderContext";
-import { TextField } from "@mui/material";
-import { Editor } from '@tinymce/tinymce-react';
+import { Autocomplete, MenuItem, TextField } from "@mui/material";
 
 const fieldNames: any = {
     title: "Title",
@@ -15,10 +12,16 @@ const fieldNames: any = {
     description: "Description",
     meta_description: "Meta Description",
     meta_keywords: "Meta Keywords",
-    image: "Image",
 };
 
 const Form: React.FC = () => {
+    const jobTypes = [
+        'Full Time',
+        'Remote Only',
+        'Hybrid',
+        'Part Time',
+        'Freelance',
+    ];
     const router = useRouter();
 
     const {slug} = router.query;
@@ -46,16 +49,15 @@ const Form: React.FC = () => {
         try {
             const requestBody = {
                 title: params.title,
-                slug: convertToSlug(params.title),
-                body: params.body,
-                meta_title: params.meta_title,
+                jobType: params.job_type,
+                zipCodes: params.zip_codes,
                 description: params.description,
+                meta_title: params.meta_title,
                 meta_description: params.meta_description,
                 meta_keywords: params.meta_keywords,
-                image: params.image,
             };
 
-            const response = await fetch("/api/Blog/POST/blogs", {
+            const response = await fetch("/api/Jobs/POST/jobs", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -67,7 +69,7 @@ const Form: React.FC = () => {
             if (data.error) {
                 console.log(data.error, "error");
             } else if (data.message) {
-                router.push("/admin/blog/list");
+                router.push("/admin/job/list");
                 console.log(data.message, "success");
             }
         } catch (e: any) {
@@ -78,48 +80,76 @@ const Form: React.FC = () => {
 
 
 
-    return <PrivateLayout title="Enjoy Mondays Pre Launch - Blog Slug">
+    return <PrivateLayout title="Alumel Admin - Jobs">
         <div className="flex items-center mb-[24px] gap-[12px]">
             <div className="flex-1">
                 <h1 className="font-semibold text-[20px] tracking-[1px]">
-                    Add New Blog
+                    Add New Jobs
                 </h1>
-                <h3 className="font-medium text-[12px] tracking-[1px]">
-                    Recommended Image Size: 1920x1080 & Allowed Image Format: .png, .jpg, .jpeg, .webp
-                </h3>
             </div>
             <div>
                 <Button
-                    label="Save"
-                    type="button"
                     onClick={save}
+                    type="button"
                     color="secondary"
-                    className="px-[24px] py-[4px] rounded font-bold border-black"
+                    label="Save"
+                    className="w-[100px] h-[40px] rounded font-bold border-black"
                 />
             </div>
         </div>
         <div className="flex flex-col gap-[12px]">
             <div className="flex gap-[12px] items-stretched">
-                <div className="flex-1 bg-white rounded-[8px] overflow-hidden border">
-                    <ImageOverlay
-                        id="image"
-                        withOverlay
-                        url={params.image}
-                        onUploadSuccess={(url) => {
-                            setParam("image", url);
-                        }}
-                        className="object-cover w-full h-[265px]"
-                        wrapperHeightClass="h-full"
-                    />
-                    <div className="pl-2">
-                        <div className="inline text-[13px] font-medium text-red-700 p-2 w-auto rounded"
-                             style={{background: "rgba(255,255,255,.75)"}}
+                <div className="flex-1 flex flex-col gap-[16px]">
+                    <div>
+                        <TextField
+                            fullWidth
+                            label="Title"
+                            variant="outlined"
+                            error={!!errors.title}
+                            helperText={errors.title}
+                            value={params.title || ""}
+                            onChange={e => setParam("title", e.target.value)}
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            select
+                            fullWidth
+                            color="primary"
+                            label="Job Type"
+                            variant="outlined"
+                            value={params.job_type}
+                            onChange={(e) => setParam('job_type', e.target.value)}
                         >
-                            Allowed Maximum Size: 4MB
-                        </div>
+                            {jobTypes.map((type, index) => (
+                                <MenuItem key={index} value={type}>
+                                    {type}
+                                </MenuItem>
+                            ))}
+                        </TextField>
+                    </div>
+                    <div>
+                        <Autocomplete
+                            freeSolo
+                            multiple
+                            options={[]}
+                            value={params.zip_codes}
+                            getOptionLabel={(option) => option}
+                            onChange={(e, newVal) => setParam('zip_codes', newVal)}
+                            renderInput={(params) => (
+                                <TextField
+                                    {...params}
+                                    required
+                                    type="number"
+                                    label="Enter Worksite Zip Code(s)"
+                                    helperText="Press Enter after each worksite zip code"
+                                    variant="outlined"
+                                />
+                            )}
+                        />
                     </div>
                 </div>
-                <div className="w-[400px] flex flex-col gap-[16px]">
+                <div className="flex-1 flex flex-col gap-[16px]">
                     <div>
                         <TextField
                             fullWidth
@@ -158,36 +188,12 @@ const Form: React.FC = () => {
                 </div>
             </div>
             <div className="flex flex-col gap-[16px] items-stretched">
-                <div className="flex gap-[16px]">
-                    <div className="flex-1">
-                        <TextField
-                            fullWidth
-                            label="Title"
-                            variant="outlined"
-                            error={!!errors.title}
-                            helperText={errors.title}
-                            value={params.title || ""}
-                            onChange={e => setParam("title", e.target.value)}
-                        />
-                    </div>
-                    <div className="flex-1">
-                        <TextField
-                            disabled
-                            fullWidth
-                            label="Slug"
-                            variant="outlined"
-                            error={!!errors.title}
-                            helperText={errors.title}
-                            value={convertToSlug(params.title || "")}
-                        />
-                    </div>
-                </div>
                 <div>
                     <TextField
-                        rows={5}
+                        rows={10}
                         fullWidth
                         multiline
-                        label="Description"
+                        label="Paste Job Description"
                         variant="outlined"
                         error={!!errors.description}
                         helperText={errors.description}
@@ -196,35 +202,14 @@ const Form: React.FC = () => {
                     />
                 </div>
             </div>
-            <div>
-                <div className="font-medium text-primary text-[14px] block pb-[10px]">
-                    Body
-                </div>
-                <Editor
-                    apiKey="952tjndgzfl5xhhoishqghgcnq8c6wtzfjvie21wefbt0fw2"
-                    onEditorChange={(newValue, editor) => {
-                        setParam('body', newValue);
-                    }}
-                    onInit={(evt, editor) => {
-                        if (params.body) editor.setContent(params.body);
-                    }}
-                    value={params.body}
-                    init={{
-                        plugins:
-                            'a11ychecker advcode advlist advtable anchor autocorrect autolink autoresize autosave casechange charmap checklist code codesample directionality editimage emoticons export footnotes formatpainter fullscreen image importcss inlinecss insertdatetime link linkchecker lists media mediaembed mentions mergetags nonbreaking pagebreak pageembed permanentpen powerpaste preview quickbars save searchreplace table tableofcontents template tinydrive tinymcespellchecker typography visualblocks visualchars wordcount',
-                        automatic_uploads: true,
-                        images_replace_blob_uris: true,
-                    }}
-                />
-            </div>
         </div>
         <div className="flex justify-end mt-[24px]">
             <Button
-                label="Save"
-                type="button"
                 onClick={save}
+                type="button"
                 color="secondary"
-                className="px-[24px] py-[4px] rounded font-bold border-black"
+                label="Save"
+                className="w-[100px] h-[40px] rounded font-bold border-black"
             />
         </div>
     </PrivateLayout>

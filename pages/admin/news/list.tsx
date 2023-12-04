@@ -21,11 +21,11 @@ import { LoaderContext } from "../../../context/LoaderContext";
 interface BlogRowInterface {
     row: any;
     index: number;
-    removeBlog: any;
+    remove: any;
 }
 
 const Row: React.FC<BlogRowInterface> = (props) => {
-    const {row, index, removeBlog} = props;
+    const {row, index, remove} = props;
     const [open, setOpen] = React.useState(false);
 
     return <React.Fragment>
@@ -48,7 +48,7 @@ const Row: React.FC<BlogRowInterface> = (props) => {
                         <Edit size={16}/>
                     </IconButton>
                 </Link>
-                <IconButton aria-label="edit" onClick={removeBlog}>
+                <IconButton aria-label="edit" onClick={remove}>
                     <Trash2 size={16} className="text-red-500"/>
                 </IconButton>
             </TableCell>
@@ -67,9 +67,9 @@ const List: React.FC = () => {
     })
     const {setIsLoading} = useContext(LoaderContext)
 
-    const getBlogs = async (page:number) => {
+    const get = async (page:number) => {
         setIsLoading(true);
-        const response = await fetch(`/api/Blog/GET/blogs?page=${page}`);
+        const response = await fetch(`/api/News/GET/news?page=${page}`);
         const data = await response.json();
         setRows(data.data);
         setTotal(data.totalItems);
@@ -83,30 +83,30 @@ const List: React.FC = () => {
 
     const handlePageChange = (event:any, newPage:any) => {
         setPagination({ ...pagination, currentPage: newPage });
-        getBlogs(newPage);
+        get(newPage);
     };
 
-    const removeBlog = async ( page:number, id: string) => {
+    const remove = async ( page:number, id: string) => {
         setIsLoading(true);
-        const response = await fetch(`/api/Blog/DELETE/blog?id=${id}`, {
+        const response = await fetch(`/api/News/DELETE/news?id=${id}`, {
             method: 'DELETE',
         });
         await response.json();
-        getBlogs(page);
+        get(page);
         setIsLoading(false);
     };
 
 
     React.useEffect(() => {
-        getBlogs(page);
+        get(page);
     }, [page]);
 
-    return <PrivateLayout title="Alumel - Blog List">
+    return <PrivateLayout title="Alumel - News List">
         <Grid container alignItems="center" className="gap-[8px] mb-[12px]">
             <Typography variant="h5" component={Grid} item xs className="font-medium">
-                Blogs
+                News
             </Typography>
-            <Link href="/admin/blog/form">
+            <Link href="/admin/news/form">
                 <Button variant="outlined" size="small" color="primary">Add</Button>
             </Link>
         </Grid>
@@ -130,7 +130,7 @@ const List: React.FC = () => {
                         key={index}
                         index={index}
                         row={row}
-                        removeBlog={(id:string) => removeBlog(page,row._id)}
+                        remove={(id:string) => remove(page,row._id)}
                     />)}
                 </TableBody>
             </Table>

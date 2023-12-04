@@ -36,6 +36,43 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
             subLinks: []
         },
         {
+            label: 'CMS',
+            href: '',
+            active: false,
+            subLinks: [
+                {
+                    label: 'Blog',
+                    href: '/admin/blog/list',
+                    active: false,
+                    subLinks: []
+                },
+                {
+                    label: 'Events',
+                    href: '/admin/event/list',
+                    active: false,
+                    subLinks: []
+                },
+                {
+                    label: 'Articles',
+                    href: '/admin/article/list',
+                    active: false,
+                    subLinks: []
+                },
+                {
+                    label: 'News',
+                    href: '/admin/news/list',
+                    active: false,
+                    subLinks: []
+                },
+                {
+                    label: 'Jobs',
+                    href: '/admin/job/list',
+                    active: false,
+                    subLinks: []
+                }
+            ]
+        },
+        {
             label: 'Common',
             href: '/admin/common',
             active: false,
@@ -282,15 +319,8 @@ const PrivateLayout: React.FC<PrivateLayoutInterface> = ({title, children}) => {
                 }
             ]
         },
-        {
-            label: 'Blog',
-            href: '/admin/blog/list',
-            active: false,
-            subLinks: []
-        },
     ];
     const combinedLinks = [...links];
-    console.log(combinedLinks);
     useEffect(() => {
         if (navlink1) {
             const newLinks1 = navlink1.map((d: any) => ({

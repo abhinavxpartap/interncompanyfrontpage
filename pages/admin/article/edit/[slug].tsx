@@ -1,12 +1,14 @@
-import React, { useContext, useState } from "react";
-import PrivateLayout from "../../../components/Layout/privateLayout";
-import { convertToSlug } from "../../../utils/utils";
-import { ImageOverlay } from "../../../utils/Admin/ImageOverlay";
-import { Button } from "../../../utils/Button";
-import { useRouter } from "next/router";
-import { LoaderContext } from "../../../context/LoaderContext";
+import React, { useContext, useEffect, useState } from "react";
+import PrivateLayout from "../../../../components/Layout/privateLayout";
+import { ImageOverlay } from "../../../../utils/Admin/ImageOverlay";
+import { Button } from "../../../../utils/Button";
+import { LoaderContext } from "../../../../context/LoaderContext";
 import { TextField } from "@mui/material";
-import { Editor } from '@tinymce/tinymce-react';
+import { useRouter } from "next/router";
+import { GetServerSideProps } from "next";
+import { convertToSlug } from "../../../../utils/utils";
+import { Editor } from "@tinymce/tinymce-react";
+import { articleApi } from "../../../../helper/article";
 
 const fieldNames: any = {
     title: "Title",
@@ -18,14 +20,16 @@ const fieldNames: any = {
     image: "Image",
 };
 
-const Form: React.FC = () => {
-    const router = useRouter();
+interface BlogEditFormInterface {
+    blog: any;
+}
 
-    const {slug} = router.query;
-
+const Edit: React.FC<BlogEditFormInterface> = (props) => {
+    const router: any = useRouter();
     const {setIsLoading} = useContext(LoaderContext)
-
     const [errors, setErrors] = useState<any>("");
+
+    const [imageUrl, setImageUrl] = useState<string>('');
 
     const [params, setParams] = useState<any>({});
 
@@ -41,10 +45,29 @@ const Form: React.FC = () => {
             return restErrors;
         });
     };
+
+
     const save = async () => {
         setIsLoading(true);
+
+        const emptyParams: any = Object.keys(params).filter(key => !params[key]);
+
+        if (emptyParams.length > 0) {
+            const newErrors: any = emptyParams.reduce((acc: any, cur: any) => {
+                acc[cur] = `${fieldNames[cur]} is required`;
+                return acc;
+            }, {});
+            setErrors((prevErrors: any) => ({ ...prevErrors, ...newErrors }));
+        }
+
+        if (Object.keys(errors).length > 0 || emptyParams.length > 0) {
+            setIsLoading(false);
+            return;
+        }
+
         try {
             const requestBody = {
+                id: params._id,
                 title: params.title,
                 slug: convertToSlug(params.title),
                 body: params.body,
@@ -54,43 +77,54 @@ const Form: React.FC = () => {
                 meta_keywords: params.meta_keywords,
                 image: params.image,
             };
-
-            const response = await fetch("/api/Blog/POST/blogs", {
-                method: "POST",
+            const response = await fetch("/api/Article/PUT/articles", {
+                method: "PUT",
                 headers: {
-                    "Content-Type": "application/json",
+                    "Content-Type": "application/json", // Set the content type to JSON
                 },
-                body: JSON.stringify(requestBody),
+                body: JSON.stringify(requestBody), // Convert the request body to JSON
             });
 
             const data = await response.json();
             if (data.error) {
-                console.log(data.error, "error");
+                console.log(data.error);
             } else if (data.message) {
-                router.push("/admin/blog/list");
-                console.log(data.message, "success");
+                router.push("/admin/article/list");
             }
         } catch (e: any) {
-            console.log(e.message, "error");
+            console.log(e);
         }
         setIsLoading(false);
     };
 
 
+    useEffect(() => {
+        setIsLoading(true);
+        setParams(props.blog ? props.blog : {});
+        setImageUrl(props.blog ? props.blog.image : '');
+        setIsLoading(false);
+    }, [props]);
 
-    return <PrivateLayout title="Enjoy Mondays Pre Launch - Blog Slug">
+    return <PrivateLayout title="Alumel - News">
         <div className="flex items-center mb-[24px] gap-[12px]">
             <div className="flex-1">
                 <h1 className="font-semibold text-[20px] tracking-[1px]">
-                    Add New Blog
+                    Update Article
                 </h1>
                 <h3 className="font-medium text-[12px] tracking-[1px]">
                     Recommended Image Size: 1920x1080 & Allowed Image Format: .png, .jpg, .jpeg, .webp
                 </h3>
             </div>
-            <div>
+            <div className="flex flex-row gap-[20px]">
                 <Button
-                    label="Save"
+                    label="Back"
+                    type="button"
+                    onClick={() => router.push('/admin/article/list')}
+                    color="secondary"
+                    className="px-[24px] py-[4px] rounded font-bold border-black"
+                />
+                <Button
+                    label="Update"
                     type="button"
                     onClick={save}
                     color="secondary"
@@ -104,17 +138,15 @@ const Form: React.FC = () => {
                     <ImageOverlay
                         id="image"
                         withOverlay
-                        url={params.image}
+                        url={imageUrl}
                         onUploadSuccess={(url) => {
-                            setParam("image", url);
+                            setImageUrl(url);
                         }}
                         className="object-cover w-full h-[265px]"
                         wrapperHeightClass="h-full"
                     />
                     <div className="pl-2">
-                        <div className="inline text-[13px] font-medium text-red-700 p-2 w-auto rounded"
-                             style={{background: "rgba(255,255,255,.75)"}}
-                        >
+                        <div className="inline text-[13px] font-medium text-red-700 p-2 w-auto rounded" style={{ background: "rgba(255,255,255,.75)" }}>
                             Allowed Maximum Size: 4MB
                         </div>
                     </div>
@@ -220,14 +252,25 @@ const Form: React.FC = () => {
         </div>
         <div className="flex justify-end mt-[24px]">
             <Button
-                label="Save"
-                type="button"
                 onClick={save}
+                type="button"
                 color="secondary"
-                className="px-[24px] py-[4px] rounded font-bold border-black"
+                label="Update"
+                className="w-[100px] h-[40px] rounded font-bold border-black"
             />
         </div>
     </PrivateLayout>
 }
 
-export default Form;
+export const getServerSideProps: GetServerSideProps = async (context) => {
+    const slug: any = context.query.slug;
+    const data: any = await articleApi.getSingleArticle(slug);
+    return {
+        props: {
+            blog: data || null,
+            slug: slug
+        }
+    }
+}
+
+export default Edit;

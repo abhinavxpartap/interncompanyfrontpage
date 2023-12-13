@@ -1,5 +1,5 @@
 import React from 'react';
-import {Img} from "../utils/Img";
+import { Img } from "../utils/Img";
 
 interface ResultInterface {
     heading:string,
@@ -18,9 +18,12 @@ export const Results: React.FC<ResultInterface> = ( props ) => {
         <div className="flex flex-col items-center justify-center w-[100%] py-[10px] px-[10px] md:px-[60px]">
             <h1 className="text-[#151448] text-[45px] font-semibold">{heading}</h1>
             <p className="text-[#3D4852] text-[18px] max-w-[800px] text-center font-medium">{subtitle}</p>
-            <ul className="text-center text-[#151448] text-[20px] font-medium list-none mt-[40px]">
+            <ul className=" text-[#151448] text-[20px] font-medium list-none mt-[40px]">
                 {List && List.length>0 && (List.map((item,index) => (
-                <li key={index} className="mb-[20px] flex flex-row justify-center items-center text-center gap-[10px]"><Img src="/newbullet.svg" className="w-[8px]" alt={"Icon"}/> {item.title}</li>
+                <li key={index} className="mb-[20px] pl-[22px] relative">
+                    <Img src="/newbullet.svg" className="w-[8px] absolute left-0 top-[12px]" alt={"Icon"}/>
+                    {item.title}
+                </li>
                 )))}
             </ul>
         </div>

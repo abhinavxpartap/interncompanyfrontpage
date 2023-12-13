@@ -1,19 +1,19 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
-import {Footer} from "../../components/footer";
+import { Footer } from "../../components/footer";
 import FixedButton from "../../components/FixedButton";
 import CaseStudy from "../../components/Case Study";
-import {PortfolioOurProcess} from "../../components/PortfolioOurProcess";
+import { PortfolioOurProcess } from "../../components/PortfolioOurProcess";
 import Float from "../../components/Float"
-import {useRouter} from "next/router";
-import {GetServerSideProps} from "next";
-import {PortfolioBanner} from "../../components/PortfolioBanner";
-import {AboutPortfolio} from "../../components/aboutPortfolio";
-import {Director} from "../../components/director";
-import {NewPortofilioJourney} from "../../components/PortofilioJourney";
-import {OurProcess} from "../../components/ourProcess";
-import {ProjectChallangesNew} from "../../components/ProjectChallanges";
-import {Results} from "../../components/results";
+import { useRouter } from "next/router";
+import { GetServerSideProps } from "next";
+import { PortfolioBanner } from "../../components/PortfolioBanner";
+import { AboutPortfolio } from "../../components/aboutPortfolio";
+import { Director } from "../../components/director";
+import { NewPortofilioJourney } from "../../components/PortofilioJourney";
+import { OurProcess } from "../../components/ourProcess";
+import { ProjectChallangesNew } from "../../components/ProjectChallanges";
+import { Results } from "../../components/results";
 
 interface PortFolioPageInterface {
     page: any
@@ -34,7 +34,6 @@ const PortFolioPage: React.FC<PortFolioPageInterface> = (props) => {
                 <meta name="title" content={props.seo?.meta_title}/>
             </Head>
             <div className="main">
-
                 <div
                     className="bg-cover  bg-center bg-no-repeat relative"
                 >

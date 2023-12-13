@@ -1,12 +1,9 @@
 import type { NextPage } from 'next'
-import {PortfolioBanner2} from "../components/portfolio2";
+import { PortfolioBanner2 } from "../components/portfolio2";
 import React from "react";
-import {Footer} from "../components/footer";
+import { Footer } from "../components/footer";
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
-import Chat from "../components/Chat";
-
-
 
 
 const Case_studies: NextPage = () => {

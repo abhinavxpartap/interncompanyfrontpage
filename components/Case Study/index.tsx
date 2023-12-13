@@ -1,11 +1,12 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React, {useContext, useEffect, useRef, useState} from 'react';
-import {Button} from '../../utils/Button';
+import React, { useContext, useEffect, useRef, useState } from 'react';
+import { Button } from '../../utils/Button';
 import * as MUIMaterial from '@mui/material';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
-import {useRouter} from 'next/router';
-import {Img} from '../../utils/Img';
-import {LoaderContext} from "../../context/LoaderContext";
+import { useRouter } from 'next/router';
+import { Img } from '../../utils/Img';
+import { LoaderContext } from "../../context/LoaderContext";
+import Link from "next/link";
 
 
 const CaseStudy:React.FC<any> = () => {
@@ -82,11 +83,8 @@ const CaseStudy:React.FC<any> = () => {
                 ref={scrollContainerRef}
             >
                 {caseStudies && caseStudies.length>0 && caseStudies.map((caseStudy:any, index: number) => (
-                    <div
-                        onClick={() => {
-                            router.push(`portfolios/${caseStudy.name}`);
-                        }}
-
+                    <Link
+                       href={`/portfolios/${caseStudy.name}`}
                         key={index}
                         className="max-w-[320px] cursor-pointer md:max-w-[711px] md:h-[366px] bg-white  rounded-[20px] boxshad flex flex-row justify-between p-[10px] md:px-[23px] md:py-[20px] m-4 "
 
@@ -129,7 +127,7 @@ const CaseStudy:React.FC<any> = () => {
                                         },
                                     }}
                                     onClick={() => {
-                                        router.push(`portfolios/${caseStudy.name}`);
+                                        router.push(`/portfolios/${caseStudy.name}`);
                                     }}
                                 >
                                     Learn more
@@ -145,7 +143,7 @@ const CaseStudy:React.FC<any> = () => {
 
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
 

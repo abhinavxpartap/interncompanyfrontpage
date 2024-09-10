@@ -13,7 +13,18 @@ module.exports = {
     ],
     darkMode: false,
     theme: {
-      extend: {},
+      extend: {
+        Keyframes: {
+          gradient:{
+             "0%":{backgroundPosistion: "0% 50%"},
+             "100%":{backgroundPosistion: "100% 50%"},
+            
+          },
+        },
+        animation: {
+          gradient:"gradient 2s linear infinite",
+      },
+      },
     },
     variants: {},
     plugins: [],

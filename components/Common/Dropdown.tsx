@@ -36,8 +36,8 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
   const isBlackArrow = isInitiallyBlack && !isSticky;
   const isWhiteArrow = !isBlackArrow;
 
-  const arrow = isBlackArrow ? '/images/arrblack.svg' : isWhiteArrow ? '/images/arrow-down.svg' : '/images/arrow.svg';
-  const textColor = isBlackText ? 'text-[#000000]' : 'text-[white]';
+  const arrow = !isBlackArrow ? '/images/arrblack.svg' : isWhiteArrow ? '/images/arrow-down.svg' : '/images/arrow.svg';
+  const textColor = isBlackText ? 'text-[#fff]' : 'text-black';
 
   const handleRedirect = () => {
     if (items && ((items.data && items.data.length === 0) || !items.data)) {
@@ -52,7 +52,7 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
               onClick={handleRedirect}
               className={`${textColor} xxl:text-[17px] sm:text-[16px] text-[12px] md:leading-[27px] sm:leading-[17px] leading-[14px] tracking-[-0.24px] flex cursor-pointer`}
           >
-            <span className="text-[16px] font-medium"> {title}</span>
+            <span className="text-[16px] font-normal"> {title}</span>
             {items && items.data && items.data.length > 0 && (
                 <Img
                     src={arrow}
@@ -69,7 +69,7 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
                       open ? 'block' : 'hidden'
                   } bg-[#7F75FC] absolute top-[35px] lg:top-[25px] left-[-155px] sm:left-[0] min-w-[300px] lg:min-w-[394px] rounded-[15px] xxl:px-[35] md:px-[20px] px-[2px] xxl:py-[36px] md:py-[22px] py-[8px] dropdown-container z-[99999]`}
               >
-                <div className="text-[16px] font-semibold leading-[25px] tracking-[0.8px] text-[#ffffff] mb-[14px] uppercase font-montserrat">
+                <div className="text-[14px] font-normal leading-[25px] tracking-[0.8px] text-[#ffffff] mb-[14px] uppercase font-sans">
                   {items.title}
                 </div>
                 {items && items.data && items.data.length > 0 && (
@@ -120,7 +120,7 @@ export const Dropdown: FC<DropdownInterface> = (props) => {
               } bg-white relative w-full lg:my-[10px] rounded-[15px] xxl:px-[50] lg:px-[30px] px-[12px] xxl:py-[44px] lg:py-[30px] dropdown-container z-[99999]`}
           >
             {items && items.data && items.data.length > 0 && (
-                <div className="text-[13px] leading-[25px] font-medium tracking-[0.8px] text-[#101D2C] mb-[14px] uppercase font-montserrat">
+                <div className="text-[13px] leading-[25px] font-medium tracking-[0.8px] text-[#101D2C] mb-[14px] uppercase font-sans">
                   {items.title}
                 </div>
             )}

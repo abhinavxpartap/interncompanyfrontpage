@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {Header} from '../Common/Header';
 import {Button} from '@mui/material';
 import {BannerDataInterface} from '../../types';
+import {Abhiheader} from '../Common/Abhiheader';
 
 export const Banner: React.FC<BannerDataInterface> = (props) => {
     const {title, subtitle, image, button,fix} = props;

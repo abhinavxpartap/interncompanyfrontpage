@@ -6,6 +6,13 @@
     "backgroundImage": "/images/logo/landing.png",
     "buttonName": "Show me How"
   },
+  "bannerDataA": {
+    "fix": ["Call","Book a meeting","send mail"],
+    "title": "Build your digital Product\n business and more",
+    "subtitle": "view case study",
+    "backgroundImage": "/images/logonew/backg.png",
+    "buttonName": "Schedule Call"
+  },
   "serviceData": {
     "title": "OUR SERVICES",
     "subtitle": "One-Stop Solution",

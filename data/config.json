@@ -8,8 +8,18 @@
         "dark": "/images/logo/logonew.svg"
     },
     "logo_dark": "/images/logo/logodarknew.png",
-
+ 
     "logo_light": "/images/logo/logo.svg",
+
+    "logo_icon": "/images/logonew/Logoo.svg",
+
+    "link":"/images/logonew/ri_linkedin-fill.png",
+    "insta":"/images/logonew/lucide_instagram.png",
+    "twit":"/images/logonew/ri_twitter-x-fill.png",
+    "cam":"/images/logonew/Vector.png",
+    "button":"/images/logonew/Shapes.png",
+    
+     
     "socialMedia": { 
         "facebook": "https://www.facebook.com/searchmyexpert/",
         "twitter": "https://twitter.com/searchmyexpert",

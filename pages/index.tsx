@@ -14,6 +14,12 @@ import seoData from "../data/seoData.json";
 import FixedButton from "../components/FixedButton";
 import Float from "../components/Float";
 import HomeProductOverview from "../components/HomeProductOverview";
+import { AbhiBanner } from '../components/AbhiBanner';
+import { AbhiForm } from '../components/AbhiForm';
+import { Slider } from '../components/AbhiSlider';
+import Testimonial from '../components/AbhiSlide';
+import Foot from '../components/Foot';
+
 
 const Home: NextPage = () => {
     return (
@@ -25,15 +31,18 @@ const Home: NextPage = () => {
                 <meta name="title" content={seoData.Homepage.metaTitle}/>
 
             </Head>
-            <div>
-                <Banner
+            <div className='snap-y scroll-smooth'>
+                {/* <Banner
                     fix={data.bannerData.fix}
                     image={data.bannerData.backgroundImage}
                     title={data.bannerData.title}
                     subtitle={data.bannerData.subtitle}
                     button={data.bannerData.buttonName}
-                />
-                <div>
+                /> */}
+                <AbhiBanner 
+                    image={data.bannerDataA.backgroundImage}                    
+                    />
+                {/* <div>
                     <OurBrands/>
                 </div>
                 <HomeProductOverview/>
@@ -58,8 +67,12 @@ const Home: NextPage = () => {
                     <DemoForm/>
                 </div>
                 <FixedButton/>
-                <Footer/>
+                <Footer/> */}
+            <Slider/>
+            <AbhiForm/>
             </div>
+            <Testimonial/>
+            <Foot/>
         </>
     );
 };
